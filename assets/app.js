@@ -205,6 +205,10 @@
     }
   }
 
+  function scoreSourceUrl(date) {
+    return /^\d{4}-\d{2}-\d{2}$/.test(date || '') ?
+      'https://www.thescore.com/nba/events/' + date : 'https://www.thescore.com/nba';
+  }
   function gameCard(game) {
     const hasPrediction = validPrediction(game);
     const p = game.prediction || {};
@@ -276,9 +280,12 @@
       '<div class="game-bottom">' + verdict + '</div>' +
       '<span class="expand-hint">Ver jugadores y titulares <span class="expand-arrow" aria-hidden="true">⌄</span></span></summary>' +
       '<div class="game-breakdown">' + playersPanel(game) +
+      '<div class="source-links">' +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
         '" target="_blank" rel="noopener noreferrer">Consultar partido en ESPN ↗</a>' : '') +
-      '</div></details>';
+      '<a class="game-link" href="' + escapeHtml(scoreSourceUrl(game.date)) +
+        '" target="_blank" rel="noopener noreferrer">Comparar jornada en theScore ↗</a>' +
+      '</div></div></details>';
   }
   function renderDates(games) {
     const dates = [...new Set(games.map(g => g.date).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d)))].sort();
@@ -297,6 +304,7 @@
   function render() {
     const games = Array.isArray(data.games) ? data.games : [];
     renderDates(games);
+    $('thescore-link').href = scoreSourceUrl(chosenDate);
     const shown = games.filter(g => g.date === chosenDate).sort((a, b) => String(a.datetime).localeCompare(String(b.datetime)));
     $('game-count').textContent = shown.length + (shown.length === 1 ? ' partido' : ' partidos');
     const ts = Date.parse(data.as_of || '');

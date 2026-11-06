@@ -42,6 +42,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
 
 (async () => {
   assert.match(html,/id="games"/);
+  assert.match(html,/id="thescore-link"/);
+  assert.match(source,/scoreSourceUrl/);
   assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
   assert.match(source,/visibilityState === 'hidden'/);
@@ -63,6 +65,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
   assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
+  assert.match(view.node('games').innerHTML,/Comparar jornada en theScore/);
+  assert.match(view.node('thescore-link').href,/thescore\.com\/nba\/events/);
   assert.match(view.node('games').innerHTML,/<details class="game-card"/);
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);

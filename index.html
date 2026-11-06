@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261106-c">
+  <link rel="stylesheet" href="assets/style.css?v=20261106-e">
 </head>
 <body>
   <div class="site-shell">
@@ -35,7 +35,11 @@
         </div>
         <div id="alert" class="status-message" role="status" aria-live="polite">Cargando partidos…</div>
         
-        <div class="schedule-meta"><span id="game-count">— partidos</span><span>Hora de República Dominicana</span></div>
+        <div class="schedule-meta">
+          <span id="game-count">— partidos</span>
+          <a id="thescore-link" class="source-compare" href="https://www.thescore.com/nba" target="_blank" rel="noopener noreferrer">Ver marcadores en theScore ↗</a>
+          <span>Hora de República Dominicana</span>
+        </div>
         <div id="games" class="games-list" aria-live="polite">
           <div class="empty-state">Consultando partidos y probabilidades…</div>
         </div>
@@ -43,9 +47,9 @@
 
       <p class="footnote">Probabilidades estadísticas experimentales, no calibradas. No son certezas ni se basan en cuotas de apuestas.</p>
     </main>
-    <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos: ESPN · Proyecto independiente</span></footer>
+    <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos automáticos: ESPN · theScore: comparación externa</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261106-d" defer></script>
+  <script src="assets/app.js?v=20261106-e" defer></script>
 </body>
 </html>
