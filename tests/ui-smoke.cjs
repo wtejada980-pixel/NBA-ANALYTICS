@@ -62,8 +62,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/datos desactualizados/i);
   view=await mount({as_of:new Date().toISOString(),games:[{...game,status:'post'}]});
-  assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
-  assert.match(view.node('games').innerHTML,/finalizó/);
+  assert.match(view.node('games').innerHTML,/63\.4/);
+  assert.match(view.node('games').innerHTML,/ANTES del partido/);
   view=await mount({as_of:new Date().toISOString(),games:[{...game,prediction:{away_pct:60,home_pct:60}}]});
   assert.doesNotMatch(view.node('games').innerHTML,/>60\.0/);
   view=await mount({as_of:new Date().toISOString(),games:[{...game,prediction:{away_pct:50,home_pct:50,reason:'Encuentro equilibrado; sin favorito claro.'}}]});
