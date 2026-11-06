@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=20261106-b">
 </head>
 <body>
   <div class="site-shell">
@@ -24,16 +24,17 @@
       <section class="intro">
         <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> NBA · ANÁLISIS DIARIO</p>
         <h1>El juego, <span>más claro.</span></h1>
-        <p class="intro-copy">Probabilidades de ambos equipos y una explicación breve. El análisis detallado ocurre detrás de cada cifra.</p>
+        
       </section>
 
       <section class="schedule" aria-labelledby="schedule-title">
+        <nav id="date-tabs" class="date-tabs" aria-label="Fechas de partidos"></nav>
         <div class="section-heading">
           <div><p class="overline">AGENDA</p><h2 id="schedule-title">Partidos</h2></div>
           <p class="updated" id="updated">Consultando información…</p>
         </div>
         <div id="alert" class="status-message" role="status" aria-live="polite">Cargando partidos…</div>
-        <nav id="date-tabs" class="date-tabs" aria-label="Fechas de partidos"></nav>
+        
         <div class="schedule-meta"><span id="game-count">— partidos</span><span>Hora de República Dominicana</span></div>
         <div id="games" class="games-list" aria-live="polite">
           <div class="empty-state">Consultando partidos y probabilidades…</div>
@@ -45,6 +46,6 @@
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos: ESPN · Proyecto independiente</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js" defer></script>
+  <script src="assets/app.js?v=20261106-b" defer></script>
 </body>
 </html>

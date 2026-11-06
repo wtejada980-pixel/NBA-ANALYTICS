@@ -68,47 +68,84 @@
     return reason ? reason.slice(0, 150) :
       'Estimación basada en rendimiento, forma reciente y localía.';
   }
+  function logoFor(team) {
+    const values = {
+      GSW:'gs', NYK:'ny', SAS:'sa', NOP:'no', UTA:'utah', UTAH:'utah',
+      PHX:'phx', WSH:'wsh', BKN:'bkn', CHA:'cha', OKC:'okc', DEN:'den',
+      IND:'ind', BOS:'bos', ATL:'atl', TOR:'tor', MEM:'mem'
+    };
+    const abbr = String(team?.abbr || '').toUpperCase().replace(/[^A-Z]/g,'');
+    const slug = values[abbr] || abbr.toLowerCase();
+    return 'https://a.espncdn.com/i/teamlogos/nba/500/' + encodeURIComponent(slug) + '.png';
+  }
   function gameCard(game) {
     const hasPrediction = validPrediction(game);
     const p = game.prediction || {};
-    const favoredSide = hasPrediction && Math.abs(p.home_pct - p.away_pct) >= 0.2 ?
-      (p.home_pct > p.away_pct ? 'home' : 'away') : '';
+    const stateClass = game.status === 'in' ? ' live' : '';
     const hasScore = (game.status === 'in' || game.status === 'post') &&
       Number.isFinite(game.home_score) && Number.isFinite(game.away_score);
-    const team = side => {
+    const teamMark = (side) => {
       const t = game[side] || {};
-      const pct = hasPrediction ? (side === 'home' ? p.home_pct : p.away_pct) : null;
-      const favorite = favoredSide === side;
-      const score = hasScore ? (side === 'home' ? game.home_score : game.away_score) : null;
-      return '<div class="team ' + (favorite ? 'favorite' : '') + '">' +
+      return '<div class="team-mark">' +
+        '<img loading="lazy" src="' + escapeHtml(logoFor(t)) + '" alt="" />' +
+        '<span>' + escapeHtml(t.abbr || 'NBA') + '</span></div>';
+    };
+    const teamName = (side) => {
+      const t = game[side] || {};
+      return '<div class="team-identity ' + side + '">' +
         '<span class="team-abbr">' + escapeHtml(t.abbr || 'NBA') + '</span>' +
-        '<span class="team-name">' + escapeHtml(t.name || 'Equipo por confirmar') + '</span>' +
-        (hasScore ? '<strong class="live-score">' + score + '</strong>' : '') +
-        '<span class="prob" aria-label="' +
-          (hasPrediction ? 'Probabilidad prepartido de ' + escapeHtml(t.name) + ': ' + formatPct(pct) +
-          ' por ciento' : 'Probabilidad sin publicar') + '">' +
-          (hasPrediction ? formatPct(pct) + '<span>%</span>' : '—') + '</span>' +
-        '<span class="favorite-label">' + (favorite ? 'MÁS PROBABLE' : ' ') + '</span>' +
+        '<span class="team-full-name">' + escapeHtml(t.name || 'Equipo por confirmar') + '</span>' +
       '</div>';
     };
-    const split = hasPrediction ?
-      '<div class="split-bar" role="img" aria-label="' +
-      escapeHtml(game.away?.name) + ' ' + formatPct(p.away_pct) + '%, ' +
-      escapeHtml(game.home?.name) + ' ' + formatPct(p.home_pct) + '%">' +
-      '<span style="width:' + formatPct(p.away_pct) + '%"></span></div>' : '';
-    const title = hasPrediction ? '<div class="estimate-caption">PROBABILIDAD PREPARTIDO · MODELO ESTADÍSTICO</div>' :
-      '<div class="estimate-caption">PRONÓSTICO NO DISPONIBLE</div>';
-    const stateClass = game.status === 'in' ? ' live' : '';
+    let percentageBar = '<div class="probability-unavailable">Porcentajes no disponibles</div>';
+    let verdict = '<span class="outcome-chip neutral">SIN PRONÓSTICO</span>';
+    if (hasPrediction) {
+      const away = Number(p.away_pct);
+      const home = Number(p.home_pct);
+      const close = Math.abs(away-home) <= 10;
+      const leftColor = close ? '#666a72' : '#125497';
+      const rightColor = close ? '#cd2347' : '#f8bc37';
+      percentageBar = '<div class="probability-track" role="img" aria-label="' +
+        escapeHtml(game.away?.name || '') + ': ' + formatPct(away) +
+        ' por ciento; ' + escapeHtml(game.home?.name || '') + ': ' +
+        formatPct(home) + ' por ciento">' +
+        '<div class="probability-segment" style="width:' + formatPct(away) + '%;background:' +
+        leftColor + '"><span>' + Math.round(away) + '%</span></div>' +
+        '<div class="probability-segment" style="width:' + formatPct(home) + '%;background:' +
+        rightColor + '"><span>' + Math.round(home) + '%</span></div>' +
+      '</div>';
+      const diff = Math.abs(away - home);
+      const verdictText = diff >= 20 ? 'ALTA PROBABILIDAD' :
+        diff <= 10 ? 'PARTIDO DISPUTADO' : 'VENTAJA MODERADA';
+      const verdictClass = diff >= 20 ? 'high' : diff <= 10 ? 'close' : 'neutral';
+      const reason = shortReason(game,true);
+      verdict = '<span class="outcome-chip ' + verdictClass + '" title="' +
+        escapeHtml(reason) + '">' + verdictText + '</span>';
+      if (game.status === 'in' || game.status === 'post') {
+        verdict += '<span class="pre-match-flag" title="Pronóstico ANTES del partido, no probabilidad en vivo.">PRONÓSTICO PREPARTIDO</span>';
+      }
+    } else {
+      verdict = '<span class="outcome-chip neutral" title="' +
+        escapeHtml(shortReason(game,false)) + '">SIN PRONÓSTICO</span>';
+    }
+    const scoreboard = hasScore ?
+      '<div class="scoreline" aria-label="Marcador: ' +
+      escapeHtml(game.away?.name || 'Visitante') + ' ' + game.away_score + ', ' +
+      escapeHtml(game.home?.name || 'Local') + ' ' + game.home_score + '">' +
+      '<strong class="live-score">' + game.away_score + '</strong><span>MARCADOR</span>' +
+      '<strong class="live-score">' + game.home_score + '</strong></div>' : '';
     return '<article class="game-card">' +
-      '<div class="game-top"><span class="game-time">' + escapeHtml(timeLabel(game.datetime)) +
-      ' · RD</span><span class="game-state' + stateClass + '">' +
-      escapeHtml(stateLabel(game)) + '</span></div>' +
-      '<div class="matchup">' + team('away') + team('home') + '</div>' +
-      title + split +
-      '<p class="card-reason"><span class="reason-label">Por qué:</span> ' +
-      escapeHtml(shortReason(game, hasPrediction)) + '</p>' +
+      '<div class="game-top">' + teamMark('away') +
+      '<div class="game-center"><span class="game-time">' +
+        escapeHtml(timeLabel(game.datetime)) + ' · RD</span>' +
+        '<span class="game-state' + stateClass + '">' +
+        escapeHtml(stateLabel(game)) + '</span></div>' +
+      teamMark('home') + '</div>' +
+      '<div class="matchup">' + teamName('away') + teamName('home') + '</div>' +
+      scoreboard + percentageBar +
+      '<div class="game-bottom">' + verdict + '</div>' +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
-        '" target="_blank" rel="noopener noreferrer">Ver ficha del partido en ESPN ↗</a>' : '') +
+        '" target="_blank" rel="noopener noreferrer">Ver en ESPN</a>' : '') +
     '</article>';
   }
   function renderDates(games) {

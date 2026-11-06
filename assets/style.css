@@ -71,3 +71,83 @@ h2{font-size:31px;letter-spacing:-.045em;font-weight:700;margin:5px 0 0}
 .estimate-caption{font-size:9px;font-weight:750;letter-spacing:.12em;color:#9c9ea4;margin-top:15px}
 .game-link{display:inline-block;font-size:11px;color:#c9cdd6;text-decoration:underline;text-underline-offset:3px;margin-top:12px}
 .game-link:hover{color:#fff}
+
+/* Diseño de tarjetas 2026: estética negra con acentos naranja, vista tipo marcador */
+:root { --bg:#0d0e11; --panel:#151619; --border:#3e3233; --fg:#fff; }
+body { background:radial-gradient(ellipse at top left, #121418 0, #0b0c0f 57%); }
+.site-shell {max-width:1080px; padding:0 clamp(18px,4.1vw,45px);}
+.site-header {min-height:82px; border-bottom-color:#2c2d31;}
+.brand {gap:13px;}
+.brand-mark {
+  width:54px;height:54px;border:0;background:transparent;color:#fff;
+  font-size:54px;font-weight:950;font-style:italic;letter-spacing:-.13em;
+  text-shadow:2px 2px 0 #ff6538, -1px -1px 0 #f49a70; transform:skew(-6deg);
+}
+.brand-dot {color:#f56435;}
+.brand-label strong {font-size:14px;letter-spacing:.04em}
+.brand-label small {font-size:9px;letter-spacing:.04em;color:#a4a6aa}
+.refresh-button {border:1px solid #ae6548;color:#fff;background:transparent;border-radius:8px;padding:8px 14px}
+.refresh-button:hover {background:#281913;border-color:#f26635}
+.refresh-icon {color:#f06a3b;}
+.intro {padding:40px 0 19px;}
+.eyebrow {display:none}
+h1 {font-size:clamp(42px,5.5vw,61px);color:#fff;font-weight:820;letter-spacing:-.055em;line-height:1.05;margin:0}
+h1 span {color:#fff}
+.date-tabs {margin:10px 0 30px;gap:7px;padding:4px 0 8px}
+.date-tabs button {border:1px solid #373940;background:#121316;color:#f1f1f3;border-radius:8px;padding:7px 12px;min-height:35px;font-weight:620}
+.date-tabs button[aria-current="date"] {background:#fa5930;color:#fff;border-color:#fb6d39;box-shadow:0 0 16px #fb59302e}
+.section-heading {margin:0 0 13px;align-items:end}
+.overline {display:none}
+h2 {font-size:27px;letter-spacing:-.04em;margin:0}
+.status-message {font-size:11px;margin-bottom:11px}
+.status-message.ok {display:none}
+.schedule-meta {padding:6px 0 12px;font-size:11px}
+.updated {font-size:11px;line-height:1.35}
+.games-list {grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.game-card {
+  position:relative;min-width:0;padding:16px 16px 18px;border-radius:18px;
+  background:linear-gradient(150deg,#1b1c20 0%,#141518 65%,#101216 100%);
+  border:1px solid #57413c;box-shadow:0 0 25px #ed5d2820,0 12px 26px #0003;
+  transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.game-card:hover {border-color:#9a5f4c;box-shadow:0 0 30px #ef653b35;transform:translateY(-2px)}
+.game-top {display:grid;grid-template-columns:66px minmax(0,1fr) 66px;align-items:center;gap:7px;margin:0 0 5px;}
+.team-mark {min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;}
+.team-mark img {width:58px;height:58px;object-fit:contain;filter:drop-shadow(0 4px 5px #0008);}
+.team-mark span {font-size:10px;font-weight:700;color:#9a9da3;letter-spacing:.06em}
+.game-center {display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #393a40;border-radius:10px;padding:7px 5px;min-height:56px;gap:2px;text-align:center}
+.game-time {font-size:13px;font-weight:770;color:#fff;line-height:1.1}
+.game-state {font-size:9px;letter-spacing:.04em;border:0;padding:0;border-radius:0;color:#92949b;white-space:normal;}
+.game-state.live {border:0;background:none;color:#83dfa3}
+.matchup {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:end;margin:4px 0 12px}
+.team-identity {min-width:0;display:flex;flex-direction:column;gap:1px;}
+.team-identity.home {text-align:right;align-items:flex-end}
+.team-abbr {margin:0;font-size:10px;letter-spacing:.09em;font-weight:700;color:#9b9da4}
+.team-full-name {color:#fff;font-size:13px;font-weight:740;line-height:1.2;overflow-wrap:break-word}
+.probability-track {height:26px;border-radius:8px;overflow:hidden;display:flex;align-items:stretch;background:#252932;box-shadow:inset 0 0 0 1px #ffffff20;}
+.probability-segment {height:100%;display:flex;align-items:center;padding:0 7px;overflow:hidden}
+.probability-segment:first-child {justify-content:flex-start}
+.probability-segment:last-child {justify-content:flex-end}
+.probability-segment span {font-size:12px;font-weight:850;color:white;text-shadow:0 1px 2px #0007;white-space:nowrap;font-variant-numeric:tabular-nums}
+.probability-unavailable {border:1px solid #33383f;border-radius:7px;background:#202125;color:#999ca5;padding:6px;text-align:center;font-size:11px}
+.scoreline {display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center;align-items:center;gap:5px;border-top:1px solid #343439;padding:7px 0;margin-bottom:10px}
+.live-score {font-size:31px;font-weight:900;line-height:1;color:#fff;letter-spacing:-.03em;margin:0}
+.scoreline span {font-size:9px;letter-spacing:.05em;font-weight:740;color:#9b9ca3}
+.game-bottom {display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;min-height:27px;margin-top:8px;}
+.outcome-chip {font-size:9px;font-weight:800;letter-spacing:.025em;border-radius:6px;padding:4px 9px;line-height:1.25}
+.outcome-chip.high {background:#12643b;color:#e1ffe8}
+.outcome-chip.close {background:#f4bc36;color:#241808}
+.outcome-chip.neutral {background:#30343c;color:#dce0e4}
+.pre-match-flag {font-size:9px;color:#b5b7bc;letter-spacing:.03em}
+.game-link {display:block;text-align:center;font-size:10px;color:#878b91;margin-top:6px;text-decoration:none}
+.game-link:hover {text-decoration:underline;color:#fff}
+.footnote {text-align:center;font-size:10px;margin-top:29px}
+@media(max-width:850px) {.games-list {grid-template-columns:1fr}.intro {padding:35px 0 18px}.game-card {padding:18px}}
+@media(max-width:480px) {
+ .site-shell {padding:0 18px}.site-header {min-height:74px}
+ .brand-mark {width:44px;height:44px;font-size:45px}.brand-label strong {font-size:12px}
+ .intro {padding:34px 0 14px} h1 {font-size:clamp(37px,11vw,48px)}
+ .date-tabs {margin-bottom:23px}.game-top {grid-template-columns:60px minmax(0,1fr) 60px}
+ .team-mark img {width:54px;height:54px}.game-time {font-size:12px}.team-full-name {font-size:12px}
+ .section-heading {gap:8px}.updated {font-size:10px}
+}
