@@ -43,6 +43,29 @@ class ParseTests(unittest.TestCase):
         self.assertFalse(players[0]['starter'])
         self.assertEqual((players[0]['pts'], players[0]['reb'], players[0]['ast']), (25, 6, 8))
 
+    def test_history_is_auditable_and_sorted(self):
+        record={"date":"2026-11-06","home":"Equipo Local","away":"Equipo Visitante",
+          "home_pct":60,"away_pct":40,"model":"v2","predicted_at":"2026-11-06T19:00:00Z",
+          "scheduled_at":"2026-11-06T20:00:00Z",
+          "result":{"winner":"home","home_score":104,"away_score":100}}
+        other={**record,"predicted_at":"2026-11-06T21:00:00Z"}
+        rows=update.public_history({"predictions":{"good":record,"late":other}})
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]["id"],"good")
+        self.assertEqual(rows[0]["result"]["home_score"],104)
+
+    def test_head_to_head_uses_earlier_results_only(self):
+        game=sample_event(event_id="3",state="pre")
+        early=update.parse_event(sample_event(event_id="1"))
+        late=update.parse_event(sample_event(event_id="4"))
+        late["datetime"]="2026-11-09T22:00:00Z"
+        hist=update.recent_meetings(game,[early,late])
+        self.assertEqual(len(hist),0)  # Igual fecha y hora: no incluir
+        game["datetime"]="2026-11-07T22:00:00Z"
+        hist=update.recent_meetings(game,[early,late])
+        self.assertEqual(len(hist),1)
+        self.assertEqual(hist[0]["home_score"],120)
+
     def test_valid_probabilities(self):
         home = {'form': {'played':8,'margin': 7.0, 'win_rate':.7}, 'rest_days':2, 'players':[]}
         away = {'form': {'played':8,'margin': -5.0, 'win_rate':.3}, 'rest_days':1, 'players':[]}

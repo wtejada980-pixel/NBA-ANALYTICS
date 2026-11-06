@@ -20,7 +20,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from context_sources import collect
-from model_v2 import predict as predict_v2, elo_before
+from model_v2 import predict as predict_v2, elo_before, elo_baseline_probability
 from validation import evaluate
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -222,6 +222,58 @@ def write_json_atomic(path: Path, data: dict):
     os.replace(temp, path)
 
 
+
+def recent_meetings(game: dict, finished: list[dict], limit: int = 5) -> list[dict]:
+    """Últimos cruces REALES anteriores a este partido, sin inventar encuentros."""
+    ids = {game['home']['id'], game['away']['id']}
+    matched = [g for g in finished if g['id'] != game['id']
+               and {g['home']['id'], g['away']['id']} == ids
+               and parse_time(g['datetime']) < parse_time(game['datetime'])]
+    matched.sort(key=lambda g: g['datetime'], reverse=True)
+    return [{'date': g['date'], 'home': g['home']['abbr'], 'away': g['away']['abbr'],
+             'home_score': g['home_score'], 'away_score': g['away_score']}
+            for g in matched[:limit]]
+
+
+def public_history(history: dict, limit: int = 45) -> list[dict]:
+    """Historial legible sin reescribir pronósticos; descarta predicciones tardías."""
+    visible = []
+    for game_id, record in history.get('predictions', {}).items():
+        try:
+            started = parse_time(record['scheduled_at'])
+            forecast = parse_time(record['predicted_at'])
+            home_pct = float(record['home_pct'])
+            away_pct = float(record['away_pct'])
+            if forecast >= started or not math.isfinite(home_pct) or not math.isfinite(away_pct):
+                continue
+            if not (0 <= home_pct <= 100 and 0 <= away_pct <= 100):
+                continue
+            if abs(home_pct + away_pct - 100) > 0.2:
+                continue
+            result = record.get('result')
+            final = None
+            if isinstance(result, dict) and result.get('winner') in ('home','away'):
+                hs, aws = result.get('home_score'), result.get('away_score')
+                if isinstance(hs, int) and isinstance(aws, int) and hs >= 0 and aws >= 0 and hs != aws:
+                    final = {'home_score': hs, 'away_score': aws, 'winner': result['winner']}
+            row = {'id': str(game_id), 'date': record['date'],
+                   'scheduled_at': record['scheduled_at'],
+                   'predicted_at': record['predicted_at'],
+                   'home': record['home'], 'away': record['away'],
+                   'home_pct': home_pct, 'away_pct': away_pct,
+                   'model': record.get('model', 'sin versión'), 'result': final}
+            baseline = record.get('elo_baseline_home_pct')
+            if baseline is not None:
+                value = float(baseline)
+                if math.isfinite(value) and 0 <= value <= 100:
+                    row['elo_baseline_home_pct'] = value
+            visible.append(row)
+        except (ValueError, TypeError, KeyError, OverflowError):
+            continue
+    visible.sort(key=lambda row: (row['scheduled_at'], row['id']), reverse=True)
+    return visible[:limit]
+
+
 def refresh(today: date | None = None):
     now = datetime.now(timezone.utc)
     day = today or now.astimezone(ZONE).date()
@@ -294,10 +346,14 @@ def refresh(today: date | None = None):
                       'form': weighted_form(tid, hist),
                       'players': players, 'player_trend': player_trend(players)}
     for game in schedule:
+        # Datos históricos anteriores al inicio. No entran en la probabilidad.
+        game['head_to_head'] = recent_meetings(game, finished)
         # No utilizar información posterior al inicio ni guardar estimaciones retrospectivas.
         future = parse_time(game['datetime']) > now
         ratings = elo_before(finished, game['datetime']) if future else {}
         game['prediction'] = predict_v2(game, teams, ratings) if game['status'] == 'pre' and future else None
+        game['elo_baseline_home_pct'] = (
+            elo_baseline_probability(game, ratings) if game['prediction'] else None)
     # Titulares/estadísticas del partido: nunca inferir quintetos de la forma reciente.
     # La API no oficial puede no publicar alineaciones antes del salto inicial.
     for game in schedule:
@@ -332,6 +388,7 @@ def refresh(today: date | None = None):
                 'date': game['date'], 'home': game['home']['name'], 'away': game['away']['name'],
                 'home_pct': game['prediction']['home_pct'], 'away_pct': game['prediction']['away_pct'],
                 'predicted_at': now.isoformat(), 'model': game['prediction']['model'],
+                'elo_baseline_home_pct': game['elo_baseline_home_pct'],
                 'scheduled_at': game['datetime'], 'result': None}
     # Keep history files modest and predictable.
     if len(history['predictions']) > 800:
@@ -345,6 +402,7 @@ def refresh(today: date | None = None):
         'model': 'elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado',
         'games': schedule, 'teams': teams,
         'validation': metrics,
+        'history_recent': public_history(history),
         'notes': ['No utiliza cuotas de apuestas',
                   'El historial de 35 días puede omitir resultados anteriores; Elo se reinicia al comienzo de la ventana',
                   'Puntos anotados y recibidos por juego NO equivalen a rating por 100 posesiones',

@@ -11,10 +11,17 @@ def evaluate(predictions):
         if not isinstance(result, dict) or result.get("winner") not in ("home", "away"):
             continue
         try:
+            # Las predicciones posteriores al salto inicial nunca se evalúan.
+            if record.get("predicted_at") and record.get("scheduled_at"):
+                from datetime import datetime
+                start = datetime.fromisoformat(record["scheduled_at"].replace("Z", "+00:00"))
+                forecast = datetime.fromisoformat(record["predicted_at"].replace("Z", "+00:00"))
+                if forecast >= start:
+                    continue
             p = float(record["home_pct"]) / 100.0
             if not math.isfinite(p) or not 0.0 <= p <= 1.0:
                 continue
-        except (ValueError, TypeError, KeyError):
+        except (ValueError, TypeError, KeyError, OverflowError):
             continue
         y = 1.0 if result["winner"] == "home" else 0.0
         valid.append((p, y, record.get("model", "sin versión")))
@@ -22,7 +29,8 @@ def evaluate(predictions):
     empty = {"completed_predictions": 0, "brier_score": None,
              "baseline_50_brier": None, "favorite_accuracy_pct": None,
              "log_loss": None, "calibration": [], "sample_warning": "Sin resultados suficientes",
-             "by_model": {}}
+             "by_model": {},
+             "elo_comparison": {"n": 0, "model_brier": None, "elo_brier": None}}
     if not n:
         return empty
 
@@ -43,6 +51,34 @@ def evaluate(predictions):
         groups.setdefault(str(model), []).append((p,y))
     by_model = {key: {"n": len(rows), "brier": brier(rows)}
                 for key, rows in sorted(groups.items())}
+
+    # Comparación justa: exactamente los mismos partidos y pronósticos guardados
+    # antes del inicio, nunca recalculados después del resultado.
+    paired = []
+    for record in predictions.values():
+        result = record.get("result")
+        if not isinstance(result, dict) or result.get("winner") not in ("home", "away"):
+            continue
+        if record.get("elo_baseline_home_pct") is None:
+            continue
+        try:
+            if record.get("predicted_at") and record.get("scheduled_at"):
+                from datetime import datetime
+                if datetime.fromisoformat(record["predicted_at"].replace("Z", "+00:00")) >= datetime.fromisoformat(record["scheduled_at"].replace("Z", "+00:00")):
+                    continue
+            main = float(record["home_pct"]) / 100
+            elo = float(record["elo_baseline_home_pct"]) / 100
+            if not math.isfinite(main) or not math.isfinite(elo) or not (0 <= main <= 1 and 0 <= elo <= 1):
+                continue
+        except (ValueError, TypeError, KeyError, OverflowError):
+            continue
+        y = 1 if result["winner"] == "home" else 0
+        paired.append((main, elo, y))
+    comparison = {
+        "n": len(paired),
+        "model_brier": round(sum((p-y)**2 for p,_,y in paired)/len(paired), 4) if paired else None,
+        "elo_brier": round(sum((q-y)**2 for _,q,y in paired)/len(paired), 4) if paired else None
+    }
     accuracy = sum((p>=.5) == bool(y) for p,y,_ in valid) / n
     log_loss = -sum(y*math.log(max(1e-9,p)) +
                     (1-y)*math.log(max(1e-9,1-p)) for p,y,_ in valid)/n
@@ -54,6 +90,7 @@ def evaluate(predictions):
         "log_loss": round(log_loss, 4),
         "calibration": bins,
         "by_model": by_model,
+        "elo_comparison": comparison,
         "sample_warning": ("Muestra pequeña: no permite demostrar calibración."
                            if n < 50 else "Comparar con referencia; Brier no demuestra calibración por sí solo.")
     }

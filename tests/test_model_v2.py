@@ -35,6 +35,13 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(ratings, baseline)
         self.assertGreater(ratings["10"], ratings["20"])
 
+    def test_elo_baseline_only_uses_given_ratings(self):
+        game = {"home":{"id":"10"},"away":{"id":"20"}}
+        first = model_v2.elo_baseline_probability(game,{})
+        strong = model_v2.elo_baseline_probability(game,{"10":1650,"20":1450})
+        self.assertGreater(strong, first)
+        self.assertGreater(first,50)
+
     def test_elo_reverses_when_underdog_wins(self):
         g = event("1", "2026-10-28", hp=95, ap=110)
         r = model_v2.elo_before([g], "2026-11-06T00:00:00Z")
@@ -83,6 +90,23 @@ class ValidationTests(unittest.TestCase):
         self.assertIsNone(validation.evaluate({})["brier_score"])
         records = {"x": {"home_pct": "nan", "result": {"winner": "home"}}}
         self.assertEqual(validation.evaluate(records)["completed_predictions"], 0)
+
+    def test_baseline_compare_same_set_only(self):
+        records = {
+          "a":{"home_pct":70,"elo_baseline_home_pct":60,"result":{"winner":"home"}},
+          "b":{"home_pct":80,"result":{"winner":"away"}}
+        }
+        report = validation.evaluate(records)
+        self.assertEqual(report["completed_predictions"],2)
+        self.assertEqual(report["elo_comparison"]["n"],1)
+        self.assertAlmostEqual(report["elo_comparison"]["model_brier"],.09)
+        self.assertAlmostEqual(report["elo_comparison"]["elo_brier"],.16)
+
+    def test_never_grade_predictions_after_tipoff(self):
+        records={"a":{"home_pct":99,"result":{"winner":"home"},
+          "predicted_at":"2026-11-06T20:01:00Z",
+          "scheduled_at":"2026-11-06T20:00:00Z"}}
+        self.assertEqual(validation.evaluate(records)["completed_predictions"],0)
 
     def test_brier_penalizes_overconfident_errors(self):
         good = validation.evaluate({"1": {"home_pct": 60, "result": {"winner": "home"}}})

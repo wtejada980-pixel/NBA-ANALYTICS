@@ -41,6 +41,18 @@ def elo_before(games, cutoff):
     return ratings
 
 
+
+def elo_baseline_probability(game, ratings):
+    """Referencia Elo simple, sin usar datos posteriores: probabilidad del local."""
+    home = game['home']['id']
+    away = game['away']['id']
+    h = float(ratings.get(home, 1500.0))
+    a = float(ratings.get(away, 1500.0))
+    if not math.isfinite(h) or not math.isfinite(a):
+        raise ValueError('Elo inválido')
+    return round(100.0 / (1.0 + 10.0 ** ((a - h - 55.0) / 400.0)), 1)
+
+
 def _safe_number(n, default=0.0):
     try:
         n = float(n)
