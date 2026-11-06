@@ -1,13 +1,6163 @@
 {
-  "as_of": null,
-  "date": "2026-11-05",
+  "as_of": "2026-11-06T20:45:53.194176+00:00",
+  "date": "2026-11-06",
   "timezone": "America/Santo_Domingo",
-  "source": "Archivo de inicio, aún no actualizado desde ESPN",
+  "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
+  "source_url": "https://www.espn.com/nba/scoreboard",
+  "model": "elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado",
   "games": [
-    {"id":"seed-1","date":"2026-11-05","datetime":"2026-11-06T02:00:00Z","home":{"id":"PHX","abbr":"PHX","name":"Phoenix Suns"},"away":{"id":"ORL","abbr":"ORL","name":"Orlando Magic"},"status":"pre","prediction":null,"source":"https://www.espn.com/nba/scoreboard"},
-    {"id":"seed-2","date":"2026-11-05","datetime":"2026-11-06T03:00:00Z","home":{"id":"GSW","abbr":"GSW","name":"Golden State Warriors"},"away":{"id":"MIA","abbr":"MIA","name":"Miami Heat"},"status":"pre","prediction":null,"source":"https://www.espn.com/nba/scoreboard"}
+    {
+      "id": "401909287",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T00:00Z",
+      "home": {
+        "id": "1",
+        "abbr": "ATL",
+        "name": "Atlanta Hawks"
+      },
+      "away": {
+        "id": "27",
+        "abbr": "WSH",
+        "name": "Washington Wizards"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909287",
+      "prediction": {
+        "home_pct": 59.8,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "away_pct": 40.2,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 1.96,
+          "recent_margin_component": 0.17,
+          "recent_wins_component": 0.3,
+          "scoring_component": 0.11,
+          "rest_component": 0.0,
+          "player_component": 0.04
+        },
+        "elo": {
+          "home": 1541,
+          "away": 1498
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Washington Wizards @ Atlanta Hawks: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5nUmpqVUZlbGRuRHpLSXV0cHFBN3pRY0NSNVJoc0FpSEFObzFQaDQ1NFJjVHJKbnJlWV9Gd0pXbXU3b1EySDBrYkNYSVJieVprM1h2cFpNTVpXdERYeV85MWJhLTFzcHhzY2F1dWVNQjZUOXZWZTB2UzlUS0RUUQ?oc=5",
+            "published": "Fri, 06 Nov 2026 17:03:31 GMT"
+          },
+          {
+            "title": "Washington Wizards-Atlanta Hawks NBA Cup Preview: Injuries, Odds, How to Watch & Starters - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQm50bWxrbmRDWkRxTHoxUlYtUkE1THBUdU93cmwyNlhHZGo5WEYwZWVna1VUQzVlZHJoa2NEV0hscDl0NnZ0Z21sYkR4V2J0SVh6U2xkY0NyLUFSTWFKY1J3ZTVWbHIzYVJwRmJ6WWctOTVmdGx4Rk5OS1BMVUZNM29YVHpPQWM2aUZGdE5xZllpUGdYa1lYZ1d6ZFlCb1BWaXNxaVpvTnRZcTlwbi13T2E1V1kydWdlME0tS3R4WXZsT3pRc0Y3NV9mbw?oc=5",
+            "published": "Fri, 06 Nov 2026 17:00:01 GMT"
+          },
+          {
+            "title": "Hawks host Wizards in NBA Cup group stage matchup | Watch on ANF - Atlanta News First",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVHBma29rWi1VcWhHeE83MzVid0pUMGFsRUxkN1BiMUN6Y0RkempoNG5BaU53aUNkczhLejYybFkzTUR4NHlISElVSndPRmhtQnp0Mjl2YzlqT3hwZHJHT3hVVVE3NkRXTEhISDNtSTMyWVgxeXpOSHk1M3F6RnJ5eW04OEY5Z0F6RmxKVzEzWHAwaDRaWkJqdGRSRzFRb3VLQV9uNW0wUUxIV21n?oc=5",
+            "published": "Fri, 06 Nov 2026 14:56:00 GMT"
+          },
+          {
+            "title": "Since Losing 3 Straight, Soaring Hawks Take on Wizards - Athlon Sports",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWENOQjBYTDh1UTR4aG5tOF9TTTVwYU53VF9kMUt2WnItUkFQR3NkVEd2UHVGS1llbUtyRGtESURqMjRmWWY5TWhHYXhsQ09YOGhhMHlYSjUtU0ZLM2tMM04ydDZjcE8tR192dm5HeE5wN01oa3pMN1NQcnZhUTlYUVhDRTI0clN5Z2c3TGh2UUphSlNkTEt5VTdrS3luZ0szOXc?oc=5",
+            "published": "Fri, 06 Nov 2026 18:56:41 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Wizards+Hawks&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:15.142539+00:00"
+      }
+    },
+    {
+      "id": "401909288",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T00:00Z",
+      "home": {
+        "id": "30",
+        "abbr": "CHA",
+        "name": "Charlotte Hornets"
+      },
+      "away": {
+        "id": "2",
+        "abbr": "BOS",
+        "name": "Boston Celtics"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909288",
+      "prediction": {
+        "home_pct": 31.4,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 68.6,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -6.0,
+          "recent_margin_component": -3.26,
+          "recent_wins_component": -1.4,
+          "scoring_component": -1.09,
+          "rest_component": 0.0,
+          "player_component": 0.17
+        },
+        "elo": {
+          "home": 1443,
+          "away": 1576
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Boston Celtics vs Charlotte Hornets Nov 6, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tN3B6VnBEMm1VcFd3MzU2aGI1M1hFcE9BSXJ4eHp2VUx3Ri1XSGYwOXBOOHFndWZYTVZKTUlIcXlkU1NtMVFQdEFLVUJNeTBlZ1JrNXlCMnJ5Zw?oc=5",
+            "published": "Fri, 06 Nov 2026 19:03:50 GMT"
+          },
+          {
+            "title": "Score Predictions For Tonight's NBA Cup Matchup Between the Charlotte Hornets and Boston Celtics - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaVVhcVNYcXB1OXZtWTgxX25BVWhreEU4eVlIbmo2N1Vob2VIdW8yNVhFV21yT0lOY3VrNU9mbUxRX0JyY2ZTbU04WE4zLWk5OGtId2QyMU95cnVLZVlreDJKcGdGbEV6dmxINkZ4VlZrVUNocDhiR2hFQjBrT0NiWTBnX2JocXJZLWtGaTR2dTNlZm9DOXNzMEhPeUtrVzctR3IzY3pXcVJuZFFxNkoxOEI0R1RibVFMNF9uM3Y1eW9mUU9rNHNoVTlmVGs?oc=5",
+            "published": "Fri, 06 Nov 2026 16:03:41 GMT"
+          },
+          {
+            "title": "Boston Celtics @ Charlotte Hornets: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00NlM0VVhrTzVQbkxiTWxkZ1RTRzBjMHliMWt2VS14VUJteHdrX25wdV9aeFZCYkttT2dkUVEyN0gxY3FzcDBWalBPNkNDc1JJUlQwNWhocThfOFJzdmhPMlFEWVR1VzFkVmUyRTZJRkpfRFVrdDlDUDFYem9jZw?oc=5",
+            "published": "Fri, 06 Nov 2026 18:33:01 GMT"
+          },
+          {
+            "title": "Boston Celtics @ Charlotte Hornets Odds - FanDuel Sportsbook",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZENmNG5ZbnZGeWFLdzZSdDNrVHpxY1gwdzl0eWVWTlR6UWg0RXB0YjFNN0RtTlVBQ2IxaHl6cHltTEFqQWxOSXlaYVpWajFQd3N4VWdnNEl2My1TVnpOY0VqMl9hZk1GbF9sam5femUyb0I0aEM4QVViUVRpU0ZNakdSZlFjRFlyeTVWV0oxcGdWMTg?oc=5",
+            "published": "Fri, 06 Nov 2026 18:30:08 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Celtics+Hornets&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:15.723292+00:00"
+      }
+    },
+    {
+      "id": "401909289",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T00:30Z",
+      "home": {
+        "id": "5",
+        "abbr": "CLE",
+        "name": "Cleveland Cavaliers"
+      },
+      "away": {
+        "id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909289",
+      "prediction": {
+        "home_pct": 43.0,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y más victorias recientes.",
+        "away_pct": 57.0,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -2.96,
+          "recent_margin_component": -0.99,
+          "recent_wins_component": -1.09,
+          "scoring_component": -0.27,
+          "rest_component": 0.0,
+          "player_component": -0.25
+        },
+        "elo": {
+          "home": 1489,
+          "away": 1555
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Philadelphia 76ers @ Cleveland Cavaliers: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVzR3VEhxV0lMMGNuSFlxSGZMajdFZS0wQ0h1REJ2S2lfOWp3c3JsNGgxaGFscGtYLU9relhMa0pSMXhyZ1hhaUcxMWpQLWg0cU1oWEpxaHdVNjRZUWxyem5HMnZ2cDg4T0E0RFdWM0poc0RMTXhlY0RwLWktcmFhMDIyaFhZQQ?oc=5",
+            "published": "Fri, 06 Nov 2026 18:33:24 GMT"
+          },
+          {
+            "title": "Philadelphia 76ers vs Cleveland Cavaliers Nov 6, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kb3lHbXYwT3VNMGY2MDJIeUc5TF9SS2h6REFhcFhaQ2RZaHFoeWFBcEpjV25EZ3lPWUNldExRRi1Ba0swZ0x6OGNPNHM1YUdyRWJuTlNTTGtNQQ?oc=5",
+            "published": "Fri, 06 Nov 2026 17:47:05 GMT"
+          },
+          {
+            "title": "Sixers vs. Cavaliers preview: LeBron returns home for NBA Cup showdown - Metro Philadelphia",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNblhobVJwYmNGS0hMbmNGSjFwZUI1QzN4OUJ1eGlzYnZqTGdSRTFmUThDQTNtZnpuaWFUUkZSMXdDa2E2VG9tNTN0NjNtWVI0R0pMY3prdnF1emdKakZVbDNlblhXaXphX3l3YkVFZ3JycXJMQnZnREgzUzRmcEMzQkx3R1hzb1BFSm9aWHVobFpROUF1WDV0T29LZkNRSi1tRkpvbHBYMWxsRmNZcHM0YXNsVTllcGhfUjBJSFdRRks?oc=5",
+            "published": "Fri, 06 Nov 2026 19:12:12 GMT"
+          },
+          {
+            "title": "76ers vs Cavaliers NBA Cup Group Play : Starting Lineups, Injuries and What To Expect - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWVMyaWg0WDZyaGZSd184Q0NiSndjNE82b3hDSURvOS0xaTRaSXNVcDF1S3RmbUMtcmF0STJkM0VjeUZsd3lIREhyWkt4UmFUUlBTQW1TNEFIcXdwMTJVTTVTTC1MaFVHOVU5T0VZWDlBSV9kbXdvWlFmaTBBQVpEUTdiZzRJU2EwOW1Bb1NvalcyWmluZjcxaDZOYkVyNlBLVDBVN21TcEtVT2dZWi1uV0VkY0tKWnB2cnNjdnl1dU1IS3FqdGlWaVpHbmp5Zw?oc=5",
+            "published": "Fri, 06 Nov 2026 18:45:28 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=76ers+Cavaliers&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:16.413542+00:00"
+      }
+    },
+    {
+      "id": "401909290",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T01:00Z",
+      "home": {
+        "id": "6",
+        "abbr": "DAL",
+        "name": "Dallas Mavericks"
+      },
+      "away": {
+        "id": "26",
+        "abbr": "UTAH",
+        "name": "Utah Jazz"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909290",
+      "prediction": {
+        "home_pct": 64.5,
+        "reason": "Ventaja por mejor margen de puntos reciente y ventaja de localía.",
+        "away_pct": 35.5,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 1.35,
+          "recent_margin_component": 2.26,
+          "recent_wins_component": 0.79,
+          "scoring_component": 0.62,
+          "rest_component": 0.0,
+          "player_component": -0.03
+        },
+        "elo": {
+          "home": 1476,
+          "away": 1446
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Utah Jazz vs Dallas Mavericks Nov 6, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9FZGlYdy1SSnNuRHk0VmllRW5scUlXb0ZtdXozN2pEYWdGdjUzWmJIWFo3cnRjV3Rsei1NM3NCMXhTQ2t1VWpUMHEweXd3Y2xfc1hQZ2dycTJIQQ?oc=5",
+            "published": "Fri, 06 Nov 2026 19:24:00 GMT"
+          },
+          {
+            "title": "Utah Jazz @ Dallas Mavericks: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pYmp5OTg4Qm5UVEVMMXlZSnp4WmdPTTdtRjFFakFodmgxZ0Q2dFRmOWN2dGNiZlQwVFlkRW10YW9IUmlSaG9hVGpubmZxMVdXVWJwdVpVNXNsV1B4SzB5TmxvakFuUkwzS0NhMWRDT1RVQ0d1MlE?oc=5",
+            "published": "Fri, 06 Nov 2026 18:33:35 GMT"
+          },
+          {
+            "title": "Utah Jazz Injury Report: Who's Playing, Who's Not vs. Mavericks - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU205bW1fU0xFTjdJMkJuRy1NR0tzdE9jeldWZUwwZlBGWWQ5emZlU0NGNHloODk2NlJYOWI2Z21oLW5tVjZsM2kzTllQZ1RENjBQcHZOR0NpRjZrbXdVMXpEWW1ZWUIwN3NyYmlEc0xRekNPaUdpcTI4VkVJaWtGRldET01zaFBEUGlURXBvd01BSXZUOEJjZQ?oc=5",
+            "published": "Fri, 06 Nov 2026 14:00:07 GMT"
+          },
+          {
+            "title": "After Losing 2 Straight, the Dallas Mavericks Try to Stop the Slide Against Utah Jazz - Athlon Sports",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWHVFbHVvMVlrUjA2NlBWTHNENU1jeHQxc1RPUmxUenlBMDVvaUlvRHhkX0FHbnVSMXltTkpJNXdMd3dKZVpqUzh3b3pDRVE5b3VoSHhPZWgxcjNhN0JkS2RCNXVHcU45VnFrN0pYT1JtZG1YcXlNMkI1TDZJVzFpa29YNWsyWFJpZFFBa01jX0VsaGx6VkRHMHlB?oc=5",
+            "published": "Fri, 06 Nov 2026 19:41:50 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Jazz+Mavericks&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:17.055460+00:00"
+      }
+    },
+    {
+      "id": "401909291",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T01:00Z",
+      "home": {
+        "id": "29",
+        "abbr": "MEM",
+        "name": "Memphis Grizzlies"
+      },
+      "away": {
+        "id": "25",
+        "abbr": "OKC",
+        "name": "Oklahoma City Thunder"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909291",
+      "prediction": {
+        "home_pct": 64.4,
+        "reason": "Ventaja por mejor margen de puntos reciente y ventaja de localía.",
+        "away_pct": 35.6,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 2.0,
+          "recent_margin_component": 2.28,
+          "recent_wins_component": -0.09,
+          "scoring_component": 0.68,
+          "rest_component": 0.0,
+          "player_component": 0.06
+        },
+        "elo": {
+          "home": 1559,
+          "away": 1515
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Oklahoma City Thunder @ Memphis Grizzlies: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNREp1ZkIwUTdRZHBNSWQ3d09ueUlRTEwtLWJ2YTdiS3FETVYwcjVvNTRjS090Uy1NZ2xXaUQ0Y2Iyc1NvZUdMMHBXNzlBY1NMU3BESGkxUC1QQkxnakZ1SVJGQ05tNGhRV0lSR3NuZnQtS0gyc3dDMTZLUW1nd3d5dWJnRnFwYW8?oc=5",
+            "published": "Fri, 06 Nov 2026 18:32:25 GMT"
+          },
+          {
+            "title": "Oklahoma City Thunder Aims to Make It Three Against Memphis Grizzlies - Athlon Sports",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSzYxRVRNbk0xLW1WaUt6clV3NlktWnBYOW8wTkFZQzVhZFJ2a3F3MWVSbUoxemxqZlU1MXJrRk5raUVuQmJ1N0ZaYndzSUxZelpiSENBTjltUjE4VVpfR25MdzRGU0g4a2M3YllQUFd2NTdLY2NQc1NCZVBVMmVuMlZyTk9GQkFTRm1qMThEeUwyaWNTV3NPZjhJanZvSjZoWGNNNjRXWk5BUkU?oc=5",
+            "published": "Fri, 06 Nov 2026 20:06:16 GMT"
+          },
+          {
+            "title": "Injury Report: OKC Thunder List Six Players for Bout with Grizzlies - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHRrTlM5YUFSeTh2MXdtVE40b3R5cm5GU2taMHpEbnVaOG83d0Jac3dFSDVOLVlQcTVwTGJqQVg1Q3R0WWNRaTlsZ3Q2dEU3ZURNR081bGJKMlZxR0NSZURvVkJRblJ2ek5XeFg5WDl5dkNNMV81UmdRVUE1dWRiVnV6Y0JnaDUyOGY3ZnV4Smk3ZDUwenRsdmdPZUdvRWZ2MTFMQQ?oc=5",
+            "published": "Fri, 06 Nov 2026 13:00:04 GMT"
+          },
+          {
+            "title": "Oklahoma City Thunder at Memphis Grizzlies odds, picks and predictions - Sportsbook Wire",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOWJLYS1zVDdHSWNXTlVmb0I0SnJaVHRFR0JKT3F2cU8yaVV2VVpMU09Bdk1LLU05VjI4eFdpc1FNQl84bmcyWkJ4ZUlPRHFZWEZobDZOUTJYYzljbDhuU3lhMVp4c1ZHVk83R0dtYVdaYndUUFlVelA1U2UzZXJwNzhNeTZJaFh4NDYyekk4VjZKUEtfWkhLTzNNRFVaa3l1Nkt2NHdJWU5zQng1MkVHRkZJb3VyRHl0YmRsMUxaR2VRQQ?oc=5",
+            "published": "Fri, 06 Nov 2026 18:33:00 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Thunder+Grizzlies&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:17.711775+00:00"
+      }
+    },
+    {
+      "id": "401909292",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T01:00Z",
+      "home": {
+        "id": "15",
+        "abbr": "MIL",
+        "name": "Milwaukee Bucks"
+      },
+      "away": {
+        "id": "28",
+        "abbr": "TOR",
+        "name": "Toronto Raptors"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909292",
+      "prediction": {
+        "home_pct": 40.9,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 59.1,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -3.27,
+          "recent_margin_component": -2.24,
+          "recent_wins_component": -0.61,
+          "scoring_component": -0.76,
+          "rest_component": 0.0,
+          "player_component": 0.27
+        },
+        "elo": {
+          "home": 1421,
+          "away": 1493
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Toronto Raptors vs Milwaukee Bucks Nov 6, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WNTQxUWt1WmZMNDJWd01SNU1scnUzZUZhb3Rjd0lUa3RHcWV4MHdLODBKaVNsa1hYTlFDR2hMdkFTenhlaDRreEIxT1hDam5kNFNUeHQxVGRSQQ?oc=5",
+            "published": "Fri, 06 Nov 2026 17:40:53 GMT"
+          },
+          {
+            "title": "Toronto Raptors @ Milwaukee Bucks: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9WOF9JSS1zYTd2VG9VWXBtOWRuUlY1VzFieFFKQkdxMklPQnJ3WWV3SnNzdE5rb0tNX0lOdE1ESjRubG0yV2MyT1BNRXhiUlVzd2g0VE13alJfZ2VESDNEZ0NFUGhQMlBkRG1SUFBKNHFkX21pR2VLcXZ4MTU?oc=5",
+            "published": "Fri, 06 Nov 2026 18:32:41 GMT"
+          },
+          {
+            "title": "Raptors vs. Bucks: 5 Questions Beyond the Box Score - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPXzF2b2s5a1N3NVdpQS1SYmxQMlAyNWgzWXJpa0hkRzl1NnRKdjhlVXBWN3UyeGRuSUUybklQOGVLaXgyX0IweXg1YmNIWjBYMGw5YUtTUThEc0tLU2dnZUsyc2ktNmR6TE9UbEUwb1FoY2dHdEt2M2lfZG5sMmhmam5DaHc1djdSZ0ZGbHd3?oc=5",
+            "published": "Fri, 06 Nov 2026 20:00:00 GMT"
+          },
+          {
+            "title": "Milwaukee Bucks vs. Toronto Raptors Preview & Game Thread: Respect the Cup - Brew Hoop",
+            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNWkNPT3N4RG9IX1djOVlaTTgxdldXbHZiYnVHZE1LeFMtTDlPempfWjAya2dSMGgxdmpuSFRfTi1yVkIzbmJfNU5wcnVLajBKSlE4VjVwYW10R0JwMmhvUzhJSVhfZEktb21TNjZYcGFMUUM5a3FtVmtnc3d2dHhtSHFPWFNwS0FIOTZ5UUc2NlozY2Rqa3NURlg0WnJtVE0tRS1yQTBDcUVVVkNGWTFnQjg4WFUtaG5lV21Lb1dmTmMwUFZHS1h1aF92MGUxcXMyUVhBaGZVUC1VOXVhZGtKM1FB?oc=5",
+            "published": "Fri, 06 Nov 2026 15:00:00 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Raptors+Bucks&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:18.321128+00:00"
+      }
+    },
+    {
+      "id": "401909293",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T01:00Z",
+      "home": {
+        "id": "3",
+        "abbr": "NO",
+        "name": "New Orleans Pelicans"
+      },
+      "away": {
+        "id": "16",
+        "abbr": "MIN",
+        "name": "Minnesota Timberwolves"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909293",
+      "prediction": {
+        "home_pct": 50.6,
+        "reason": "Ventaja por ventaja de localía.",
+        "away_pct": 49.4,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -0.98,
+          "recent_margin_component": -0.92,
+          "recent_wins_component": 0.09,
+          "scoring_component": -0.26,
+          "rest_component": 0.0,
+          "player_component": 0.17
+        },
+        "elo": {
+          "home": 1521,
+          "away": 1543
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Minnesota Timberwolves vs New Orleans Pelicans Nov 6, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5bmRnRHdhM2RJMU13TXdic3RUME83aTR6NnhmQTRCdTFPZ2Ficm5iSExrd3NCZ0JkOHY5aXR5TVBwWXdodmc4bm1JUUFMQ2owVi13WmJvcER1Zw?oc=5",
+            "published": "Fri, 06 Nov 2026 19:54:09 GMT"
+          },
+          {
+            "title": "Minnesota Timberwolves @ New Orleans Pelicans: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS0MxQ0NLb2puS0NEODFROURFeXY5WGs2SVlhYjN4MlBiUnZzeUdtSnFweU1CbjdYbmtnV1lJYklQZ0JIaU9NTUo0R2piUG5IVnZlUVM2MGRieW5MdnpVZ010aDRlVVpIUjFVREpiTENwaThJdlI0VDNMYU5hV0RlanRsR3h5R1B1VThXeg?oc=5",
+            "published": "Fri, 06 Nov 2026 18:33:37 GMT"
+          },
+          {
+            "title": "How Timberwolves’ Starting Lineup Matches Up vs. Pelicans on Friday Night - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRjhzU0lheE91b3JjMk9HWG9BcGlsMTd1RUNZRXdlbklzR3FkdlA2VnE0NmsycGEzU1B2NEFvcXFvQkFnLXNNcGNJRHRXRXF0a3hHWEw5X1pidkdUQllTZUZvYXBXZHQ4c0lIb1lwSEV6Tmh2V25Ccl9ZMkdKemphdTZJNlhicFZ2SmdvZ1NJeGlFTk42ZFpnNmhjdWFzNmtRcm4xWFhsbDJIVFlpNXk1ZVpjMFYtV25HVXJSOG10UQ?oc=5",
+            "published": "Fri, 06 Nov 2026 17:00:01 GMT"
+          },
+          {
+            "title": "NBA Cup group stage: Timberwolves at Pelicans (11/6/2026) - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZGRsMkVhY0xDTkp6cjRyMGRHUEgyWEE3d2NTUUxCaFJWTDBNYktoQ0tBQVhWTHlVVWtjQkNNUTdyMTRqUHl6VXF1bzJXQXFQYlV6VGJkX3p3ejNES1dLcmdXZmZTNmdjdHoyc3VMSE1DY2dxY205am5DdG9QZE5VbkxWR21WMGs?oc=5",
+            "published": "Fri, 06 Nov 2026 19:11:53 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Timberwolves+Pelicans&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:18.969791+00:00"
+      }
+    },
+    {
+      "id": "401909294",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T03:00Z",
+      "home": {
+        "id": "13",
+        "abbr": "LAL",
+        "name": "Los Angeles Lakers"
+      },
+      "away": {
+        "id": "22",
+        "abbr": "POR",
+        "name": "Portland Trail Blazers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909294",
+      "prediction": {
+        "home_pct": 50.3,
+        "reason": "Ventaja por ventaja de localía.",
+        "away_pct": 49.7,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -1.64,
+          "recent_margin_component": -0.13,
+          "recent_wins_component": -0.13,
+          "scoring_component": -0.14,
+          "rest_component": 0.0,
+          "player_component": -0.03
+        },
+        "elo": {
+          "home": 1542,
+          "away": 1579
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Portland Trail Blazers @ Los Angeles Lakers: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYmI3WnNxU2YyNVVReG9hdGlyTkhzOW55ZE5qcm1TUzgwdHY4TVY5dHhEdVc3Um9sd0UwcUhydWo4TFY2WEEzTS1kNFRFSTl1dzVTTVU0VHVLVEZSOS12Sksyb0F5LXBPUldnLU5ia21tRjBTVVczR2hCTE02QVllSlJSRkVVVWR1elE?oc=5",
+            "published": "Fri, 06 Nov 2026 18:33:34 GMT"
+          },
+          {
+            "title": "Emirates NBA Cup Preview: Blazers vs Lakers - Blazer's Edge",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWXJJbGkyVDAwQUt2Qk9jcktxemRCLUNKalZ5WDFSbXVFOUF1LWNvTFJZZW9FMkpObHdNajV0MFpOa3lDWnM4SVBZTUFBM0tVOTNpdEx0MURSVkVvQ2VJdGt1MXdCSXJHNG15TlE5b3dNR0VZTFBpTlJLb09iQllPamxRcVlIaEhxOGRJeXRSWVRnNlREa1RBYmhUcDNjd0RnYURtVTlUOGp2YTZzaUhGYWZGa0l1Tlk4dEJDeEIyZkxncHpZa1J4bkN4ZUtyTU1CRWJ3QzZDdkJvZ3JvNWZWc1NCajgzUHowQk1EcVpqckowZw?oc=5",
+            "published": "Fri, 06 Nov 2026 18:40:41 GMT"
+          },
+          {
+            "title": "Portland Trail Blazers @ Los Angeles Lakers Odds - FanDuel Sportsbook",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY0F1RjgxMEh5c3MxS1FVQmlUMERYMV9uVDZscXZJT3BBeDhVOGFpX3p6UWZ4ZnVFQUZfaU13MHJKS1JHTlRlM3RDSGZhbUMzOFRXSDJ3Y293RGlhdzZ5X1pIanBtQllPbUZ1NUlXSnNXYVZQZlF6NDVRdEI4N21LcTJRSEZSaVRuN3RkNkhuWmJ5ZUk0aWczZkFHTFB1UmM?oc=5",
+            "published": "Fri, 06 Nov 2026 18:22:45 GMT"
+          },
+          {
+            "title": "Trail Blazers vs. Lakers Prediction, Odds and Best Prop Bets for NBA Cup Group Play - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZMcU9lVUhnZzNRZk5ZT1B5c0hWWHdFOXBEc3UyeVQzZmJQSGFvZnY0bFZJZVVKMzdSV2EtajI1T0FuTHNXYWVpTkhNZnp2bmpIcWkzR1Iyd0dsaEFMUlBVVGVnS2ZHWlF1MThzT05VVHBGU0tHdXgtNElzU2xzdHRZcmxaM0FMQmdvaE8ybmp6Z3Q3SllfZnpVd1BfQjJRUGhvdXNHcmFJZmU1UWJXVEhsSWdDeTJtNnZMUVFB?oc=5",
+            "published": "Fri, 06 Nov 2026 19:30:19 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Blazers+Lakers&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:19.664842+00:00"
+      }
+    },
+    {
+      "id": "401909295",
+      "date": "2026-11-06",
+      "datetime": "2026-11-07T03:00Z",
+      "home": {
+        "id": "23",
+        "abbr": "SAC",
+        "name": "Sacramento Kings"
+      },
+      "away": {
+        "id": "24",
+        "abbr": "SA",
+        "name": "San Antonio Spurs"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909295",
+      "prediction": {
+        "home_pct": 27.0,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 73.0,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -5.95,
+          "recent_margin_component": -4.92,
+          "recent_wins_component": -1.7,
+          "scoring_component": -1.44,
+          "rest_component": 0.0,
+          "player_component": -0.14
+        },
+        "elo": {
+          "home": 1397,
+          "away": 1530
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "San Antonio Spurs @ Sacramento Kings: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOXJUMlhWNENHYTJQdzlicnRDMzVkVUgwUUVadXlUemhEWWlRcGprc21MclFhc0Z3TEJJYkVBdnRFNDYxeFZWbnJzRXQtQXVKZ01tbU5ZYjVSazJCNUloclplS3pKMUFzQ09nclNmR2dhY3Y1b0ltVDJBdlNrYVhqNw?oc=5",
+            "published": "Fri, 06 Nov 2026 19:18:01 GMT"
+          },
+          {
+            "title": "Kings Announce Healthiest Injury Report of the Season vs. Spurs - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRDB1OTA2ZndZelhLb2lNSnNkcmRkUTAyY1Y2V3V0VDlHaC1lM0NENTFOMGFGSXk2U3pmSlRXLUlvWkR4ZEZ5NWUzSDZXWmlZVFF2cUNvR19ndVVXOHYzZjluazhDaXBVY0tEVTBoa3lpYlhHZXBKTHhqWkpYVmctTnZrdWdraXZjeXNtX0xXTGluandHVHhBRENvbFVHc1Q3?oc=5",
+            "published": "Fri, 06 Nov 2026 15:00:00 GMT"
+          },
+          {
+            "title": "Game Preview: San Antonio Spurs vs. Sacramento Kings - Pounding The Rock",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOUdDclpzc0ZsXzNtcmkzMklqalpLZXkwUVBHcm9JNFJHZDNydTE4MkVqNVg1RGNhOUdPY0ZaM3pKY085LTlOUkRtYUI1bEJMLWZhcU95S1VGdlhEcjFtQ1FlME5iSFp5cUpYbmdLTmNCcG1IenF3QURLTzZUM1ZIVkotbUpxakIzZDVBa0JMWEliQjg3WGx6bDVDeWVmNGs3YnRJSWRNYWFDVHRkQmc?oc=5",
+            "published": "Fri, 06 Nov 2026 13:00:00 GMT"
+          },
+          {
+            "title": "Spurs vs. Kings: Can Sacramento Stop Victor Wembanyama’s Momentum? - Athlon Sports",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRTFHTENZdFRvUllvQWZqSnBONHNBMmpmQWM0ZUdPc0JtTHlhcGl5NFJSaE5ZeTVNMmdkeXF4U2ZfRkFJQzRYemhoQ2ZtZDM2YUlLY2JrODZEdHpWb2Q2R0lxTVQwX01JeWdWMkJqc19kUkdtcnlmeEhmYkxaa1Q5TS1tc1ozRFVaNEZ0TC1qdFNmTkFyNmExYkdvbHllU2ZCdWM3eg?oc=5",
+            "published": "Fri, 06 Nov 2026 20:08:16 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Spurs+Kings&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-06T20:46:20.311013+00:00"
+      }
+    },
+    {
+      "id": "401909938",
+      "date": "2026-11-07",
+      "datetime": "2026-11-07T22:00Z",
+      "home": {
+        "id": "11",
+        "abbr": "IND",
+        "name": "Indiana Pacers"
+      },
+      "away": {
+        "id": "7",
+        "abbr": "DEN",
+        "name": "Denver Nuggets"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909938",
+      "prediction": {
+        "home_pct": 42.7,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 57.3,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -3.26,
+          "recent_margin_component": -1.46,
+          "recent_wins_component": -0.78,
+          "scoring_component": -0.4,
+          "rest_component": 0.0,
+          "player_component": 0.19
+        },
+        "elo": {
+          "home": 1449,
+          "away": 1521
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909939",
+      "date": "2026-11-07",
+      "datetime": "2026-11-08T00:30Z",
+      "home": {
+        "id": "1",
+        "abbr": "ATL",
+        "name": "Atlanta Hawks"
+      },
+      "away": {
+        "id": "17",
+        "abbr": "BKN",
+        "name": "Brooklyn Nets"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909939",
+      "prediction": {
+        "home_pct": 64.4,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+        "away_pct": 35.6,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 2.86,
+          "recent_margin_component": 1.0,
+          "recent_wins_component": 0.57,
+          "scoring_component": 0.35,
+          "rest_component": 0.0,
+          "player_component": 0.11
+        },
+        "elo": {
+          "home": 1541,
+          "away": 1478
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909940",
+      "date": "2026-11-07",
+      "datetime": "2026-11-08T01:00Z",
+      "home": {
+        "id": "5",
+        "abbr": "CLE",
+        "name": "Cleveland Cavaliers"
+      },
+      "away": {
+        "id": "18",
+        "abbr": "NY",
+        "name": "New York Knicks"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909940",
+      "prediction": {
+        "home_pct": 52.5,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "away_pct": 47.5,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 0.58,
+          "recent_margin_component": -1.02,
+          "recent_wins_component": -0.44,
+          "scoring_component": -0.31,
+          "rest_component": 0.0,
+          "player_component": 0.16
+        },
+        "elo": {
+          "home": 1489,
+          "away": 1476
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909941",
+      "date": "2026-11-07",
+      "datetime": "2026-11-08T01:00Z",
+      "home": {
+        "id": "25",
+        "abbr": "OKC",
+        "name": "Oklahoma City Thunder"
+      },
+      "away": {
+        "id": "27",
+        "abbr": "WSH",
+        "name": "Washington Wizards"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909941",
+      "prediction": {
+        "home_pct": 56.7,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "away_pct": 43.3,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 0.76,
+          "recent_margin_component": -0.11,
+          "recent_wins_component": 0.57,
+          "scoring_component": -0.04,
+          "rest_component": 0.0,
+          "player_component": -0.16
+        },
+        "elo": {
+          "home": 1515,
+          "away": 1498
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909942",
+      "date": "2026-11-07",
+      "datetime": "2026-11-08T01:30Z",
+      "home": {
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors"
+      },
+      "away": {
+        "id": "19",
+        "abbr": "ORL",
+        "name": "Orlando Magic"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909942",
+      "prediction": {
+        "home_pct": 72.8,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 27.2,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 3.93,
+          "recent_margin_component": 3.59,
+          "recent_wins_component": 1.35,
+          "scoring_component": 1.01,
+          "rest_component": 0.0,
+          "player_component": -0.3
+        },
+        "elo": {
+          "home": 1558,
+          "away": 1471
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909943",
+      "date": "2026-11-07",
+      "datetime": "2026-11-08T02:00Z",
+      "home": {
+        "id": "21",
+        "abbr": "PHX",
+        "name": "Phoenix Suns"
+      },
+      "away": {
+        "id": "10",
+        "abbr": "HOU",
+        "name": "Houston Rockets"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909943",
+      "prediction": {
+        "home_pct": 35.7,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 64.3,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -5.35,
+          "recent_margin_component": -2.82,
+          "recent_wins_component": -0.96,
+          "scoring_component": -0.88,
+          "rest_component": 0.0,
+          "player_component": 0.75
+        },
+        "elo": {
+          "home": 1443,
+          "away": 1562
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909944",
+      "date": "2026-11-07",
+      "datetime": "2026-11-08T03:00Z",
+      "home": {
+        "id": "22",
+        "abbr": "POR",
+        "name": "Portland Trail Blazers"
+      },
+      "away": {
+        "id": "24",
+        "abbr": "SA",
+        "name": "San Antonio Spurs"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909944",
+      "prediction": {
+        "home_pct": 58.5,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "away_pct": 41.5,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 2.2,
+          "recent_margin_component": -0.59,
+          "recent_wins_component": -0.13,
+          "scoring_component": -0.08,
+          "rest_component": 0.0,
+          "player_component": 0.52
+        },
+        "elo": {
+          "home": 1579,
+          "away": 1530
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909945",
+      "date": "2026-11-08",
+      "datetime": "2026-11-08T20:30Z",
+      "home": {
+        "id": "4",
+        "abbr": "CHI",
+        "name": "Chicago Bulls"
+      },
+      "away": {
+        "id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909945",
+      "prediction": {
+        "home_pct": 28.5,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 71.5,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -4.91,
+          "recent_margin_component": -4.33,
+          "recent_wins_component": -1.83,
+          "scoring_component": -1.36,
+          "rest_component": 0.0,
+          "player_component": -0.78
+        },
+        "elo": {
+          "home": 1446,
+          "away": 1555
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909946",
+      "date": "2026-11-08",
+      "datetime": "2026-11-08T23:00Z",
+      "home": {
+        "id": "8",
+        "abbr": "DET",
+        "name": "Detroit Pistons"
+      },
+      "away": {
+        "id": "13",
+        "abbr": "LAL",
+        "name": "Los Angeles Lakers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909946",
+      "prediction": {
+        "home_pct": 57.2,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "away_pct": 42.8,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 1.07,
+          "recent_margin_component": 0.22,
+          "recent_wins_component": -0.13,
+          "scoring_component": 0.14,
+          "rest_component": 0.0,
+          "player_component": -0.02
+        },
+        "elo": {
+          "home": 1566,
+          "away": 1542
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909947",
+      "date": "2026-11-08",
+      "datetime": "2026-11-09T00:00Z",
+      "home": {
+        "id": "16",
+        "abbr": "MIN",
+        "name": "Minnesota Timberwolves"
+      },
+      "away": {
+        "id": "26",
+        "abbr": "UTAH",
+        "name": "Utah Jazz"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909947",
+      "prediction": {
+        "home_pct": 74.8,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 25.2,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 4.35,
+          "recent_margin_component": 4.22,
+          "recent_wins_component": 1.22,
+          "scoring_component": 1.16,
+          "rest_component": 0.0,
+          "player_component": -0.08
+        },
+        "elo": {
+          "home": 1543,
+          "away": 1446
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909948",
+      "date": "2026-11-08",
+      "datetime": "2026-11-09T00:30Z",
+      "home": {
+        "id": "6",
+        "abbr": "DAL",
+        "name": "Dallas Mavericks"
+      },
+      "away": {
+        "id": "17",
+        "abbr": "BKN",
+        "name": "Brooklyn Nets"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909948",
+      "prediction": {
+        "home_pct": 57.1,
+        "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "away_pct": 42.9,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -0.07,
+          "recent_margin_component": 0.88,
+          "recent_wins_component": 0.26,
+          "scoring_component": 0.25,
+          "rest_component": 0.0,
+          "player_component": -0.11
+        },
+        "elo": {
+          "home": 1476,
+          "away": 1478
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909949",
+      "date": "2026-11-08",
+      "datetime": "2026-11-09T01:00Z",
+      "home": {
+        "id": "15",
+        "abbr": "MIL",
+        "name": "Milwaukee Bucks"
+      },
+      "away": {
+        "id": "2",
+        "abbr": "BOS",
+        "name": "Boston Celtics"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909949",
+      "prediction": {
+        "home_pct": 29.2,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 70.8,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -7.0,
+          "recent_margin_component": -3.64,
+          "recent_wins_component": -1.53,
+          "scoring_component": -1.1,
+          "rest_component": 0.0,
+          "player_component": 0.42
+        },
+        "elo": {
+          "home": 1421,
+          "away": 1576
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909950",
+      "date": "2026-11-08",
+      "datetime": "2026-11-09T02:00Z",
+      "home": {
+        "id": "12",
+        "abbr": "LAC",
+        "name": "LA Clippers"
+      },
+      "away": {
+        "id": "3",
+        "abbr": "NO",
+        "name": "New Orleans Pelicans"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909950",
+      "prediction": {
+        "home_pct": 37.8,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 62.2,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -3.69,
+          "recent_margin_component": -2.56,
+          "recent_wins_component": -1.4,
+          "scoring_component": -0.7,
+          "rest_component": 0.0,
+          "player_component": 0.17
+        },
+        "elo": {
+          "home": 1439,
+          "away": 1521
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    },
+    {
+      "id": "401909951",
+      "date": "2026-11-08",
+      "datetime": "2026-11-09T02:00Z",
+      "home": {
+        "id": "23",
+        "abbr": "SAC",
+        "name": "Sacramento Kings"
+      },
+      "away": {
+        "id": "14",
+        "abbr": "MIA",
+        "name": "Miami Heat"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909951",
+      "prediction": {
+        "home_pct": 40.9,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 59.1,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -3.72,
+          "recent_margin_component": -1.37,
+          "recent_wins_component": -0.57,
+          "scoring_component": -0.45,
+          "rest_component": 0.0,
+          "player_component": -0.5
+        },
+        "elo": {
+          "home": 1397,
+          "away": 1480
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      }
+    }
   ],
-  "teams": {},
-  "validation": {"completed_predictions":0,"brier_score":null},
-  "demo_seed": true
+  "teams": {
+    "1": {
+      "id": "1",
+      "abbr": "ATL",
+      "name": "Atlanta Hawks",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 6,
+        "margin": -0.11,
+        "win_rate": 0.582,
+        "points_for": 113.7,
+        "points_against": 112.6,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "WSH",
+            "points": 120,
+            "opponent_points": 105,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "IND",
+            "points": 108,
+            "opponent_points": 104,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "NO",
+            "points": 99,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-29",
+            "opponent": "CLE",
+            "points": 114,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "MIA",
+            "points": 117,
+            "opponent_points": 129,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "HOU",
+            "points": 110,
+            "opponent_points": 120,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "HOU",
+            "points": 114,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "CHA",
+            "points": 128,
+            "opponent_points": 81,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "ORL",
+            "points": 132,
+            "opponent_points": 125,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "DAL",
+            "points": 135,
+            "opponent_points": 111,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Nickeil Alexander-Walker",
+          "games": 5,
+          "pts": 24.0,
+          "reb": 3.2,
+          "ast": 1.8,
+          "recent_points": [
+            26.0,
+            34.0,
+            12.0,
+            25.0,
+            23.0
+          ]
+        },
+        {
+          "name": "Onyeka Okongwu",
+          "games": 5,
+          "pts": 14.6,
+          "reb": 10.4,
+          "ast": 2.8,
+          "recent_points": [
+            14.0,
+            13.0,
+            6.0,
+            29.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Jalen Johnson",
+          "games": 3,
+          "pts": 14.0,
+          "reb": 8.0,
+          "ast": 7.3,
+          "recent_points": [
+            13.0,
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "name": "Kingston Flemings",
+          "games": 4,
+          "pts": 12.8,
+          "reb": 2.8,
+          "ast": 5.0,
+          "recent_points": [
+            14.0,
+            12.0,
+            2.0,
+            23.0
+          ]
+        },
+        {
+          "name": "Aaron Wiggins",
+          "games": 5,
+          "pts": 12.4,
+          "reb": 4.0,
+          "ast": 2.2,
+          "recent_points": [
+            15.0,
+            7.0,
+            10.0,
+            20.0,
+            10.0
+          ]
+        }
+      ],
+      "player_trend": 0.30833333333333335
+    },
+    "27": {
+      "id": "27",
+      "abbr": "WSH",
+      "name": "Washington Wizards",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 4,
+        "margin": -0.87,
+        "win_rate": 0.455,
+        "points_for": 106.9,
+        "points_against": 107.7,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "ATL",
+            "points": 105,
+            "opponent_points": 120,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "ORL",
+            "points": 103,
+            "opponent_points": 94,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "CHA",
+            "points": 95,
+            "opponent_points": 79,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "CLE",
+            "points": 111,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "CHA",
+            "points": 103,
+            "opponent_points": 110,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "CHI",
+            "points": 124,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "TOR",
+            "points": 102,
+            "opponent_points": 112,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "MIL",
+            "points": 128,
+            "opponent_points": 116,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "NO",
+            "points": 106,
+            "opponent_points": 107,
+            "win": false
+          },
+          {
+            "date": "2026-10-12",
+            "opponent": "BKN",
+            "points": 122,
+            "opponent_points": 131,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Anthony Davis",
+          "games": 5,
+          "pts": 25.0,
+          "reb": 9.4,
+          "ast": 1.6,
+          "recent_points": [
+            26.0,
+            27.0,
+            25.0,
+            18.0,
+            29.0
+          ]
+        },
+        {
+          "name": "Trae Young",
+          "games": 5,
+          "pts": 18.0,
+          "reb": 4.4,
+          "ast": 8.4,
+          "recent_points": [
+            18.0,
+            15.0,
+            21.0,
+            14.0,
+            22.0
+          ]
+        },
+        {
+          "name": "Kyshawn George",
+          "games": 5,
+          "pts": 17.4,
+          "reb": 3.4,
+          "ast": 5.6,
+          "recent_points": [
+            25.0,
+            22.0,
+            12.0,
+            8.0,
+            20.0
+          ]
+        },
+        {
+          "name": "AJ Dybantsa",
+          "games": 4,
+          "pts": 16.5,
+          "reb": 5.0,
+          "ast": 2.0,
+          "recent_points": [
+            9.0,
+            21.0,
+            17.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Alex Sarr",
+          "games": 4,
+          "pts": 11.0,
+          "reb": 6.8,
+          "ast": 1.0,
+          "recent_points": [
+            11.0,
+            3.0,
+            18.0,
+            12.0
+          ]
+        }
+      ],
+      "player_trend": 0.26666666666666666
+    },
+    "30": {
+      "id": "30",
+      "abbr": "CHA",
+      "name": "Charlotte Hornets",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -9.98,
+        "win_rate": 0.2,
+        "points_for": 97.3,
+        "points_against": 109.7,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "BKN",
+            "points": 104,
+            "opponent_points": 114,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "DET",
+            "points": 91,
+            "opponent_points": 124,
+            "win": false
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "PHI",
+            "points": 104,
+            "opponent_points": 109,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "WSH",
+            "points": 79,
+            "opponent_points": 95,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "DET",
+            "points": 89,
+            "opponent_points": 97,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "WSH",
+            "points": 110,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "MIA",
+            "points": 115,
+            "opponent_points": 110,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "ATL",
+            "points": 81,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "BKN",
+            "points": 110,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "MEM",
+            "points": 98,
+            "opponent_points": 116,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Brandon Miller",
+          "games": 5,
+          "pts": 20.2,
+          "reb": 5.8,
+          "ast": 3.0,
+          "recent_points": [
+            10.0,
+            17.0,
+            24.0,
+            19.0,
+            31.0
+          ]
+        },
+        {
+          "name": "Naz Reid",
+          "games": 5,
+          "pts": 14.8,
+          "reb": 7.4,
+          "ast": 1.4,
+          "recent_points": [
+            28.0,
+            13.0,
+            14.0,
+            12.0,
+            7.0
+          ]
+        },
+        {
+          "name": "Grayson Allen",
+          "games": 5,
+          "pts": 14.8,
+          "reb": 3.0,
+          "ast": 2.2,
+          "recent_points": [
+            22.0,
+            11.0,
+            27.0,
+            5.0,
+            9.0
+          ]
+        },
+        {
+          "name": "Moussa Diabate",
+          "games": 5,
+          "pts": 8.6,
+          "reb": 8.8,
+          "ast": 2.0,
+          "recent_points": [
+            7.0,
+            7.0,
+            10.0,
+            10.0,
+            9.0
+          ]
+        },
+        {
+          "name": "Dennis Schroder",
+          "games": 5,
+          "pts": 7.2,
+          "reb": 3.2,
+          "ast": 5.0,
+          "recent_points": [
+            5.0,
+            5.0,
+            4.0,
+            8.0,
+            14.0
+          ]
+        }
+      ],
+      "player_trend": 0.09444444444444447
+    },
+    "2": {
+      "id": "2",
+      "abbr": "BOS",
+      "name": "Boston Celtics",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 4.84,
+        "win_rate": 0.782,
+        "points_for": 113.0,
+        "points_against": 107.3,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MIL",
+            "points": 109,
+            "opponent_points": 102,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "HOU",
+            "points": 93,
+            "opponent_points": 109,
+            "win": false
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "ORL",
+            "points": 108,
+            "opponent_points": 97,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "CHI",
+            "points": 125,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "BKN",
+            "points": 125,
+            "opponent_points": 124,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "CHI",
+            "points": 134,
+            "opponent_points": 99,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "NY",
+            "points": 107,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-10-20",
+            "opponent": "DET",
+            "points": 113,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "PHI",
+            "points": 125,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "CHA",
+            "points": 114,
+            "opponent_points": 93,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Jayson Tatum",
+          "games": 4,
+          "pts": 29.2,
+          "reb": 5.5,
+          "ast": 7.8,
+          "recent_points": [
+            19.0,
+            32.0,
+            26.0,
+            40.0
+          ]
+        },
+        {
+          "name": "Paul George",
+          "games": 4,
+          "pts": 20.0,
+          "reb": 5.5,
+          "ast": 7.0,
+          "recent_points": [
+            25.0,
+            17.0,
+            18.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Derrick White",
+          "games": 5,
+          "pts": 13.6,
+          "reb": 3.0,
+          "ast": 4.6,
+          "recent_points": [
+            24.0,
+            7.0,
+            12.0,
+            9.0,
+            16.0
+          ]
+        },
+        {
+          "name": "Payton Pritchard",
+          "games": 5,
+          "pts": 11.0,
+          "reb": 3.2,
+          "ast": 4.0,
+          "recent_points": [
+            10.0,
+            4.0,
+            7.0,
+            30.0,
+            4.0
+          ]
+        },
+        {
+          "name": "Neemias Queta",
+          "games": 5,
+          "pts": 10.6,
+          "reb": 7.0,
+          "ast": 1.4,
+          "recent_points": [
+            9.0,
+            16.0,
+            8.0,
+            13.0,
+            7.0
+          ]
+        }
+      ],
+      "player_trend": -0.0777777777777778
+    },
+    "5": {
+      "id": "5",
+      "abbr": "CLE",
+      "name": "Cleveland Cavaliers",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 5,
+        "margin": 1.78,
+        "win_rate": 0.436,
+        "points_for": 119.3,
+        "points_against": 117.5,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "OKC",
+            "points": 116,
+            "opponent_points": 124,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "OKC",
+            "points": 112,
+            "opponent_points": 117,
+            "win": false
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "MIL",
+            "points": 136,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-29",
+            "opponent": "ATL",
+            "points": 111,
+            "opponent_points": 114,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "WSH",
+            "points": 121,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "MIN",
+            "points": 127,
+            "opponent_points": 125,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "BKN",
+            "points": 125,
+            "opponent_points": 121,
+            "win": true
+          },
+          {
+            "date": "2026-10-22",
+            "opponent": "PHI",
+            "points": 106,
+            "opponent_points": 114,
+            "win": false
+          },
+          {
+            "date": "2026-10-13",
+            "opponent": "ORL",
+            "points": 116,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-10-11",
+            "opponent": "ORL",
+            "points": 119,
+            "opponent_points": 105,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Donovan Mitchell",
+          "games": 5,
+          "pts": 20.0,
+          "reb": 4.0,
+          "ast": 6.0,
+          "recent_points": [
+            27.0,
+            17.0,
+            15.0,
+            22.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Evan Mobley",
+          "games": 5,
+          "pts": 18.8,
+          "reb": 7.6,
+          "ast": 3.8,
+          "recent_points": [
+            16.0,
+            16.0,
+            27.0,
+            11.0,
+            24.0
+          ]
+        },
+        {
+          "name": "James Harden",
+          "games": 5,
+          "pts": 17.2,
+          "reb": 5.2,
+          "ast": 5.8,
+          "recent_points": [
+            19.0,
+            14.0,
+            13.0,
+            24.0,
+            16.0
+          ]
+        },
+        {
+          "name": "Jarrett Allen",
+          "games": 5,
+          "pts": 12.2,
+          "reb": 7.6,
+          "ast": 1.6,
+          "recent_points": [
+            0.0,
+            14.0,
+            25.0,
+            14.0,
+            8.0
+          ]
+        },
+        {
+          "name": "Meleek Thomas",
+          "games": 4,
+          "pts": 12.2,
+          "reb": 2.8,
+          "ast": 1.0,
+          "recent_points": [
+            9.0,
+            17.0,
+            13.0,
+            10.0
+          ]
+        }
+      ],
+      "player_trend": -0.08333333333333345
+    },
+    "20": {
+      "id": "20",
+      "abbr": "PHI",
+      "name": "Philadelphia 76ers",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 6.29,
+        "win_rate": 0.891,
+        "points_for": 111.7,
+        "points_against": 105.4,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "DET",
+            "points": 112,
+            "opponent_points": 106,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "CHI",
+            "points": 126,
+            "opponent_points": 107,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "CHA",
+            "points": 109,
+            "opponent_points": 104,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "NY",
+            "points": 98,
+            "opponent_points": 93,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "IND",
+            "points": 114,
+            "opponent_points": 109,
+            "win": true
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "DET",
+            "points": 93,
+            "opponent_points": 106,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "MIL",
+            "points": 127,
+            "opponent_points": 116,
+            "win": true
+          },
+          {
+            "date": "2026-10-22",
+            "opponent": "CLE",
+            "points": 114,
+            "opponent_points": 106,
+            "win": true
+          },
+          {
+            "date": "2026-10-20",
+            "opponent": "NY",
+            "points": 106,
+            "opponent_points": 100,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "BOS",
+            "points": 120,
+            "opponent_points": 125,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Tyrese Maxey",
+          "games": 5,
+          "pts": 27.4,
+          "reb": 3.6,
+          "ast": 6.0,
+          "recent_points": [
+            19.0,
+            26.0,
+            38.0,
+            27.0,
+            27.0
+          ]
+        },
+        {
+          "name": "Jaylen Brown",
+          "games": 4,
+          "pts": 22.8,
+          "reb": 8.0,
+          "ast": 3.0,
+          "recent_points": [
+            30.0,
+            25.0,
+            16.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Joel Embiid",
+          "games": 4,
+          "pts": 18.0,
+          "reb": 10.2,
+          "ast": 3.5,
+          "recent_points": [
+            26.0,
+            15.0,
+            10.0,
+            21.0
+          ]
+        },
+        {
+          "name": "LeBron James",
+          "games": 4,
+          "pts": 15.2,
+          "reb": 7.8,
+          "ast": 8.8,
+          "recent_points": [
+            13.0,
+            15.0,
+            20.0,
+            13.0
+          ]
+        },
+        {
+          "name": "Anfernee Simons",
+          "games": 5,
+          "pts": 13.2,
+          "reb": 1.6,
+          "ast": 1.0,
+          "recent_points": [
+            0.0,
+            6.0,
+            19.0,
+            21.0,
+            20.0
+          ]
+        }
+      ],
+      "player_trend": 0.16666666666666669
+    },
+    "6": {
+      "id": "6",
+      "abbr": "DAL",
+      "name": "Dallas Mavericks",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 4,
+        "margin": -0.64,
+        "win_rate": 0.455,
+        "points_for": 111.3,
+        "points_against": 111.9,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "SA",
+            "points": 111,
+            "opponent_points": 112,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "SAC",
+            "points": 100,
+            "opponent_points": 115,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "HOU",
+            "points": 116,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "OKC",
+            "points": 120,
+            "opponent_points": 96,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "MIA",
+            "points": 113,
+            "opponent_points": 109,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "SA",
+            "points": 106,
+            "opponent_points": 122,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "IND",
+            "points": 121,
+            "opponent_points": 105,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "HOU",
+            "points": 110,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "ATL",
+            "points": 111,
+            "opponent_points": 135,
+            "win": false
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "NO",
+            "points": 97,
+            "opponent_points": 101,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Cooper Flagg",
+          "games": 5,
+          "pts": 24.8,
+          "reb": 6.8,
+          "ast": 7.2,
+          "recent_points": [
+            19.0,
+            17.0,
+            33.0,
+            26.0,
+            29.0
+          ]
+        },
+        {
+          "name": "Kyrie Irving",
+          "games": 4,
+          "pts": 24.2,
+          "reb": 4.8,
+          "ast": 6.0,
+          "recent_points": [
+            29.0,
+            35.0,
+            15.0,
+            18.0
+          ]
+        },
+        {
+          "name": "P.J. Washington",
+          "games": 5,
+          "pts": 14.8,
+          "reb": 8.6,
+          "ast": 1.4,
+          "recent_points": [
+            21.0,
+            12.0,
+            3.0,
+            18.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Naji Marshall",
+          "games": 2,
+          "pts": 13.5,
+          "reb": 3.5,
+          "ast": 5.0,
+          "recent_points": [
+            22.0,
+            5.0
+          ]
+        },
+        {
+          "name": "Daniel Gafford",
+          "games": 5,
+          "pts": 11.0,
+          "reb": 7.6,
+          "ast": 1.6,
+          "recent_points": [
+            2.0,
+            20.0,
+            18.0,
+            7.0,
+            8.0
+          ]
+        }
+      ],
+      "player_trend": 0.09444444444444447
+    },
+    "26": {
+      "id": "26",
+      "abbr": "UTAH",
+      "name": "Utah Jazz",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -10.93,
+        "win_rate": 0.127,
+        "points_for": 107.1,
+        "points_against": 118.0,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "NO",
+            "points": 113,
+            "opponent_points": 120,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "SA",
+            "points": 97,
+            "opponent_points": 119,
+            "win": false
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "POR",
+            "points": 90,
+            "opponent_points": 112,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "SA",
+            "points": 111,
+            "opponent_points": 117,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "MEM",
+            "points": 105,
+            "opponent_points": 110,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "LAL",
+            "points": 123,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "NO",
+            "points": 120,
+            "opponent_points": 119,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "MEM",
+            "points": 103,
+            "opponent_points": 123,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "PHX",
+            "points": 119,
+            "opponent_points": 116,
+            "win": true
+          },
+          {
+            "date": "2026-10-12",
+            "opponent": "SA",
+            "points": 119,
+            "opponent_points": 109,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Keyonte George",
+          "games": 5,
+          "pts": 22.2,
+          "reb": 3.8,
+          "ast": 4.4,
+          "recent_points": [
+            39.0,
+            7.0,
+            8.0,
+            31.0,
+            26.0
+          ]
+        },
+        {
+          "name": "Lauri Markkanen",
+          "games": 4,
+          "pts": 14.5,
+          "reb": 6.0,
+          "ast": 2.0,
+          "recent_points": [
+            21.0,
+            22.0,
+            13.0,
+            2.0
+          ]
+        },
+        {
+          "name": "Darryn Peterson",
+          "games": 5,
+          "pts": 13.8,
+          "reb": 4.4,
+          "ast": 4.8,
+          "recent_points": [
+            7.0,
+            14.0,
+            16.0,
+            18.0,
+            14.0
+          ]
+        },
+        {
+          "name": "Ace Bailey",
+          "games": 5,
+          "pts": 13.0,
+          "reb": 6.8,
+          "ast": 1.4,
+          "recent_points": [
+            15.0,
+            5.0,
+            9.0,
+            19.0,
+            17.0
+          ]
+        },
+        {
+          "name": "Brice Sensabaugh",
+          "games": 5,
+          "pts": 10.4,
+          "reb": 2.4,
+          "ast": 0.8,
+          "recent_points": [
+            6.0,
+            7.0,
+            12.0,
+            16.0,
+            11.0
+          ]
+        }
+      ],
+      "player_trend": 0.12777777777777774
+    },
+    "29": {
+      "id": "29",
+      "abbr": "MEM",
+      "name": "Memphis Grizzlies",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 9.0,
+        "win_rate": 0.655,
+        "points_for": 120.3,
+        "points_against": 110.4,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "IND",
+            "points": 103,
+            "opponent_points": 107,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "NO",
+            "points": 134,
+            "opponent_points": 135,
+            "win": false
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "SAC",
+            "points": 136,
+            "opponent_points": 105,
+            "win": true
+          },
+          {
+            "date": "2026-10-29",
+            "opponent": "POR",
+            "points": 124,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "UTAH",
+            "points": 110,
+            "opponent_points": 105,
+            "win": true
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "SAC",
+            "points": 123,
+            "opponent_points": 112,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "GS",
+            "points": 111,
+            "opponent_points": 108,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "UTAH",
+            "points": 123,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "CHA",
+            "points": 116,
+            "opponent_points": 98,
+            "win": true
+          },
+          {
+            "date": "2026-10-09",
+            "opponent": "CHI",
+            "points": 104,
+            "opponent_points": 100,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Ty Jerome",
+          "games": 4,
+          "pts": 22.0,
+          "reb": 3.0,
+          "ast": 4.8,
+          "recent_points": [
+            23.0,
+            40.0,
+            10.0,
+            15.0
+          ]
+        },
+        {
+          "name": "Cameron Boozer",
+          "games": 5,
+          "pts": 17.2,
+          "reb": 8.6,
+          "ast": 5.6,
+          "recent_points": [
+            10.0,
+            18.0,
+            27.0,
+            18.0,
+            13.0
+          ]
+        },
+        {
+          "name": "Cedric Coward",
+          "games": 5,
+          "pts": 15.2,
+          "reb": 8.6,
+          "ast": 3.2,
+          "recent_points": [
+            23.0,
+            10.0,
+            10.0,
+            17.0,
+            16.0
+          ]
+        },
+        {
+          "name": "Isaiah Stewart",
+          "games": 5,
+          "pts": 13.2,
+          "reb": 3.4,
+          "ast": 0.4,
+          "recent_points": [
+            6.0,
+            14.0,
+            24.0,
+            18.0,
+            4.0
+          ]
+        },
+        {
+          "name": "Jerami Grant",
+          "games": 5,
+          "pts": 10.2,
+          "reb": 2.2,
+          "ast": 1.6,
+          "recent_points": [
+            11.0,
+            11.0,
+            14.0,
+            2.0,
+            13.0
+          ]
+        }
+      ],
+      "player_trend": 0.16111111111111115
+    },
+    "25": {
+      "id": "25",
+      "abbr": "OKC",
+      "name": "Oklahoma City Thunder",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 7,
+        "margin": -1.35,
+        "win_rate": 0.691,
+        "points_for": 110.2,
+        "points_against": 111.7,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "CLE",
+            "points": 124,
+            "opponent_points": 116,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "CLE",
+            "points": 117,
+            "opponent_points": 112,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "HOU",
+            "points": 98,
+            "opponent_points": 119,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "DAL",
+            "points": 96,
+            "opponent_points": 120,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "PHX",
+            "points": 125,
+            "opponent_points": 114,
+            "win": true
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "LAC",
+            "points": 108,
+            "opponent_points": 101,
+            "win": true
+          },
+          {
+            "date": "2026-10-22",
+            "opponent": "DEN",
+            "points": 96,
+            "opponent_points": 84,
+            "win": true
+          },
+          {
+            "date": "2026-10-20",
+            "opponent": "SA",
+            "points": 116,
+            "opponent_points": 104,
+            "win": true
+          },
+          {
+            "date": "2026-10-15",
+            "opponent": "HOU",
+            "points": 89,
+            "opponent_points": 116,
+            "win": false
+          },
+          {
+            "date": "2026-10-13",
+            "opponent": "IND",
+            "points": 114,
+            "opponent_points": 112,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Shai Gilgeous-Alexander",
+          "games": 5,
+          "pts": 31.6,
+          "reb": 4.0,
+          "ast": 4.8,
+          "recent_points": [
+            42.0,
+            43.0,
+            26.0,
+            21.0,
+            26.0
+          ]
+        },
+        {
+          "name": "Ajay Mitchell",
+          "games": 5,
+          "pts": 21.6,
+          "reb": 4.2,
+          "ast": 3.6,
+          "recent_points": [
+            23.0,
+            20.0,
+            6.0,
+            29.0,
+            30.0
+          ]
+        },
+        {
+          "name": "Jared McCain",
+          "games": 5,
+          "pts": 10.8,
+          "reb": 4.2,
+          "ast": 2.4,
+          "recent_points": [
+            9.0,
+            7.0,
+            10.0,
+            10.0,
+            18.0
+          ]
+        },
+        {
+          "name": "Bennett Stirtz",
+          "games": 5,
+          "pts": 10.2,
+          "reb": 1.0,
+          "ast": 1.6,
+          "recent_points": [
+            16.0,
+            9.0,
+            11.0,
+            8.0,
+            7.0
+          ]
+        },
+        {
+          "name": "Kenrich Williams",
+          "games": 5,
+          "pts": 9.2,
+          "reb": 4.8,
+          "ast": 1.2,
+          "recent_points": [
+            13.0,
+            12.0,
+            11.0,
+            7.0,
+            3.0
+          ]
+        }
+      ],
+      "player_trend": 0.10555555555555554
+    },
+    "15": {
+      "id": "15",
+      "abbr": "MIL",
+      "name": "Milwaukee Bucks",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 2,
+        "margin": -11.69,
+        "win_rate": 0.145,
+        "points_for": 108.3,
+        "points_against": 120.9,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "BOS",
+            "points": 102,
+            "opponent_points": 109,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "MIN",
+            "points": 100,
+            "opponent_points": 112,
+            "win": false
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "CLE",
+            "points": 111,
+            "opponent_points": 136,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "HOU",
+            "points": 100,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "IND",
+            "points": 110,
+            "opponent_points": 102,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "PHI",
+            "points": 116,
+            "opponent_points": 127,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "CHI",
+            "points": 125,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "WSH",
+            "points": 116,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "IND",
+            "points": 128,
+            "opponent_points": 127,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "CHI",
+            "points": 104,
+            "opponent_points": 125,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Tyler Herro",
+          "games": 5,
+          "pts": 21.4,
+          "reb": 5.4,
+          "ast": 3.0,
+          "recent_points": [
+            25.0,
+            21.0,
+            15.0,
+            23.0,
+            23.0
+          ]
+        },
+        {
+          "name": "Jaime Jaquez Jr.",
+          "games": 5,
+          "pts": 14.4,
+          "reb": 5.4,
+          "ast": 2.2,
+          "recent_points": [
+            18.0,
+            19.0,
+            8.0,
+            19.0,
+            8.0
+          ]
+        },
+        {
+          "name": "Ryan Rollins",
+          "games": 5,
+          "pts": 11.0,
+          "reb": 4.2,
+          "ast": 4.6,
+          "recent_points": [
+            13.0,
+            10.0,
+            9.0,
+            4.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Brayden Burries",
+          "games": 5,
+          "pts": 9.2,
+          "reb": 5.0,
+          "ast": 1.4,
+          "recent_points": [
+            9.0,
+            9.0,
+            14.0,
+            10.0,
+            4.0
+          ]
+        },
+        {
+          "name": "Myles Turner",
+          "games": 5,
+          "pts": 9.0,
+          "reb": 6.4,
+          "ast": 3.2,
+          "recent_points": [
+            12.0,
+            13.0,
+            10.0,
+            4.0,
+            6.0
+          ]
+        }
+      ],
+      "player_trend": 0.34444444444444455
+    },
+    "28": {
+      "id": "28",
+      "abbr": "TOR",
+      "name": "Toronto Raptors",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 4,
+        "margin": -1.53,
+        "win_rate": 0.4,
+        "points_for": 117.8,
+        "points_against": 117.8,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "DEN",
+            "points": 109,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "LAC",
+            "points": 125,
+            "opponent_points": 118,
+            "win": true
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "LAL",
+            "points": 125,
+            "opponent_points": 131,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "ORL",
+            "points": 114,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "ORL",
+            "points": 129,
+            "opponent_points": 99,
+            "win": true
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "MIN",
+            "points": 94,
+            "opponent_points": 117,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "WSH",
+            "points": 112,
+            "opponent_points": 102,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "CHI",
+            "points": 135,
+            "opponent_points": 92,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "DET",
+            "points": 125,
+            "opponent_points": 129,
+            "win": false
+          },
+          {
+            "date": "2026-10-15",
+            "opponent": "NY",
+            "points": 120,
+            "opponent_points": 122,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Scottie Barnes",
+          "games": 5,
+          "pts": 27.4,
+          "reb": 7.6,
+          "ast": 5.6,
+          "recent_points": [
+            17.0,
+            22.0,
+            29.0,
+            41.0,
+            28.0
+          ]
+        },
+        {
+          "name": "RJ Barrett",
+          "games": 5,
+          "pts": 20.8,
+          "reb": 6.6,
+          "ast": 4.4,
+          "recent_points": [
+            22.0,
+            26.0,
+            22.0,
+            9.0,
+            25.0
+          ]
+        },
+        {
+          "name": "Immanuel Quickley",
+          "games": 5,
+          "pts": 17.0,
+          "reb": 4.0,
+          "ast": 6.2,
+          "recent_points": [
+            13.0,
+            27.0,
+            12.0,
+            17.0,
+            16.0
+          ]
+        },
+        {
+          "name": "Collin Murray-Boyles",
+          "games": 5,
+          "pts": 12.0,
+          "reb": 4.0,
+          "ast": 1.0,
+          "recent_points": [
+            13.0,
+            18.0,
+            4.0,
+            15.0,
+            10.0
+          ]
+        },
+        {
+          "name": "Ja'Kobe Walter",
+          "games": 5,
+          "pts": 10.4,
+          "reb": 3.8,
+          "ast": 2.4,
+          "recent_points": [
+            8.0,
+            10.0,
+            11.0,
+            9.0,
+            14.0
+          ]
+        }
+      ],
+      "player_trend": 0.07777777777777774
+    },
+    "3": {
+      "id": "3",
+      "abbr": "NO",
+      "name": "New Orleans Pelicans",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 6,
+        "margin": 4.07,
+        "win_rate": 0.673,
+        "points_for": 121.4,
+        "points_against": 117.4,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "UTAH",
+            "points": 120,
+            "opponent_points": 113,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "MEM",
+            "points": 135,
+            "opponent_points": 134,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "ATL",
+            "points": 121,
+            "opponent_points": 99,
+            "win": true
+          },
+          {
+            "date": "2026-10-29",
+            "opponent": "SAC",
+            "points": 132,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "DEN",
+            "points": 91,
+            "opponent_points": 104,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "DEN",
+            "points": 135,
+            "opponent_points": 141,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "UTAH",
+            "points": 119,
+            "opponent_points": 120,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "IND",
+            "points": 120,
+            "opponent_points": 123,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "WSH",
+            "points": 107,
+            "opponent_points": 106,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "DAL",
+            "points": 101,
+            "opponent_points": 97,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Zion Williamson",
+          "games": 5,
+          "pts": 22.0,
+          "reb": 6.4,
+          "ast": 2.8,
+          "recent_points": [
+            23.0,
+            25.0,
+            15.0,
+            22.0,
+            25.0
+          ]
+        },
+        {
+          "name": "Jeremiah Fears",
+          "games": 5,
+          "pts": 16.8,
+          "reb": 5.4,
+          "ast": 6.4,
+          "recent_points": [
+            19.0,
+            12.0,
+            20.0,
+            22.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Saddiq Bey",
+          "games": 5,
+          "pts": 16.8,
+          "reb": 3.8,
+          "ast": 2.2,
+          "recent_points": [
+            22.0,
+            18.0,
+            25.0,
+            10.0,
+            9.0
+          ]
+        },
+        {
+          "name": "Dejounte Murray",
+          "games": 2,
+          "pts": 15.0,
+          "reb": 8.0,
+          "ast": 4.5,
+          "recent_points": [
+            20.0,
+            10.0
+          ]
+        },
+        {
+          "name": "Trey Murphy III",
+          "games": 4,
+          "pts": 14.5,
+          "reb": 4.0,
+          "ast": 4.0,
+          "recent_points": [
+            18.0,
+            15.0,
+            19.0,
+            6.0
+          ]
+        }
+      ],
+      "player_trend": 0.21666666666666662
+    },
+    "16": {
+      "id": "16",
+      "abbr": "MIN",
+      "name": "Minnesota Timberwolves",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 6,
+        "margin": 8.25,
+        "win_rate": 0.636,
+        "points_for": 117.4,
+        "points_against": 109.0,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "HOU",
+            "points": 117,
+            "opponent_points": 107,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "MIL",
+            "points": 112,
+            "opponent_points": 100,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "SA",
+            "points": 111,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "LAC",
+            "points": 127,
+            "opponent_points": 101,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "GS",
+            "points": 114,
+            "opponent_points": 119,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "CLE",
+            "points": 125,
+            "opponent_points": 127,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "TOR",
+            "points": 117,
+            "opponent_points": 94,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "ORL",
+            "points": 115,
+            "opponent_points": 93,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "MIA",
+            "points": 131,
+            "opponent_points": 106,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "CHI",
+            "points": 116,
+            "opponent_points": 133,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Ayo Dosunmu",
+          "games": 5,
+          "pts": 19.8,
+          "reb": 6.4,
+          "ast": 4.6,
+          "recent_points": [
+            21.0,
+            19.0,
+            27.0,
+            15.0,
+            17.0
+          ]
+        },
+        {
+          "name": "LaMelo Ball",
+          "games": 5,
+          "pts": 19.2,
+          "reb": 4.6,
+          "ast": 5.6,
+          "recent_points": [
+            20.0,
+            34.0,
+            10.0,
+            24.0,
+            8.0
+          ]
+        },
+        {
+          "name": "Jaden McDaniels",
+          "games": 5,
+          "pts": 17.6,
+          "reb": 6.0,
+          "ast": 4.2,
+          "recent_points": [
+            14.0,
+            13.0,
+            19.0,
+            23.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Jonathan Kuminga",
+          "games": 5,
+          "pts": 13.6,
+          "reb": 5.6,
+          "ast": 3.2,
+          "recent_points": [
+            16.0,
+            8.0,
+            19.0,
+            5.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Bones Hyland",
+          "games": 5,
+          "pts": 13.4,
+          "reb": 1.0,
+          "ast": 4.2,
+          "recent_points": [
+            19.0,
+            10.0,
+            6.0,
+            19.0,
+            13.0
+          ]
+        }
+      ],
+      "player_trend": 0.05
+    },
+    "13": {
+      "id": "13",
+      "abbr": "LAL",
+      "name": "Los Angeles Lakers",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 7,
+        "margin": 7.24,
+        "win_rate": 0.764,
+        "points_for": 120.7,
+        "points_against": 113.5,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "SAC",
+            "points": 116,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "MIA",
+            "points": 138,
+            "opponent_points": 117,
+            "win": true
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "TOR",
+            "points": 131,
+            "opponent_points": 125,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "GS",
+            "points": 95,
+            "opponent_points": 112,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "LAC",
+            "points": 103,
+            "opponent_points": 87,
+            "win": true
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "POR",
+            "points": 129,
+            "opponent_points": 136,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "UTAH",
+            "points": 132,
+            "opponent_points": 123,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "LAC",
+            "points": 125,
+            "opponent_points": 117,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "GS",
+            "points": 127,
+            "opponent_points": 105,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "DEN",
+            "points": 106,
+            "opponent_points": 121,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Luka Doncic",
+          "games": 4,
+          "pts": 41.0,
+          "reb": 9.5,
+          "ast": 7.8,
+          "recent_points": [
+            40.0,
+            42.0,
+            45.0,
+            37.0
+          ]
+        },
+        {
+          "name": "Austin Reaves",
+          "games": 5,
+          "pts": 20.8,
+          "reb": 3.6,
+          "ast": 3.8,
+          "recent_points": [
+            21.0,
+            27.0,
+            19.0,
+            21.0,
+            16.0
+          ]
+        },
+        {
+          "name": "Walker Kessler",
+          "games": 5,
+          "pts": 13.4,
+          "reb": 12.0,
+          "ast": 1.2,
+          "recent_points": [
+            15.0,
+            15.0,
+            16.0,
+            10.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Collin Sexton",
+          "games": 5,
+          "pts": 10.2,
+          "reb": 2.6,
+          "ast": 2.4,
+          "recent_points": [
+            10.0,
+            6.0,
+            14.0,
+            0.0,
+            21.0
+          ]
+        },
+        {
+          "name": "Ziaire Williams",
+          "games": 2,
+          "pts": 9.5,
+          "reb": 3.0,
+          "ast": 1.5,
+          "recent_points": [
+            10.0,
+            9.0
+          ]
+        }
+      ],
+      "player_trend": 0.2666666666666666
+    },
+    "22": {
+      "id": "22",
+      "abbr": "POR",
+      "name": "Portland Trail Blazers",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 7.85,
+        "win_rate": 0.818,
+        "points_for": 120.8,
+        "points_against": 111.3,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "PHX",
+            "points": 132,
+            "opponent_points": 119,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "DEN",
+            "points": 118,
+            "opponent_points": 110,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "UTAH",
+            "points": 112,
+            "opponent_points": 90,
+            "win": true
+          },
+          {
+            "date": "2026-10-29",
+            "opponent": "MEM",
+            "points": 103,
+            "opponent_points": 124,
+            "win": false
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "LAL",
+            "points": 136,
+            "opponent_points": 129,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "SAC",
+            "points": 128,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "PHX",
+            "points": 124,
+            "opponent_points": 83,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "GS",
+            "points": 118,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-10-13",
+            "opponent": "SAC",
+            "points": 110,
+            "opponent_points": 98,
+            "win": true
+          },
+          {
+            "date": "2026-10-12",
+            "opponent": "LON",
+            "points": 119,
+            "opponent_points": 66,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Deni Avdija",
+          "games": 5,
+          "pts": 24.0,
+          "reb": 5.6,
+          "ast": 7.0,
+          "recent_points": [
+            21.0,
+            28.0,
+            24.0,
+            24.0,
+            23.0
+          ]
+        },
+        {
+          "name": "Damian Lillard",
+          "games": 5,
+          "pts": 19.4,
+          "reb": 4.2,
+          "ast": 4.2,
+          "recent_points": [
+            25.0,
+            20.0,
+            22.0,
+            9.0,
+            21.0
+          ]
+        },
+        {
+          "name": "Ja Morant",
+          "games": 2,
+          "pts": 18.5,
+          "reb": 1.0,
+          "ast": 3.5,
+          "recent_points": [
+            14.0,
+            23.0
+          ]
+        },
+        {
+          "name": "Jrue Holiday",
+          "games": 5,
+          "pts": 14.8,
+          "reb": 5.2,
+          "ast": 4.0,
+          "recent_points": [
+            15.0,
+            17.0,
+            14.0,
+            6.0,
+            22.0
+          ]
+        },
+        {
+          "name": "Donovan Clingan",
+          "games": 5,
+          "pts": 13.0,
+          "reb": 11.2,
+          "ast": 1.2,
+          "recent_points": [
+            24.0,
+            17.0,
+            4.0,
+            11.0,
+            9.0
+          ]
+        }
+      ],
+      "player_trend": 0.30000000000000004
+    },
+    "23": {
+      "id": "23",
+      "abbr": "SAC",
+      "name": "Sacramento Kings",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 1,
+        "margin": -11.87,
+        "win_rate": 0.164,
+        "points_for": 108.8,
+        "points_against": 121.9,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "LAL",
+            "points": 103,
+            "opponent_points": 116,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "DAL",
+            "points": 115,
+            "opponent_points": 100,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "MEM",
+            "points": 105,
+            "opponent_points": 136,
+            "win": false
+          },
+          {
+            "date": "2026-10-29",
+            "opponent": "NO",
+            "points": 120,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "SA",
+            "points": 103,
+            "opponent_points": 130,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "MEM",
+            "points": 112,
+            "opponent_points": 123,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "POR",
+            "points": 120,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "LAC",
+            "points": 96,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "SA",
+            "points": 97,
+            "opponent_points": 126,
+            "win": false
+          },
+          {
+            "date": "2026-10-13",
+            "opponent": "POR",
+            "points": 98,
+            "opponent_points": 110,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Darius Acuff Jr.",
+          "games": 5,
+          "pts": 27.6,
+          "reb": 4.4,
+          "ast": 8.4,
+          "recent_points": [
+            22.0,
+            25.0,
+            38.0,
+            34.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Zach LaVine",
+          "games": 5,
+          "pts": 19.6,
+          "reb": 2.8,
+          "ast": 2.2,
+          "recent_points": [
+            21.0,
+            23.0,
+            11.0,
+            21.0,
+            22.0
+          ]
+        },
+        {
+          "name": "De'Andre Hunter",
+          "games": 5,
+          "pts": 17.4,
+          "reb": 4.6,
+          "ast": 1.4,
+          "recent_points": [
+            14.0,
+            6.0,
+            19.0,
+            24.0,
+            24.0
+          ]
+        },
+        {
+          "name": "Domantas Sabonis",
+          "games": 5,
+          "pts": 13.0,
+          "reb": 13.4,
+          "ast": 5.6,
+          "recent_points": [
+            16.0,
+            9.0,
+            11.0,
+            9.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Malik Monk",
+          "games": 5,
+          "pts": 10.0,
+          "reb": 1.2,
+          "ast": 4.0,
+          "recent_points": [
+            13.0,
+            24.0,
+            8.0,
+            2.0,
+            3.0
+          ]
+        }
+      ],
+      "player_trend": -0.3611111111111111
+    },
+    "24": {
+      "id": "24",
+      "abbr": "SA",
+      "name": "San Antonio Spurs",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 10.51,
+        "win_rate": 0.873,
+        "points_for": 118.1,
+        "points_against": 107.2,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "DAL",
+            "points": 112,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "UTAH",
+            "points": 119,
+            "opponent_points": 97,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "MIN",
+            "points": 121,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "UTAH",
+            "points": 117,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "SAC",
+            "points": 130,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "DAL",
+            "points": 122,
+            "opponent_points": 106,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "HOU",
+            "points": 110,
+            "opponent_points": 114,
+            "win": false
+          },
+          {
+            "date": "2026-10-20",
+            "opponent": "OKC",
+            "points": 104,
+            "opponent_points": 116,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "SAC",
+            "points": 126,
+            "opponent_points": 97,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "PHX",
+            "points": 123,
+            "opponent_points": 103,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Victor Wembanyama",
+          "games": 5,
+          "pts": 34.4,
+          "reb": 13.2,
+          "ast": 3.6,
+          "recent_points": [
+            52.0,
+            12.0,
+            43.0,
+            36.0,
+            29.0
+          ]
+        },
+        {
+          "name": "Dylan Harper",
+          "games": 5,
+          "pts": 17.8,
+          "reb": 6.0,
+          "ast": 5.6,
+          "recent_points": [
+            21.0,
+            17.0,
+            25.0,
+            13.0,
+            13.0
+          ]
+        },
+        {
+          "name": "De'Aaron Fox",
+          "games": 5,
+          "pts": 13.8,
+          "reb": 4.0,
+          "ast": 4.8,
+          "recent_points": [
+            10.0,
+            12.0,
+            22.0,
+            14.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Stephon Castle",
+          "games": 5,
+          "pts": 12.4,
+          "reb": 6.2,
+          "ast": 4.8,
+          "recent_points": [
+            17.0,
+            16.0,
+            0.0,
+            14.0,
+            15.0
+          ]
+        },
+        {
+          "name": "Devin Vassell",
+          "games": 5,
+          "pts": 11.4,
+          "reb": 4.6,
+          "ast": 3.4,
+          "recent_points": [
+            2.0,
+            11.0,
+            9.0,
+            21.0,
+            14.0
+          ]
+        }
+      ],
+      "player_trend": -0.2222222222222222
+    },
+    "11": {
+      "id": "11",
+      "abbr": "IND",
+      "name": "Indiana Pacers",
+      "rest_days": 3,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -3.87,
+        "win_rate": 0.291,
+        "points_for": 109.0,
+        "points_against": 112.8,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MEM",
+            "points": 107,
+            "opponent_points": 103,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "ATL",
+            "points": 104,
+            "opponent_points": 108,
+            "win": false
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "BKN",
+            "points": 90,
+            "opponent_points": 98,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "MIA",
+            "points": 125,
+            "opponent_points": 145,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "PHI",
+            "points": 109,
+            "opponent_points": 114,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "MIL",
+            "points": 102,
+            "opponent_points": 110,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "BKN",
+            "points": 136,
+            "opponent_points": 109,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "DAL",
+            "points": 105,
+            "opponent_points": 121,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "NO",
+            "points": 123,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "MIL",
+            "points": 127,
+            "opponent_points": 128,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Andrew Nembhard",
+          "games": 4,
+          "pts": 21.2,
+          "reb": 2.5,
+          "ast": 7.8,
+          "recent_points": [
+            22.0,
+            23.0,
+            22.0,
+            18.0
+          ]
+        },
+        {
+          "name": "Pascal Siakam",
+          "games": 4,
+          "pts": 19.0,
+          "reb": 6.5,
+          "ast": 3.5,
+          "recent_points": [
+            20.0,
+            17.0,
+            13.0,
+            26.0
+          ]
+        },
+        {
+          "name": "Quenton Jackson",
+          "games": 5,
+          "pts": 14.2,
+          "reb": 4.6,
+          "ast": 2.8,
+          "recent_points": [
+            13.0,
+            20.0,
+            12.0,
+            24.0,
+            2.0
+          ]
+        },
+        {
+          "name": "Aaron Nesmith",
+          "games": 4,
+          "pts": 13.5,
+          "reb": 2.2,
+          "ast": 2.2,
+          "recent_points": [
+            16.0,
+            11.0,
+            9.0,
+            18.0
+          ]
+        },
+        {
+          "name": "Obi Toppin",
+          "games": 2,
+          "pts": 12.0,
+          "reb": 5.5,
+          "ast": 0.5,
+          "recent_points": [
+            11.0,
+            13.0
+          ]
+        }
+      ],
+      "player_trend": 0.1777777777777778
+    },
+    "7": {
+      "id": "7",
+      "abbr": "DEN",
+      "name": "Denver Nuggets",
+      "rest_days": 3,
+      "form": {
+        "played": 10,
+        "wins": 6,
+        "margin": 2.78,
+        "win_rate": 0.618,
+        "points_for": 117.4,
+        "points_against": 114.6,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "TOR",
+            "points": 128,
+            "opponent_points": 109,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "POR",
+            "points": 110,
+            "opponent_points": 118,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "PHX",
+            "points": 127,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "NO",
+            "points": 104,
+            "opponent_points": 91,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "GS",
+            "points": 114,
+            "opponent_points": 134,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "NO",
+            "points": 141,
+            "opponent_points": 135,
+            "win": true
+          },
+          {
+            "date": "2026-10-22",
+            "opponent": "OKC",
+            "points": 84,
+            "opponent_points": 96,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "LAL",
+            "points": 121,
+            "opponent_points": 106,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "LAC",
+            "points": 110,
+            "opponent_points": 122,
+            "win": false
+          },
+          {
+            "date": "2026-10-11",
+            "opponent": "CHI",
+            "points": 133,
+            "opponent_points": 128,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Jamal Murray",
+          "games": 5,
+          "pts": 26.0,
+          "reb": 5.0,
+          "ast": 6.4,
+          "recent_points": [
+            14.0,
+            35.0,
+            39.0,
+            23.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Nikola Jokic",
+          "games": 5,
+          "pts": 23.2,
+          "reb": 9.2,
+          "ast": 10.0,
+          "recent_points": [
+            32.0,
+            26.0,
+            18.0,
+            21.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Christian Braun",
+          "games": 5,
+          "pts": 16.0,
+          "reb": 2.6,
+          "ast": 2.6,
+          "recent_points": [
+            11.0,
+            14.0,
+            31.0,
+            15.0,
+            9.0
+          ]
+        },
+        {
+          "name": "Aaron Gordon",
+          "games": 5,
+          "pts": 11.8,
+          "reb": 5.2,
+          "ast": 2.4,
+          "recent_points": [
+            17.0,
+            5.0,
+            15.0,
+            15.0,
+            7.0
+          ]
+        },
+        {
+          "name": "Cameron Johnson",
+          "games": 3,
+          "pts": 10.3,
+          "reb": 5.0,
+          "ast": 2.3,
+          "recent_points": [
+            12.0,
+            7.0,
+            12.0
+          ]
+        }
+      ],
+      "player_trend": -0.011111111111111072
+    },
+    "17": {
+      "id": "17",
+      "abbr": "BKN",
+      "name": "Brooklyn Nets",
+      "rest_days": 3,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -4.65,
+        "win_rate": 0.345,
+        "points_for": 106.6,
+        "points_against": 111.4,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "CHA",
+            "points": 114,
+            "opponent_points": 104,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "NY",
+            "points": 90,
+            "opponent_points": 103,
+            "win": false
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "IND",
+            "points": 98,
+            "opponent_points": 90,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "DET",
+            "points": 94,
+            "opponent_points": 110,
+            "win": false
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "BOS",
+            "points": 124,
+            "opponent_points": 125,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "IND",
+            "points": 109,
+            "opponent_points": 136,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "CLE",
+            "points": 121,
+            "opponent_points": 125,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "CHA",
+            "points": 103,
+            "opponent_points": 110,
+            "win": false
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "MIA",
+            "points": 128,
+            "opponent_points": 144,
+            "win": false
+          },
+          {
+            "date": "2026-10-12",
+            "opponent": "WSH",
+            "points": 131,
+            "opponent_points": 122,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Michael Porter Jr.",
+          "games": 5,
+          "pts": 21.4,
+          "reb": 8.6,
+          "ast": 1.6,
+          "recent_points": [
+            26.0,
+            18.0,
+            23.0,
+            13.0,
+            27.0
+          ]
+        },
+        {
+          "name": "Julius Randle",
+          "games": 5,
+          "pts": 20.4,
+          "reb": 7.2,
+          "ast": 3.8,
+          "recent_points": [
+            22.0,
+            21.0,
+            20.0,
+            15.0,
+            24.0
+          ]
+        },
+        {
+          "name": "Nolan Traore",
+          "games": 5,
+          "pts": 14.6,
+          "reb": 2.4,
+          "ast": 3.4,
+          "recent_points": [
+            16.0,
+            17.0,
+            16.0,
+            9.0,
+            15.0
+          ]
+        },
+        {
+          "name": "Mikel Brown Jr.",
+          "games": 4,
+          "pts": 14.5,
+          "reb": 2.2,
+          "ast": 4.0,
+          "recent_points": [
+            18.0,
+            13.0,
+            10.0,
+            17.0
+          ]
+        },
+        {
+          "name": "Moritz Wagner",
+          "games": 5,
+          "pts": 11.4,
+          "reb": 4.0,
+          "ast": 1.2,
+          "recent_points": [
+            6.0,
+            6.0,
+            14.0,
+            16.0,
+            15.0
+          ]
+        }
+      ],
+      "player_trend": 0.19999999999999996
+    },
+    "18": {
+      "id": "18",
+      "abbr": "NY",
+      "name": "New York Knicks",
+      "rest_days": 3,
+      "form": {
+        "played": 10,
+        "wins": 5,
+        "margin": 6.42,
+        "win_rate": 0.618,
+        "points_for": 112.4,
+        "points_against": 105.5,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "CHI",
+            "points": 135,
+            "opponent_points": 105,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "BKN",
+            "points": 103,
+            "opponent_points": 90,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "PHI",
+            "points": 93,
+            "opponent_points": 98,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "CHI",
+            "points": 133,
+            "opponent_points": 127,
+            "win": true
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "DET",
+            "points": 111,
+            "opponent_points": 97,
+            "win": true
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "ORL",
+            "points": 102,
+            "opponent_points": 111,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "BOS",
+            "points": 103,
+            "opponent_points": 107,
+            "win": false
+          },
+          {
+            "date": "2026-10-20",
+            "opponent": "PHI",
+            "points": 100,
+            "opponent_points": 106,
+            "win": false
+          },
+          {
+            "date": "2026-10-15",
+            "opponent": "TOR",
+            "points": 122,
+            "opponent_points": 120,
+            "win": true
+          },
+          {
+            "date": "2026-10-13",
+            "opponent": "TOR",
+            "points": 98,
+            "opponent_points": 148,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Jalen Brunson",
+          "games": 5,
+          "pts": 27.4,
+          "reb": 2.2,
+          "ast": 6.0,
+          "recent_points": [
+            33.0,
+            19.0,
+            24.0,
+            38.0,
+            23.0
+          ]
+        },
+        {
+          "name": "Karl-Anthony Towns",
+          "games": 5,
+          "pts": 19.2,
+          "reb": 14.6,
+          "ast": 3.4,
+          "recent_points": [
+            17.0,
+            11.0,
+            22.0,
+            19.0,
+            27.0
+          ]
+        },
+        {
+          "name": "OG Anunoby",
+          "games": 5,
+          "pts": 16.2,
+          "reb": 5.2,
+          "ast": 2.0,
+          "recent_points": [
+            18.0,
+            18.0,
+            9.0,
+            23.0,
+            13.0
+          ]
+        },
+        {
+          "name": "Landry Shamet",
+          "games": 5,
+          "pts": 11.2,
+          "reb": 1.2,
+          "ast": 2.2,
+          "recent_points": [
+            7.0,
+            22.0,
+            0.0,
+            14.0,
+            13.0
+          ]
+        },
+        {
+          "name": "Jordan Clarkson",
+          "games": 4,
+          "pts": 9.8,
+          "reb": 1.8,
+          "ast": 0.5,
+          "recent_points": [
+            10.0,
+            7.0,
+            4.0,
+            18.0
+          ]
+        }
+      ],
+      "player_trend": -0.24444444444444444
+    },
+    "9": {
+      "id": "9",
+      "abbr": "GS",
+      "name": "Golden State Warriors",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 7,
+        "margin": 8.96,
+        "win_rate": 0.836,
+        "points_for": 119.2,
+        "points_against": 110.2,
+        "recent": [
+          {
+            "date": "2026-11-05",
+            "opponent": "MIA",
+            "points": 120,
+            "opponent_points": 100,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "PHX",
+            "points": 116,
+            "opponent_points": 113,
+            "win": true
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "LAC",
+            "points": 124,
+            "opponent_points": 112,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "LAL",
+            "points": 112,
+            "opponent_points": 95,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "MIN",
+            "points": 119,
+            "opponent_points": 114,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "DEN",
+            "points": 134,
+            "opponent_points": 114,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "PHX",
+            "points": 122,
+            "opponent_points": 131,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "MEM",
+            "points": 108,
+            "opponent_points": 111,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "LAL",
+            "points": 105,
+            "opponent_points": 127,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "POR",
+            "points": 128,
+            "opponent_points": 118,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Stephen Curry",
+          "games": 4,
+          "pts": 34.5,
+          "reb": 4.8,
+          "ast": 5.8,
+          "recent_points": [
+            29.0,
+            34.0,
+            31.0,
+            44.0
+          ]
+        },
+        {
+          "name": "Yaxel Lendeborg",
+          "games": 5,
+          "pts": 20.4,
+          "reb": 5.4,
+          "ast": 3.6,
+          "recent_points": [
+            17.0,
+            16.0,
+            37.0,
+            6.0,
+            26.0
+          ]
+        },
+        {
+          "name": "Brandin Podziemski",
+          "games": 5,
+          "pts": 15.0,
+          "reb": 5.4,
+          "ast": 5.0,
+          "recent_points": [
+            9.0,
+            20.0,
+            17.0,
+            21.0,
+            8.0
+          ]
+        },
+        {
+          "name": "Brandon Williams",
+          "games": 4,
+          "pts": 11.8,
+          "reb": 2.2,
+          "ast": 2.2,
+          "recent_points": [
+            10.0,
+            17.0,
+            9.0,
+            11.0
+          ]
+        },
+        {
+          "name": "De'Anthony Melton",
+          "games": 5,
+          "pts": 10.4,
+          "reb": 6.0,
+          "ast": 2.0,
+          "recent_points": [
+            5.0,
+            2.0,
+            21.0,
+            16.0,
+            8.0
+          ]
+        }
+      ],
+      "player_trend": -0.4444444444444445
+    },
+    "19": {
+      "id": "19",
+      "abbr": "ORL",
+      "name": "Orlando Magic",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 4,
+        "margin": -7.38,
+        "win_rate": 0.273,
+        "points_for": 105.6,
+        "points_against": 113.5,
+        "recent": [
+          {
+            "date": "2026-11-05",
+            "opponent": "PHX",
+            "points": 104,
+            "opponent_points": 117,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "WSH",
+            "points": 94,
+            "opponent_points": 103,
+            "win": false
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "BOS",
+            "points": 97,
+            "opponent_points": 108,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "TOR",
+            "points": 121,
+            "opponent_points": 114,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "TOR",
+            "points": 99,
+            "opponent_points": 129,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "NY",
+            "points": 111,
+            "opponent_points": 102,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "MIN",
+            "points": 93,
+            "opponent_points": 115,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "ATL",
+            "points": 125,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "MIA",
+            "points": 136,
+            "opponent_points": 115,
+            "win": true
+          },
+          {
+            "date": "2026-10-13",
+            "opponent": "CLE",
+            "points": 132,
+            "opponent_points": 116,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Desmond Bane",
+          "games": 5,
+          "pts": 19.0,
+          "reb": 3.6,
+          "ast": 2.8,
+          "recent_points": [
+            15.0,
+            20.0,
+            19.0,
+            28.0,
+            13.0
+          ]
+        },
+        {
+          "name": "Franz Wagner",
+          "games": 5,
+          "pts": 18.8,
+          "reb": 5.2,
+          "ast": 9.8,
+          "recent_points": [
+            15.0,
+            24.0,
+            14.0,
+            26.0,
+            15.0
+          ]
+        },
+        {
+          "name": "Tristan da Silva",
+          "games": 5,
+          "pts": 15.8,
+          "reb": 3.8,
+          "ast": 1.4,
+          "recent_points": [
+            18.0,
+            10.0,
+            23.0,
+            8.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Anthony Black",
+          "games": 4,
+          "pts": 14.5,
+          "reb": 5.8,
+          "ast": 5.0,
+          "recent_points": [
+            10.0,
+            23.0,
+            17.0,
+            8.0
+          ]
+        },
+        {
+          "name": "Wendell Carter Jr.",
+          "games": 5,
+          "pts": 12.6,
+          "reb": 9.8,
+          "ast": 1.2,
+          "recent_points": [
+            27.0,
+            6.0,
+            7.0,
+            20.0,
+            3.0
+          ]
+        }
+      ],
+      "player_trend": -0.1444444444444444
+    },
+    "21": {
+      "id": "21",
+      "abbr": "PHX",
+      "name": "Phoenix Suns",
+      "rest_days": 2,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -4.11,
+        "win_rate": 0.291,
+        "points_for": 114.8,
+        "points_against": 120.0,
+        "recent": [
+          {
+            "date": "2026-11-05",
+            "opponent": "ORL",
+            "points": 117,
+            "opponent_points": 104,
+            "win": true
+          },
+          {
+            "date": "2026-11-04",
+            "opponent": "POR",
+            "points": 119,
+            "opponent_points": 132,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "GS",
+            "points": 113,
+            "opponent_points": 116,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "DEN",
+            "points": 120,
+            "opponent_points": 127,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "OKC",
+            "points": 114,
+            "opponent_points": 125,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "GS",
+            "points": 131,
+            "opponent_points": 122,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "POR",
+            "points": 83,
+            "opponent_points": 124,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "UTAH",
+            "points": 116,
+            "opponent_points": 119,
+            "win": false
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "SA",
+            "points": 103,
+            "opponent_points": 123,
+            "win": false
+          },
+          {
+            "date": "2026-10-10",
+            "opponent": "SA",
+            "points": 102,
+            "opponent_points": 98,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Devin Booker",
+          "games": 5,
+          "pts": 22.4,
+          "reb": 1.8,
+          "ast": 5.4,
+          "recent_points": [
+            30.0,
+            33.0,
+            26.0,
+            20.0,
+            3.0
+          ]
+        },
+        {
+          "name": "Dillon Brooks",
+          "games": 5,
+          "pts": 19.6,
+          "reb": 4.2,
+          "ast": 2.8,
+          "recent_points": [
+            24.0,
+            15.0,
+            18.0,
+            22.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Miles Bridges",
+          "games": 5,
+          "pts": 19.6,
+          "reb": 8.8,
+          "ast": 3.8,
+          "recent_points": [
+            18.0,
+            18.0,
+            21.0,
+            24.0,
+            17.0
+          ]
+        },
+        {
+          "name": "Jalen Green",
+          "games": 5,
+          "pts": 12.2,
+          "reb": 3.2,
+          "ast": 3.8,
+          "recent_points": [
+            6.0,
+            22.0,
+            11.0,
+            2.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Jordan Goodwin",
+          "games": 3,
+          "pts": 9.0,
+          "reb": 3.7,
+          "ast": 3.0,
+          "recent_points": [
+            4.0,
+            11.0,
+            12.0
+          ]
+        }
+      ],
+      "player_trend": 0.17222222222222217
+    },
+    "10": {
+      "id": "10",
+      "abbr": "HOU",
+      "name": "Houston Rockets",
+      "rest_days": 3,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 8.69,
+        "win_rate": 0.691,
+        "points_for": 115.8,
+        "points_against": 106.3,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MIN",
+            "points": 107,
+            "opponent_points": 117,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "BOS",
+            "points": 109,
+            "opponent_points": 93,
+            "win": true
+          },
+          {
+            "date": "2026-10-31",
+            "opponent": "OKC",
+            "points": 119,
+            "opponent_points": 98,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "DAL",
+            "points": 111,
+            "opponent_points": 116,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "MIL",
+            "points": 132,
+            "opponent_points": 100,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "ATL",
+            "points": 120,
+            "opponent_points": 110,
+            "win": true
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "ATL",
+            "points": 121,
+            "opponent_points": 114,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "SA",
+            "points": 114,
+            "opponent_points": 110,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "DAL",
+            "points": 128,
+            "opponent_points": 110,
+            "win": true
+          },
+          {
+            "date": "2026-10-15",
+            "opponent": "OKC",
+            "points": 116,
+            "opponent_points": 89,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Alperen Sengun",
+          "games": 3,
+          "pts": 19.7,
+          "reb": 9.3,
+          "ast": 9.7,
+          "recent_points": [
+            17.0,
+            26.0,
+            16.0
+          ]
+        },
+        {
+          "name": "Kevin Durant",
+          "games": 5,
+          "pts": 18.6,
+          "reb": 4.2,
+          "ast": 2.8,
+          "recent_points": [
+            21.0,
+            12.0,
+            14.0,
+            28.0,
+            18.0
+          ]
+        },
+        {
+          "name": "Jabari Smith Jr.",
+          "games": 5,
+          "pts": 18.2,
+          "reb": 5.6,
+          "ast": 2.2,
+          "recent_points": [
+            11.0,
+            14.0,
+            30.0,
+            22.0,
+            14.0
+          ]
+        },
+        {
+          "name": "Fred VanVleet",
+          "games": 4,
+          "pts": 16.5,
+          "reb": 4.0,
+          "ast": 5.8,
+          "recent_points": [
+            18.0,
+            8.0,
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "name": "Amen Thompson",
+          "games": 5,
+          "pts": 14.2,
+          "reb": 4.2,
+          "ast": 2.8,
+          "recent_points": [
+            11.0,
+            14.0,
+            8.0,
+            15.0,
+            23.0
+          ]
+        }
+      ],
+      "player_trend": -0.5750000000000001
+    },
+    "4": {
+      "id": "4",
+      "abbr": "CHI",
+      "name": "Chicago Bulls",
+      "rest_days": 4,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -13.4,
+        "win_rate": 0.127,
+        "points_for": 112.3,
+        "points_against": 128.7,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "NY",
+            "points": 105,
+            "opponent_points": 135,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "PHI",
+            "points": 107,
+            "opponent_points": 126,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "BOS",
+            "points": 111,
+            "opponent_points": 125,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "NY",
+            "points": 127,
+            "opponent_points": 133,
+            "win": false
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "BOS",
+            "points": 99,
+            "opponent_points": 134,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "WSH",
+            "points": 120,
+            "opponent_points": 124,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "MIL",
+            "points": 132,
+            "opponent_points": 125,
+            "win": true
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "TOR",
+            "points": 92,
+            "opponent_points": 135,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "MIN",
+            "points": 133,
+            "opponent_points": 116,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "MIL",
+            "points": 125,
+            "opponent_points": 104,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Norman Powell",
+          "games": 5,
+          "pts": 19.2,
+          "reb": 1.8,
+          "ast": 1.6,
+          "recent_points": [
+            12.0,
+            18.0,
+            16.0,
+            30.0,
+            20.0
+          ]
+        },
+        {
+          "name": "Caleb Wilson",
+          "games": 5,
+          "pts": 17.8,
+          "reb": 5.6,
+          "ast": 3.0,
+          "recent_points": [
+            5.0,
+            24.0,
+            23.0,
+            20.0,
+            17.0
+          ]
+        },
+        {
+          "name": "Matas Buzelis",
+          "games": 5,
+          "pts": 11.6,
+          "reb": 3.8,
+          "ast": 2.2,
+          "recent_points": [
+            12.0,
+            4.0,
+            14.0,
+            17.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Josh Giddey",
+          "games": 5,
+          "pts": 11.4,
+          "reb": 3.6,
+          "ast": 7.2,
+          "recent_points": [
+            10.0,
+            13.0,
+            13.0,
+            10.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Tre Jones",
+          "games": 5,
+          "pts": 10.6,
+          "reb": 3.0,
+          "ast": 2.8,
+          "recent_points": [
+            14.0,
+            8.0,
+            12.0,
+            11.0,
+            8.0
+          ]
+        }
+      ],
+      "player_trend": -0.6166666666666667
+    },
+    "8": {
+      "id": "8",
+      "abbr": "DET",
+      "name": "Detroit Pistons",
+      "rest_days": 4,
+      "form": {
+        "played": 10,
+        "wins": 8,
+        "margin": 8.22,
+        "win_rate": 0.709,
+        "points_for": 111.1,
+        "points_against": 101.5,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "PHI",
+            "points": 106,
+            "opponent_points": 112,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "CHA",
+            "points": 124,
+            "opponent_points": 91,
+            "win": true
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "BKN",
+            "points": 110,
+            "opponent_points": 94,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "CHA",
+            "points": 97,
+            "opponent_points": 89,
+            "win": true
+          },
+          {
+            "date": "2026-10-27",
+            "opponent": "NY",
+            "points": 97,
+            "opponent_points": 111,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "PHI",
+            "points": 106,
+            "opponent_points": 93,
+            "win": true
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "MIA",
+            "points": 128,
+            "opponent_points": 111,
+            "win": true
+          },
+          {
+            "date": "2026-10-20",
+            "opponent": "BOS",
+            "points": 121,
+            "opponent_points": 113,
+            "win": true
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "TOR",
+            "points": 129,
+            "opponent_points": 125,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "MIN",
+            "points": 128,
+            "opponent_points": 106,
+            "win": true
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Cade Cunningham",
+          "games": 5,
+          "pts": 25.6,
+          "reb": 6.2,
+          "ast": 7.4,
+          "recent_points": [
+            26.0,
+            33.0,
+            20.0,
+            30.0,
+            19.0
+          ]
+        },
+        {
+          "name": "Duncan Robinson",
+          "games": 5,
+          "pts": 18.6,
+          "reb": 1.8,
+          "ast": 2.2,
+          "recent_points": [
+            27.0,
+            24.0,
+            17.0,
+            13.0,
+            12.0
+          ]
+        },
+        {
+          "name": "Paul Reed",
+          "games": 5,
+          "pts": 13.8,
+          "reb": 5.8,
+          "ast": 2.4,
+          "recent_points": [
+            8.0,
+            11.0,
+            12.0,
+            16.0,
+            22.0
+          ]
+        },
+        {
+          "name": "Ausar Thompson",
+          "games": 5,
+          "pts": 10.8,
+          "reb": 9.2,
+          "ast": 4.6,
+          "recent_points": [
+            11.0,
+            14.0,
+            11.0,
+            7.0,
+            11.0
+          ]
+        },
+        {
+          "name": "Daniss Jenkins",
+          "games": 5,
+          "pts": 7.6,
+          "reb": 2.0,
+          "ast": 4.2,
+          "recent_points": [
+            5.0,
+            2.0,
+            6.0,
+            14.0,
+            11.0
+          ]
+        }
+      ],
+      "player_trend": 0.24444444444444444
+    },
+    "12": {
+      "id": "12",
+      "abbr": "LAC",
+      "name": "LA Clippers",
+      "rest_days": 4,
+      "form": {
+        "played": 10,
+        "wins": 2,
+        "margin": -7.56,
+        "win_rate": 0.091,
+        "points_for": 109.7,
+        "points_against": 117.4,
+        "recent": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MIA",
+            "points": 116,
+            "opponent_points": 117,
+            "win": false
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "TOR",
+            "points": 118,
+            "opponent_points": 125,
+            "win": false
+          },
+          {
+            "date": "2026-11-01",
+            "opponent": "GS",
+            "points": 112,
+            "opponent_points": 124,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "MIN",
+            "points": 101,
+            "opponent_points": 127,
+            "win": false
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "LAL",
+            "points": 87,
+            "opponent_points": 103,
+            "win": false
+          },
+          {
+            "date": "2026-10-25",
+            "opponent": "OKC",
+            "points": 101,
+            "opponent_points": 108,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "LAL",
+            "points": 117,
+            "opponent_points": 125,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "SAC",
+            "points": 121,
+            "opponent_points": 96,
+            "win": true
+          },
+          {
+            "date": "2026-10-14",
+            "opponent": "DEN",
+            "points": 122,
+            "opponent_points": 110,
+            "win": true
+          },
+          {
+            "date": "2026-10-10",
+            "opponent": "TOR",
+            "points": 106,
+            "opponent_points": 114,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Rui Hachimura",
+          "games": 3,
+          "pts": 19.0,
+          "reb": 7.0,
+          "ast": 2.3,
+          "recent_points": [
+            21.0,
+            24.0,
+            12.0
+          ]
+        },
+        {
+          "name": "Darius Garland",
+          "games": 5,
+          "pts": 19.0,
+          "reb": 1.6,
+          "ast": 6.4,
+          "recent_points": [
+            26.0,
+            16.0,
+            15.0,
+            24.0,
+            14.0
+          ]
+        },
+        {
+          "name": "Kobe Sanders",
+          "games": 5,
+          "pts": 12.4,
+          "reb": 3.4,
+          "ast": 1.2,
+          "recent_points": [
+            4.0,
+            26.0,
+            16.0,
+            7.0,
+            9.0
+          ]
+        },
+        {
+          "name": "Derrick Jones Jr.",
+          "games": 4,
+          "pts": 11.5,
+          "reb": 5.2,
+          "ast": 0.8,
+          "recent_points": [
+            12.0,
+            9.0,
+            10.0,
+            15.0
+          ]
+        },
+        {
+          "name": "Keaton Wagler",
+          "games": 5,
+          "pts": 11.4,
+          "reb": 4.0,
+          "ast": 2.8,
+          "recent_points": [
+            11.0,
+            6.0,
+            7.0,
+            12.0,
+            21.0
+          ]
+        }
+      ],
+      "player_trend": 0.3833333333333333
+    },
+    "14": {
+      "id": "14",
+      "abbr": "MIA",
+      "name": "Miami Heat",
+      "rest_days": 3,
+      "form": {
+        "played": 10,
+        "wins": 3,
+        "margin": -5.62,
+        "win_rate": 0.4,
+        "points_for": 116.8,
+        "points_against": 122.4,
+        "recent": [
+          {
+            "date": "2026-11-05",
+            "opponent": "GS",
+            "points": 100,
+            "opponent_points": 120,
+            "win": false
+          },
+          {
+            "date": "2026-11-04",
+            "opponent": "LAC",
+            "points": 117,
+            "opponent_points": 116,
+            "win": true
+          },
+          {
+            "date": "2026-11-02",
+            "opponent": "LAL",
+            "points": 117,
+            "opponent_points": 138,
+            "win": false
+          },
+          {
+            "date": "2026-10-30",
+            "opponent": "IND",
+            "points": 145,
+            "opponent_points": 125,
+            "win": true
+          },
+          {
+            "date": "2026-10-28",
+            "opponent": "ATL",
+            "points": 129,
+            "opponent_points": 117,
+            "win": true
+          },
+          {
+            "date": "2026-10-26",
+            "opponent": "DAL",
+            "points": 109,
+            "opponent_points": 113,
+            "win": false
+          },
+          {
+            "date": "2026-10-24",
+            "opponent": "CHA",
+            "points": 110,
+            "opponent_points": 115,
+            "win": false
+          },
+          {
+            "date": "2026-10-23",
+            "opponent": "DET",
+            "points": 111,
+            "opponent_points": 128,
+            "win": false
+          },
+          {
+            "date": "2026-10-21",
+            "opponent": "MIN",
+            "points": 106,
+            "opponent_points": 131,
+            "win": false
+          },
+          {
+            "date": "2026-10-16",
+            "opponent": "ORL",
+            "points": 115,
+            "opponent_points": 136,
+            "win": false
+          }
+        ]
+      },
+      "players": [
+        {
+          "name": "Giannis Antetokounmpo",
+          "games": 5,
+          "pts": 26.4,
+          "reb": 15.2,
+          "ast": 6.0,
+          "recent_points": [
+            20.0,
+            27.0,
+            30.0,
+            31.0,
+            24.0
+          ]
+        },
+        {
+          "name": "Bam Adebayo",
+          "games": 5,
+          "pts": 24.0,
+          "reb": 9.4,
+          "ast": 2.8,
+          "recent_points": [
+            18.0,
+            35.0,
+            16.0,
+            27.0,
+            24.0
+          ]
+        },
+        {
+          "name": "Klay Thompson",
+          "games": 5,
+          "pts": 17.6,
+          "reb": 1.4,
+          "ast": 2.4,
+          "recent_points": [
+            11.0,
+            30.0,
+            19.0,
+            25.0,
+            3.0
+          ]
+        },
+        {
+          "name": "Davion Mitchell",
+          "games": 5,
+          "pts": 14.6,
+          "reb": 2.2,
+          "ast": 9.2,
+          "recent_points": [
+            22.0,
+            11.0,
+            15.0,
+            15.0,
+            10.0
+          ]
+        },
+        {
+          "name": "Pelle Larsson",
+          "games": 5,
+          "pts": 12.8,
+          "reb": 3.2,
+          "ast": 4.2,
+          "recent_points": [
+            13.0,
+            7.0,
+            9.0,
+            18.0,
+            17.0
+          ]
+        }
+      ],
+      "player_trend": 0.138888888888889
+    }
+  },
+  "validation": {
+    "completed_predictions": 0,
+    "brier_score": null,
+    "baseline_50_brier": null,
+    "favorite_accuracy_pct": null,
+    "log_loss": null,
+    "calibration": [],
+    "sample_warning": "Sin resultados suficientes",
+    "by_model": {}
+  },
+  "notes": [
+    "No utiliza cuotas de apuestas",
+    "El historial de 35 días puede omitir resultados anteriores; Elo se reinicia al comienzo de la ventana",
+    "Puntos anotados y recibidos por juego NO equivalen a rating por 100 posesiones",
+    "Lesiones disponibles como contexto no verificado; comprobar informe oficial",
+    "Foros y noticias no alteran automáticamente los porcentajes",
+    "Las probabilidades no están calibradas ni garantizan resultados"
+  ]
 }
