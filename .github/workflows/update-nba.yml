@@ -58,6 +58,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar datos NBA"
             git push
+          fi
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
@@ -68,4 +69,3 @@ jobs:
       - name: Desplegar la página con las estadísticas nuevas
         id: deployment
         uses: actions/deploy-pages@v4
-          fi
