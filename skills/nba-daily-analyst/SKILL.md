@@ -10,8 +10,8 @@ Crear un análisis diario reproducible para cada partido NBA. Publicarlo en el d
 
 ## Operación
 1. Consultar el calendario del día en República Dominicana y los siguientes dos días, con identificador de cada partido.
-2. Recopilar hasta ocho encuentros anteriores de cada equipo y hasta cinco box scores recientes por jugador. No usar resultados que hayan ocurrido después del momento de la predicción.
-3. Calcular probabilidades separadas de cada equipo mediante `scripts/update.py`. Exigir cuatro partidos previos como mínimo por equipo; en caso contrario mostrar "sin datos".
+2. Recopilar hasta diez encuentros anteriores de cada equipo y hasta cinco box scores recientes por jugador. No usar resultados que hayan ocurrido después del momento de la predicción.
+3. Calcular probabilidades separadas de cada equipo mediante `scripts/model_v2.py` (invocado por `scripts/update.py`). Exigir cuatro partidos previos como mínimo por equipo; en caso contrario mostrar "sin datos".
 4. Recuperar bajas como **reportes no confirmados**, con fecha y procedencia; cotejar con el informe oficial NBA antes del inicio si es posible.
 5. Extraer titulares recientes de noticias públicas. Separar hechos de especulaciones.
 6. Consultar publicaciones de r/nba solamente con acceso Reddit OAuth autorizado; sin permiso, mostrar el enlace al foro y un indicador de "No conectado".
@@ -37,3 +37,9 @@ GitHub Actions en America/Santo_Domingo: 09:15, 17:30 y 20:00, sujeto a disponib
 - Lesiones reportadas pueden cambiar; no afirmar que una plantilla está sana si la consulta devuelve cero entradas.
 - No almacenar autores, comentarios completos ni textos personales de Reddit.
 - No automatizar apuestas reales ni ofrecer certezas.
+
+## Modelo vigente
+- v2: Elo temporal a partir de partidos previos, forma de hasta diez juegos, puntos anotados/recibidos por partido, descanso, localía y tendencia de jugadores.
+- Nunca modificar predicciones históricas después de saber los resultados.
+- Nunca equiparar puntos por partido con `OffRtg`/`DefRtg`; esos ratings requieren posesiones.
+- Verificar `python -m unittest discover -s tests -v` y `node --check assets/app.js` antes de publicar.
