@@ -21,9 +21,18 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: nba-analytics-pages
+  cancel-in-progress: false
 
 jobs:
   refresh:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -49,4 +58,14 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar datos NBA"
             git push
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Publicar los datos actualizados
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Desplegar la página con las estadísticas nuevas
+        id: deployment
+        uses: actions/deploy-pages@v4
           fi
