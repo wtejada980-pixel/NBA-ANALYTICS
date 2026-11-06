@@ -19,6 +19,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
+from context_sources import collect
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data' / 'latest.json'
@@ -287,6 +288,9 @@ def refresh(today: date | None = None):
                       'players': player_profiles(tid, hist, summaries)}
     for game in schedule:
         game['prediction'] = predict(game, teams) if game['status'] == 'pre' else None
+    # Contexto de lesiones, noticias y foros SOLO para partidos del día.
+    # No modifica la probabilidad, que depende de la forma deportiva.
+    collect([g for g in schedule if g['date'] == day.isoformat()], teams)
     history = load_history()
     for game in all_events.values():
         if game['status'] == 'post' and game['id'] in history['predictions']:
@@ -312,12 +316,13 @@ def refresh(today: date | None = None):
         'as_of': now.isoformat(), 'date': day.isoformat(), 'timezone': 'America/Santo_Domingo',
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
         'source_url': 'https://www.espn.com/nba/scoreboard',
-        'model': 'forma8-v1 / probabilidades experimentales',
+        'model': 'forma8-v1 / probabilidades experimentales; contexto cualitativo separado',
         'games': schedule, 'teams': teams,
         'validation': {'completed_predictions': len(scored), 'brier_score': brier},
         'notes': ['No utiliza cuotas de apuestas',
                   'El historial de 35 días puede omitir resultados anteriores',
-                  'La disponibilidad y lesiones en tiempo real NO se incorporan automáticamente',
+                  'Lesiones disponibles como contexto no verificado; comprobar informe oficial',
+                  'Foros y noticias no alteran automáticamente los porcentajes',
                   'Las probabilidades no están calibradas ni garantizan resultados'],
     }
     # Both files are only rewritten after essential data checks pass.
