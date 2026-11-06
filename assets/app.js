@@ -31,7 +31,7 @@
     const f = t.form || {};
     const recent = (f.recent || []).map(r => `<div class="result"><span class="${r.win?'win':'loss'}">${recentStr(r)}</span><span>${esc(dayLabel(r.date))}</span></div>`).join('') || `<p class="tiny">No hay resultados suficientes.</p>`;
     const players = (t.players || []).length ? `<div class="player-scroll"><table class="player-table"><thead><tr><th>JUGADOR</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead><tbody>${t.players.map(p => `<tr><td>${esc(p.name)} <span class="tiny">(${p.games} j.)</span></td><td>${Number(p.pts).toFixed(1)}</td><td>${Number(p.reb).toFixed(1)}</td><td>${Number(p.ast).toFixed(1)}</td></tr>`).join('')}</tbody></table></div>` : `<p class="tiny">Sin box scores suficientes; el cálculo del equipo puede continuar sin este ajuste.</p>`;
-    return `<section class="team-card"><h3>${esc(t.name || name)}</h3><p>${f.played || 0} partidos analizados · ${f.wins || 0} victorias · margen ponderado ${(f.margin ?? 0) > 0 ? '+' : ''}${esc(f.margin ?? 0)} · descanso ${t.rest_days ?? '—'} día(s)</p><h4>ÚLTIMOS PARTIDOS</h4><div class="results">${recent}</div><h4>JUGADORES DESTACADOS (PROMEDIO RECIENTE)</h4>${players}</section>`;
+    return `<section class="team-card"><h3>${esc(t.name || name)}</h3><p>${f.played || 0} partidos analizados · ${f.wins || 0} victorias · margen ponderado ${(f.margin ?? 0) > 0 ? '+' : ''}${esc(f.margin ?? 0)} · anota ${esc(f.points_for ?? '—')} · recibe ${esc(f.points_against ?? '—')} pts/juego · descanso ${t.rest_days ?? '—'} día(s)</p><h4>ÚLTIMOS PARTIDOS</h4><div class="results">${recent}</div><h4>JUGADORES DESTACADOS (PROMEDIO RECIENTE)</h4>${players}</section>`;
   }
   function contextPanel(g) {
     const c = g.context;
@@ -68,11 +68,18 @@
     $('details').innerHTML = shown.map(g => {
       const p = g.prediction;
       const factors = p?.factors || {};
-      const factorText = good(p) ? `Localía ${factors.home_advantage_points ?? '?'} pts · forma reciente ${factors.recent_margin_component ?? '?'} pts · victorias ${factors.recent_wins_component ?? '?'} pts · descanso ${factors.rest_component ?? '?'} pts · tendencia jugadores ${factors.player_component ?? '?'} pts` : 'El sistema no puede calcular porcentajes aún: se necesitan al menos cuatro partidos previos de cada equipo.';
-      return `<details><summary>${esc(g.away.name)} vs. ${esc(g.home.name)} <span class="tiny">Ver últimos partidos y jugadores</span></summary><div class="detail-inner"><p class="tiny">${esc(factorText)}</p><div class="cols">${teamCard(data.teams?.[g.away.id],g.away.name)}${teamCard(data.teams?.[g.home.id],g.home.name)}</div><p class="tiny">${srcLink(g.source)}</p>${contextPanel(g)}</div></details>`;
+      const factorText = good(p) ? `Modelo ${p.model || 'experimental'} · localía ${factors.home_advantage_points ?? '?'} pts · Elo ${factors.elo_component ?? '?'} pts · forma ${factors.recent_margin_component ?? '?'} pts · victorias ${factors.recent_wins_component ?? '?'} pts · ataque/defensa ${factors.scoring_component ?? '?'} pts · descanso ${factors.rest_component ?? '?'} pts · jugadores ${factors.player_component ?? '?'} pts · muestra ${p.sample_games_per_team_min ?? '?'} partidos · confianza ${p.confidence ?? 'limitada'}` : 'El sistema no puede calcular porcentajes aún: se necesitan al menos cuatro partidos previos de cada equipo.';
+      return `<details><summary>${esc(g.away.name)} vs. ${esc(g.home.name)} <span class="tiny">Ver explicación, jugadores y noticias</span></summary><div class="detail-inner"><p class="tiny">${esc(factorText)}</p><div class="cols">${teamCard(data.teams?.[g.away.id],g.away.name)}${teamCard(data.teams?.[g.home.id],g.home.name)}</div><p class="tiny">${srcLink(g.source)}</p>${contextPanel(g)}</div></details>`;
     }).join('') || '<p class="tiny">Sin partidos para analizar.</p>';
-    const n = data.validation?.completed_predictions ?? 0;
-    $('validation').textContent = n && data.validation?.brier_score != null ? `Historial: ${n} pronósticos evaluados. Brier score: ${data.validation.brier_score} (más bajo suele ser mejor). Muestra aún limitada; no demuestra rentabilidad.` : 'Todavía no hay suficientes predicciones resueltas para medir precisión (Brier score).';
+    const v = data.validation || {};
+    const n = Number(v.completed_predictions) || 0;
+    if (n && Number.isFinite(v.brier_score)) {
+      const rows = (v.calibration || []).map(b => `<tr><td>${esc(b.range)}</td><td>${esc(b.count)}</td><td>${esc(b.average_predicted_pct)}%</td><td>${esc(b.actual_home_win_pct)}%</td></tr>`).join('');
+      const byModel = Object.entries(v.by_model || {}).map(([model,m]) => `<li>${esc(model)}: ${esc(m.n)} partidos, Brier ${esc(m.brier)}</li>`).join('');
+      $('validation').innerHTML = `<div class="validation-stats"><div><strong>${esc(n)}</strong><span>Predicciones resueltas</span></div><div><strong>${esc(v.favorite_accuracy_pct ?? '—')}%</strong><span>Aciertos del favorito</span></div><div><strong>${esc(v.brier_score)}</strong><span>Brier (menos es mejor)</span></div></div><p>Referencia simple al 50%: Brier 0.25. ${esc(v.sample_warning || '')} No prueba rentabilidad.</p>${rows ? `<div class="table-wrap"><table class="calibration-table"><thead><tr><th>PROBABILIDAD</th><th>PARTIDOS</th><th>PROMEDIO PRONOSTICADO</th><th>VICTORIAS REALES LOCAL</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}${byModel ? `<p>Por versión del modelo:</p><ul>${byModel}</ul>` : ''}`;
+    } else {
+      $('validation').textContent = 'Todavía no hay pronósticos resueltos con datos verificados. Registramos la primera predicción antes de empezar cada partido y comprobamos luego el resultado.';
+    }
   }
   function setNotice(message, type='') {
     $('alert').textContent = message;
