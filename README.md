@@ -79,3 +79,17 @@ Podemos trabajar sobre estos archivos en futuras conversaciones. Para hacer camb
 ### Si falla la primera actualización
 
 El flujo `Publicar NBA Analytics` mantiene la web disponible, pero sin probabilidades hasta que exista una actualización estadística válida. Comprueba el registro en **Actions → Actualizar estadísticas NBA**. Si ESPN bloquea las peticiones desde los servidores de GitHub, habrá que conectar otra fuente legalmente accesible; no es correcto inventar porcentajes para rellenar la tabla.
+
+
+## Modelo experimental v2: Elo + forma 10 (noviembre 2026)
+
+- `scripts/model_v2.py` combina rating Elo **reiniciado al comienzo de la ventana recuperada** (no es el Elo completo de la temporada), resultados de hasta diez juegos anteriores, puntos anotados y recibidos, localía, descanso y tendencias de jugadores disponibles.
+- El modelo NO utiliza cuotas de casas de apuestas, NO está calibrado y se abstiene si cualquiera de los equipos tiene menos de cuatro partidos previos verificables.
+- Las diferencias de anotación y puntos recibidos NO son `OffRtg` y `DefRtg`: esas métricas requieren posesiones. Referencia: https://www.nba.com/stats/help/glossary
+- Las lesiones reportadas y los foros aparecen como contexto con fuente, sin alterar porcentajes automáticamente. Reddit requiere credenciales OAuth autorizadas; no se hace scraping sin autorización.
+- `scripts/validation.py` calcula Brier, porcentaje de aciertos de favoritos, log loss y rangos de confiabilidad. Guarda la **primera** predicción válida antes del inicio, sin reescribirla después. Un Brier más bajo no demuestra por sí solo que el modelo esté calibrado. Referencia: https://scikit-learn.org/stable/modules/calibration.html
+- Los archivos se actualizan mediante GitHub Actions en horario de República Dominicana. Si el proveedor falla, los datos pueden quedar desactualizados y la página debe indicarlo.
+- `python -m unittest discover -s tests -v` y `node --check assets/app.js` sirven para comprobar los cambios. GitHub ejecuta estas verificaciones automáticamente.
+- GitHub Pages debe habilitarse manualmente en Settings → Pages → Source → GitHub Actions. Un flujo de publicación completado mientras Pages está inactivo solo significa que el proceso evitó fallar, **no** que la página ya esté disponible.
+
+**Limitación esencial:** sin pruebas retrospectivas fuera de muestra y sin una comparación sólida con modelos de referencia, estas probabilidades deben considerarse educativas, no estimaciones con precisión demostrada.
