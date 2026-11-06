@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-06T20:45:53.194176+00:00",
+  "as_of": "2026-11-06T21:03:23.391580+00:00",
   "date": "2026-11-06",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -64,7 +64,7 @@
           {
             "title": "Washington Wizards @ Atlanta Hawks: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5nUmpqVUZlbGRuRHpLSXV0cHFBN3pRY0NSNVJoc0FpSEFObzFQaDQ1NFJjVHJKbnJlWV9Gd0pXbXU3b1EySDBrYkNYSVJieVprM1h2cFpNTVpXdERYeV85MWJhLTFzcHhzY2F1dWVNQjZUOXZWZTB2UzlUS0RUUQ?oc=5",
-            "published": "Fri, 06 Nov 2026 17:03:31 GMT"
+            "published": "Fri, 06 Nov 2026 18:33:31 GMT"
           },
           {
             "title": "Washington Wizards-Atlanta Hawks NBA Cup Preview: Injuries, Odds, How to Watch & Starters - Sports Illustrated",
@@ -93,7 +93,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:15.142539+00:00"
+        "context_updated_at": "2026-11-06T21:03:46.629343+00:00"
       }
     },
     {
@@ -164,12 +164,12 @@
           {
             "title": "Boston Celtics @ Charlotte Hornets: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00NlM0VVhrTzVQbkxiTWxkZ1RTRzBjMHliMWt2VS14VUJteHdrX25wdV9aeFZCYkttT2dkUVEyN0gxY3FzcDBWalBPNkNDc1JJUlQwNWhocThfOFJzdmhPMlFEWVR1VzFkVmUyRTZJRkpfRFVrdDlDUDFYem9jZw?oc=5",
-            "published": "Fri, 06 Nov 2026 18:33:01 GMT"
+            "published": "Fri, 06 Nov 2026 20:15:18 GMT"
           },
           {
-            "title": "Boston Celtics @ Charlotte Hornets Odds - FanDuel Sportsbook",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZENmNG5ZbnZGeWFLdzZSdDNrVHpxY1gwdzl0eWVWTlR6UWg0RXB0YjFNN0RtTlVBQ2IxaHl6cHltTEFqQWxOSXlaYVpWajFQd3N4VWdnNEl2My1TVnpOY0VqMl9hZk1GbF9sam5femUyb0I0aEM4QVViUVRpU0ZNakdSZlFjRFlyeTVWV0oxcGdWMTg?oc=5",
-            "published": "Fri, 06 Nov 2026 18:30:08 GMT"
+            "title": "Charlotte Hornets vs Boston Celtics: Game 10 and NBA Cup preview and discussion - At The Hive",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNlZDWkJBZWVqalVLY1NUNmRGU1p1RU42Y25BV3ZJYU1pT1IybHZxMTZMQnlhWWRzRFRTVkMtTEc1ZEozNHVwTkluXy1MT2tYRmFTVWR1R3pxZVBGMFluV3AxUXRtQ2xPa1E3S0w2S01hbHlJbU5ZZVdZdXlBLVZka05oT3RpQ0ZqYUV0c3ZVUnBoVmJ4RDJfMU9SMnVpRkZIc2Uw?oc=5",
+            "published": "Fri, 06 Nov 2026 16:00:17 GMT"
           }
         ],
         "forum": {
@@ -183,7 +183,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:15.723292+00:00"
+        "context_updated_at": "2026-11-06T21:03:47.218141+00:00"
       }
     },
     {
@@ -242,6 +242,11 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
+            "title": "76ers vs Cavaliers NBA Cup Group Play : Starting Lineups, Injuries and What To Expect - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWVMyaWg0WDZyaGZSd184Q0NiSndjNE82b3hDSURvOS0xaTRaSXNVcDF1S3RmbUMtcmF0STJkM0VjeUZsd3lIREhyWkt4UmFUUlBTQW1TNEFIcXdwMTJVTTVTTC1MaFVHOVU5T0VZWDlBSV9kbXdvWlFmaTBBQVpEUTdiZzRJU2EwOW1Bb1NvalcyWmluZjcxaDZOYkVyNlBLVDBVN21TcEtVT2dZWi1uV0VkY0tKWnB2cnNjdnl1dU1IS3FqdGlWaVpHbmp5Zw?oc=5",
+            "published": "Fri, 06 Nov 2026 18:45:28 GMT"
+          },
+          {
             "title": "Philadelphia 76ers @ Cleveland Cavaliers: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVzR3VEhxV0lMMGNuSFlxSGZMajdFZS0wQ0h1REJ2S2lfOWp3c3JsNGgxaGFscGtYLU9relhMa0pSMXhyZ1hhaUcxMWpQLWg0cU1oWEpxaHdVNjRZUWxyem5HMnZ2cDg4T0E0RFdWM0poc0RMTXhlY0RwLWktcmFhMDIyaFhZQQ?oc=5",
             "published": "Fri, 06 Nov 2026 18:33:24 GMT"
@@ -255,11 +260,6 @@
             "title": "Sixers vs. Cavaliers preview: LeBron returns home for NBA Cup showdown - Metro Philadelphia",
             "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNblhobVJwYmNGS0hMbmNGSjFwZUI1QzN4OUJ1eGlzYnZqTGdSRTFmUThDQTNtZnpuaWFUUkZSMXdDa2E2VG9tNTN0NjNtWVI0R0pMY3prdnF1emdKakZVbDNlblhXaXphX3l3YkVFZ3JycXJMQnZnREgzUzRmcEMzQkx3R1hzb1BFSm9aWHVobFpROUF1WDV0T29LZkNRSi1tRkpvbHBYMWxsRmNZcHM0YXNsVTllcGhfUjBJSFdRRks?oc=5",
             "published": "Fri, 06 Nov 2026 19:12:12 GMT"
-          },
-          {
-            "title": "76ers vs Cavaliers NBA Cup Group Play : Starting Lineups, Injuries and What To Expect - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWVMyaWg0WDZyaGZSd184Q0NiSndjNE82b3hDSURvOS0xaTRaSXNVcDF1S3RmbUMtcmF0STJkM0VjeUZsd3lIREhyWkt4UmFUUlBTQW1TNEFIcXdwMTJVTTVTTC1MaFVHOVU5T0VZWDlBSV9kbXdvWlFmaTBBQVpEUTdiZzRJU2EwOW1Bb1NvalcyWmluZjcxaDZOYkVyNlBLVDBVN21TcEtVT2dZWi1uV0VkY0tKWnB2cnNjdnl1dU1IS3FqdGlWaVpHbmp5Zw?oc=5",
-            "published": "Fri, 06 Nov 2026 18:45:28 GMT"
           }
         ],
         "forum": {
@@ -273,7 +273,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:16.413542+00:00"
+        "context_updated_at": "2026-11-06T21:03:47.883919+00:00"
       }
     },
     {
@@ -339,7 +339,7 @@
           {
             "title": "Utah Jazz @ Dallas Mavericks: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pYmp5OTg4Qm5UVEVMMXlZSnp4WmdPTTdtRjFFakFodmgxZ0Q2dFRmOWN2dGNiZlQwVFlkRW10YW9IUmlSaG9hVGpubmZxMVdXVWJwdVpVNXNsV1B4SzB5TmxvakFuUkwzS0NhMWRDT1RVQ0d1MlE?oc=5",
-            "published": "Fri, 06 Nov 2026 18:33:35 GMT"
+            "published": "Fri, 06 Nov 2026 17:57:30 GMT"
           },
           {
             "title": "Utah Jazz Injury Report: Who's Playing, Who's Not vs. Mavericks - Sports Illustrated",
@@ -363,7 +363,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:17.055460+00:00"
+        "context_updated_at": "2026-11-06T21:03:48.525035+00:00"
       }
     },
     {
@@ -427,19 +427,19 @@
             "published": "Fri, 06 Nov 2026 18:32:25 GMT"
           },
           {
+            "title": "Thunder vs. Grizzlies Prediction, Odds and Best Prop Bets for NBA Cup Group Play - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMGFwMGZwWVliLVhRaEdhMFlJYUZJS0VUYmRwZHI3R1NIdEpLeTRpVUljOThPamZiQXVBX1h6dFdxR044UGxfN3BkNTNfZHRTcW5qaHNiWmRLYXFzclhHcnU1Z1NSVVhjSnFhanBuT3d5NG8wNGZMWVUtdDFMRG41UUhoZmRnQUFxYl9veXdOTGQ5eUc1cGNvS0VHQjJzcGZid2p5MzdoYUFlVFlKMm84YVRyZDNPU2RxaXc?oc=5",
+            "published": "Fri, 06 Nov 2026 19:21:42 GMT"
+          },
+          {
+            "title": "How to watch Thunder vs. Grizzlies today: Time, TV channel - OKC Thunder Wire",
+            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUm5xYlNUNU03ZktaLVhyXzllcDVNLUhFRVRQWHRLelhuZ2ItUXY2bXcxc3plcTV4dWJ3aFhCQ0FwMDhXSFVFZlREbGlYUzA5aVpEOXFHSkVudndONFE5YUM4LXdxSDVzTVI1Z1Y1eThWZ2hzUngyOWJoWVhDa29xSjVPVWN1SUdKcnJwRGptX1VXbXdHX3UyZXRMNlM1LTg4VmduMWxvZmk5VkVidU0zT2pVRjdxeGU5aW9VMzBtQWxmRHdKaE5nVFNmOGdNajhxU2YwdHlkSmxLV1djdXB3MXBR?oc=5",
+            "published": "Fri, 06 Nov 2026 12:03:00 GMT"
+          },
+          {
             "title": "Oklahoma City Thunder Aims to Make It Three Against Memphis Grizzlies - Athlon Sports",
             "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSzYxRVRNbk0xLW1WaUt6clV3NlktWnBYOW8wTkFZQzVhZFJ2a3F3MWVSbUoxemxqZlU1MXJrRk5raUVuQmJ1N0ZaYndzSUxZelpiSENBTjltUjE4VVpfR25MdzRGU0g4a2M3YllQUFd2NTdLY2NQc1NCZVBVMmVuMlZyTk9GQkFTRm1qMThEeUwyaWNTV3NPZjhJanZvSjZoWGNNNjRXWk5BUkU?oc=5",
             "published": "Fri, 06 Nov 2026 20:06:16 GMT"
-          },
-          {
-            "title": "Injury Report: OKC Thunder List Six Players for Bout with Grizzlies - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHRrTlM5YUFSeTh2MXdtVE40b3R5cm5GU2taMHpEbnVaOG83d0Jac3dFSDVOLVlQcTVwTGJqQVg1Q3R0WWNRaTlsZ3Q2dEU3ZURNR081bGJKMlZxR0NSZURvVkJRblJ2ek5XeFg5WDl5dkNNMV81UmdRVUE1dWRiVnV6Y0JnaDUyOGY3ZnV4Smk3ZDUwenRsdmdPZUdvRWZ2MTFMQQ?oc=5",
-            "published": "Fri, 06 Nov 2026 13:00:04 GMT"
-          },
-          {
-            "title": "Oklahoma City Thunder at Memphis Grizzlies odds, picks and predictions - Sportsbook Wire",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOWJLYS1zVDdHSWNXTlVmb0I0SnJaVHRFR0JKT3F2cU8yaVV2VVpMU09Bdk1LLU05VjI4eFdpc1FNQl84bmcyWkJ4ZUlPRHFZWEZobDZOUTJYYzljbDhuU3lhMVp4c1ZHVk83R0dtYVdaYndUUFlVelA1U2UzZXJwNzhNeTZJaFh4NDYyekk4VjZKUEtfWkhLTzNNRFVaa3l1Nkt2NHdJWU5zQng1MkVHRkZJb3VyRHl0YmRsMUxaR2VRQQ?oc=5",
-            "published": "Fri, 06 Nov 2026 18:33:00 GMT"
           }
         ],
         "forum": {
@@ -453,7 +453,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:17.711775+00:00"
+        "context_updated_at": "2026-11-06T21:03:49.098481+00:00"
       }
     },
     {
@@ -543,7 +543,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:18.321128+00:00"
+        "context_updated_at": "2026-11-06T21:03:49.745984+00:00"
       }
     },
     {
@@ -604,7 +604,7 @@
           {
             "title": "Minnesota Timberwolves vs New Orleans Pelicans Nov 6, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5bmRnRHdhM2RJMU13TXdic3RUME83aTR6NnhmQTRCdTFPZ2Ficm5iSExrd3NCZ0JkOHY5aXR5TVBwWXdodmc4bm1JUUFMQ2owVi13WmJvcER1Zw?oc=5",
-            "published": "Fri, 06 Nov 2026 19:54:09 GMT"
+            "published": "Fri, 06 Nov 2026 17:40:55 GMT"
           },
           {
             "title": "Minnesota Timberwolves @ New Orleans Pelicans: Live game updates, stats, play-by-play - Yahoo Sports",
@@ -633,7 +633,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:18.969791+00:00"
+        "context_updated_at": "2026-11-06T21:03:50.356086+00:00"
       }
     },
     {
@@ -694,7 +694,7 @@
           {
             "title": "Portland Trail Blazers @ Los Angeles Lakers: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYmI3WnNxU2YyNVVReG9hdGlyTkhzOW55ZE5qcm1TUzgwdHY4TVY5dHhEdVc3Um9sd0UwcUhydWo4TFY2WEEzTS1kNFRFSTl1dzVTTVU0VHVLVEZSOS12Sksyb0F5LXBPUldnLU5ia21tRjBTVVczR2hCTE02QVllSlJSRkVVVWR1elE?oc=5",
-            "published": "Fri, 06 Nov 2026 18:33:34 GMT"
+            "published": "Fri, 06 Nov 2026 19:00:39 GMT"
           },
           {
             "title": "Emirates NBA Cup Preview: Blazers vs Lakers - Blazer's Edge",
@@ -702,14 +702,14 @@
             "published": "Fri, 06 Nov 2026 18:40:41 GMT"
           },
           {
+            "title": "Blazers vs. Lakers NBA Cup: 5 Questions Beyond the Box Score - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNC1ZamNEOU1VT2l1YXh6UzZ5aE9yd1ZJVm43aXRHdmFJUEw2NFFRMVo4YWIzb2pKanc0LVloSmROaGpMUUwxZmR4NVo2b1czSUk5N2d0VUFHUGs2ZWxuOGNZLTEyTUlwSEFDWEFiVFdaSTlUMy1aTGlVeUVlWGoyZWNXNHhBNGVLWEpDVm0tNW4yYjB0WTdjU0gybnNKaXp4?oc=5",
+            "published": "Fri, 06 Nov 2026 20:50:48 GMT"
+          },
+          {
             "title": "Portland Trail Blazers @ Los Angeles Lakers Odds - FanDuel Sportsbook",
             "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY0F1RjgxMEh5c3MxS1FVQmlUMERYMV9uVDZscXZJT3BBeDhVOGFpX3p6UWZ4ZnVFQUZfaU13MHJKS1JHTlRlM3RDSGZhbUMzOFRXSDJ3Y293RGlhdzZ5X1pIanBtQllPbUZ1NUlXSnNXYVZQZlF6NDVRdEI4N21LcTJRSEZSaVRuN3RkNkhuWmJ5ZUk0aWczZkFHTFB1UmM?oc=5",
             "published": "Fri, 06 Nov 2026 18:22:45 GMT"
-          },
-          {
-            "title": "Trail Blazers vs. Lakers Prediction, Odds and Best Prop Bets for NBA Cup Group Play - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZMcU9lVUhnZzNRZk5ZT1B5c0hWWHdFOXBEc3UyeVQzZmJQSGFvZnY0bFZJZVVKMzdSV2EtajI1T0FuTHNXYWVpTkhNZnp2bmpIcWkzR1Iyd0dsaEFMUlBVVGVnS2ZHWlF1MThzT05VVHBGU0tHdXgtNElzU2xzdHRZcmxaM0FMQmdvaE8ybmp6Z3Q3SllfZnpVd1BfQjJRUGhvdXNHcmFJZmU1UWJXVEhsSWdDeTJtNnZMUVFB?oc=5",
-            "published": "Fri, 06 Nov 2026 19:30:19 GMT"
           }
         ],
         "forum": {
@@ -723,7 +723,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:19.664842+00:00"
+        "context_updated_at": "2026-11-06T21:03:51.117045+00:00"
       }
     },
     {
@@ -792,14 +792,14 @@
             "published": "Fri, 06 Nov 2026 15:00:00 GMT"
           },
           {
-            "title": "Game Preview: San Antonio Spurs vs. Sacramento Kings - Pounding The Rock",
-            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOUdDclpzc0ZsXzNtcmkzMklqalpLZXkwUVBHcm9JNFJHZDNydTE4MkVqNVg1RGNhOUdPY0ZaM3pKY085LTlOUkRtYUI1bEJMLWZhcU95S1VGdlhEcjFtQ1FlME5iSFp5cUpYbmdLTmNCcG1IenF3QURLTzZUM1ZIVkotbUpxakIzZDVBa0JMWEliQjg3WGx6bDVDeWVmNGs3YnRJSWRNYWFDVHRkQmc?oc=5",
-            "published": "Fri, 06 Nov 2026 13:00:00 GMT"
-          },
-          {
             "title": "Spurs vs. Kings: Can Sacramento Stop Victor Wembanyama’s Momentum? - Athlon Sports",
             "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRTFHTENZdFRvUllvQWZqSnBONHNBMmpmQWM0ZUdPc0JtTHlhcGl5NFJSaE5ZeTVNMmdkeXF4U2ZfRkFJQzRYemhoQ2ZtZDM2YUlLY2JrODZEdHpWb2Q2R0lxTVQwX01JeWdWMkJqc19kUkdtcnlmeEhmYkxaa1Q5TS1tc1ozRFVaNEZ0TC1qdFNmTkFyNmExYkdvbHllU2ZCdWM3eg?oc=5",
             "published": "Fri, 06 Nov 2026 20:08:16 GMT"
+          },
+          {
+            "title": "Kings vs. Spurs: Alien Invasion - The Kings Herald",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTTZJYjVDU3lXV3VSdk1RelplZ1pULWZ6WVR3LTI4NFZvWlFldEZDbzFqdy16WXloZ21POGRvSl8td285eVR4YlR4Y2NWaGtaaFI3RlRCRmtCUkNTekMya3N4NGJJYXJKTlBqNExUd1A?oc=5",
+            "published": "Fri, 06 Nov 2026 18:39:40 GMT"
           }
         ],
         "forum": {
@@ -813,7 +813,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-06T20:46:20.311013+00:00"
+        "context_updated_at": "2026-11-06T21:03:51.700854+00:00"
       }
     },
     {
