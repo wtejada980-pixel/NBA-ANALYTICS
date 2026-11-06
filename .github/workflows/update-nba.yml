@@ -1,0 +1,33 @@
+name: Actualizar estadísticas NBA
+
+on:
+  workflow_dispatch:
+  schedule:
+    # República Dominicana UTC-4: 09:15 y 18:15 cada día
+    - cron: '15 13,22 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Actualizar datos
+        run: python scripts/update.py
+      - name: Guardar datos e historial
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/history.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar datos NBA"
+            git push
+          fi
