@@ -3,8 +3,13 @@ name: Actualizar estadísticas NBA
 on:
   workflow_dispatch:
   schedule:
-    # República Dominicana UTC-4: 09:15 y 18:15 cada día
-    - cron: '15 13,22 * * *'
+    # Hora República Dominicana: mañana, tarde y antes del último bloque de partidos
+    - cron: '15 9 * * *'
+      timezone: 'America/Santo_Domingo'
+    - cron: '30 17 * * *'
+      timezone: 'America/Santo_Domingo'
+    - cron: '0 20 * * *'
+      timezone: 'America/Santo_Domingo'
 
 permissions:
   contents: write
@@ -12,7 +17,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,7 +25,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Actualizar datos
+      - name: Probar el modelo sin depender de fuentes externas
+        run: python -m unittest discover -s tests -v
+      - name: Actualizar datos deportivos y contexto público
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT }}
         run: python scripts/update.py
       - name: Guardar datos e historial
         run: |
