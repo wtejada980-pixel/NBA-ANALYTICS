@@ -69,6 +69,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.equal(view.node('game-count').textContent,'1 partido');
   assert.match(view.node('model-validation').innerHTML,/Partidos evaluados/);
   assert.match(view.node('quality-caveat').textContent,/Todavía no hay partidos/);
+  assert.match(view.node('history-list').innerHTML,/Todavía no tenemos pronósticos/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
     validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68}});
   assert.match(view.node('model-validation').innerHTML,/62\.5%/);
@@ -94,7 +95,6 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
   assert.match(view.node('games').innerHTML,/Forma de los equipos/);
   assert.match(view.node('games').innerHTML,/Tipo de pronóstico: ganador del partido/);
-  assert.match(view.node('history-list').innerHTML,/Todavía no tenemos pronósticos/);
   assert.doesNotMatch(view.node('games').innerHTML,/theScore/i);
   assert.match(view.node('games').innerHTML,/<details class="game-card"/);
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
