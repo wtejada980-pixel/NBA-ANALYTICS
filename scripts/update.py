@@ -143,7 +143,8 @@ def stat_line(summary: dict, team_id: str) -> list[dict]:
                 if not who.get('id'):
                     continue
                 found.append({'id': str(who['id']), 'name': who.get('displayName', 'Jugador'),
-                              'pts': pts, 'reb': stat('REB'), 'ast': stat('AST')})
+                              'pts': pts, 'reb': stat('REB'), 'ast': stat('AST'),
+                              'starter': row.get('starter') is True or row.get('isStarter') is True})
     return found
 
 
@@ -159,12 +160,12 @@ def player_profiles(team_id: str, recent_games: list[dict], summaries: dict[str,
             continue
         pts = [s['pts'] for s in samples]
         n = len(samples)
-        players.append({'name': samples[0]['name'], 'games': n,
+        players.append({'id': samples[0]['id'], 'name': samples[0]['name'], 'games': n,
                         'pts': round(sum(pts) / n, 1),
                         'reb': round(sum(s['reb'] for s in samples) / n, 1),
                         'ast': round(sum(s['ast'] for s in samples) / n, 1),
                         'recent_points': pts})
-    return sorted(players, key=lambda p: p['pts'], reverse=True)[:5]
+    return sorted(players, key=lambda p: p['pts'], reverse=True)[:15]
 
 
 def player_trend(players: list[dict]) -> float:
@@ -297,6 +298,25 @@ def refresh(today: date | None = None):
         future = parse_time(game['datetime']) > now
         ratings = elo_before(finished, game['datetime']) if future else {}
         game['prediction'] = predict_v2(game, teams, ratings) if game['status'] == 'pre' and future else None
+    # Titulares/estadísticas del partido: nunca inferir quintetos de la forma reciente.
+    # La API no oficial puede no publicar alineaciones antes del salto inicial.
+    for game in schedule:
+        if game['date'] != day.isoformat():
+            continue
+        try:
+            actual = get_json('summary', {'event': game['id']}, tries=1)
+        except RuntimeError:
+            continue
+        lineups = {'home': [], 'away': []}
+        for side in ('home', 'away'):
+            for p in stat_line(actual, game[side]['id']):
+                lineups[side].append({
+                    'id': p['id'], 'name': p['name'],
+                    'starter': p.get('starter') is True,
+                    'game_pts': p['pts'] if game['status'] in ('in', 'post') else None
+                })
+        if lineups['home'] or lineups['away']:
+            game['lineups'] = lineups
     # Contexto de lesiones, noticias y foros SOLO para partidos del día.
     # No modifica la probabilidad, que depende de la forma deportiva.
     collect([g for g in schedule if g['date'] == day.isoformat()], teams)

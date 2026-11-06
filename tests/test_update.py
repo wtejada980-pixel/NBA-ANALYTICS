@@ -40,6 +40,7 @@ class ParseTests(unittest.TestCase):
         ]}}
         players = update.stat_line(data, '10')
         self.assertEqual(len(players), 1)
+        self.assertFalse(players[0]['starter'])
         self.assertEqual((players[0]['pts'], players[0]['reb'], players[0]['ast']), (25, 6, 8))
 
     def test_valid_probabilities(self):

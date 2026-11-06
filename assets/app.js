@@ -12,6 +12,8 @@
   let liveError = false;
   let liveUpdatedAt = 0;
   const LIVE_INTERVAL_MS = 30000;
+  let expandedGameId = '';
+  const livePlayerDetails = new Map();
 
   function todayInRD() {
     const parts = new Intl.DateTimeFormat('en-US', {
@@ -78,6 +80,122 @@
     const slug = values[abbr] || abbr.toLowerCase();
     return 'https://a.espncdn.com/i/teamlogos/nba/500/' + encodeURIComponent(slug) + '.png';
   }
+
+  function normalizedName(name) {
+    return String(name || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().toLowerCase();
+  }
+
+  function parseGameSummary(summary, game) {
+    const result = {away:[],home:[]};
+    const teams = summary?.boxscore?.players;
+    if (!Array.isArray(teams)) return result;
+    for (const group of teams) {
+      const tid = String(group?.team?.id || '');
+      const side = tid === String(game.away?.id) ? 'away' :
+        tid === String(game.home?.id) ? 'home' : '';
+      if (!side) continue;
+      for (const block of group.statistics || []) {
+        const labels = (block.labels || []).map(x => String(x).toUpperCase());
+        if (!labels.includes('PTS')) continue;
+        const ptsIndex = labels.indexOf('PTS');
+        for (const row of block.athletes || []) {
+          if (row.didNotPlay || !row.athlete?.id) continue;
+          const raw = Array.isArray(row.stats) ? row.stats[ptsIndex] : null;
+          const pts = raw !== null && raw !== '' && raw !== undefined && Number.isFinite(Number(raw)) ?
+            Number(raw) : null;
+          result[side].push({
+            id:String(row.athlete.id),
+            name:String(row.athlete.displayName || row.athlete.fullName || 'Jugador'),
+            starter:row.starter === true || row.isStarter === true,
+            game_pts:game.status === 'pre' ? null : pts
+          });
+        }
+      }
+    }
+    return result;
+  }
+
+  function playersForSide(game, side) {
+    const tid = String(game[side]?.id || '');
+    const recent = Array.isArray(data.teams?.[tid]?.players) ? data.teams[tid].players : [];
+    const confirmed = livePlayerDetails.get(String(game.id)) || game.lineups || {};
+    const boxscore = Array.isArray(confirmed[side]) ? confirmed[side] : [];
+    const map = new Map();
+    const key = p => p.id ? 'id:' + String(p.id) : 'name:' + normalizedName(p.name);
+    for (const p of recent) {
+      if (p?.name) map.set(key(p), {
+        id:String(p.id || ''),name:String(p.name),games:Number(p.games) || 0,
+        pts:Number.isFinite(Number(p.pts)) ? Number(p.pts) : null,
+        starter:false,game_pts:null
+      });
+    }
+    for (const p of boxscore) {
+      if (!p?.name) continue;
+      const idKey = key(p);
+      let existing = map.get(idKey);
+      if (!existing) existing = [...map.values()].find(x => normalizedName(x.name) === normalizedName(p.name));
+      const record = existing ? {...existing} : {
+        id:String(p.id || ''),name:String(p.name),games:0,pts:null,starter:false,game_pts:null
+      };
+      record.starter = p.starter === true;
+      if (game.status !== 'pre' && p.game_pts !== null && Number.isFinite(Number(p.game_pts))) {
+        record.game_pts = Number(p.game_pts);
+      }
+      map.set(idKey,record);
+    }
+    return [...map.values()].sort((a,b)=>Number(b.starter)-Number(a.starter) ||
+      (b.pts ?? -1)-(a.pts ?? -1)).slice(0,15);
+  }
+
+  function playerTable(game, side) {
+    const team = game[side] || {};
+    const players = playersForSide(game,side);
+    const starters = players.filter(p=>p.starter);
+    const avg = p => p.pts === null || p.games < 1 ? '—' : formatPct(p.pts);
+    const todayPts = p => p.game_pts === null ? '—' : String(p.game_pts);
+    const rows = players.map(p => '<tr>' +
+      '<td class="player-name">' + escapeHtml(p.name) +
+      (p.starter ? '<span class="starter-badge">TITULAR</span>' : '') +
+      '</td><td class="player-avg">' + avg(p) + '</td>' +
+      '<td class="player-today">' + todayPts(p) + '</td></tr>').join('');
+    const hint = starters.length === 5 ? '5 titulares confirmados en el acta de ESPN' :
+      starters.length > 0 ? starters.length + ' titulares identificados por ESPN; quinteto incompleto' :
+      'Titulares sin confirmar · jugadores ordenados por promedio reciente';
+    return '<div class="player-team">' +
+      '<h4>' + escapeHtml(team.name || 'Equipo') + '</h4>' +
+      '<p class="lineup-note">' + escapeHtml(hint) + '</p>' +
+      (players.length ? '<table class="players-table"><thead><tr>' +
+        '<th>Jugador</th><th>Prom. PTS</th><th>Hoy</th></tr></thead><tbody>' +
+        rows + '</tbody></table>' :
+        '<div class="players-empty">No hay estadísticas individuales verificadas para este equipo.</div>') +
+    '</div>';
+  }
+  function playersPanel(game) {
+    return '<div class="players-panel-title">Jugadores y quintetos iniciales</div>' +
+      '<p class="players-explainer">Prom. PTS = promedio de puntos en hasta los últimos 5 partidos registrados de cada jugador. ' +
+      '«Hoy» = puntos anotados en este encuentro cuando ESPN los publica. ' +
+      'No es una predicción de puntos.</p>' +
+      '<div class="player-columns">' + playerTable(game,'away') + playerTable(game,'home') + '</div>';
+  }
+  async function fetchGameSummary(id) {
+    if (!/^\d+$/.test(id)) return;
+    const game = (data.games || []).find(g=>String(g.id)===id);
+    if (!game) return;
+    try {
+      const url='https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=' +
+        encodeURIComponent(id);
+      const response=await fetch(url,{cache:'no-store'});
+      if (!response.ok) return;
+      const result=parseGameSummary(await response.json(),game);
+      if (!result.away.length && !result.home.length) return;
+      livePlayerDetails.set(id,result);
+      if (expandedGameId === id) render();
+    } catch (error) {
+      // Si ESPN impide la consulta en el navegador, conservar promedios
+      // recopilados por GitHub Actions y la última alineación conocida.
+    }
+  }
+
   function gameCard(game) {
     const hasPrediction = validPrediction(game);
     const p = game.prediction || {};
@@ -134,7 +252,10 @@
       escapeHtml(game.home?.name || 'Local') + ' ' + game.home_score + '">' +
       '<strong class="live-score">' + game.away_score + '</strong><span>MARCADOR</span>' +
       '<strong class="live-score">' + game.home_score + '</strong></div>' : '';
-    return '<article class="game-card">' +
+    const id=escapeHtml(String(game.id || ''));
+    return '<details class="game-card" data-game-id="' + id + '"' +
+      (expandedGameId === String(game.id) ? ' open' : '') + '>' +
+      '<summary class="game-summary" data-game-id="' + id + '">' +
       '<div class="game-top">' + teamMark('away') +
       '<div class="game-center"><span class="game-time">' +
         escapeHtml(timeLabel(game.datetime)) + ' · RD</span>' +
@@ -144,9 +265,11 @@
       '<div class="matchup">' + teamName('away') + teamName('home') + '</div>' +
       scoreboard + percentageBar +
       '<div class="game-bottom">' + verdict + '</div>' +
+      '<span class="expand-hint">Ver jugadores y titulares <span class="expand-arrow" aria-hidden="true">⌄</span></span></summary>' +
+      '<div class="game-breakdown">' + playersPanel(game) +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
-        '" target="_blank" rel="noopener noreferrer">Ver en ESPN</a>' : '') +
-    '</article>';
+        '" target="_blank" rel="noopener noreferrer">Consultar partido en ESPN ↗</a>' : '') +
+      '</div></details>';
   }
   function renderDates(games) {
     const dates = [...new Set(games.map(g => g.date).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d)))].sort();
@@ -281,11 +404,27 @@
     }
     render();
   }
+  $('games').addEventListener('click', event => {
+    const summary=event.target?.closest?.('summary.game-summary');
+    if (!summary) return;
+    event.preventDefault();
+    const id=String(summary.dataset.gameId || '');
+    if (!id) return;
+    expandedGameId=expandedGameId === id ? '' : id;
+    render();
+    if (expandedGameId === id) fetchGameSummary(id);
+  });
   $('reload').addEventListener('click', async () => { await load(); await refreshLive(); });
   (async () => { await load(); await refreshLive(); })();
   if (typeof setInterval === 'function') {
     setInterval(() => {
-      if (typeof document.visibilityState === 'undefined' || document.visibilityState !== 'hidden') refreshLive();
+      if (typeof document.visibilityState === 'undefined' || document.visibilityState !== 'hidden') {
+        refreshLive();
+        if (expandedGameId) {
+          const game=(data.games || []).find(g=>String(g.id)===expandedGameId);
+          if (game?.status === 'in') fetchGameSummary(expandedGameId);
+        }
+      }
     }, LIVE_INTERVAL_MS);
   }
 })();

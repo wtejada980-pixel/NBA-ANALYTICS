@@ -151,3 +151,32 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
  .team-mark img {width:54px;height:54px}.game-time {font-size:12px}.team-full-name {font-size:12px}
  .section-heading {gap:8px}.updated {font-size:10px}
 }
+
+/* Panel desplegable de quintetos y jugadores */
+.game-card[open]{border-color:#e17a50;box-shadow:0 0 29px #f66a3328;}
+.game-summary{list-style:none;cursor:pointer;outline-offset:5px}
+.game-summary::-webkit-details-marker{display:none}
+.game-summary::marker{content:""}
+.game-summary:focus-visible{outline:2px solid #ff8e5d;border-radius:12px}
+.expand-hint{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:9px;color:#d2d4d7;font-size:11px;font-weight:650;user-select:none;}
+.expand-arrow{font-size:19px;color:#fd7947;line-height:.8;transition:transform .2s}
+.game-card[open] .expand-arrow{transform:rotate(180deg)}
+.game-breakdown{margin-top:18px;padding-top:16px;border-top:1px solid #494043;}
+.players-panel-title{font-size:15px;font-weight:810;color:#fff;letter-spacing:-.015em}
+.players-explainer{color:#aeb0b7;font-size:11px;line-height:1.5;margin:6px 0 17px}
+.player-columns{display:grid;grid-template-columns:1fr;gap:19px}
+.player-team{min-width:0}
+.player-team h4{font-size:13px;color:#fff;font-weight:750;margin:0 0 3px}
+.lineup-note{font-size:10px;color:#aaadb3;margin:0 0 9px}
+.players-table{width:100%;border-collapse:collapse;table-layout:fixed;font-variant-numeric:tabular-nums}
+.players-table th{color:#aaaeb6;border-bottom:1px solid #383a41;padding:7px 3px;text-align:right;font-size:10px;font-weight:750}
+.players-table td{border-bottom:1px solid #272930;padding:7px 3px;text-align:right;color:#eceef1;font-size:11px}
+.players-table th:first-child,.players-table td:first-child{text-align:left;width:57%}
+.player-name{font-weight:550;overflow-wrap:anywhere}
+.player-avg{font-weight:800}
+.player-today{color:#fabf70!important;font-weight:800}
+.starter-badge{display:inline-block;margin-left:5px;color:#92eeb6;background:#173b29;padding:2px 4px;border-radius:4px;font-size:8px;letter-spacing:.03em;font-weight:750}
+.players-empty{font-size:11px;color:#a5a7ad;padding:12px 0}
+.game-breakdown .game-link{margin-top:14px;padding:8px 0;color:#e6b49c}
+@media(min-width:851px){.game-card[open]{grid-column:span 2}.game-card[open] .player-columns{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}}
+@media(max-width:850px){.player-columns{grid-template-columns:1fr}}

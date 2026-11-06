@@ -58,6 +58,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
   assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
+  assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
+  assert.match(view.node('games').innerHTML,/<details class="game-card"/);
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/datos desactualizados/i);
@@ -87,6 +89,17 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/live-score">61/);
   assert.match(view.node('games').innerHTML,/63\.4/);
   assert.equal(view.node('game-count').textContent,'2 partidos');
+  view=await mount({
+    as_of:new Date().toISOString(),games:[game],
+    teams:{
+      '1':{players:[{id:'10',name:'Jugador de Boston',games:5,pts:21.4}]},
+      '2':{players:[{id:'11',name:'Jugador de NY',games:4,pts:18.7}]}
+    }
+  });
+  assert.match(view.node('games').innerHTML,/Jugador de Boston/);
+  assert.match(view.node('games').innerHTML,/21\.4/);
+  assert.match(view.node('games').innerHTML,/18\.7/);
+  assert.match(view.node('games').innerHTML,/Titulares sin confirmar/);
   view=await mount(null,true);
   assert.match(view.node('alert').textContent,/No fue posible conectar/);
   console.log('OK: probabilidades prepartido, marcador vivo, agenda y errores de red.');
