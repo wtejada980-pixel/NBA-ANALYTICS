@@ -1,6 +1,14 @@
 name: Actualizar estadísticas NBA
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-nba.yml'
+      - 'scripts/update.py'
+      - 'scripts/model_v2.py'
+      - 'scripts/context_sources.py'
+      - 'scripts/validation.py'
   workflow_dispatch:
   schedule:
     # Hora República Dominicana: mañana, tarde y antes del último bloque de partidos
