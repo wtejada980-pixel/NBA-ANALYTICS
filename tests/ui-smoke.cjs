@@ -88,7 +88,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
         predicted_at:new Date(Date.now()+4*3600_000).toISOString(),
         scheduled_at:new Date(Date.now()+3*3600_000).toISOString(),result:null}
     ]});
-  assert.match(view.node('elo-validation').innerHTML,/0\\.2200/);
+  assert.match(view.node('elo-validation').innerHTML,/0\.2200/);
   assert.match(view.node('history-list').innerHTML,/ACIERTO/);
   assert.doesNotMatch(view.node('history-list').innerHTML,/late/);
   assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
