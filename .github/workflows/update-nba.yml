@@ -57,7 +57,18 @@ jobs:
           git add data/latest.json data/history.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar datos NBA"
-            git push
+            # Admitir ediciones hechas en GitHub mientras el cálculo se ejecuta
+            for intento in 1 2 3 4; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$intento" = "4" ]; then
+                echo "::error::No se pudo sincronizar la actualización sin perder cambios."
+                exit 1
+              fi
+              sleep 4
+            done
           fi
 
       - name: Configurar GitHub Pages
