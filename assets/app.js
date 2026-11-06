@@ -11,7 +11,16 @@
   let liveAvailable = false;
   let liveError = false;
   let liveUpdatedAt = 0;
-  const LIVE_INTERVAL_MS = 30000;
+  // Consultar marcadores cada 2 segundos SOLO cuando hay un partido en juego
+  // y la pestaña está visible. ESPN puede actualizar con retraso o limitar acceso.
+  const LIVE_INTERVAL_MS = 2000;
+  const IDLE_INTERVAL_MS = 30000;
+  const PLAYER_INTERVAL_MS = 12000;
+  let livePollInFlight = false;
+  let lastLivePollStarted = 0;
+  let lastPlayersPollStarted = 0;
+  let nextLiveRetryAt = 0;
+  let liveFailures = 0;
   let expandedGameId = '';
   const livePlayerDetails = new Map();
 
@@ -295,7 +304,7 @@
       new Intl.DateTimeFormat('es-DO', {timeZone: zone, day:'numeric', month:'short', hour:'numeric', minute:'2-digit'}).format(new Date(ts)) :
       'sin actualizar';
     const liveTime = liveUpdatedAt ?
-      new Intl.DateTimeFormat('es-DO', {timeZone: zone, hour:'numeric', minute:'2-digit'}).format(new Date(liveUpdatedAt)) : '';
+      new Intl.DateTimeFormat('es-DO', {timeZone: zone, hour:'numeric', minute:'2-digit', second:'2-digit'}).format(new Date(liveUpdatedAt)) : '';
     $('updated').textContent = liveAvailable ?
       'Marcadores ESPN: ' + liveTime + ' · Pronósticos: ' + reported :
       'Pronósticos: ' + reported;
@@ -304,9 +313,11 @@
     if (liveError && !liveAvailable) {
       setStatus('No fue posible conectar con el marcador de ESPN. Se muestran los últimos datos publicados.', 'warning');
     } else if (liveError || (liveAvailable && Date.now() - liveUpdatedAt > 120000)) {
-      setStatus('Conexión de marcadores interrumpida; estos resultados pueden estar atrasados.', 'warning');
+      setStatus('La fuente ha interrumpido o limitado las consultas. Reintentando gradualmente; marcadores no necesariamente actuales.', 'warning');
     } else if (liveAvailable) {
-      setStatus('Marcadores consultados en ESPN cada 30 segundos. Los porcentajes son pronósticos ANTES del partido, no en vivo.', 'ok');
+      setStatus(hasLiveGameOnScreen() ?
+        'En vivo: comprobando ESPN cada 2 segundos si permite el acceso. Los datos pueden llegar con retraso.' :
+        'Los marcadores se consultan cada 30 segundos fuera de los partidos. El pronóstico es prepartido.', 'ok');
     } else if (loadError || !isFresh()) {
       setStatus('Esperando datos recientes. No mostramos porcentajes desactualizados.', 'warning');
     } else {
@@ -375,6 +386,9 @@
   }
   let liveRequestNumber = 0;
   async function refreshLive() {
+    if (livePollInFlight) return;
+    livePollInFlight = true;
+    lastLivePollStarted = Date.now();
     const request = ++liveRequestNumber;
     const date = chosenDate;
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
@@ -382,7 +396,10 @@
       const url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=' +
         date.replace(/-/g, '') + '&limit=100';
       const response = await fetch(url, {cache: 'no-store'});
-      if (!response.ok) throw new Error('ESPN ' + response.status);
+      if (!response.ok) {
+        if ([403, 429, 503].includes(response.status)) nextLiveRetryAt = Date.now() + 60000;
+        throw new Error('ESPN ' + response.status);
+      }
       const scoreboard = await response.json();
       if (!Array.isArray(scoreboard.events)) throw new Error('Respuesta ESPN inválida');
       if (request !== liveRequestNumber || date !== chosenDate) return;
@@ -398,9 +415,17 @@
       liveAvailable = true;
       liveError = false;
       liveUpdatedAt = Date.now();
+      liveFailures = 0;
+      nextLiveRetryAt = 0;
     } catch (e) {
       if (request !== liveRequestNumber) return;
       liveError = true;
+      liveFailures += 1;
+      // Evitar insistir cada dos segundos si hay fallos o límites de peticiones.
+      nextLiveRetryAt = Math.max(nextLiveRetryAt,
+        Date.now() + Math.min(60000, 5000 * Math.pow(2, Math.min(4, liveFailures - 1))));
+    } finally {
+      livePollInFlight = false;
     }
     render();
   }
@@ -416,15 +441,27 @@
   });
   $('reload').addEventListener('click', async () => { await load(); await refreshLive(); });
   (async () => { await load(); await refreshLive(); })();
-  if (typeof setInterval === 'function') {
-    setInterval(() => {
-      if (typeof document.visibilityState === 'undefined' || document.visibilityState !== 'hidden') {
-        refreshLive();
-        if (expandedGameId) {
-          const game=(data.games || []).find(g=>String(g.id)===expandedGameId);
-          if (game?.status === 'in') fetchGameSummary(expandedGameId);
-        }
+  function hasLiveGameOnScreen() {
+    return Array.isArray(data.games) &&
+      data.games.some(g => g.date === chosenDate && g.status === 'in');
+  }
+  function pollVisibleGames() {
+    if (typeof document.visibilityState !== 'undefined' && document.visibilityState === 'hidden') return;
+    const now = Date.now();
+    const active = hasLiveGameOnScreen();
+    const interval = active ? LIVE_INTERVAL_MS : IDLE_INTERVAL_MS;
+    if (now >= nextLiveRetryAt && !livePollInFlight && now - lastLivePollStarted >= interval) {
+      refreshLive();
+    }
+    if (active && expandedGameId && now - lastPlayersPollStarted >= PLAYER_INTERVAL_MS) {
+      const selected = (data.games || []).find(g => String(g.id) === expandedGameId);
+      if (selected?.status === 'in') {
+        lastPlayersPollStarted = now;
+        fetchGameSummary(expandedGameId);
       }
-    }, LIVE_INTERVAL_MS);
+    }
+  }
+  if (typeof setInterval === 'function') {
+    setInterval(pollVisibleGames, LIVE_INTERVAL_MS);
   }
 })();

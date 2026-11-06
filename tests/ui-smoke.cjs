@@ -42,6 +42,10 @@ async function mount(snapshot, failure=false, scoreboard=null) {
 
 (async () => {
   assert.match(html,/id="games"/);
+  assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
+  assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
+  assert.match(source,/visibilityState === 'hidden'/);
+  assert.match(source,/nextLiveRetryAt/);
   assert.doesNotMatch(html,/id="details"|id="validation"|id="export"/);
   const today=getDate(),future=new Date(Date.now()+3*3600_000).toISOString();
   const game={
