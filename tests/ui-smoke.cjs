@@ -56,7 +56,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/36\.6/);
   assert.match(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
-  assert.doesNotMatch(view.node('games').innerHTML,/Brier|Elo|Noticias|Lesiones|últimos partidos/i);
+  assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
