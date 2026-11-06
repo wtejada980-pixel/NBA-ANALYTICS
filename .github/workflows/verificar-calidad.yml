@@ -37,6 +37,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Verificar JavaScript sin ejecutar la aplicación
         run: node --check assets/app.js
+      - name: Verificar que la interfaz funcione con datos de ejemplo
+        run: node tests/ui-smoke.cjs
       - name: Comprobar archivos necesarios para la web
         run: |
           test -f index.html

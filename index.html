@@ -3,40 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080f1b">
-  <meta name="description" content="NBA Analytics: análisis estadístico independiente y estimaciones experimentales de victoria. Sin cuotas ni apuestas reales.">
-  <title>NBA Analytics · Pronósticos deportivos</title>
+  <meta name="theme-color" content="#0b0c0d">
+  <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
+  <title>NBA Analytics — Partidos y probabilidades</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="shell">
-    <header class="topbar">
-      <div class="brand"><span class="brand-icon">N</span><span>NBA <b>ANALYTICS</b><small>RENDIMIENTO · PROBABILIDADES</small></span></div>
-      <div class="top-info"><span class="indicator" id="status-dot"></span><span id="status-label">Revisando datos</span><button type="button" id="reload" class="btn btn-outline" title="Volver a consultar los datos publicados">↻ Actualizar vista</button></div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="NBA Analytics, inicio">
+        <span class="brand-mark" aria-hidden="true">N<span class="brand-dot">.</span></span>
+        <span class="brand-label"><strong>NBA ANALYTICS</strong><small>ESTIMACIONES DEPORTIVAS</small></span>
+      </a>
+      <button id="reload" class="refresh-button" type="button" aria-label="Actualizar información">
+        <span class="refresh-icon" aria-hidden="true">↻</span><span>Actualizar</span>
+      </button>
     </header>
+
     <main>
-      <section class="hero">
-        <div><p class="eyebrow">PRONÓSTICOS DE NBA</p><h1>¿Qué equipo tiene más<br><em>probabilidades de ganar?</em></h1><p class="intro">Análisis de los últimos partidos, actuaciones individuales y descanso. Sin utilizar cuotas de Betcris ni de ninguna casa de apuestas.</p></div>
-        <div class="meta-card"><span>ÚLTIMA RECOPILACIÓN</span><strong id="updated">Sin actualización publicada</strong><small id="source">Fuente prevista: ESPN · servidor externo</small></div>
+      <section class="intro">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> NBA · ANÁLISIS DIARIO</p>
+        <h1>El juego, <span>más claro.</span></h1>
+        <p class="intro-copy">Probabilidades de ambos equipos y una explicación breve. El análisis detallado ocurre detrás de cada cifra.</p>
       </section>
-      <div id="alert" class="notice" role="status">Configurando los datos deportivos…</div>
-      <section class="metrics" aria-label="Resumen">
-        <article><span>ENCUENTROS</span><strong id="count-games">0</strong><small>Para las fechas mostradas</small></article>
-        <article><span>PRONÓSTICOS</span><strong id="count-preds">0</strong><small>Con datos suficientes</small></article>
-        <article><span>MODELO</span><strong class="model-name">ELO + FORMA 10</strong><small>Fuerza de rivales + 10 juegos</small></article>
-        <article><span>VALIDACIÓN</span><strong id="count-validated">0</strong><small>Predicciones evaluadas</small></article>
+
+      <section class="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <div><p class="overline">AGENDA</p><h2 id="schedule-title">Partidos</h2></div>
+          <p class="updated" id="updated">Consultando información…</p>
+        </div>
+        <div id="alert" class="status-message" role="status" aria-live="polite">Cargando partidos…</div>
+        <nav id="date-tabs" class="date-tabs" aria-label="Fechas de partidos"></nav>
+        <div class="schedule-meta"><span id="game-count">— partidos</span><span>Hora de República Dominicana</span></div>
+        <div id="games" class="games-list" aria-live="polite">
+          <div class="empty-state">Consultando partidos y probabilidades…</div>
+        </div>
       </section>
-      <section class="main-panel">
-        <div class="section-head"><div><p class="eyebrow">TABLA DE PARTIDOS</p><h2>Probabilidades de victoria</h2><p>Siempre se muestran los dos equipos. Son estimaciones propias del modelo.</p></div><button class="btn" id="export" type="button">↓ Exportar CSV</button></div>
-        <div class="date-tabs" id="date-tabs" aria-label="Seleccionar fecha"></div>
-        <div class="table-wrap"><table><thead><tr><th>ENCUENTRO</th><th>VISITANTE</th><th>LOCAL</th><th>FAVORITO ESTIMADO</th><th>HORA RD</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">Iniciando el panel…</td></tr></tbody></table></div>
-      </section>
-      <section class="analysis"><div class="section-head"><div><p class="eyebrow">DESGLOSE ESTADÍSTICO</p><h2>Rendimiento de los equipos y jugadores</h2></div></div><div id="details" class="detail-grid"></div></section>
-      <section class="explain"><h2>Cómo interpretar estos porcentajes</h2><div class="explainer-grid"><div><h3>Forma reciente</h3><p>Se combinan resultados de hasta diez partidos por equipo, anotación y puntos recibidos, y la fuerza histórica de los rivales mediante Elo temporal.</p></div><div><h3>Jugadores y descanso</h3><p>Se consideran tendencias recientes de jugadores destacados, ventaja de jugar en casa y descanso. Las noticias de lesiones son contexto adicional, no ajustes automáticos.</p></div><div><h3>Límites</h3><p>Los porcentajes son experimentales, no calibrados y no utilizan cuotas de apuestas. Las fuentes pueden fallar y los foros no son datos estadísticos. No garantizan aciertos.</p></div></div><div class="validation" id="validation">Las predicciones previas al inicio se compararán con los resultados usando Brier y acierto del favorito.</div></section>
+
+      <p class="footnote">Probabilidades estadísticas experimentales, no calibradas. No son certezas ni se basan en cuotas de apuestas.</p>
     </main>
-    <footer><span>NBA ANALYTICS · Proyecto personal de análisis estadístico</span><span><a href="https://www.espn.com/nba/scoreboard" target="_blank" rel="noopener noreferrer">ESPN</a> · Sin vínculo oficial con NBA o ESPN · Sin dinero real</span></footer>
+    <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos: ESPN · Proyecto independiente</span></footer>
   </div>
-  <script id="seed" type="application/json">{"as_of":null,"date":"2026-11-05","source":"Datos de configuración (no actualizados)","games":[{"id":"seed-1","date":"2026-11-05","datetime":"2026-11-06T02:00:00Z","home":{"id":"PHX","abbr":"PHX","name":"Phoenix Suns"},"away":{"id":"ORL","abbr":"ORL","name":"Orlando Magic"},"status":"pre","prediction":null,"source":"https://www.espn.com/nba/scoreboard"},{"id":"seed-2","date":"2026-11-05","datetime":"2026-11-06T03:00:00Z","home":{"id":"GSW","abbr":"GSW","name":"Golden State Warriors"},"away":{"id":"MIA","abbr":"MIA","name":"Miami Heat"},"status":"pre","prediction":null,"source":"https://www.espn.com/nba/scoreboard"}],"teams":{},"validation":{"completed_predictions":0,"brier_score":null},"demo_seed":true}</script>
-  <script src="assets/app.js"></script>
+  <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
+  <script src="assets/app.js" defer></script>
 </body>
 </html>

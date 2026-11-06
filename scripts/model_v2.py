@@ -97,8 +97,32 @@ def predict(game, teams, elo=None):
     shrink = 0.65 + 0.35 * min(n, 10) / 10.0
     home_p = _clip(.5 + (raw - .5) * shrink, .14, .86)
     home_pct = round(home_p * 100, 1)
+    fav_sign = 1 if home_pct >= 50 else -1
+    labels = {
+        "recent_margin_component": "mejor margen de puntos reciente",
+        "elo_component": "mejor rendimiento ante sus rivales",
+        "scoring_component": "mejor balance de anotación",
+        "recent_wins_component": "más victorias recientes",
+        "rest_component": "mayor descanso",
+        "player_component": "mejor tendencia de jugadores",
+        "home_advantage_points": "ventaja de localía",
+    }
+    # Solo mencionar factores realmente favorables al equipo elegido.
+    favorable = sorted(
+        ((fav_sign * value, name) for name, value in components.items()
+         if fav_sign * value >= (0.5 if name != "player_component" else 0.35)),
+        reverse=True
+    )
+    leading = [labels[name] for _, name in favorable[:2]]
+    if not leading:
+        reason = "Encuentro equilibrado; ventaja estadística pequeña."
+    elif len(leading) == 1:
+        reason = "Ventaja por " + leading[0] + "."
+    else:
+        reason = "Ventaja por " + leading[0] + " y " + leading[1] + "."
     return {
         "home_pct": home_pct,
+        "reason": reason,
         "away_pct": round(100.0 - home_pct, 1),
         "model": "elo-forma10-v2",
         "experimental": True,

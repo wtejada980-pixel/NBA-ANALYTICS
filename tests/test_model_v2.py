@@ -48,6 +48,8 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(result["home_pct"] + result["away_pct"], 100.0)
         self.assertEqual(result["model"], "elo-forma10-v2")
         self.assertFalse(result["calibrated"])
+        self.assertTrue(result["reason"].startswith("Ventaja por "))
+        self.assertLessEqual(len(result["reason"]), 140)
 
     def test_not_enough_prior_games_is_abstention(self):
         game = {"home": {"id": "10"}, "away": {"id": "20"}}
