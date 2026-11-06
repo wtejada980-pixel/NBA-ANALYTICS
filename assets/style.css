@@ -65,3 +65,9 @@ h2{font-size:31px;letter-spacing:-.045em;font-weight:700;margin:5px 0 0}
 @media(max-width:850px){.games-list{grid-template-columns:1fr}.intro{padding:56px 0 43px}.game-card{padding:23px}}
 @media(max-width:480px){.site-shell{padding:0 16px}.site-header{min-height:76px}.brand-mark{width:37px;height:37px}.brand-label strong{font-size:11px}.brand-label small{font-size:8px}.refresh-button{padding:9px 11px}.refresh-button span:last-child{display:none}.intro{padding:49px 0 38px}h1{font-size:43px}.intro-copy{font-size:13px;line-height:1.7}.section-heading{align-items:start;flex-direction:column;gap:4px}.updated{text-align:left}h2{font-size:27px}.game-card{padding:18px}.game-top{margin-bottom:23px}.game-state{font-size:9px}.team-name{font-size:13px}.prob{font-size:35px}.site-footer{flex-wrap:wrap;gap:6px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+.game-state.live{color:#a6e4bb;border-color:#326648;background:#14281d}
+.live-score{font-size:clamp(23px,3vw,34px);font-weight:850;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums;margin-top:9px}
+.estimate-caption{font-size:9px;font-weight:750;letter-spacing:.12em;color:#9c9ea4;margin-top:15px}
+.game-link{display:inline-block;font-size:11px;color:#c9cdd6;text-decoration:underline;text-underline-offset:3px;margin-top:12px}
+.game-link:hover{color:#fff}
