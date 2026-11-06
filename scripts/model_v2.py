@@ -114,7 +114,9 @@ def predict(game, teams, elo=None):
         reverse=True
     )
     leading = [labels[name] for _, name in favorable[:2]]
-    if not leading:
+    if home_pct == 50.0:
+        reason = "Encuentro equilibrado; sin favorito claro."
+    elif not leading:
         reason = "Encuentro equilibrado; ventaja estadística pequeña."
     elif len(leading) == 1:
         reason = "Ventaja por " + leading[0] + "."

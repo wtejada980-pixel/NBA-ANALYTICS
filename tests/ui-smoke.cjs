@@ -60,6 +60,9 @@ async function mount(snapshot, failure=false) {
   assert.match(view.node('games').innerHTML,/finalizó/);
   view=await mount({as_of:new Date().toISOString(),games:[{...game,prediction:{away_pct:60,home_pct:60}}]});
   assert.doesNotMatch(view.node('games').innerHTML,/>60\.0/);
+  view=await mount({as_of:new Date().toISOString(),games:[{...game,prediction:{away_pct:50,home_pct:50,reason:'Encuentro equilibrado; sin favorito claro.'}}]});
+  assert.doesNotMatch(view.node('games').innerHTML,/MÁS PROBABLE/);
+  assert.match(view.node('games').innerHTML,/sin favorito claro/);
   view=await mount(null,true);
   assert.match(view.node('alert').textContent,/No se pudo actualizar/);
   console.log('OK: diseño mínimo, porcentajes, resumen, datos viejos, finalizados y fallos de red.');

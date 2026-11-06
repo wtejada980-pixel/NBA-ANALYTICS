@@ -67,7 +67,7 @@
   function gameCard(game) {
     const hasPrediction = validPrediction(game);
     const p = game.prediction || {};
-    const favoredSide = hasPrediction ? (p.home_pct >= p.away_pct ? 'home' : 'away') : '';
+    const favoredSide = hasPrediction && Math.abs(p.home_pct - p.away_pct) >= 0.2 ? (p.home_pct > p.away_pct ? 'home' : 'away') : '';
     const team = side => {
       const t = game[side] || {};
       const pct = hasPrediction ? (side === 'home' ? p.home_pct : p.away_pct) : null;
