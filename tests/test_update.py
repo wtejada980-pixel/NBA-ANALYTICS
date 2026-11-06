@@ -55,7 +55,7 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(rows[0]["result"]["home_score"],104)
 
     def test_head_to_head_uses_earlier_results_only(self):
-        game=sample_event(event_id="3",state="pre")
+        game=update.parse_event(sample_event(event_id="3",state="pre"))
         early=update.parse_event(sample_event(event_id="1"))
         late=update.parse_event(sample_event(event_id="4"))
         late["datetime"]="2026-11-09T22:00:00Z"
