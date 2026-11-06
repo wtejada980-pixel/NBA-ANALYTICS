@@ -33,6 +33,22 @@
     const players = (t.players || []).length ? `<div class="player-scroll"><table class="player-table"><thead><tr><th>JUGADOR</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead><tbody>${t.players.map(p => `<tr><td>${esc(p.name)} <span class="tiny">(${p.games} j.)</span></td><td>${Number(p.pts).toFixed(1)}</td><td>${Number(p.reb).toFixed(1)}</td><td>${Number(p.ast).toFixed(1)}</td></tr>`).join('')}</tbody></table></div>` : `<p class="tiny">Sin box scores suficientes; el cálculo del equipo puede continuar sin este ajuste.</p>`;
     return `<section class="team-card"><h3>${esc(t.name || name)}</h3><p>${f.played || 0} partidos analizados · ${f.wins || 0} victorias · margen ponderado ${(f.margin ?? 0) > 0 ? '+' : ''}${esc(f.margin ?? 0)} · descanso ${t.rest_days ?? '—'} día(s)</p><h4>ÚLTIMOS PARTIDOS</h4><div class="results">${recent}</div><h4>JUGADORES DESTACADOS (PROMEDIO RECIENTE)</h4>${players}</section>`;
   }
+  function contextPanel(g) {
+    const c = g.context;
+    if (!c) return '<p class="tiny">No hay revisión adicional de lesiones, noticias y foros para este partido. Consultar las fuentes oficiales antes de interpretarlo.</p>';
+    const injuries = ['away','home'].map(side=>{
+      const d=c.injuries?.[side] || {};
+      const items=d.items || [];
+      const rows=items.length ? items.map(i=>'<li>'+esc(i.player)+' — '+esc(i.status)+(i.reason?' ('+esc(i.reason)+')':'')+'</li>').join('') : '<li>No hay ausencias verificadas en esta fuente; NO significa plantilla completa.</li>';
+      return '<div class="context-box"><h4>'+esc(g[side].name)+'</h4><p class="tiny">Fuente: '+esc(d.source || 'No verificada')+'</p><ul>'+rows+'</ul></div>';
+    }).join('');
+    const news=(c.news || []).map(n=>'<li><a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">'+esc(n.title)+'</a></li>').join('') || '<li>Sin noticias verificadas por este proceso.</li>';
+    const f=c.forum || {};
+    const posts=(f.posts||[]).map(p=>'<li><a href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(p.title)+'</a></li>').join('') || '<li>No se recuperaron publicaciones autenticadas.</li>';
+    const discussion = /^https:\/\/www\.reddit\.com\/r\/nba\/search\//.test(f.discussion_url||'') ? '<a href="'+esc(f.discussion_url)+'" target="_blank" rel="noopener noreferrer">Abrir búsqueda en r/nba ↗</a>' : '';
+    const official = /^https:\/\//.test(c.official_injury_report||'') ? '<a href="'+esc(c.official_injury_report)+'" target="_blank" rel="noopener noreferrer">Informe oficial NBA ↗</a>' : '';
+    return '<div class="context-section"><h3>Noticias, lesiones y conversación pública</h3><p class="tiny">El análisis de aficionados aporta contexto, no certeza estadística. Los porcentajes anteriores no se ajustan automáticamente por rumores ni bajas sin verificar.</p><div class="cols">'+injuries+'</div><p class="tiny">'+official+'</p><h4>Noticias recientes</h4><ul>'+news+'</ul><h4>Comunidad y foros · '+esc(f.status||'No conectado')+'</h4><ul>'+posts+'</ul><p class="tiny">'+discussion+'</p></div>';
+  }
   function render() {
     const games = Array.isArray(data.games) ? data.games : [];
     dateTabs(games);
@@ -53,7 +69,7 @@
       const p = g.prediction;
       const factors = p?.factors || {};
       const factorText = good(p) ? `Localía ${factors.home_advantage_points ?? '?'} pts · forma reciente ${factors.recent_margin_component ?? '?'} pts · victorias ${factors.recent_wins_component ?? '?'} pts · descanso ${factors.rest_component ?? '?'} pts · tendencia jugadores ${factors.player_component ?? '?'} pts` : 'El sistema no puede calcular porcentajes aún: se necesitan al menos cuatro partidos previos de cada equipo.';
-      return `<details><summary>${esc(g.away.name)} vs. ${esc(g.home.name)} <span class="tiny">Ver últimos partidos y jugadores</span></summary><div class="detail-inner"><p class="tiny">${esc(factorText)}</p><div class="cols">${teamCard(data.teams?.[g.away.id],g.away.name)}${teamCard(data.teams?.[g.home.id],g.home.name)}</div><p class="tiny">${srcLink(g.source)} · No se incluyen lesiones confirmadas en tiempo real.</p></div></details>`;
+      return `<details><summary>${esc(g.away.name)} vs. ${esc(g.home.name)} <span class="tiny">Ver últimos partidos y jugadores</span></summary><div class="detail-inner"><p class="tiny">${esc(factorText)}</p><div class="cols">${teamCard(data.teams?.[g.away.id],g.away.name)}${teamCard(data.teams?.[g.home.id],g.home.name)}</div><p class="tiny">${srcLink(g.source)}</p>${contextPanel(g)}</div></details>`;
     }).join('') || '<p class="tiny">Sin partidos para analizar.</p>';
     const n = data.validation?.completed_predictions ?? 0;
     $('validation').textContent = n && data.validation?.brier_score != null ? `Historial: ${n} pronósticos evaluados. Brier score: ${data.validation.brier_score} (más bajo suele ser mejor). Muestra aún limitada; no demuestra rentabilidad.` : 'Todavía no hay suficientes predicciones resueltas para medir precisión (Brier score).';
