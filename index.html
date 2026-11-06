@@ -23,7 +23,7 @@
       <section class="metrics" aria-label="Resumen">
         <article><span>ENCUENTROS</span><strong id="count-games">0</strong><small>Para las fechas mostradas</small></article>
         <article><span>PRONÓSTICOS</span><strong id="count-preds">0</strong><small>Con datos suficientes</small></article>
-        <article><span>MODELO</span><strong class="model-name">FORMA 8</strong><small>Últimos 8 partidos</small></article>
+        <article><span>MODELO</span><strong class="model-name">ELO + FORMA 10</strong><small>Fuerza de rivales + 10 juegos</small></article>
         <article><span>VALIDACIÓN</span><strong id="count-validated">0</strong><small>Predicciones evaluadas</small></article>
       </section>
       <section class="main-panel">
@@ -32,7 +32,7 @@
         <div class="table-wrap"><table><thead><tr><th>ENCUENTRO</th><th>VISITANTE</th><th>LOCAL</th><th>FAVORITO ESTIMADO</th><th>HORA RD</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">Iniciando el panel…</td></tr></tbody></table></div>
       </section>
       <section class="analysis"><div class="section-head"><div><p class="eyebrow">DESGLOSE ESTADÍSTICO</p><h2>Rendimiento de los equipos y jugadores</h2></div></div><div id="details" class="detail-grid"></div></section>
-      <section class="explain"><h2>Cómo interpretar estos porcentajes</h2><div class="explainer-grid"><div><h3>Forma reciente</h3><p>Se combinan diferencial de puntos y porcentaje de victorias ponderados de hasta ocho partidos por equipo.</p></div><div><h3>Jugadores y descanso</h3><p>Se consideran tendencias de anotación disponibles de jugadores destacados, localía y si alguno viene de jugar el día anterior.</p></div><div><h3>Límites</h3><p>El modelo es experimental, no está calibrado. No confirma bajas recientes ni ajusta por la fuerza de todos los rivales. Nunca garantiza resultados.</p></div></div><div class="validation" id="validation">Todavía no hay suficientes predicciones resueltas para evaluar precisión.</div></section>
+      <section class="explain"><h2>Cómo interpretar estos porcentajes</h2><div class="explainer-grid"><div><h3>Forma reciente</h3><p>Se combinan resultados de hasta diez partidos por equipo, anotación y puntos recibidos, y la fuerza histórica de los rivales mediante Elo temporal.</p></div><div><h3>Jugadores y descanso</h3><p>Se consideran tendencias recientes de jugadores destacados, ventaja de jugar en casa y descanso. Las noticias de lesiones son contexto adicional, no ajustes automáticos.</p></div><div><h3>Límites</h3><p>Los porcentajes son experimentales, no calibrados y no utilizan cuotas de apuestas. Las fuentes pueden fallar y los foros no son datos estadísticos. No garantizan aciertos.</p></div></div><div class="validation" id="validation">Las predicciones previas al inicio se compararán con los resultados usando Brier y acierto del favorito.</div></section>
     </main>
     <footer><span>NBA ANALYTICS · Proyecto personal de análisis estadístico</span><span><a href="https://www.espn.com/nba/scoreboard" target="_blank" rel="noopener noreferrer">ESPN</a> · Sin vínculo oficial con NBA o ESPN · Sin dinero real</span></footer>
   </div>
