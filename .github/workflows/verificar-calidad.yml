@@ -6,11 +6,15 @@ on:
     paths:
       - 'scripts/**'
       - 'tests/**'
+      - 'assets/**'
+      - 'index.html'
       - '.github/workflows/verificar-calidad.yml'
   pull_request:
     paths:
       - 'scripts/**'
       - 'tests/**'
+      - 'assets/**'
+      - 'index.html'
       - '.github/workflows/verificar-calidad.yml'
   workflow_dispatch:
 
@@ -31,3 +35,12 @@ jobs:
         run: python -m compileall -q scripts tests
       - name: Ejecutar pruebas aisladas
         run: python -m unittest discover -s tests -v
+      - name: Verificar JavaScript sin ejecutar la aplicación
+        run: node --check assets/app.js
+      - name: Comprobar archivos necesarios para la web
+        run: |
+          test -f index.html
+          test -f assets/app.js
+          test -f assets/style.css
+          test -f data/latest.json
+          python -m json.tool data/latest.json > /dev/null
