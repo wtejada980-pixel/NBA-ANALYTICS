@@ -20,6 +20,8 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from context_sources import collect
+from model_v2 import predict as predict_v2, elo_before
+from validation import evaluate
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data' / 'latest.json'
@@ -85,7 +87,7 @@ def margin(team_id: str, game: dict) -> int:
     return (game['home_score'] - game['away_score']) if team_id == game['home']['id'] else (game['away_score'] - game['home_score'])
 
 
-def team_games(team_id: str, completed: list[dict], before: datetime, n: int = 8) -> list[dict]:
+def team_games(team_id: str, completed: list[dict], before: datetime, n: int = 10) -> list[dict]:
     relevant = [g for g in completed if parse_time(g['datetime']) < before and
                 (g['home']['id'] == team_id or g['away']['id'] == team_id)]
     return sorted(relevant, key=lambda g: g['datetime'], reverse=True)[:n]
@@ -93,7 +95,7 @@ def team_games(team_id: str, completed: list[dict], before: datetime, n: int = 8
 
 def weighted_form(team_id: str, games: list[dict]) -> dict:
     if not games:
-        return {'played': 0, 'wins': 0, 'margin': 0.0, 'win_rate': 0.5, 'recent': []}
+        return {'played': 0, 'wins': 0, 'margin': 0.0, 'win_rate': 0.5, 'recent': [], 'points_for': None, 'points_against': None}
     weights = list(range(len(games), 0, -1))
     margins = [margin(team_id, game) for game in games]
     win_total = sum(m > 0 for m in margins)
@@ -106,8 +108,11 @@ def weighted_form(team_id: str, games: list[dict]) -> dict:
         opp_pts = game['away_score'] if game['home']['id'] == team_id else game['home_score']
         recent.append({'date': game['date'], 'opponent': opp['abbr'], 'points': pts,
                        'opponent_points': opp_pts, 'win': diff > 0})
+    pts_for = sum(row['points'] * w for row, w in zip(recent, weights)) / sum(weights)
+    pts_against = sum(row['opponent_points'] * w for row, w in zip(recent, weights)) / sum(weights)
     return {'played': len(games), 'wins': win_total, 'margin': round(wmargin, 2),
-            'win_rate': round(wrate, 3), 'recent': recent}
+            'win_rate': round(wrate, 3), 'points_for': round(pts_for, 1),
+            'points_against': round(pts_against, 1), 'recent': recent}
 
 
 def stat_line(summary: dict, team_id: str) -> list[dict]:
@@ -282,12 +287,16 @@ def refresh(today: date | None = None):
         last_date = local_day(hist[0]['datetime']) if hist else None
         ref_date = min(g['date'] for g in schedule if tid in (g['home']['id'], g['away']['id']))
         rest = (date.fromisoformat(ref_date) - date.fromisoformat(last_date)).days if last_date else None
+        players = player_profiles(tid, hist, summaries)
         teams[tid] = {'id': tid, 'abbr': info['abbr'], 'name': info['name'],
                       'rest_days': rest,
                       'form': weighted_form(tid, hist),
-                      'players': player_profiles(tid, hist, summaries)}
+                      'players': players, 'player_trend': player_trend(players)}
     for game in schedule:
-        game['prediction'] = predict(game, teams) if game['status'] == 'pre' else None
+        # No utilizar información posterior al inicio ni guardar estimaciones retrospectivas.
+        future = parse_time(game['datetime']) > now
+        ratings = elo_before(finished, game['datetime']) if future else {}
+        game['prediction'] = predict_v2(game, teams, ratings) if game['status'] == 'pre' and future else None
     # Contexto de lesiones, noticias y foros SOLO para partidos del día.
     # No modifica la probabilidad, que depende de la forma deportiva.
     collect([g for g in schedule if g['date'] == day.isoformat()], teams)
@@ -302,25 +311,23 @@ def refresh(today: date | None = None):
             history['predictions'][game['id']] = {
                 'date': game['date'], 'home': game['home']['name'], 'away': game['away']['name'],
                 'home_pct': game['prediction']['home_pct'], 'away_pct': game['prediction']['away_pct'],
-                'predicted_at': now.isoformat(), 'result': None}
+                'predicted_at': now.isoformat(), 'model': game['prediction']['model'],
+                'scheduled_at': game['datetime'], 'result': None}
     # Keep history files modest and predictable.
     if len(history['predictions']) > 800:
         history['predictions'] = dict(sorted(history['predictions'].items(),
                                            key=lambda p: p[1]['date'], reverse=True)[:800])
-    scored = [record for record in history['predictions'].values() if record.get('result')]
-    brier = None
-    if scored:
-        brier = round(sum((x['home_pct']/100 - (1 if x['result']['winner']=='home' else 0))**2
-                          for x in scored) / len(scored), 4)
+    metrics = evaluate(history['predictions'])
     snapshot = {
         'as_of': now.isoformat(), 'date': day.isoformat(), 'timezone': 'America/Santo_Domingo',
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
         'source_url': 'https://www.espn.com/nba/scoreboard',
-        'model': 'forma8-v1 / probabilidades experimentales; contexto cualitativo separado',
+        'model': 'elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado',
         'games': schedule, 'teams': teams,
-        'validation': {'completed_predictions': len(scored), 'brier_score': brier},
+        'validation': metrics,
         'notes': ['No utiliza cuotas de apuestas',
-                  'El historial de 35 días puede omitir resultados anteriores',
+                  'El historial de 35 días puede omitir resultados anteriores; Elo se reinicia al comienzo de la ventana',
+                  'Puntos anotados y recibidos por juego NO equivalen a rating por 100 posesiones',
                   'Lesiones disponibles como contexto no verificado; comprobar informe oficial',
                   'Foros y noticias no alteran automáticamente los porcentajes',
                   'Las probabilidades no están calibradas ni garantizan resultados'],
@@ -329,7 +336,7 @@ def refresh(today: date | None = None):
     write_json_atomic(OUT, snapshot)
     write_json_atomic(HISTORY, history)
     print(f"Updated {len(schedule)} games / {len(teams)} teams, {len(summaries)} summaries; "
-          f"{len(scored)} assessed predictions; date {day}")
+          f"{metrics['completed_predictions']} assessed predictions; date {day}")
 
 
 def main():
