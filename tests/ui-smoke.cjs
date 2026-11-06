@@ -12,7 +12,7 @@ const getDate = () => {
   return val('year')+'-'+val('month')+'-'+val('day');
 };
 
-async function mount(snapshot, failure=false) {
+async function mount(snapshot, failure=false, scoreboard=null) {
   const nodes = new Map();
   function node(id) {
     if(!nodes.has(id)) nodes.set(id,{
@@ -26,8 +26,14 @@ async function mount(snapshot, failure=false) {
   const context = {
     document:{getElementById:node},Intl,Date,console,
     location:{protocol:'https:'},
-    fetch: async () => failure? Promise.reject(new Error('network')) :
-      {ok:true,json:async()=>snapshot}
+    fetch: async (url) => {
+      if (failure) throw new Error('network');
+      if (String(url).includes('site.api.espn.com')) {
+        if (!scoreboard) throw new Error('ESPN no disponible en la prueba');
+        return {ok:true,json:async()=>scoreboard};
+      }
+      return {ok:true,json:async()=>snapshot};
+    }
   };
   vm.runInNewContext(source,context);
   await new Promise(r=>setTimeout(r,20));
@@ -54,7 +60,7 @@ async function mount(snapshot, failure=false) {
   assert.equal(view.node('game-count').textContent,'1 partido');
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
-  assert.match(view.node('alert').textContent,/no mostramos porcentajes desfasados/i);
+  assert.match(view.node('games').innerHTML,/datos desactualizados/i);
   view=await mount({as_of:new Date().toISOString(),games:[{...game,status:'post'}]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/finalizó/);
@@ -63,7 +69,25 @@ async function mount(snapshot, failure=false) {
   view=await mount({as_of:new Date().toISOString(),games:[{...game,prediction:{away_pct:50,home_pct:50,reason:'Encuentro equilibrado; sin favorito claro.'}}]});
   assert.doesNotMatch(view.node('games').innerHTML,/MÁS PROBABLE/);
   assert.match(view.node('games').innerHTML,/sin favorito claro/);
+
+  // Scoreboard en vivo: se agregan juegos no incluidos en el snapshot,
+  // se actualizan los tanteos y se conservan pronósticos prepartido.
+  const event = (id, state, awayScore, homeScore) => ({
+    id, date:future, status:{type:{state,shortDetail: 'Q2 06:30'}},
+    competitions:[{competitors:[
+      {homeAway:'home',team:{id:'2',abbreviation:'NYK',displayName:'New York Knicks'},score:homeScore},
+      {homeAway:'away',team:{id:'1',abbreviation:'BOS',displayName:'Boston Celtics'},score:awayScore}
+    ]}]
+  });
+  view=await mount({as_of:new Date().toISOString(),games:[game]},false,{
+    events:[event('test-123','in','52','61'),event('test-456','pre','','')]
+  });
+  assert.match(view.node('games').innerHTML,/EN VIVO/);
+  assert.match(view.node('games').innerHTML,/live-score">52/);
+  assert.match(view.node('games').innerHTML,/live-score">61/);
+  assert.match(view.node('games').innerHTML,/63\.4/);
+  assert.equal(view.node('game-count').textContent,'2 partidos');
   view=await mount(null,true);
-  assert.match(view.node('alert').textContent,/No se pudo actualizar/);
-  console.log('OK: diseño mínimo, porcentajes, resumen, datos viejos, finalizados y fallos de red.');
+  assert.match(view.node('alert').textContent,/No fue posible conectar/);
+  console.log('OK: probabilidades prepartido, marcador vivo, agenda y errores de red.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
