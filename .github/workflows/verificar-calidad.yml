@@ -1,0 +1,33 @@
+name: Verificar calidad NBA Analytics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/verificar-calidad.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/verificar-calidad.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Comprobar modelo y fuentes sin datos externos
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar sintaxis de módulos
+        run: python -m compileall -q scripts tests
+      - name: Ejecutar pruebas aisladas
+        run: python -m unittest discover -s tests -v
