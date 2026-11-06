@@ -294,6 +294,32 @@
       });
     });
   }
+  function renderValidation() {
+    const metrics = data.validation || {};
+    const n = Number.isInteger(metrics.completed_predictions) && metrics.completed_predictions >= 0 ?
+      metrics.completed_predictions : 0;
+    const pct = n && Number.isFinite(metrics.favorite_accuracy_pct) &&
+      metrics.favorite_accuracy_pct >= 0 && metrics.favorite_accuracy_pct <= 100 ?
+      metrics.favorite_accuracy_pct.toFixed(1) + '%' : '—';
+    const brier = n && Number.isFinite(metrics.brier_score) &&
+      metrics.brier_score >= 0 && metrics.brier_score <= 1 ?
+      metrics.brier_score.toFixed(4) : '—';
+    const logLoss = n && Number.isFinite(metrics.log_loss) && metrics.log_loss >= 0 ?
+      metrics.log_loss.toFixed(4) : '—';
+    const card = (name, value, subtitle) =>
+      '<div class="quality-metric"><span class="metric-name">' + name + '</span>' +
+      '<strong class="metric-value">' + value + '</strong>' +
+      '<span class="metric-hint">' + subtitle + '</span></div>';
+    $('model-validation').innerHTML =
+      card('Partidos evaluados', String(n), 'Pronósticos registrados antes del juego') +
+      card('Acierto del favorito', pct, 'Porcentaje de ganadores identificados') +
+      card('Error Brier', brier, 'Menor es mejor · referencia 50/50: 0.2500') +
+      card('Log loss', logLoss, 'Penaliza probabilidades demasiado seguras');
+    $('quality-caveat').textContent = n === 0 ?
+      'Todavía no hay partidos finalizados con pronóstico evaluado. No podemos afirmar que el modelo acierta.' :
+      n < 100 ? 'Muestra inicial de ' + n + ' partidos: estos resultados pueden variar mucho. Necesitamos una muestra mayor y revisar la calibración.' :
+      'Resultados históricos del modelo. Un buen porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
+  }
   function render() {
     const games = Array.isArray(data.games) ? data.games : [];
     renderDates(games);
@@ -310,6 +336,7 @@
       'Pronósticos: ' + reported;
     $('games').innerHTML = shown.length ? shown.map(gameCard).join('') :
       '<div class="empty-state">No hay partidos publicados para esta fecha.</div>';
+    renderValidation();
     if (liveError && !liveAvailable) {
       setStatus('No fue posible conectar con el marcador de ESPN. Se muestran los últimos datos publicados.', 'warning');
     } else if (liveError || (liveAvailable && Date.now() - liveUpdatedAt > 120000)) {

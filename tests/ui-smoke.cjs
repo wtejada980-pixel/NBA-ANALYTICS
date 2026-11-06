@@ -47,7 +47,9 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
   assert.match(source,/visibilityState === 'hidden'/);
   assert.match(source,/nextLiveRetryAt/);
-  assert.doesNotMatch(html,/id="details"|id="validation"|id="export"/);
+  assert.match(html,/id="model-validation"/);
+  assert.match(html,/id="quality-caveat"/);
+  assert.doesNotMatch(html,/id="details"|id="export"/);
   const today=getDate(),future=new Date(Date.now()+3*3600_000).toISOString();
   const game={
     id:'test-123', date:today, datetime:future, status:'pre',
@@ -63,6 +65,13 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
   assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
+  assert.match(view.node('model-validation').innerHTML,/Partidos evaluados/);
+  assert.match(view.node('quality-caveat').textContent,/Todavía no hay partidos/);
+  view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
+    validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68}});
+  assert.match(view.node('model-validation').innerHTML,/62\.5%/);
+  assert.match(view.node('model-validation').innerHTML,/0\.2200/);
+  assert.match(view.node('quality-caveat').textContent,/Muestra inicial/);
   assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
   assert.doesNotMatch(view.node('games').innerHTML,/theScore/i);
   assert.match(view.node('games').innerHTML,/<details class="game-card"/);

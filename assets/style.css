@@ -180,3 +180,18 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .game-breakdown .game-link{margin-top:14px;padding:8px 0;color:#e6b49c}
 @media(min-width:851px){.game-card[open]{grid-column:span 2}.game-card[open] .player-columns{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}}
 @media(max-width:850px){.player-columns{grid-template-columns:1fr}}
+
+/* Rendimiento auditado: sin confundir resultados deportivos con apuestas */
+.quality-section{border-top:1px solid #303139;padding:29px 0 0;margin:28px 0 0}
+.quality-heading .overline{display:block;color:#ef9268;margin-bottom:9px}
+.quality-section h2{font-size:clamp(23px,3vw,29px);margin:0;line-height:1.2}
+.quality-intro{font-size:12px;color:#aeb0b8;max-width:700px;line-height:1.7;margin:10px 0 18px}
+.quality-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.quality-metric{border:1px solid #393237;border-radius:14px;background:linear-gradient(155deg,#1d1c20,#121418);padding:17px 13px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.metric-name{font-size:10px;font-weight:770;color:#aeb0b6;letter-spacing:.02em}
+.metric-value{font-size:clamp(24px,3.3vw,32px);font-weight:850;letter-spacing:-.045em;color:#fff;line-height:1.1;font-variant-numeric:tabular-nums}
+.metric-hint{font-size:10px;color:#919399;line-height:1.5}
+.quality-loading,.quality-caveat{font-size:11px;color:#a5a7b0;line-height:1.6}
+.quality-caveat{border-left:3px solid #f16a3c;padding-left:10px;margin:15px 0 0}
+@media(max-width:850px){.quality-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.quality-metric{padding:14px 10px}.metric-hint{font-size:9px}}
