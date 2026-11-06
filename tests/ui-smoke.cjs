@@ -48,6 +48,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(source,/visibilityState === 'hidden'/);
   assert.match(source,/nextLiveRetryAt/);
   assert.match(html,/id="model-validation"/);
+  assert.match(html,/id="elo-validation"/);
+  assert.match(html,/id="history-list"/);
   assert.match(html,/id="quality-caveat"/);
   assert.doesNotMatch(html,/id="details"|id="export"/);
   const today=getDate(),future=new Date(Date.now()+3*3600_000).toISOString();
@@ -72,7 +74,27 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('model-validation').innerHTML,/62\.5%/);
   assert.match(view.node('model-validation').innerHTML,/0\.2200/);
   assert.match(view.node('quality-caveat').textContent,/Muestra inicial/);
+  view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
+    validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68,
+      elo_comparison:{n:4,model_brier:.22,elo_brier:.25}},
+    history_recent:[
+      {id:'done',date:today,home:'New York Knicks',away:'Boston Celtics',
+        home_pct:63.4,away_pct:36.6,model:'elo-forma10-v2',
+        predicted_at:new Date(Date.now()-3*3600_000).toISOString(),
+        scheduled_at:new Date(Date.now()+3*3600_000).toISOString(),
+        result:{winner:'home',home_score:112,away_score:108}},
+      {id:'late',date:today,home:'New York Knicks',away:'Boston Celtics',
+        home_pct:60,away_pct:40,model:'v2',
+        predicted_at:new Date(Date.now()+4*3600_000).toISOString(),
+        scheduled_at:new Date(Date.now()+3*3600_000).toISOString(),result:null}
+    ]});
+  assert.match(view.node('elo-validation').innerHTML,/0\\.2200/);
+  assert.match(view.node('history-list').innerHTML,/ACIERTO/);
+  assert.doesNotMatch(view.node('history-list').innerHTML,/late/);
   assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
+  assert.match(view.node('games').innerHTML,/Forma de los equipos/);
+  assert.match(view.node('games').innerHTML,/Tipo de pronóstico: ganador del partido/);
+  assert.match(view.node('history-list').innerHTML,/Todavía no tenemos pronósticos/);
   assert.doesNotMatch(view.node('games').innerHTML,/theScore/i);
   assert.match(view.node('games').innerHTML,/<details class="game-card"/);
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});

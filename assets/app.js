@@ -205,6 +205,80 @@
     }
   }
 
+
+  function teamPerformance(game, side) {
+    const team = game[side] || {};
+    const form = data.teams?.[String(team.id)]?.form || {};
+    const matches = Number.isInteger(form.played) ? form.played : 0;
+    const wins = Number.isInteger(form.wins) ? form.wins : null;
+    const fmt = n => Number.isFinite(n) ? n.toFixed(1) : '—';
+    const results = Array.isArray(form.recent) ? form.recent.slice(0, 5) : [];
+    const recent = results.map(g => '<span class="form-game ' + (g.win ? 'form-win' : 'form-loss') +
+      '" title="' + escapeHtml(g.date || '') + ': ' + escapeHtml(g.opponent || '') +
+      ' ' + (Number.isFinite(g.points) ? g.points : '—') + '-' +
+      (Number.isFinite(g.opponent_points) ? g.opponent_points : '—') + '">' +
+      (g.win ? 'V' : 'D') + '</span>').join('');
+    return '<div class="form-team"><h4>' + escapeHtml(team.name || 'Equipo') +
+      '</h4><div class="form-stats">' +
+      '<div><span>Récord reciente</span><strong>' + (wins === null || !matches ? '—' : wins + '-' + (matches-wins)) + '</strong></div>' +
+      '<div><span>PTS a favor</span><strong>' + fmt(form.points_for) + '</strong></div>' +
+      '<div><span>PTS recibidos</span><strong>' + fmt(form.points_against) + '</strong></div>' +
+      '</div><div class="form-last">' + (recent || '<span class="muted-copy">Sin partidos recientes</span>') +
+      '</div></div>';
+  }
+  function matchupInsights(game) {
+    const matchups = Array.isArray(game.head_to_head) ? game.head_to_head.slice(0, 5) : [];
+    const list = matchups.map(g => '<li><span>' + escapeHtml(g.date || '') + '</span>' +
+      '<strong>' + escapeHtml(g.away || '') + ' ' + (Number.isFinite(g.away_score) ? g.away_score : '—') +
+      ' – ' + (Number.isFinite(g.home_score) ? g.home_score : '—') + ' ' +
+      escapeHtml(g.home || '') + '</strong></li>').join('');
+    return '<div class="insights-title">Forma de los equipos</div>' +
+      '<p class="insights-note">Últimos diez partidos como máximo; los resultados más recientes se muestran con V y D. Estas cifras no son ratings por posesión.</p>' +
+      '<div class="form-columns">' + teamPerformance(game, 'away') + teamPerformance(game, 'home') + '</div>' +
+      '<div class="insights-title head-to-head-title">Enfrentamientos anteriores</div>' +
+      (list ? '<ul class="head-to-head-list">' + list + '</ul>' :
+        '<p class="muted-copy">Sin enfrentamientos anteriores verificados en nuestra ventana de datos.</p>') +
+      '<p class="market-note"><strong>Tipo de pronóstico: ganador del partido.</strong> ' +
+      'No tenemos aún un modelo validado para hándicaps o diferencias de puntos. ' +
+      'No interpretes este porcentaje como posibilidad de cubrir una línea.</p>';
+  }
+  function historyCard(row) {
+    const complete = row.result?.winner === 'home' || row.result?.winner === 'away';
+    const home = Number(row.home_pct);
+    const away = Number(row.away_pct);
+    if (!Number.isFinite(home) || !Number.isFinite(away)) return '';
+    const favored = home > away ? 'home' : away > home ? 'away' : 'none';
+    const chosenName = favored === 'home' ? row.home : favored === 'away' ? row.away : 'Sin favorito';
+    const favoredPct = favored === 'home' ? home : favored === 'away' ? away : 50;
+    const correct = complete && favored !== 'none' && favored === row.result.winner;
+    const resultTag = !complete ? '<span class="history-result pending">PENDIENTE</span>' :
+      favored === 'none' ? '<span class="history-result pending">SIN FAVORITO</span>' :
+      correct ? '<span class="history-result hit">ACIERTO</span>' :
+      '<span class="history-result miss">FALLO</span>';
+    const score = complete && Number.isInteger(row.result.home_score) &&
+      Number.isInteger(row.result.away_score) ?
+      row.result.away_score + ' - ' + row.result.home_score :
+      'Pendiente';
+    return '<article class="history-entry">' +
+      '<div class="history-meta"><span>' + escapeHtml(row.date || '') + '</span>' +
+      resultTag + '</div>' +
+      '<div class="history-matchup">' + escapeHtml(row.away || 'Visitante') + ' vs. ' +
+      escapeHtml(row.home || 'Local') + '</div>' +
+      '<div class="history-forecast">Favorito: <strong>' + escapeHtml(chosenName) + '</strong>' +
+      (favored === 'none' ? '' : ' · ' + favoredPct.toFixed(1) + '%') + '</div>' +
+      '<div class="history-score">Resultado: <strong>' + score + '</strong></div>' +
+      '<div class="history-model">Modelo: ' + escapeHtml(row.model || 'sin versión') + '</div></article>';
+  }
+  function renderHistory() {
+    const list = Array.isArray(data.history_recent) ? data.history_recent : [];
+    const safe = list.filter(row => row && row.predicted_at && row.scheduled_at &&
+      Date.parse(row.predicted_at) < Date.parse(row.scheduled_at)).slice(0, 24);
+    $('history-list').innerHTML = safe.length ?
+      safe.map(historyCard).join('') :
+      '<p class="history-empty">Todavía no tenemos pronósticos anteriores publicados en este registro. ' +
+      'Los nuevos partidos quedarán guardados antes del inicio.</p>';
+  }
+
   function gameCard(game) {
     const hasPrediction = validPrediction(game);
     const p = game.prediction || {};
@@ -275,7 +349,7 @@
       scoreboard + percentageBar +
       '<div class="game-bottom">' + verdict + '</div>' +
       '<span class="expand-hint">Ver jugadores y titulares <span class="expand-arrow" aria-hidden="true">⌄</span></span></summary>' +
-      '<div class="game-breakdown">' + playersPanel(game) +
+      '<div class="game-breakdown">' + matchupInsights(game) + playersPanel(game) +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
         '" target="_blank" rel="noopener noreferrer">Ficha del partido en ESPN ↗</a>' : '') +
       '</div></details>';
@@ -319,6 +393,17 @@
       'Todavía no hay partidos finalizados con pronóstico evaluado. No podemos afirmar que el modelo acierta.' :
       n < 100 ? 'Muestra inicial de ' + n + ' partidos: estos resultados pueden variar mucho. Necesitamos una muestra mayor y revisar la calibración.' :
       'Resultados históricos del modelo. Un buen porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
+    const comparison = metrics.elo_comparison || {};
+    const paired = Number.isInteger(comparison.n) ? comparison.n : 0;
+    $('elo-validation').innerHTML = paired > 0 &&
+      Number.isFinite(comparison.model_brier) && Number.isFinite(comparison.elo_brier) ?
+      '<strong>Modelo NBA Analytics frente a Elo simple</strong>' +
+      '<p>Comparación en exactamente ' + paired + ' partidos con pronósticos previos. ' +
+      'Brier de nuestro modelo: <b>' + comparison.model_brier.toFixed(4) +
+      '</b> · Brier Elo: <b>' + comparison.elo_brier.toFixed(4) + '</b>. ' +
+      'Menor indica menos error. No demuestra ventaja si la muestra es pequeña.</p>' :
+      '<strong>Comparación con Elo simple</strong>' +
+      '<p>Aún no hay resultados suficientes con ambas predicciones prepartido para comparar los modelos.</p>';
   }
   function render() {
     const games = Array.isArray(data.games) ? data.games : [];
@@ -337,6 +422,7 @@
     $('games').innerHTML = shown.length ? shown.map(gameCard).join('') :
       '<div class="empty-state">No hay partidos publicados para esta fecha.</div>';
     renderValidation();
+    renderHistory();
     if (liveError && !liveAvailable) {
       setStatus('No fue posible conectar con el marcador de ESPN. Se muestran los últimos datos publicados.', 'warning');
     } else if (liveError || (liveAvailable && Date.now() - liveUpdatedAt > 120000)) {

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261106-g">
+  <link rel="stylesheet" href="assets/style.css?v=20261106-h">
 </head>
 <body>
   <div class="site-shell">
@@ -54,6 +54,18 @@
           <p class="quality-loading">Consultando resultados del modelo…</p>
         </div>
         <p id="quality-caveat" class="quality-caveat">Aún estamos reuniendo resultados suficientes para validar las probabilidades.</p>
+        <div id="elo-validation" class="baseline-compare"></div>
+      </section>
+
+      <section class="history-section" aria-labelledby="history-title">
+        <div class="quality-heading">
+          <p class="overline">REGISTRO AUDITABLE</p>
+          <h2 id="history-title">Historial de predicciones</h2>
+        </div>
+        <p class="quality-intro">Porcentajes publicados antes del salto inicial y resultado real del encuentro. Una apuesta con hándicap no se evalúa con estos porcentajes.</p>
+        <div id="history-list" class="history-list" aria-live="polite">
+          <p class="history-empty">Consultando pronósticos anteriores…</p>
+        </div>
       </section>
 
       <p class="footnote">Probabilidades estadísticas experimentales, no calibradas. No son certezas ni se basan en cuotas de apuestas.</p>
@@ -61,6 +73,6 @@
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261106-g" defer></script>
+  <script src="assets/app.js?v=20261106-h" defer></script>
 </body>
 </html>
