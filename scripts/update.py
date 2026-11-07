@@ -26,6 +26,8 @@ from validation import evaluate
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data' / 'latest.json'
 HISTORY = ROOT / 'data' / 'history.json'
+EVENT_CACHE = ROOT / 'data' / 'events-cache.json'
+BOX_CACHE = ROOT / 'data' / 'player-box-cache.json'
 ZONE = ZoneInfo('America/Santo_Domingo')
 API = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 USER_AGENT = 'NBAAnalyticsPersonalResearch/1.0 (+github-pages; low-volume)'
@@ -151,7 +153,10 @@ def stat_line(summary: dict, team_id: str) -> list[dict]:
 def player_profiles(team_id: str, recent_games: list[dict], summaries: dict[str, dict]) -> list[dict]:
     athletes = defaultdict(list)
     for game in sorted(recent_games[:5], key=lambda x: x['datetime'], reverse=True):
-        stats = stat_line(summaries.get(game['id'], {}), team_id)
+        saved = summaries.get(game['id'], {})
+        stats = saved.get('player_stats', {}).get(str(team_id)) if isinstance(saved, dict) else None
+        if stats is None:
+            stats = stat_line(saved, team_id)
         for p in stats:
             athletes[p['id']].append(p)
     players = []
@@ -213,6 +218,37 @@ def load_history() -> dict:
         return v if isinstance(v, dict) and isinstance(v.get('predictions'), dict) else {'predictions': {}}
     except (FileNotFoundError, ValueError):
         return {'predictions': {}}
+
+
+def load_cache(path: Path, key: str) -> dict:
+    """Una caché rota o inexistente nunca se confunde con resultados reales."""
+    try:
+        document = json.loads(path.read_text(encoding='utf-8'))
+        value = document.get(key, {})
+        return value if isinstance(value, dict) else {}
+    except (FileNotFoundError, ValueError, OSError, AttributeError):
+        return {}
+
+
+def locked_prediction(record: dict | None) -> dict | None:
+    """Congelar el primer porcentaje registrado antes del salto inicial."""
+    if not isinstance(record, dict):
+        return None
+    try:
+        if parse_time(record['predicted_at']) >= parse_time(record['scheduled_at']):
+            return None
+        home, away = float(record['home_pct']), float(record['away_pct'])
+        if not (math.isfinite(home) and math.isfinite(away)
+                and 0 <= home <= 100 and 0 <= away <= 100
+                and abs(home + away - 100) < 0.2):
+            return None
+    except (KeyError, ValueError, TypeError):
+        return None
+    return {'home_pct': home, 'away_pct': away,
+            'reason': str(record.get('reason') or 'Pronóstico registrado antes del inicio.'),
+            'model': str(record.get('model') or 'sin versión'),
+            'experimental': True, 'calibrated': False,
+            'predicted_at': record['predicted_at'], 'locked': True}
 
 
 def write_json_atomic(path: Path, data: dict):
@@ -277,36 +313,44 @@ def public_history(history: dict, limit: int = 45) -> list[dict]:
 def refresh(today: date | None = None):
     now = datetime.now(timezone.utc)
     day = today or now.astimezone(ZONE).date()
-    # A bounded rolling window keeps this dependency-free job within public API usage.
-    start = day - timedelta(days=35)
-    all_events = {}
-    failed_days = []
-    for i in range((day - start).days + 1):
-        d = start + timedelta(days=i)
-        try:
-            data = get_json('scoreboard', {'dates': d.strftime('%Y%m%d'), 'limit': '100'})
-        except RuntimeError:
-            failed_days.append(d.isoformat())
+    # Resultados verificados en caché incremental; evitar decenas de
+    # solicitudes repetidas en cada ejecución programada.
+    history = load_history()
+    cached_events = load_cache(EVENT_CACHE, 'events')
+    cutoff = (day - timedelta(days=45)).isoformat()
+    all_events = {str(k): v for k, v in cached_events.items()
+                  if isinstance(v, dict) and v.get('id')
+                  and isinstance(v.get('date'), str) and v['date'] >= cutoff}
+    lookback = 21 if not all_events else 5
+    dates_to_fetch = {day - timedelta(days=i) for i in range(lookback + 1)}
+    dates_to_fetch.update(day + timedelta(days=i) for i in range(3))
+    for record in history['predictions'].values():
+        if record.get('result') is not None:
             continue
-        for item in data.get('events', []):
-            event = parse_event(item)
-            if event:
-                all_events[event['id']] = event
-    if len(failed_days) > 2:
-        raise RuntimeError(f'Historical schedule incomplete on {len(failed_days)} dates; leaving previous snapshot untouched')
-    schedule_errors = []
-    for i in range(3):
-        d = day + timedelta(days=i)
         try:
-            data = get_json('scoreboard', {'dates': d.strftime('%Y%m%d'), 'limit': '100'})
-        except RuntimeError:
-            schedule_errors.append(d.isoformat())
+            pending_day = date.fromisoformat(record['date'])
+        except (ValueError, TypeError, KeyError):
             continue
-        for item in data.get('events', []):
+        if 0 <= (day - pending_day).days <= 35:
+            dates_to_fetch.add(pending_day)
+    failed_days, schedule_errors = [], []
+    for d in sorted(dates_to_fetch):
+        try:
+            payload = get_json('scoreboard', {'dates': d.strftime('%Y%m%d'), 'limit': '100'})
+            if not isinstance(payload.get('events'), list):
+                raise RuntimeError('Respuesta ESPN sin lista de partidos')
+        except RuntimeError:
+            if d >= day:
+                schedule_errors.append(d.isoformat())
+            else:
+                failed_days.append(d.isoformat())
+            continue
+        for item in payload['events']:
             event = parse_event(item)
             if event:
                 all_events[event['id']] = event
     if schedule_errors:
+        # No sustituir la última agenda correcta por información parcial.
         raise RuntimeError('Cannot verify schedule on ' + ', '.join(schedule_errors))
     future_dates = { (day + timedelta(days=i)).isoformat() for i in range(3) }
     schedule = sorted([e for e in all_events.values() if e['date'] in future_dates],
@@ -327,12 +371,22 @@ def refresh(today: date | None = None):
         team_histories[tid] = recent
         for item in recent[:5]:
             need_summaries[item['id']] = item
+    box_cache = load_cache(BOX_CACHE, 'games')
     summaries = {}
-    for gid in need_summaries:
+    for gid, item in need_summaries.items():
+        cached = box_cache.get(gid)
+        if isinstance(cached, dict) and isinstance(cached.get('player_stats'), dict):
+            summaries[gid] = cached
+            continue
         try:
-            summaries[gid] = get_json('summary', {'event': gid}, tries=2)
+            raw = get_json('summary', {'event': gid}, tries=2)
+            summary = {'player_stats': {
+                item['home']['id']: stat_line(raw, item['home']['id']),
+                item['away']['id']: stat_line(raw, item['away']['id'])}}
+            summaries[gid] = summary
+            box_cache[gid] = summary
         except RuntimeError:
-            # Player stats are optional; never invent them when summary fails.
+            # No inventar jugadores cuando ESPN falle.
             pass
     teams = {}
     for tid, info in involved_teams.items():
@@ -346,14 +400,20 @@ def refresh(today: date | None = None):
                       'form': weighted_form(tid, hist),
                       'players': players, 'player_trend': player_trend(players)}
     for game in schedule:
-        # Datos históricos anteriores al inicio. No entran en la probabilidad.
         game['head_to_head'] = recent_meetings(game, finished)
-        # No utilizar información posterior al inicio ni guardar estimaciones retrospectivas.
-        future = parse_time(game['datetime']) > now
-        ratings = elo_before(finished, game['datetime']) if future else {}
-        game['prediction'] = predict_v2(game, teams, ratings) if game['status'] == 'pre' and future else None
-        game['elo_baseline_home_pct'] = (
-            elo_baseline_probability(game, ratings) if game['prediction'] else None)
+        stored = history['predictions'].get(game['id'])
+        frozen = locked_prediction(stored)
+        if frozen:
+            game['prediction'] = frozen
+            game['elo_baseline_home_pct'] = stored.get('elo_baseline_home_pct')
+        elif game['status'] == 'pre' and parse_time(game['datetime']) > now:
+            ratings = elo_before(finished, game['datetime'])
+            game['prediction'] = predict_v2(game, teams, ratings)
+            game['elo_baseline_home_pct'] = (
+                elo_baseline_probability(game, ratings) if game['prediction'] else None)
+        else:
+            game['prediction'] = None
+            game['elo_baseline_home_pct'] = None
     # Titulares/estadísticas del partido: nunca inferir quintetos de la forma reciente.
     # La API no oficial puede no publicar alineaciones antes del salto inicial.
     for game in schedule:
@@ -376,7 +436,6 @@ def refresh(today: date | None = None):
     # Contexto de lesiones, noticias y foros SOLO para partidos del día.
     # No modifica la probabilidad, que depende de la forma deportiva.
     collect([g for g in schedule if g['date'] == day.isoformat()], teams)
-    history = load_history()
     for game in all_events.values():
         if game['status'] == 'post' and game['id'] in history['predictions']:
             record = history['predictions'][game['id']]
@@ -388,6 +447,7 @@ def refresh(today: date | None = None):
                 'date': game['date'], 'home': game['home']['name'], 'away': game['away']['name'],
                 'home_pct': game['prediction']['home_pct'], 'away_pct': game['prediction']['away_pct'],
                 'predicted_at': now.isoformat(), 'model': game['prediction']['model'],
+                'reason': game['prediction'].get('reason', 'Pronóstico prepartido.'),
                 'elo_baseline_home_pct': game['elo_baseline_home_pct'],
                 'scheduled_at': game['datetime'], 'result': None}
     # Keep history files modest and predictable.
@@ -403,17 +463,26 @@ def refresh(today: date | None = None):
         'games': schedule, 'teams': teams,
         'validation': metrics,
         'history_recent': public_history(history),
+        'data_quality': {'history_partial': bool(failed_days),
+                         'missing_historical_days': len(failed_days),
+                         'cached_games': len(all_events),
+                         'cached_player_boxes': len(box_cache)},
         'notes': ['No utiliza cuotas de apuestas',
-                  'El historial de 35 días puede omitir resultados anteriores; Elo se reinicia al comienzo de la ventana',
+                  'El historial de hasta 45 días se conserva progresivamente; primera recuperación potencialmente incompleta',
                   'Puntos anotados y recibidos por juego NO equivalen a rating por 100 posesiones',
                   'Lesiones disponibles como contexto no verificado; comprobar informe oficial',
                   'Foros y noticias no alteran automáticamente los porcentajes',
                   'Las probabilidades no están calibradas ni garantizan resultados'],
     }
-    # Both files are only rewritten after essential data checks pass.
+    all_events = {gid: e for gid, e in all_events.items() if e['date'] >= cutoff}
+    box_cache = {gid: entry for gid, entry in box_cache.items() if gid in all_events}
+    # GitHub publicará los cuatro ficheros en un mismo commit.
     write_json_atomic(OUT, snapshot)
     write_json_atomic(HISTORY, history)
-    print(f"Updated {len(schedule)} games / {len(teams)} teams, {len(summaries)} summaries; "
+    write_json_atomic(EVENT_CACHE, {'events': all_events})
+    write_json_atomic(BOX_CACHE, {'games': box_cache})
+    print(f"Updated {len(schedule)} games / {len(teams)} teams, "
+          f"{len(summaries)} summaries, {len(failed_days)} missing historical dates; "
           f"{metrics['completed_predictions']} assessed predictions; date {day}")
 
 

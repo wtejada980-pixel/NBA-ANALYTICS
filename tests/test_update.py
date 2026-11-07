@@ -66,6 +66,33 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(len(hist),1)
         self.assertEqual(hist[0]["home_score"],120)
 
+    def test_locked_prediction_is_immutable(self):
+        record = {'home_pct': 63.4, 'away_pct': 36.6, 'model': 'v2',
+          'predicted_at': '2026-11-06T19:00:00Z',
+          'scheduled_at': '2026-11-06T20:00:00Z'}
+        self.assertEqual(update.locked_prediction(record)['home_pct'], 63.4)
+        self.assertTrue(update.locked_prediction(record)['locked'])
+        self.assertIsNone(update.locked_prediction(
+          {**record, 'predicted_at': '2026-11-06T20:01:00Z'}))
+
+    def test_cache_missing_and_invalid(self):
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / 'missing.json'
+            self.assertEqual(update.load_cache(path, 'events'), {})
+            path.write_text('not json')
+            self.assertEqual(update.load_cache(path, 'events'), {})
+            path.write_text('{"events":{"42":{"id":"42"}}}')
+            self.assertEqual(len(update.load_cache(path, 'events')), 1)
+
+    def test_player_profiles_use_cached_stats(self):
+        game = update.parse_event(sample_event())
+        box = {'1': {'player_stats': {'10': [
+          {'id':'100','name':'Jugador','pts':24,'reb':5,'ast':7,'starter':True}
+        ]}}}
+        rows = update.player_profiles('10', [game, game], box)
+        self.assertEqual(rows[0]['pts'], 24.0)
+
     def test_valid_probabilities(self):
         home = {'form': {'played':8,'margin': 7.0, 'win_rate':.7}, 'rest_days':2, 'players':[]}
         away = {'form': {'played':8,'margin': -5.0, 'win_rate':.3}, 'rest_days':1, 'players':[]}

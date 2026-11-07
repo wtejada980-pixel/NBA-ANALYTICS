@@ -8,6 +8,7 @@ on:
       - 'tests/**'
       - 'assets/**'
       - 'index.html'
+      - 'data/**'
       - '.github/workflows/verificar-calidad.yml'
   pull_request:
     paths:
@@ -15,6 +16,7 @@ on:
       - 'tests/**'
       - 'assets/**'
       - 'index.html'
+      - 'data/**'
       - '.github/workflows/verificar-calidad.yml'
   workflow_dispatch:
 
