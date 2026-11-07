@@ -9,7 +9,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T00:00Z",
-      "result": null
+      "result": {
+        "home_score": 139,
+        "away_score": 132,
+        "winner": "home"
+      }
     },
     "401909288": {
       "date": "2026-11-06",
@@ -20,18 +24,26 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T00:00Z",
-      "result": null
+      "result": {
+        "home_score": 80,
+        "away_score": 119,
+        "winner": "away"
+      }
     },
     "401909289": {
       "date": "2026-11-06",
       "home": "Cleveland Cavaliers",
       "away": "Philadelphia 76ers",
-      "home_pct": 43.0,
-      "away_pct": 57.0,
+      "home_pct": 43,
+      "away_pct": 57,
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T00:30Z",
-      "result": null
+      "result": {
+        "home_score": 119,
+        "away_score": 95,
+        "winner": "home"
+      }
     },
     "401909290": {
       "date": "2026-11-06",
@@ -42,7 +54,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T01:00Z",
-      "result": null
+      "result": {
+        "home_score": 112,
+        "away_score": 100,
+        "winner": "home"
+      }
     },
     "401909291": {
       "date": "2026-11-06",
@@ -53,7 +69,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T01:00Z",
-      "result": null
+      "result": {
+        "home_score": 97,
+        "away_score": 128,
+        "winner": "away"
+      }
     },
     "401909292": {
       "date": "2026-11-06",
@@ -64,7 +84,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T01:00Z",
-      "result": null
+      "result": {
+        "home_score": 107,
+        "away_score": 121,
+        "winner": "away"
+      }
     },
     "401909293": {
       "date": "2026-11-06",
@@ -75,7 +99,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T01:00Z",
-      "result": null
+      "result": {
+        "home_score": 109,
+        "away_score": 115,
+        "winner": "away"
+      }
     },
     "401909294": {
       "date": "2026-11-06",
@@ -86,18 +114,26 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T03:00Z",
-      "result": null
+      "result": {
+        "home_score": 124,
+        "away_score": 118,
+        "winner": "home"
+      }
     },
     "401909295": {
       "date": "2026-11-06",
       "home": "Sacramento Kings",
       "away": "San Antonio Spurs",
-      "home_pct": 27.0,
-      "away_pct": 73.0,
+      "home_pct": 27,
+      "away_pct": 73,
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T03:00Z",
-      "result": null
+      "result": {
+        "home_score": 109,
+        "away_score": 124,
+        "winner": "away"
+      }
     },
     "401909938": {
       "date": "2026-11-07",
