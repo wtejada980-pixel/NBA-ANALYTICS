@@ -9,6 +9,7 @@ on:
       - 'scripts/model_v2.py'
       - 'scripts/context_sources.py'
       - 'scripts/validation.py'
+      - 'scripts/scouting.py'
   workflow_dispatch:
   schedule:
     # Hora República Dominicana: mañana, tarde y antes del último bloque de partidos

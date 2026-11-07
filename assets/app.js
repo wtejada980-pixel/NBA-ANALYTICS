@@ -417,6 +417,45 @@
     $('data-health').className = 'data-health' + (quality.history_partial ? ' health-warning' : '');
   }
 
+
+  function renderScouting() {
+    const games = Array.isArray(data.games) ? data.games : [];
+    const dayGames = games.filter(g => g.date === chosenDate &&
+      g.scouting && g.prediction && validPrediction(g)).sort((a,b) =>
+        String(a.datetime).localeCompare(String(b.datetime)));
+    const fmt = n => Number.isFinite(n) ? n.toFixed(1) : '—';
+    const side = (team, form) => {
+      const wins = Number.isInteger(form?.wins) ? form.wins : null;
+      const played = Number.isInteger(form?.games) ? form.games : 0;
+      return '<div class="scout-team"><strong>' + escapeHtml(team?.name || 'Equipo') +
+        '</strong><span>' + (wins === null || !played ? 'Récord por verificar' :
+        wins + ' victorias en ' + played + ' juegos') + '</span>' +
+        '<span>Margen reciente: ' + fmt(form?.margin) + '</span></div>';
+    };
+    $('scouting-games').innerHTML = dayGames.length ? dayGames.map(g => {
+      const sc = g.scouting;
+      const notes = Array.isArray(sc.observations) ? sc.observations.slice(0, 3) : [];
+      const predictionName = String(sc.favorite || 'Sin favorito claro');
+      const pct = Number(sc.favorite_pct_original);
+      const forecaster = Number.isFinite(pct) && pct >= 50 && pct <= 100 ?
+        pct.toFixed(1) + '%' : '—';
+      return '<article class="scout-card">' +
+        '<div class="scout-top"><span>' + escapeHtml(timeLabel(g.datetime)) +
+        ' · RD</span><span>ANÁLISIS DESCRIPTIVO</span></div>' +
+        '<div class="scout-matchup">' + escapeHtml(g.away?.name || '') + ' <span>vs.</span> ' +
+        escapeHtml(g.home?.name || '') + '</div>' +
+        '<div class="scout-forecast"><span>Favorito del pronóstico original</span>' +
+        '<strong>' + escapeHtml(predictionName) + ' · ' + forecaster + '</strong></div>' +
+        '<div class="scout-rating">' + escapeHtml(sc.classification || 'Por comprobar') + '</div>' +
+        '<div class="scout-teams">' + side(g.away,sc.away_form) + side(g.home,sc.home_form) + '</div>' +
+        '<ul class="scout-notes">' + notes.map(note=>'<li>' + escapeHtml(note) + '</li>').join('') +
+        '</ul><p class="scout-footer">Diagnóstico nuevo · probabilidad original sin modificar</p>' +
+        '</article>';
+    }).join('') :
+      '<p class="history-empty">Análisis descriptivo todavía no disponible para esta fecha. ' +
+      'Se publicará cuando termine la actualización de datos verificados.</p>';
+  }
+
   function renderValidation() {
     const metrics = data.validation || {};
     const n = Number.isInteger(metrics.completed_predictions) && metrics.completed_predictions >= 0 ?
@@ -470,6 +509,7 @@
       'Pronósticos: ' + reported;
     $('games').innerHTML = shown.length ? shown.map(gameCard).join('') :
       '<div class="empty-state">No hay partidos publicados para esta fecha.</div>';
+    renderScouting();
     renderValidation();
     renderCalibration();
     renderHistory();

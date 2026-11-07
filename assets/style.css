@@ -265,3 +265,26 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .history-toolbar select:focus-visible{outline:2px solid #f26c38}
 .history-count{margin-left:auto}
 @media(max-width:480px){.calibration-row{grid-template-columns:68px minmax(0,1fr)}.calibration-metric{grid-template-columns:46px minmax(0,1fr) 43px;gap:5px}}
+
+/* Análisis diario: diagnóstico independiente del pronóstico congelado */
+.scouting-section{margin:34px 0 0;padding-top:23px;border-top:1px solid #343038}
+.scouting-heading{display:flex;align-items:flex-end;flex-wrap:wrap;gap:10px}
+.scouting-notice{font-size:10px;color:#f49a72;letter-spacing:.04em}
+.scouting-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.scout-card{background:linear-gradient(145deg,#201c1d,#141518);border:1px solid #564039;border-radius:14px;padding:17px;min-width:0}
+.scout-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:10px;color:#a0a0a8;margin-bottom:11px}
+.scout-top span:last-child{color:#ff9165;font-size:9px;font-weight:750}
+.scout-matchup{font-size:14px;font-weight:800;color:#fff;line-height:1.45}
+.scout-matchup span{color:#ff7948;font-weight:500}
+.scout-forecast{background:#281f1c;border:1px solid #493328;border-radius:9px;padding:11px;margin:12px 0 9px;display:flex;flex-direction:column;gap:4px}
+.scout-forecast span{font-size:10px;color:#b8a99f}
+.scout-forecast strong{font-size:18px;color:#fff;font-variant-numeric:tabular-nums}
+.scout-rating{font-size:10px;font-weight:800;color:#ffc59c;margin:0 0 15px}
+.scout-teams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.scout-team{border:1px solid #39373b;border-radius:9px;padding:9px;display:flex;flex-direction:column;gap:5px}
+.scout-team strong{font-size:11px;color:#fff;line-height:1.45}
+.scout-team span{font-size:10px;color:#acaeb7;line-height:1.5}
+.scout-notes{list-style:none;padding:0;margin:13px 0 0;display:grid;gap:7px}
+.scout-notes li{font-size:11px;color:#d5c8c3;line-height:1.5;border-left:2px solid #eb754c;padding-left:9px}
+.scout-footer{font-size:10px;color:#8f9096;margin:12px 0 0}
+@media(max-width:850px){.scouting-grid{grid-template-columns:1fr}}

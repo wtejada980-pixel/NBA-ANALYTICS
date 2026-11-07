@@ -42,6 +42,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
 
 (async () => {
   assert.match(html,/id="games"/);
+  assert.match(html,/id="scouting-games"/);
   assert.doesNotMatch(html,/thescore|theScore/i);
   assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
@@ -69,6 +70,18 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/36\.6/);
   assert.match(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
+  assert.match(view.node('scouting-games').innerHTML,/Análisis descriptivo todavía no disponible/);
+  const scoutGame = {...game, scouting:{
+    favorite:'New York Knicks',favorite_pct_original:63.4,
+    classification:'Ventaja moderada',
+    away_form:{games:10,wins:6,margin:3.1},
+    home_form:{games:10,wins:8,margin:6.2},
+    observations:['Los equipos tienen una diferencia de rendimiento.']
+  }};
+  const scoutView = await mount({as_of:new Date().toISOString(),date:today,games:[scoutGame]});
+  assert.match(scoutView.node('scouting-games').innerHTML,/New York Knicks · 63\.4%/);
+  assert.match(scoutView.node('scouting-games').innerHTML,/diagnóstico|Diagnóstico/);
+  assert.match(scoutView.node('scouting-games').innerHTML,/6 victorias en 10 juegos/);
   assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
   assert.match(view.node('model-validation').innerHTML,/Partidos evaluados/);

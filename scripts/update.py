@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 from context_sources import collect
 from model_v2 import predict as predict_v2, elo_before, elo_baseline_probability
 from validation import evaluate
+from scouting import analyze as analyze_scouting
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data' / 'latest.json'
@@ -414,6 +415,11 @@ def refresh(today: date | None = None):
         else:
             game['prediction'] = None
             game['elo_baseline_home_pct'] = None
+    # Nuevo análisis contextual de las tendencias disponibles ANTES del partido.
+    # No modifica el pronóstico de victoria original ni calcula hándicaps.
+    for game in schedule:
+        if game['prediction']:
+            game['scouting'] = analyze_scouting(game, teams)
     # Titulares/estadísticas del partido: nunca inferir quintetos de la forma reciente.
     # La API no oficial puede no publicar alineaciones antes del salto inicial.
     for game in schedule:
