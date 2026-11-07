@@ -76,7 +76,7 @@ def analyze(game, teams):
         "opponent": opposing,
         "favorite_pct_original": lead,
         "classification": classification,
-        "observations": observations[:3],
+        "observations": observations[:4],
         "home_form": hform,
         "away_form": aform,
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap.",
