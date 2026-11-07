@@ -144,7 +144,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T22:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 43.2,
+          "away_pct": 56.8,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909939": {
       "date": "2026-11-07",
@@ -155,7 +165,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T00:30Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 61.9,
+          "away_pct": 38.1,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909940": {
       "date": "2026-11-07",
@@ -166,7 +186,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 51.9,
+          "away_pct": 48.1,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909941": {
       "date": "2026-11-07",
@@ -177,7 +207,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 66.1,
+          "away_pct": 33.9,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909942": {
       "date": "2026-11-07",
@@ -188,7 +228,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T01:30Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 72.2,
+          "away_pct": 27.8,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909943": {
       "date": "2026-11-07",
@@ -199,7 +249,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T02:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 39.3,
+          "away_pct": 60.7,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909944": {
       "date": "2026-11-07",
@@ -210,7 +270,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T03:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 48.9,
+          "away_pct": 51.1,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909945": {
       "date": "2026-11-08",
@@ -221,7 +291,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T20:30Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 32.3,
+          "away_pct": 67.7,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909946": {
       "date": "2026-11-08",
@@ -232,7 +312,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T23:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 54.5,
+          "away_pct": 45.5,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909947": {
       "date": "2026-11-08",
@@ -243,7 +333,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-09T00:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 76.4,
+          "away_pct": 23.6,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909948": {
       "date": "2026-11-08",
@@ -254,7 +354,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-09T00:30Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 61.0,
+          "away_pct": 39.0,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909949": {
       "date": "2026-11-08",
@@ -265,7 +375,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-09T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 28.1,
+          "away_pct": 71.9,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909950": {
       "date": "2026-11-08",
@@ -276,7 +396,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-09T02:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 40.6,
+          "away_pct": 59.4,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909951": {
       "date": "2026-11-08",
@@ -287,7 +417,17 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-09T02:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 44.3,
+          "away_pct": 55.7,
+          "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909952": {
       "date": "2026-11-09",
