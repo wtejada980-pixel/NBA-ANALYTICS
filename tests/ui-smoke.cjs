@@ -49,6 +49,10 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(source,/nextLiveRetryAt/);
   assert.match(html,/id="model-validation"/);
   assert.match(html,/id="elo-validation"/);
+  assert.match(html,/id="calibration-chart"/);
+  assert.match(html,/id="model-versions"/);
+  assert.match(html,/id="history-filter"/);
+  assert.match(html,/id="data-health"/);
   assert.match(html,/id="history-list"/);
   assert.match(html,/id="quality-caveat"/);
   assert.doesNotMatch(html,/id="details"|id="export"/);
@@ -75,6 +79,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('model-validation').innerHTML,/62\.5%/);
   assert.match(view.node('model-validation').innerHTML,/0\.2200/);
   assert.match(view.node('quality-caveat').textContent,/Muestra inicial/);
+  assert.match(view.node('calibration-chart').innerHTML,/resultados suficientes/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
     validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68,
       elo_comparison:{n:4,model_brier:.22,elo_brier:.25}},
@@ -91,6 +96,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
     ]});
   assert.match(view.node('elo-validation').innerHTML,/0\.2200/);
   assert.match(view.node('history-list').innerHTML,/ACIERTO/);
+  assert.match(view.node('history-count').textContent,/1 de 1/);
+  assert.match(view.node('data-health').textContent,/ESPN/);
   assert.doesNotMatch(view.node('history-list').innerHTML,/late/);
   assert.match(view.node('games').innerHTML,/Ver jugadores y titulares/);
   assert.match(view.node('games').innerHTML,/Forma de los equipos/);

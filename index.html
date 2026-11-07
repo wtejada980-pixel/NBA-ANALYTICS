@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261106-h">
+  <link rel="stylesheet" href="assets/style.css?v=20261106-i">
 </head>
 <body>
   <div class="site-shell">
@@ -55,6 +55,13 @@
         </div>
         <p id="quality-caveat" class="quality-caveat">Aún estamos reuniendo resultados suficientes para validar las probabilidades.</p>
         <div id="elo-validation" class="baseline-compare"></div>
+        <div class="calibration-card">
+          <h3>¿Las probabilidades reflejan la realidad?</h3>
+          <p>Cuando estimamos un 60% para el local, ¿gana cerca del 60% de las veces? Cada grupo compara estimación y frecuencia real, únicamente con pronósticos anteriores al partido.</p>
+          <div id="calibration-chart" class="calibration-chart" aria-live="polite">Esperando resultados suficientes…</div>
+        </div>
+        <div id="model-versions" class="versions-panel" aria-live="polite"></div>
+        <p id="data-health" class="data-health" role="status"></p>
       </section>
 
       <section class="history-section" aria-labelledby="history-title">
@@ -63,6 +70,16 @@
           <h2 id="history-title">Historial de predicciones</h2>
         </div>
         <p class="quality-intro">Porcentajes publicados antes del salto inicial y resultado real del encuentro. Una apuesta con hándicap no se evalúa con estos porcentajes.</p>
+        <div class="history-toolbar">
+          <label for="history-filter">Ver pronósticos</label>
+          <select id="history-filter" aria-label="Filtrar historial">
+            <option value="all">Todos</option>
+            <option value="hit">Acertados</option>
+            <option value="miss">Fallados</option>
+            <option value="pending">Pendientes</option>
+          </select>
+          <span id="history-count" class="history-count">—</span>
+        </div>
         <div id="history-list" class="history-list" aria-live="polite">
           <p class="history-empty">Consultando pronósticos anteriores…</p>
         </div>
@@ -73,6 +90,6 @@
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261106-h" defer></script>
+  <script src="assets/app.js?v=20261106-i" defer></script>
 </body>
 </html>

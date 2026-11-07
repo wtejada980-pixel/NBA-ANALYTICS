@@ -235,3 +235,33 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .history-empty{font-size:12px;color:#a7a9b0;grid-column:1/-1;border:1px solid #38373c;border-radius:12px;padding:18px;line-height:1.7}
 @media(max-width:850px){.history-list{grid-template-columns:1fr}}
 @media(max-width:490px){.form-columns{grid-template-columns:1fr}.form-stats strong{font-size:18px}}
+
+/* Laboratorio de calibración y filtros de auditoría */
+.calibration-card{margin-top:20px;border:1px solid #373239;border-radius:14px;padding:18px;background:#141518}
+.calibration-card h3,.versions-panel h3{font-size:14px;font-weight:800;margin:0 0 8px;color:#fff}
+.calibration-card p{font-size:11px;color:#aeb0b7;line-height:1.6;margin:0 0 17px}
+.calibration-chart{display:grid;gap:13px}
+.calibration-row{display:grid;grid-template-columns:90px minmax(0,1fr);gap:10px;align-items:center;padding-bottom:12px;border-bottom:1px solid #292b31}
+.calibration-row:last-child{padding-bottom:0;border-bottom:0}
+.calibration-meta{display:flex;flex-direction:column;gap:4px;font-size:10px;color:#fff}
+.calibration-meta span{color:#a1a4ad;font-size:9px}
+.calibration-metric{display:grid;grid-template-columns:56px minmax(0,1fr) 48px;gap:8px;align-items:center;margin:3px 0;font-size:10px}
+.calibration-metric>span{color:#9da0a8}
+.calibration-metric b{font-size:11px;text-align:right;color:#f4f4f6;font-variant-numeric:tabular-nums}
+.calibration-track{background:#2c2d34;height:8px;border-radius:99px;overflow:hidden}
+.calibration-fill{height:100%;border-radius:99px}
+.calibration-fill.expected{background:#fa703d}
+.calibration-fill.observed{background:#6aa9d4}
+.versions-panel{margin-top:18px}
+.model-version-list{display:grid;gap:5px}
+.model-version{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:9px;background:#1a1b1f;font-size:11px;color:#aeb0b8;flex-wrap:wrap}
+.model-version strong{font-weight:750;color:#fff}
+.model-version b{font-weight:800;color:#fd975d}
+.data-health{font-size:11px;color:#9b9da5;line-height:1.6;margin:16px 0 0}
+.data-health.health-warning{color:#ffbb77}
+.history-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.history-toolbar label,.history-count{font-size:11px;color:#aaaeb5}
+.history-toolbar select{background:#1b1c21;color:#fff;border:1px solid #5e4038;padding:9px 11px;border-radius:9px;font-size:11px;cursor:pointer}
+.history-toolbar select:focus-visible{outline:2px solid #f26c38}
+.history-count{margin-left:auto}
+@media(max-width:480px){.calibration-row{grid-template-columns:68px minmax(0,1fr)}.calibration-metric{grid-template-columns:46px minmax(0,1fr) 43px;gap:5px}}

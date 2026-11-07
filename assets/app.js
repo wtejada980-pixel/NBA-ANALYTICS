@@ -272,11 +272,21 @@
   function renderHistory() {
     const list = Array.isArray(data.history_recent) ? data.history_recent : [];
     const safe = list.filter(row => row && row.predicted_at && row.scheduled_at &&
-      Date.parse(row.predicted_at) < Date.parse(row.scheduled_at)).slice(0, 24);
-    $('history-list').innerHTML = safe.length ?
-      safe.map(historyCard).join('') :
-      '<p class="history-empty">Todavía no tenemos pronósticos anteriores publicados en este registro. ' +
-      'Los nuevos partidos quedarán guardados antes del inicio.</p>';
+      Date.parse(row.predicted_at) < Date.parse(row.scheduled_at)).slice(0, 45);
+    const filter = $('history-filter').value || 'all';
+    const state = row => {
+      if (!row.result || !['home', 'away'].includes(row.result.winner)) return 'pending';
+      if (row.home_pct === row.away_pct) return 'pending';
+      const favorite = row.home_pct > row.away_pct ? 'home' : 'away';
+      return row.result.winner === favorite ? 'hit' : 'miss';
+    };
+    const shown = safe.filter(row => filter === 'all' || state(row) === filter).slice(0, 24);
+    $('history-count').textContent = shown.length + ' de ' + safe.length;
+    $('history-list').innerHTML = shown.length ?
+      shown.map(historyCard).join('') :
+      '<p class="history-empty">' + (safe.length ? 'No hay pronósticos para este filtro.' :
+      'Todavía no tenemos pronósticos anteriores publicados en este registro. ' +
+      'Los nuevos partidos quedarán guardados antes del inicio.') + '</p>';
   }
 
   function gameCard(game) {
@@ -368,6 +378,45 @@
       });
     });
   }
+
+  function renderCalibration() {
+    const metrics = data.validation || {};
+    const bins = Array.isArray(metrics.calibration) ? metrics.calibration : [];
+    const rows = bins.filter(row => row && Number.isInteger(row.count) && row.count > 0 &&
+      Number.isFinite(row.average_predicted_pct) && Number.isFinite(row.actual_home_win_pct) &&
+      row.average_predicted_pct >= 0 && row.average_predicted_pct <= 100 &&
+      row.actual_home_win_pct >= 0 && row.actual_home_win_pct <= 100);
+    $('calibration-chart').innerHTML = rows.length ? rows.map(row =>
+      '<div class="calibration-row">' +
+      '<div class="calibration-meta"><strong>' + escapeHtml(row.range || '') +
+      '</strong><span>' + row.count + ' partidos</span></div>' +
+      '<div class="calibration-metric"><span>Previsto</span><div class="calibration-track">' +
+      '<div class="calibration-fill expected" style="width:' + row.average_predicted_pct + '%"></div>' +
+      '</div><b>' + row.average_predicted_pct.toFixed(1) + '%</b></div>' +
+      '<div class="calibration-metric"><span>Real</span><div class="calibration-track">' +
+      '<div class="calibration-fill observed" style="width:' + row.actual_home_win_pct + '%"></div>' +
+      '</div><b>' + row.actual_home_win_pct.toFixed(1) + '%</b></div></div>'
+    ).join('') : '<p class="history-empty">Aún no hay resultados suficientes para dibujar la calibración.</p>';
+    const models = metrics.by_model && typeof metrics.by_model === 'object' ? metrics.by_model : {};
+    const keys = Object.keys(models).slice(0, 8);
+    $('model-versions').innerHTML = keys.length ?
+      '<h3>Rendimiento por versión del modelo</h3><div class="model-version-list">' +
+      keys.map(name => {
+        const entry = models[name] || {};
+        return Number.isInteger(entry.n) && Number.isFinite(entry.brier) ?
+          '<div class="model-version"><strong>' + escapeHtml(name) +
+          '</strong><span>' + entry.n + ' partidos</span><b>Brier ' +
+          entry.brier.toFixed(4) + '</b></div>' : '';
+      }).join('') + '</div>' : '';
+    const quality = data.data_quality || {};
+    const missing = Number.isInteger(quality.missing_historical_days) ? quality.missing_historical_days : 0;
+    $('data-health').textContent = quality.history_partial ?
+      'Advertencia: ESPN no respondió en ' + missing +
+      ' fechas históricas de esta actualización. Las métricas solo usan partidos confirmados; la información histórica puede estar incompleta.' :
+      'Origen de resultados: ESPN (API no oficial). Los marcadores pueden retrasarse y las probabilidades son experimentales.';
+    $('data-health').className = 'data-health' + (quality.history_partial ? ' health-warning' : '');
+  }
+
   function renderValidation() {
     const metrics = data.validation || {};
     const n = Number.isInteger(metrics.completed_predictions) && metrics.completed_predictions >= 0 ?
@@ -422,6 +471,7 @@
     $('games').innerHTML = shown.length ? shown.map(gameCard).join('') :
       '<div class="empty-state">No hay partidos publicados para esta fecha.</div>';
     renderValidation();
+    renderCalibration();
     renderHistory();
     if (liveError && !liveAvailable) {
       setStatus('No fue posible conectar con el marcador de ESPN. Se muestran los últimos datos publicados.', 'warning');
@@ -553,6 +603,7 @@
     if (expandedGameId === id) fetchGameSummary(id);
   });
   $('reload').addEventListener('click', async () => { await load(); await refreshLive(); });
+  $('history-filter').addEventListener('change', () => renderHistory());
   (async () => { await load(); await refreshLive(); })();
   function hasLiveGameOnScreen() {
     return Array.isArray(data.games) &&
