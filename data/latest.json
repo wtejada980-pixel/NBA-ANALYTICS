@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07T00:32:18.740775+00:00",
+  "as_of": "2026-11-07T01:01:52.252406+00:00",
   "date": "2026-11-06",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -50,13 +50,13 @@
             "id": "4431680",
             "name": "Onyeka Okongwu",
             "starter": true,
-            "game_pts": 6.0
+            "game_pts": 13.0
           },
           {
             "id": "4278039",
             "name": "Nickeil Alexander-Walker",
             "starter": true,
-            "game_pts": 6.0
+            "game_pts": 16.0
           },
           {
             "id": "4397020",
@@ -68,13 +68,13 @@
             "id": "4869342",
             "name": "Dyson Daniels",
             "starter": true,
-            "game_pts": 0.0
+            "game_pts": 4.0
           },
           {
             "id": "5149077",
             "name": "Kingston Flemings",
             "starter": true,
-            "game_pts": 5.0
+            "game_pts": 9.0
           },
           {
             "id": "4280151",
@@ -86,7 +86,7 @@
             "id": "5106262",
             "name": "Zuby Ejiofor",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 6.0
           },
           {
             "id": "2490149",
@@ -98,7 +98,7 @@
             "id": "4397183",
             "name": "Aaron Wiggins",
             "starter": false,
-            "game_pts": 2.0
+            "game_pts": 11.0
           }
         ],
         "away": [
@@ -106,41 +106,47 @@
             "id": "5142718",
             "name": "AJ Dybantsa",
             "starter": true,
-            "game_pts": 2.0
+            "game_pts": 5.0
           },
           {
             "id": "5174563",
             "name": "Kyshawn George",
             "starter": true,
-            "game_pts": 8.0
+            "game_pts": 13.0
           },
           {
             "id": "4278129",
             "name": "Deandre Ayton",
             "starter": true,
-            "game_pts": 2.0
+            "game_pts": 6.0
           },
           {
             "id": "5160992",
             "name": "Alex Sarr",
             "starter": true,
-            "game_pts": 4.0
+            "game_pts": 8.0
           },
           {
             "id": "4277905",
             "name": "Trae Young",
             "starter": true,
-            "game_pts": 2.0
+            "game_pts": 6.0
           },
           {
             "id": "4845374",
             "name": "Bub Carrington",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 2.0
           },
           {
             "id": "5104155",
             "name": "Bilal Coulibaly",
+            "starter": false,
+            "game_pts": 6.0
+          },
+          {
+            "id": "5144126",
+            "name": "Will Riley",
             "starter": false,
             "game_pts": 2.0
           },
@@ -148,7 +154,7 @@
             "id": "5238230",
             "name": "Tre Johnson",
             "starter": false,
-            "game_pts": 3.0
+            "game_pts": 11.0
           }
         ]
       }
@@ -189,13 +195,13 @@
             "id": "4433287",
             "name": "Brandon Miller",
             "starter": true,
-            "game_pts": 6.0
+            "game_pts": 8.0
           },
           {
             "id": "4396971",
             "name": "Naz Reid",
             "starter": true,
-            "game_pts": 3.0
+            "game_pts": 5.0
           },
           {
             "id": "4576060",
@@ -213,13 +219,19 @@
             "id": "4395651",
             "name": "Coby White",
             "starter": true,
-            "game_pts": 3.0
+            "game_pts": 5.0
           },
           {
             "id": "2583632",
             "name": "Royce O'Neale",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 4.0
+          },
+          {
+            "id": "5211176",
+            "name": "Tidjane Salaun",
+            "starter": false,
+            "game_pts": 3.0
           },
           {
             "id": "5281370",
@@ -237,6 +249,12 @@
             "id": "5060701",
             "name": "Christian Anderson",
             "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "5239590",
+            "name": "Liam McNeeley",
+            "starter": false,
             "game_pts": 0.0
           }
         ],
@@ -245,13 +263,13 @@
             "id": "4251",
             "name": "Paul George",
             "starter": true,
-            "game_pts": 3.0
+            "game_pts": 8.0
           },
           {
             "id": "4065648",
             "name": "Jayson Tatum",
             "starter": true,
-            "game_pts": 10.0
+            "game_pts": 24.0
           },
           {
             "id": "4397424",
@@ -263,7 +281,7 @@
             "id": "3078576",
             "name": "Derrick White",
             "starter": true,
-            "game_pts": 10.0
+            "game_pts": 13.0
           },
           {
             "id": "4683689",
@@ -275,25 +293,37 @@
             "id": "4065804",
             "name": "Sam Hauser",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 3.0
+          },
+          {
+            "id": "4277951",
+            "name": "Luka Garza",
+            "starter": false,
+            "game_pts": 3.0
           },
           {
             "id": "4351852",
             "name": "Mitchell Robinson",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 2.0
           },
           {
             "id": "4066354",
             "name": "Payton Pritchard",
             "starter": false,
-            "game_pts": 3.0
+            "game_pts": 6.0
           },
           {
             "id": "4593841",
             "name": "Baylor Scheierman",
             "starter": false,
             "game_pts": 3.0
+          },
+          {
+            "id": "5175647",
+            "name": "Hugo Gonzalez",
+            "starter": false,
+            "game_pts": 0.0
           }
         ]
       }
@@ -312,7 +342,7 @@
         "abbr": "PHI",
         "name": "Philadelphia 76ers"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909289",
@@ -336,52 +366,101 @@
         "locked": true
       },
       "elo_baseline_home_pct": null,
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Philadelphia 76ers @ Cleveland Cavaliers: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVzR3VEhxV0lMMGNuSFlxSGZMajdFZS0wQ0h1REJ2S2lfOWp3c3JsNGgxaGFscGtYLU9relhMa0pSMXhyZ1hhaUcxMWpQLWg0cU1oWEpxaHdVNjRZUWxyem5HMnZ2cDg4T0E0RFdWM0poc0RMTXhlY0RwLWktcmFhMDIyaFhZQQ?oc=5",
-            "published": "Fri, 06 Nov 2026 23:03:32 GMT"
+            "id": "4432158",
+            "name": "Evan Mobley",
+            "starter": true,
+            "game_pts": 5.0
           },
           {
-            "title": "Philadelphia 76ers vs Cleveland Cavaliers Nov 6, 2026 Box Scores - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAtNjBKd2JTTnZMX3BLX1RMWS1XUXNncUxNQldSajlEckR1bDNkQ3Q4X0NDMDRZZ1Z5M2dLdVJIUWNpQkFYTUFFc0pLOVpfMWFORW8wYU5OenI?oc=5",
-            "published": "Fri, 06 Nov 2026 23:38:58 GMT"
+            "id": "3992",
+            "name": "James Harden",
+            "starter": true,
+            "game_pts": 4.0
           },
           {
-            "title": "What channel are Sixers on tonight? What time is Sixers vs. Cavs in NBA Cup - Delawareonline.com",
-            "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNd0JrMUQ4WElPYXpabzBWX1dFSDUySEJzNUhhUFhuOUFmZ0hHLUp5ZHBuYXlqVWVvT0g3RkxMRkVZbnhGSXg3a0xROTVUcUY0WXhwaEczT1N5eDdoallTRk94TmNHcVg2VFhUY0N3ZTZaUThlazFTcnFNOHRGYjdaWUJ6TXJodlZmUXJOOXZlX19sRlVZWVUtNU1IcDNlOTU3dmdia0hHN19zLW5fLVY1VnpwWkdKZ3ZPQk5Cb1J6YlMyNE03WTlsQkhiWmlWMlEyUVJYOUNOQm42Z0Fuc0xxX1lDcjg2U1lCRkZLdWpteXFlM1ZLSlRBQllmWGZOYURHZ3U3Nld1elUyUQ?oc=5",
-            "published": "Fri, 06 Nov 2026 22:02:00 GMT"
+            "id": "3908809",
+            "name": "Donovan Mitchell",
+            "starter": true,
+            "game_pts": 6.0
           },
           {
-            "title": "76ers vs Cavaliers NBA Cup Group Play : Starting Lineups, Injuries and What To Expect - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWVMyaWg0WDZyaGZSd184Q0NiSndjNE82b3hDSURvOS0xaTRaSXNVcDF1S3RmbUMtcmF0STJkM0VjeUZsd3lIREhyWkt4UmFUUlBTQW1TNEFIcXdwMTJVTTVTTC1MaFVHOVU5T0VZWDlBSV9kbXdvWlFmaTBBQVpEUTdiZzRJU2EwOW1Bb1NvalcyWmluZjcxaDZOYkVyNlBLVDBVN21TcEtVT2dZWi1uV0VkY0tKWnB2cnNjdnl1dU1IS3FqdGlWaVpHbmp5Zw?oc=5",
-            "published": "Fri, 06 Nov 2026 18:45:28 GMT"
+            "id": "4066757",
+            "name": "Sam Merrill",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4576087",
+            "name": "Peyton Watson",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "2995706",
+            "name": "Mario Hezonja",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "5023693",
+            "name": "Tyrese Proctor",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "5041951",
+            "name": "Meleek Thomas",
+            "starter": false,
+            "game_pts": 0.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=76ers+Cavaliers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-07T00:32:38.823761+00:00"
+        "away": [
+          {
+            "id": "1966",
+            "name": "LeBron James",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "3059318",
+            "name": "Joel Embiid",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "3917376",
+            "name": "Jaylen Brown",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4431678",
+            "name": "Tyrese Maxey",
+            "starter": true,
+            "game_pts": 3.0
+          },
+          {
+            "id": "5124612",
+            "name": "VJ Edgecombe",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "3912848",
+            "name": "Dean Wade",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4351851",
+            "name": "Anfernee Simons",
+            "starter": false,
+            "game_pts": 0.0
+          }
+        ]
       }
     },
     {
@@ -459,7 +538,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T00:32:39.570511+00:00"
+        "context_updated_at": "2026-11-07T01:01:55.964152+00:00"
       }
     },
     {
@@ -508,22 +587,22 @@
           {
             "title": "Oklahoma City Thunder @ Memphis Grizzlies: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNREp1ZkIwUTdRZHBNSWQ3d09ueUlRTEwtLWJ2YTdiS3FETVYwcjVvNTRjS090Uy1NZ2xXaUQ0Y2Iyc1NvZUdMMHBXNzlBY1NMU3BESGkxUC1QQkxnakZ1SVJGQ05tNGhRV0lSR3NuZnQtS0gyc3dDMTZLUW1nd3d5dWJnRnFwYW8?oc=5",
-            "published": "Fri, 06 Nov 2026 23:03:16 GMT"
+            "published": "Fri, 06 Nov 2026 23:49:30 GMT"
           },
           {
             "title": "Oklahoma City Thunder vs Memphis Grizzlies Nov 6, 2026 Box Scores - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Wc1NsX1JkXy02X2huaEtjWEZVeEVRLXZUNThtNTBLVDFlRE5RRjN6V2MyMDNXdzQwbnNPMkx4eHBXelFBZWo1aVFGRFZMODAwWnh0R1BtVGw?oc=5",
-            "published": "Fri, 06 Nov 2026 19:09:52 GMT"
-          },
-          {
-            "title": "Oklahoma City Thunder begin NBA Cup journey against Grizzlies - KOCO",
-            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeDFIc2dPcEZtZmdnT1MwczFaZDVUTTRmcFZuU3ZzRC1qQVVPSlRzQTFPTFBXN1JfREdfc3N6VXRwdDNQUWU3X05tLXhqdVRPekc3eHk0bUFNY3pEVmdXSzBKNkhSNlE3dHlNZjJXNkdTZTVIR3JYMVpFam9sZVlDZkJ0WkpUQ0dOaDVvVkMwbUZTUTl0aXBj?oc=5",
-            "published": "Fri, 06 Nov 2026 22:32:00 GMT"
+            "published": "Sat, 07 Nov 2026 00:19:11 GMT"
           },
           {
             "title": "Oklahoma City Thunder @ Memphis Grizzlies Odds - FanDuel Sportsbook",
             "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMmFLTjU2a1l4M1lxSHlFcXJiNG1ScXdpbVF0STdnUWU2dTV2eHRiZ2RrWGQ3SV90R2R5Vno5ODAxTXk1aWMyWUJQdEdCNFZGWllwVVBnd0ZXZkVBVzZTUDB4MEQwbDJqZDNmeVNMVzFWN1ZQVUtSNDN4amtTVGZnclRQNmNwdWlwcV82RkRvbEFmNTIxelc1ZGhDSmQ?oc=5",
             "published": "Fri, 06 Nov 2026 22:10:18 GMT"
+          },
+          {
+            "title": "Oklahoma City Thunder begin NBA Cup journey against Grizzlies - KOCO",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeDFIc2dPcEZtZmdnT1MwczFaZDVUTTRmcFZuU3ZzRC1qQVVPSlRzQTFPTFBXN1JfREdfc3N6VXRwdDNQUWU3X05tLXhqdVRPekc3eHk0bUFNY3pEVmdXSzBKNkhSNlE3dHlNZjJXNkdTZTVIR3JYMVpFam9sZVlDZkJ0WkpUQ0dOaDVvVkMwbUZTUTl0aXBj?oc=5",
+            "published": "Fri, 06 Nov 2026 22:32:00 GMT"
           }
         ],
         "forum": {
@@ -537,7 +616,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T00:32:39.992445+00:00"
+        "context_updated_at": "2026-11-07T01:01:56.776250+00:00"
       }
     },
     {
@@ -591,17 +670,17 @@
           {
             "title": "Toronto Raptors @ Milwaukee Bucks: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9WOF9JSS1zYTd2VG9VWXBtOWRuUlY1VzFieFFKQkdxMklPQnJ3WWV3SnNzdE5rb0tNX0lOdE1ESjRubG0yV2MyT1BNRXhiUlVzd2g0VE13alJfZ2VESDNEZ0NFUGhQMlBkRG1SUFBKNHFkX21pR2VLcXZ4MTU?oc=5",
-            "published": "Fri, 06 Nov 2026 21:33:14 GMT"
+            "published": "Fri, 06 Nov 2026 23:36:29 GMT"
+          },
+          {
+            "title": "[Free] *Toronto Raptors vs Milwaukee Bucks Live 𝐒𝐭𝐫𝐞𝐚𝐦𝐬 ON NBA Free Tv Game. - SooLeader.com",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0R0EwWlpEZW16OEVQWG9WWWtyODlsaEZTLTNvdTFZbXBTdnRTdUFkZThlVkRCbU9HU2xGbmEyZmVFc0s3Y0pibEpOWUtjdF9neldVcGMwd2ZqMko4QWZnQlFPSWMzYTlTRDRvQmpCaDRZMWJQd2tmMA?oc=5",
+            "published": "Sat, 07 Nov 2026 00:59:26 GMT"
           },
           {
             "title": "The Raptors Will Play Their 4th Straight Road Game When They Visit the Bucks Today - Athlon Sports",
             "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaG5zdGhkWTZjeXBHYm5md0k4cVhITnpNSndTeVJaLWpVRDAyZXpvUmFkaWtheHZyRzRVeUh0M2hjLTAyQlgwWm1ld3A5b1QySGtzVVVPaWdZX3A4WjhrNlpWakNNQkI4X21YLUlDSDNZa2hiSlZmX1hUcjQtT3NLU1BrQUFOa1lzTjNFc29FNGdXMy0xUmN0eHRzbE94MWhH?oc=5",
             "published": "Fri, 06 Nov 2026 19:42:41 GMT"
-          },
-          {
-            "title": "Raptors vs Bucks Predictions, Odds, NBA Cup Picks: Don’t Fall for the Trap - Action Network",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNkN0djlqeDM2WmJZaVZpUnh3M0xtOC1QaTZ1c2hQVVlkUGNkQ0pMLVduRUxwaGN4cEdhaTF0Q2J3ZVplUHNEVUJTSzZxQjNPdmtlTURyMzlreF9uek9RWkNTaWI4TTZ0ZUFMckZMWlJkbmQ3TG5QbExiRHFzUS1kd21ZQXZBQUR0V1dMVmx4d0tnekwzLWM1c0hlaGtVUzN4OUpBTWh5MHFLZk4yRWctbXJQRVZaZw?oc=5",
-            "published": "Fri, 06 Nov 2026 22:52:00 GMT"
           }
         ],
         "forum": {
@@ -615,7 +694,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T00:32:40.477984+00:00"
+        "context_updated_at": "2026-11-07T01:01:57.660349+00:00"
       }
     },
     {
@@ -662,14 +741,14 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
-            "title": "Minnesota Timberwolves vs New Orleans Pelicans Nov 6, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5bmRnRHdhM2RJMU13TXdic3RUME83aTR6NnhmQTRCdTFPZ2Ficm5iSExrd3NCZ0JkOHY5aXR5TVBwWXdodmc4bm1JUUFMQ2owVi13WmJvcER1Zw?oc=5",
-            "published": "Fri, 06 Nov 2026 22:56:25 GMT"
-          },
-          {
             "title": "Minnesota Timberwolves @ New Orleans Pelicans: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS0MxQ0NLb2puS0NEODFROURFeXY5WGs2SVlhYjN4MlBiUnZzeUdtSnFweU1CbjdYbmtnV1lJYklQZ0JIaU9NTUo0R2piUG5IVnZlUVM2MGRieW5MdnpVZ010aDRlVVpIUjFVREpiTENwaThJdlI0VDNMYU5hV0RlanRsR3h5R1B1VThXeg?oc=5",
             "published": "Fri, 06 Nov 2026 23:03:38 GMT"
+          },
+          {
+            "title": "Minnesota Timberwolves vs New Orleans Pelicans Nov 6, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5bmRnRHdhM2RJMU13TXdic3RUME83aTR6NnhmQTRCdTFPZ2Ficm5iSExrd3NCZ0JkOHY5aXR5TVBwWXdodmc4bm1JUUFMQ2owVi13WmJvcER1Zw?oc=5",
+            "published": "Fri, 06 Nov 2026 19:54:09 GMT"
           },
           {
             "title": "NBA Cup group stage: Timberwolves at Pelicans (11/6/2026) - NBA.com",
@@ -677,9 +756,9 @@
             "published": "Fri, 06 Nov 2026 19:11:53 GMT"
           },
           {
-            "title": "How Timberwolves’ Starting Lineup Matches Up vs. Pelicans on Friday Night - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRjhzU0lheE91b3JjMk9HWG9BcGlsMTd1RUNZRXdlbklzR3FkdlA2VnE0NmsycGEzU1B2NEFvcXFvQkFnLXNNcGNJRHRXRXF0a3hHWEw5X1pidkdUQllTZUZvYXBXZHQ4c0lIb1lwSEV6Tmh2V25Ccl9ZMkdKemphdTZJNlhicFZ2SmdvZ1NJeGlFTk42ZFpnNmhjdWFzNmtRcm4xWFhsbDJIVFlpNXk1ZVpjMFYtV25HVXJSOG10UQ?oc=5",
-            "published": "Fri, 06 Nov 2026 17:00:01 GMT"
+            "title": "Timberwolves Continue to Rely on Depth With Anthony Edwards Out Against Pelicans - Athlon Sports",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObUphZmJVM25mMmFfck50UE5INGdTUnNKOUxkVDVOa2hjdG5tY3ZqZlFKbGRwMHc2eUtvZmN1bHVkdi1BV051dXBGSDA4dndCRVFfelpRMHduLWo2VkExZ2l5RTJJbkFkcjFUNUtJMDgteDJOdXduVjFubjd0WGd6TnZXY3dvVGx3VkhabEZzVHliWWNITU01SW1Ca1lXU3lXdkxPYS1LQzFRTGNZZVRmLQ?oc=5",
+            "published": "Fri, 06 Nov 2026 20:38:55 GMT"
           }
         ],
         "forum": {
@@ -693,7 +772,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T00:32:40.962271+00:00"
+        "context_updated_at": "2026-11-07T01:01:58.307416+00:00"
       }
     },
     {
@@ -779,7 +858,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T00:32:41.580095+00:00"
+        "context_updated_at": "2026-11-07T01:01:59.057917+00:00"
       }
     },
     {
@@ -843,22 +922,22 @@
           {
             "title": "San Antonio Spurs @ Sacramento Kings: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOXJUMlhWNENHYTJQdzlicnRDMzVkVUgwUUVadXlUemhEWWlRcGprc21MclFhc0Z3TEJJYkVBdnRFNDYxeFZWbnJzRXQtQXVKZ01tbU5ZYjVSazJCNUloclplS3pKMUFzQ09nclNmR2dhY3Y1b0ltVDJBdlNrYVhqNw?oc=5",
-            "published": "Fri, 06 Nov 2026 21:33:37 GMT"
+            "published": "Fri, 06 Nov 2026 23:03:37 GMT"
           },
           {
-            "title": "San Antonio Spurs take on Sacramento Kings in NBA Cup group stage - KABB",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMEN0Z0tTeEx0WnlQNUJXMXBwTl8tekRWbkVNUHR4X2V3Z0NHa3B4SlVxaTFWaGlXd3JKM2l3UHZLRWRRdU1FZ3I5UEZGRkx4M19SYkxLOUJHX0ZpU0RiN1M0bVBORzRYT2ZGcTFkXzY5MEJjUVVCLXZreGF1bFFFcWJzRG5ZbkZFRUtVR1ZUOWR5QkY1Q0tEQ0Jta0M0dUZFTkpmQ2lyZ1ZBMUZs?oc=5",
-            "published": "Fri, 06 Nov 2026 23:08:15 GMT"
+            "title": "San Antonio Spurs take on Sacramento Kings in NBA Cup group stage - WOAI",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQc25Fbmt0UzVaXy16Sk9pWmtjRVVuQThRWHM2ZndyaGtJbTRrYzZ4aHNDUUx6WnVDNDNKOWVMaFdWc3VtN08tOXM2N2lPUUFiU2ZwOGtPOWVoS3QxSlNoNGpwY2sySU1SZ0t6NFUwZ3R6MmZOTHdHVF9tOEdHUTNwVWNzbmFaSVRIT3JzR1ZvX3RGLWR6QkRsaE9tTEkwT3RRWDQ0dE1WOA?oc=5",
+            "published": "Fri, 06 Nov 2026 23:06:19 GMT"
+          },
+          {
+            "title": "San Antonio Spurs vs Sacramento Kings Nov 6, 2026 Box Scores - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNS21HX2hvMUJjLUJoMkVPTVRpc0lMdVZOcGlvR2RKbEU5S3ZEdjRETDh1T1lLcmhlb0I2NWVKa3BKVE8zcHRVUGtxQUVHeEVSTWFWTHl2Q28?oc=5",
+            "published": "Fri, 06 Nov 2026 21:35:55 GMT"
           },
           {
             "title": "San Antonio Spurs @ Sacramento Kings Odds - FanDuel Sportsbook",
             "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa0pvY0YtVm1qLVBmSFJkS3VtSVdHOGViWDhBYWZxVDZuRWVFYVRyVGs5UEk1QWNZNUFPVEJ1bFlabzRvcGtxWmMybVVETEx5SkRzTnZyZzNvelpWSUowMFJCMFBQWFhjTkhUUDc0RHVEZE91XzNsWFd4bnQ1bzh3bTFMR2EwUWtmdEtmT21yblNUMEFWT3c?oc=5",
             "published": "Fri, 06 Nov 2026 23:02:15 GMT"
-          },
-          {
-            "title": "Kings Announce 4-Player Injury Report for NBA Cup Opener vs. Spurs - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRDB1OTA2ZndZelhLb2lNSnNkcmRkUTAyY1Y2V3V0VDlHaC1lM0NENTFOMGFGSXk2U3pmSlRXLUlvWkR4ZEZ5NWUzSDZXWmlZVFF2cUNvR19ndVVXOHYzZjluazhDaXBVY0tEVTBoa3lpYlhHZXBKTHhqWkpYVmctTnZrdWdraXZjeXNtX0xXTGluandHVHhBRENvbFVHc1Q3?oc=5",
-            "published": "Fri, 06 Nov 2026 15:00:00 GMT"
           }
         ],
         "forum": {
@@ -872,7 +951,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T00:32:42.116670+00:00"
+        "context_updated_at": "2026-11-07T01:01:59.624179+00:00"
       }
     },
     {
