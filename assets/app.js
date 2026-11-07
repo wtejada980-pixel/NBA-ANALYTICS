@@ -273,6 +273,12 @@
     const list = Array.isArray(data.history_recent) ? data.history_recent : [];
     const safe = list.filter(row => row && row.predicted_at && row.scheduled_at &&
       Date.parse(row.predicted_at) < Date.parse(row.scheduled_at)).slice(0, 45);
+    const isFinished = row => row.result && ['home', 'away'].includes(row.result.winner);
+    // Mostrar primero los partidos ya evaluados, luego los pendientes:
+    // de lo contrario los próximos días pueden desplazar todos los resultados.
+    const sorted = safe.slice().sort((a, b) =>
+      Number(Boolean(isFinished(b))) - Number(Boolean(isFinished(a))) ||
+      (Date.parse(b.scheduled_at) - Date.parse(a.scheduled_at)));
     const filter = $('history-filter').value || 'all';
     const state = row => {
       if (!row.result || !['home', 'away'].includes(row.result.winner)) return 'pending';
@@ -280,7 +286,8 @@
       const favorite = row.home_pct > row.away_pct ? 'home' : 'away';
       return row.result.winner === favorite ? 'hit' : 'miss';
     };
-    const shown = safe.filter(row => filter === 'all' || state(row) === filter).slice(0, 24);
+    const shown = sorted.filter(row => filter === 'all' ||
+      (filter === 'finished' && isFinished(row)) || state(row) === filter).slice(0, 24);
     $('history-count').textContent = shown.length + ' de ' + safe.length;
     $('history-list').innerHTML = shown.length ?
       shown.map(historyCard).join('') :

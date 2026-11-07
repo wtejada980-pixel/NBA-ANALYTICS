@@ -53,6 +53,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(html,/id="calibration-chart"/);
   assert.match(html,/id="model-versions"/);
   assert.match(html,/id="history-filter"/);
+  assert.match(html,/value="finished"/);
+  assert.match(source,/const sorted = safe\.slice\(\)\.sort/);
   assert.match(html,/id="data-health"/);
   assert.match(html,/id="history-list"/);
   assert.match(html,/id="quality-caveat"/);
