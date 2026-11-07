@@ -72,6 +72,15 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/36\.6/);
   assert.match(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
+  const revisionGame = {...game,
+    prediction:{...game.prediction,predicted_at:new Date(Date.now()-3600_000).toISOString()},
+    revised_prediction:{home_pct:57.2,away_pct:42.8,
+      predicted_at:new Date().toISOString(),model:'elo-forma10-v2',reason:'Actualizado'}};
+  const revisionView = await mount({as_of:new Date().toISOString(),date:today,games:[revisionGame]});
+  assert.match(revisionView.node('games').innerHTML,/ACTUALIZADO PREPARTIDO/);
+  assert.match(revisionView.node('games').innerHTML,/Primera predicción:/);
+  assert.match(revisionView.node('games').innerHTML,/57\.2/);
+  assert.match(revisionView.node('games').innerHTML,/63\.4/);
   assert.match(view.node('scouting-games').innerHTML,/Análisis descriptivo todavía no disponible/);
   const scoutGame = {...game, scouting:{
     favorite:'New York Knicks',favorite_pct_original:63.4,

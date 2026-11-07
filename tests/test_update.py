@@ -93,6 +93,41 @@ class ParseTests(unittest.TestCase):
         rows = update.player_profiles('10', [game, game], box)
         self.assertEqual(rows[0]['pts'], 24.0)
 
+    def test_revision_keeps_original_and_timestamp(self):
+        from datetime import datetime, timezone
+        record = {'home_pct': 55, 'away_pct': 45, 'model': 'v2',
+                  'predicted_at': '2026-11-07T12:00:00Z',
+                  'scheduled_at': '2026-11-07T22:00:00Z'}
+        updated = {'home_pct': 61.3, 'away_pct': 38.7, 'model':'v2',
+                   'reason':'Forma deportiva nueva.'}
+        rev = update.save_pre_match_revision(record, updated,
+                  datetime(2026,11,7,16,0,tzinfo=timezone.utc))
+        self.assertAlmostEqual(rev['home_pct'], 61.3)
+        self.assertEqual(record['home_pct'], 55)
+        self.assertEqual(len(record['revisions']),1)
+        again = update.save_pre_match_revision(record, updated,
+                  datetime(2026,11,7,17,0,tzinfo=timezone.utc))
+        self.assertEqual(len(record['revisions']),1)
+        self.assertEqual(again['predicted_at'],rev['predicted_at'])
+
+    def test_revision_after_tipoff_is_not_saved(self):
+        from datetime import datetime, timezone
+        record = {'home_pct': 55, 'away_pct': 45, 'model': 'v2',
+                  'predicted_at': '2026-11-07T12:00:00Z',
+                  'scheduled_at': '2026-11-07T22:00:00Z'}
+        update.save_pre_match_revision(record,{'home_pct':85,'away_pct':15},
+                  datetime(2026,11,7,22,1,tzinfo=timezone.utc))
+        self.assertNotIn('revisions',record)
+
+    def test_revision_invalid_is_ignored(self):
+        from datetime import datetime, timezone
+        record = {'home_pct': 55, 'away_pct': 45, 'model': 'v2',
+                  'predicted_at': '2026-11-07T12:00:00Z',
+                  'scheduled_at': '2026-11-07T22:00:00Z'}
+        update.save_pre_match_revision(record,{'home_pct':90,'away_pct':90},
+                  datetime(2026,11,7,16,0,tzinfo=timezone.utc))
+        self.assertNotIn('revisions',record)
+
     def test_valid_probabilities(self):
         home = {'form': {'played':8,'margin': 7.0, 'win_rate':.7}, 'rest_days':2, 'players':[]}
         away = {'form': {'played':8,'margin': -5.0, 'win_rate':.3}, 'rest_days':1, 'players':[]}

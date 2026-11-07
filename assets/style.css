@@ -288,3 +288,8 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .scout-notes li{font-size:11px;color:#d5c8c3;line-height:1.5;border-left:2px solid #eb754c;padding-left:9px}
 .scout-footer{font-size:10px;color:#8f9096;margin:12px 0 0}
 @media(max-width:850px){.scouting-grid{grid-template-columns:1fr}}
+
+/* Revisiones separadas del pronóstico original */
+.revision-note{display:flex;flex-direction:column;gap:5px;border-left:3px solid #ff7841;background:#261d19;border-radius:0 8px 8px 0;margin:13px 0 2px;padding:10px 12px}
+.revision-note strong{color:#ffc29e;font-size:10px;letter-spacing:.05em}
+.revision-note span{font-size:10px;color:#d4c9c3;line-height:1.5}

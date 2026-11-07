@@ -298,7 +298,15 @@
 
   function gameCard(game) {
     const hasPrediction = validPrediction(game);
-    const p = game.prediction || {};
+    const revision = game.revised_prediction;
+    const validRevision = revision &&
+      Date.parse(revision.predicted_at) < Date.parse(game.datetime) &&
+      Date.parse(revision.predicted_at) > Date.parse(game.prediction?.predicted_at || '1970-01-01') &&
+      Number.isFinite(revision.home_pct) && Number.isFinite(revision.away_pct) &&
+      revision.home_pct >= 0 && revision.home_pct <= 100 &&
+      revision.away_pct >= 0 && revision.away_pct <= 100 &&
+      Math.abs(revision.home_pct + revision.away_pct - 100) <= 0.2;
+    const p = hasPrediction && validRevision ? revision : game.prediction || {};
     const stateClass = game.status === 'in' ? ' live' : '';
     const hasScore = (game.status === 'in' || game.status === 'post') &&
       Number.isFinite(game.home_score) && Number.isFinite(game.away_score);
@@ -364,6 +372,15 @@
       teamMark('home') + '</div>' +
       '<div class="matchup">' + teamName('away') + teamName('home') + '</div>' +
       scoreboard + percentageBar +
+      (hasPrediction && validRevision ?
+        '<div class="revision-note"><strong>ACTUALIZADO PREPARTIDO · ' +
+        escapeHtml(timeLabel(revision.predicted_at)) + ' RD</strong>' +
+        '<span>Primera predicción: ' +
+        escapeHtml(game.away?.abbr || 'VIS') + ' ' + formatPct(game.prediction.away_pct) +
+        '% · ' + escapeHtml(game.home?.abbr || 'LOC') + ' ' +
+        formatPct(game.prediction.home_pct) +
+        '%</span><span>Recalculado con resultados previos. La predicción original permanece en el historial.</span></div>' :
+        '') +
       '<div class="game-bottom">' + verdict + '</div>' +
       '<span class="expand-hint">Ver jugadores y titulares <span class="expand-arrow" aria-hidden="true">⌄</span></span></summary>' +
       '<div class="game-breakdown">' + matchupInsights(game) + playersPanel(game) +
@@ -442,6 +459,10 @@
     $('scouting-games').innerHTML = dayGames.length ? dayGames.map(g => {
       const sc = g.scouting;
       const notes = Array.isArray(sc.observations) ? sc.observations.slice(0, 3) : [];
+      const updated = !!g.revised_prediction &&
+        Number.isFinite(g.revised_prediction.home_pct) &&
+        Number.isFinite(g.revised_prediction.away_pct) &&
+        Date.parse(g.revised_prediction.predicted_at) < Date.parse(g.datetime);
       const predictionName = String(sc.favorite || 'Sin favorito claro');
       const pct = Number(sc.favorite_pct_original);
       const forecaster = Number.isFinite(pct) && pct >= 50 && pct <= 100 ?
@@ -451,12 +472,14 @@
         ' · RD</span><span>ANÁLISIS DESCRIPTIVO</span></div>' +
         '<div class="scout-matchup">' + escapeHtml(g.away?.name || '') + ' <span>vs.</span> ' +
         escapeHtml(g.home?.name || '') + '</div>' +
-        '<div class="scout-forecast"><span>Favorito del pronóstico original</span>' +
+        '<div class="scout-forecast"><span>' + (updated ? 'Favorito del pronóstico actualizado' : 'Favorito del pronóstico original') + '</span>' +
         '<strong>' + escapeHtml(predictionName) + ' · ' + forecaster + '</strong></div>' +
         '<div class="scout-rating">' + escapeHtml(sc.classification || 'Por comprobar') + '</div>' +
         '<div class="scout-teams">' + side(g.away,sc.away_form) + side(g.home,sc.home_form) + '</div>' +
         '<ul class="scout-notes">' + notes.map(note=>'<li>' + escapeHtml(note) + '</li>').join('') +
-        '</ul><p class="scout-footer">Diagnóstico nuevo · probabilidad original sin modificar</p>' +
+        '</ul><p class="scout-footer">' + (updated ?
+        'Revisión registrada antes del inicio · predicción original preservada' :
+        'Diagnóstico nuevo · predicción original preservada') + '</p>' +
         '</article>';
     }).join('') :
       '<p class="history-empty">Análisis descriptivo todavía no disponible para esta fecha. ' +

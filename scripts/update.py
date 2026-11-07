@@ -252,6 +252,67 @@ def locked_prediction(record: dict | None) -> dict | None:
             'predicted_at': record['predicted_at'], 'locked': True}
 
 
+
+def save_pre_match_revision(record: dict, recalculated: dict | None, at: datetime) -> dict | None:
+    """Guardar una revisión reproducible sin modificar jamás el primer pronóstico.
+
+    No crea revisiones después del inicio, ni registros redundantes. La referencia
+    evaluada por validation.evaluate sigue siendo record['home_pct'] ORIGINAL.
+    """
+    original = locked_prediction(record)
+    if original is None or not isinstance(recalculated, dict):
+        return None
+    if at >= parse_time(record['scheduled_at']):
+        return latest_pre_match_revision(record)
+    try:
+        home, away = float(recalculated['home_pct']), float(recalculated['away_pct'])
+    except (KeyError, ValueError, TypeError, OverflowError):
+        return latest_pre_match_revision(record)
+    if not (math.isfinite(home) and math.isfinite(away) and 0 <= home <= 100
+            and 0 <= away <= 100 and abs(home + away - 100) <= 0.2):
+        return latest_pre_match_revision(record)
+    prior = latest_pre_match_revision(record)
+    baseline = prior or original
+    if abs(home - baseline['home_pct']) >= .1 or abs(away - baseline['away_pct']) >= .1:
+        revision = {
+            'home_pct': home, 'away_pct': away,
+            'predicted_at': at.isoformat(),
+            'model': str(recalculated.get('model') or original['model']),
+            'reason': str(recalculated.get('reason') or 'Actualización de resultados anteriores.'),
+            'source': 'Recalculado con resultados disponibles antes del inicio',
+        }
+        revisions = record.setdefault('revisions', [])
+        if not isinstance(revisions, list):
+            revisions = record['revisions'] = []
+        revisions.append(revision)
+        record['revisions'] = revisions[-12:]
+    return latest_pre_match_revision(record)
+
+
+def latest_pre_match_revision(record: dict) -> dict | None:
+    """Leer la última revisión validada sin confundirla con el pronóstico original."""
+    try:
+        if not isinstance(record, dict):
+            return None
+        cutoff = parse_time(record['scheduled_at'])
+        original_at = parse_time(record['predicted_at'])
+        if original_at >= cutoff:
+            return None
+        valid = []
+        for entry in record.get('revisions', []):
+            if not isinstance(entry, dict):
+                continue
+            ts = parse_time(entry['predicted_at'])
+            hp, ap = float(entry['home_pct']), float(entry['away_pct'])
+            if original_at < ts < cutoff and math.isfinite(hp) and math.isfinite(ap) and (
+                0 <= hp <= 100 and 0 <= ap <= 100 and abs(hp + ap - 100) <= .2
+            ):
+                valid.append({**entry, 'home_pct': hp, 'away_pct': ap})
+        return sorted(valid, key=lambda x: x['predicted_at'])[-1] if valid else None
+    except (KeyError, TypeError, ValueError, OverflowError):
+        return None
+
+
 def write_json_atomic(path: Path, data: dict):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + '.tmp')
@@ -304,6 +365,9 @@ def public_history(history: dict, limit: int = 45) -> list[dict]:
                 value = float(baseline)
                 if math.isfinite(value) and 0 <= value <= 100:
                     row['elo_baseline_home_pct'] = value
+            revision = latest_pre_match_revision(record)
+            if revision:
+                row['revised_prediction'] = revision
             visible.append(row)
         except (ValueError, TypeError, KeyError, OverflowError):
             continue
@@ -404,22 +468,29 @@ def refresh(today: date | None = None):
         game['head_to_head'] = recent_meetings(game, finished)
         stored = history['predictions'].get(game['id'])
         frozen = locked_prediction(stored)
+        future = parse_time(game['datetime']) > now
+        before_tipoff = game['status'] == 'pre' and future
+        ratings = elo_before(finished, game['datetime']) if before_tipoff else {}
+        recalculated = predict_v2(game, teams, ratings) if before_tipoff else None
         if frozen:
-            game['prediction'] = frozen
+            game['prediction'] = frozen  # Pronóstico original: no se altera.
             game['elo_baseline_home_pct'] = stored.get('elo_baseline_home_pct')
-        elif game['status'] == 'pre' and parse_time(game['datetime']) > now:
-            ratings = elo_before(finished, game['datetime'])
-            game['prediction'] = predict_v2(game, teams, ratings)
+            revision = save_pre_match_revision(stored, recalculated, now) if before_tipoff else latest_pre_match_revision(stored)
+            game['revised_prediction'] = revision
+        elif before_tipoff:
+            game['prediction'] = recalculated
             game['elo_baseline_home_pct'] = (
-                elo_baseline_probability(game, ratings) if game['prediction'] else None)
+                elo_baseline_probability(game, ratings) if recalculated else None)
+            game['revised_prediction'] = None
         else:
             game['prediction'] = None
             game['elo_baseline_home_pct'] = None
-    # Nuevo análisis contextual de las tendencias disponibles ANTES del partido.
-    # No modifica el pronóstico de victoria original ni calcula hándicaps.
+            game['revised_prediction'] = None
+    # Análisis contextual sobre el porcentaje más reciente, sin tocar el original.
     for game in schedule:
         if game['prediction']:
-            game['scouting'] = analyze_scouting(game, teams)
+            active = game.get('revised_prediction') or game['prediction']
+            game['scouting'] = analyze_scouting({**game, 'prediction': active}, teams)
     # Titulares/estadísticas del partido: nunca inferir quintetos de la forma reciente.
     # La API no oficial puede no publicar alineaciones antes del salto inicial.
     for game in schedule:
@@ -478,7 +549,8 @@ def refresh(today: date | None = None):
                   'Puntos anotados y recibidos por juego NO equivalen a rating por 100 posesiones',
                   'Lesiones disponibles como contexto no verificado; comprobar informe oficial',
                   'Foros y noticias no alteran automáticamente los porcentajes',
-                  'Las probabilidades no están calibradas ni garantizan resultados'],
+                  'Las probabilidades no están calibradas ni garantizan resultados',
+                  'Revisiones prepartido se guardan aparte; las métricas evalúan el primer pronóstico'],
     }
     all_events = {gid: e for gid, e in all_events.items() if e['date'] >= cutoff}
     box_cache = {gid: entry for gid, entry in box_cache.items() if gid in all_events}
