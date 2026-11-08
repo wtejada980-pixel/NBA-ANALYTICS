@@ -2734,204 +2734,7 @@
       "status": "post",
       "home_score": 102,
       "away_score": 114,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909938",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 42.7,
-        "away_pct": 57.3,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 43.2,
-        "away_pct": 56.8,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Denver Nuggets",
-        "opponent": "Indiana Pacers",
-        "favorite_pct_original": 56.8,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 3,
-          "margin": -3.9,
-          "for": 109.0,
-          "against": 112.8,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 8,
-          "wins": 5,
-          "margin": 3.7,
-          "for": 117.9,
-          "against": 114.2,
-          "rest": 3
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "3149673",
-            "name": "Pascal Siakam",
-            "starter": true,
-            "game_pts": 23.0
-          },
-          {
-            "id": "4017837",
-            "name": "Ivica Zubac",
-            "starter": true,
-            "game_pts": 10.0
-          },
-          {
-            "id": "4395712",
-            "name": "Andrew Nembhard",
-            "starter": true,
-            "game_pts": 9.0
-          },
-          {
-            "id": "4396909",
-            "name": "Aaron Nesmith",
-            "starter": true,
-            "game_pts": 8.0
-          },
-          {
-            "id": "5105854",
-            "name": "Braden Smith",
-            "starter": true,
-            "game_pts": 0.0
-          },
-          {
-            "id": "2580365",
-            "name": "Larry Nance Jr.",
-            "starter": false,
-            "game_pts": 15.0
-          },
-          {
-            "id": "4278355",
-            "name": "Obi Toppin",
-            "starter": false,
-            "game_pts": 10.0
-          },
-          {
-            "id": "4398207",
-            "name": "Jalen Slawson",
-            "starter": false,
-            "game_pts": 4.0
-          },
-          {
-            "id": "5106060",
-            "name": "Jarace Walker",
-            "starter": false,
-            "game_pts": 9.0
-          },
-          {
-            "id": "4065731",
-            "name": "Jay Huff",
-            "starter": false,
-            "game_pts": 0.0
-          },
-          {
-            "id": "2530530",
-            "name": "T.J. McConnell",
-            "starter": false,
-            "game_pts": 6.0
-          },
-          {
-            "id": "3133603",
-            "name": "Kelly Oubre Jr.",
-            "starter": false,
-            "game_pts": 2.0
-          },
-          {
-            "id": "4592829",
-            "name": "Quenton Jackson",
-            "starter": false,
-            "game_pts": 6.0
-          }
-        ],
-        "away": [
-          {
-            "id": "3064290",
-            "name": "Aaron Gordon",
-            "starter": true,
-            "game_pts": 12.0
-          },
-          {
-            "id": "3138196",
-            "name": "Cameron Johnson",
-            "starter": true,
-            "game_pts": 18.0
-          },
-          {
-            "id": "3112335",
-            "name": "Nikola Jokic",
-            "starter": true,
-            "game_pts": 19.0
-          },
-          {
-            "id": "3936299",
-            "name": "Jamal Murray",
-            "starter": true,
-            "game_pts": 16.0
-          },
-          {
-            "id": "4431767",
-            "name": "Christian Braun",
-            "starter": true,
-            "game_pts": 6.0
-          },
-          {
-            "id": "4277848",
-            "name": "Marvin Bagley III",
-            "starter": false,
-            "game_pts": 10.0
-          },
-          {
-            "id": "4565698",
-            "name": "Bryce Hopkins",
-            "starter": false,
-            "game_pts": 3.0
-          },
-          {
-            "id": "4592427",
-            "name": "Spencer Jones",
-            "starter": false,
-            "game_pts": 13.0
-          },
-          {
-            "id": "4698719",
-            "name": "Trevon Brazile",
-            "starter": false,
-            "game_pts": 3.0
-          },
-          {
-            "id": "3978",
-            "name": "DeMar DeRozan",
-            "starter": false,
-            "game_pts": 11.0
-          },
-          {
-            "id": "3135046",
-            "name": "Tyus Jones",
-            "starter": false,
-            "game_pts": 3.0
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909938"
     },
     "401909939": {
       "id": "401909939",
@@ -2947,129 +2750,10 @@
         "abbr": "BKN",
         "name": "Brooklyn Nets"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909939",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 64.4,
-        "away_pct": 35.6,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 61.9,
-        "away_pct": 38.1,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Atlanta Hawks",
-        "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 61.9,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "El favorito llega con menos días de descanso registrado."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 6,
-          "margin": 0.7,
-          "for": 117.6,
-          "against": 116.1,
-          "rest": 1
-        },
-        "away_form": {
-          "games": 8,
-          "wins": 2,
-          "margin": -3.8,
-          "for": 104.7,
-          "against": 108.6,
-          "rest": 3
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "4431680",
-            "name": "Onyeka Okongwu",
-            "starter": true,
-            "game_pts": 0.0
-          },
-          {
-            "id": "4701230",
-            "name": "Jalen Johnson",
-            "starter": true,
-            "game_pts": 4.0
-          },
-          {
-            "id": "4278039",
-            "name": "Nickeil Alexander-Walker",
-            "starter": true,
-            "game_pts": 0.0
-          },
-          {
-            "id": "4869342",
-            "name": "Dyson Daniels",
-            "starter": true,
-            "game_pts": 0.0
-          },
-          {
-            "id": "5149077",
-            "name": "Kingston Flemings",
-            "starter": true,
-            "game_pts": 0.0
-          },
-          {
-            "id": "5106262",
-            "name": "Zuby Ejiofor",
-            "starter": false,
-            "game_pts": 0.0
-          }
-        ],
-        "away": [
-          {
-            "id": "3064514",
-            "name": "Julius Randle",
-            "starter": true,
-            "game_pts": 2.0
-          },
-          {
-            "id": "4278104",
-            "name": "Michael Porter Jr.",
-            "starter": true,
-            "game_pts": 3.0
-          },
-          {
-            "id": "5107173",
-            "name": "Danny Wolf",
-            "starter": true,
-            "game_pts": 0.0
-          },
-          {
-            "id": "4432194",
-            "name": "Day'Ron Sharpe",
-            "starter": true,
-            "game_pts": 2.0
-          },
-          {
-            "id": "5279130",
-            "name": "Nolan Traore",
-            "starter": true,
-            "game_pts": 7.0
-          }
-        ]
-      }
+      "status": "post",
+      "home_score": 124,
+      "away_score": 121,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909939"
     },
     "401909940": {
       "id": "401909940",
@@ -3085,105 +2769,10 @@
         "abbr": "NY",
         "name": "New York Knicks"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909940",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 52.5,
-        "away_pct": 47.5,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 51.9,
-        "away_pct": 48.1,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Cleveland Cavaliers",
-        "opponent": "New York Knicks",
-        "favorite_pct_original": 51.9,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida.",
-          "El favorito llega con menos días de descanso registrado."
-        ],
-        "home_form": {
-          "games": 9,
-          "wins": 5,
-          "margin": 6.6,
-          "for": 119.4,
-          "against": 112.8,
-          "rest": 1
-        },
-        "away_form": {
-          "games": 8,
-          "wins": 4,
-          "margin": 8.5,
-          "for": 113.3,
-          "against": 103.7,
-          "rest": 3
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "New York Knicks vs Cleveland Cavaliers Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GVmJYalYyYnVzSk9ZZ3l5U0FIRERCNXd6eWJwZEx5UnpLVmUwb1l2M0wySkcwN0Qxd2p6TTFYT20tTE92QUNJZnUyX21yNk9mREcySDVZcnFpUQ?oc=5",
-            "published": "Sat, 07 Nov 2026 22:26:36 GMT"
-          },
-          {
-            "title": "New York Knicks @ Cleveland Cavaliers: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPc01GdlFCaTZUeXhoaW5TbFl4NHlKQWNVbGtvSVZVaUlHaFdJSWhYTEd1QlRZWEtKTkpHZUNHQmFRQ0dobnFRWGZWb0ZRSUd3eFhiZ0hkNklod2NHcjdzbFl0Q1dzY1NQVmgxQ0Y5M2FJanhVdmdpVWVYRm5UcFhKUmR3?oc=5",
-            "published": "Sat, 07 Nov 2026 23:02:58 GMT"
-          },
-          {
-            "title": "Where to watch Knicks vs. Cavaliers NBA free live stream - Syracuse.com",
-            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWs2cGFDY1ZFMjl4Y2oyOEJ1RVNHUWJCczJhNnh0VHBEd1pZV1JBR3NlOUdDRXQyYUUzYlRYVlZHUEZoeTNld1EzWkVJYlo5bU9UVGQ3NVpla2R3RFdfanZSY2F2TXRxUkZETXA4anVaNDFOM2hrcGxfbXNDN09mZkt2ODFIeE1ZeGFhNkJyYUtXOVlyaHJMancyaEpDNkZlZmhmNGhjRU94c1BkZkdCODlSLUHSAcgBQVVfeXFMTXFvQkVweEpZcEljdVpIOWkzTmdvenl3YzJMZEl1ZV9OdU9yWGIwNkI5QmFHQ25mLVpQYS0tV3AyRElSOFZ4TzhvTkhkYnRKbXYzQnRYeXFvWEM1OV95UlFrVHdXSVBiMzZ0ZVlDYkN5YWtBb0ZfREdYem11TXpWbnlXTzRtMmM2ZmY5aE5Kd0FOaTJkbzgwSy1wTzJUZnE3NVZKS3RleGdsOEFWZEFTY1kxWkdVLUpQZHV2d3lWX0tXYXBVMTZBZ20?oc=5",
-            "published": "Sat, 07 Nov 2026 22:02:00 GMT"
-          },
-          {
-            "title": "Cavaliers score, lineup vs New York Knicks in Conference Finals rematch - Akron Beacon Journal",
-            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVVo4cU5ZQmJScU54UHRSa1JCcVd2MFdWMkVOY1A5TmFaVXVOX3hjY2ZxXzVTOFpsRkMtc1lVTEpZSDNXQVZSN1pFd1h2THpzYndmR1dCdDFrTVREYmlJUXhrVGdOc0VuRTdFWG9rU1dIdG5ZNkxxZjNBLWtxc0pwbFFYRlZxcllBUmhRdi0zZnItdTNvWHk1VmpCOEJ5TUpWSW9yVUdoeEdqVTBreWxRck1tWFRBSkFQMmVwYWN5WTVTWk0?oc=5",
-            "published": "Sun, 08 Nov 2026 00:19:00 GMT"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Knicks+Cavaliers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T00:49:42.980875+00:00"
-      }
+      "status": "post",
+      "home_score": 97,
+      "away_score": 109,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909940"
     },
     "401909941": {
       "id": "401909941",
@@ -3199,104 +2788,10 @@
         "abbr": "WSH",
         "name": "Washington Wizards"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909941",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 56.7,
-        "away_pct": 43.3,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 66.1,
-        "away_pct": 33.9,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Oklahoma City Thunder",
-        "opponent": "Washington Wizards",
-        "favorite_pct_original": 66.1,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 9,
-          "wins": 7,
-          "margin": 4.0,
-          "for": 114.7,
-          "against": 109.6,
-          "rest": 1
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 4,
-          "margin": -1.9,
-          "for": 110.9,
-          "against": 112.8,
-          "rest": 1
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Washington Wizards @ Oklahoma City Thunder: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZnBNMVQxVlZ5dS1sOGxxZUJpTTdEMVdsMnJLN3hYWG8wb0RhSWdsd1UyTTVxaTF3eFM1TTMtc3lSTzhsU2JBUzh2WEFjaFJ2MnVaMmJXNHpBYndQVDByLVRtV211U0p2UlNVTEl6bVZKcktJZUd4NXA3U0ZoaU45cXpfSHZtRW9P?oc=5",
-            "published": "Sat, 07 Nov 2026 21:33:02 GMT"
-          },
-          {
-            "title": "Washington Wizards vs Oklahoma City Thunder Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUMHR6MDU5eGh1Rk1vdXlEQjVuckIxVFg1YVdtUGpMSlZNMk5OYUwyOHZiZjhlZVVLNnBudERmV3dsX2xlellnOUdTcXJORXNLYnpNTk54eUFBQQ?oc=5",
-            "published": "Sat, 07 Nov 2026 21:16:45 GMT"
-          },
-          {
-            "title": "3 Critical Storylines to watch in OKC Thunder vs. Wizards - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZmNLNWUwWWo0b09oT3lKMUo5Qk9CVDktZkFZMi1ZaWNfWXRtN19sSFBReTN3SUJZOWlvVU9nUTJkTzRmNktBNmVIbzZuajJUcHZLOGZiMWZZTVhvdTZmTXVYY3JnQ3NKWFFWX1dtMzF0RzNvbTN1bjJ6Ul82eFZOWUFab2I0S1hqWFN5c2k1VXBfckhvYURQRTgxamJWa0tfSzM5OTVleFc?oc=5",
-            "published": "Sat, 07 Nov 2026 22:25:04 GMT"
-          },
-          {
-            "title": "Wizards vs. Thunder (8 Nov, 2026) Live Score - ESPN",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QWGJobEVJTkhNOE5HZENGVEdvN3hneHVic0EwUC1zc1k4ekJqUl9pNm42RDBFRTFnSzU3LVF6MmgwUklZRF9ZLUNLdGRuZ25LeVZRMUhFdVpLNXpsZjdtX0x4eXN5NFI0b3pNWi1pQ3g3akxVRWc?oc=5",
-            "published": "Sat, 07 Nov 2026 19:05:43 GMT"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Wizards+Thunder&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T00:49:43.507758+00:00"
-      }
+      "status": "post",
+      "home_score": 114,
+      "away_score": 75,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909941"
     },
     "401909942": {
       "id": "401909942",
@@ -3312,104 +2807,10 @@
         "abbr": "ORL",
         "name": "Orlando Magic"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909942",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 72.8,
-        "away_pct": 27.2,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 72.2,
-        "away_pct": 27.8,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Golden State Warriors",
-        "opponent": "Orlando Magic",
-        "favorite_pct_original": 72.2,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 7,
-          "margin": 9.0,
-          "for": 119.2,
-          "against": 110.2,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 9,
-          "wins": 3,
-          "margin": -8.3,
-          "for": 104.4,
-          "against": 113.2,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Orlando Magic @ Golden State Warriors: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOTVRQ3ZwUUc4aUl1VVFPSm5pa3ZXZWZBUFF3ZmFEdmQ4WnpHWDRWYWxlT0Z1Y1ByZUdIQUtISk4tVEhKODJlNU1mTjI1ZVJqeE4zRldsdUdZeVJzRFFTUTl4dWhYOWtYZ2xYbmREcjRyV3hydzl6dVZ2cTRGQUVLWm1B?oc=5",
-            "published": "Sat, 07 Nov 2026 23:02:13 GMT"
-          },
-          {
-            "title": "Orlando Magic vs Golden State Warriors Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wc1NMTy1mVi1tWFlvSE80NTQ4c2tvOTYwNmRNZVBwZ0ZMTEVJZ1Atb2pPYXdtZk84ODJVNGZlTGs1d1hrVVQyZTlqNFpiWmtrM1RWWElQNENIUQ?oc=5",
-            "published": "Sat, 07 Nov 2026 22:33:29 GMT"
-          },
-          {
-            "title": "Orlando Magic at Golden State Warriors (Nov. 7, 2026): 3 Things to Watch, Odds and Prediction - Orlando Magic Daily",
-            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT1BqLXg1eC0yZzZZb284VWx3SmtLd0wtdTVGRXVaTzd3V2lSelNIbmJoT2k1UWJzLWMxM25GclRoekFRd3NUd3lGQmY3cTl5RkhRVnNRUWRwN01QUWs5Wk9Dc1htaEM3R05JNGtELVJSdWhvUGpNdFNudDhjQ2xoYlduLVFKMG9wcnF5c1FwZ1ZUcFluNDJOSFFrNnVoU25ET2J5NjV2dTVJdDd3blFadnZVaHJIYVVyQ0lfaU56azM?oc=5",
-            "published": "Sat, 07 Nov 2026 17:32:37 GMT"
-          },
-          {
-            "title": "How to watch Magic vs. Warriors: TV channel and streaming options for November 7 - The New York Times",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZzk5cVVmTWp1OXpPSVJkaUJwaDdKRnU1QnJ5R2Y1emZJOE9SYXpCUWtrTFF0bURPOVFseUdBVFJSWDhydlhDb3l2RTJ2QS1hVVAxQ2kxdXZsRWxyUjhEejlFOE9OZFpxNlg1aFpnTEk1cUljTnZzaWxZZDZsZVZQbHVtTWw5Vl81bHBwdVY4M1lETmNGX1ZnLVhWNlY?oc=5",
-            "published": "Sat, 07 Nov 2026 18:04:33 GMT"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Magic+Warriors&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T00:49:44.065081+00:00"
-      }
+      "status": "post",
+      "home_score": 126,
+      "away_score": 119,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909942"
     },
     "401909943": {
       "id": "401909943",
@@ -3425,104 +2826,10 @@
         "abbr": "HOU",
         "name": "Houston Rockets"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909943",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 35.7,
-        "away_pct": 64.3,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 39.3,
-        "away_pct": 60.7,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Houston Rockets",
-        "opponent": "Phoenix Suns",
-        "favorite_pct_original": 60.7,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 8,
-          "wins": 2,
-          "margin": -3.1,
-          "for": 116.1,
-          "against": 120.0,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 9,
-          "wins": 7,
-          "margin": 8.2,
-          "for": 115.4,
-          "against": 106.5,
-          "rest": 3
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Houston Rockets vs Phoenix Suns Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uX1B2cW1zY3IxNnJrX0pQLXF5cHFtOHdBOVhaZ3daUnVwemdQUWcxSDNmSm9YbWJINV9BMmNQTDRROWVtNkZtT1JzQmVIcWlrZkFWYjBDczl2QQ?oc=5",
-            "published": "Sat, 07 Nov 2026 21:16:22 GMT"
-          },
-          {
-            "title": "Phoenix Suns vs Houston Rockets. Live updates, NBA analysis - azcentral.com and The Arizona Republic",
-            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWTdjVW4wY3lTcS1JbzdRMmd2SWdtVDFkWlI0SEJFYmx1Q2sxdVJ5YnJTYlg2aE9QTzBFdDVQUC10VFg1ZFB1RnAtNGpDZy1GNnVYVzZlRGNFR0E3Mlp1NjlUUG1XeUtsQ0lxeTFKY1VMcS1RTmFqcW8xUnVYVXh6RkxQQmVzOTB0dXp3YU5Nak1aZjlSLUxXMHFFbmQwMzFlZG9XV2MxMmZrYy1XYWhHZTUycXFvVFl5Wi1BRi1HVlJDMm9oVlpjVDZLZ1Z5Ym9Y?oc=5",
-            "published": "Sat, 07 Nov 2026 21:54:00 GMT"
-          },
-          {
-            "title": "How to watch Rockets vs. Suns: TV channel and streaming options for November 7 - The New York Times",
-            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMkF3enlYY2pweU1EbDg2RUtmRDdLUVlzU1l1U0hiUXV0SHZmX205T1VLV01zWlU4UzlqQ0NBY00yWmg0Rk05RU9KR0FzZlhRWThDVEJQVTF4dVp5QTBaLUlRMkVXcFFSd0w0cEpURkJfZWh2dkd0SlVUWndWZzRoQlMxUEE4ajlkQjJKakFFLW1FU2NlRjJuQWRR?oc=5",
-            "published": "Sat, 07 Nov 2026 18:10:32 GMT"
-          },
-          {
-            "title": "Suns news: Phoenix gets multiple injury updates for Rockets clash - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOEZzWVg2X1ZCdVMycHp3eHM3WGh5bTRidXRPbVhUU1NiUjFtSHgzbjZlRElERUZYc0YtWlhtNVZhUkllQ29KM2Z1S2Rqay1yMmdCSXIweTBaY2llYlZpbGpSVUZZb1BmSDBWd3hHRmtNZGtWWF9TTkJ6TXBIZTd6NmhJYlNxdnc?oc=5",
-            "published": "Sat, 07 Nov 2026 20:07:54 GMT"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Rockets+Suns&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T00:49:44.478067+00:00"
-      }
+      "status": "post",
+      "home_score": 102,
+      "away_score": 99,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909943"
     },
     "401909944": {
       "id": "401909944",
@@ -3538,104 +2845,10 @@
         "abbr": "SA",
         "name": "San Antonio Spurs"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909944",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 58.5,
-        "away_pct": 41.5,
-        "reason": "Pronóstico registrado antes del inicio.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-06T20:45:53.194176+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": null,
-      "revised_prediction": {
-        "home_pct": 48.9,
-        "away_pct": 51.1,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "San Antonio Spurs",
-        "opponent": "Portland Trail Blazers",
-        "favorite_pct_original": 51.1,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
-        ],
-        "home_form": {
-          "games": 9,
-          "wins": 6,
-          "margin": 5.0,
-          "for": 120.6,
-          "against": 114.8,
-          "rest": 1
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 11.2,
-          "for": 119.1,
-          "against": 107.6,
-          "rest": 1
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "San Antonio Spurs vs Portland Trail Blazers Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvSEJYVlVEeV9zLUc1V3NrdG1hVXlZeC1KMlpLQjBwemNhZUJrQUtvSEJMeVdPX24zbEZCNGtzUnFNYXVVejVYYjF6WGdvbjdSZDVnZU1Zd0x5UQ?oc=5",
-            "published": "Sat, 07 Nov 2026 21:55:43 GMT"
-          },
-          {
-            "title": "San Antonio Spurs @ Portland Trail Blazers: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLUcwZVFLX0Q1MllmWkxZOFVXc2N2aEdTMmtxdmZmbHZZZk5hVVZLUzctcmlaNkg2dGJ5OEJBMUs4V1RQTlhGMkhjRlhuSFJleXo1UUk0b0pvV2NXMXBKVFNFY2VweVRteUdZRnEyTWU0WkVFT29UYXN3QWtqUmk0Qm9ERUR0UXgx?oc=5",
-            "published": "Sat, 07 Nov 2026 23:08:31 GMT"
-          },
-          {
-            "title": "Spurs vs. Trail Blazers (Nov 7, 2026) Pregame - ESPN",
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9jM2RfY1h3dUx2ZEpKLVdzVUVSVHByRzhCZDFRM2k1dmtlemNWSmExNmo3a19KbXQxRHYzZDA3WlBBSlNQNUlZdG9KS2Flbl93T1R3LXNkMnIxRnA1SmJvRA?oc=5",
-            "published": "Sat, 07 Nov 2026 22:19:54 GMT"
-          },
-          {
-            "title": "San Antonio Spurs @ Portland Trail Blazers Odds - FanDuel Sportsbook",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMnVwdU5KVzl4RlhCYm9HNkNDY2xESGxnTng2NUtYVkpWaTExaThFUkE4WklLd3hqOE12VEFhN0NuRy1UMkkwWVVHcm5KSjFySDNydXV4NmpPbDY5R0kyMkl4WkRheHBQaDFHc3o5WkFIWmstSlg2QTBGQzNjTGdKOUd1cTRXQTkxa3IzclJFQ29FWTduczFRekt0LTN4UQ?oc=5",
-            "published": "Sat, 07 Nov 2026 22:03:55 GMT"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Spurs+Blazers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T00:49:44.934458+00:00"
-      }
+      "status": "post",
+      "home_score": 103,
+      "away_score": 125,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909944"
     },
     "401909945": {
       "id": "401909945",
@@ -3709,6 +2922,53 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Philadelphia 76ers vs Chicago Bulls Nov 8, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kNzFTSzYzWVZXUlFVb0JSNkV3cUMtZTh6VEFYd3BteFhwaGh2dC1EdGI3MW9ldFpqZXFBQldhQkRlY0VLd2djOG9KRENOTHJPX0xHY1Z5dG81QQ?oc=5",
+            "published": "Sun, 08 Nov 2026 00:38:01 GMT"
+          },
+          {
+            "title": "Philadelphia 76ers vs Chicago Bulls Preview & Start Time — November 8, 2026 | SI - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tdC01OUpIYWhjRWs3eHlnOTJWbGtGZjMxQW5tb2hEdnlTREZhRHl6X0lFNVVoeFlVT1RiRnFUeDNJWmxPNTJnZGVybmNRcW5zbGNmTnFpRkc3Qk1Mb0pWRlFoeU0zenhGRkNIc21vZ1Y?oc=5",
+            "published": "Sun, 08 Nov 2026 05:05:57 GMT"
+          },
+          {
+            "title": "76ers vs. Bulls (9 Nov, 2026) Live Score - ESPN Singapore",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5xRFFBYlhYOEdEdnEtNjk1NUU2ZjcxdmJKajViWE5ULTFIVmtQQ1FReXlUTXF2WUV4MWhEOWV5SU9UZjktMlpLdXQ1Wm0zaXhUY2FQU0ZVb0g5Q3NacURvYg?oc=5",
+            "published": "Sat, 07 Nov 2026 04:16:27 GMT"
+          },
+          {
+            "title": "76ers vs Bulls: Prediction, Team News and a Sunday Rematch in Chicago - Squawka",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4zRE1zekkzcWhLT3F5akhVcGxCQ2hHV1MyQU1rX1dVNDUwbDBDd252T1JfTDJDQ1ViUFNIQ0NKakI4TlRtcDhMR2pTTGoyTzB5MXlCY2Z0VDdfZVhsYm0tdVpOOVFrU3dvVU0yRWw5OWNxd2tMMTJUVmR6Q0k?oc=5",
+            "published": "Sat, 07 Nov 2026 18:25:45 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=76ers+Bulls&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:08.582795+00:00"
       }
     },
     "401909946": {
@@ -3775,6 +3035,53 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Los Angeles Lakers vs Detroit Pistons Nov 8, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84d1ZIZ1pkNFgyREh6eGtyZ1pvUTlPQnRBb2Y5RHo1R0E5cWYtY0ZmcmpzUzc0bHdCcHNLdGpTNVh6Z28yMklYb1N5ZGh5RTNQTXI5QjVHRVJ3dw?oc=5",
+            "published": "Sun, 08 Nov 2026 04:00:59 GMT"
+          },
+          {
+            "title": "Luka Doncic lands on injury report for Lakers’ showdown vs. Pistons - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZ0MtNzBkNzBTZ192c2RTbGlGcDNpWkxwTVdoNnRncGpISVI3djRONnZiWTRzY2QwclliWjk1SWFfeHZ1a2FOajBQSGFVOXN1RHd1TTlweTFwazVZV3lxLWQ3UVJ2Q1dsUVY3QUdhX0lIYlg4ejd6cEUwWjBQYVpLRW9DLUVlbGs?oc=5",
+            "published": "Sat, 07 Nov 2026 23:11:46 GMT"
+          },
+          {
+            "title": "Los Angeles Lakers Announce Injury Report vs. Detroit Pistons (Nov. 8) - Heavy.com",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMnNZekwzbEd3dm9GQ3ZKQmJJQklhU0w1RzVtYmcwa2pIeUd3N2R2M2JZcEZ2d01YQ3hVUElOQWVtNnIzVmZBemM5VV9LOWV6aXJQd3FPRkpPUWZfNDB2ZkFENk5yeUJpV3RMdkNTRWhBX0tjcjI2ZWJlLTllSy1wdTRIaE1PeHBqRWszcA?oc=5",
+            "published": "Sun, 08 Nov 2026 02:56:00 GMT"
+          },
+          {
+            "title": "Pistons vs. Lakers Starting Lineups, Injury Report and More - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUTZYNXQ4NGV0bUZVcHd1WUltZ3ZocmhMbkNVSnRyRWJZZ3lOajZiX0YwOUJPckxndUlHRlNhdWV0UDh6Y0F1UVpZVFBoNDIxRHVldEczVDYwQVRQV2g0QnpRYldSTXROMVpuRmJranQ0d2YybXk1Mm56aVoxUW5jbHFXcHgxbnB3S3BjRkdRZmlueXRySUZJLS1kMlg3LUNqV2VjQjhFWG9wdw?oc=5",
+            "published": "Sat, 07 Nov 2026 23:06:49 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Lakers+Pistons&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:08.957907+00:00"
       }
     },
     "401909947": {
@@ -3841,6 +3148,53 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Utah Jazz at Minnesota Timberwolves odds, picks and predictions - Sportsbook Wire",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZVIySnl6RVQ5TVlESWE3RmpvUzZKYldoUy1oSDZvMmNJS0oxbmNkTlpaUW16Vjd2cUpINkstUW0ySUVwNkdtckhoUnFpUzNfZlZmU216d29zMWxYOW84a3F3MllNdmkwNUJXVEZRbU9UODB4ekQyMkZ3aWhqNXRieGlPZ2w0RHZ5YUJCWW5OemFzVzA4Mmthb081dHlnT092dXkwOEhlMGhXUFF3VWJmXzZ1Tkw4WUo0TEhHTHFqMTJLUQ?oc=5",
+            "published": "Sun, 08 Nov 2026 04:53:00 GMT"
+          },
+          {
+            "title": "Jazz vs. Timberwolves (9 Nov, 2026) Live Score - ESPN Singapore",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd0pwMzhZalFkV3hjazhFT0s1a1A1Nno4d2tWMFQyOHdtZ05IVjl1cVFDZlRzUmp5dkM2RDVtZDRKSVhzeTI0UDZ6RC1semVGbWNCdHF3eDJtWmk3eGRkcTV4aFVhUGFBbVV6VU5MM1pNdGowcnJySA?oc=5",
+            "published": "Sat, 07 Nov 2026 08:29:51 GMT"
+          },
+          {
+            "title": "Minnesota faces Utah, looks for 4th straight victory - FOX Sports",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ2ZfN3dxRzNEOEpBWFVNMEt5SjFuaU9yZVAweHBrSkdVRnBDOFlHN3ZsU2R4a0tHbmdxdHBQS1ZGTmtSVGJZVTgyckNmVXc5SWNjUXZtY1pubC1oaTlualFjR2tIUnh3WmViUzlxZW83TGFTUXRkNjV5WHlIeXhxN1ZzaExaaGQxWmdFMTJDX2hmVlVU?oc=5",
+            "published": "Sat, 07 Nov 2026 07:02:46 GMT"
+          },
+          {
+            "title": "Jeremiah Fears Highlights vs. Minnesota Timberwolves 11/6/26 - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOXpDMXE5eVpSVHBSbTl6MmNVRmtMM3M2eDU5QmZJaGxSQU83U1RJMGJfaWRfX2VfRnZkTnR4TE1PQkNCWmhnM1FJbTlRUU9hYTdGZFhtbU1EbkdkdlBEUkxZaUcxbTNjT1pQQXlGV2xmWndhZkg2MzROYnk0RjNwUUY1dElNUXJ5bnpoM3dObGZfV2NqMmF6QkZEUQ?oc=5",
+            "published": "Sat, 07 Nov 2026 04:33:22 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Jazz+Timberwolves&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:09.348839+00:00"
       }
     },
     "401909948": {
@@ -3874,9 +3228,9 @@
       },
       "elo_baseline_home_pct": null,
       "revised_prediction": {
-        "home_pct": 61.0,
-        "away_pct": 39.0,
-        "predicted_at": "2026-11-07T17:29:52.089276+00:00",
+        "home_pct": 64.4,
+        "away_pct": 35.6,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
         "model": "elo-forma10-v2",
         "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
         "source": "Recalculado con resultados disponibles antes del inicio"
@@ -3885,10 +3239,10 @@
         "version": "contexto-v1",
         "favorite": "Dallas Mavericks",
         "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 61.0,
+        "favorite_pct_original": 64.4,
         "classification": "Ventaja moderada",
         "observations": [
-          "El favorito llega con menos días de descanso registrado."
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
         ],
         "home_form": {
           "games": 10,
@@ -3899,14 +3253,61 @@
           "rest": 2
         },
         "away_form": {
-          "games": 8,
+          "games": 9,
           "wins": 2,
-          "margin": -3.8,
-          "for": 104.7,
-          "against": 108.6,
-          "rest": 3
+          "margin": -3.6,
+          "for": 107.9,
+          "against": 111.7,
+          "rest": 1
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Dallas Mavericks Injury Report vs. Brooklyn Nets: - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOekNtcTI0Y29oX1ZoZVNhRmo0cFg5VGZhLTV3M3BLNVBhNGhHY1dWeW5Xel9qa2I3VmVUM01TU2JpYjZIZHpPZFVUdmIzZmNEMElYdE5selJnVHFaYUNqT0hWeHNVZi1kODhYeERYOTNtQ055Q3lXM1A4YjZ1UlF0UGNnSjk1NEJINmc?oc=5",
+            "published": "Sat, 07 Nov 2026 22:47:56 GMT"
+          },
+          {
+            "title": "Nets vs Mavericks: Prediction, Team News and Cooper Flagg - Squawka",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOUxiWDZpMXVJa2lZRFZnV3pJRXpMN0pBTXh6Y2RKWm1rbXpRbnRXVmN5STI5T2ZObXd5VlNCa3ZsbkdnaGZPYnF2OFR2VDZMNUY5T0xDajRkMGxXdVl5NExCSURQaTRRTDhDcks5U3pLSnk5TFE3NkFNSVkxcHJEbg?oc=5",
+            "published": "Sat, 07 Nov 2026 18:26:34 GMT"
+          },
+          {
+            "title": "Brooklyn Nets vs Dallas Mavericks Prediction, 11/8/2026 Preview and Pick - Doc's Sports",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc3NBaDNnbFIza3hZckVkLTAyUzFWTTBaSmhfYS1OWF9QcVB6bUZvSHVrQjJrVS1KSWhscTJvT1Vkc2ZmbDRpcGVnbU1JdlJ2dk1scllsa19zRDZ0akdWalF4MDhGZ0pKeDBMQXdHUVJDOENQWGF4c0x5c0VhZkZDY214VW1SOHE5ZVVUNk1fa3dBUnFhNExUSDJRZ2k2Q2pHNzVRbDBVNzR4dnYtS2FuYWNwZTd1UThtQk1IRW9adw?oc=5",
+            "published": "Sat, 07 Nov 2026 23:36:52 GMT"
+          },
+          {
+            "title": "Watch Nets @ Mavericks Live Stream Online | DAZN US - DAZN",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNajhIS3JsT0NBcXNZMHdIYmQ3NWZkVGk1Z0F1WnFOclJNR0pvM1V5dFFCQU80VzZhdWlncWxMaEpJS0hnOGpFLV9WSXNNd3YzaHJnNGRpYVhRWXEtU1lUaGotdzlSNFkzYU52YkE0ei15ZmR1NXhtempKSVNpZEp3cDJuS0RWVV83ZnFF?oc=5",
+            "published": "Sat, 07 Nov 2026 03:01:02 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Nets+Mavericks&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:09.747940+00:00"
       }
     },
     "401909949": {
@@ -3981,6 +3382,53 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Milwaukee Bucks - Boston Celtics - Flashscore.com",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEU5MnlkQW82V2EwVDhRX2E0aU1tYmhkdEFQakdpVldScVhyV1dpcm1ZQ2FCQlNvbUdlRkpNdmtIZ09vY3BvT29IX2JmTl9DNWRtejNNM1hRRlFyN2lfd3BZcFdudHF5YThfVllrV19FMTNNTXdueURUVXphZnVsTHBpNTBibjNkc2dqUVlsdktYbVhYZVltVg?oc=5",
+            "published": "Sat, 07 Nov 2026 10:57:53 GMT"
+          },
+          {
+            "title": "Boston Celtics @ Milwaukee Bucks Odds - FanDuel Sportsbook",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcHFGdl9hcXc2Q2o0aExtN2R3ZEVaWVlEdVBXQTBFelhuSDdCNFlqc0paTEwzUllzQWpkREMzVHROeGZ4dlZDbGJZV1pYUVNISmNzcmVIckNqNW0tZE1Zdy1tZ2VSWXF3NUFveUprcHJFSEdRcWk2aTRrSm5IbUNST1VmU2JaVFZNUkdoai1hSEQ?oc=5",
+            "published": "Sat, 07 Nov 2026 23:15:44 GMT"
+          },
+          {
+            "title": "Boston Celtics at Milwaukee Bucks: Stream, lineups, injury reports, broadcast (11/8) - Celtics Wire",
+            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVVNhZkNZZFAyTm5yWmFoa2d5MDFVaFBzM2g3ZmFIMFVad0pXcUdXVS1Fd1N3RERpV3ZzazZjZGNZT2pkWUI5eEY0WlhpVnVuQ2NMeVlzTWxONm1xaFRqV0FsZzBZTWVwdTNnM0pOdUoyNzlnVHFaTFdXSjh5WXI2NGRGNzhiWllueVo4NW92a1JIZ0hiaHZXYTBRdlF0WFY1SzJ3YjRkcll2al9sWU01SnFVMk1jMjlMR1ppd2VicXRjVlNreV9yZGt0Y1ZkRVhleDZjM19ZVWN6Zw?oc=5",
+            "published": "Sat, 07 Nov 2026 22:24:00 GMT"
+          },
+          {
+            "title": "Celtics vs. Bucks (Nov 8, 2026) Pregame - ESPN",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00dXpXVGZiRl9qM3ZhNlh2dXdmQkgxUmwxbGZENHo5QTRGN1dfUEYzMEtVT09SeTJETVoxNDZnUklMaVk4bG14T0Noak1ScUVOUWdtRVc3Rk5Sd2RMWTBRcg?oc=5",
+            "published": "Sat, 07 Nov 2026 07:31:34 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Celtics+Bucks&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:10.181053+00:00"
       }
     },
     "401909950": {
@@ -4047,6 +3495,53 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Pelicans vs. Clippers - Live Score - November 08, 2026 - FOX Sports",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPakxTczEtbWxDMHl4RHN2WHItZXB0N0k4T1JzT1g2d1pRSjZ4bE5mMXREeTB2anVDalVKeXFnYVphVUVUcG5fUjdoTElSbXliRHprbGFSZV9KdEhQdS10VVI1Um91eE5XMUdXQmx3MUtlcXZWWFNQVlMzVzhQd01HYjIyMHR5RHNGQWZkU3kzcFpvcTlmanNHN1padWRIWTA?oc=5",
+            "published": "Sun, 08 Nov 2026 03:48:29 GMT"
+          },
+          {
+            "title": "Pelicans vs. Clippers: Injury Report, Game Preview 11/8/2026 - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTGRaTi1pMS1lNDdMUFdrU0ZYM1h6U2xRVFY5UXgxblVwRlR2UDJPM1lOVUcxWFQ1LXZrNDV2R3R3OXptTl81Q0xQZFNIMnN0WkJyOGNrTWRPbWNyYzNHVU81NlBMVnl5R2hlanVEd3lZTkNpX1R1STJWMHhQbzdfUF9IT1RQMlBBVGE0?oc=5",
+            "published": "Sat, 07 Nov 2026 20:44:47 GMT"
+          },
+          {
+            "title": "Pelicans vs Clippers Game Overview, Stats, Injuries, Records - NBA Game on November 08, 2026 - Covers.com",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2V1lFQU5iWVlMMWdzdDZyemZ6VjlOaGJHazhuS3VXTTV1QXFmXzd6X0NCZ0lNQ0ZqQ3hmOUZlRlNXU2oxUFA2WVJ5ZEo4UUpMR3F5N1F4UWxoQ01mbXpXOTROZGYzNkhUZmc?oc=5",
+            "published": "Sun, 08 Nov 2026 04:31:15 GMT"
+          },
+          {
+            "title": "Pelicans vs. Clippers (9 Nov, 2026) Live Score - ESPN",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBkUFg4dHhXdUp1Y1JJd1BHNUdfZ09ySUd0Sl9Fd25ndnREcXpFZjBBRFROcEJoSXo3cGFRQjVoSjZteXhLTURQSjlEMkJKMENNeHpJczhRR255UkhYN0ZPdXVjb3E5aU9lWldBMlRFdXZKdEt1UzMwcg?oc=5",
+            "published": "Fri, 06 Nov 2026 08:00:00 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Pelicans+Clippers&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:10.598857+00:00"
       }
     },
     "401909951": {
@@ -4113,6 +3608,53 @@
           "rest": 3
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "context": {
+        "injuries": {
+          "home": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          },
+          "away": {
+            "items": [],
+            "source": "ESPN (consulta complementaria)"
+          }
+        },
+        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "news": [
+          {
+            "title": "Sacramento Kings - Miami Heat - Flashscore.com",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbWRVeFJYZXZxbFBXQ0t1djYzOHBBX2dHUlN3Y3VhMnZxaFRSMXN1b0ZmWUdTa0oyMUlBLVlPRENyOVE1eVlPY01XaWl1eWdHMm0yRk8xaXItbVhXdkdTMlVmUDUwQno0MWRLeFN0QWxCYXZlX0tzZm5mSWhMMHBwTmE5S0lhMVdQYjFiYXJvR3k4VUNP?oc=5",
+            "published": "Sat, 07 Nov 2026 09:14:56 GMT"
+          },
+          {
+            "title": "Sacramento plays Miami on 3-game home slide - FOX Sports",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMzB0MTl4empPS0tPTVlDMm5aY3FfbUl0RHRJcUdOa2IwTE1uMFJSd0FMZDJzeHNacGlUZzIzbVNyYlk3WHFHaWRkNjlfYnBBcjBJVEgzdm13OEpXNlRCY2d1RV92RDUzVTlCd09TQXFCVng0Ujh4c0xOeHFoM0Zlb2ZFbXFCVlMw?oc=5",
+            "published": "Sat, 07 Nov 2026 07:02:49 GMT"
+          },
+          {
+            "title": "Winderman: Heat history and current reality show revival has to come from within - Sun Sentinel",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSFNERWtEd3pCQk5UNkJCcF9pZExxcnFWSWlBMDg1UVAxZXVCUUd4RDdvb2NYODBGbDlFNnBGNTF1M0lJdXhVM3QtcjFQaW1LcUd4c2M0SWlzODdLUEM1UWFKSlVRN05RQkd5U2R2OFJweXdwZnFOLWxYVENPaHF0XzhHd0J5b2VpU0FaMm9BU0ZCYWItY2FXcjlDekRWWEJlZkNuZ2Q4MkNLUWRwX3JVU19BOHBaNnNTTV93Sg?oc=5",
+            "published": "Sat, 07 Nov 2026 14:11:45 GMT"
+          },
+          {
+            "title": "Miami Heat vs Sacramento Kings Prediction, 11/8/2026 Preview and Pick - Doc's Sports",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY2ExTXlxRDNjZERYNTMwUEZJVDcteENLZFdtQThwYzRaazVpVmlsSUpONFVpZlVZcEoyOU1jYWxsZHFrTTNCU3lWV1doQ0NzZEc3dTJGNUNxVDZtNHh4MHdrZ0FqUnBwS0hBZjQ0cVRTc05ZUzFOTUpNc2Yxc05INDkxUUMzd0o1M2daUmVJZ0xNczI5ZFAzZjhuTV95UVJSdGRuaDVZSHQxVnZkZmZUMHhqUnRwWXNQMERJ?oc=5",
+            "published": "Sat, 07 Nov 2026 23:31:51 GMT"
+          }
+        ],
+        "forum": {
+          "status": "No conectado",
+          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Heat+Kings&restrict_sr=1&sort=new&t=day",
+          "posts": [],
+          "count": 0
+        },
+        "analysis_notes": [
+          "Noticias y foros son contexto, no una encuesta representativa.",
+          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
+          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
+        ],
+        "context_updated_at": "2026-11-08T05:51:10.993195+00:00"
       }
     },
     "401914126": {
@@ -4164,12 +3706,19 @@
         "locked": true
       },
       "elo_baseline_home_pct": 55.4,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 49.8,
+        "away_pct": 50.2,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Los Angeles Lakers",
         "opponent": "Atlanta Hawks",
-        "favorite_pct_original": 54.5,
+        "favorite_pct_original": 50.2,
         "classification": "Partido muy cerrado",
         "observations": [
           "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
@@ -4177,10 +3726,10 @@
         "home_form": {
           "games": 10,
           "wins": 6,
-          "margin": 0.7,
-          "for": 117.6,
-          "against": 116.1,
-          "rest": 1
+          "margin": 1.0,
+          "for": 118.6,
+          "against": 117.2,
+          "rest": 2
         },
         "away_form": {
           "games": 10,
@@ -4223,12 +3772,19 @@
         "locked": true
       },
       "elo_baseline_home_pct": 46.7,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 37.2,
+        "away_pct": 62.8,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Cleveland Cavaliers",
         "opponent": "Charlotte Hornets",
-        "favorite_pct_original": 63.7,
+        "favorite_pct_original": 62.8,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -4242,12 +3798,12 @@
           "rest": 3
         },
         "away_form": {
-          "games": 9,
+          "games": 10,
           "wins": 5,
-          "margin": 6.6,
-          "for": 119.4,
-          "against": 112.8,
-          "rest": 1
+          "margin": 3.2,
+          "for": 115.4,
+          "against": 112.1,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
@@ -4282,12 +3838,19 @@
         "locked": true
       },
       "elo_baseline_home_pct": 67.3,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 71.0,
+        "away_pct": 29.0,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Detroit Pistons",
         "opponent": "Washington Wizards",
-        "favorite_pct_original": 69.1,
+        "favorite_pct_original": 71.0,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -4303,10 +3866,10 @@
         "away_form": {
           "games": 10,
           "wins": 4,
-          "margin": -1.9,
-          "for": 110.9,
-          "against": 112.8,
-          "rest": 1
+          "margin": -6.3,
+          "for": 104.4,
+          "against": 113.2,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
@@ -4409,9 +3972,9 @@
       },
       "elo_baseline_home_pct": 63.5,
       "revised_prediction": {
-        "home_pct": 63.6,
-        "away_pct": 36.4,
-        "predicted_at": "2026-11-08T00:49:41.329119+00:00",
+        "home_pct": 65.6,
+        "away_pct": 34.4,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
         "model": "elo-forma10-v2",
         "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio"
@@ -4420,10 +3983,10 @@
         "version": "contexto-v1",
         "favorite": "Dallas Mavericks",
         "opponent": "Indiana Pacers",
-        "favorite_pct_original": 63.6,
+        "favorite_pct_original": 65.6,
         "classification": "Ventaja moderada",
         "observations": [
-          "El favorito llega con menos días de descanso registrado."
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
         ],
         "home_form": {
           "games": 10,
@@ -4436,10 +3999,10 @@
         "away_form": {
           "games": 10,
           "wins": 3,
-          "margin": -3.9,
-          "for": 109.0,
-          "against": 112.8,
-          "rest": 3
+          "margin": -5.5,
+          "for": 107.1,
+          "against": 112.5,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
@@ -4475,37 +4038,37 @@
       },
       "elo_baseline_home_pct": 62.6,
       "revised_prediction": {
-        "home_pct": 57.7,
-        "away_pct": 42.3,
-        "predicted_at": "2026-11-08T00:49:41.329119+00:00",
+        "home_pct": 55.2,
+        "away_pct": 44.8,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
         "model": "elo-forma10-v2",
-        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "reason": "Ventaja por ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio"
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Houston Rockets",
         "opponent": "Denver Nuggets",
-        "favorite_pct_original": 57.7,
+        "favorite_pct_original": 55.2,
         "classification": "Partido muy cerrado",
         "observations": [
           "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
         ],
         "home_form": {
-          "games": 9,
+          "games": 10,
           "wins": 7,
-          "margin": 8.2,
-          "for": 115.4,
-          "against": 106.5,
-          "rest": 3
+          "margin": 6.1,
+          "for": 112.4,
+          "against": 105.7,
+          "rest": 2
         },
         "away_form": {
-          "games": 8,
-          "wins": 5,
-          "margin": 3.7,
-          "for": 117.9,
-          "against": 114.2,
-          "rest": 3
+          "games": 9,
+          "wins": 6,
+          "margin": 5.3,
+          "for": 117.1,
+          "against": 111.8,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
@@ -4540,31 +4103,38 @@
         "locked": true
       },
       "elo_baseline_home_pct": 43.2,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 34.4,
+        "away_pct": 65.6,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "San Antonio Spurs",
         "opponent": "Phoenix Suns",
-        "favorite_pct_original": 62.2,
+        "favorite_pct_original": 65.6,
         "classification": "Ventaja moderada",
         "observations": [
-          "El favorito llega con menos días de descanso registrado."
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
         ],
         "home_form": {
-          "games": 8,
-          "wins": 2,
-          "margin": -3.1,
-          "for": 116.1,
-          "against": 120.0,
+          "games": 9,
+          "wins": 3,
+          "margin": -1.8,
+          "for": 113.2,
+          "against": 115.8,
           "rest": 2
         },
         "away_form": {
           "games": 10,
           "wins": 8,
-          "margin": 11.2,
-          "for": 119.1,
-          "against": 107.6,
-          "rest": 1
+          "margin": 13.4,
+          "for": 120.3,
+          "against": 106.8,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
@@ -4599,12 +4169,19 @@
         "locked": true
       },
       "elo_baseline_home_pct": 64.4,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 64.4,
+        "away_pct": 35.6,
+        "predicted_at": "2026-11-08T05:51:06.742080+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Golden State Warriors",
         "opponent": "New Orleans Pelicans",
-        "favorite_pct_original": 62.8,
+        "favorite_pct_original": 64.4,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -4612,9 +4189,9 @@
         "home_form": {
           "games": 10,
           "wins": 7,
-          "margin": 9.0,
-          "for": 119.2,
-          "against": 110.2,
+          "margin": 9.3,
+          "for": 120.5,
+          "against": 111.2,
           "rest": 2
         },
         "away_form": {
@@ -4627,6 +4204,398 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
+    },
+    "401909960": {
+      "id": "401909960",
+      "date": "2026-11-10",
+      "datetime": "2026-11-11T00:30Z",
+      "home": {
+        "id": "18",
+        "abbr": "NY",
+        "name": "New York Knicks"
+      },
+      "away": {
+        "id": "15",
+        "abbr": "MIL",
+        "name": "Milwaukee Bucks"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909960",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 75.1,
+        "reason": "Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+        "away_pct": 24.9,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 9,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 3.98,
+          "recent_margin_component": 4.71,
+          "recent_wins_component": 1.5,
+          "scoring_component": 1.39,
+          "rest_component": 0.0,
+          "player_component": 0.05
+        },
+        "elo": {
+          "home": 1518,
+          "away": 1429
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "elo_baseline_home_pct": 69.6,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "New York Knicks",
+        "opponent": "Milwaukee Bucks",
+        "favorite_pct_original": 75.1,
+        "classification": "Favorito estadístico",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 9,
+          "wins": 5,
+          "margin": 9.2,
+          "for": 112.5,
+          "against": 102.4,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 2,
+          "margin": -12.2,
+          "for": 107.5,
+          "against": 120.5,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909961": {
+      "id": "401909961",
+      "date": "2026-11-10",
+      "datetime": "2026-11-11T01:00Z",
+      "home": {
+        "id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers"
+      },
+      "away": {
+        "id": "2",
+        "abbr": "BOS",
+        "name": "Boston Celtics"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909961",
+      "head_to_head": [
+        {
+          "date": "2026-10-16",
+          "home": "PHI",
+          "away": "BOS",
+          "home_score": 120,
+          "away_score": 125
+        }
+      ],
+      "prediction": {
+        "home_pct": 48.0,
+        "reason": "Ventaja por mejor margen de puntos reciente y mejor balance de anotación.",
+        "away_pct": 52.0,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -0.56,
+          "recent_margin_component": -1.57,
+          "recent_wins_component": -0.18,
+          "scoring_component": -0.62,
+          "rest_component": 0.0,
+          "player_component": -0.26
+        },
+        "elo": {
+          "home": 1549,
+          "away": 1562
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "elo_baseline_home_pct": 56.1,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Boston Celtics",
+        "opponent": "Philadelphia 76ers",
+        "favorite_pct_original": 52.0,
+        "classification": "Partido muy cerrado",
+        "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 8,
+          "margin": 1.1,
+          "for": 108.6,
+          "against": 107.5,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 8,
+          "margin": 8.2,
+          "for": 113.7,
+          "against": 102.2,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909962": {
+      "id": "401909962",
+      "date": "2026-11-10",
+      "datetime": "2026-11-11T02:00Z",
+      "home": {
+        "id": "21",
+        "abbr": "PHX",
+        "name": "Phoenix Suns"
+      },
+      "away": {
+        "id": "12",
+        "abbr": "LAC",
+        "name": "LA Clippers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909962",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 61.9,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "away_pct": 38.1,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 8,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": 1.64,
+          "recent_margin_component": 1.61,
+          "recent_wins_component": 1.0,
+          "scoring_component": 0.4,
+          "rest_component": 0.0,
+          "player_component": -0.57
+        },
+        "elo": {
+          "home": 1469,
+          "away": 1433
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "elo_baseline_home_pct": 62.9,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Phoenix Suns",
+        "opponent": "LA Clippers",
+        "favorite_pct_original": 61.9,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "El favorito llega con menos días de descanso registrado."
+        ],
+        "home_form": {
+          "games": 9,
+          "wins": 3,
+          "margin": -1.8,
+          "for": 113.2,
+          "against": 115.8,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 8,
+          "wins": 1,
+          "margin": -9.2,
+          "for": 109.4,
+          "against": 118.7,
+          "rest": 4
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909963": {
+      "id": "401909963",
+      "date": "2026-11-10",
+      "datetime": "2026-11-11T02:00Z",
+      "home": {
+        "id": "26",
+        "abbr": "UTAH",
+        "name": "Utah Jazz"
+      },
+      "away": {
+        "id": "14",
+        "abbr": "MIA",
+        "name": "Miami Heat"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909963",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 47.0,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 53.0,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -1.36,
+          "recent_margin_component": -1.34,
+          "recent_wins_component": -0.78,
+          "scoring_component": -0.37,
+          "rest_component": 0.0,
+          "player_component": 0.23
+        },
+        "elo": {
+          "home": 1430,
+          "away": 1460
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "elo_baseline_home_pct": 53.6,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Miami Heat",
+        "opponent": "Utah Jazz",
+        "favorite_pct_original": 53.0,
+        "classification": "Partido muy cerrado",
+        "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 2,
+          "margin": -11.7,
+          "for": 105.3,
+          "against": 117.0,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 3,
+          "margin": -5.6,
+          "for": 116.8,
+          "against": 122.4,
+          "rest": 3
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909964": {
+      "id": "401909964",
+      "date": "2026-11-10",
+      "datetime": "2026-11-11T03:00Z",
+      "home": {
+        "id": "23",
+        "abbr": "SAC",
+        "name": "Sacramento Kings"
+      },
+      "away": {
+        "id": "19",
+        "abbr": "ORL",
+        "name": "Orlando Magic"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909964",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 48.4,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "away_pct": 51.6,
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "sample_games_per_team_min": 10,
+        "confidence": "limitada",
+        "factors": {
+          "home_advantage_points": 2.2,
+          "elo_component": -1.48,
+          "recent_margin_component": -0.88,
+          "recent_wins_component": -0.13,
+          "scoring_component": -0.27,
+          "rest_component": 0.0,
+          "player_component": -0.2
+        },
+        "elo": {
+          "home": 1420,
+          "away": 1453
+        },
+        "explanation": "Pronóstico experimental basado en Elo temporal, forma de hasta 10 juegos, anotación, puntos recibidos, descanso y tendencia de jugadores. No se ajusta automáticamente por rumores, lesiones o sentimiento de aficionados."
+      },
+      "elo_baseline_home_pct": 53.2,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Orlando Magic",
+        "opponent": "Sacramento Kings",
+        "favorite_pct_original": 51.6,
+        "classification": "Partido muy cerrado",
+        "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 1,
+          "margin": -12.0,
+          "for": 109.2,
+          "against": 122.2,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 3,
+          "margin": -8.0,
+          "for": 107.0,
+          "against": 115.5,
+          "rest": 3
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909965": {
+      "id": "401909965",
+      "date": "2026-11-11",
+      "datetime": "2026-11-11T04:00Z",
+      "home": {
+        "id": "22",
+        "abbr": "POR",
+        "name": "Portland Trail Blazers"
+      },
+      "away": {
+        "id": "25",
+        "abbr": "OKC",
+        "name": "Oklahoma City Thunder"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909965"
     }
   }
 }
