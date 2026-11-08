@@ -144,7 +144,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-07T22:00Z",
-      "result": null,
+      "result": {
+        "home_score": 102,
+        "away_score": 114,
+        "winner": "away"
+      },
       "revisions": [
         {
           "home_pct": 43.2,
@@ -492,7 +496,17 @@
       "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
       "elo_baseline_home_pct": 63.5,
       "scheduled_at": "2026-11-10T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 63.6,
+          "away_pct": 36.4,
+          "predicted_at": "2026-11-08T00:49:41.329119+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909957": {
       "date": "2026-11-09",
@@ -505,7 +519,17 @@
       "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
       "elo_baseline_home_pct": 62.6,
       "scheduled_at": "2026-11-10T01:30Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 57.7,
+          "away_pct": 42.3,
+          "predicted_at": "2026-11-08T00:49:41.329119+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909958": {
       "date": "2026-11-09",

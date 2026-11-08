@@ -2731,9 +2731,9 @@
         "abbr": "DEN",
         "name": "Denver Nuggets"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 102,
+      "away_score": 114,
       "source": "https://www.espn.com/nba/game/_/gameId/401909938",
       "head_to_head": [],
       "prediction": {
@@ -2782,52 +2782,155 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Denver Nuggets vs Indiana Pacers Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ybmNWWUdHTTJmbXZ3aWViMi0zMWpjNnBnR3ZYallLeDdveUNmc3dvM2JUVC1kOW43a1BxcmdOUXY2YXR6WnRHUllqQWp0MnBuRVdvcGk1cEhNQQ?oc=5",
-            "published": "Sat, 07 Nov 2026 15:16:44 GMT"
+            "id": "3149673",
+            "name": "Pascal Siakam",
+            "starter": true,
+            "game_pts": 23.0
           },
           {
-            "title": "Denver Nuggets @ Indiana Pacers: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGdGp0ajhPTl9UUWlEekxRM3RBeGJyeE5mYndabkRzNFJFc2pFelp1YktIRXZOeGZ3ZGdMMk1NdTNrQVNiQ0xULTB0cC1ZVFNlUTZsVkVObVJ6c0VfckVTaVRBN25hVVRuMFNkem9qZjYxeXJNU1RqVzFR?oc=5",
-            "published": "Sat, 07 Nov 2026 15:33:21 GMT"
+            "id": "4017837",
+            "name": "Ivica Zubac",
+            "starter": true,
+            "game_pts": 10.0
           },
           {
-            "title": "Denver Nuggets @ Indiana Pacers Odds - FanDuel Sportsbook",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPejg2SE1wUjduZXJlUnhNbWZOZ296ZHF6NUFPemJHWmowNmZTbmI5NGhWVUVwRVdxQ3JXQTVjVU14NUdnYWVmU2ZJc3pqQWtoTUo5SVdfOTZwdWJCWjd4TzVaVDJQTGF0bWY1M3FrbjhrTmExX3R0RklRRElTWE1IM0EwbVhNVTltcXVVZVF1NA?oc=5",
-            "published": "Sat, 07 Nov 2026 16:07:24 GMT"
+            "id": "4395712",
+            "name": "Andrew Nembhard",
+            "starter": true,
+            "game_pts": 9.0
           },
           {
-            "title": "T.J. McConnell might make season debut vs. Nuggets, Nikola Jokic in Mexico City - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYlFiZXJjTXdGcFRpTUwyMjI5OUlpSHhzU0pTNGFMekV3eGJJRFNEel9GYlFHUGZaUm1wT2VvQUo3RXAzN1QySkhHVlN4azhuc1hMTjE5OTRYbFZFeHUza1ctelVFUVRmXzBPR2NjQTVJUEZtZFd4QUllYnFYa0xHZkMtR0Q1YkVTQmxQRmxyaGlsbHpLWllLN2hreHhFZUpSNW16WVUyZURSdGdsa0Joc3NXNVl6OHBzRDUyWTNabw?oc=5",
-            "published": "Sat, 07 Nov 2026 15:14:27 GMT"
+            "id": "4396909",
+            "name": "Aaron Nesmith",
+            "starter": true,
+            "game_pts": 8.0
+          },
+          {
+            "id": "5105854",
+            "name": "Braden Smith",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "2580365",
+            "name": "Larry Nance Jr.",
+            "starter": false,
+            "game_pts": 15.0
+          },
+          {
+            "id": "4278355",
+            "name": "Obi Toppin",
+            "starter": false,
+            "game_pts": 10.0
+          },
+          {
+            "id": "4398207",
+            "name": "Jalen Slawson",
+            "starter": false,
+            "game_pts": 4.0
+          },
+          {
+            "id": "5106060",
+            "name": "Jarace Walker",
+            "starter": false,
+            "game_pts": 9.0
+          },
+          {
+            "id": "4065731",
+            "name": "Jay Huff",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "2530530",
+            "name": "T.J. McConnell",
+            "starter": false,
+            "game_pts": 6.0
+          },
+          {
+            "id": "3133603",
+            "name": "Kelly Oubre Jr.",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4592829",
+            "name": "Quenton Jackson",
+            "starter": false,
+            "game_pts": 6.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Nuggets+Pacers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-07T18:02:09.718189+00:00"
+        "away": [
+          {
+            "id": "3064290",
+            "name": "Aaron Gordon",
+            "starter": true,
+            "game_pts": 12.0
+          },
+          {
+            "id": "3138196",
+            "name": "Cameron Johnson",
+            "starter": true,
+            "game_pts": 18.0
+          },
+          {
+            "id": "3112335",
+            "name": "Nikola Jokic",
+            "starter": true,
+            "game_pts": 19.0
+          },
+          {
+            "id": "3936299",
+            "name": "Jamal Murray",
+            "starter": true,
+            "game_pts": 16.0
+          },
+          {
+            "id": "4431767",
+            "name": "Christian Braun",
+            "starter": true,
+            "game_pts": 6.0
+          },
+          {
+            "id": "4277848",
+            "name": "Marvin Bagley III",
+            "starter": false,
+            "game_pts": 10.0
+          },
+          {
+            "id": "4565698",
+            "name": "Bryce Hopkins",
+            "starter": false,
+            "game_pts": 3.0
+          },
+          {
+            "id": "4592427",
+            "name": "Spencer Jones",
+            "starter": false,
+            "game_pts": 13.0
+          },
+          {
+            "id": "4698719",
+            "name": "Trevon Brazile",
+            "starter": false,
+            "game_pts": 3.0
+          },
+          {
+            "id": "3978",
+            "name": "DeMar DeRozan",
+            "starter": false,
+            "game_pts": 11.0
+          },
+          {
+            "id": "3135046",
+            "name": "Tyus Jones",
+            "starter": false,
+            "game_pts": 3.0
+          }
+        ]
       }
     },
     "401909939": {
@@ -2844,7 +2947,7 @@
         "abbr": "BKN",
         "name": "Brooklyn Nets"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909939",
@@ -2895,52 +2998,77 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Brooklyn Nets @ Atlanta Hawks: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE82M1hNTFU5VWxPXzh1VjlzWEZHYlF1Uy0zckVLSy1ydXNQOC1RbWVqOG5IZmRIQ3paaDBZcEJMcHEzYUtTblRtSXN1cTY2YUN4QjBDU19PdU0xNDNYeWxtdC1qR090QXNkSHhwWmx2MDNJT0xDazV3?oc=5",
-            "published": "Sat, 07 Nov 2026 17:02:57 GMT"
+            "id": "4431680",
+            "name": "Onyeka Okongwu",
+            "starter": true,
+            "game_pts": 0.0
           },
           {
-            "title": "Brooklyn Nets vs Atlanta Hawks Nov 7, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ISFNJTVV0eTN4MkRVY1hmbnZRb1kzWlVhbDVjbzc3UTlTcDh1a05sV1UweXVyaWZFWTdmUjlqVVBQaDg2MkpiUXNRY2MwQ2IyODlrWUdKcUt5dw?oc=5",
-            "published": "Sat, 07 Nov 2026 16:09:28 GMT"
+            "id": "4701230",
+            "name": "Jalen Johnson",
+            "starter": true,
+            "game_pts": 4.0
           },
           {
-            "title": "Nets vs. Hawks preview: Brooklyn opens four-game road trip in Atlanta - NetsDaily",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUnhHdDdIUkx0dGlNakhKT25FbEtXRmRKMFdDb0lDb2xpLVlyWENlNjVQVjJzMS1LbmZtWHRVcjAxWm1OLWhsX0tFMm1Ed0trODE0cnlGeUxfamVJajY1cGYwQ1FsRTBXOWtfVnFpTHl2M0w3T1BMR0hTbl9KdUZCUXpVWWlyZDl4WmpOLXNocVg5SXJacGlLazMwcjFtcjJrNld1RGlQUFJoXzVRSWlV?oc=5",
-            "published": "Sat, 07 Nov 2026 15:12:41 GMT"
+            "id": "4278039",
+            "name": "Nickeil Alexander-Walker",
+            "starter": true,
+            "game_pts": 0.0
           },
           {
-            "title": "Brooklyn Nets-Atlanta Hawks Preview: Injuries, Odds, How to Watch & Starters - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORVo1Y1AxazBxWVU5SF9uTjNzVzNacU5YazhVXzdTTGxPLUJGTFpJd0Z0RmtUMXNhbjRaamV6X0VaemE3WDFROUpGbFVWbk82YTJOR3preFF4ZVAxcjliQk1RU0pBbjdlOFg3QXNsUU5kUWVXYnVjcDdFVi1EWUtJajJsV0VnamZsWjI0LWppcmlEelFYTENZUmNHRHZmM0R0b2pJSVo1VElTdEV3ejNiMHlzLWt3ai0tVGc?oc=5",
-            "published": "Sat, 07 Nov 2026 14:01:10 GMT"
+            "id": "4869342",
+            "name": "Dyson Daniels",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "5149077",
+            "name": "Kingston Flemings",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "5106262",
+            "name": "Zuby Ejiofor",
+            "starter": false,
+            "game_pts": 0.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Nets+Hawks&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-07T18:02:10.275889+00:00"
+        "away": [
+          {
+            "id": "3064514",
+            "name": "Julius Randle",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4278104",
+            "name": "Michael Porter Jr.",
+            "starter": true,
+            "game_pts": 3.0
+          },
+          {
+            "id": "5107173",
+            "name": "Danny Wolf",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4432194",
+            "name": "Day'Ron Sharpe",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "5279130",
+            "name": "Nolan Traore",
+            "starter": true,
+            "game_pts": 7.0
+          }
+        ]
       }
     },
     "401909940": {
@@ -3025,22 +3153,22 @@
           {
             "title": "New York Knicks vs Cleveland Cavaliers Nov 7, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GVmJYalYyYnVzSk9ZZ3l5U0FIRERCNXd6eWJwZEx5UnpLVmUwb1l2M0wySkcwN0Qxd2p6TTFYT20tTE92QUNJZnUyX21yNk9mREcySDVZcnFpUQ?oc=5",
-            "published": "Sat, 07 Nov 2026 16:21:31 GMT"
+            "published": "Sat, 07 Nov 2026 22:26:36 GMT"
           },
           {
             "title": "New York Knicks @ Cleveland Cavaliers: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPc01GdlFCaTZUeXhoaW5TbFl4NHlKQWNVbGtvSVZVaUlHaFdJSWhYTEd1QlRZWEtKTkpHZUNHQmFRQ0dobnFRWGZWb0ZRSUd3eFhiZ0hkNklod2NHcjdzbFl0Q1dzY1NQVmgxQ0Y5M2FJanhVdmdpVWVYRm5UcFhKUmR3?oc=5",
-            "published": "Sat, 07 Nov 2026 15:32:01 GMT"
+            "published": "Sat, 07 Nov 2026 23:02:58 GMT"
           },
           {
-            "title": "Knicks vs Cavaliers Prediction, Picks & Best Bet for Tonight's NBA Game - Covers.com",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdW5vVkx0ck1ld0c3dEI1TVpEZmdPVEUzN3lxU2lGODgzUldoN1AyWmxQS0FaTHNTc3JYTnZ2ODVoMFVsUGNtc1I4dHZvUmVRZHk1ekIzTWFSblRnN2pNSmRCdzRnZk1wMmdZcDE4NGZKVmNwd0wzdmlnUlVDM3pSV1MyVVlaUQ?oc=5",
-            "published": "Sat, 07 Nov 2026 16:56:00 GMT"
+            "title": "Where to watch Knicks vs. Cavaliers NBA free live stream - Syracuse.com",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWs2cGFDY1ZFMjl4Y2oyOEJ1RVNHUWJCczJhNnh0VHBEd1pZV1JBR3NlOUdDRXQyYUUzYlRYVlZHUEZoeTNld1EzWkVJYlo5bU9UVGQ3NVpla2R3RFdfanZSY2F2TXRxUkZETXA4anVaNDFOM2hrcGxfbXNDN09mZkt2ODFIeE1ZeGFhNkJyYUtXOVlyaHJMancyaEpDNkZlZmhmNGhjRU94c1BkZkdCODlSLUHSAcgBQVVfeXFMTXFvQkVweEpZcEljdVpIOWkzTmdvenl3YzJMZEl1ZV9OdU9yWGIwNkI5QmFHQ25mLVpQYS0tV3AyRElSOFZ4TzhvTkhkYnRKbXYzQnRYeXFvWEM1OV95UlFrVHdXSVBiMzZ0ZVlDYkN5YWtBb0ZfREdYem11TXpWbnlXTzRtMmM2ZmY5aE5Kd0FOaTJkbzgwSy1wTzJUZnE3NVZKS3RleGdsOEFWZEFTY1kxWkdVLUpQZHV2d3lWX0tXYXBVMTZBZ20?oc=5",
+            "published": "Sat, 07 Nov 2026 22:02:00 GMT"
           },
           {
-            "title": "Watch Knicks @ Cavaliers Live Stream Online | DAZN US - DAZN",
-            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMXpQUUhPS0xvUEVDc19YajNINno1Ml83Y2tIbGpJTGMwSHRCYVpEYmR1dEM4aHltSGJJRmo2NjNHQmN0dFpHQmpDMXJzUlJ1S1pVTlhsYzI2aTR1bkNMdU9hdmJuMl9PZXd6ZlUwNFdTSGxhVzB4WnlLYjk1cGVocVNSOGx0VGllLXdiOA?oc=5",
-            "published": "Sat, 07 Nov 2026 04:48:47 GMT"
+            "title": "Cavaliers score, lineup vs New York Knicks in Conference Finals rematch - Akron Beacon Journal",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVVo4cU5ZQmJScU54UHRSa1JCcVd2MFdWMkVOY1A5TmFaVXVOX3hjY2ZxXzVTOFpsRkMtc1lVTEpZSDNXQVZSN1pFd1h2THpzYndmR1dCdDFrTVREYmlJUXhrVGdOc0VuRTdFWG9rU1dIdG5ZNkxxZjNBLWtxc0pwbFFYRlZxcllBUmhRdi0zZnItdTNvWHk1VmpCOEJ5TUpWSW9yVUdoeEdqVTBreWxRck1tWFRBSkFQMmVwYWN5WTVTWk0?oc=5",
+            "published": "Sun, 08 Nov 2026 00:19:00 GMT"
           }
         ],
         "forum": {
@@ -3054,7 +3182,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T18:02:10.830527+00:00"
+        "context_updated_at": "2026-11-08T00:49:42.980875+00:00"
       }
     },
     "401909941": {
@@ -3138,22 +3266,22 @@
           {
             "title": "Washington Wizards @ Oklahoma City Thunder: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZnBNMVQxVlZ5dS1sOGxxZUJpTTdEMVdsMnJLN3hYWG8wb0RhSWdsd1UyTTVxaTF3eFM1TTMtc3lSTzhsU2JBUzh2WEFjaFJ2MnVaMmJXNHpBYndQVDByLVRtV211U0p2UlNVTEl6bVZKcktJZUd4NXA3U0ZoaU45cXpfSHZtRW9P?oc=5",
-            "published": "Sat, 07 Nov 2026 15:32:34 GMT"
+            "published": "Sat, 07 Nov 2026 21:33:02 GMT"
           },
           {
-            "title": "Washington Wizards at Oklahoma City Thunder odds, picks and predictions - Sportsbook Wire",
-            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRHA0d1U5cHR0aDE3SkxSaF9tQWpMazlVTl9pZEJScjN6N1VpRzhHZlhJUVdnM3MzS3lsX2NsY0NPYlBUT2YzbWdhS3ZNNldDeFJNZ2V6Uld5MkxrUUZfZU03emhfNlpja2FzRzdOUXhMTV82Wm5sUXN5eUVld0RhcXQ3ZGdPbjY0SDJSU3B1bW9JeWdBXzdxSFJVTWZNWGNNZEo3TXhZMEhib05UWmpKQ2FBQ2dEMEl6akxpcXN2Zw?oc=5",
-            "published": "Sat, 07 Nov 2026 17:18:00 GMT"
+            "title": "Washington Wizards vs Oklahoma City Thunder Nov 7, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUMHR6MDU5eGh1Rk1vdXlEQjVuckIxVFg1YVdtUGpMSlZNMk5OYUwyOHZiZjhlZVVLNnBudERmV3dsX2xlellnOUdTcXJORXNLYnpNTk54eUFBQQ?oc=5",
+            "published": "Sat, 07 Nov 2026 21:16:45 GMT"
           },
           {
-            "title": "Wizards vs. Thunder (Nov 7, 2026) Odds and Spread - ESPN",
-            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5COXBOSk1kRTl3dmh6eWlXbXo1cVJNOUdKeEVUQnctNHc1MWlLVDR4dm9IN2RVVV9RVTVmY1hjODdoTmhVdkptbUJXU1RqRW81V3FuV3dMYkhKMzJh?oc=5",
-            "published": "Sat, 07 Nov 2026 07:48:14 GMT"
+            "title": "3 Critical Storylines to watch in OKC Thunder vs. Wizards - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZmNLNWUwWWo0b09oT3lKMUo5Qk9CVDktZkFZMi1ZaWNfWXRtN19sSFBReTN3SUJZOWlvVU9nUTJkTzRmNktBNmVIbzZuajJUcHZLOGZiMWZZTVhvdTZmTXVYY3JnQ3NKWFFWX1dtMzF0RzNvbTN1bjJ6Ul82eFZOWUFab2I0S1hqWFN5c2k1VXBfckhvYURQRTgxamJWa0tfSzM5OTVleFc?oc=5",
+            "published": "Sat, 07 Nov 2026 22:25:04 GMT"
           },
           {
-            "title": "Preview: The Wizards face the Thunder on Saturday - Bullets Forever",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb2hKRUdubjk3Z1FZSXYzRFhFS3lQNDd1VHVnRFhSc0RLY1UyRWZYQnpqQ2FLa19mR0Z6QXJMUmNXc2w0THlGWjEwOXVpNnVhZkd0OFFRVUtIdUtfaVFEc0ptaVdRY2JNVnVNdlVCSWtjWVJqZElrQ3VlOC1BaHdTSllqZzhOY2Z2NFBuZzVtMWZ5ck5YaXAzLWZ1MFhjSkJ0RmFrZXNZY3AyeDNOd3VjdjN2NXo5ZTJLM3JreUxB?oc=5",
-            "published": "Sat, 07 Nov 2026 03:08:00 GMT"
+            "title": "Wizards vs. Thunder (8 Nov, 2026) Live Score - ESPN",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QWGJobEVJTkhNOE5HZENGVEdvN3hneHVic0EwUC1zc1k4ekJqUl9pNm42RDBFRTFnSzU3LVF6MmgwUklZRF9ZLUNLdGRuZ25LeVZRMUhFdVpLNXpsZjdtX0x4eXN5NFI0b3pNWi1pQ3g3akxVRWc?oc=5",
+            "published": "Sat, 07 Nov 2026 19:05:43 GMT"
           }
         ],
         "forum": {
@@ -3167,7 +3295,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T18:02:11.406410+00:00"
+        "context_updated_at": "2026-11-08T00:49:43.507758+00:00"
       }
     },
     "401909942": {
@@ -3251,12 +3379,12 @@
           {
             "title": "Orlando Magic @ Golden State Warriors: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOTVRQ3ZwUUc4aUl1VVFPSm5pa3ZXZWZBUFF3ZmFEdmQ4WnpHWDRWYWxlT0Z1Y1ByZUdIQUtISk4tVEhKODJlNU1mTjI1ZVJqeE4zRldsdUdZeVJzRFFTUTl4dWhYOWtYZ2xYbmREcjRyV3hydzl6dVZ2cTRGQUVLWm1B?oc=5",
-            "published": "Sat, 07 Nov 2026 15:31:14 GMT"
+            "published": "Sat, 07 Nov 2026 23:02:13 GMT"
           },
           {
             "title": "Orlando Magic vs Golden State Warriors Nov 7, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wc1NMTy1mVi1tWFlvSE80NTQ4c2tvOTYwNmRNZVBwZ0ZMTEVJZ1Atb2pPYXdtZk84ODJVNGZlTGs1d1hrVVQyZTlqNFpiWmtrM1RWWElQNENIUQ?oc=5",
-            "published": "Sat, 07 Nov 2026 15:16:39 GMT"
+            "published": "Sat, 07 Nov 2026 22:33:29 GMT"
           },
           {
             "title": "Orlando Magic at Golden State Warriors (Nov. 7, 2026): 3 Things to Watch, Odds and Prediction - Orlando Magic Daily",
@@ -3264,9 +3392,9 @@
             "published": "Sat, 07 Nov 2026 17:32:37 GMT"
           },
           {
-            "title": "Golden State Warriors vs. Orlando Magic - November 07, 2026 - Bleacher Report",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQT2VLZG1hcm9KLV9PMklaekU4YzFHcWZlUlJEUUdpYW9zaHNUYXB6WW5VRkNFX0ZJbzhFYWxKWGhnVWpjY2JVbkgweDBHUE1pMUNCT25UUm5MRDM5RjdQSkQxSHN3ekNVbkx3cE9ab3hwc0ZBRGRzNV9pSnNRQmRkdzVqNUhHQkJnUmlOWm1lOA?oc=5",
-            "published": "Sat, 07 Nov 2026 16:31:07 GMT"
+            "title": "How to watch Magic vs. Warriors: TV channel and streaming options for November 7 - The New York Times",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZzk5cVVmTWp1OXpPSVJkaUJwaDdKRnU1QnJ5R2Y1emZJOE9SYXpCUWtrTFF0bURPOVFseUdBVFJSWDhydlhDb3l2RTJ2QS1hVVAxQ2kxdXZsRWxyUjhEejlFOE9OZFpxNlg1aFpnTEk1cUljTnZzaWxZZDZsZVZQbHVtTWw5Vl81bHBwdVY4M1lETmNGX1ZnLVhWNlY?oc=5",
+            "published": "Sat, 07 Nov 2026 18:04:33 GMT"
           }
         ],
         "forum": {
@@ -3280,7 +3408,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T18:02:12.052176+00:00"
+        "context_updated_at": "2026-11-08T00:49:44.065081+00:00"
       }
     },
     "401909943": {
@@ -3364,22 +3492,22 @@
           {
             "title": "Houston Rockets vs Phoenix Suns Nov 7, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uX1B2cW1zY3IxNnJrX0pQLXF5cHFtOHdBOVhaZ3daUnVwemdQUWcxSDNmSm9YbWJINV9BMmNQTDRROWVtNkZtT1JzQmVIcWlrZkFWYjBDczl2QQ?oc=5",
-            "published": "Sat, 07 Nov 2026 15:16:22 GMT"
+            "published": "Sat, 07 Nov 2026 21:16:22 GMT"
           },
           {
-            "title": "Houston Rockets @ Phoenix Suns: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85b3llb0Y3b3M0cmFoQ1NNalBPS2UtQUVHVWI2MEE0TU1mNHhQdFU4OEJlV2g2bVlFWFRKcElpRTlfdlRGMXlPQnNvdnRsbW5yektaQTM1QTZjMU9OSDJoLXJRSTZvVTNOVXRQV2tiWm8xSHhnUGUwNQ?oc=5",
-            "published": "Sat, 07 Nov 2026 15:34:15 GMT"
+            "title": "Phoenix Suns vs Houston Rockets. Live updates, NBA analysis - azcentral.com and The Arizona Republic",
+            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWTdjVW4wY3lTcS1JbzdRMmd2SWdtVDFkWlI0SEJFYmx1Q2sxdVJ5YnJTYlg2aE9QTzBFdDVQUC10VFg1ZFB1RnAtNGpDZy1GNnVYVzZlRGNFR0E3Mlp1NjlUUG1XeUtsQ0lxeTFKY1VMcS1RTmFqcW8xUnVYVXh6RkxQQmVzOTB0dXp3YU5Nak1aZjlSLUxXMHFFbmQwMzFlZG9XV2MxMmZrYy1XYWhHZTUycXFvVFl5Wi1BRi1HVlJDMm9oVlpjVDZLZ1Z5Ym9Y?oc=5",
+            "published": "Sat, 07 Nov 2026 21:54:00 GMT"
           },
           {
-            "title": "Houston Rockets at Phoenix Suns odds, picks and predictions - Sportsbook Wire",
-            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRk5KQ1NIX0g5SXFqM29KQXV6OFp6c0Q5cmI2MUlhVllJRzMwU1o1M3NWZGtwRGQ5eVN2ZVhjdG9qV0dneGZxb0tLb1oyMnhGcHY0Y05nUll3QThYMllSNmlxVThxWmtOQ0VWMHRBZVplSnZyeVhpNEUwb05zNlNvaHo2TnVZaUYyWEs2ZWxPSUlqOVd1U0QydV9FMTZzWUU2eWxEbTdRZVRpVzFkT2c3X1Zqei1xdUlCSGNV?oc=5",
-            "published": "Sat, 07 Nov 2026 17:34:00 GMT"
+            "title": "How to watch Rockets vs. Suns: TV channel and streaming options for November 7 - The New York Times",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMkF3enlYY2pweU1EbDg2RUtmRDdLUVlzU1l1U0hiUXV0SHZmX205T1VLV01zWlU4UzlqQ0NBY00yWmg0Rk05RU9KR0FzZlhRWThDVEJQVTF4dVp5QTBaLUlRMkVXcFFSd0w0cEpURkJfZWh2dkd0SlVUWndWZzRoQlMxUEE4ajlkQjJKakFFLW1FU2NlRjJuQWRR?oc=5",
+            "published": "Sat, 07 Nov 2026 18:10:32 GMT"
           },
           {
-            "title": "Rockets vs Suns Prediction, Odds, Best Bets & Team Props – NBA, Nov. 7 - sports.betmgm.com",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONFNGWWRGaEFpS0JReW53Ul9hZWtXWl9WU0xlYUlVWWI2V2l4Vzl5cnlHTDktQU9FWkxBR0xkVUlQSFNpVnFuc2FadUM4LVUzTlVnM0VXV3N0TXRQbE5WWUZwcGtyWXBLbVFnQmQ5TGctRk1yZmF5ZjBrYmZsQlZIUm5hSFlmZzRkeVFVRXdBZGQ5NHhrcmJ5dg?oc=5",
-            "published": "Sat, 07 Nov 2026 14:15:46 GMT"
+            "title": "Suns news: Phoenix gets multiple injury updates for Rockets clash - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOEZzWVg2X1ZCdVMycHp3eHM3WGh5bTRidXRPbVhUU1NiUjFtSHgzbjZlRElERUZYc0YtWlhtNVZhUkllQ29KM2Z1S2Rqay1yMmdCSXIweTBaY2llYlZpbGpSVUZZb1BmSDBWd3hHRmtNZGtWWF9TTkJ6TXBIZTd6NmhJYlNxdnc?oc=5",
+            "published": "Sat, 07 Nov 2026 20:07:54 GMT"
           }
         ],
         "forum": {
@@ -3393,7 +3521,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T18:02:12.654739+00:00"
+        "context_updated_at": "2026-11-08T00:49:44.478067+00:00"
       }
     },
     "401909944": {
@@ -3475,24 +3603,24 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
+            "title": "San Antonio Spurs vs Portland Trail Blazers Nov 7, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvSEJYVlVEeV9zLUc1V3NrdG1hVXlZeC1KMlpLQjBwemNhZUJrQUtvSEJMeVdPX24zbEZCNGtzUnFNYXVVejVYYjF6WGdvbjdSZDVnZU1Zd0x5UQ?oc=5",
+            "published": "Sat, 07 Nov 2026 21:55:43 GMT"
+          },
+          {
             "title": "San Antonio Spurs @ Portland Trail Blazers: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLUcwZVFLX0Q1MllmWkxZOFVXc2N2aEdTMmtxdmZmbHZZZk5hVVZLUzctcmlaNkg2dGJ5OEJBMUs4V1RQTlhGMkhjRlhuSFJleXo1UUk0b0pvV2NXMXBKVFNFY2VweVRteUdZRnEyTWU0WkVFT29UYXN3QWtqUmk0Qm9ERUR0UXgx?oc=5",
-            "published": "Sat, 07 Nov 2026 15:33:01 GMT"
+            "published": "Sat, 07 Nov 2026 23:08:31 GMT"
           },
           {
             "title": "Spurs vs. Trail Blazers (Nov 7, 2026) Pregame - ESPN",
             "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9jM2RfY1h3dUx2ZEpKLVdzVUVSVHByRzhCZDFRM2k1dmtlemNWSmExNmo3a19KbXQxRHYzZDA3WlBBSlNQNUlZdG9KS2Flbl93T1R3LXNkMnIxRnA1SmJvRA?oc=5",
-            "published": "Sat, 07 Nov 2026 16:16:19 GMT"
+            "published": "Sat, 07 Nov 2026 22:19:54 GMT"
           },
           {
-            "title": "Spurs vs. Trail Blazers: How to watch the game, who's starting, who's out - San Antonio Express-News",
-            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFZnekNUWFcwODYyMmFPZnZ4eUNGMU1NMm1Eb3hNamZTQmZjQmJTUW1PRnRiaVdkUkRyYThYekRBYy1SOVhNcllEb3NNaVlWLU0yck9ZbVNzU2V1ejNBTTh4STZMS09IQWs5d3IxX2M0Mkg1U21aWC1QbHNWaEdNT1lXVzltMW9OSmtBejZqR2JuWEZFQjBMOGpqYldGVFJIcFJnZFpIa3BsSU9QdUE?oc=5",
-            "published": "Sat, 07 Nov 2026 10:11:09 GMT"
-          },
-          {
-            "title": "Blazers Look to Bounce Back vs. Victor Wembanyama's Spurs - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcldnT0tETlVwSXdRZnlIRWk1Q0sxdzNERFFDNGZFdkM1clczREpYN2FFX2xTRmdTUUxHR0IxY1JrOWllNlZMY3BwNWUzSTdLdnJjYWJ6UUpub3lOYnhhVnFLZklyQXFmbGxaX09sT2prNF9tM29DUTV0QzFKSVE3bkt6YnRnVDVsR3RORzN1VTJBemF3OGJEdUN3UQ?oc=5",
-            "published": "Sat, 07 Nov 2026 17:00:01 GMT"
+            "title": "San Antonio Spurs @ Portland Trail Blazers Odds - FanDuel Sportsbook",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMnVwdU5KVzl4RlhCYm9HNkNDY2xESGxnTng2NUtYVkpWaTExaThFUkE4WklLd3hqOE12VEFhN0NuRy1UMkkwWVVHcm5KSjFySDNydXV4NmpPbDY5R0kyMkl4WkRheHBQaDFHc3o5WkFIWmstSlg2QTBGQzNjTGdKOUd1cTRXQTkxa3IzclJFQ29FWTduczFRekt0LTN4UQ?oc=5",
+            "published": "Sat, 07 Nov 2026 22:03:55 GMT"
           }
         ],
         "forum": {
@@ -3506,7 +3634,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-07T18:02:13.244221+00:00"
+        "context_updated_at": "2026-11-08T00:49:44.934458+00:00"
       }
     },
     "401909945": {
@@ -4280,12 +4408,19 @@
         "locked": true
       },
       "elo_baseline_home_pct": 63.5,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 63.6,
+        "away_pct": 36.4,
+        "predicted_at": "2026-11-08T00:49:41.329119+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Dallas Mavericks",
         "opponent": "Indiana Pacers",
-        "favorite_pct_original": 62.5,
+        "favorite_pct_original": 63.6,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -4339,15 +4474,22 @@
         "locked": true
       },
       "elo_baseline_home_pct": 62.6,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 57.7,
+        "away_pct": 42.3,
+        "predicted_at": "2026-11-08T00:49:41.329119+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Houston Rockets",
         "opponent": "Denver Nuggets",
-        "favorite_pct_original": 58.7,
-        "classification": "Ventaja moderada",
+        "favorite_pct_original": 57.7,
+        "classification": "Partido muy cerrado",
         "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
         ],
         "home_form": {
           "games": 9,
