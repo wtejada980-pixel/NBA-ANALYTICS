@@ -319,7 +319,11 @@
       "predicted_at": "2026-11-06T20:45:53.194176+00:00",
       "model": "elo-forma10-v2",
       "scheduled_at": "2026-11-08T20:30Z",
-      "result": null,
+      "result": {
+        "home_score": 121,
+        "away_score": 127,
+        "winner": "away"
+      },
       "revisions": [
         {
           "home_pct": 32.3,
@@ -679,7 +683,17 @@
       "reason": "Ventaja por mejor margen de puntos reciente y mejor balance de anotación.",
       "elo_baseline_home_pct": 56.1,
       "scheduled_at": "2026-11-11T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 48.9,
+          "away_pct": 51.1,
+          "predicted_at": "2026-11-09T01:04:39.749235+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor margen de puntos reciente y mejor balance de anotación.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909962": {
       "date": "2026-11-10",

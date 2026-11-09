@@ -2864,9 +2864,9 @@
         "abbr": "PHI",
         "name": "Philadelphia 76ers"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 121,
+      "away_score": 127,
       "source": "https://www.espn.com/nba/game/_/gameId/401909945",
       "head_to_head": [
         {
@@ -2923,52 +2923,125 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Philadelphia 76ers vs Chicago Bulls Nov 8, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kNzFTSzYzWVZXUlFVb0JSNkV3cUMtZTh6VEFYd3BteFhwaGh2dC1EdGI3MW9ldFpqZXFBQldhQkRlY0VLd2djOG9KRENOTHJPX0xHY1Z5dG81QQ?oc=5",
-            "published": "Sun, 08 Nov 2026 16:20:55 GMT"
+            "id": "4397189",
+            "name": "Jalen Smith",
+            "starter": true,
+            "game_pts": 17.0
           },
           {
-            "title": "What channel are Sixers on today? What time is Sixers vs. Chicago Bulls - Delawareonline.com",
-            "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNRS0xRDliVlE4N0VGdk9NQURUc1lrV280RXpxVDA2RVlJZUk5MnRLRnlrbHl2WFNCanBfcm1LQmxpUmJBTjU1MDlnakx0Tk5raHZ4YXU2Z1N4d0gtSEQ5MkFRUVNUMGZwX0w4d2NVUEJyLUZwakV5MHVmTjNPU1M4QXI3MWRMVnozT21RemRDZFBiaV9YUW1tSV8wRW54S3Q3QmxQSmFOdk81anQ5Ym5zR19mcmxKVzZJNFRQcXZVc2puR2QwNzVCaklQQW95Q1VMc3JlQmF1UjZRTzQ0dWhpcnYwVlZvV1N1RFNiNmc0OHc4UGhCYTFQV0F1SjJLWjA4Sy1sdU56TmJWUQ?oc=5",
-            "published": "Sun, 08 Nov 2026 18:00:00 GMT"
+            "id": "4432822",
+            "name": "Isaac Okoro",
+            "starter": true,
+            "game_pts": 12.0
           },
           {
-            "title": "76ers vs Bulls Prediction, Pick, NBA Odds for Sunday, November 8 - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaXZtUng3VS1DX2xEQ0ZyZzBpck5DNVBHaHBkNFVyck90X2w3V2t5TDlKMFdYR000ZWE5Z1FxVzVaMm1UZGpTNzZERzdZMFJycWRNUVB6UktyTm5SdW9fRVNlc3NuaEpPclp6UU9uMG1idWc2YW5tX21FeDFPdFBoSVM2MnlpUQ?oc=5",
-            "published": "Sun, 08 Nov 2026 11:52:29 GMT"
+            "id": "4711294",
+            "name": "Matas Buzelis",
+            "starter": true,
+            "game_pts": 19.0
           },
           {
-            "title": "Philadelphia 76ers vs Chicago Bulls: Where to watch Sunday's game and what time is the first pitch - MARCA",
-            "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQYWJZaXp2ZUdYbWdlNkxieFpOQXQ2bGh5OEFobGFNT1BwanJzWkxiMDBOMXJ4Y3JlUmk5TTV6VTFIeVF3dC0wLXVXNFNjN2pVRFNlb2FWdEpmbUR3d1RsaHNmN0ZoUmRlY1E3RzhIN2ZxSXhqLUdBSXBwd1g3V0tVX3p5ZEJoNG4wWWpCcVVCUjJwc1hnREhEWThkbzFDWE1maTRNbWNPZy1jZ1lMSWpHbVh5ZFhsM292eDd0ZTNKYnJCNkZIN3lkTG5BaU10a2w4WEhWR25PdmlxNjBZd1dHSU9HYmREUTNMTHczX2FHVElVVjV0TmFCS3ZJZmRlS3BjTGfSAYICQVVfeXFMTjNVNWhFQ0F5TGgzZDh1akZhRWJYSTRSSUZhVEdOSEVTUHItMGpGd0tCUVRRMW9FRE1PUWQ4emh3ekgxOE9fVnZ5bU16YVB1VGhCbnUwSkVMUno2eUVaelIzdnVIWVhVOFAxeDJUSXhvRi1iTy10QU44ZHd0OHQ5eEM0LVdPRGhVRzkyNmZvZFhEZlYxdlpEMDV0M2VrSHRVRFI4XzJDUV9PQVQ2a0c2T3dMOHBmNWFmNktGQ0Vmb1E5T0l3cmhmTU11RWpJMUJVem9sQU9IQkVFMklzdGZsQmhOei1xTzNhYlVVTHZ6NEpIQ2VjWnpTVDN1LTJVQWtONmh3?oc=5",
-            "published": "Sun, 08 Nov 2026 16:33:43 GMT"
+            "id": "5095151",
+            "name": "Caleb Wilson",
+            "starter": true,
+            "game_pts": 18.0
+          },
+          {
+            "id": "4871145",
+            "name": "Josh Giddey",
+            "starter": true,
+            "game_pts": 19.0
+          },
+          {
+            "id": "4431687",
+            "name": "Patrick Williams",
+            "starter": false,
+            "game_pts": 7.0
+          },
+          {
+            "id": "5242496",
+            "name": "Noa Essengue",
+            "starter": false,
+            "game_pts": 10.0
+          },
+          {
+            "id": "4278067",
+            "name": "Nic Claxton",
+            "starter": false,
+            "game_pts": 4.0
+          },
+          {
+            "id": "4395626",
+            "name": "Tre Jones",
+            "starter": false,
+            "game_pts": 6.0
+          },
+          {
+            "id": "4683750",
+            "name": "Jordan Hawkins",
+            "starter": false,
+            "game_pts": 9.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=76ers+Bulls&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T18:21:19.324194+00:00"
+        "away": [
+          {
+            "id": "1966",
+            "name": "LeBron James",
+            "starter": true,
+            "game_pts": 22.0
+          },
+          {
+            "id": "3059318",
+            "name": "Joel Embiid",
+            "starter": true,
+            "game_pts": 18.0
+          },
+          {
+            "id": "3917376",
+            "name": "Jaylen Brown",
+            "starter": true,
+            "game_pts": 29.0
+          },
+          {
+            "id": "4431678",
+            "name": "Tyrese Maxey",
+            "starter": true,
+            "game_pts": 27.0
+          },
+          {
+            "id": "5124612",
+            "name": "VJ Edgecombe",
+            "starter": true,
+            "game_pts": 13.0
+          },
+          {
+            "id": "3912848",
+            "name": "Dean Wade",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4432446",
+            "name": "Jabari Walker",
+            "starter": false,
+            "game_pts": 9.0
+          },
+          {
+            "id": "2581018",
+            "name": "Kentavious Caldwell-Pope",
+            "starter": false,
+            "game_pts": 6.0
+          },
+          {
+            "id": "4351851",
+            "name": "Anfernee Simons",
+            "starter": false,
+            "game_pts": 3.0
+          }
+        ]
       }
     },
     "401909946": {
@@ -2985,7 +3058,7 @@
         "abbr": "LAL",
         "name": "Los Angeles Lakers"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909946",
@@ -3036,52 +3109,125 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Los Angeles Lakers vs Detroit Pistons Nov 8, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84d1ZIZ1pkNFgyREh6eGtyZ1pvUTlPQnRBb2Y5RHo1R0E5cWYtY0ZmcmpzUzc0bHdCcHNLdGpTNVh6Z28yMklYb1N5ZGh5RTNQTXI5QjVHRVJ3dw?oc=5",
-            "published": "Sun, 08 Nov 2026 13:08:11 GMT"
+            "id": "3157465",
+            "name": "Duncan Robinson",
+            "starter": true,
+            "game_pts": 6.0
           },
           {
-            "title": "Pistons vs Lakers preview: Best Defense vs best offense - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM1hKaEVHalY2S1NWWGN2OGp6cTlDcjcwNmxialpaYXJSLXVzc3BkUlZPTTZiS3dUejJpaUthT3FoYi00TDhrcTdCSWtVR1NuUUFXUWhNRF9UZWk2WnB1S2F4T0k4SnU0Y1luam5wSmwyVl9lQVNvdlpUelBlNTQzYzQzZzg0UQ?oc=5",
-            "published": "Sun, 08 Nov 2026 15:57:39 GMT"
+            "id": "3908845",
+            "name": "John Collins",
+            "starter": true,
+            "game_pts": 8.0
           },
           {
-            "title": "Lakers vs. Pistons Prediction, Odds and Best NBA Prop Bets for Sunday, Nov. 8 - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQT1M2YkZWNXBfcmlTTXRNczBQNkwxR3dIX0ZqVUdfZWdrdzFzTmw3ZXV4WGdYTFpoWmdMWFo5NGlEMWswS2JrckIzc3VIS0NqTk5hUEZJTFRVbndJcGtsNWc5eDJ1RW5rTWR0THVlSzA5dndFUkd4dm9uVEktSXZzZExqNDdkVW9Ec1VBbkVfZFdTU3RTM1VSRFhESHgzenV4UDJpUm5La1g?oc=5",
-            "published": "Sun, 08 Nov 2026 16:51:18 GMT"
+            "id": "4278562",
+            "name": "Paul Reed",
+            "starter": true,
+            "game_pts": 4.0
           },
           {
-            "title": "LA Lakers Put Four-Game Winning Streak On the Line Against the Pistons - Athlon Sports",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdm5qdU93VGV0VVRza2hwSDlxTWtQMDVnWmc1Y1FscG5lNVN6OWpfQklabkJlM1FiNU00YW11djFnV1RXTjF2SU1yVGdNOHgxSGoxOThnbExWVTdEcnRXMzFweENMdkxUSlk0ZzRkY0doYkpkQ1pPX0R0RUlXMldFQjNxclVNOGh0emZGSFFoTW1yTFJ1V3dfTG5KV0RNbGtBTmlkcA?oc=5",
-            "published": "Sun, 08 Nov 2026 17:27:29 GMT"
+            "id": "4432166",
+            "name": "Cade Cunningham",
+            "starter": true,
+            "game_pts": 10.0
+          },
+          {
+            "id": "4684742",
+            "name": "Ausar Thompson",
+            "starter": true,
+            "game_pts": 5.0
+          },
+          {
+            "id": "4683771",
+            "name": "Ronald Holland II",
+            "starter": false,
+            "game_pts": 5.0
+          },
+          {
+            "id": "2596112",
+            "name": "Javonte Green",
+            "starter": false,
+            "game_pts": 4.0
+          },
+          {
+            "id": "4066372",
+            "name": "Kevin Huerter",
+            "starter": false,
+            "game_pts": 19.0
+          },
+          {
+            "id": "5107199",
+            "name": "Daniss Jenkins",
+            "starter": false,
+            "game_pts": 28.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Lakers+Pistons&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T18:21:19.865873+00:00"
+        "away": [
+          {
+            "id": "4592691",
+            "name": "Jake LaRavia",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4433136",
+            "name": "Walker Kessler",
+            "starter": true,
+            "game_pts": 9.0
+          },
+          {
+            "id": "3907498",
+            "name": "Matisse Thybulle",
+            "starter": true,
+            "game_pts": 4.0
+          },
+          {
+            "id": "4066457",
+            "name": "Austin Reaves",
+            "starter": true,
+            "game_pts": 32.0
+          },
+          {
+            "id": "4397014",
+            "name": "Quentin Grimes",
+            "starter": true,
+            "game_pts": 12.0
+          },
+          {
+            "id": "4278077",
+            "name": "Jarred Vanderbilt",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4278580",
+            "name": "Sandro Mamukelashvili",
+            "starter": false,
+            "game_pts": 7.0
+          },
+          {
+            "id": "4433137",
+            "name": "Ziaire Williams",
+            "starter": false,
+            "game_pts": 11.0
+          },
+          {
+            "id": "5060631",
+            "name": "Adou Thiero",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4277811",
+            "name": "Collin Sexton",
+            "starter": false,
+            "game_pts": 13.0
+          }
+        ]
       }
     },
     "401909947": {
@@ -3098,7 +3244,7 @@
         "abbr": "UTAH",
         "name": "Utah Jazz"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909947",
@@ -3149,52 +3295,131 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Utah Jazz vs Minnesota Timberwolves Nov 8, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EOV9rYnBwQUZmdHdTY3laRjRNeVZvQUlMTGFIbHlXdS1TVUxUTlhCbWNFTDBhVXpPN1pKVE5DM2hkN2dLRmFUZ3UxM2hmcGxfdjhaY05COXM4QQ?oc=5",
-            "published": "Sun, 08 Nov 2026 13:48:35 GMT"
+            "id": "4431671",
+            "name": "Jaden McDaniels",
+            "starter": true,
+            "game_pts": 6.0
           },
           {
-            "title": "Jazz vs. Timberwolves (9 Nov, 2026) Live Score - ESPN",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1RNjhNdm52ME1vU2sweU1MNUhGd2dEb1UtN3VoVF92MUVGdzZBVnZManU0aVFqdlRTTjJ3Rlp4cGRLLXdiUVV0Y0psVEstdU5OTV9EMHZYMVByUFZoUWx5SmVqMVoxZWZkQUF6dG54eFJKX2d5bTQxeg?oc=5",
-            "published": "Sun, 08 Nov 2026 17:36:08 GMT"
+            "id": "4433247",
+            "name": "Jonathan Kuminga",
+            "starter": true,
+            "game_pts": 4.0
           },
           {
-            "title": "Utah Jazz @ Minnesota Timberwolves Odds - FanDuel Sportsbook",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYW9fVl9hOTdRQy1zNVI0eTFVYnV6cmFHYzVfNE1jamEwOEZxTUtKd3gwNFNzUERtbVM3cUNYNldJVXFRQk5tUDBMUVNhblIwaGJ5NFl1NHN4NXE4MWh1eGU5S2oxb2lxcmZ6RGFCZ0FlNlBLT1N0NmluMy1NeFdPNnhxSnJENmZHdWZGWXVUZzlJb1k?oc=5",
-            "published": "Sun, 08 Nov 2026 12:18:25 GMT"
+            "id": "3032976",
+            "name": "Rudy Gobert",
+            "starter": true,
+            "game_pts": 6.0
           },
           {
-            "title": "Utah Jazz Aim to Break 7-Game Losing Streak Against Minnesota Timberwolves - Athlon Sports",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUWxWOXItbG9vTWxHbHVxMGFQMnBxcElGTjFkV0stRVFZOTRia0doYXJhWmI5NVpKckdDRFZlSWtsMGpZUDRieFFwdGQxYVBpUy0zS2YycUR1eENWbGkxQ2MyOXdiX25SSy1PSDRyNlRMTms0TzVOQmFzcEtXQTBVUU5WaFRqOWZKSUdDWGlOekp3MVE5OWdnQWk2SlltMlpROEE?oc=5",
-            "published": "Sun, 08 Nov 2026 17:28:03 GMT"
+            "id": "4397002",
+            "name": "Ayo Dosunmu",
+            "starter": true,
+            "game_pts": 10.0
+          },
+          {
+            "id": "4432816",
+            "name": "LaMelo Ball",
+            "starter": true,
+            "game_pts": 12.0
+          },
+          {
+            "id": "3136196",
+            "name": "Trey Lyles",
+            "starter": false,
+            "game_pts": 5.0
+          },
+          {
+            "id": "5279133",
+            "name": "Joan Beringer",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4432247",
+            "name": "Jaylen Clark",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4432847",
+            "name": "Terrence Shannon Jr.",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4592492",
+            "name": "Bones Hyland",
+            "starter": false,
+            "game_pts": 7.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Jazz+Timberwolves&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T18:21:20.339971+00:00"
+        "away": [
+          {
+            "id": "4397077",
+            "name": "Jaxson Hayes",
+            "starter": true,
+            "game_pts": 5.0
+          },
+          {
+            "id": "4432811",
+            "name": "Josh Green",
+            "starter": true,
+            "game_pts": 4.0
+          },
+          {
+            "id": "4433627",
+            "name": "Keyonte George",
+            "starter": true,
+            "game_pts": 11.0
+          },
+          {
+            "id": "4873138",
+            "name": "Ace Bailey",
+            "starter": true,
+            "game_pts": 5.0
+          },
+          {
+            "id": "5041955",
+            "name": "Darryn Peterson",
+            "starter": true,
+            "game_pts": 9.0
+          },
+          {
+            "id": "4684793",
+            "name": "Kyle Filipowski",
+            "starter": false,
+            "game_pts": 7.0
+          },
+          {
+            "id": "4277919",
+            "name": "Mo Bamba",
+            "starter": false,
+            "game_pts": 1.0
+          },
+          {
+            "id": "3133602",
+            "name": "Svi Mykhailiuk",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4065663",
+            "name": "Josh Okogie",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4683766",
+            "name": "Isaiah Collier",
+            "starter": false,
+            "game_pts": 2.0
+          }
+        ]
       }
     },
     "401909948": {
@@ -3211,7 +3436,7 @@
         "abbr": "BKN",
         "name": "Brooklyn Nets"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909948",
@@ -3262,52 +3487,125 @@
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       },
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
+      "lineups": {
+        "home": [
           {
-            "title": "Brooklyn Nets vs Dallas Mavericks Nov 8, 2026 Game Summary - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE02a2d1WkJxbHhUd25MN0E1SHJodW5KMGhHOHFabU5BUFp3bG50a2M2TUQ3cEttRGhwbzJSaVBlRERTbkt5NGFuckdLaURIVEp0bGNRZ3dpZlhCUQ?oc=5",
-            "published": "Sun, 08 Nov 2026 13:39:24 GMT"
+            "id": "3138160",
+            "name": "Caleb Martin",
+            "starter": true,
+            "game_pts": 2.0
           },
           {
-            "title": "Nets vs. Mavericks Preview: Sunday night basketball in Dallas - NetsDaily",
-            "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPampyMmZHemU5RW5UeFJFZE9IeW9FZDRZeFZPNi1FcS1iN0RNUlItVmxRZkc5bktFY1dmRnRVbVRZLUdoY0lzQXJpWXhla1AybzBkTXZxNnlUb3BwbDVBaEtLWUhLV3VZdG14RHVCOGgtZDZ5U2hKUUhVZkc2a202elRmMkpEbzJDR3FYQWdCb1gtZEdwN3c4WTFYbmVPZFZMMXBKNTZjNHVqYWY4ZEVNRnhHdkMxLWo5MXc0R29Cby14LWM0UWxrV2FIZUxqcUFfaXhjZFkzc0ltOXpiNUltTHdsY2VsMHRobWhR?oc=5",
-            "published": "Sun, 08 Nov 2026 16:58:02 GMT"
+            "id": "4278049",
+            "name": "Daniel Gafford",
+            "starter": true,
+            "game_pts": 1.0
           },
           {
-            "title": "Nets vs Mavericks Prediction, Pick, NBA Odds for Sunday, November 8 - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSlc0TTRtNElDaENnV1NDTzhDQ2hHWWdNRmVCRHlmTTItWDFGSUJXV1UzRGV2andTcVlESjZFSFIwQzBCZWxseXNwUnBIMl91WkJPV2VWSThjeUh1RDFLVmVaUk9KOXdvRmZNM2hiREl4UlZEbFg4aGNKTEdIQjg4Z19oak9mM0w0TVE?oc=5",
-            "published": "Sun, 08 Nov 2026 14:10:00 GMT"
+            "id": "4278078",
+            "name": "P.J. Washington",
+            "starter": true,
+            "game_pts": 0.0
           },
           {
-            "title": "Mavericks Have Cleanest Injury Report of Season for the Brooklyn Nets - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVzNJb1d0Qklia3RnNjVSZ0xqSjRNN0FidkFLbEQ3anh4UVRqcXhpWThZanJtXzJac1ZDWV81Q253Zi04eE1hSVRWX2ZXVUd1eExCTk1ucVZOOUZybjJKQTFZSS1jYnlObHlqWlpucWk1SnBITm03bUVMbkNlNWI3SWJwZ0s3b1hqcmZLOHJOS1hpRXBoUXZJY1l4SzRlcmkwci1CaGt3RU4?oc=5",
-            "published": "Sun, 08 Nov 2026 18:11:31 GMT"
+            "id": "5041939",
+            "name": "Cooper Flagg",
+            "starter": true,
+            "game_pts": 8.0
+          },
+          {
+            "id": "6442",
+            "name": "Kyrie Irving",
+            "starter": true,
+            "game_pts": 9.0
+          },
+          {
+            "id": "4278594",
+            "name": "Naji Marshall",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4593125",
+            "name": "Santi Aldama",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4873153",
+            "name": "Morez Johnson Jr.",
+            "starter": false,
+            "game_pts": 2.0
+          },
+          {
+            "id": "5211175",
+            "name": "Zaccharie Risacher",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4896372",
+            "name": "Walter Clayton Jr.",
+            "starter": false,
+            "game_pts": 3.0
           }
         ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Nets+Mavericks&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-08T18:21:20.814283+00:00"
+        "away": [
+          {
+            "id": "3064514",
+            "name": "Julius Randle",
+            "starter": true,
+            "game_pts": 3.0
+          },
+          {
+            "id": "4278104",
+            "name": "Michael Porter Jr.",
+            "starter": true,
+            "game_pts": 7.0
+          },
+          {
+            "id": "5107173",
+            "name": "Danny Wolf",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4432194",
+            "name": "Day'Ron Sharpe",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "5279130",
+            "name": "Nolan Traore",
+            "starter": true,
+            "game_pts": 5.0
+          },
+          {
+            "id": "4712896",
+            "name": "Noah Clowney",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "3150844",
+            "name": "Moritz Wagner",
+            "starter": false,
+            "game_pts": 3.0
+          },
+          {
+            "id": "3907823",
+            "name": "Terance Mann",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4702177",
+            "name": "Keon Ellis",
+            "starter": false,
+            "game_pts": 0.0
+          }
+        ]
       }
     },
     "401909949": {
@@ -3399,22 +3697,22 @@
           {
             "title": "Boston Celtics vs Milwaukee Bucks Nov 8, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HaENNUzgyWjFFMUVYamhaVHN1X1hJc0NlU0ZNU0dNbDB5Z2FaLVIxUWFCekoxY215dmJ6b1l6SlFyYWpVWDlRQUdCdXNZNk43bFJ0cS03UUlsZw?oc=5",
-            "published": "Sun, 08 Nov 2026 10:20:45 GMT"
+            "published": "Sun, 08 Nov 2026 22:20:46 GMT"
           },
           {
-            "title": "Celtics vs. Bucks Prediction, Odds and Best NBA Prop Bets for Sunday, Nov. 8 - Sports Illustrated",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVE9OSlYwZGhvOWZCQ1kzWFM5ekQ1cThlb3VXNzlsazdPME90MnJiTmk4aGtIM2Fnamp2cUJZSjJsRWM0aG4zR2xCLWF2STFFYUVHcS04d0p4OVBWYS1DdUszbW5CSmIyNjdtRVhQXzBSUFBuXzdFbmtGV0pBa0F6R0R2aEhLUEs4ZEV4VFhRd1Bob2ttcy11NWxGWHhPdENOc2lfR1BRVQ?oc=5",
-            "published": "Sun, 08 Nov 2026 17:27:58 GMT"
+            "title": "How to watch Celtics vs. Bucks: TV channel and streaming options for November 8 - The New York Times",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaDVjUFpSNEVXV3pORzhwN25JemtTcWdZVnlHX3dSWmRLTEJlMzFuUXR3N0N2TW5CT2g5aWRyRTRUazFRdEN2Z0FaaUFXXzNMbTVZZEFRZmFLZDdReE9sWXZjaVNVVERNRmVITWVvOF9zT0sxNG1DWnlONWk4OURRMDIzT0ZCZkd3LTh3blVDN0ZaS2JWVlBFQU8wQQ?oc=5",
+            "published": "Sun, 08 Nov 2026 20:07:19 GMT"
           },
           {
-            "title": "Avoid the Spread: Why the Bucks Might Be the Value Bet Against the Celtics Tonight - Athlon Sports",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaTVEdkluQXNucFVMVHRaY2ZsWklRSDNhd05iaURwazh0ZjhsZzBJWUNZdGlCSWdpYzhnTW9iZW5UWDJjSzFlak82Qm5jWm5IXzd3TVRwbmVxOWtMZ0RQMEpGSHk0YUJCYjFIQkk2cTJEZFY0bEU3ZUhjWkxGT1BkeGl1R0xRSFN3OG9rMmdlRTV4VU1ONkhiamdwU2xyaEE?oc=5",
-            "published": "Sun, 08 Nov 2026 17:52:11 GMT"
+            "title": "Bucks vs. Celtics, Milwaukee trying to keep vibes up in losing streak - Milwaukee Journal Sentinel",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOZnpEWWp2ekZaem96VG9XS29TejJHS0QyYnZXWGttTWtnM0dxckFEamNhMUt5V0JwcFVmcExBUXpQNGdja2tsQ3VPOV9WQlNLS19VN0FWRVl5SUJOYnRsSnowaklGLWdhRjdCZ29nMFVVcnUxQURqTy1MeEFJaTctQ2tHZWs3YXVzMF9ZemJSWENLbjZNMWFvZTBaY1cyZnNCSkRxcmQwSmFSWldDN01uZG5TblVvQUduOTNwd1dBVllfbGszZ3I4Z0J6dUZDWVFCWG5hWE9oQUZBOXJ5TE9yNXFOQ0xmelVoT2JqTGhBdVZjZw?oc=5",
+            "published": "Sun, 08 Nov 2026 22:14:00 GMT"
           },
           {
-            "title": "Milwaukee Bucks vs Boston Celtics Injury Report and Game Preview - roundtable.io",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVFF5a0I5SDcweGlZdUwyNlZUWS1DeU5DVXFfOHpLU3cyVi1aREdLU1JDSEtOUzlEUFVkNnZablBPTld6RkNnZUhUYXJqaW45cHNDdWMtQ0c1NDRlV1RrcFJGZndBdGVkSG5wVzhCX2R0dV9ldVB3ejhMSUdPcVZuUnpTOFh0d3ZJcVd2M1c4Y0JTb0I1LS1nU1p0SjM4V2NPX3AzU1JHckJxVVNk?oc=5",
-            "published": "Sun, 08 Nov 2026 18:13:12 GMT"
+            "title": "Boston Celtics (7-2) at Milwaukee Bucks (1-8) Game #10 11/8/26 - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUDdoODB4RnhiSkNEcTY4Y2hRbGZEcUR5T1ZiRl9JWVJVeG9tSy1iU2ZGaHNDY3QxaXkyVkJlR081WkZ5bDlHOWFYYnhhRWM1aUYxckJicTFoUnNMOXJyczVCRGNqNkpMS3ZiTUoxN0llNWtSYVhIbDJxWkI2T0FBclVZWQ?oc=5",
+            "published": "Sun, 08 Nov 2026 22:00:00 GMT"
           }
         ],
         "forum": {
@@ -3428,7 +3726,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-08T18:21:21.383723+00:00"
+        "context_updated_at": "2026-11-09T01:04:42.294898+00:00"
       }
     },
     "401909950": {
@@ -3512,12 +3810,12 @@
           {
             "title": "New Orleans Pelicans vs LA Clippers Nov 8, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14Vld6aG9KM0VBbmFlSkMzT0dLNURBbG9vUmd3bVlFWXBUZEJVRnl0bmtyUm96UTNCbUZYSlV3cFNqeUV5ZE51XzNxcUlNc3FoSjhLU195WUx4Zw?oc=5",
-            "published": "Sun, 08 Nov 2026 17:13:38 GMT"
+            "published": "Sun, 08 Nov 2026 23:20:18 GMT"
           },
           {
-            "title": "Pelicans vs. Clippers: Injury Report, Game Preview 11/8/2026 - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTGRaTi1pMS1lNDdMUFdrU0ZYM1h6U2xRVFY5UXgxblVwRlR2UDJPM1lOVUcxWFQ1LXZrNDV2R3R3OXptTl81Q0xQZFNIMnN0WkJyOGNrTWRPbWNyYzNHVU81NlBMVnl5R2hlanVEd3lZTkNpX1R1STJWMHhQbzdfUF9IT1RQMlBBVGE0?oc=5",
-            "published": "Sat, 07 Nov 2026 20:44:47 GMT"
+            "title": "Pelicans vs Clippers Game Overview, Stats, Injuries, Records - NBA Game on November 08, 2026 - Covers.com",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2V1lFQU5iWVlMMWdzdDZyemZ6VjlOaGJHazhuS3VXTTV1QXFmXzd6X0NCZ0lNQ0ZqQ3hmOUZlRlNXU2oxUFA2WVJ5ZEo4UUpMR3F5N1F4UWxoQ01mbXpXOTROZGYzNkhUZmc?oc=5",
+            "published": "Sun, 08 Nov 2026 22:43:36 GMT"
           },
           {
             "title": "Pelicans Try to Start a New Winning Streak Versus the Clippers - Athlon Sports",
@@ -3525,9 +3823,9 @@
             "published": "Sun, 08 Nov 2026 18:05:16 GMT"
           },
           {
-            "title": "Pelicans vs. Clippers - Live Score - November 08, 2026 - FOX Sports",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPakxTczEtbWxDMHl4RHN2WHItZXB0N0k4T1JzT1g2d1pRSjZ4bE5mMXREeTB2anVDalVKeXFnYVphVUVUcG5fUjdoTElSbXliRHprbGFSZV9KdEhQdS10VVI1Um91eE5XMUdXQmx3MUtlcXZWWFNQVlMzVzhQd01HYjIyMHR5RHNGQWZkU3kzcFpvcTlmanNHN1padWRIWTA?oc=5",
-            "published": "Sun, 08 Nov 2026 06:55:39 GMT"
+            "title": "New Orleans Pelicans vs LA Clippers Nov 8, 2026 Game Charts - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kXzlNc3EtWjBXN2JOQjg0bFVCOTJXQ1hzMDljWGkxa3gzUi1UTHM3WlRBOGtOV2MwNXA2Z01wUFM2UUdtb3V3NUFGX0l6VkVrQlVsMlQteFMtMnlBVTBuVGp1M1J6NUphYUE?oc=5",
+            "published": "Sun, 08 Nov 2026 20:52:28 GMT"
           }
         ],
         "forum": {
@@ -3541,7 +3839,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-08T18:21:21.847785+00:00"
+        "context_updated_at": "2026-11-09T01:04:42.813441+00:00"
       }
     },
     "401909951": {
@@ -3623,19 +3921,19 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
-            "title": "How To Watch Miami Heat At Sacramento Kings; Lineups, Injury Report, Betting Lines - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazBUYTdHTXg1cmJGQmI2Sk51MFVNRi00bjk5TnpOTFhCUXB3dkd4dDUtR1RKLTRvRVZ2b1YzY2daRklJWUpRX0VKb0tzcFFMQTVIcVI4VmkxZlJRcF90cERsNF9VcWdFUTdMUGVpcjl5QTFGSmczNzJiMVRBcUJUR2ZkZ0I5MGRzSkE?oc=5",
-            "published": "Sun, 08 Nov 2026 17:00:39 GMT"
-          },
-          {
-            "title": "Heat’s Davion Mitchell back in Sacramento with lessons learned from Kings days - Sun Sentinel",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU1gwTTNwRjdRUDZDNzhjUUgybU1rMGdLT2R2WEVvMklXb19jYmx6MWt0dmNMSWwwaGdnYjFlejFVUFpGS3ZFc1BBRXF2YXAtMmdXOHBpbUk1NndMZzdiam96aks5NXljUnVVcUVTTjJoY3E2RnppYWtnT2c5MjZ1aS04cFVzMDR5b29CdXNTN1h1b2ZyYU1JV3hsek9pZjJzRHEyczdzSUpfNGVGcG9xeUZWWkpkSFktMVE?oc=5",
-            "published": "Sun, 08 Nov 2026 14:39:04 GMT"
+            "title": "Miami Heat-Sacramento Kings Preview: Injuries, Odds, How to Watch & Starters - Sports Illustrated",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaFptZW5UWFVHUXlGS3lxQWN2ZzVBV3VxbDFwaWtONFh6ZGpxc0NKVGlQeVBfYmdJa1JTY3hJYmE1UVJncFh3Q1p3U282bkhRRUhpeEVPYXpETWdsZGQyajJmOFlLbDBUT0hMWWFtLXlFQ2VuQ2d5UlZ3RHUwUGlpWloxY1pVMm5WM0FGSEFyd2R5Y1d1R0FXbFpqLU56Y2wtQmxabnljbUhsd1k4aFhya1JMdW9yd3B0?oc=5",
+            "published": "Sun, 08 Nov 2026 23:53:26 GMT"
           },
           {
             "title": "Miami Heat @ Sacramento Kings Odds - FanDuel Sportsbook",
             "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPLXZsazd5RUJJNkxOUmhSUC01OFZBVjl5bFg2R3ZrZS1HVldsdFZGNlN0QV85c2xWWFdITk5yQkxDbm54cHFUZVRqd2hsVERWNmc1N0QtX18tWWh2dlc1UndOU1lubWpIWmV5OUVMTmxuR0RGUjNybTdoOVl6OHJBbGdjWnF0SnE4RGhmWA?oc=5",
-            "published": "Sun, 08 Nov 2026 16:59:08 GMT"
+            "published": "Sun, 08 Nov 2026 23:57:17 GMT"
+          },
+          {
+            "title": "How To Watch Miami Heat At Sacramento Kings; Lineups, Injury Report, Betting Lines - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazBUYTdHTXg1cmJGQmI2Sk51MFVNRi00bjk5TnpOTFhCUXB3dkd4dDUtR1RKLTRvRVZ2b1YzY2daRklJWUpRX0VKb0tzcFFMQTVIcVI4VmkxZlJRcF90cERsNF9VcWdFUTdMUGVpcjl5QTFGSmczNzJiMVRBcUJUR2ZkZ0I5MGRzSkE?oc=5",
+            "published": "Sun, 08 Nov 2026 17:00:39 GMT"
           },
           {
             "title": "Miami Heat's Giannis Antetokounmpo Seeks 7th Straight Double-Double in Sunday Game Against Kings - Athlon Sports",
@@ -3654,7 +3952,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-08T18:21:22.409489+00:00"
+        "context_updated_at": "2026-11-09T01:04:43.438357+00:00"
       }
     },
     "401914126": {
@@ -4302,12 +4600,19 @@
         "locked": true
       },
       "elo_baseline_home_pct": 56.1,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 48.9,
+        "away_pct": 51.1,
+        "predicted_at": "2026-11-09T01:04:39.749235+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor margen de puntos reciente y mejor balance de anotación.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Boston Celtics",
         "opponent": "Philadelphia 76ers",
-        "favorite_pct_original": 52.0,
+        "favorite_pct_original": 51.1,
         "classification": "Partido muy cerrado",
         "observations": [
           "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
