@@ -375,6 +375,35 @@ def public_history(history: dict, limit: int = 45) -> list[dict]:
     return visible[:limit]
 
 
+
+def archived_games(all_events: dict, history: dict, day: date, days: int = 7) -> list[dict]:
+    """Calendario de días pasados: resultados verificados y predicciones reales guardadas.
+
+    No inventa probabilidades retrospectivas. El historial NO cambia ni se
+    recalcula con los resultados posteriores al inicio del juego.
+    """
+    begin = (day - timedelta(days=days)).isoformat()
+    end = day.isoformat()
+    records = history.get('predictions', {})
+    archived = []
+    for original in all_events.values():
+        if not isinstance(original, dict) or not (begin <= str(original.get('date', '')) < end):
+            continue
+        # No cambiar la caché de eventos con propiedades de presentación.
+        game = dict(original)
+        game['historical'] = True
+        record = records.get(str(game.get('id')))
+        game['prediction'] = locked_prediction(record)
+        game['revised_prediction'] = latest_pre_match_revision(record)
+        # No inventar marcador final si no lo ha confirmado la fuente.
+        if game.get('status') != 'post':
+            game['home_score'] = None
+            game['away_score'] = None
+        archived.append(game)
+    archived.sort(key=lambda g: (g['datetime'], g['id']))
+    return archived
+
+
 def refresh(today: date | None = None):
     now = datetime.now(timezone.utc)
     day = today or now.astimezone(ZONE).date()
@@ -532,12 +561,16 @@ def refresh(today: date | None = None):
         history['predictions'] = dict(sorted(history['predictions'].items(),
                                            key=lambda p: p[1]['date'], reverse=True)[:800])
     metrics = evaluate(history['predictions'])
+    # Siete fechas previas y agenda actual; registros viejos sin pronóstico
+    # muestran solo el resultado real, nunca un porcentaje retrocalculado.
+    archived = archived_games(all_events, history, day, days=7)
     snapshot = {
         'as_of': now.isoformat(), 'date': day.isoformat(), 'timezone': 'America/Santo_Domingo',
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
         'source_url': 'https://www.espn.com/nba/scoreboard',
         'model': 'elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado',
-        'games': schedule, 'teams': teams,
+        'games': archived + schedule, 'teams': teams,
+        'archive_days': 7,
         'validation': metrics,
         'history_recent': public_history(history),
         'data_quality': {'history_partial': bool(failed_days),
@@ -550,7 +583,8 @@ def refresh(today: date | None = None):
                   'Lesiones disponibles como contexto no verificado; comprobar informe oficial',
                   'Foros y noticias no alteran automáticamente los porcentajes',
                   'Las probabilidades no están calibradas ni garantizan resultados',
-                  'Revisiones prepartido se guardan aparte; las métricas evalúan el primer pronóstico'],
+                  'Revisiones prepartido se guardan aparte; las métricas evalúan el primer pronóstico',
+                  'Se muestran 7 días históricos con marcadores verificados y predicciones originales si existían'],
     }
     all_events = {gid: e for gid, e in all_events.items() if e['date'] >= cutoff}
     box_cache = {gid: entry for gid, entry in box_cache.items() if gid in all_events}

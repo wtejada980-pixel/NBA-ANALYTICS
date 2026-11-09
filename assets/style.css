@@ -293,3 +293,8 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .revision-note{display:flex;flex-direction:column;gap:5px;border-left:3px solid #ff7841;background:#261d19;border-radius:0 8px 8px 0;margin:13px 0 2px;padding:10px 12px}
 .revision-note strong{color:#ffc29e;font-size:10px;letter-spacing:.05em}
 .revision-note span{font-size:10px;color:#d4c9c3;line-height:1.5}
+
+/* Navegación horizontal por 7 días históricos y 3 de agenda */
+.date-tabs{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#534139 transparent}
+.date-tabs button{flex-shrink:0;white-space:nowrap}
+.archive-note{font-size:12px;line-height:1.7;color:#bcb3b0;background:#211c1c;border:1px solid #564039;padding:13px;border-radius:9px}

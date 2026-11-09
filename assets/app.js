@@ -381,9 +381,15 @@
         formatPct(game.prediction.home_pct) +
         '%</span><span>Recalculado con resultados previos. La predicción original permanece en el historial.</span></div>' :
         '') +
-      '<div class="game-bottom">' + verdict + '</div>' +
+      '<div class="game-bottom">' + verdict +
+      (game.historical ? '<span class="pre-match-flag">ARCHIVO · RESULTADO VERIFICADO CUANDO ESTÉ DISPONIBLE</span>' : '') +
+      '</div>' +
       '<span class="expand-hint">Ver jugadores y titulares <span class="expand-arrow" aria-hidden="true">⌄</span></span></summary>' +
-      '<div class="game-breakdown">' + matchupInsights(game) + playersPanel(game) +
+      '<div class="game-breakdown">' +
+      (game.historical ?
+        '<p class="archive-note">Este es un partido histórico. Solo se muestran porcentajes prepartido si se guardaron antes del inicio. ' +
+        'No presentamos forma actual ni titulares como si fueran datos del pasado.</p>' :
+        matchupInsights(game) + playersPanel(game)) +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
         '" target="_blank" rel="noopener noreferrer">Ficha del partido en ESPN ↗</a>' : '') +
       '</div></details>';

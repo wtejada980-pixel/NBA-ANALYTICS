@@ -128,6 +128,43 @@ class ParseTests(unittest.TestCase):
                   datetime(2026,11,7,16,0,tzinfo=timezone.utc))
         self.assertNotIn('revisions',record)
 
+    def test_archived_games_keep_only_real_pre_match_predictions(self):
+        from datetime import date
+        game = update.parse_event(sample_event(event_id='1', state='post'))
+        another = update.parse_event(sample_event(event_id='2', state='post'))
+        game['date'] = another['date'] = '2026-11-04'
+        history = {'predictions': {'1': {
+          'date':'2026-11-04', 'home_pct':60, 'away_pct':40,
+          'predicted_at':'2026-11-04T12:00:00Z',
+          'scheduled_at':'2026-11-04T22:00:00Z',
+          'model':'v2', 'result':{'winner':'home'}}}}
+        rows = update.archived_games({'1':game, '2':another}, history, date(2026,11,9))
+        self.assertEqual(len(rows),2)
+        self.assertTrue(rows[0]['historical'])
+        self.assertEqual(rows[0]['prediction']['home_pct'],60)
+        self.assertIsNone(rows[1]['prediction'])
+        self.assertEqual(rows[0]['home_score'],120)
+
+    def test_archived_games_only_last_seven_days(self):
+        from datetime import date
+        old = update.parse_event(sample_event(event_id='old'))
+        old['date']='2026-10-30'
+        recent = update.parse_event(sample_event(event_id='recent'))
+        recent['date']='2026-11-06'
+        rows = update.archived_games({'old':old,'recent':recent},
+                                     {'predictions': {}}, date(2026,11,9))
+        self.assertEqual([g['id'] for g in rows], ['recent'])
+
+    def test_archive_does_not_invent_final_scores(self):
+        from datetime import date
+        running = update.parse_event(sample_event(event_id='running',state='in'))
+        running['date']='2026-11-08'
+        rows = update.archived_games({'running':running},{'predictions':{}},
+                                     date(2026,11,9))
+        self.assertEqual(len(rows),1)
+        self.assertIsNone(rows[0]['home_score'])
+        self.assertIsNone(rows[0]['away_score'])
+
     def test_valid_probabilities(self):
         home = {'form': {'played':8,'margin': 7.0, 'win_rate':.7}, 'rest_days':2, 'players':[]}
         away = {'form': {'played':8,'margin': -5.0, 'win_rate':.3}, 'rest_days':1, 'players':[]}

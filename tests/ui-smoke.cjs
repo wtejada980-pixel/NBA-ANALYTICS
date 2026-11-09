@@ -42,6 +42,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
 
 (async () => {
   assert.match(html,/id="games"/);
+  assert.match(html,/Historial: últimos 7 días/);
   assert.match(html,/id="scouting-games"/);
   assert.doesNotMatch(html,/thescore|theScore/i);
   assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
@@ -72,6 +73,16 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/36\.6/);
   assert.match(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
+  const pastDate = new Date(Date.now()-86400000).toISOString().slice(0,10);
+  const archiveGame={...game,id:'past',date:pastDate,status:'post',historical:true,
+    home_score:112,away_score:108};
+  const archiveView=await mount({as_of:new Date().toISOString(),
+    date:today,games:[archiveGame,game]});
+  assert.match(archiveView.node('date-tabs').innerHTML,/data-date=/);
+  // Elegir fecha pasada en la interfaz y mostrar resultado verdadero.
+  const historicalTab = archiveView.node('date-tabs').innerHTML;
+  assert.match(historicalTab,new RegExp(pastDate));
+  assert.match(source,/archive-note/);
   const revisionGame = {...game,
     prediction:{...game.prediction,predicted_at:new Date(Date.now()-3600_000).toISOString()},
     revised_prediction:{home_pct:57.2,away_pct:42.8,
