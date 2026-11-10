@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261109-archive">
+  <link rel="stylesheet" href="assets/style.css?v=20261109-v3">
 </head>
 <body>
   <div class="site-shell">
@@ -78,6 +78,17 @@
         <p id="data-health" class="data-health" role="status"></p>
       </section>
 
+      <section class="v3-lab" aria-labelledby="v3-lab-title">
+        <div class="quality-heading">
+          <p class="overline">EXPERIMENTO · SIN CAMBIAR LAS PREDICCIONES OFICIALES</p>
+          <h2 id="v3-lab-title">V3 frente a V2</h2>
+        </div>
+        <p class="quality-intro">Comparación con los mismos partidos y fechas. El V3 sigue en pruebas: no representa apuestas ni porcentajes calibrados. La precisión real solo se mide cuando el pronóstico quedó registrado antes del comienzo.</p>
+        <div id="v3-lab-content" aria-live="polite">
+          <p class="history-empty">Consultando el laboratorio V3…</p>
+        </div>
+      </section>
+
       <section class="history-section" aria-labelledby="history-title">
         <div class="quality-heading">
           <p class="overline">REGISTRO AUDITABLE</p>
@@ -106,5 +117,6 @@
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
   <script src="assets/app.js?v=20261109-archive" defer></script>
+  <script src="assets/v3-lab.js?v=20261109-v3" defer></script>
 </body>
 </html>

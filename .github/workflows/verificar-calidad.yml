@@ -41,6 +41,8 @@ jobs:
         run: node --check assets/app.js
       - name: Verificar que la interfaz funcione con datos de ejemplo
         run: node tests/ui-smoke.cjs
+      - name: Verificar laboratorio V3 y controles de calidad
+        run: node tests/v3-ui-smoke.cjs
       - name: Comprobar archivos necesarios para la web
         run: |
           test -f index.html
