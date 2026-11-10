@@ -1,0 +1,16 @@
+{
+  "version": "logistic-v3-experimental",
+  "status": "insufficient_history",
+  "source": "ESPN (API no oficial)",
+  "coverage": {
+    "2022-23": 1315
+  },
+  "games": 1315,
+  "usable_rows": 1251,
+  "seasons": [
+    2022
+  ],
+  "published": false,
+  "validated_advantage": false,
+  "message": "Sin suficientes temporadas completas para prueba cronológica."
+}
