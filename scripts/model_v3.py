@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FOLDER = ROOT / "data" / "v3"
 FEATURES = ("elo_difference", "margin_difference", "win_rate_difference",
-            "scoring_difference", "rest_difference")
+            "scoring_difference", "defense_difference", "rest_difference")
 MODEL_NAME = "logistic-v3-experimental"
 
 
@@ -54,13 +54,19 @@ def _form(team, completed, current_day, count=10):
                 (g["home_id"] == team or g["away_id"] == team)]
     rows = relevant[-count:]
     if not rows:
-        return {"n": 0, "margin": 0., "win": .5, "scoring": 0., "rest": 3.}
+        return {"n": 0, "margin": 0., "win": .5,
+                "scored": 110., "allowed": 110., "rest": 3.}
     margins = [(g["home_score"] - g["away_score"]) *
                (1 if g["home_id"] == team else -1) for g in rows]
     rest = max(0, min(7, (current_day - _day(rows[-1])).days - 1))
+    scored = [g["home_score"] if g["home_id"] == team else g["away_score"]
+              for g in rows]
+    allowed = [g["away_score"] if g["home_id"] == team else g["home_score"]
+               for g in rows]
     return {"n": len(rows), "margin": sum(margins)/len(rows),
             "win": sum(m > 0 for m in margins)/len(rows),
-            "scoring": sum(margins)/len(rows),
+            "scored": sum(scored)/len(rows),
+            "allowed": sum(allowed)/len(rows),
             "rest": rest}
 
 
@@ -96,7 +102,8 @@ def build_features(events, min_previous=4):
                 "elo_difference": (eh-ea)/100.,
                 "margin_difference": (hf["margin"]-af["margin"])/10.,
                 "win_rate_difference": hf["win"]-af["win"],
-                "scoring_difference": (hf["scoring"]-af["scoring"])/10.,
+                "scoring_difference": (hf["scored"]-af["scored"])/10.,
+                "defense_difference": (af["allowed"]-hf["allowed"])/10.,
                 "rest_difference": (hf["rest"]-af["rest"])/4.,
             }
             rows.append(row)

@@ -93,3 +93,28 @@ El flujo `Publicar NBA Analytics` mantiene la web disponible, pero sin probabili
 - GitHub Pages debe habilitarse manualmente en Settings → Pages → Source → GitHub Actions. Un flujo de publicación completado mientras Pages está inactivo solo significa que el proceso evitó fallar, **no** que la página ya esté disponible.
 
 **Limitación esencial:** sin pruebas retrospectivas fuera de muestra y sin una comparación sólida con modelos de referencia, estas probabilidades deben considerarse educativas, no estimaciones con precisión demostrada.
+
+
+## Laboratorio V3 (experimental, separado de producción)
+
+- `scripts/v3_dataset.py`: recupera **temporadas completas** desde ESPN (API no
+  oficial) y guarda solo encuentros finales con tipo regular/playoffs verificable.
+  Registra cada fecha consultada, fallos y fecha de extracción en `data/v3/`.
+  Los archivos se construyen de forma reanudable y nunca inventan marcadores.
+- `scripts/model_v3.py`: genera variables con corte temporal estricto (se excluye
+  todo el día del partido), Elo, forma, ataque, defensa y descanso; entrena una
+  regresión logística con parámetros ajustados **solo en temporadas antiguas**.
+- El penúltimo año sirve para validar y el último para una prueba independiente.
+  Se comparan Brier, log loss y precisión con el Elo de referencia en los
+  mismos encuentros. Si faltan tres temporadas completas o 100 ejemplos por
+  segmento, el informe declara `insufficient_history` y **no crea candidato**.
+- En GitHub Actions → **Construir base historica NBA V3** se selecciona una
+  temporada por ejecución (2022-23, 2023-24, 2024-25).
+- Los resultados de este laboratorio **nunca se muestran como probabilidades
+  activas** y no cambian las predicciones guardadas del V2.
+- Solo después de comprobar ventaja cronológica, calibración y datos de
+  lesiones fiables podrá considerarse una migración del modelo en producción.
+
+La API ESPN es no oficial; backfill no equivale a disponer de todas las
+estadísticas avanzadas, alineaciones reales, lesiones históricas ni cuotas.
+No se asume ROI ni rentabilidad sin cuotas **reales y fechadas**.

@@ -94,6 +94,23 @@ def backfill(season, pause=0.25):
     stored = {g["id"]: g for g in existing.get("games", [])
               if isinstance(g, dict) and g.get("id")}
     failed = []
+
+    def checkpoint():
+        total = len(list(season_days(SEASONS[season])))
+        document = {
+            "schema": 1, "season": season, "source": "ESPN scoreboard, API no oficial",
+            "retrieved_at": datetime.now(timezone.utc).isoformat(),
+            "checked_dates": sorted(checked), "failed_dates": sorted(failed),
+            "complete": len(checked) == total,
+            "games": sorted(stored.values(), key=lambda g: (g["datetime"], g["id"])),
+        }
+        # Guardado atómico: reanudar aunque ESPN falle a mitad de temporada.
+        temp = file.with_suffix(".json.tmp")
+        temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\\n",
+                        encoding="utf-8")
+        temp.replace(file)
+        return document
+
     for i, day in enumerate(season_days(SEASONS[season])):
         stamp = day.isoformat()
         if stamp in checked:
@@ -105,21 +122,18 @@ def backfill(season, pause=0.25):
             continue
         for raw in events:
             row = parse_final(raw)
-            if row and row["season_year"] == SEASONS[season]:
+            # ESPN puede usar el año de inicio o de cierre de temporada.
+            # Guardar siempre el AÑO DE INICIO como clave uniforme de V3.
+            if row and row["season_year"] in (SEASONS[season], SEASONS[season] + 1):
+                row["season_year"] = SEASONS[season]
                 stored[row["id"]] = row
         checked.add(stamp)
         if (i + 1) % 30 == 0:
+            checkpoint()
             print(f"{season}: consultados {len(checked)} días; finales {len(stored)}", flush=True)
         time.sleep(max(0, pause))
     total = len(list(season_days(SEASONS[season])))
-    data = {
-        "schema": 1, "season": season, "source": "ESPN scoreboard, API no oficial",
-        "retrieved_at": datetime.now(timezone.utc).isoformat(),
-        "checked_dates": sorted(checked), "failed_dates": failed,
-        "complete": len(checked) == total,
-        "games": sorted(stored.values(), key=lambda g: (g["datetime"], g["id"])),
-    }
-    file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    data = checkpoint()
     print(f"{season}: {len(data['games'])} juegos finales confirmados, "
           f"{len(checked)}/{total} fechas; faltantes {len(failed)}; complete={data['complete']}")
     return data

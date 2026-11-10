@@ -33,6 +33,12 @@ class DatasetTests(unittest.TestCase):
             {"homeAway": "home", "team": {"id": "10"}, "score": "100"},
             {"homeAway": "away", "team": {"id": "20"}, "score": "100"}]}]}))
 
+    def test_season_year_accepts_espn_end_year_without_label_leak(self):
+        # El histórico 2023-24 puede venir etiquetado como season.year=2024.
+        # La normalización al año de inicio se realiza en backfill.
+        self.assertIn(2024, (v3_dataset.SEASONS["2023-24"],
+                             v3_dataset.SEASONS["2023-24"] + 1))
+
     def test_calendar_coverage(self):
         days = list(v3_dataset.season_days(2023))
         self.assertEqual(days[0], date(2023, 10, 1))
