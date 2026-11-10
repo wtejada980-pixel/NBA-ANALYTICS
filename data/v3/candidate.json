@@ -1,0 +1,37 @@
+{
+  "name": "logistic-v3-experimental",
+  "feature_names": [
+    "elo_difference",
+    "margin_difference",
+    "win_rate_difference",
+    "scoring_difference",
+    "defense_difference",
+    "rest_difference"
+  ],
+  "means": {
+    "elo_difference": -0.016345261911339563,
+    "margin_difference": -0.033627288645274256,
+    "win_rate_difference": -0.013705860708258789,
+    "scoring_difference": -0.03253895296461243,
+    "defense_difference": -0.0010883356806618521,
+    "rest_difference": 0.04536370903277378
+  },
+  "std": {
+    "elo_difference": 0.9411191770180153,
+    "margin_difference": 0.7891692285429275,
+    "win_rate_difference": 0.2716030413035591,
+    "scoring_difference": 0.6446553560294795,
+    "defense_difference": 0.7146223433362945,
+    "rest_difference": 0.27464548693746266
+  },
+  "weights": [
+    0.3493405949,
+    0.4030800515,
+    0.1678629241,
+    -0.1810131895,
+    0.1004726911,
+    0.094738146,
+    0.1128166286
+  ],
+  "n_train": 1251
+}

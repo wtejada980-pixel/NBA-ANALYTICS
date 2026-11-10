@@ -1,16 +1,58 @@
 {
   "version": "logistic-v3-experimental",
-  "status": "insufficient_history",
+  "status": "evaluated_not_published",
   "source": "ESPN (API no oficial)",
   "coverage": {
-    "2022-23": 1315
+    "2022-23": 1315,
+    "2023-24": 1314,
+    "2024-25": 1318
   },
-  "games": 1315,
-  "usable_rows": 1251,
+  "games": 3947,
+  "usable_rows": 3879,
   "seasons": [
-    2022
+    2022,
+    2023,
+    2024
   ],
   "published": false,
   "validated_advantage": false,
-  "message": "Sin suficientes temporadas completas para prueba cronológica."
+  "message": "No hay evidencia suficiente para reemplazar V2.",
+  "segments": {
+    "train": {
+      "seasons": [
+        2022
+      ],
+      "n": 1251
+    },
+    "validation": {
+      "season": 2023,
+      "v3": {
+        "n": 1313,
+        "brier": 0.21195,
+        "log_loss": 0.61095,
+        "winner_accuracy_pct": 65.3
+      },
+      "elo": {
+        "n": 1313,
+        "brier": 0.21373,
+        "log_loss": 0.61398,
+        "winner_accuracy_pct": 64.8
+      }
+    },
+    "test": {
+      "season": 2024,
+      "v3": {
+        "n": 1315,
+        "brier": 0.2122,
+        "log_loss": 0.61232,
+        "winner_accuracy_pct": 66.9
+      },
+      "elo": {
+        "n": 1315,
+        "brier": 0.21634,
+        "log_loss": 0.62126,
+        "winner_accuracy_pct": 65.7
+      }
+    }
+  }
 }
