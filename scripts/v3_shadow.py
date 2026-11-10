@@ -106,7 +106,19 @@ def build_report(history, cache, seasons, previous=None, now=None):
     if len(fit) < 100:
         raise ValueError("No hay datos de entrenamiento suficientes")
     model = train(fit)
-    games_by_id = {str(g["id"]):g for g in current_final_games(cache)}
+    # Incluir también encuentros futuros. Una búsqueda limitada a finales
+    # impediría guardar CUALQUIER pronóstico V3 realmente prospectivo.
+    games_by_id = {}
+    for event in cache.get("events", {}).values():
+        try:
+            if event["status"] not in ("pre", "in", "post"):
+                continue
+            games_by_id[str(event["id"])] = {
+                "home_id": str(event["home"]["id"]),
+                "away_id": str(event["away"]["id"]),
+            }
+        except (KeyError, TypeError):
+            continue
     records = history.get("predictions", {})
     existing = (previous or {}).get("forecasts", {})
     forecast_map = dict(existing) if isinstance(existing,dict) else {}
