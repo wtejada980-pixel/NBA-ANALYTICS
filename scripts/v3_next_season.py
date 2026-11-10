@@ -6,9 +6,7 @@ from v3_dataset import SEASONS, STORE
 
 def next_season(folder=STORE):
     for season in SEASONS:
-        # El 2025-26 se deja como fuente opcional, no requisito básico.
-        if season == "2025-26":
-            continue
+        # Incluir 2025-26 para poder reproducir estado previo de 2026-27.
         path = Path(folder) / f"games-{season}.json"
         try:
             data = json.loads(path.read_text(encoding="utf-8"))

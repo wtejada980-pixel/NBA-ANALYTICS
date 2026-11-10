@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+from model_v2 import predict as v2_predict
 from collections import defaultdict
 from datetime import datetime, date
 from pathlib import Path
@@ -55,7 +56,8 @@ def _form(team, completed, current_day, count=10):
     rows = relevant[-count:]
     if not rows:
         return {"n": 0, "margin": 0., "win": .5,
-                "scored": 110., "allowed": 110., "rest": 3.}
+                "scored": 110., "allowed": 110., "rest": 3.,
+                "v2_margin": 0., "v2_win": .5, "v2_scored": 110., "v2_allowed": 110.}
     margins = [(g["home_score"] - g["away_score"]) *
                (1 if g["home_id"] == team else -1) for g in rows]
     rest = max(0, min(7, (current_day - _day(rows[-1])).days - 1))
@@ -63,10 +65,16 @@ def _form(team, completed, current_day, count=10):
               for g in rows]
     allowed = [g["away_score"] if g["home_id"] == team else g["home_score"]
                for g in rows]
+    weights = list(range(1, len(rows)+1))
+    total_weight = sum(weights)
     return {"n": len(rows), "margin": sum(margins)/len(rows),
             "win": sum(m > 0 for m in margins)/len(rows),
             "scored": sum(scored)/len(rows),
             "allowed": sum(allowed)/len(rows),
+            "v2_margin": sum(max(-25, min(25, m))*w for m,w in zip(margins,weights))/total_weight,
+            "v2_win": sum((m > 0)*w for m,w in zip(margins,weights))/total_weight,
+            "v2_scored": sum(p*w for p,w in zip(scored,weights))/total_weight,
+            "v2_allowed": sum(p*w for p,w in zip(allowed,weights))/total_weight,
             "rest": rest}
 
 
@@ -74,7 +82,7 @@ def build_features(events, min_previous=4):
     """Elo y forma calculados antes de cada día; grupos del mismo día no se filtran."""
     clean = sorted(events, key=lambda x: (x["date"], x["datetime"], x["id"]))
     seen_ids = set()
-    completed, ratings, rows = [], {}, []
+    completed, ratings, v2_ratings, rows = [], {}, {}, []
     i = 0
     while i < len(clean):
         current = _day(clean[i])
@@ -95,10 +103,22 @@ def build_features(events, min_previous=4):
                 continue
             eh, ea = ratings.get(h, 1500.), ratings.get(a, 1500.)
             elo_prob = _sigmoid(math.log(10.) * (eh-ea+55.)/400.)
+            # V2 reconstruido sobre las mismas fechas, sin estadísticas individuales
+            # históricas no disponibles. NO equivale a los pronósticos registrados de V2.
+            def v2_team(form):
+                return {"form": {"played": form["n"], "margin": form["v2_margin"],
+                                 "win_rate": form["v2_win"],
+                                 "points_for": form["v2_scored"],
+                                 "points_against": form["v2_allowed"]},
+                        "rest_days": form["rest"]+1,
+                        "player_trend": 0.0}
+            v2_model = v2_predict({"home":{"id":h},"away":{"id":a}},
+                                   {h:v2_team(hf),a:v2_team(af)},v2_ratings)
             row = {
                 "id": g["id"], "date": g["date"], "season_year": g["season_year"],
                 "y": 1 if g["home_score"] > g["away_score"] else 0,
                 "elo_probability": round(elo_prob, 8),
+                "v2_proxy_probability": round(v2_model["home_pct"]/100., 8),
                 "elo_difference": (eh-ea)/100.,
                 "margin_difference": (hf["margin"]-af["margin"])/10.,
                 "win_rate_difference": hf["win"]-af["win"],
@@ -115,6 +135,13 @@ def build_features(events, min_previous=4):
             y = 1 if g["home_score"] > g["away_score"] else 0
             change = 22. * (y-expected)
             ratings[h], ratings[a] = eh+change, ea-change
+            vh, va = v2_ratings.get(h, 1500.), v2_ratings.get(a, 1500.)
+            vexpect = 1. / (1. + 10. ** ((va-vh-55.)/400.))
+            margin = abs(g["home_score"]-g["away_score"])
+            vk = 18. * (1. + min(.6, math.log1p(margin)/6.))
+            vadjust = vk*(y-vexpect)
+            v2_ratings[h] = max(1250., min(1750., vh+vadjust))
+            v2_ratings[a] = max(1250., min(1750., va-vadjust))
             completed.append(g)
     return rows
 
@@ -184,19 +211,27 @@ def evaluate(folder=FOLDER):
     def audit(part):
         pairs = [(infer(model, r), r["y"]) for r in part]
         elo = [(r["elo_probability"], r["y"]) for r in part]
-        return {"v3": metrics(pairs), "elo": metrics(elo)}
+        v2_proxy = [(r["v2_proxy_probability"], r["y"]) for r in part]
+        return {"v3": metrics(pairs), "elo": metrics(elo),
+                "v2_reconstructed_without_players": metrics(v2_proxy)}
     report["segments"] = {
         "train": {"seasons": seasons[:-2], "n": len(train_rows)},
         "validation": {"season": seasons[-2], **audit(valid_rows)},
         "test": {"season": seasons[-1], **audit(test_rows)},
     }
     report["status"] = "evaluated_not_published"
+    report["comparison_note"] = (
+        "V2 histórico es una reconstrucción sin métricas históricas de jugadores; "
+        "la comparación real contra V2 usa el registro inalterado de predicciones. "
+        "El V3 histórico solo usa información anterior al encuentro.")
     # Test no se usa para ajustar pesos; comparación solo después de entrenar.
     val = report["segments"]["validation"]
     tst = report["segments"]["test"]
     report["validated_advantage"] = (
-        val["v3"]["brier"] + .005 < val["elo"]["brier"] and
-        tst["v3"]["brier"] + .005 < tst["elo"]["brier"]
+        val["v3"]["brier"] + .005 < min(val["elo"]["brier"],
+            val["v2_reconstructed_without_players"]["brier"]) and
+        tst["v3"]["brier"] + .005 < min(tst["elo"]["brier"],
+            tst["v2_reconstructed_without_players"]["brier"])
     )
     report["message"] = ("V3 supera Elo en evaluación temporal, requiere revisión humana."
                          if report["validated_advantage"] else

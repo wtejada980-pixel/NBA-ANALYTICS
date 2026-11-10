@@ -102,6 +102,16 @@ class FeaturesTests(unittest.TestCase):
             self.assertEqual(a[id]["y"], 1 if id == "10" else 0)
         self.assertNotEqual(a["10"]["y"], b["10"]["y"])
 
+    def test_historical_rows_include_same_matchup_v2_proxy(self):
+        games=[game(i,(date(2023,10,20)+timedelta(days=i)).isoformat())
+               for i in range(8)]
+        rows=model_v3.build_features(games)
+        self.assertGreater(len(rows),0)
+        for row in rows:
+            self.assertGreater(row["v2_proxy_probability"],0)
+            self.assertLess(row["v2_proxy_probability"],1)
+            self.assertEqual(row["date"], games[int(row["id"])]["date"])
+
     def test_no_data_before_four_matches_abstains(self):
         rows = model_v3.build_features([
             game(i, (date(2023, 10, 20)+timedelta(days=i)).isoformat())

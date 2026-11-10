@@ -47,7 +47,7 @@ jobs:
         id: bulk
         if: github.event_name == 'push'
         run: |
-          for step in 1 2 3; do
+          for step in 1 2 3 4; do
             season=$(python scripts/v3_next_season.py)
             if [ "$season" = "none" ]; then break; fi
             echo "Descargando temporada $season"
