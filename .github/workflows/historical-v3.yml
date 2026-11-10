@@ -43,7 +43,19 @@ jobs:
           python-version: '3.12'
       - name: Comprobar tests y protección de datos futuros
         run: python -m unittest discover -s tests -v
+      - name: Recuperar las temporadas históricas pendientes
+        id: bulk
+        if: github.event_name == 'push'
+        run: |
+          for step in 1 2 3; do
+            season=$(python scripts/v3_next_season.py)
+            if [ "$season" = "none" ]; then break; fi
+            echo "Descargando temporada $season"
+            python scripts/v3_dataset.py --season "$season"
+          done
+          python scripts/model_v3.py
       - name: Elegir primera temporada histórica pendiente
+        if: github.event_name != 'push'
         id: season
         env:
           USER_SEASON: ${{ inputs.season }}
@@ -56,13 +68,13 @@ jobs:
           echo "season=$selected" >> "$GITHUB_OUTPUT"
           echo "Temporada seleccionada: $selected"
       - name: Recuperar una temporada histórica con fuente y estado verificables
-        if: steps.season.outputs.season != 'none'
+        if: github.event_name != 'push' && steps.season.outputs.season != 'none'
         run: python scripts/v3_dataset.py --season "${{ steps.season.outputs.season }}"
       - name: Medir V3 frente a Elo con separación cronológica
-        if: steps.season.outputs.season != 'none'
+        if: github.event_name != 'push' && steps.season.outputs.season != 'none'
         run: python scripts/model_v3.py
       - name: Guardar datos y diagnóstico de V3 sin activar predicciones
-        if: steps.season.outputs.season != 'none'
+        if: always() && (steps.bulk.conclusion == 'success' || (github.event_name != 'push' && steps.season.outputs.season != 'none' && steps.season.conclusion == 'success'))
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
