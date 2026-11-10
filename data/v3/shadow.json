@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "as_of": "2026-11-10T01:16:41.239654+00:00",
+  "status": "shadow_not_production",
+  "training_seasons": [
+    2022,
+    2023
+  ],
+  "historical_seasons_loaded": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "warning": "La comparación retrospectiva V3 no es un pronóstico registrado antes del partido; sirve solo como diagnóstico. La comparación prospectiva incluye únicamente pronósticos V3 realmente congelados antes del inicio. ESPN 2026 en caché carece de clasificación de temporada confirmada.",
+  "retrospective": {
+    "n": 23,
+    "v2_original": {
+      "n": 23,
+      "brier": 0.20723,
+      "log_loss": 0.60235,
+      "winner_accuracy_pct": 65.2
+    },
+    "v3_reconstructed": {
+      "n": 23,
+      "brier": 0.11871,
+      "log_loss": 0.40446,
+      "winner_accuracy_pct": 91.3
+    },
+    "games": [
+      {
+        "id": "401909287",
+        "v2_original_home_pct": 59.8,
+        "v3_retrospective_home_pct": 80.5,
+        "winner": "home"
+      },
+      {
+        "id": "401909288",
+        "v2_original_home_pct": 31.4,
+        "v3_retrospective_home_pct": 35.4,
+        "winner": "away"
+      },
+      {
+        "id": "401909289",
+        "v2_original_home_pct": 43.0,
+        "v3_retrospective_home_pct": 55.8,
+        "winner": "home"
+      },
+      {
+        "id": "401909290",
+        "v2_original_home_pct": 64.5,
+        "v3_retrospective_home_pct": 72.5,
+        "winner": "home"
+      },
+      {
+        "id": "401909291",
+        "v2_original_home_pct": 64.4,
+        "v3_retrospective_home_pct": 21.4,
+        "winner": "away"
+      },
+      {
+        "id": "401909292",
+        "v2_original_home_pct": 40.9,
+        "v3_retrospective_home_pct": 33.5,
+        "winner": "away"
+      },
+      {
+        "id": "401909293",
+        "v2_original_home_pct": 50.6,
+        "v3_retrospective_home_pct": 30.4,
+        "winner": "away"
+      },
+      {
+        "id": "401909294",
+        "v2_original_home_pct": 50.3,
+        "v3_retrospective_home_pct": 65.0,
+        "winner": "home"
+      },
+      {
+        "id": "401909295",
+        "v2_original_home_pct": 27.0,
+        "v3_retrospective_home_pct": 16.1,
+        "winner": "away"
+      },
+      {
+        "id": "401909938",
+        "v2_original_home_pct": 42.7,
+        "v3_retrospective_home_pct": 28.4,
+        "winner": "away"
+      },
+      {
+        "id": "401909939",
+        "v2_original_home_pct": 64.4,
+        "v3_retrospective_home_pct": 81.8,
+        "winner": "home"
+      },
+      {
+        "id": "401909940",
+        "v2_original_home_pct": 52.5,
+        "v3_retrospective_home_pct": 42.7,
+        "winner": "away"
+      },
+      {
+        "id": "401909941",
+        "v2_original_home_pct": 56.7,
+        "v3_retrospective_home_pct": 90.4,
+        "winner": "home"
+      },
+      {
+        "id": "401909942",
+        "v2_original_home_pct": 72.8,
+        "v3_retrospective_home_pct": 58.8,
+        "winner": "home"
+      },
+      {
+        "id": "401909943",
+        "v2_original_home_pct": 35.7,
+        "v3_retrospective_home_pct": 32.4,
+        "winner": "home"
+      },
+      {
+        "id": "401909944",
+        "v2_original_home_pct": 58.5,
+        "v3_retrospective_home_pct": 40.3,
+        "winner": "away"
+      },
+      {
+        "id": "401909945",
+        "v2_original_home_pct": 28.5,
+        "v3_retrospective_home_pct": 24.7,
+        "winner": "away"
+      },
+      {
+        "id": "401909946",
+        "v2_original_home_pct": 57.2,
+        "v3_retrospective_home_pct": 59.2,
+        "winner": "away"
+      },
+      {
+        "id": "401909947",
+        "v2_original_home_pct": 74.8,
+        "v3_retrospective_home_pct": 88.7,
+        "winner": "home"
+      },
+      {
+        "id": "401909948",
+        "v2_original_home_pct": 57.1,
+        "v3_retrospective_home_pct": 72.2,
+        "winner": "home"
+      },
+      {
+        "id": "401909949",
+        "v2_original_home_pct": 29.2,
+        "v3_retrospective_home_pct": 24.5,
+        "winner": "away"
+      },
+      {
+        "id": "401909950",
+        "v2_original_home_pct": 37.8,
+        "v3_retrospective_home_pct": 63.9,
+        "winner": "home"
+      },
+      {
+        "id": "401909951",
+        "v2_original_home_pct": 40.9,
+        "v3_retrospective_home_pct": 33.3,
+        "winner": "away"
+      }
+    ]
+  },
+  "prospective": {
+    "n": 0,
+    "v2_original": {
+      "n": 0,
+      "brier": null,
+      "log_loss": null,
+      "winner_accuracy_pct": null
+    },
+    "v3_shadow": {
+      "n": 0,
+      "brier": null,
+      "log_loss": null,
+      "winner_accuracy_pct": null
+    }
+  },
+  "forecasts": {}
+}
