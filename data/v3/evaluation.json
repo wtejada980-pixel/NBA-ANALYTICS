@@ -5,14 +5,16 @@
   "coverage": {
     "2022-23": 1315,
     "2023-24": 1314,
-    "2024-25": 1318
+    "2024-25": 1318,
+    "2025-26": 1320
   },
-  "games": 3947,
-  "usable_rows": 3879,
+  "games": 5267,
+  "usable_rows": 5195,
   "seasons": [
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "published": false,
   "validated_advantage": false,
@@ -20,39 +22,53 @@
   "segments": {
     "train": {
       "seasons": [
-        2022
+        2022,
+        2023
       ],
-      "n": 1251
+      "n": 2564
     },
     "validation": {
-      "season": 2023,
-      "v3": {
-        "n": 1313,
-        "brier": 0.21195,
-        "log_loss": 0.61095,
-        "winner_accuracy_pct": 65.3
-      },
-      "elo": {
-        "n": 1313,
-        "brier": 0.21373,
-        "log_loss": 0.61398,
-        "winner_accuracy_pct": 64.8
-      }
-    },
-    "test": {
       "season": 2024,
       "v3": {
         "n": 1315,
-        "brier": 0.2122,
-        "log_loss": 0.61232,
-        "winner_accuracy_pct": 66.9
+        "brier": 0.21162,
+        "log_loss": 0.61097,
+        "winner_accuracy_pct": 66.8
       },
       "elo": {
         "n": 1315,
         "brier": 0.21634,
         "log_loss": 0.62126,
         "winner_accuracy_pct": 65.7
+      },
+      "v2_reconstructed_without_players": {
+        "n": 1315,
+        "brier": 0.21193,
+        "log_loss": 0.61157,
+        "winner_accuracy_pct": 65.9
+      }
+    },
+    "test": {
+      "season": 2025,
+      "v3": {
+        "n": 1316,
+        "brier": 0.20938,
+        "log_loss": 0.60713,
+        "winner_accuracy_pct": 67.2
+      },
+      "elo": {
+        "n": 1316,
+        "brier": 0.21358,
+        "log_loss": 0.61784,
+        "winner_accuracy_pct": 67.2
+      },
+      "v2_reconstructed_without_players": {
+        "n": 1316,
+        "brier": 0.2085,
+        "log_loss": 0.60494,
+        "winner_accuracy_pct": 66.9
       }
     }
-  }
+  },
+  "comparison_note": "V2 histórico es una reconstrucción sin métricas históricas de jugadores; la comparación real contra V2 usa el registro inalterado de predicciones. El V3 histórico solo usa información anterior al encuentro."
 }

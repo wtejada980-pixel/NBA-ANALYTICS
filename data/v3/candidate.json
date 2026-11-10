@@ -9,29 +9,29 @@
     "rest_difference"
   ],
   "means": {
-    "elo_difference": -0.016345261911339563,
-    "margin_difference": -0.033627288645274256,
-    "win_rate_difference": -0.013705860708258789,
-    "scoring_difference": -0.03253895296461243,
-    "defense_difference": -0.0010883356806618521,
-    "rest_difference": 0.04536370903277378
+    "elo_difference": -0.008424776257700647,
+    "margin_difference": -0.02926198833667632,
+    "win_rate_difference": -0.0071552385904960015,
+    "scoring_difference": -0.024526610826337808,
+    "defense_difference": -0.004735377510338518,
+    "rest_difference": 0.02700858034321373
   },
   "std": {
-    "elo_difference": 0.9411191770180153,
-    "margin_difference": 0.7891692285429275,
-    "win_rate_difference": 0.2716030413035591,
-    "scoring_difference": 0.6446553560294795,
-    "defense_difference": 0.7146223433362945,
-    "rest_difference": 0.27464548693746266
+    "elo_difference": 1.324666983304849,
+    "margin_difference": 0.905532966452643,
+    "win_rate_difference": 0.2833990836663626,
+    "scoring_difference": 0.7442461536436278,
+    "defense_difference": 0.7914489465289359,
+    "rest_difference": 0.26702348740905507
   },
   "weights": [
-    0.3493405949,
-    0.4030800515,
-    0.1678629241,
-    -0.1810131895,
-    0.1004726911,
-    0.094738146,
-    0.1128166286
+    0.2809774906,
+    0.5399759664,
+    0.1704024988,
+    -0.1275960647,
+    0.110203363,
+    0.0913345725,
+    0.1081025425
   ],
-  "n_train": 1251
+  "n_train": 2564
 }
