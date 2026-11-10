@@ -3465,7 +3465,7 @@
             "id": "3908845",
             "name": "John Collins",
             "starter": true,
-            "game_pts": 13.0
+            "game_pts": 15.0
           },
           {
             "id": "4432166",
@@ -3507,7 +3507,7 @@
             "id": "4066372",
             "name": "Kevin Huerter",
             "starter": false,
-            "game_pts": 6.0
+            "game_pts": 8.0
           }
         ],
         "away": [
@@ -3638,7 +3638,7 @@
             "id": "4395625",
             "name": "RJ Barrett",
             "starter": true,
-            "game_pts": 4.0
+            "game_pts": 5.0
           },
           {
             "id": "3134908",
@@ -3712,7 +3712,7 @@
             "id": "4600663",
             "name": "Zach Edey",
             "starter": true,
-            "game_pts": 2.0
+            "game_pts": 4.0
           },
           {
             "id": "4065733",
@@ -4015,7 +4015,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-10T01:17:30.162958+00:00"
+        "context_updated_at": "2026-11-10T01:19:34.484236+00:00"
       }
     },
     "401909958": {
@@ -4097,14 +4097,14 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
+            "title": "San Antonio Spurs @ Phoenix Suns: Live game updates, stats, play-by-play - Yahoo Sports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9UbUxwb0dzaFBZOExTbmZUaDJsN2NldVd2V3AxTVQ5a3hFZW1HaWlNMzNILTRHNXlXZVBwa1NuaHlPTXpfQVMtNWFWSjJGbzFLTlB1NVhmZlVaampobXNXRG5XUXB1SDVKcC1iU0hfNC02cFJkYXR0eTZ1UQ?oc=5",
+            "published": "Tue, 10 Nov 2026 00:02:08 GMT"
+          },
+          {
             "title": "San Antonio Spurs vs Phoenix Suns Nov 9, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9FWElBempZaE1ZVUN5dnJRNG5pZjI1NUNOeFVKSVNpOTFaTkY2Ri1HcjJWMU1sZ0NTemh0SkhLcUhlUVA3UTJOM0lxVVMyT1luSE5yYkpDUnBydw?oc=5",
             "published": "Mon, 09 Nov 2026 23:00:38 GMT"
-          },
-          {
-            "title": "San Antonio Spurs @ Phoenix Suns: Live game updates, stats, play-by-play - Yahoo Sports",
-            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9UbUxwb0dzaFBZOExTbmZUaDJsN2NldVd2V3AxTVQ5a3hFZW1HaWlNMzNILTRHNXlXZVBwa1NuaHlPTXpfQVMtNWFWSjJGbzFLTlB1NVhmZlVaampobXNXRG5XUXB1SDVKcC1iU0hfNC02cFJkYXR0eTZ1UQ?oc=5",
-            "published": "Mon, 09 Nov 2026 22:32:08 GMT"
           },
           {
             "title": "Spurs' Vassell OUT vs. Suns on Monday - Sports Illustrated",
@@ -4112,9 +4112,9 @@
             "published": "Mon, 09 Nov 2026 22:32:32 GMT"
           },
           {
-            "title": "Phoenix Suns' Jordan Goodwin questionable for Spurs - azcentral.com and The Arizona Republic",
-            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdUUwWmF5MTVjMjlTVUJfQU5MQlFsZnNoOC1qSDVhQTlST2tIZUNoVk9xOTRYbk41WF93RGNiMVBZZW54cjN2c0tIQ2pYSEZ6cDdURnY1TUZoZVB5ZEJDTUoxTmh4NGFyeF9uR2NfOXNvSERsanZFMThCbm44QVhJMk1WV0dMUFZtN2lnRmk2ZjVtOTMwdXJ6cWRkRFlvRkpLcFI1OUgtQldjblJJQk9wcFJkZThqMFg5eVhqcUQ1LWZpdHZtV1F1ZQ?oc=5",
-            "published": "Mon, 09 Nov 2026 20:49:00 GMT"
+            "title": "Phoenix Suns vs San Antonio Spurs. Live updates, NBA analysis - azcentral.com and The Arizona Republic",
+            "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONTBFZ1I4T3YtX1k0VGdnZTR4MUFpOWVUc09tQ0ZTWmY0VW5EZDFTc2dmdU9JV2hwUHo3VzBVR1JMbkY0cExJeno1NDBVY3hyWTZzeUFSN3R4TUFZd0NsMzRvaG41T0k2a1FTbXRQMVpUUzVPMzE1WmhPeEYtMC1HRTZHV3FPX1MxbnVVaDdfakVZRUNTMENGT1NpdW1YbnBxeFNrVkc2eEE0cnpfWTIxMFpKeEh5Tld1elkyTGN3WllmT1RDQWxYQkNGYU1IQVFjdERBdHczQmNINFVoRWV1Xw?oc=5",
+            "published": "Mon, 09 Nov 2026 20:39:00 GMT"
           }
         ],
         "forum": {
@@ -4128,7 +4128,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-10T01:17:30.636260+00:00"
+        "context_updated_at": "2026-11-10T01:19:35.023872+00:00"
       }
     },
     "401909959": {
@@ -4241,7 +4241,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-10T01:17:31.145459+00:00"
+        "context_updated_at": "2026-11-10T01:19:35.661944+00:00"
       }
     },
     "401909960": {
