@@ -1,0 +1,51 @@
+name: Construir base historica NBA V3
+
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Temporada para recuperar (una por ejecución)'
+        required: true
+        type: choice
+        options:
+          - '2022-23'
+          - '2023-24'
+          - '2024-25'
+          - '2025-26'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-v3-historical
+  cancel-in-progress: false
+
+jobs:
+  historical:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Actualizar rama
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar tests y protección de datos futuros
+        run: python -m unittest discover -s tests -v
+      - name: Recuperar una temporada histórica con fuente y estado verificables
+        run: python scripts/v3_dataset.py --season "${{ inputs.season }}"
+      - name: Medir V3 frente a Elo con separación cronológica
+        run: python scripts/model_v3.py
+      - name: Guardar datos y diagnóstico de V3 sin activar predicciones
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v3/
+          if ! git diff --cached --quiet; then
+            git commit -m "Agregar temporada histórica y evaluación V3"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
