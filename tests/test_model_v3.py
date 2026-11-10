@@ -67,6 +67,20 @@ class DatasetTests(unittest.TestCase):
         self.assertGreater(len(days), 240)
 
 
+class SelectionTests(unittest.TestCase):
+    def test_selects_first_missing_season_then_next(self):
+        from v3_next_season import next_season
+        with tempfile.TemporaryDirectory() as directory:
+            p = Path(directory)
+            self.assertEqual(next_season(p), "2022-23")
+            (p/"games-2022-23.json").write_text(json.dumps({
+                "season":"2022-23","complete":True}))
+            self.assertEqual(next_season(p), "2023-24")
+            (p/"games-2023-24.json").write_text(json.dumps({
+                "season":"2023-24","complete":False}))
+            self.assertEqual(next_season(p), "2023-24")
+
+
 class FeaturesTests(unittest.TestCase):
     def test_does_not_use_same_day_or_future_scores(self):
         initial = [

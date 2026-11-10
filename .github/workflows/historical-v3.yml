@@ -1,6 +1,14 @@
 name: Construir base historica NBA V3
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/historical-v3.yml'
+  schedule:
+    # Cada mañana recupera solo la primera temporada todavía incompleta.
+    - cron: '25 3 * * *'
+      timezone: 'America/Santo_Domingo'
   workflow_dispatch:
     inputs:
       season:
@@ -35,11 +43,26 @@ jobs:
           python-version: '3.12'
       - name: Comprobar tests y protección de datos futuros
         run: python -m unittest discover -s tests -v
+      - name: Elegir primera temporada histórica pendiente
+        id: season
+        env:
+          USER_SEASON: ${{ inputs.season }}
+        run: |
+          if [ -n "$USER_SEASON" ]; then
+            selected="$USER_SEASON"
+          else
+            selected=$(python scripts/v3_next_season.py)
+          fi
+          echo "season=$selected" >> "$GITHUB_OUTPUT"
+          echo "Temporada seleccionada: $selected"
       - name: Recuperar una temporada histórica con fuente y estado verificables
-        run: python scripts/v3_dataset.py --season "${{ inputs.season }}"
+        if: steps.season.outputs.season != 'none'
+        run: python scripts/v3_dataset.py --season "${{ steps.season.outputs.season }}"
       - name: Medir V3 frente a Elo con separación cronológica
+        if: steps.season.outputs.season != 'none'
         run: python scripts/model_v3.py
       - name: Guardar datos y diagnóstico de V3 sin activar predicciones
+        if: steps.season.outputs.season != 'none'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
