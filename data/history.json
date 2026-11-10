@@ -661,7 +661,11 @@
       "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
       "elo_baseline_home_pct": 62.6,
       "scheduled_at": "2026-11-10T01:30Z",
-      "result": null,
+      "result": {
+        "home_score": 110,
+        "away_score": 100,
+        "winner": "home"
+      },
       "revisions": [
         {
           "home_pct": 57.7,
@@ -692,7 +696,11 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 43.2,
       "scheduled_at": "2026-11-10T02:00Z",
-      "result": null,
+      "result": {
+        "home_score": 96,
+        "away_score": 122,
+        "winner": "away"
+      },
       "revisions": [
         {
           "home_pct": 34.4,
@@ -715,7 +723,11 @@
       "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
       "elo_baseline_home_pct": 64.4,
       "scheduled_at": "2026-11-10T03:00Z",
-      "result": null,
+      "result": {
+        "home_score": 138,
+        "away_score": 87,
+        "winner": "home"
+      },
       "revisions": [
         {
           "home_pct": 64.4,
@@ -809,6 +821,14 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        },
+        {
+          "home_pct": 50.0,
+          "away_pct": 50.0,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Encuentro equilibrado; sin favorito claro.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
         }
       ]
     },
@@ -891,6 +911,14 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por ventaja de localía.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        },
+        {
+          "home_pct": 53.2,
+          "away_pct": 46.8,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
         }
       ]
     },
@@ -913,6 +941,14 @@
           "predicted_at": "2026-11-10T03:41:44.058476+00:00",
           "model": "elo-forma10-v2",
           "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        },
+        {
+          "home_pct": 65.2,
+          "away_pct": 34.8,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
       ]
@@ -937,6 +973,14 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        },
+        {
+          "home_pct": 37.5,
+          "away_pct": 62.5,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
         }
       ]
     },
@@ -951,7 +995,17 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 38.0,
       "scheduled_at": "2026-11-12T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 21.9,
+          "away_pct": 78.1,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909970": {
       "date": "2026-11-11",
@@ -970,6 +1024,14 @@
           "home_pct": 52.6,
           "away_pct": 47.4,
           "predicted_at": "2026-11-10T03:41:44.058476+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        },
+        {
+          "home_pct": 57.4,
+          "away_pct": 42.6,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
           "model": "elo-forma10-v2",
           "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
           "source": "Recalculado con resultados disponibles antes del inicio"
@@ -996,6 +1058,14 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        },
+        {
+          "home_pct": 24.5,
+          "away_pct": 75.5,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
         }
       ]
     },
@@ -1010,7 +1080,17 @@
       "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
       "elo_baseline_home_pct": 63.6,
       "scheduled_at": "2026-11-12T01:00Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 59.1,
+          "away_pct": 40.9,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909973": {
       "date": "2026-11-11",
@@ -1036,7 +1116,17 @@
       "reason": "Ventaja por más victorias recientes y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 56.7,
       "scheduled_at": "2026-11-12T02:30Z",
-      "result": null
+      "result": null,
+      "revisions": [
+        {
+          "home_pct": 47.5,
+          "away_pct": 52.5,
+          "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+          "model": "elo-forma10-v2",
+          "reason": "Ventaja por mejor margen de puntos reciente y más victorias recientes.",
+          "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ]
     },
     "401909975": {
       "date": "2026-11-11",
@@ -1049,6 +1139,58 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 52.1,
       "scheduled_at": "2026-11-12T03:00Z",
+      "result": null
+    },
+    "401909976": {
+      "date": "2026-11-12",
+      "home": "Philadelphia 76ers",
+      "away": "Toronto Raptors",
+      "home_pct": 63.7,
+      "away_pct": 36.3,
+      "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+      "model": "elo-forma10-v2",
+      "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+      "elo_baseline_home_pct": 66.8,
+      "scheduled_at": "2026-11-13T00:00Z",
+      "result": null
+    },
+    "401909977": {
+      "date": "2026-11-12",
+      "home": "Washington Wizards",
+      "away": "Detroit Pistons",
+      "home_pct": 36.8,
+      "away_pct": 63.2,
+      "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+      "model": "elo-forma10-v2",
+      "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+      "elo_baseline_home_pct": 46.0,
+      "scheduled_at": "2026-11-13T00:00Z",
+      "result": null
+    },
+    "401909978": {
+      "date": "2026-11-12",
+      "home": "Minnesota Timberwolves",
+      "away": "Dallas Mavericks",
+      "home_pct": 59.4,
+      "away_pct": 40.6,
+      "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+      "model": "elo-forma10-v2",
+      "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+      "elo_baseline_home_pct": 63.3,
+      "scheduled_at": "2026-11-13T01:00Z",
+      "result": null
+    },
+    "401909979": {
+      "date": "2026-11-12",
+      "home": "Phoenix Suns",
+      "away": "Charlotte Hornets",
+      "home_pct": 54.6,
+      "away_pct": 45.4,
+      "predicted_at": "2026-11-10T07:21:49.134108+00:00",
+      "model": "elo-forma10-v2",
+      "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+      "elo_baseline_home_pct": 58.9,
+      "scheduled_at": "2026-11-13T02:00Z",
       "result": null
     }
   }
