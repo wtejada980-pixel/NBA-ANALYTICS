@@ -25,6 +25,33 @@ class ShadowTests(unittest.TestCase):
         self.assertEqual(a,b)
         self.assertIsNotNone(a)
 
+    def test_stores_future_prediction_once_and_never_after_tipoff(self):
+        from unittest.mock import patch
+        now=datetime(2026,11,9,18,0,tzinfo=timezone.utc)
+        history={"predictions":{"game-1":{
+            "home_pct":62,"away_pct":38,
+            "predicted_at":"2026-11-08T18:00:00Z",
+            "scheduled_at":"2026-11-10T02:00:00Z",
+            "result":None}}}
+        cache={"events":{"game-1":{
+            "id":"game-1","status":"pre",
+            "datetime":"2026-11-10T02:00:00Z",
+            "home":{"id":"1"},"away":{"id":"2"}}}}
+        trained=[{"season_year":2022} for _ in range(101)]
+        with patch.object(v3_shadow,"build_features",return_value=trained), \
+             patch.object(v3_shadow,"train",return_value={"mock":"model"}), \
+             patch.object(v3_shadow,"features_at",return_value={"elo_difference":1}), \
+             patch.object(v3_shadow,"infer",return_value=.61):
+            report=v3_shadow.build_report(history,cache,[],now=now)
+            self.assertEqual(report["retrospective"]["n"],0)
+            self.assertIn("game-1",report["forecasts"])
+            saved=report["forecasts"]["game-1"]
+            self.assertEqual(saved["v3_home_pct"],61.0)
+            after=v3_shadow.build_report(history,cache,[],previous=report,
+                now=datetime(2026,11,10,3,0,tzinfo=timezone.utc))
+            self.assertEqual(after["forecasts"]["game-1"],saved)
+            self.assertEqual(after["prospective"]["n"],0)
+
     def test_missing_earlier_games_abstains(self):
         self.assertIsNone(v3_shadow.features_at([],"1","2","2026-11-09T15:00:00Z"))
 
