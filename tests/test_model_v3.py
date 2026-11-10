@@ -39,6 +39,27 @@ class DatasetTests(unittest.TestCase):
         self.assertIn(2024, (v3_dataset.SEASONS["2023-24"],
                              v3_dataset.SEASONS["2023-24"] + 1))
 
+    def test_checkpoint_valid_json_and_espn_season_end_year(self):
+        from unittest.mock import patch
+        import tempfile
+        raw = {
+            "id": "99", "date": "2023-10-15T23:00:00Z",
+            "season": {"year": 2024, "type": 2},
+            "status": {"type": {"state": "post"}},
+            "competitions": [{"competitors": [
+                {"homeAway": "home", "team": {"id": "1"}, "score": "112"},
+                {"homeAway": "away", "team": {"id": "2"}, "score": "105"}]}]
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            with patch.object(v3_dataset, "STORE", Path(directory)), \
+                 patch.object(v3_dataset, "season_days", return_value=[date(2023, 10, 15)]), \
+                 patch.object(v3_dataset, "get_events", return_value=[raw]):
+                report = v3_dataset.backfill("2023-24", pause=0)
+                saved = json.loads((Path(directory)/"games-2023-24.json").read_text())
+                self.assertTrue(report["complete"])
+                self.assertEqual(saved["games"][0]["season_year"], 2023)
+                self.assertEqual(saved["games"][0]["home_score"], 112)
+
     def test_calendar_coverage(self):
         days = list(v3_dataset.season_days(2023))
         self.assertEqual(days[0], date(2023, 10, 1))

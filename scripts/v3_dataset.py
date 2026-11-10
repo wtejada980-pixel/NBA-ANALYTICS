@@ -106,7 +106,7 @@ def backfill(season, pause=0.25):
         }
         # Guardado atómico: reanudar aunque ESPN falle a mitad de temporada.
         temp = file.with_suffix(".json.tmp")
-        temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\\n",
+        temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n",
                         encoding="utf-8")
         temp.replace(file)
         return document
