@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-11T00:27:27.727006+00:00",
+  "as_of": "2026-11-11T00:29:31.191858+00:00",
   "date": "2026-11-10",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -1545,9 +1545,9 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
-            "title": "Milwaukee Bucks vs New York Knicks Nov 10, 2026 Box Scores - NBA.com",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1wM3R3d21Sa1luN1hScTdJX1FuOUhmdXJoZUxTdGphcjduOFVfRl8tVjVzTEtvLUtqbnAyRDdRUkRibTRKQW5LWlZWaGdhQWxOSldOaDhqeVM?oc=5",
-            "published": "Tue, 10 Nov 2026 23:33:14 GMT",
+            "title": "Milwaukee Bucks vs New York Knicks Nov 10, 2026 Game Summary - NBA.com",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DdXBocTU4dmJ5cy03WDhqbGdQaHFLZlM0M1BwRkVPcDhLM0hQNUtxdzJqZnV6ZVNyVlJBQTVxYnRhOE9idUJJaFhtQ2FneDhpSjFTSmphQUJ4UQ?oc=5",
+            "published": "Tue, 10 Nov 2026 22:11:18 GMT",
             "source": "NBA.com"
           },
           {
@@ -1580,7 +1580,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:27:31.385637+00:00"
+        "context_updated_at": "2026-11-11T00:29:34.841290+00:00"
       }
     },
     {
@@ -1705,7 +1705,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:27:31.908473+00:00"
+        "context_updated_at": "2026-11-11T00:29:35.301610+00:00"
       }
     },
     {
@@ -1789,13 +1789,13 @@
           {
             "title": "LA Clippers vs Phoenix Suns Nov 10, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UeHdMcWxOS0E3WlZTN2VMTlhza0VQRnd3QWJ4RW1iVDZYaTM3VHl2MnZxSFd3WTgwblFfV2VQRVdSVTRUa0FfTzRzNEVYZGxaQlhxZ2FKckp5UQ?oc=5",
-            "published": "Tue, 10 Nov 2026 23:31:13 GMT",
+            "published": "Tue, 10 Nov 2026 22:11:20 GMT",
             "source": "NBA.com"
           },
           {
             "title": "Los Angeles Clippers @ Phoenix Suns: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9obHYtZWgwRTJHWGl1M2dhSGU2dFM0TUl6eEVDUjQtbW82V1BtX1pQTGFlZktmay1idUxpNDNxTDVFLTV4NGVqenpXNFV2VVJOZFlHZF9UWWwyMThNOXpDUUFSQi03ZjNzcHRqOE9LVGNnWnc?oc=5",
-            "published": "Tue, 10 Nov 2026 20:11:02 GMT",
+            "published": "Tue, 10 Nov 2026 23:11:34 GMT",
             "source": "Yahoo Sports"
           },
           {
@@ -1822,7 +1822,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:27:32.361734+00:00"
+        "context_updated_at": "2026-11-11T00:29:35.765242+00:00"
       }
     },
     {
@@ -1906,26 +1906,26 @@
           {
             "title": "Miami Heat vs Utah Jazz Nov 10, 2026 Game Summary - NBA.com",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DRDc0UlUycTR1OEhVNUwzWi1hbFE0WDFLSEhHb19uZTVJOWZ3aDJxcjdFSm5YR25aeUVaTTBMb3U4a2hwM25ZanZ0bjJ3V1A1X29qcW9GejFaZw?oc=5",
-            "published": "Tue, 10 Nov 2026 22:52:57 GMT",
+            "published": "Tue, 10 Nov 2026 22:11:25 GMT",
             "source": "NBA.com"
           },
           {
             "title": "Miami Heat @ Utah Jazz: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IYk1TUzBPdVZRbkNQbWU1cnBuSTRSR19meXY3Sm4xZno3bndpVUhyM1RWT2lwN3FDSnBvLXBXcE5PUDY3NktqNENkN0lEZjJ4a3RnamVuWU4yd0xualh3d2x1aHlWV1RpeUthaU5R?oc=5",
-            "published": "Tue, 10 Nov 2026 21:34:22 GMT",
+            "published": "Tue, 10 Nov 2026 23:04:55 GMT",
             "source": "Yahoo Sports"
+          },
+          {
+            "title": "Miami Heat @ Utah Jazz Odds - FanDuel Sportsbook",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeV91M29ZRnpRUUpFOTc1dmZXelB2NFNLdkdtVEdxcXpUT3YxYmJ1cUVpWU50ak9Lb2xCZE51UVlpaTRSWjZIMEZaQUxiZVJWU1IxdjJMRE5nbVdNZVI1X1QxNmRwdkQzNzZnNjRudDZsUGYwS0pjcTY1S0JWNGtWVzFnbw?oc=5",
+            "published": "Wed, 11 Nov 2026 00:28:40 GMT",
+            "source": "FanDuel Sportsbook"
           },
           {
             "title": "Heat vs Jazz Prediction, Picks & Best Bet for Tonight's NBA Game - Covers.com",
             "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBTVFlCTWJSYkhSajA4cHBETTg5ejVTM3dtUTJrUzBpbjZnN0VtNWxWaFVaSFpWd2hCMHNuZHBOdW9sMy0xR3NaMk5zdFhtRnhFdU4tdUxZalNRYnhCb0E5U091ejY2d010VElfSkNUSkJZSUpLRUZZakxtUXBuZw?oc=5",
             "published": "Tue, 10 Nov 2026 21:28:00 GMT",
             "source": "Covers.com"
-          },
-          {
-            "title": "How to watch Heat vs. Jazz: TV channel and streaming options for November 10 - The New York Times",
-            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdmMwU05YVy1MNVNMTlROTUdyRGsxTkhWT3duYWJUVFYxbkx5SGV3R2JWWkxhay02ZnpnaTU0ejQxMGZ0YUZqZU10ZmRPZVBmb2puZFdtd2I5NzYtaUNXbHB2SWt5MlVrZjBYeFZDelJ6b25yNnNtU21mLTZhS214MmhINWIwSGZXam9DSTFMRFJHYllPVFNR?oc=5",
-            "published": "Tue, 10 Nov 2026 18:04:42 GMT",
-            "source": "The New York Times"
           }
         ],
         "forum": {
@@ -1939,7 +1939,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:27:32.804390+00:00"
+        "context_updated_at": "2026-11-11T00:29:36.338179+00:00"
       }
     },
     {
@@ -2029,7 +2029,7 @@
           {
             "title": "Orlando Magic @ Sacramento Kings: Live game updates, stats, play-by-play - Yahoo Sports",
             "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5aSHk5cnVzZXhGV3YxN2NMdFVBaE9COThlX0YwWE5yTGg3SkFKQnVTdU4yNFlGMG1lMWVfejYwUDBHTGVhOGV5clQ4VE53Y3YyaF80dlBUbUtRWHRWU2xNNEFUUk05TGwxd3VGdXhac0ZvY2lTNEp6NDBNZw?oc=5",
-            "published": "Tue, 10 Nov 2026 22:57:58 GMT",
+            "published": "Tue, 10 Nov 2026 23:07:43 GMT",
             "source": "Yahoo Sports"
           },
           {
@@ -2056,7 +2056,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:27:33.293031+00:00"
+        "context_updated_at": "2026-11-11T00:29:36.813867+00:00"
       }
     },
     {
@@ -11058,58 +11058,22 @@
   },
   "news": [
     {
-      "title": "When Does the 2026-27 NBA Season Start? Opening Night Schedule",
-      "url": "https://www.foxsports.com/stories/nba/when-does-2026-27-nba-season-start-opening-night-schedule",
-      "published": "Thu, 13 Aug 2026 18:14:14 -0500",
-      "source": "FOX Sports"
+      "title": "NBA Trade Machine Rankings: Nikola Jokic, Domantas Sabonis, and more - HoopsHype",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOaUZRZDcwc1lBc0dZalFGbUVvSTIyYURhbUVuNmFvLU5HOU91cWJqYWx6V3JNQnNrREROMzJUX3MyZFI1c0RXaWhPd3ZyWXNueF9QbVpoWUc1b1Bma2lYeTY5dXVmeG43RXNfNUlSRFVHSnJlVC1DYW04MXNaVHlFSjItaU5iUWFGeDgyYjBQZzlLWlZ5a3JjWFB2UEd1X21mZnlJN2Nsbl9hMGwxVS0xY19rYm5sNnRHTFZBQlhUdFNGY1B6ZFRrbWVMZWtSb0tkejJCRUplSWZzWUNSemtJM0pIX2oyczBaclE0cw?oc=5",
+      "published": "Tue, 10 Nov 2026 18:27:00 GMT",
+      "source": "HoopsHype"
     },
     {
-      "title": "2026 NBA Cup Schedule: Group Play, Knockout Rounds, Championship",
-      "url": "https://www.foxsports.com/stories/nba/2026-nba-cup-schedule-group-play-knockout-rounds-championship",
-      "published": "Thu, 13 Aug 2026 18:13:09 -0500",
-      "source": "FOX Sports"
+      "title": "All-Star Game Keeps Skipping Milwaukee, Despite NBA Pledge - Urban Milwaukee",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ3l5djNvcVBacXJDeFJUSDFMdEhvU0dLdWE1dUFHNURxTlFKRkJXSHJYVy1wMTh5YW5OTkFSRXNZcV9aVU8yaS1ZUGZkQ196azNLVExja1RMc0trVF8tUklPeU53UzRJTENnbUVqRmUyMC05UFZCYkdLakxNTFl1X29Fekg4bFItUV9jX2RBclNRZEVrQ0xVeFhibFg?oc=5",
+      "published": "Tue, 10 Nov 2026 16:29:00 GMT",
+      "source": "Urban Milwaukee"
     },
     {
-      "title": "2026 NBA Christmas Games: Schedule, Matchups, Start Times",
-      "url": "https://www.foxsports.com/stories/nba/2026-nba-christmas-games-schedule-matchups-start-times",
-      "published": "Thu, 13 Aug 2026 18:12:05 -0500",
-      "source": "FOX Sports"
-    },
-    {
-      "title": "NBA Fantasy: Notes on all 30 teams in Week 4 - NBA.com",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE92MFplMl9wOGpOTGdWRi01d1VDOXNNaHNYSjlNUHQydDlNT0UzTndiSDhDVGdBMDJkN3VnZTlRazd1ckM5dXNIaEk0SnM2eEVDSDZrc1MyX090NnpUVDZHZVdtWnZtMmZ2M3pzVTFERkV5SnZGalVJ?oc=5",
-      "published": "Tue, 10 Nov 2026 21:47:58 GMT",
-      "source": "NBA.com"
-    },
-    {
-      "title": "Hartford Public High School naming basketball court after Marcus Camby - WTNH.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRWlfZ25qOVo0NzFSMk9HcGhLaWhQUjB2VlZYRl8ySDg3SmVOcGRmZ2d1STJSTGZEa28yakdhZlcxT1lTSjhLYmN5TkpMcWNadFFWcDM4NUxRQXpUYTNyNzdtSFZYSWRCcVplWWpPejBQam9rcktOQkFpNTBuSHVEcXBETzF0MUk3bklVWmdQbE1kQ3hlV1RUeFBFUlBDOHY5THRkQ3BhSS04YVJjT1hsdHlFcTZhRWNNS0HSAb8BQVVfeXFMUEZDdWpZOVA5UE1nQUJuYTcwTzlfVlZma2QwWWplSE00NVZ2Z2E0VWV3QUUzWHlhS0lIYXNlUms4bmhqdHFEY1ZTcjlQaWc0S29OeDhoVVp5Q3I1Zkw4aW5NRll2YnhGb1pUbFhXNTFzNVBFYmhSaHNObWRNMGVnbTM5WG1VRGJIbTk4ZkZOMVc0NkxrNmRNSGZkWTdpdGMzTHlZUllUdF9aYVpaNEhSNklsNFpHcVZqeDdiOVVXNjQ?oc=5",
-      "published": "Tue, 10 Nov 2026 21:44:39 GMT",
-      "source": "WTNH.com"
-    },
-    {
-      "title": "Champions Classic: The First Real Test for College Basketball’s Top Prospects - NBA Big Board | Rafael Barlowe",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE11MnlCV2c4V3dEYTNkbDZyN3BOaFNxWkE0U3Eyek1SWk1UaW1FaFRManZRdWpLVGFsaG5RVlRkMVhIMkZRUENTdVZDVHh2T0JIYlI1Q3hNOUd4X0g5STlYeF9jMXNCQ2V6NHNtbTJFUQ?oc=5",
-      "published": "Tue, 10 Nov 2026 17:20:33 GMT",
-      "source": "NBA Big Board | Rafael Barlowe"
-    },
-    {
-      "title": "As trade rumors swirl, dynamic Irving-Flagg duo is restoring the joy in Mavs basketball - Dallas News",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ3F5UHpobWdVVng4eTk1SkgxNUtFS2FHVUsta3dLTWRzTEtUaWxTYS1FYTd0RXVsbUMwNVJaZVRTcGY3Z2FtVGo1WkpXNmI5S09FVzVYZTcyd2dpSXRudmxIZHR6ZGNRbXl5cEdFeEF4YW93eFZDZndDMFhrLUNUTm5GdXo5dkQyZXppaldUOU9tRlRWZHhlRGJ3SDR2clUtMjBDYzR1bzF2cDg?oc=5",
-      "published": "Tue, 10 Nov 2026 21:53:48 GMT",
-      "source": "Dallas News"
-    },
-    {
-      "title": "How Victor Wembanyama is becoming unsolvable for NBA opponents - San Antonio Express-News",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV1g1M05hYUUxbWVyNmlaTmZ3dURyTWFkb3lJaEoyQnlDMEZHTURUaWJ4My1yZDdQRUZ1Z2Y1a1o3STE2WndfenRldGRGZDBWSlVOLU9mdWlKMTZZMEpsV3duSmtIZXJuaHBvTTFnUlVUZi1jR2k1d2RDUVZjZjJKQjctM3Q3NVROR2YwRHgtY2I0R00zaG5ZZXdVTkdsR2J6VmNPb1FR?oc=5",
-      "published": "Tue, 10 Nov 2026 18:00:09 GMT",
-      "source": "San Antonio Express-News"
-    },
-    {
-      "title": "LeBron James, other NBA stars behind new U18 elite league - Sacramento Bee",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VNGl2bnB3YzBraGxyOHRQal9sc05kVDc4akNJaGk1WUxPSWhxOWsxNGxsNE8tLU5HcEQxaDBidGRhYW4zMUJwcnJVSEZ4ZWdaQkIwQy1PWmhYX1EzMTVTM1hjdWpuQQ?oc=5",
-      "published": "Tue, 10 Nov 2026 19:24:00 GMT",
-      "source": "Sacramento Bee"
+      "title": "Tar Heels in NBA: Coby White dishes out nine assists as Hornets snap losing streak - Tar Heel Times",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DYTVqbXlDSmxuUERfZ3dCTW1pVFdnNmptcWplTk9zUjNwaXhXRmxSU3FsUy1zSHcwbmtYdVg2VGp3QVljV3NEUVlUSkJWMmNyUk8taUlPWDlLRzA?oc=5",
+      "published": "Tue, 10 Nov 2026 20:45:29 GMT",
+      "source": "Tar Heel Times"
     },
     {
       "title": "BASKETBALL-NBA-CHI-PHI/ - Arizona Daily Star",
@@ -11118,20 +11082,56 @@
       "source": "Arizona Daily Star"
     },
     {
-      "title": "BASKETBALL-NBA-TOR-MEM/ - Channel 3000",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTTA4SkxpM01hLW1YcFhOVTdyaDRhSm5oRmgxbGRnUkZjZ2UxOERvQ0pjOUZrVnYwaklrS292OGhIN0x1ajdHRzhMZmVkM3VjTmdhYTVtSExaYTNqMzl0aEh4UWhrLW5pWHd5NXpCOTNweEZKSkZ4N0l4M2FfZkU2dGdEY2I3SmNIZ2JyQzBsNkNTOFJITXE1bklfZHE4QmpNSGNaUDZYcnIzTUU3ek5jV21HSW5jNElBLW4wQmJR?oc=5",
-      "published": "Tue, 10 Nov 2026 18:09:00 GMT",
-      "source": "Channel 3000"
+      "title": "Charlotte Hornets hoop NBA wireless first with Wi-Fi 7 - Computer Weekly",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOR3JQS19MOGdCTjl1aDRqcnNnQXB1QU1pYjVYNTQtcXRELXAwcGNubHF4UW9XLXRFZjRyaWxMcFllYmtUZUtYTDQ3YWNGWFFyRmEzTGlNSWQ1dkllZ01Zemt0UTM0UjQzdlhhUlhzdU5hN3FNM2RQRDk3MGlxWnhlS2RiMEpKWTQ1V2pucVowcmo0YlF1a1pVNzltcHN3em5ueGc?oc=5",
+      "published": "Tue, 10 Nov 2026 16:09:36 GMT",
+      "source": "Computer Weekly"
+    },
+    {
+      "title": "Phoenix Suns vs Los Angeles Clippers. Live updates, NBA analysis - azcentral.com and The Arizona Republic",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUjZPVHZId1JCeXhxMlJJMm9lRGxhSThZRUVYcndHMUVxS0tIVElhdWxGc002MVI4RGV2MzBIVFlmb09ZaTRrOXp2MkU0RGp3WUJsS3hwRnpJV2kydjlwenNqVl8zVmMwTVVKZktQQWYwUXNzMjZQZC1TZk8yRjEtZF9lRlU4M3g3NVZDM3JSb1FSU3BURXk3UlFhWjRHRWU2UlFfNG12SDlFOWdMbXEyM2NLVVBPY1VCclBzSlZaSUJxd3NrbUJQUTRsRExDM25ET19JSXRvWQ?oc=5",
+      "published": "Tue, 10 Nov 2026 21:02:00 GMT",
+      "source": "azcentral.com and The Arizona Republic"
     },
     {
       "title": "NBPA ANNOUNCES KEY APPOINTMENTS, HEADLINED BY SHAUN LIVINGSTON - National Basketball Players Association",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSGQzNVVaYXNGV1ZmYXBUYllNZE1lVkRZT1BjMHU0cVpDbGxPaExvY1EwVzVxYkV1c09lU3NBUG5vZUZ3RmZ4ZmVrcUpGSFBnbGZSNTVmc2FUSklHRUowMlpDVDlqdTFoRjU1ZnM2YmRjOXZobmMyeVlWdkFUdnc0YTJtRjNDVFRPZG5N?oc=5",
       "published": "Tue, 10 Nov 2026 16:30:48 GMT",
       "source": "National Basketball Players Association"
+    },
+    {
+      "title": "NBA champion Kevin Love to lead Athletic Ventures’ US expansion - Startup Daily",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZTdvd0RITEhBbElaTGZMMlEtOVY3Y295WGlCYkJWcDcwVTZ2blNWN3QxelAyaWdKTjdOOE1kV0w0eEJ2UkFfYW1TMVNfS29FdldqM29uUlNYa3NFNnFzOTFOOTQ5V3ZqbjY3YjA1a2lxZlRBMklEUjdUekN2bXE0Q241TDhxUVBtdlVjUENQdDFBVDZMRUF2a3NkaE1RT19aX0tubWFvS18?oc=5",
+      "published": "Wed, 11 Nov 2026 00:18:21 GMT",
+      "source": "Startup Daily"
+    },
+    {
+      "title": "Jalen Brunson Earns Early-Season NBA Award After Knicks’ Hot Streak - roundtable.io",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN21KZHozbXUxdVF0M1oxOEJGaHA3NWRZNkU4ei1jUkxVclZiTXVkLXJaTzBfTjVvWEZaVmliNGh1Y2ZOSGNpeWw1Rll3TTQ0REVxRGpCTHB2WHRpX2NoZFIwenF5dWhXeXVmeVpDNDRseVhCempmRjdFdUQ1Z0hzaFltcDhsOG9zcV9ac2IyMDB1cm1aQkYtMHgtbzZSLXh3bVZnV05zUExzYjFROGNfNGtjanE?oc=5",
+      "published": "Tue, 10 Nov 2026 22:01:01 GMT",
+      "source": "roundtable.io"
+    },
+    {
+      "title": "BASKETBALL-NBA-TOR-MEM/ - AppleValleyNewsNow.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObHE4OEdlVDZDMlNaZGRqX01XajEtM19OZXdXLWpYd1RaRlRRMzNCbEs2dkpISTFYaldGZlRreEpUVWNJbzd3MzU3WWZpVTZzVE5WTC1jSUN0VGowcFhZclBqeDdMdWptZ3U4Sk9ELXZQMGdzSUp4bVBfNmJKMHVPZG5ucWxxZWtHdzh4Sk44TTVrZHRKYWRWNEtOZEJfTTFHa09TLUhSbmlHV1pGcGNpdHZ1QVhwSjNaTzVJWGxNbGQyNGt0SE44?oc=5",
+      "published": "Tue, 10 Nov 2026 18:45:43 GMT",
+      "source": "AppleValleyNewsNow.com"
+    },
+    {
+      "title": "Warriors reserve guard Brandon Williams strains left hamstring and will miss at least a week - The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSXlVQ1RlYmoxb3BBQXhJbUo5VVE1OTlIYURFenZBY3oxd3pPYXoxNDF3eEpUa1FDb0tELTRPeWp5cGxDaU52OU1DNFhZMkJteUZUVjdoUDYxUHJRM29PcUFqeURhNlg0c0NOLU5UN1pYQlgyT2kyNFhQSWthN1NZNGhSM0h1dDJDemlvTVd4eTB5WEszODhSd1BFZEd0bkNkeTBQUVN6WEs5SUg3cXU3NzZLN3M4OU04SDBKQ2RpdVJjZ1NwRzQxeHFoS1BrMUU?oc=5",
+      "published": "Wed, 11 Nov 2026 00:12:57 GMT",
+      "source": "The Washington Post"
+    },
+    {
+      "title": "Nuggets get some rest, set for grind with Grizzlies - Lexington Herald Leader",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43Y1dYUk1NNkJVVGExNTFuNnVMWXBkNVJkOFQ3QkR4aTgyakl0TmtvYlZPV2tidlpzQnhDdUhMdjRCYWluVTdvUEMyRTZOaFY2QXZOMF9pQmVoRlN2VUN3U2hrWVZXb1F1?oc=5",
+      "published": "Wed, 11 Nov 2026 00:07:00 GMT",
+      "source": "Lexington Herald Leader"
     }
   ],
   "news_source": "FOX Sports RSS + Google News",
-  "news_updated_at": "2026-11-11T00:27:33.293047+00:00",
+  "news_updated_at": "2026-11-11T00:29:36.813883+00:00",
   "archive_days": 7,
   "validation": {
     "completed_predictions": 31,
