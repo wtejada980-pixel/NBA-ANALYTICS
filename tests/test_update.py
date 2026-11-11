@@ -34,14 +34,16 @@ class ParseTests(unittest.TestCase):
         data = {'boxscore': {'players': [
             {'team': {'id': '10'}, 'statistics': [
                 {'labels': ['MIN', 'PTS', 'REB', 'AST'], 'athletes': [
-                    {'athlete': {'id': '100', 'displayName': 'Jugador Ejemplo'}, 'stats': ['33', '25', '6', '8']},
+                    {'athlete': {'id': '100', 'displayName': 'Jugador Ejemplo'}, 'starter': True,
+                     'stats': ['33:12', '25', '6', '8']},
                     {'athlete': {'id': '101', 'displayName': 'Sin jugar'}, 'didNotPlay': True, 'stats': []},
                 ]}]},
         ]}}
         players = update.stat_line(data, '10')
         self.assertEqual(len(players), 1)
-        self.assertFalse(players[0]['starter'])
+        self.assertTrue(players[0]['starter'])
         self.assertEqual((players[0]['pts'], players[0]['reb'], players[0]['ast']), (25, 6, 8))
+        self.assertEqual(players[0]['min'], '33:12')
 
     def test_history_is_auditable_and_sorted(self):
         record={"date":"2026-11-06","home":"Equipo Local","away":"Equipo Visitante",
@@ -88,10 +90,14 @@ class ParseTests(unittest.TestCase):
     def test_player_profiles_use_cached_stats(self):
         game = update.parse_event(sample_event())
         box = {'1': {'player_stats': {'10': [
-          {'id':'100','name':'Jugador','pts':24,'reb':5,'ast':7,'starter':True}
+          {'id':'100','name':'Jugador','pts':24,'reb':5,'ast':7,'starter':True},
+          {'id':'101','name':'Suplente','pts':12,'reb':3,'ast':4,'starter':False}
         ]}}}
-        rows = update.player_profiles('10', [game, game], box)
-        self.assertEqual(rows[0]['pts'], 24.0)
+        rows = update.player_profiles('10', [game, game, game, game], box)
+        starter = next(player for player in rows if player['id'] == '100')
+        self.assertEqual(starter['pts'], 24.0)
+        self.assertTrue(starter['possible_starter'])
+        self.assertEqual((starter['starter_games'], starter['sample_games']), (4, 4))
 
     def test_revision_keeps_original_and_timestamp(self):
         from datetime import datetime, timezone
@@ -144,6 +150,32 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(rows[0]['prediction']['home_pct'],60)
         self.assertIsNone(rows[1]['prediction'])
         self.assertEqual(rows[0]['home_score'],120)
+
+    def test_archived_games_include_cached_player_boxscore(self):
+        from datetime import date
+        game=update.parse_event(sample_event(event_id='box',state='post'))
+        box={'player_stats':{'10':[{'id':'h1','name':'Local','pts':22,'reb':9,'ast':4}],
+                             '20':[{'id':'a1','name':'Visitante','pts':18,'reb':5,'ast':7}]}}
+        rows=update.archived_games({'box':game},{'predictions':{}},date(2026,11,9),
+                                   box_cache={'box':box})
+        self.assertEqual(rows[0]['player_stats']['10'][0]['pts'],22)
+
+    def test_archive_boxscore_backfill_caches_verified_espn_stats(self):
+        from datetime import date
+        from unittest.mock import patch
+        game=update.parse_event(sample_event(event_id='box',state='post'))
+        game['date']='2026-11-04'
+        payload={'boxscore':{'players':[
+            {'team':{'id':'10'},'statistics':[{'labels':['PTS','REB','AST'],
+             'athletes':[{'athlete':{'id':'h1','displayName':'Local'},'stats':['22','9','4']}]}]},
+            {'team':{'id':'20'},'statistics':[{'labels':['PTS','REB','AST'],
+             'athletes':[{'athlete':{'id':'a1','displayName':'Visitante'},'stats':['18','5','7']}]}]}
+        ]}}
+        with patch.object(update,'get_json',return_value=payload) as fetch:
+            count=update.cache_archive_boxscores([game],{},date(2026,11,9))
+        self.assertEqual(count,1)
+        self.assertEqual(fetch.call_count,1)
+        self.assertEqual(update.game_box_record(payload,game)['player_stats']['10'][0]['reb'],9)
 
     def test_archived_games_only_last_seven_days(self):
         from datetime import date
