@@ -247,6 +247,9 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/21\.4/);
   assert.match(view.node('games').innerHTML,/18\.7/);
   assert.match(view.node('games').innerHTML,/POSIBLE · 4\/5/);
+  assert.match(view.node('games').innerHTML,/class="possible-starters-grid"/);
+  assert.match(view.node('games').innerHTML,/4\/5 aperturas recientes/);
+  assert.match(view.node('games').innerHTML,/no están confirmados/);
   assert.match(view.node('games').innerHTML,/Posibles titulares/);
   assert.match(view.node('games').innerHTML,/Team Leaders/);
   assert.match(view.node('games').innerHTML,/Prom\. REB/);
