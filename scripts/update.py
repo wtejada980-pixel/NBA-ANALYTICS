@@ -31,6 +31,9 @@ HISTORY = ROOT / 'data' / 'history.json'
 EVENT_CACHE = ROOT / 'data' / 'events-cache.json'
 BOX_CACHE = ROOT / 'data' / 'player-box-cache.json'
 ZONE = ZoneInfo('America/Santo_Domingo')
+# ESPN timestamps this NBA fixture just after midnight in Santo Domingo;
+# retain the official NBA schedule date so it appears under Nov. 10.
+NBA_OFFICIAL_DATE_OVERRIDES = {'401909965': '2026-11-10'}
 API = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 USER_AGENT = 'NBAAnalyticsPersonalResearch/1.0 (+github-pages; low-volume)'
 
