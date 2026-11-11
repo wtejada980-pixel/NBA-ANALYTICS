@@ -442,3 +442,47 @@ nav[aria-label="Fechas de partidos"] button[aria-current="date"]{
 .racha-e{background:linear-gradient(135deg,#95a5a6,#7f8c8d);border:1px solid #ffffff33}
 .racha-item:hover{transform:translateY(-2px)}
 @media(prefers-reduced-motion:reduce){.racha-item{transition:none}}
+
+/* Toques de acabado inspirados en Apple, adaptados al tema oscuro y naranja */
+:root{
+ --bg-base:#0b0c0e;
+ --bg-card:#17181b;
+ --bg-card-hover:#202125;
+ --text-primary:#f5f5f7;
+ --text-secondary:#a8a9ae;
+ --border-color:#ffffff12;
+ --glass-bg:#0d0e11eF;
+ --system-green:#32d74b;
+ --system-yellow:#ffd60a;
+ --system-red:#ff453a;
+ --system-blue:#0a84ff;
+ font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+button:focus-visible,a:focus-visible{outline:2px solid #ff8057;outline-offset:4px}
+.site-header{
+ position:sticky;top:0;z-index:40;
+ background:var(--glass-bg);
+ -webkit-backdrop-filter:blur(20px) saturate(160%);
+ backdrop-filter:blur(20px) saturate(160%);
+}
+.game-card,.scout-card,.quality-metric,.history-entry,.calibration-card,.context-panel{
+ border-radius:20px;
+}
+.game-card{
+ background:linear-gradient(150deg,#1b1c20eF 0%,#141518f2 65%,#101216f5 100%);
+ transition:border-color .25s,transform .25s cubic-bezier(.25,1,.5,1),box-shadow .25s;
+}
+.news-card,.noticia-card{
+ border-radius:16px;
+ transition:border-color .22s,transform .22s cubic-bezier(.25,1,.5,1),background .22s;
+}
+.history-toolbar{top:82px}
+@media(max-width:480px){.history-toolbar{top:74px}}
+@media(hover:hover){
+ .game-card:hover{transform:translateY(-2px)}
+ .news-card:hover,.noticia-card:hover{transform:translateY(-3px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .site-header{-webkit-backdrop-filter:none;backdrop-filter:none}
+ .game-card,.news-card,.noticia-card{transition:none}
+}
