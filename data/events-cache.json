@@ -741,6 +741,575 @@
       "away_score": 124,
       "source": "https://www.espn.com/nba/game/_/gameId/401909295"
     },
+    "401909296": {
+      "id": "401909296",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T00:00Z",
+      "home": {
+        "id": "11",
+        "abbr": "IND",
+        "name": "Indiana Pacers"
+      },
+      "away": {
+        "id": "18",
+        "abbr": "NY",
+        "name": "New York Knicks"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909296",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 35.2,
+        "away_pct": 64.8,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 44.9,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "New York Knicks",
+        "opponent": "Indiana Pacers",
+        "favorite_pct_original": 64.8,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "El favorito llega con menos días de descanso registrado."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 2,
+          "margin": -5.3,
+          "for": 109.2,
+          "against": 114.4,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 6,
+          "margin": 12.1,
+          "for": 113.3,
+          "against": 99.2,
+          "rest": 1
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909297": {
+      "id": "401909297",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T00:00Z",
+      "home": {
+        "id": "19",
+        "abbr": "ORL",
+        "name": "Orlando Magic"
+      },
+      "away": {
+        "id": "15",
+        "abbr": "MIL",
+        "name": "Milwaukee Bucks"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909297",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 68.7,
+        "away_pct": 31.3,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 65.3,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Orlando Magic",
+        "opponent": "Milwaukee Bucks",
+        "favorite_pct_original": 68.7,
+        "classification": "Favorito estadístico",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 3,
+          "margin": -5.7,
+          "for": 106.5,
+          "against": 112.6,
+          "rest": 1
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 1,
+          "margin": -16.2,
+          "for": 100.6,
+          "against": 118.7,
+          "rest": 1
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909298": {
+      "id": "401909298",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T01:00Z",
+      "home": {
+        "id": "14",
+        "abbr": "MIA",
+        "name": "Miami Heat"
+      },
+      "away": {
+        "id": "5",
+        "abbr": "CLE",
+        "name": "Cleveland Cavaliers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909298",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 55.4,
+        "away_pct": 44.6,
+        "reason": "Ventaja por ventaja de localía y más victorias recientes.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 57.6,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Miami Heat",
+        "opponent": "Cleveland Cavaliers",
+        "favorite_pct_original": 55.4,
+        "classification": "Partido muy cerrado",
+        "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 5,
+          "margin": -1,
+          "for": 116.3,
+          "against": 117.3,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 5,
+          "margin": 0.5,
+          "for": 114.5,
+          "against": 113.9,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909299": {
+      "id": "401909299",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T01:00Z",
+      "home": {
+        "id": "4",
+        "abbr": "CHI",
+        "name": "Chicago Bulls"
+      },
+      "away": {
+        "id": "1",
+        "abbr": "ATL",
+        "name": "Atlanta Hawks"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909299",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 36,
+        "away_pct": 64,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 44.4,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Atlanta Hawks",
+        "opponent": "Chicago Bulls",
+        "favorite_pct_original": 64,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 2,
+          "margin": -13.2,
+          "for": 113.4,
+          "against": 129,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 5,
+          "margin": -0.9,
+          "for": 118,
+          "against": 118.9,
+          "rest": 4
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909300": {
+      "id": "401909300",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T01:00Z",
+      "home": {
+        "id": "3",
+        "abbr": "NO",
+        "name": "New Orleans Pelicans"
+      },
+      "away": {
+        "id": "29",
+        "abbr": "MEM",
+        "name": "Memphis Grizzlies"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909300",
+      "head_to_head": [
+        {
+          "date": "2026-11-02",
+          "home": "MEM",
+          "away": "NO",
+          "home_score": 134,
+          "away_score": 135
+        }
+      ],
+      "prediction": {
+        "home_pct": 41.5,
+        "away_pct": 58.5,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 47.2,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Memphis Grizzlies",
+        "opponent": "New Orleans Pelicans",
+        "favorite_pct_original": 58.5,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 4,
+          "margin": -5.1,
+          "for": 114.4,
+          "against": 124.3,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 7,
+          "margin": 4.2,
+          "for": 116.5,
+          "against": 112.6,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909301": {
+      "id": "401909301",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T01:30Z",
+      "home": {
+        "id": "10",
+        "abbr": "HOU",
+        "name": "Houston Rockets"
+      },
+      "away": {
+        "id": "26",
+        "abbr": "UTAH",
+        "name": "Utah Jazz"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909301",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 79.7,
+        "away_pct": 20.3,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 75.8,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Houston Rockets",
+        "opponent": "Utah Jazz",
+        "favorite_pct_original": 79.7,
+        "classification": "Favorito estadístico",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 7,
+          "margin": 6.4,
+          "for": 111.3,
+          "against": 104.4,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 1,
+          "margin": -11.6,
+          "for": 104.3,
+          "against": 115.9,
+          "rest": 1
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909302": {
+      "id": "401909302",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T02:30Z",
+      "home": {
+        "id": "24",
+        "abbr": "SA",
+        "name": "San Antonio Spurs"
+      },
+      "away": {
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909302",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 57.4,
+        "away_pct": 42.6,
+        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 61.4,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "San Antonio Spurs",
+        "opponent": "Golden State Warriors",
+        "favorite_pct_original": 57.4,
+        "classification": "Partido muy cerrado",
+        "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 9,
+          "margin": 16.1,
+          "for": 120.9,
+          "against": 104.6,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 8,
+          "margin": 12.9,
+          "for": 124,
+          "against": 106.4,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909303": {
+      "id": "401909303",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T03:00Z",
+      "home": {
+        "id": "23",
+        "abbr": "SAC",
+        "name": "Sacramento Kings"
+      },
+      "away": {
+        "id": "22",
+        "abbr": "POR",
+        "name": "Portland Trail Blazers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909303",
+      "head_to_head": [
+        {
+          "date": "2026-10-23",
+          "home": "SAC",
+          "away": "POR",
+          "home_score": 120,
+          "away_score": 128
+        }
+      ],
+      "prediction": {
+        "home_pct": 36.6,
+        "away_pct": 63.4,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 38.9,
+      "revised_prediction": {
+        "home_pct": 35.5,
+        "away_pct": 64.5,
+        "predicted_at": "2026-11-11T14:06:21.177981+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Portland Trail Blazers",
+        "opponent": "Sacramento Kings",
+        "favorite_pct_original": 64.5,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 1,
+          "margin": -9.5,
+          "for": 107.5,
+          "against": 117.7,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 6,
+          "margin": 0.1,
+          "for": 117.4,
+          "against": 116.7,
+          "rest": 4
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401909304": {
+      "id": "401909304",
+      "date": "2026-11-13",
+      "datetime": "2026-11-14T03:30Z",
+      "home": {
+        "id": "12",
+        "abbr": "LAC",
+        "name": "LA Clippers"
+      },
+      "away": {
+        "id": "25",
+        "abbr": "OKC",
+        "name": "Oklahoma City Thunder"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909304",
+      "head_to_head": [
+        {
+          "date": "2026-10-25",
+          "home": "OKC",
+          "away": "LAC",
+          "home_score": 108,
+          "away_score": 101
+        }
+      ],
+      "prediction": {
+        "home_pct": 29.8,
+        "away_pct": 70.2,
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "model": "elo-forma10-v2",
+        "experimental": true,
+        "calibrated": false,
+        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
+        "locked": true
+      },
+      "elo_baseline_home_pct": 38.9,
+      "revised_prediction": {
+        "home_pct": 30.8,
+        "away_pct": 69.2,
+        "predicted_at": "2026-11-11T14:06:21.177981+00:00",
+        "model": "elo-forma10-v2",
+        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio"
+      },
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Oklahoma City Thunder",
+        "opponent": "LA Clippers",
+        "favorite_pct_original": 69.2,
+        "classification": "Favorito estadístico",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 2,
+          "margin": -7.6,
+          "for": 114.3,
+          "against": 122,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 8,
+          "margin": 7.8,
+          "for": 114.6,
+          "against": 103.3,
+          "rest": 4
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
     "401909834": {
       "id": "401909834",
       "date": "2026-10-21",
@@ -2983,25 +3552,6 @@
       "away_score": 114,
       "source": "https://www.espn.com/nba/game/_/gameId/401909951"
     },
-    "401914126": {
-      "id": "401914126",
-      "date": "2026-10-16",
-      "datetime": "2026-10-16T23:00Z",
-      "home": {
-        "id": "11",
-        "abbr": "IND",
-        "name": "Indiana Pacers"
-      },
-      "away": {
-        "id": "15",
-        "abbr": "MIL",
-        "name": "Milwaukee Bucks"
-      },
-      "status": "post",
-      "home_score": 127,
-      "away_score": 128,
-      "source": "https://www.espn.com/nba/game/_/gameId/401914126"
-    },
     "401909952": {
       "id": "401909952",
       "date": "2026-11-09",
@@ -3251,7 +3801,7 @@
     },
     "401909965": {
       "id": "401909965",
-      "date": "2026-11-11",
+      "date": "2026-11-10",
       "datetime": "2026-11-11T04:00Z",
       "home": {
         "id": "22",
@@ -3313,108 +3863,108 @@
             "id": "4431736",
             "name": "Toumani Camara",
             "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
+            "game_pts": 12,
+            "game_reb": 3,
+            "game_ast": 3,
             "game_min": "30"
           },
           {
             "id": "4683021",
             "name": "Deni Avdija",
             "starter": true,
-            "game_pts": 24.0,
-            "game_reb": 6.0,
-            "game_ast": 8.0,
+            "game_pts": 24,
+            "game_reb": 6,
+            "game_ast": 8,
             "game_min": "34"
           },
           {
             "id": "5105565",
             "name": "Donovan Clingan",
             "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 13.0,
-            "game_ast": 3.0,
+            "game_pts": 7,
+            "game_reb": 13,
+            "game_ast": 3,
             "game_min": "26"
           },
           {
             "id": "6606",
             "name": "Damian Lillard",
             "starter": true,
-            "game_pts": 25.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
+            "game_pts": 25,
+            "game_reb": 3,
+            "game_ast": 3,
             "game_min": "24"
           },
           {
             "id": "5081727",
             "name": "Sidy Cissoko",
             "starter": true,
-            "game_pts": 17.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
+            "game_pts": 17,
+            "game_reb": 3,
+            "game_ast": 3,
             "game_min": "33"
           },
           {
             "id": "4066211",
             "name": "Robert Williams III",
             "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 4.0,
-            "game_ast": 0.0,
+            "game_pts": 6,
+            "game_reb": 4,
+            "game_ast": 0,
             "game_min": "15"
           },
           {
             "id": "4066399",
             "name": "Micah Potter",
             "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 3.0,
-            "game_ast": 0.0,
+            "game_pts": 0,
+            "game_reb": 3,
+            "game_ast": 0,
             "game_min": "5"
           },
           {
             "id": "4592435",
             "name": "Branden Carlson",
             "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 5.0,
-            "game_ast": 0.0,
+            "game_pts": 2,
+            "game_reb": 5,
+            "game_ast": 0,
             "game_min": "8"
           },
           {
             "id": "5217746",
             "name": "Yang Hansen",
             "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
+            "game_pts": 0,
+            "game_reb": 1,
+            "game_ast": 0,
             "game_min": "5"
           },
           {
             "id": "3995",
             "name": "Jrue Holiday",
             "starter": false,
-            "game_pts": 11.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
+            "game_pts": 11,
+            "game_reb": 1,
+            "game_ast": 2,
             "game_min": "25"
           },
           {
             "id": "4683678",
             "name": "Scoot Henderson",
             "starter": false,
-            "game_pts": 11.0,
-            "game_reb": 1.0,
-            "game_ast": 4.0,
+            "game_pts": 11,
+            "game_reb": 1,
+            "game_ast": 4,
             "game_min": "23"
           },
           {
             "id": "4706557",
             "name": "Chris Youngblood",
             "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
+            "game_pts": 8,
+            "game_reb": 1,
+            "game_ast": 0,
             "game_min": "14"
           }
         ],
@@ -3423,99 +3973,99 @@
             "id": "4222252",
             "name": "Isaiah Hartenstein",
             "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 9.0,
-            "game_ast": 5.0,
+            "game_pts": 7,
+            "game_reb": 9,
+            "game_ast": 5,
             "game_min": "24"
           },
           {
             "id": "3133626",
             "name": "Kenrich Williams",
             "starter": true,
-            "game_pts": 3.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
+            "game_pts": 3,
+            "game_reb": 2,
+            "game_ast": 0,
             "game_min": "19"
           },
           {
             "id": "4278073",
             "name": "Shai Gilgeous-Alexander",
             "starter": true,
-            "game_pts": 26.0,
-            "game_reb": 8.0,
-            "game_ast": 3.0,
+            "game_pts": 26,
+            "game_reb": 8,
+            "game_ast": 3,
             "game_min": "29"
           },
           {
             "id": "4683778",
             "name": "Jared McCain",
             "starter": true,
-            "game_pts": 21.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
+            "game_pts": 21,
+            "game_reb": 3,
+            "game_ast": 3,
             "game_min": "31"
           },
           {
             "id": "4900671",
             "name": "Ajay Mitchell",
             "starter": true,
-            "game_pts": 14.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
+            "game_pts": 14,
+            "game_reb": 3,
+            "game_ast": 3,
             "game_min": "28"
           },
           {
             "id": "4684208",
             "name": "Brooks Barnhizer",
             "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
+            "game_pts": 0,
+            "game_reb": 1,
+            "game_ast": 1,
             "game_min": "5"
           },
           {
             "id": "5174983",
             "name": "Aday Mara",
             "starter": false,
-            "game_pts": 10.0,
-            "game_reb": 10.0,
-            "game_ast": 2.0,
+            "game_pts": 10,
+            "game_reb": 10,
+            "game_ast": 2,
             "game_min": "26"
           },
           {
             "id": "2991350",
             "name": "Alex Caruso",
             "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
+            "game_pts": 5,
+            "game_reb": 2,
+            "game_ast": 1,
             "game_min": "19"
           },
           {
             "id": "4432185",
             "name": "Micah Peavy",
             "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
+            "game_pts": 0,
+            "game_reb": 2,
+            "game_ast": 0,
             "game_min": "21"
           },
           {
             "id": "4702384",
             "name": "Nique Clifford",
             "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 4.0,
-            "game_ast": 1.0,
+            "game_pts": 4,
+            "game_reb": 4,
+            "game_ast": 1,
             "game_min": "20"
           },
           {
             "id": "5241364",
             "name": "Bennett Stirtz",
             "starter": false,
-            "game_pts": 13.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
+            "game_pts": 13,
+            "game_reb": 1,
+            "game_ast": 1,
             "game_min": "18"
           }
         ]
@@ -3636,7 +4186,7 @@
           "wins": 3,
           "margin": -7.7,
           "for": 104.9,
-          "against": 115.0,
+          "against": 115,
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
@@ -3976,7 +4526,7 @@
         "predicted_at": "2026-11-09T06:35:08.912916+00:00",
         "locked": true
       },
-      "elo_baseline_home_pct": 38.0,
+      "elo_baseline_home_pct": 38,
       "revised_prediction": {
         "home_pct": 21.9,
         "away_pct": 78.1,
@@ -3999,7 +4549,7 @@
           "wins": 2,
           "margin": -13.2,
           "for": 113.4,
-          "against": 129.0,
+          "against": 129,
           "rest": 3
         },
         "away_form": {
@@ -4127,7 +4677,7 @@
           "games": 10,
           "wins": 6,
           "margin": 2.5,
-          "for": 114.0,
+          "for": 114,
           "against": 111.5,
           "rest": 2
         },
@@ -4218,7 +4768,7 @@
         "predicted_at": "2026-11-09T06:35:08.912916+00:00",
         "locked": true
       },
-      "elo_baseline_home_pct": 37.0,
+      "elo_baseline_home_pct": 37,
       "revised_prediction": {
         "home_pct": 20.1,
         "away_pct": 79.9,
@@ -4370,7 +4920,7 @@
           "wins": 2,
           "margin": -7.5,
           "for": 105.2,
-          "against": 115.0,
+          "against": 115,
           "rest": 3
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
@@ -4611,7 +5161,7 @@
           "games": 10,
           "wins": 8,
           "margin": 12.9,
-          "for": 124.0,
+          "for": 124,
           "against": 106.4,
           "rest": 2
         },
@@ -4850,7 +5400,7 @@
         "predicted_at": "2026-11-10T07:21:49.134108+00:00",
         "locked": true
       },
-      "elo_baseline_home_pct": 46.0,
+      "elo_baseline_home_pct": 46,
       "revised_prediction": null,
       "scouting": {
         "version": "contexto-v1",
@@ -4866,7 +5416,7 @@
           "wins": 3,
           "margin": -7.7,
           "for": 104.9,
-          "against": 115.0,
+          "against": 115,
           "rest": 2
         },
         "away_form": {
@@ -4997,582 +5547,32 @@
         "away_form": {
           "games": 10,
           "wins": 3,
-          "margin": -9.0,
-          "for": 99.0,
+          "margin": -9,
+          "for": 99,
           "against": 111.7,
           "rest": 3
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
     },
-    "401909296": {
-      "id": "401909296",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T00:00Z",
+    "401914126": {
+      "id": "401914126",
+      "date": "2026-10-16",
+      "datetime": "2026-10-16T23:00Z",
       "home": {
         "id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers"
       },
       "away": {
-        "id": "18",
-        "abbr": "NY",
-        "name": "New York Knicks"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909296",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 35.2,
-        "away_pct": 64.8,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 44.9,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "New York Knicks",
-        "opponent": "Indiana Pacers",
-        "favorite_pct_original": 64.8,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "El favorito llega con menos días de descanso registrado."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 2,
-          "margin": -5.3,
-          "for": 109.2,
-          "against": 114.4,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 6,
-          "margin": 12.1,
-          "for": 113.3,
-          "against": 99.2,
-          "rest": 1
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909297": {
-      "id": "401909297",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T00:00Z",
-      "home": {
-        "id": "19",
-        "abbr": "ORL",
-        "name": "Orlando Magic"
-      },
-      "away": {
         "id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909297",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 68.7,
-        "away_pct": 31.3,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 65.3,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Orlando Magic",
-        "opponent": "Milwaukee Bucks",
-        "favorite_pct_original": 68.7,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 3,
-          "margin": -5.7,
-          "for": 106.5,
-          "against": 112.6,
-          "rest": 1
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 1,
-          "margin": -16.2,
-          "for": 100.6,
-          "against": 118.7,
-          "rest": 1
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909298": {
-      "id": "401909298",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T01:00Z",
-      "home": {
-        "id": "14",
-        "abbr": "MIA",
-        "name": "Miami Heat"
-      },
-      "away": {
-        "id": "5",
-        "abbr": "CLE",
-        "name": "Cleveland Cavaliers"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909298",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 55.4,
-        "away_pct": 44.6,
-        "reason": "Ventaja por ventaja de localía y más victorias recientes.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 57.6,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Miami Heat",
-        "opponent": "Cleveland Cavaliers",
-        "favorite_pct_original": 55.4,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 5,
-          "margin": -1.0,
-          "for": 116.3,
-          "against": 117.3,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 5,
-          "margin": 0.5,
-          "for": 114.5,
-          "against": 113.9,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909299": {
-      "id": "401909299",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T01:00Z",
-      "home": {
-        "id": "4",
-        "abbr": "CHI",
-        "name": "Chicago Bulls"
-      },
-      "away": {
-        "id": "1",
-        "abbr": "ATL",
-        "name": "Atlanta Hawks"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909299",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 36.0,
-        "away_pct": 64.0,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 44.4,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Atlanta Hawks",
-        "opponent": "Chicago Bulls",
-        "favorite_pct_original": 64.0,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 2,
-          "margin": -13.2,
-          "for": 113.4,
-          "against": 129.0,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 5,
-          "margin": -0.9,
-          "for": 118.0,
-          "against": 118.9,
-          "rest": 4
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909300": {
-      "id": "401909300",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T01:00Z",
-      "home": {
-        "id": "3",
-        "abbr": "NO",
-        "name": "New Orleans Pelicans"
-      },
-      "away": {
-        "id": "29",
-        "abbr": "MEM",
-        "name": "Memphis Grizzlies"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909300",
-      "head_to_head": [
-        {
-          "date": "2026-11-02",
-          "home": "MEM",
-          "away": "NO",
-          "home_score": 134,
-          "away_score": 135
-        }
-      ],
-      "prediction": {
-        "home_pct": 41.5,
-        "away_pct": 58.5,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 47.2,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Memphis Grizzlies",
-        "opponent": "New Orleans Pelicans",
-        "favorite_pct_original": 58.5,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 4,
-          "margin": -5.1,
-          "for": 114.4,
-          "against": 124.3,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 7,
-          "margin": 4.2,
-          "for": 116.5,
-          "against": 112.6,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909301": {
-      "id": "401909301",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T01:30Z",
-      "home": {
-        "id": "10",
-        "abbr": "HOU",
-        "name": "Houston Rockets"
-      },
-      "away": {
-        "id": "26",
-        "abbr": "UTAH",
-        "name": "Utah Jazz"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909301",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 79.7,
-        "away_pct": 20.3,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 75.8,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Houston Rockets",
-        "opponent": "Utah Jazz",
-        "favorite_pct_original": 79.7,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 7,
-          "margin": 6.4,
-          "for": 111.3,
-          "against": 104.4,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 1,
-          "margin": -11.6,
-          "for": 104.3,
-          "against": 115.9,
-          "rest": 1
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909302": {
-      "id": "401909302",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T02:30Z",
-      "home": {
-        "id": "24",
-        "abbr": "SA",
-        "name": "San Antonio Spurs"
-      },
-      "away": {
-        "id": "9",
-        "abbr": "GS",
-        "name": "Golden State Warriors"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909302",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 57.4,
-        "away_pct": 42.6,
-        "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 61.4,
-      "revised_prediction": null,
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "San Antonio Spurs",
-        "opponent": "Golden State Warriors",
-        "favorite_pct_original": 57.4,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 9,
-          "margin": 16.1,
-          "for": 120.9,
-          "against": 104.6,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 12.9,
-          "for": 124.0,
-          "against": 106.4,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909303": {
-      "id": "401909303",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T03:00Z",
-      "home": {
-        "id": "23",
-        "abbr": "SAC",
-        "name": "Sacramento Kings"
-      },
-      "away": {
-        "id": "22",
-        "abbr": "POR",
-        "name": "Portland Trail Blazers"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909303",
-      "head_to_head": [
-        {
-          "date": "2026-10-23",
-          "home": "SAC",
-          "away": "POR",
-          "home_score": 120,
-          "away_score": 128
-        }
-      ],
-      "prediction": {
-        "home_pct": 36.6,
-        "away_pct": 63.4,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 38.9,
-      "revised_prediction": {
-        "home_pct": 35.5,
-        "away_pct": 64.5,
-        "predicted_at": "2026-11-11T14:06:21.177981+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Portland Trail Blazers",
-        "opponent": "Sacramento Kings",
-        "favorite_pct_original": 64.5,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 1,
-          "margin": -9.5,
-          "for": 107.5,
-          "against": 117.7,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 6,
-          "margin": 0.1,
-          "for": 117.4,
-          "against": 116.7,
-          "rest": 4
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
-    },
-    "401909304": {
-      "id": "401909304",
-      "date": "2026-11-13",
-      "datetime": "2026-11-14T03:30Z",
-      "home": {
-        "id": "12",
-        "abbr": "LAC",
-        "name": "LA Clippers"
-      },
-      "away": {
-        "id": "25",
-        "abbr": "OKC",
-        "name": "Oklahoma City Thunder"
-      },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909304",
-      "head_to_head": [
-        {
-          "date": "2026-10-25",
-          "home": "OKC",
-          "away": "LAC",
-          "home_score": 108,
-          "away_score": 101
-        }
-      ],
-      "prediction": {
-        "home_pct": 29.8,
-        "away_pct": 70.2,
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "elo-forma10-v2",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-11T06:26:36.497016+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 38.9,
-      "revised_prediction": {
-        "home_pct": 30.8,
-        "away_pct": 69.2,
-        "predicted_at": "2026-11-11T14:06:21.177981+00:00",
-        "model": "elo-forma10-v2",
-        "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio"
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Oklahoma City Thunder",
-        "opponent": "LA Clippers",
-        "favorite_pct_original": 69.2,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 2,
-          "margin": -7.6,
-          "for": 114.3,
-          "against": 122.0,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 7.8,
-          "for": 114.6,
-          "against": 103.3,
-          "rest": 4
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      }
+      "status": "post",
+      "home_score": 127,
+      "away_score": 128,
+      "source": "https://www.espn.com/nba/game/_/gameId/401914126"
     }
   }
 }
