@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261111-news">
+  <link rel="stylesheet" href="assets/style.css?v=20261111-scroll-ui">
 </head>
 <body>
   <div class="site-shell">
@@ -53,7 +53,7 @@
           <p class="updated" id="news-updated">Titulares de FOX Sports</p>
         </div>
         <p class="news-intro">Noticias NBA enlazadas al medio original. La información ayuda a revisar el contexto; no cambia los porcentajes del modelo.</p>
-        <div id="news-list" class="news-grid" aria-live="polite">
+        <div id="news-list" class="news-grid contenedor-noticias" aria-live="polite">
           <p class="history-empty">Consultando noticias…</p>
         </div>
         <p class="news-attribution">Fuentes: FOX Sports RSS y Google News RSS · Titulares atribuidos y enlazados a su publicación original.</p>
@@ -132,10 +132,11 @@
 
       <p class="footnote">Probabilidades estadísticas experimentales, no calibradas. No son certezas ni se basan en cuotas de apuestas.</p>
     </main>
+    <button id="back-to-top" class="btn-volver-arriba" type="button" aria-label="Volver arriba" title="Volver arriba">↑</button>
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261111-news" defer></script>
+  <script src="assets/app.js?v=20261111-scroll-ui" defer></script>
   <script src="assets/v3-lab.js?v=20261111-news" defer></script>
 </body>
 </html>

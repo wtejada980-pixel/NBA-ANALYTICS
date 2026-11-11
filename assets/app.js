@@ -62,6 +62,9 @@
   function formatPct(n) {
     return Number(n).toFixed(1);
   }
+  function probabilityTone(n) {
+    return n >= 65 ? 'prob-fuerte' : n >= 55 ? 'prob-media' : 'prob-baja';
+  }
   function stateLabel(game) {
     if (game.status === 'post') return 'FINALIZADO';
     if (game.status === 'in') return 'EN VIVO' + (game.status_detail ? ' · ' + game.status_detail : '');
@@ -206,7 +209,7 @@
   }
   function renderNews() {
     const items = Array.isArray(data.news) ? data.news.slice(0, 10) : [];
-    const cards = items.map(item => newsLink(item, 'news-card')).filter(Boolean);
+    const cards = items.map(item => newsLink(item, 'news-card noticia-card')).filter(Boolean);
     $('news-list').innerHTML = cards.length ? cards.join('') :
       '<p class="history-empty">No hay titulares recientes disponibles. Revisa <a href="https://www.foxsports.com/stories/nba" target="_blank" rel="noopener noreferrer">FOX Sports NBA ↗</a>.</p>';
     const raw = Date.parse(data.news_updated_at || '');
@@ -398,9 +401,9 @@
         ' por ciento; ' + escapeHtml(game.home?.name || '') + ': ' +
         formatPct(home) + ' por ciento">' +
         '<div class="probability-segment" style="width:' + formatPct(away) + '%;background:' +
-        leftColor + '"><span>' + Math.round(away) + '%</span></div>' +
+        leftColor + '"><span class="probabilidad ' + probabilityTone(away) + '">' + Math.round(away) + '%</span></div>' +
         '<div class="probability-segment" style="width:' + formatPct(home) + '%;background:' +
-        rightColor + '"><span>' + Math.round(home) + '%</span></div>' +
+        rightColor + '"><span class="probabilidad ' + probabilityTone(home) + '">' + Math.round(home) + '%</span></div>' +
       '</div>';
       const diff = Math.abs(away - home);
       const verdictText = diff >= 20 ? 'ALTA PROBABILIDAD' :
@@ -760,6 +763,22 @@
     activeHistoryFilter = filter;
     renderHistory();
   });
+  const backToTop = $('back-to-top');
+  function updateBackToTop() {
+    const scrollY = typeof window === 'undefined' ? 0 :
+      (window.scrollY || document.documentElement?.scrollTop || 0);
+    backToTop.classList.toggle('visible', scrollY > 360);
+  }
+  backToTop.addEventListener('click', () => {
+    if (typeof window === 'undefined') return;
+    const reducedMotion = typeof matchMedia === 'function' &&
+      matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top: 0, behavior: reducedMotion ? 'auto' : 'smooth'});
+  });
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', updateBackToTop, {passive: true});
+  }
+  updateBackToTop();
   (async () => { await load(); await refreshLive(); })();
   function hasLiveGameOnScreen() {
     return Array.isArray(data.games) &&

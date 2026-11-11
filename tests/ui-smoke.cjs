@@ -6,6 +6,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname,'..');
 const source = fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
+const style = fs.readFileSync(path.join(root,'assets/style.css'),'utf8');
 const getDate = () => {
   const parts = new Intl.DateTimeFormat('en-US',{timeZone:'America/Santo_Domingo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
   const val = key => parts.find(p=>p.type===key).value;
@@ -18,6 +19,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
     if(!nodes.has(id)) nodes.set(id,{
       textContent: id==='seed' ? JSON.stringify({as_of:null, games:[]}) : '',
       innerHTML: '', className:'', disabled:false, listeners:{},
+      classList:{toggle(){},add(){},remove(){}},
       addEventListener(event,callback){this.listeners[event]=callback;},
       querySelectorAll(){return [];}
     });
@@ -45,12 +47,20 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(html,/Historial: últimos 7 días/);
   assert.match(html,/id="scouting-games"/);
   assert.match(html,/id="news-list"/);
+  assert.match(html,/class="news-grid contenedor-noticias"/);
+  assert.match(html,/id="back-to-top"/);
   assert.match(html,/Noticias NBA/);
   assert.doesNotMatch(html,/thescore|theScore/i);
   assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
   assert.match(source,/visibilityState === 'hidden'/);
   assert.match(source,/nextLiveRetryAt/);
+  assert.match(source,/prob-fuerte/);
+  assert.match(source,/updateBackToTop/);
+  assert.match(source,/scrollTo\(\{top: 0, behavior: reducedMotion \? 'auto' : 'smooth'\}\)/);
+  assert.match(style,/scroll-snap-type:\s*x mandatory/);
+  assert.match(style,/\.noticia-card/);
+  assert.match(style,/\.btn-volver-arriba\.visible/);
   assert.match(html,/id="model-validation"/);
   assert.match(html,/id="elo-validation"/);
   assert.match(html,/id="calibration-chart"/);
