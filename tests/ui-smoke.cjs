@@ -68,6 +68,10 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(style,/\.racha-v/);
   assert.match(style,/\.racha-d/);
   assert.match(style,/\.racha-e/);
+  assert.match(style,/\.team-leaders/);
+  assert.match(style,/\.possible-starter-badge/);
+  assert.match(source,/function teamLeadersPanel/);
+  assert.match(source,/game\.player_stats\?\.\[tid\]/);
   assert.match(html,/id="model-validation"/);
   assert.match(html,/id="elo-validation"/);
   assert.match(html,/id="calibration-chart"/);
@@ -116,7 +120,10 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(contextView.node('news-list').innerHTML,/FOX Sports/);
   const pastDate = new Date(Date.now()-86400000).toISOString().slice(0,10);
   const archiveGame={...game,id:'past',date:pastDate,status:'post',historical:true,
-    home_score:112,away_score:108};
+    home_score:112,away_score:108,player_stats:{
+      '1':[{id:'bos-1',name:'Jugador Boston',pts:27,reb:6,ast:8,min:'34:10',starter:true}],
+      '2':[{id:'ny-1',name:'Jugador Nueva York',pts:24,reb:11,ast:3,min:'36:02',starter:true}]
+    }};
   const archiveView=await mount({as_of:new Date().toISOString(),
     date:today,games:[archiveGame,game]});
   assert.match(archiveView.node('date-tabs').innerHTML,/data-date=/);
@@ -124,6 +131,12 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   const historicalTab = archiveView.node('date-tabs').innerHTML;
   assert.match(historicalTab,new RegExp(pastDate));
   assert.match(source,/archive-note/);
+  const boxArchiveView=await mount({as_of:new Date().toISOString(),games:[archiveGame]});
+  assert.match(boxArchiveView.node('games').innerHTML,/Jugador Boston/);
+  assert.match(boxArchiveView.node('games').innerHTML,/27/);
+  assert.match(boxArchiveView.node('games').innerHTML,/36:02/);
+  assert.match(boxArchiveView.node('games').innerHTML,/Team Leaders/);
+  assert.match(boxArchiveView.node('games').innerHTML,/Jugador Nueva York/);
   const revisionGame = {...game,
     prediction:{...game.prediction,predicted_at:new Date(Date.now()-3600_000).toISOString()},
     revised_prediction:{home_pct:57.2,away_pct:42.8,
@@ -225,14 +238,18 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   view=await mount({
     as_of:new Date().toISOString(),games:[game],
     teams:{
-      '1':{players:[{id:'10',name:'Jugador de Boston',games:5,pts:21.4}]},
-      '2':{players:[{id:'11',name:'Jugador de NY',games:4,pts:18.7}]}
+      '1':{players:[{id:'10',name:'Jugador de Boston',games:5,pts:21.4,reb:5.2,ast:4.6,
+        possible_starter:true,starter_games:4,sample_games:5}]},
+      '2':{players:[{id:'11',name:'Jugador de NY',games:4,pts:18.7,reb:7.1,ast:3.2}]}
     }
   });
   assert.match(view.node('games').innerHTML,/Jugador de Boston/);
   assert.match(view.node('games').innerHTML,/21\.4/);
   assert.match(view.node('games').innerHTML,/18\.7/);
-  assert.match(view.node('games').innerHTML,/Titulares sin confirmar/);
+  assert.match(view.node('games').innerHTML,/POSIBLE · 4\/5/);
+  assert.match(view.node('games').innerHTML,/Posibles titulares/);
+  assert.match(view.node('games').innerHTML,/Team Leaders/);
+  assert.match(view.node('games').innerHTML,/Prom\. REB/);
   view=await mount(null,true);
   assert.match(view.node('alert').textContent,/No fue posible conectar/);
   console.log('OK: probabilidades prepartido, marcador vivo, agenda y errores de red.');
