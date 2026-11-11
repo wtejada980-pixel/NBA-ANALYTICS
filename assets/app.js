@@ -216,6 +216,26 @@
           'No hay estadísticas individuales verificadas para este equipo.') + '</div>') +
     '</div>';
   }
+  function possibleStartersPanel(game, side) {
+    const team = game[side] || {};
+    const candidates = playersForSide(game,side)
+      .filter(player => player.possible_starter === true)
+      .sort((a,b) => (Number(b.starter_games)||0) - (Number(a.starter_games)||0) ||
+        (Number(b.pts)||0) - (Number(a.pts)||0))
+      .slice(0,5);
+    const rows = candidates.map(player =>
+      '<li><strong>' + escapeHtml(player.name) + '</strong><span>' +
+      (Number(player.starter_games)||0) + '/' + (Number(player.sample_games)||0) +
+      ' aperturas recientes</span></li>').join('');
+    return '<section class="possible-starters">' +
+      '<div class="possible-starters-heading"><h4>Posibles titulares</h4><span>' +
+      escapeHtml(team.name || 'Equipo') + '</span></div>' +
+      '<p>Estimados por aperturas recientes; no están confirmados.</p>' +
+      (rows ? '<ul>' + rows + '</ul>' :
+        '<div class="possible-starters-empty">Sin historial suficiente para sugerir titulares.</div>') +
+      '</section>';
+  }
+
   function playersPanel(game) {
     const played = game.historical || game.status === 'post';
     return '<div class="players-panel-title">' + (played ? 'Jugadores y box score' :
@@ -223,6 +243,7 @@
       '<p class="players-explainer">' + (played ?
       'PTS, REB, AST y MIN son las estadísticas registradas en este partido.' :
       'Promedios por partido calculados con hasta los últimos 5 juegos. “Posible titular” se basa en aperturas recientes y no confirma el quinteto.') + '</p>' +
+      (played ? '' : '<div class="possible-starters-grid">' + possibleStartersPanel(game,'away') + possibleStartersPanel(game,'home') + '</div>') +
       '<div class="player-columns">' + playerTable(game,'away') + playerTable(game,'home') + '</div>';
   }
 
