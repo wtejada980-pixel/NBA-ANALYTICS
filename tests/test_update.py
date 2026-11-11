@@ -178,6 +178,69 @@ class ParseTests(unittest.TestCase):
         game = {'home': {'id':'10'},'away':{'id':'20'}}
         self.assertIsNone(update.predict(game, {'10':team, '20':team}))
 
+    def test_input_snapshot_keeps_pregame_player_and_injury_data(self):
+        from datetime import datetime, timezone
+        game = {'id':'42','datetime':'2026-11-07T22:00:00Z',
+                'home':{'id':'10'},'away':{'id':'20'},
+                'context':{'news':[{'title':'Noticia NBA','source':'Medio','published':'hoy',
+                                    'feed':'Google News','url':'https://example.com'}]}}
+        teams = {
+          '10': {'form':{'played':8,'wins':5,'margin':4.5,'win_rate':.62,
+                         'points_for':111,'points_against':107},
+                 'rest_days':2,'player_trend':.4,
+                 'players':[{'id':'100','name':'Jugador','games':5,'pts':24.2,
+                             'reb':6.1,'ast':5.0,'recent_points':[28,22,24,23]}]},
+          '20': {'form':{'played':8,'wins':4,'margin':0,'win_rate':.5},
+                 'rest_days':1,'player_trend':0,'players':[]}}
+        injuries = {'42': {'home':{'source':'ESPN','items':[
+            {'player':'Jugador','status':'Cuestionable','reason':'Tobillo'}]},
+            'away':{'source':'ESPN','items':[]}}}
+        snap = update.build_input_snapshot(game, teams, injuries,
+            {'model':'v2','home_pct':58.5,'away_pct':41.5},
+            datetime(2026,11,7,19,tzinfo=timezone.utc))
+        self.assertEqual(snap['home_pct'],58.5)
+        self.assertEqual(snap['inputs']['home']['players'][0]['recent_points'],[28,22,24,23])
+        self.assertEqual(snap['inputs']['home']['injury_report']['items'][0]['status'],'Cuestionable')
+        self.assertEqual(snap['inputs']['away']['injury_report']['items'],[])
+        self.assertEqual(snap['context']['news'][0]['source'],'Medio')
+        self.assertNotIn('url',snap['context']['news'][0])
+
+    def test_input_snapshots_require_pregame_time_and_skip_rapid_duplicates(self):
+        from datetime import datetime, timezone
+        from copy import deepcopy
+        record={}
+        def snapshot(at, score=58.5):
+            return {'captured_at':at,'scheduled_at':'2026-11-07T22:00:00Z',
+                    'home_pct':score,'away_pct':100-score,'inputs':{'feature':1}}
+        first=snapshot('2026-11-07T19:00:00Z')
+        self.assertTrue(update.append_input_snapshot(record,first))
+        self.assertFalse(update.append_input_snapshot(record,deepcopy(first)))
+        self.assertTrue(update.append_input_snapshot(record,snapshot('2026-11-07T19:10:00Z',60)))
+        self.assertFalse(update.append_input_snapshot(record,snapshot('2026-11-07T22:01:00Z')))
+        self.assertEqual(len(record['input_snapshots']),2)
+
+    def test_injury_snapshots_only_cover_games_within_36_hours(self):
+        from datetime import datetime, timezone
+        now=datetime(2026,11,7,18,tzinfo=timezone.utc)
+        games=[
+          {'id':'today','status':'pre','datetime':'2026-11-07T20:00:00Z',
+           'home':{'id':'10'},'away':{'id':'20'},
+           'context':{'injuries':{'home':{'items':[{'player':'A','status':'Fuera'}],
+                                            'source':'ESPN'},
+                                  'away':{'items':[],'source':'ESPN'}}}},
+          {'id':'tomorrow','status':'pre','datetime':'2026-11-08T16:00:00Z',
+           'home':{'id':'30'},'away':{'id':'40'}},
+          {'id':'later','status':'pre','datetime':'2026-11-09T20:00:00Z',
+           'home':{'id':'30'},'away':{'id':'50'}}]
+        fetched=[]
+        def fetch(team_id):
+            fetched.append(team_id)
+            return ([{'player':'B','status':'Probable'}],'ESPN')
+        result=update.capture_upcoming_injuries(games,now,fetch)
+        self.assertEqual(fetched,['30','40'])
+        self.assertEqual(set(result),{'today','tomorrow'})
+        self.assertEqual(result['today']['home']['items'][0]['player'],'A')
+
 
 if __name__ == '__main__':
     unittest.main()

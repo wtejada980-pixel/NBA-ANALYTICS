@@ -19,7 +19,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
-from context_sources import collect
+from context_sources import collect, injuries_for_team
 from model_v2 import predict as predict_v2, elo_before, elo_baseline_probability
 from validation import evaluate
 from scouting import analyze as analyze_scouting
@@ -375,6 +375,128 @@ def public_history(history: dict, limit: int = 45) -> list[dict]:
     return visible[:limit]
 
 
+def capture_upcoming_injuries(games: list[dict], now: datetime,
+                              fetch=injuries_for_team,
+                              horizon: timedelta = timedelta(hours=36)) -> dict:
+    """Capturar informes disponibles antes del inicio; no inferir jugadores sanos."""
+    reports, team_cache, eligible_games = {}, {}, set()
+    end = now + horizon
+    for game in games:
+        if game.get('status') != 'pre':
+            continue
+        try:
+            starts = parse_time(game['datetime'])
+            if not now < starts <= end:
+                continue
+        except (KeyError, TypeError, ValueError):
+            continue
+        eligible_games.add(str(game.get('id')))
+        for side in ('home', 'away'):
+            team_id = str(game.get(side, {}).get('id', ''))
+            if not team_id or team_id in team_cache:
+                continue
+            # The daily UI context is already fetched from ESPN; reuse it.
+            existing = (game.get('context', {}).get('injuries', {}).get(side)
+                        if isinstance(game.get('context'), dict) else None)
+            if isinstance(existing, dict):
+                team_cache[team_id] = (existing.get('items', []),
+                                       existing.get('source', 'No verificado'))
+                continue
+            try:
+                team_cache[team_id] = fetch(team_id)
+            except Exception:
+                team_cache[team_id] = ([], 'No verificado')
+    for game in games:
+        if str(game.get('id')) not in eligible_games:
+            continue
+        for side in ('home', 'away'):
+            team_id = str(game.get(side, {}).get('id', ''))
+            if team_id and team_id in team_cache:
+                items, source = team_cache[team_id]
+                reports.setdefault(str(game.get('id')), {})[side] = {
+                    'items': items if isinstance(items, list) else [],
+                    'source': str(source or 'No verificado')
+                }
+    return reports
+
+
+def build_input_snapshot(game: dict, teams: dict, injury_reports: dict,
+                         prediction: dict, captured_at: datetime) -> dict:
+    """Guardar variables numéricas y disponibilidad tal como se conocían prepartido."""
+    sides = {}
+    game_reports = injury_reports.get(str(game.get('id')), {})
+    for side in ('home', 'away'):
+        team_id = str(game[side]['id'])
+        team = teams.get(team_id, {})
+        form = team.get('form', {})
+        report = game_reports.get(side, {'items': [], 'source': 'No consultado'})
+        players = []
+        for player in (team.get('players') or [])[:5]:
+            players.append({key: player.get(key) for key in
+                            ('id', 'name', 'games', 'pts', 'reb', 'ast', 'recent_points')
+                            if player.get(key) is not None})
+        injuries = []
+        for item in (report.get('items') or [])[:20]:
+            if not isinstance(item, dict):
+                continue
+            injuries.append({key: str(item.get(key, ''))[:160]
+                             for key in ('player', 'status', 'reason') if item.get(key)})
+        sides[side] = {
+            'team_id': team_id,
+            'form': {key: form.get(key) for key in
+                     ('played', 'wins', 'margin', 'win_rate', 'points_for', 'points_against')
+                     if form.get(key) is not None},
+            'rest_days': team.get('rest_days'),
+            'player_trend': team.get('player_trend'),
+            'players': players,
+            'injury_report': {'source': str(report.get('source') or 'No verificado'),
+                              'items': injuries}
+        }
+    context = game.get('context') if isinstance(game.get('context'), dict) else {}
+    news = []
+    for item in (context.get('news') or [])[:4]:
+        if not isinstance(item, dict) or not item.get('title'):
+            continue
+        news.append({key: str(item.get(key, ''))[:180]
+                     for key in ('title', 'source', 'published', 'feed') if item.get(key)})
+    return {
+        'captured_at': captured_at.isoformat(),
+        'scheduled_at': game.get('datetime'),
+        'model': str(prediction.get('model') or 'sin versión'),
+        'home_pct': float(prediction['home_pct']),
+        'away_pct': float(prediction['away_pct']),
+        'inputs': sides,
+        'context': {'news': news},
+    }
+
+
+def append_input_snapshot(record: dict, snapshot: dict, max_snapshots: int = 48,
+                          min_interval: timedelta = timedelta(minutes=45)) -> bool:
+    """Añadir captura prepartido si los datos cambiaron o pasó el intervalo mínimo."""
+    try:
+        if parse_time(snapshot['captured_at']) >= parse_time(snapshot['scheduled_at']):
+            return False
+    except (KeyError, TypeError, ValueError):
+        return False
+    snapshots = record.setdefault('input_snapshots', [])
+    if not isinstance(snapshots, list):
+        snapshots = record['input_snapshots'] = []
+    if snapshots:
+        previous = snapshots[-1]
+        try:
+            elapsed = parse_time(snapshot['captured_at']) - parse_time(previous['captured_at'])
+            same_values = (snapshot.get('inputs') == previous.get('inputs') and
+                           snapshot.get('home_pct') == previous.get('home_pct') and
+                           snapshot.get('away_pct') == previous.get('away_pct'))
+            if same_values and elapsed < min_interval:
+                return False
+        except (KeyError, TypeError, ValueError):
+            pass
+    snapshots.append(snapshot)
+    record['input_snapshots'] = snapshots[-max_snapshots:]
+    return True
+
+
 
 def archived_games(all_events: dict, history: dict, day: date, days: int = 7) -> list[dict]:
     """Calendario de días pasados: resultados verificados y predicciones reales guardadas.
@@ -493,6 +615,10 @@ def refresh(today: date | None = None):
                       'rest_days': rest,
                       'form': weighted_form(tid, hist),
                       'players': players, 'player_trend': player_trend(players)}
+    # Collect the day's context before saving prediction inputs. A separate
+    # timestamped history snapshot makes later model comparisons leakage-safe.
+    daily_context = collect([g for g in schedule if g['date'] == day.isoformat()], teams)
+    injury_snapshots = capture_upcoming_injuries(schedule, now)
     for game in schedule:
         game['head_to_head'] = recent_meetings(game, finished)
         stored = history['predictions'].get(game['id'])
@@ -539,9 +665,7 @@ def refresh(today: date | None = None):
                 })
         if lineups['home'] or lineups['away']:
             game['lineups'] = lineups
-    # Contexto de lesiones, noticias y foros SOLO para partidos del día.
-    # No modifica la probabilidad, que depende de la forma deportiva.
-    daily_context = collect([g for g in schedule if g['date'] == day.isoformat()], teams)
+    # Las noticias siguen como contexto cualitativo; no alteran las probabilidades.
     news_items = daily_context.get('news', []) if isinstance(daily_context, dict) else []
     news_updated_at = daily_context.get('news_updated_at') if isinstance(daily_context, dict) else None
     if not news_items:
@@ -560,14 +684,21 @@ def refresh(today: date | None = None):
             record['result'] = {'home_score': game['home_score'], 'away_score': game['away_score'],
                                 'winner': 'home' if game['home_score'] > game['away_score'] else 'away'}
     for game in schedule:
-        if game['status'] == 'pre' and game['prediction'] and game['id'] not in history['predictions']:
-            history['predictions'][game['id']] = {
+        if game['status'] != 'pre' or not game['prediction']:
+            continue
+        record = history['predictions'].get(game['id'])
+        if record is None:
+            record = {
                 'date': game['date'], 'home': game['home']['name'], 'away': game['away']['name'],
                 'home_pct': game['prediction']['home_pct'], 'away_pct': game['prediction']['away_pct'],
                 'predicted_at': now.isoformat(), 'model': game['prediction']['model'],
                 'reason': game['prediction'].get('reason', 'Pronóstico prepartido.'),
                 'elo_baseline_home_pct': game['elo_baseline_home_pct'],
                 'scheduled_at': game['datetime'], 'result': None}
+            history['predictions'][game['id']] = record
+        active = game.get('revised_prediction') or game['prediction']
+        inputs = build_input_snapshot(game, teams, injury_snapshots, active, now)
+        append_input_snapshot(record, inputs)
     # Keep history files modest and predictable.
     if len(history['predictions']) > 800:
         history['predictions'] = dict(sorted(history['predictions'].items(),

@@ -35,6 +35,10 @@ El archivo `.github/workflows/update-nba.yml` configura ejecuciones diarias a la
 4. Se escriben `data/latest.json` y `data/history.json`, se conservan en el repositorio y se publica el sitio.
 5. Si falla el proveedor, el proceso **marca error** y la web conserva el último informe válido con aviso de desactualización. Nunca sustituye el dato real por uno inventado.
 
+### Capturas históricas prepartido
+
+No hace falta conectar una base de datos externa para empezar. El archivo versionado `data/history.json` guarda hasta 48 capturas por partido antes del salto inicial: forma y descanso de cada equipo, estadísticas recientes de jugadores, tendencia usada por V2, reportes de disponibilidad, titulares relacionados y el porcentaje vigente. Cada captura incluye fecha y hora; el primer pronóstico queda intacto. Así podremos comparar V2, V3 y señales futuras en los mismos partidos, sin utilizar información publicada después del juego. Los titulares siguen siendo contexto, no una variable numérica automática.
+
 ### Modelo inicial (`forma8-v1`)
 
 - Diferencial medio de puntos ponderado, últimos 8 partidos: coeficiente 0.55.
