@@ -3225,7 +3225,7 @@
             "id": "3934719",
             "name": "OG Anunoby",
             "starter": true,
-            "game_pts": 2.0
+            "game_pts": 7.0
           },
           {
             "id": "3136195",
@@ -3243,13 +3243,13 @@
             "id": "3914044",
             "name": "Landry Shamet",
             "starter": true,
-            "game_pts": 3.0
+            "game_pts": 8.0
           },
           {
             "id": "3934672",
             "name": "Jalen Brunson",
             "starter": true,
-            "game_pts": 4.0
+            "game_pts": 7.0
           },
           {
             "id": "5289900",
@@ -3264,10 +3264,22 @@
             "game_pts": 2.0
           },
           {
+            "id": "2528426",
+            "name": "Jordan Clarkson",
+            "starter": false,
+            "game_pts": 0.0
+          },
+          {
             "id": "4431823",
             "name": "Miles McBride",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 6.0
+          },
+          {
+            "id": "4433225",
+            "name": "Tyler Kolek",
+            "starter": false,
+            "game_pts": 7.0
           }
         ],
         "away": [
@@ -3305,19 +3317,19 @@
             "id": "4997526",
             "name": "Ousmane Dieng",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 3.0
           },
           {
             "id": "5164559",
             "name": "Nate Ament",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 2.0
           },
           {
             "id": "5105623",
             "name": "Kel'el Ware",
             "starter": false,
-            "game_pts": 0.0
+            "game_pts": 2.0
           },
           {
             "id": "4277843",
@@ -3330,6 +3342,12 @@
             "name": "AJ Green",
             "starter": false,
             "game_pts": 0.0
+          },
+          {
+            "id": "5214640",
+            "name": "Kasparas Jakucionis",
+            "starter": false,
+            "game_pts": 3.0
           }
         ]
       }
@@ -3348,65 +3366,10 @@
         "abbr": "BOS",
         "name": "Boston Celtics"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909961",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Boston Celtics vs Philadelphia 76ers Nov 10, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IVElLcWp0SlM4SHJiaGY5dzNMMjJiYW9tM1BqY3RzQVY1R1pha2ZHa0NBd1luRUJ1M0g1YXVMc0pDd2loVnBLSVFiQ0FEOXZwbTZGNXFqNzJwdw?oc=5",
-            "published": "Tue, 10 Nov 2026 22:11:21 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "What channel are Sixers on tonight? What time is Sixers vs. Celtics",
-            "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNbUkycnBrOFU5T29xNXAzSFAyRnNJYkNHTWNIZnczdy1IYWtYZldKYUpTTnJ5TjJCZTFxTFVJQ3BfMXNWdjRJMTgydEp6ekFPRUp5VGtBb1l1cTJpVlJRNndWOW9iQlpUN0hBZks4RU9Ta0xLMWdOWm9YYVJqenB0QjYxWDRLTG10c1p5cnUzWFNkSGNOVUZ2NDYtWWpwUEdHMDlRdW5aSF9jYnNEWmhlbEZlaVFsU3l6QjAyNnpScHRHY0dzUUNWa2RTdW9wRk84SW5Ud0dhQ1BwQzlGdmhqdzRua2Z6VGhPeWFockl1NTU5enZSdE9rU0dhNlp1RmtD?oc=5",
-            "published": "Tue, 10 Nov 2026 22:30:00 GMT",
-            "source": "Delawareonline.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Boston Celtics @ Philadelphia 76ers: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LMlBmX1VWYXJya29EVVlpekZxd004cnJ2d1c1ZzhLZzZocmlSLUlpZENoZ21veVNUQ0FmdTRsSWlsNmg4NzB4UnJhRGNZWjd0eWZrY0Y0clFFSHRQR19JdWJXYnhBTTJHSkhiRE1GVlkyR0N0RHVFR1RWRVpac2s?oc=5",
-            "published": "Tue, 10 Nov 2026 21:34:27 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Celtics vs. Sixers Battle for Top Spot: 3 Keys, Injury Report, and a Prediction",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaXg5d0lLa0tmOTFMbUZ3VnUzZ2EzcjhqeW10SllqbmMwYUJpRGNaQkh4WGVOMWMzam5veU52WFFQZ01MZ1VKR0M0LUFSbUkxZUdoVWlGazl1TThwOHdJNGpKUFBsdUZ1c1lFd3VsOXp2WmhWa0Q5VVBCU2dLcHNJZzdpWmN6eXZsNmN4Mm16LWtaRmdmdVlFek5GT3BFcDNJWmRMN09fLXh6RkxYWEJfekk4VGFKdlBYQWhIdnZheFJudw?oc=5",
-            "published": "Tue, 10 Nov 2026 21:13:29 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Celtics+76ers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-11T00:56:57.545099+00:00"
-      },
       "head_to_head": [
         {
           "date": "2026-10-16",
@@ -3461,6 +3424,78 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "1966",
+            "name": "LeBron James",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "3059318",
+            "name": "Joel Embiid",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "3917376",
+            "name": "Jaylen Brown",
+            "starter": true,
+            "game_pts": 2.0
+          },
+          {
+            "id": "4431678",
+            "name": "Tyrese Maxey",
+            "starter": true,
+            "game_pts": 8.0
+          },
+          {
+            "id": "5124612",
+            "name": "VJ Edgecombe",
+            "starter": true,
+            "game_pts": 0.0
+          }
+        ],
+        "away": [
+          {
+            "id": "4251",
+            "name": "Paul George",
+            "starter": true,
+            "game_pts": 4.0
+          },
+          {
+            "id": "4065648",
+            "name": "Jayson Tatum",
+            "starter": true,
+            "game_pts": 4.0
+          },
+          {
+            "id": "4397424",
+            "name": "Neemias Queta",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "3078576",
+            "name": "Derrick White",
+            "starter": true,
+            "game_pts": 5.0
+          },
+          {
+            "id": "4683689",
+            "name": "Jordan Walsh",
+            "starter": true,
+            "game_pts": 0.0
+          },
+          {
+            "id": "4351852",
+            "name": "Mitchell Robinson",
+            "starter": false,
+            "game_pts": 0.0
+          }
+        ]
       }
     },
     "401909962": {
@@ -3534,7 +3569,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:56:57.986280+00:00"
+        "context_updated_at": "2026-11-11T01:21:30.547385+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -3618,7 +3653,7 @@
           {
             "title": "Miami Heat vs Utah Jazz Nov 10, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DRDc0UlUycTR1OEhVNUwzWi1hbFE0WDFLSEhHb19uZTVJOWZ3aDJxcjdFSm5YR25aeUVaTTBMb3U4a2hwM25ZanZ0bjJ3V1A1X29qcW9GejFaZw?oc=5",
-            "published": "Tue, 10 Nov 2026 22:11:25 GMT",
+            "published": "Tue, 10 Nov 2026 22:52:57 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
@@ -3655,7 +3690,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:56:58.450582+00:00"
+        "context_updated_at": "2026-11-11T01:21:31.207040+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -3746,7 +3781,7 @@
           {
             "title": "Orlando Magic @ Sacramento Kings: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5aSHk5cnVzZXhGV3YxN2NMdFVBaE9COThlX0YwWE5yTGg3SkFKQnVTdU4yNFlGMG1lMWVfejYwUDBHTGVhOGV5clQ4VE53Y3YyaF80dlBUbUtRWHRWU2xNNEFUUk05TGwxd3VGdXhac0ZvY2lTNEp6NDBNZw?oc=5",
-            "published": "Tue, 10 Nov 2026 22:57:58 GMT",
+            "published": "Tue, 10 Nov 2026 23:07:43 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
@@ -3776,7 +3811,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-11T00:56:58.846042+00:00"
+        "context_updated_at": "2026-11-11T01:21:31.876145+00:00"
       },
       "head_to_head": [],
       "prediction": {
