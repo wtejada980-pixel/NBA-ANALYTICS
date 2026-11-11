@@ -110,17 +110,22 @@
       for (const block of group.statistics || []) {
         const labels = (block.labels || []).map(x => String(x).toUpperCase());
         if (!labels.includes('PTS')) continue;
-        const ptsIndex = labels.indexOf('PTS');
+        const statIndex = name => labels.indexOf(name);
         for (const row of block.athletes || []) {
           if (row.didNotPlay || !row.athlete?.id) continue;
-          const raw = Array.isArray(row.stats) ? row.stats[ptsIndex] : null;
-          const pts = raw !== null && raw !== '' && raw !== undefined && Number.isFinite(Number(raw)) ?
-            Number(raw) : null;
+          const rawStats = Array.isArray(row.stats) ? row.stats : [];
+          const numberStat = name => {
+            const raw = rawStats[statIndex(name)];
+            return raw !== null && raw !== '' && raw !== undefined && Number.isFinite(Number(raw)) ? Number(raw) : null;
+          };
           result[side].push({
             id:String(row.athlete.id),
             name:String(row.athlete.displayName || row.athlete.fullName || 'Jugador'),
             starter:row.starter === true || row.isStarter === true,
-            game_pts:game.status === 'pre' ? null : pts
+            game_pts:game.status === 'pre' ? null : numberStat('PTS'),
+            game_reb:game.status === 'pre' ? null : numberStat('REB'),
+            game_ast:game.status === 'pre' ? null : numberStat('AST'),
+            game_min:game.status === 'pre' ? null : (rawStats[statIndex('MIN')] || null)
           });
         }
       }
@@ -132,14 +137,20 @@
     const tid = String(game[side]?.id || '');
     const recent = Array.isArray(data.teams?.[tid]?.players) ? data.teams[tid].players : [];
     const confirmed = livePlayerDetails.get(String(game.id)) || game.lineups || {};
-    const boxscore = Array.isArray(confirmed[side]) ? confirmed[side] : [];
+    const archivedStats = game.historical ? game.player_stats?.[tid] : null;
+    const boxscore = Array.isArray(archivedStats) ? archivedStats :
+      Array.isArray(confirmed[side]) ? confirmed[side] : [];
     const map = new Map();
     const key = p => p.id ? 'id:' + String(p.id) : 'name:' + normalizedName(p.name);
-    for (const p of recent) {
+    for (const p of (game.historical || game.status === 'post' ? [] : recent)) {
       if (p?.name) map.set(key(p), {
         id:String(p.id || ''),name:String(p.name),games:Number(p.games) || 0,
         pts:Number.isFinite(Number(p.pts)) ? Number(p.pts) : null,
-        starter:false,game_pts:null
+        reb:Number.isFinite(Number(p.reb)) ? Number(p.reb) : null,
+        ast:Number.isFinite(Number(p.ast)) ? Number(p.ast) : null,
+        starter:false,possible_starter:p.possible_starter === true,
+        starter_games:Number(p.starter_games) || 0,sample_games:Number(p.sample_games) || 0,
+        game_pts:null,game_reb:null,game_ast:null,game_min:null
       });
     }
     for (const p of boxscore) {
@@ -151,9 +162,16 @@
         id:String(p.id || ''),name:String(p.name),games:0,pts:null,starter:false,game_pts:null
       };
       record.starter = p.starter === true;
-      if (game.status !== 'pre' && p.game_pts !== null && Number.isFinite(Number(p.game_pts))) {
-        record.game_pts = Number(p.game_pts);
+      const pts = p.game_pts !== undefined ? p.game_pts : p.pts;
+      const reb = p.game_reb !== undefined ? p.game_reb : p.reb;
+      const ast = p.game_ast !== undefined ? p.game_ast : p.ast;
+      const min = p.game_min !== undefined ? p.game_min : p.min;
+      if (game.status !== 'pre' && pts !== null && pts !== undefined && Number.isFinite(Number(pts))) {
+        record.game_pts = Number(pts);
       }
+      if (game.status !== 'pre' && reb !== null && reb !== undefined && Number.isFinite(Number(reb))) record.game_reb=Number(reb);
+      if (game.status !== 'pre' && ast !== null && ast !== undefined && Number.isFinite(Number(ast))) record.game_ast=Number(ast);
+      if (game.status !== 'pre' && min !== null && min !== undefined && min !== '') record.game_min=String(min);
       map.set(idKey,record);
     }
     return [...map.values()].sort((a,b)=>Number(b.starter)-Number(a.starter) ||
@@ -164,31 +182,76 @@
     const team = game[side] || {};
     const players = playersForSide(game,side);
     const starters = players.filter(p=>p.starter);
-    const avg = p => p.pts === null || p.games < 1 ? '—' : formatPct(p.pts);
-    const todayPts = p => p.game_pts === null ? '—' : String(p.game_pts);
+    const possible = game.status === 'pre' ? players.filter(p=>p.possible_starter && !p.starter) : [];
+    const showBoxScore = game.historical || game.status === 'post';
+    const actualAvailable = players.some(p=>p.game_pts !== null);
+    const showRecentAverages = !showBoxScore;
+    const statText = (value, decimals=1) => Number.isFinite(value) ?
+      (decimals ? value.toFixed(1) : String(Math.round(value))) : '—';
     const rows = players.map(p => '<tr>' +
       '<td class="player-name">' + escapeHtml(p.name) +
-      (p.starter ? '<span class="starter-badge">TITULAR</span>' : '') +
-      '</td><td class="player-avg">' + avg(p) + '</td>' +
-      '<td class="player-today">' + todayPts(p) + '</td></tr>').join('');
-    const hint = starters.length === 5 ? '5 titulares confirmados en el acta de ESPN' :
+      (p.starter ? '<span class="starter-badge">TITULAR CONFIRMADO</span>' :
+       p.possible_starter && game.status === 'pre' ? '<span class="possible-starter-badge">POSIBLE · ' +
+         p.starter_games + '/' + p.sample_games + '</span>' : '') +
+      '</td>' + (showRecentAverages ?
+        '<td class="player-avg">' + statText(p.pts) + '</td><td>' + statText(p.reb) +
+        '</td><td>' + statText(p.ast) + '</td>' :
+        '<td class="player-today">' + (p.game_pts === null ? '—' : statText(p.game_pts,0)) +
+        '</td><td>' + statText(p.game_reb,0) + '</td><td>' + statText(p.game_ast,0) +
+        '</td><td>' + escapeHtml(p.game_min || '—') + '</td>') + '</tr>').join('');
+    const hint = showBoxScore ? (actualAvailable ? 'Box score del partido · fuente ESPN' :
+      'ESPN no publicó estadísticas individuales verificables para este partido.') :
+      starters.length === 5 ? '5 titulares confirmados en el acta de ESPN' :
       starters.length > 0 ? starters.length + ' titulares identificados por ESPN; quinteto incompleto' :
-      'Titulares sin confirmar · jugadores ordenados por promedio reciente';
+      possible.length ? 'Posibles titulares por aperturas recientes · aún no confirmados por ESPN' :
+      'Titulares no publicados · promedios recientes del equipo';
     return '<div class="player-team">' +
       '<h4>' + escapeHtml(team.name || 'Equipo') + '</h4>' +
       '<p class="lineup-note">' + escapeHtml(hint) + '</p>' +
-      (players.length ? '<table class="players-table"><thead><tr>' +
-        '<th>Jugador</th><th>Prom. PTS</th><th>Hoy</th></tr></thead><tbody>' +
+      (players.length && (!showBoxScore || actualAvailable) ? '<table class="players-table"><thead><tr>' +
+        (showRecentAverages ? '<th>Jugador</th><th>Prom. PTS</th><th>Prom. REB</th><th>Prom. AST</th>' :
+          '<th>Jugador</th><th>PTS</th><th>REB</th><th>AST</th><th>MIN</th>') + '</tr></thead><tbody>' +
         rows + '</tbody></table>' :
-        '<div class="players-empty">No hay estadísticas individuales verificadas para este equipo.</div>') +
+        '<div class="players-empty">' + (showBoxScore ? 'El proveedor no entregó el box score individual.' :
+          'No hay estadísticas individuales verificadas para este equipo.') + '</div>') +
     '</div>';
   }
   function playersPanel(game) {
-    return '<div class="players-panel-title">Jugadores y quintetos iniciales</div>' +
-      '<p class="players-explainer">Prom. PTS = promedio de puntos en hasta los últimos 5 partidos registrados de cada jugador. ' +
-      '«Hoy» = puntos anotados en este encuentro cuando ESPN los publica. ' +
-      'No es una predicción de puntos.</p>' +
+    const played = game.historical || game.status === 'post';
+    return '<div class="players-panel-title">' + (played ? 'Jugadores y box score' :
+      'Jugadores y posibles titulares') + '</div>' +
+      '<p class="players-explainer">' + (played ?
+      'PTS, REB, AST y MIN son las estadísticas registradas en este partido por ESPN.' :
+      'Promedios por partido calculados con hasta los últimos 5 juegos. “Posible titular” se basa en aperturas recientes y no confirma el quinteto.') + '</p>' +
       '<div class="player-columns">' + playerTable(game,'away') + playerTable(game,'home') + '</div>';
+  }
+
+  function teamLeadersPanel(game) {
+    const played = game.historical || game.status === 'post';
+    const categories = [
+      {key:played ? 'game_pts' : 'pts',label:'Puntos',abbr:'PTS'},
+      {key:played ? 'game_reb' : 'reb',label:'Rebotes',abbr:'REB'},
+      {key:played ? 'game_ast' : 'ast',label:'Asistencias',abbr:'AST'}
+    ];
+    const teams = ['away','home'].map(side => {
+      const team = game[side] || {};
+      const players = playersForSide(game,side);
+      const scored = played ? players.some(p=>p.game_pts !== null) : players.length > 0;
+      const values = categories.map(category => {
+        const leader = scored ? players.filter(p=>Number.isFinite(p[category.key]))
+          .sort((a,b)=>b[category.key]-a[category.key])[0] : null;
+        return '<div class="team-leader-row"><span>' + category.abbr + '</span>' +
+          '<strong>' + (leader ? escapeHtml(leader.name) : 'Sin dato verificado') + '</strong>' +
+          '<b>' + (leader ? Number(leader[category.key]).toFixed(played ? 0 : 1) : '—') +
+          '</b></div>';
+      }).join('');
+      return '<div class="team-leader-team"><h4>' + escapeHtml(team.name || 'Equipo') +
+        '</h4>' + values + '</div>';
+    }).join('');
+    return '<section class="team-leaders" aria-label="Team Leaders">' +
+      '<div class="team-leaders-heading"><h3>Team Leaders</h3><span>' +
+      (played ? 'Líderes de este partido · ESPN' : 'Promedio reciente por partido') +
+      '</span></div><div class="team-leaders-grid">' + teams + '</div></section>';
   }
   function safeArticleUrl(value) {
     try {
@@ -462,8 +525,9 @@
       '<div class="game-breakdown">' +
       (game.historical ?
         '<p class="archive-note">Este es un partido histórico. Solo se muestran porcentajes prepartido si se guardaron antes del inicio. ' +
-        'No presentamos forma actual ni titulares como si fueran datos del pasado.</p>' :
-        matchupInsights(game) + playersPanel(game) + contextPanel(game)) +
+        'Los jugadores y sus puntos corresponden al box score de ese encuentro.</p>' +
+        playersPanel(game) + teamLeadersPanel(game) :
+        matchupInsights(game) + playersPanel(game) + teamLeadersPanel(game) + contextPanel(game)) +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
         '" target="_blank" rel="noopener noreferrer">Ficha del partido en ESPN ↗</a>' : '') +
       '</div></details>';
