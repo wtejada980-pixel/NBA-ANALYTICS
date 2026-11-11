@@ -528,7 +528,7 @@
         'Los jugadores y sus puntos corresponden al box score de ese encuentro.</p>' +
         playersPanel(game) + teamLeadersPanel(game) :
         matchupInsights(game) + playersPanel(game) + teamLeadersPanel(game) + contextPanel(game)) +
-      (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
+      (game.source && !game.historical ? '<a class="game-link" href="' + escapeHtml(game.source) +
         '" target="_blank" rel="noopener noreferrer">Ficha del partido en ESPN ↗</a>' : '') +
       '</div></details>';
   }
