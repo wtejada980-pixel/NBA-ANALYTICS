@@ -351,3 +351,6 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .quality-metric .accuracy-bar{margin-top:2px}
 @media(prefers-reduced-motion:reduce){.skeleton-block,.skeleton-line,.skeleton-block:after,.skeleton-line:after{animation:none!important}}
 @media(max-width:620px){.history-toolbar{align-items:flex-start;flex-direction:column}.history-filters{width:100%}.history-count{margin-left:0}.skeleton-game{min-height:156px}}
+
+/* La barra de filtros permanece a la vista mientras se recorre el historial. */
+.history-toolbar{position:sticky;top:0;z-index:15;margin:0 0 16px;padding:11px 0;background:rgba(13,14,17,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #383238}
