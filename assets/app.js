@@ -199,11 +199,11 @@
         '<td class="player-today">' + (p.game_pts === null ? '—' : statText(p.game_pts,0)) +
         '</td><td>' + statText(p.game_reb,0) + '</td><td>' + statText(p.game_ast,0) +
         '</td><td>' + escapeHtml(p.game_min || '—') + '</td>') + '</tr>').join('');
-    const hint = showBoxScore ? (actualAvailable ? 'Box score del partido · fuente ESPN' :
+    const hint = showBoxScore ? (actualAvailable ? 'Box score del partido' :
       'ESPN no publicó estadísticas individuales verificables para este partido.') :
-      starters.length === 5 ? '5 titulares confirmados en el acta de ESPN' :
+      starters.length === 5 ? '5 titulares confirmados' :
       starters.length > 0 ? starters.length + ' titulares identificados por ESPN; quinteto incompleto' :
-      possible.length ? 'Posibles titulares por aperturas recientes · aún no confirmados por ESPN' :
+      possible.length ? 'Posibles titulares por aperturas recientes · no confirmados' :
       'Titulares no publicados · promedios recientes del equipo';
     return '<div class="player-team">' +
       '<h4>' + escapeHtml(team.name || 'Equipo') + '</h4>' +
