@@ -13,6 +13,7 @@ import os
 import sys
 import time
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -147,17 +148,62 @@ def stat_line(summary: dict, team_id: str) -> list[dict]:
                     continue
                 found.append({'id': str(who['id']), 'name': who.get('displayName', 'Jugador'),
                               'pts': pts, 'reb': stat('REB'), 'ast': stat('AST'),
+                              'min': str(mapping.get('MIN', '') or ''),
+                              'stl': stat('STL'), 'blk': stat('BLK'), 'tov': stat('TO'),
                               'starter': row.get('starter') is True or row.get('isStarter') is True})
     return found
 
 
+def game_box_record(summary: dict, game: dict) -> dict:
+    """Compact, verified player box score keyed by the game's team IDs."""
+    stats = {str(game[side]['id']): stat_line(summary, game[side]['id'])
+             for side in ('away', 'home')}
+    if not any(stats.values()):
+        return {}
+    return {'player_stats': stats}
+
+
+def cache_archive_boxscores(all_events, box_cache: dict, day: date, days: int = 7) -> int:
+    """Fetch missing ESPN box scores for the same completed games shown in the archive."""
+    begin = (day - timedelta(days=days)).isoformat()
+    end = day.isoformat()
+    candidates = [g for g in all_events if isinstance(g, dict) and g.get('status') == 'post'
+                  and begin <= str(g.get('date', '')) < end and g.get('id')]
+    missing = []
+    for game in candidates:
+        cached = box_cache.get(str(game['id']), {})
+        saved = cached.get('player_stats', {}) if isinstance(cached, dict) else {}
+        team_ids = [str(game[side]['id']) for side in ('away', 'home')]
+        if not all(isinstance(saved.get(tid), list) and saved[tid] for tid in team_ids):
+            missing.append(game)
+    fetched = 0
+    def retrieve(game):
+        try:
+            summary = get_json('summary', {'event': str(game['id'])}, tries=1)
+            return str(game['id']), game_box_record(summary, game)
+        except RuntimeError:
+            return str(game['id']), {}
+    # The cache makes this one-time backfill. Four workers keep the request rate modest.
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        futures = [pool.submit(retrieve, game) for game in missing]
+        for future in as_completed(futures):
+            game_id, record = future.result()
+            if record:
+                box_cache[game_id] = record
+                fetched += 1
+    return fetched
+
+
 def player_profiles(team_id: str, recent_games: list[dict], summaries: dict[str, dict]) -> list[dict]:
     athletes = defaultdict(list)
+    sampled_games = 0
     for game in sorted(recent_games[:5], key=lambda x: x['datetime'], reverse=True):
         saved = summaries.get(game['id'], {})
         stats = saved.get('player_stats', {}).get(str(team_id)) if isinstance(saved, dict) else None
         if stats is None:
             stats = stat_line(saved, team_id)
+        if stats:
+            sampled_games += 1
         for p in stats:
             athletes[p['id']].append(p)
     players = []
@@ -166,10 +212,14 @@ def player_profiles(team_id: str, recent_games: list[dict], summaries: dict[str,
             continue
         pts = [s['pts'] for s in samples]
         n = len(samples)
+        starter_games = sum(s.get('starter') is True for s in samples)
         players.append({'id': samples[0]['id'], 'name': samples[0]['name'], 'games': n,
                         'pts': round(sum(pts) / n, 1),
                         'reb': round(sum(s['reb'] for s in samples) / n, 1),
                         'ast': round(sum(s['ast'] for s in samples) / n, 1),
+                        'starter_games': starter_games, 'sample_games': sampled_games,
+                        'possible_starter': sampled_games >= 3 and starter_games >= 2 and
+                            starter_games / sampled_games >= .6,
                         'recent_points': pts})
     return sorted(players, key=lambda p: p['pts'], reverse=True)[:15]
 
@@ -498,7 +548,8 @@ def append_input_snapshot(record: dict, snapshot: dict, max_snapshots: int = 48,
 
 
 
-def archived_games(all_events: dict, history: dict, day: date, days: int = 7) -> list[dict]:
+def archived_games(all_events: dict, history: dict, day: date, days: int = 7,
+                   box_cache: dict | None = None) -> list[dict]:
     """Calendario de días pasados: resultados verificados y predicciones reales guardadas.
 
     No inventa probabilidades retrospectivas. El historial NO cambia ni se
@@ -517,6 +568,10 @@ def archived_games(all_events: dict, history: dict, day: date, days: int = 7) ->
         record = records.get(str(game.get('id')))
         game['prediction'] = locked_prediction(record)
         game['revised_prediction'] = latest_pre_match_revision(record)
+        cached_box = (box_cache or {}).get(str(game.get('id')), {})
+        player_stats = cached_box.get('player_stats') if isinstance(cached_box, dict) else None
+        if isinstance(player_stats, dict) and player_stats:
+            game['player_stats'] = player_stats
         # No inventar marcador final si no lo ha confirmado la fuente.
         if game.get('status') != 'post':
             game['home_score'] = None
@@ -596,9 +651,9 @@ def refresh(today: date | None = None):
             continue
         try:
             raw = get_json('summary', {'event': gid}, tries=2)
-            summary = {'player_stats': {
-                item['home']['id']: stat_line(raw, item['home']['id']),
-                item['away']['id']: stat_line(raw, item['away']['id'])}}
+            summary = game_box_record(raw, item)
+            if not summary:
+                summary = {'player_stats': {item['home']['id']: [], item['away']['id']: []}}
             summaries[gid] = summary
             box_cache[gid] = summary
         except RuntimeError:
@@ -661,10 +716,16 @@ def refresh(today: date | None = None):
                 lineups[side].append({
                     'id': p['id'], 'name': p['name'],
                     'starter': p.get('starter') is True,
-                    'game_pts': p['pts'] if game['status'] in ('in', 'post') else None
+                    'game_pts': p['pts'] if game['status'] in ('in', 'post') else None,
+                    'game_reb': p['reb'] if game['status'] in ('in', 'post') else None,
+                    'game_ast': p['ast'] if game['status'] in ('in', 'post') else None,
+                    'game_min': p['min'] if game['status'] in ('in', 'post') else None
                 })
         if lineups['home'] or lineups['away']:
             game['lineups'] = lineups
+            box_cache[game['id']] = {'player_stats': {
+                game['home']['id']: stat_line(actual, game['home']['id']),
+                game['away']['id']: stat_line(actual, game['away']['id'])}}
     # Las noticias siguen como contexto cualitativo; no alteran las probabilidades.
     news_items = daily_context.get('news', []) if isinstance(daily_context, dict) else []
     news_updated_at = daily_context.get('news_updated_at') if isinstance(daily_context, dict) else None
@@ -706,7 +767,10 @@ def refresh(today: date | None = None):
     metrics = evaluate(history['predictions'])
     # Siete fechas previas y agenda actual; registros viejos sin pronóstico
     # muestran solo el resultado real, nunca un porcentaje retrocalculado.
-    archived = archived_games(all_events, history, day, days=7)
+    archived_boxscores = cache_archive_boxscores(all_events.values(), box_cache, day, days=7)
+    if archived_boxscores:
+        print(f'Fetched {archived_boxscores} archived ESPN player box scores.')
+    archived = archived_games(all_events, history, day, days=7, box_cache=box_cache)
     snapshot = {
         'as_of': now.isoformat(), 'date': day.isoformat(), 'timezone': 'America/Santo_Domingo',
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
