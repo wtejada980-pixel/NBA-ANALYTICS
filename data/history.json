@@ -799,6 +799,229 @@
           "reason": "Ventaja por mejor margen de puntos reciente y mejor balance de anotación.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-11T01:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 46.7,
+          "away_pct": 53.3,
+          "inputs": {
+            "home": {
+              "team_id": "20",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 1.65,
+                "win_rate": 0.782,
+                "points_for": 111.8,
+                "points_against": 110.2
+              },
+              "rest_days": 2,
+              "player_trend": -0.42777777777777787,
+              "players": [
+                {
+                  "id": "4431678",
+                  "name": "Tyrese Maxey",
+                  "games": 5,
+                  "pts": 25.4,
+                  "reb": 3.2,
+                  "ast": 6.6,
+                  "recent_points": [
+                    27.0,
+                    17.0,
+                    19.0,
+                    26.0,
+                    38.0
+                  ]
+                },
+                {
+                  "id": "3917376",
+                  "name": "Jaylen Brown",
+                  "games": 5,
+                  "pts": 24.0,
+                  "reb": 6.8,
+                  "ast": 3.8,
+                  "recent_points": [
+                    29.0,
+                    20.0,
+                    30.0,
+                    25.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "3059318",
+                  "name": "Joel Embiid",
+                  "games": 4,
+                  "pts": 16.2,
+                  "reb": 10.0,
+                  "ast": 2.8,
+                  "recent_points": [
+                    18.0,
+                    6.0,
+                    26.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "5124612",
+                  "name": "VJ Edgecombe",
+                  "games": 5,
+                  "pts": 14.8,
+                  "reb": 5.2,
+                  "ast": 3.2,
+                  "recent_points": [
+                    13.0,
+                    19.0,
+                    11.0,
+                    21.0,
+                    10.0
+                  ]
+                },
+                {
+                  "id": "1966",
+                  "name": "LeBron James",
+                  "games": 4,
+                  "pts": 14.5,
+                  "reb": 7.2,
+                  "ast": 6.2,
+                  "recent_points": [
+                    22.0,
+                    8.0,
+                    13.0,
+                    15.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "2",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 10.62,
+                "win_rate": 0.855,
+                "points_for": 113.9,
+                "points_against": 100.5
+              },
+              "rest_days": 2,
+              "player_trend": -0.0777777777777778,
+              "players": [
+                {
+                  "id": "4065648",
+                  "name": "Jayson Tatum",
+                  "games": 4,
+                  "pts": 26.5,
+                  "reb": 5.5,
+                  "ast": 7.8,
+                  "recent_points": [
+                    21.0,
+                    34.0,
+                    19.0,
+                    32.0
+                  ]
+                },
+                {
+                  "id": "4251",
+                  "name": "Paul George",
+                  "games": 4,
+                  "pts": 19.2,
+                  "reb": 4.2,
+                  "ast": 3.8,
+                  "recent_points": [
+                    27.0,
+                    8.0,
+                    25.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "3078576",
+                  "name": "Derrick White",
+                  "games": 5,
+                  "pts": 14.0,
+                  "reb": 3.0,
+                  "ast": 4.8,
+                  "recent_points": [
+                    9.0,
+                    18.0,
+                    24.0,
+                    7.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "4397424",
+                  "name": "Neemias Queta",
+                  "games": 5,
+                  "pts": 10.0,
+                  "reb": 7.6,
+                  "ast": 2.0,
+                  "recent_points": [
+                    13.0,
+                    4.0,
+                    9.0,
+                    16.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "4277951",
+                  "name": "Luka Garza",
+                  "games": 5,
+                  "pts": 9.4,
+                  "reb": 5.4,
+                  "ast": 2.0,
+                  "recent_points": [
+                    4.0,
+                    6.0,
+                    11.0,
+                    14.0,
+                    12.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": [
+              {
+                "title": "Boston Celtics vs Philadelphia 76ers Nov 10, 2026 Game Summary",
+                "source": "NBA.com",
+                "published": "Tue, 10 Nov 2026 22:11:21 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "What channel are Sixers on tonight? What time is Sixers vs. Celtics",
+                "source": "Delawareonline.com",
+                "published": "Tue, 10 Nov 2026 22:30:00 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Boston Celtics @ Philadelphia 76ers: Live game updates, stats, play-by-play",
+                "source": "Yahoo Sports",
+                "published": "Tue, 10 Nov 2026 21:34:27 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Celtics vs. Sixers Battle for Top Spot: 3 Keys, Injury Report, and a Prediction",
+                "source": "Sports Illustrated",
+                "published": "Tue, 10 Nov 2026 21:13:29 GMT",
+                "feed": "Google News"
+              }
+            ]
+          }
+        }
       ]
     },
     "401909962": {
@@ -830,6 +1053,232 @@
           "reason": "Encuentro equilibrado; sin favorito claro.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-11T02:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 50.0,
+          "away_pct": 50.0,
+          "inputs": {
+            "home": {
+              "team_id": "21",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -6.05,
+                "win_rate": 0.364,
+                "points_for": 110.1,
+                "points_against": 116.9
+              },
+              "rest_days": 1,
+              "player_trend": -0.5888888888888889,
+              "players": [
+                {
+                  "id": "3136193",
+                  "name": "Devin Booker",
+                  "games": 5,
+                  "pts": 29.0,
+                  "reb": 1.8,
+                  "ast": 4.4,
+                  "recent_points": [
+                    32.0,
+                    24.0,
+                    30.0,
+                    33.0,
+                    26.0
+                  ]
+                },
+                {
+                  "id": "4066383",
+                  "name": "Miles Bridges",
+                  "games": 5,
+                  "pts": 15.4,
+                  "reb": 8.2,
+                  "ast": 4.0,
+                  "recent_points": [
+                    7.0,
+                    13.0,
+                    18.0,
+                    18.0,
+                    21.0
+                  ]
+                },
+                {
+                  "id": "3155526",
+                  "name": "Dillon Brooks",
+                  "games": 5,
+                  "pts": 15.0,
+                  "reb": 4.6,
+                  "ast": 1.6,
+                  "recent_points": [
+                    7.0,
+                    11.0,
+                    24.0,
+                    15.0,
+                    18.0
+                  ]
+                },
+                {
+                  "id": "4437244",
+                  "name": "Jalen Green",
+                  "games": 5,
+                  "pts": 12.2,
+                  "reb": 3.6,
+                  "ast": 4.6,
+                  "recent_points": [
+                    6.0,
+                    16.0,
+                    6.0,
+                    22.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "5203685",
+                  "name": "Khaman Maluach",
+                  "games": 5,
+                  "pts": 7.6,
+                  "reb": 5.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    11.0,
+                    8.0,
+                    8.0,
+                    6.0,
+                    5.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "12",
+              "form": {
+                "played": 9,
+                "wins": 2,
+                "margin": -4.13,
+                "win_rate": 0.222,
+                "points_for": 115.3,
+                "points_against": 119.5
+              },
+              "rest_days": 2,
+              "player_trend": 0.47222222222222227,
+              "players": [
+                {
+                  "id": "4396907",
+                  "name": "Darius Garland",
+                  "games": 5,
+                  "pts": 21.0,
+                  "reb": 1.4,
+                  "ast": 7.4,
+                  "recent_points": [
+                    24.0,
+                    26.0,
+                    16.0,
+                    15.0,
+                    24.0
+                  ]
+                },
+                {
+                  "id": "4066648",
+                  "name": "Rui Hachimura",
+                  "games": 4,
+                  "pts": 17.8,
+                  "reb": 6.0,
+                  "ast": 2.2,
+                  "recent_points": [
+                    14.0,
+                    21.0,
+                    24.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "3448",
+                  "name": "Brook Lopez",
+                  "games": 5,
+                  "pts": 14.4,
+                  "reb": 5.8,
+                  "ast": 0.6,
+                  "recent_points": [
+                    20.0,
+                    20.0,
+                    12.0,
+                    7.0,
+                    13.0
+                  ]
+                },
+                {
+                  "id": "4702352",
+                  "name": "Kobe Sanders",
+                  "games": 5,
+                  "pts": 12.2,
+                  "reb": 3.0,
+                  "ast": 2.0,
+                  "recent_points": [
+                    8.0,
+                    4.0,
+                    26.0,
+                    16.0,
+                    7.0
+                  ]
+                },
+                {
+                  "id": "5254165",
+                  "name": "Keaton Wagler",
+                  "games": 5,
+                  "pts": 10.2,
+                  "reb": 3.6,
+                  "ast": 3.2,
+                  "recent_points": [
+                    15.0,
+                    11.0,
+                    6.0,
+                    7.0,
+                    12.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": [
+              {
+                "title": "LA Clippers vs Phoenix Suns Nov 10, 2026 Game Summary",
+                "source": "NBA.com",
+                "published": "Tue, 10 Nov 2026 22:11:20 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Los Angeles Clippers @ Phoenix Suns: Live game updates, stats, play-by-play",
+                "source": "Yahoo Sports",
+                "published": "Tue, 10 Nov 2026 23:11:34 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Phoenix Suns Enter as the Favorite Against the LA Clippers on Tuesday",
+                "source": "Athlon Sports",
+                "published": "Tue, 10 Nov 2026 20:22:13 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Clippers vs. Suns (11 Nov, 2026) Live Score",
+                "source": "ESPN Singapore",
+                "published": "Tue, 10 Nov 2026 16:37:38 GMT",
+                "feed": "Google News"
+              }
+            ]
+          }
+        }
       ]
     },
     "401909963": {
@@ -852,6 +1301,232 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-11T02:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 44.2,
+          "away_pct": 55.8,
+          "inputs": {
+            "home": {
+              "team_id": "26",
+              "form": {
+                "played": 10,
+                "wins": 1,
+                "margin": -12.64,
+                "win_rate": 0.036,
+                "points_for": 103.8,
+                "points_against": 116.5
+              },
+              "rest_days": 2,
+              "player_trend": 0.41666666666666674,
+              "players": [
+                {
+                  "id": "4066336",
+                  "name": "Lauri Markkanen",
+                  "games": 4,
+                  "pts": 20.0,
+                  "reb": 8.0,
+                  "ast": 2.2,
+                  "recent_points": [
+                    24.0,
+                    21.0,
+                    22.0,
+                    13.0
+                  ]
+                },
+                {
+                  "id": "4433627",
+                  "name": "Keyonte George",
+                  "games": 5,
+                  "pts": 17.8,
+                  "reb": 4.6,
+                  "ast": 6.0,
+                  "recent_points": [
+                    19.0,
+                    16.0,
+                    39.0,
+                    7.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "5041955",
+                  "name": "Darryn Peterson",
+                  "games": 5,
+                  "pts": 16.8,
+                  "reb": 3.6,
+                  "ast": 5.2,
+                  "recent_points": [
+                    26.0,
+                    21.0,
+                    7.0,
+                    14.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "4873138",
+                  "name": "Ace Bailey",
+                  "games": 5,
+                  "pts": 9.6,
+                  "reb": 5.2,
+                  "ast": 1.4,
+                  "recent_points": [
+                    7.0,
+                    12.0,
+                    15.0,
+                    5.0,
+                    9.0
+                  ]
+                },
+                {
+                  "id": "4397077",
+                  "name": "Jaxson Hayes",
+                  "games": 5,
+                  "pts": 8.8,
+                  "reb": 6.2,
+                  "ast": 1.4,
+                  "recent_points": [
+                    18.0,
+                    8.0,
+                    2.0,
+                    9.0,
+                    7.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "14",
+              "form": {
+                "played": 10,
+                "wins": 4,
+                "margin": -3.07,
+                "win_rate": 0.527,
+                "points_for": 116.4,
+                "points_against": 119.5
+              },
+              "rest_days": 2,
+              "player_trend": -0.6833333333333333,
+              "players": [
+                {
+                  "id": "3032977",
+                  "name": "Giannis Antetokounmpo",
+                  "games": 5,
+                  "pts": 27.4,
+                  "reb": 14.4,
+                  "ast": 6.0,
+                  "recent_points": [
+                    29.0,
+                    20.0,
+                    27.0,
+                    30.0,
+                    31.0
+                  ]
+                },
+                {
+                  "id": "4066261",
+                  "name": "Bam Adebayo",
+                  "games": 5,
+                  "pts": 22.8,
+                  "reb": 9.2,
+                  "ast": 3.0,
+                  "recent_points": [
+                    18.0,
+                    18.0,
+                    35.0,
+                    16.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "6475",
+                  "name": "Klay Thompson",
+                  "games": 5,
+                  "pts": 21.6,
+                  "reb": 1.6,
+                  "ast": 2.8,
+                  "recent_points": [
+                    23.0,
+                    11.0,
+                    30.0,
+                    19.0,
+                    25.0
+                  ]
+                },
+                {
+                  "id": "4278053",
+                  "name": "Davion Mitchell",
+                  "games": 5,
+                  "pts": 16.0,
+                  "reb": 2.6,
+                  "ast": 9.4,
+                  "recent_points": [
+                    17.0,
+                    22.0,
+                    11.0,
+                    15.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "4601025",
+                  "name": "Pelle Larsson",
+                  "games": 5,
+                  "pts": 11.6,
+                  "reb": 2.6,
+                  "ast": 3.2,
+                  "recent_points": [
+                    11.0,
+                    13.0,
+                    7.0,
+                    9.0,
+                    18.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": [
+              {
+                "title": "Miami Heat vs Utah Jazz Nov 10, 2026 Game Summary",
+                "source": "NBA.com",
+                "published": "Tue, 10 Nov 2026 22:11:25 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Miami Heat @ Utah Jazz: Live game updates, stats, play-by-play",
+                "source": "Yahoo Sports",
+                "published": "Tue, 10 Nov 2026 23:04:55 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Miami Heat @ Utah Jazz Odds",
+                "source": "FanDuel Sportsbook",
+                "published": "Wed, 11 Nov 2026 00:28:40 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Heat vs Jazz Prediction, Picks & Best Bet for Tonight's NBA Game",
+                "source": "Covers.com",
+                "published": "Tue, 10 Nov 2026 21:28:00 GMT",
+                "feed": "Google News"
+              }
+            ]
+          }
         }
       ]
     },
@@ -876,6 +1551,229 @@
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-11T03:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 49.0,
+          "away_pct": 51.0,
+          "inputs": {
+            "home": {
+              "team_id": "23",
+              "form": {
+                "played": 10,
+                "wins": 1,
+                "margin": -10.51,
+                "win_rate": 0.127,
+                "points_for": 109.2,
+                "points_against": 120.5
+              },
+              "rest_days": 2,
+              "player_trend": -0.12222222222222215,
+              "players": [
+                {
+                  "id": "5142620",
+                  "name": "Darius Acuff Jr.",
+                  "games": 5,
+                  "pts": 27.8,
+                  "reb": 4.2,
+                  "ast": 8.2,
+                  "recent_points": [
+                    32.0,
+                    22.0,
+                    22.0,
+                    25.0,
+                    38.0
+                  ]
+                },
+                {
+                  "id": "3064440",
+                  "name": "Zach LaVine",
+                  "games": 5,
+                  "pts": 16.8,
+                  "reb": 3.2,
+                  "ast": 1.6,
+                  "recent_points": [
+                    15.0,
+                    14.0,
+                    21.0,
+                    23.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "4065732",
+                  "name": "De'Andre Hunter",
+                  "games": 4,
+                  "pts": 13.2,
+                  "reb": 3.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    14.0,
+                    14.0,
+                    6.0,
+                    19.0
+                  ]
+                },
+                {
+                  "id": "4066262",
+                  "name": "Malik Monk",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 1.0,
+                  "ast": 4.6,
+                  "recent_points": [
+                    9.0,
+                    12.0,
+                    13.0,
+                    24.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "3155942",
+                  "name": "Domantas Sabonis",
+                  "games": 4,
+                  "pts": 13.2,
+                  "reb": 12.5,
+                  "ast": 4.5,
+                  "recent_points": [
+                    17.0,
+                    16.0,
+                    9.0,
+                    11.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "19",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -8.04,
+                "win_rate": 0.2,
+                "points_for": 107.0,
+                "points_against": 115.5
+              },
+              "rest_days": 3,
+              "player_trend": -0.3611111111111111,
+              "players": [
+                {
+                  "id": "4566434",
+                  "name": "Franz Wagner",
+                  "games": 5,
+                  "pts": 21.8,
+                  "reb": 5.6,
+                  "ast": 11.0,
+                  "recent_points": [
+                    30.0,
+                    15.0,
+                    24.0,
+                    14.0,
+                    26.0
+                  ]
+                },
+                {
+                  "id": "4066320",
+                  "name": "Desmond Bane",
+                  "games": 4,
+                  "pts": 20.5,
+                  "reb": 3.2,
+                  "ast": 2.5,
+                  "recent_points": [
+                    15.0,
+                    20.0,
+                    19.0,
+                    28.0
+                  ]
+                },
+                {
+                  "id": "4712849",
+                  "name": "Anthony Black",
+                  "games": 4,
+                  "pts": 17.0,
+                  "reb": 7.2,
+                  "ast": 6.2,
+                  "recent_points": [
+                    18.0,
+                    10.0,
+                    23.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4277847",
+                  "name": "Wendell Carter Jr.",
+                  "games": 5,
+                  "pts": 15.8,
+                  "reb": 10.0,
+                  "ast": 0.6,
+                  "recent_points": [
+                    19.0,
+                    27.0,
+                    6.0,
+                    7.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "4702382",
+                  "name": "Tristan da Silva",
+                  "games": 5,
+                  "pts": 15.6,
+                  "reb": 4.6,
+                  "ast": 1.6,
+                  "recent_points": [
+                    19.0,
+                    18.0,
+                    10.0,
+                    23.0,
+                    8.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": [
+              {
+                "title": "Orlando Magic vs Sacramento Kings Nov 10, 2026 Game Summary",
+                "source": "NBA.com",
+                "published": "Tue, 10 Nov 2026 22:11:21 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Orlando Magic @ Sacramento Kings: Live game updates, stats, play-by-play",
+                "source": "Yahoo Sports",
+                "published": "Tue, 10 Nov 2026 22:57:58 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "The Magic and the Kings Each Look to Snap a Losing Streak",
+                "source": "Athlon Sports",
+                "published": "Tue, 10 Nov 2026 20:43:07 GMT",
+                "feed": "Google News"
+              },
+              {
+                "title": "Orlando Magic at Sacramento Kings (Nov. 10, 2026): 3 Things to Watch, Odds and Prediction",
+                "source": "Orlando Magic Daily",
+                "published": "Tue, 10 Nov 2026 17:56:40 GMT",
+                "feed": "Google News"
+              }
+            ]
+          }
+        }
       ]
     },
     "401909965": {
@@ -889,7 +1787,209 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 52.1,
       "scheduled_at": "2026-11-11T04:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-11T04:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 43.2,
+          "away_pct": 56.8,
+          "inputs": {
+            "home": {
+              "team_id": "22",
+              "form": {
+                "played": 10,
+                "wins": 6,
+                "margin": 0.09,
+                "win_rate": 0.545,
+                "points_for": 117.4,
+                "points_against": 116.7
+              },
+              "rest_days": 4,
+              "player_trend": -0.49999999999999994,
+              "players": [
+                {
+                  "id": "4683021",
+                  "name": "Deni Avdija",
+                  "games": 5,
+                  "pts": 22.0,
+                  "reb": 5.6,
+                  "ast": 6.2,
+                  "recent_points": [
+                    15.0,
+                    22.0,
+                    21.0,
+                    28.0,
+                    24.0
+                  ]
+                },
+                {
+                  "id": "6606",
+                  "name": "Damian Lillard",
+                  "games": 5,
+                  "pts": 20.2,
+                  "reb": 2.8,
+                  "ast": 5.2,
+                  "recent_points": [
+                    12.0,
+                    22.0,
+                    25.0,
+                    20.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "3995",
+                  "name": "Jrue Holiday",
+                  "games": 5,
+                  "pts": 13.8,
+                  "reb": 3.4,
+                  "ast": 4.0,
+                  "recent_points": [
+                    11.0,
+                    12.0,
+                    15.0,
+                    17.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "5105565",
+                  "name": "Donovan Clingan",
+                  "games": 5,
+                  "pts": 13.6,
+                  "reb": 10.8,
+                  "ast": 1.0,
+                  "recent_points": [
+                    6.0,
+                    17.0,
+                    24.0,
+                    17.0,
+                    4.0
+                  ]
+                },
+                {
+                  "id": "4431736",
+                  "name": "Toumani Camara",
+                  "games": 5,
+                  "pts": 11.2,
+                  "reb": 4.6,
+                  "ast": 0.8,
+                  "recent_points": [
+                    4.0,
+                    18.0,
+                    11.0,
+                    9.0,
+                    14.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "25",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 7.8,
+                "win_rate": 0.8,
+                "points_for": 114.6,
+                "points_against": 103.3
+              },
+              "rest_days": 4,
+              "player_trend": 0.23888888888888893,
+              "players": [
+                {
+                  "id": "4278073",
+                  "name": "Shai Gilgeous-Alexander",
+                  "games": 5,
+                  "pts": 33.8,
+                  "reb": 3.2,
+                  "ast": 6.4,
+                  "recent_points": [
+                    30.0,
+                    28.0,
+                    42.0,
+                    43.0,
+                    26.0
+                  ]
+                },
+                {
+                  "id": "4900671",
+                  "name": "Ajay Mitchell",
+                  "games": 5,
+                  "pts": 19.2,
+                  "reb": 4.0,
+                  "ast": 3.0,
+                  "recent_points": [
+                    12.0,
+                    35.0,
+                    23.0,
+                    20.0,
+                    6.0
+                  ]
+                },
+                {
+                  "id": "4683778",
+                  "name": "Jared McCain",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 4.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    19.0,
+                    21.0,
+                    9.0,
+                    7.0,
+                    10.0
+                  ]
+                },
+                {
+                  "id": "5241364",
+                  "name": "Bennett Stirtz",
+                  "games": 5,
+                  "pts": 11.8,
+                  "reb": 2.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    11.0,
+                    12.0,
+                    16.0,
+                    9.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "5174983",
+                  "name": "Aday Mara",
+                  "games": 5,
+                  "pts": 10.6,
+                  "reb": 7.6,
+                  "ast": 1.6,
+                  "recent_points": [
+                    18.0,
+                    9.0,
+                    9.0,
+                    10.0,
+                    7.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     },
     "401909966": {
       "date": "2026-11-11",
@@ -919,6 +2019,200 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T00:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 53.2,
+          "away_pct": 46.8,
+          "inputs": {
+            "home": {
+              "team_id": "11",
+              "form": {
+                "played": 10,
+                "wins": 2,
+                "margin": -5.31,
+                "win_rate": 0.182,
+                "points_for": 109.2,
+                "points_against": 114.4
+              },
+              "rest_days": 2,
+              "player_trend": -0.03333333333333333,
+              "players": [
+                {
+                  "id": "3149673",
+                  "name": "Pascal Siakam",
+                  "games": 4,
+                  "pts": 22.2,
+                  "reb": 5.2,
+                  "ast": 5.0,
+                  "recent_points": [
+                    29.0,
+                    23.0,
+                    20.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4395712",
+                  "name": "Andrew Nembhard",
+                  "games": 4,
+                  "pts": 16.5,
+                  "reb": 2.2,
+                  "ast": 7.0,
+                  "recent_points": [
+                    12.0,
+                    9.0,
+                    22.0,
+                    23.0
+                  ]
+                },
+                {
+                  "id": "4396909",
+                  "name": "Aaron Nesmith",
+                  "games": 4,
+                  "pts": 13.2,
+                  "reb": 2.8,
+                  "ast": 2.2,
+                  "recent_points": [
+                    18.0,
+                    8.0,
+                    16.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "4592829",
+                  "name": "Quenton Jackson",
+                  "games": 5,
+                  "pts": 12.2,
+                  "reb": 5.2,
+                  "ast": 2.4,
+                  "recent_points": [
+                    10.0,
+                    6.0,
+                    13.0,
+                    20.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "4278355",
+                  "name": "Obi Toppin",
+                  "games": 3,
+                  "pts": 10.3,
+                  "reb": 4.7,
+                  "ast": 2.3,
+                  "recent_points": [
+                    10.0,
+                    10.0,
+                    11.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "27",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -7.73,
+                "win_rate": 0.236,
+                "points_for": 104.9,
+                "points_against": 115.0
+              },
+              "rest_days": 2,
+              "player_trend": -0.08333333333333331,
+              "players": [
+                {
+                  "id": "6583",
+                  "name": "Anthony Davis",
+                  "games": 3,
+                  "pts": 32.3,
+                  "reb": 10.7,
+                  "ast": 1.7,
+                  "recent_points": [
+                    44.0,
+                    26.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "5174563",
+                  "name": "Kyshawn George",
+                  "games": 5,
+                  "pts": 21.2,
+                  "reb": 4.4,
+                  "ast": 5.6,
+                  "recent_points": [
+                    12.0,
+                    14.0,
+                    33.0,
+                    25.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "5142718",
+                  "name": "AJ Dybantsa",
+                  "games": 5,
+                  "pts": 16.2,
+                  "reb": 6.8,
+                  "ast": 2.4,
+                  "recent_points": [
+                    21.0,
+                    19.0,
+                    11.0,
+                    9.0,
+                    21.0
+                  ]
+                },
+                {
+                  "id": "4277905",
+                  "name": "Trae Young",
+                  "games": 5,
+                  "pts": 16.0,
+                  "reb": 2.6,
+                  "ast": 7.0,
+                  "recent_points": [
+                    20.0,
+                    4.0,
+                    23.0,
+                    18.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "5160992",
+                  "name": "Alex Sarr",
+                  "games": 4,
+                  "pts": 10.8,
+                  "reb": 9.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    4.0,
+                    15.0,
+                    13.0,
+                    11.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
         }
       ]
     },
@@ -951,6 +2245,206 @@
           "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T00:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 65.2,
+          "away_pct": 34.8,
+          "inputs": {
+            "home": {
+              "team_id": "18",
+              "form": {
+                "played": 9,
+                "wins": 5,
+                "margin": 9.2,
+                "win_rate": 0.733,
+                "points_for": 112.5,
+                "points_against": 102.4
+              },
+              "rest_days": 3,
+              "player_trend": 0.35000000000000003,
+              "players": [
+                {
+                  "id": "3934672",
+                  "name": "Jalen Brunson",
+                  "games": 5,
+                  "pts": 29.0,
+                  "reb": 3.2,
+                  "ast": 6.4,
+                  "recent_points": [
+                    31.0,
+                    33.0,
+                    19.0,
+                    24.0,
+                    38.0
+                  ]
+                },
+                {
+                  "id": "3136195",
+                  "name": "Karl-Anthony Towns",
+                  "games": 5,
+                  "pts": 19.6,
+                  "reb": 13.2,
+                  "ast": 3.4,
+                  "recent_points": [
+                    29.0,
+                    17.0,
+                    11.0,
+                    22.0,
+                    19.0
+                  ]
+                },
+                {
+                  "id": "3934719",
+                  "name": "OG Anunoby",
+                  "games": 5,
+                  "pts": 16.6,
+                  "reb": 5.0,
+                  "ast": 2.0,
+                  "recent_points": [
+                    15.0,
+                    18.0,
+                    18.0,
+                    9.0,
+                    23.0
+                  ]
+                },
+                {
+                  "id": "3914044",
+                  "name": "Landry Shamet",
+                  "games": 5,
+                  "pts": 10.4,
+                  "reb": 1.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    9.0,
+                    7.0,
+                    22.0,
+                    0.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "2528426",
+                  "name": "Jordan Clarkson",
+                  "games": 5,
+                  "pts": 9.6,
+                  "reb": 1.8,
+                  "ast": 0.4,
+                  "recent_points": [
+                    9.0,
+                    10.0,
+                    7.0,
+                    4.0,
+                    18.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "5",
+              "form": {
+                "played": 10,
+                "wins": 5,
+                "margin": 0.53,
+                "win_rate": 0.345,
+                "points_for": 114.5,
+                "points_against": 113.9
+              },
+              "rest_days": 2,
+              "player_trend": -0.45,
+              "players": [
+                {
+                  "id": "3908809",
+                  "name": "Donovan Mitchell",
+                  "games": 5,
+                  "pts": 23.0,
+                  "reb": 4.2,
+                  "ast": 6.6,
+                  "recent_points": [
+                    11.0,
+                    37.0,
+                    23.0,
+                    27.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4432158",
+                  "name": "Evan Mobley",
+                  "games": 5,
+                  "pts": 15.0,
+                  "reb": 6.8,
+                  "ast": 3.8,
+                  "recent_points": [
+                    9.0,
+                    12.0,
+                    22.0,
+                    16.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "3992",
+                  "name": "James Harden",
+                  "games": 5,
+                  "pts": 13.6,
+                  "reb": 4.8,
+                  "ast": 5.0,
+                  "recent_points": [
+                    11.0,
+                    7.0,
+                    17.0,
+                    19.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "5041951",
+                  "name": "Meleek Thomas",
+                  "games": 5,
+                  "pts": 13.0,
+                  "reb": 2.8,
+                  "ast": 1.4,
+                  "recent_points": [
+                    18.0,
+                    9.0,
+                    12.0,
+                    9.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4576087",
+                  "name": "Peyton Watson",
+                  "games": 3,
+                  "pts": 12.7,
+                  "reb": 5.7,
+                  "ast": 2.0,
+                  "recent_points": [
+                    13.0,
+                    12.0,
+                    13.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
       ]
     },
     "401909968": {
@@ -982,6 +2476,199 @@
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T00:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 37.5,
+          "away_pct": 62.5,
+          "inputs": {
+            "home": {
+              "team_id": "28",
+              "form": {
+                "played": 10,
+                "wins": 5,
+                "margin": -2.4,
+                "win_rate": 0.418,
+                "points_for": 115.1,
+                "points_against": 116.9
+              },
+              "rest_days": 2,
+              "player_trend": -0.033333333333333215,
+              "players": [
+                {
+                  "id": "4395625",
+                  "name": "RJ Barrett",
+                  "games": 5,
+                  "pts": 23.2,
+                  "reb": 6.2,
+                  "ast": 3.4,
+                  "recent_points": [
+                    19.0,
+                    27.0,
+                    22.0,
+                    26.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "4433134",
+                  "name": "Scottie Barnes",
+                  "games": 3,
+                  "pts": 22.7,
+                  "reb": 9.0,
+                  "ast": 6.3,
+                  "recent_points": [
+                    17.0,
+                    22.0,
+                    29.0
+                  ]
+                },
+                {
+                  "id": "4395724",
+                  "name": "Immanuel Quickley",
+                  "games": 3,
+                  "pts": 17.3,
+                  "reb": 3.7,
+                  "ast": 5.3,
+                  "recent_points": [
+                    13.0,
+                    27.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "3134908",
+                  "name": "Jakob Poeltl",
+                  "games": 3,
+                  "pts": 15.0,
+                  "reb": 8.0,
+                  "ast": 1.7,
+                  "recent_points": [
+                    18.0,
+                    19.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "5093267",
+                  "name": "Collin Murray-Boyles",
+                  "games": 4,
+                  "pts": 13.5,
+                  "reb": 5.0,
+                  "ast": 1.2,
+                  "recent_points": [
+                    19.0,
+                    13.0,
+                    18.0,
+                    4.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "2",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 10.62,
+                "win_rate": 0.855,
+                "points_for": 113.9,
+                "points_against": 100.5
+              },
+              "rest_days": 2,
+              "player_trend": -0.0777777777777778,
+              "players": [
+                {
+                  "id": "4065648",
+                  "name": "Jayson Tatum",
+                  "games": 4,
+                  "pts": 26.5,
+                  "reb": 5.5,
+                  "ast": 7.8,
+                  "recent_points": [
+                    21.0,
+                    34.0,
+                    19.0,
+                    32.0
+                  ]
+                },
+                {
+                  "id": "4251",
+                  "name": "Paul George",
+                  "games": 4,
+                  "pts": 19.2,
+                  "reb": 4.2,
+                  "ast": 3.8,
+                  "recent_points": [
+                    27.0,
+                    8.0,
+                    25.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "3078576",
+                  "name": "Derrick White",
+                  "games": 5,
+                  "pts": 14.0,
+                  "reb": 3.0,
+                  "ast": 4.8,
+                  "recent_points": [
+                    9.0,
+                    18.0,
+                    24.0,
+                    7.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "4397424",
+                  "name": "Neemias Queta",
+                  "games": 5,
+                  "pts": 10.0,
+                  "reb": 7.6,
+                  "ast": 2.0,
+                  "recent_points": [
+                    13.0,
+                    4.0,
+                    9.0,
+                    16.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "4277951",
+                  "name": "Luka Garza",
+                  "games": 5,
+                  "pts": 9.4,
+                  "reb": 5.4,
+                  "ast": 2.0,
+                  "recent_points": [
+                    4.0,
+                    6.0,
+                    11.0,
+                    14.0,
+                    12.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
       ]
     },
     "401909969": {
@@ -1004,6 +2691,206 @@
           "model": "elo-forma10-v2",
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
+        }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T01:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 21.9,
+          "away_pct": 78.1,
+          "inputs": {
+            "home": {
+              "team_id": "4",
+              "form": {
+                "played": 10,
+                "wins": 2,
+                "margin": -13.16,
+                "win_rate": 0.073,
+                "points_for": 113.4,
+                "points_against": 129.0
+              },
+              "rest_days": 3,
+              "player_trend": -0.40555555555555556,
+              "players": [
+                {
+                  "id": "2595516",
+                  "name": "Norman Powell",
+                  "games": 4,
+                  "pts": 19.0,
+                  "reb": 2.0,
+                  "ast": 1.5,
+                  "recent_points": [
+                    12.0,
+                    18.0,
+                    16.0,
+                    30.0
+                  ]
+                },
+                {
+                  "id": "5095151",
+                  "name": "Caleb Wilson",
+                  "games": 5,
+                  "pts": 18.0,
+                  "reb": 5.6,
+                  "ast": 2.4,
+                  "recent_points": [
+                    18.0,
+                    5.0,
+                    24.0,
+                    23.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "4711294",
+                  "name": "Matas Buzelis",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 4.6,
+                  "ast": 2.2,
+                  "recent_points": [
+                    19.0,
+                    12.0,
+                    4.0,
+                    14.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4871145",
+                  "name": "Josh Giddey",
+                  "games": 5,
+                  "pts": 13.0,
+                  "reb": 4.8,
+                  "ast": 9.4,
+                  "recent_points": [
+                    19.0,
+                    10.0,
+                    13.0,
+                    13.0,
+                    10.0
+                  ]
+                },
+                {
+                  "id": "4397189",
+                  "name": "Jalen Smith",
+                  "games": 5,
+                  "pts": 11.0,
+                  "reb": 8.0,
+                  "ast": 2.4,
+                  "recent_points": [
+                    17.0,
+                    3.0,
+                    13.0,
+                    5.0,
+                    17.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "24",
+              "form": {
+                "played": 10,
+                "wins": 9,
+                "margin": 16.07,
+                "win_rate": 0.982,
+                "points_for": 120.9,
+                "points_against": 104.6
+              },
+              "rest_days": 2,
+              "player_trend": -0.29444444444444445,
+              "players": [
+                {
+                  "id": "5104157",
+                  "name": "Victor Wembanyama",
+                  "games": 5,
+                  "pts": 32.6,
+                  "reb": 13.4,
+                  "ast": 3.0,
+                  "recent_points": [
+                    40.0,
+                    29.0,
+                    30.0,
+                    52.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "5037871",
+                  "name": "Dylan Harper",
+                  "games": 5,
+                  "pts": 17.4,
+                  "reb": 5.2,
+                  "ast": 3.6,
+                  "recent_points": [
+                    17.0,
+                    13.0,
+                    19.0,
+                    21.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4845367",
+                  "name": "Stephon Castle",
+                  "games": 5,
+                  "pts": 14.0,
+                  "reb": 6.6,
+                  "ast": 5.2,
+                  "recent_points": [
+                    4.0,
+                    14.0,
+                    19.0,
+                    17.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "4395630",
+                  "name": "Devin Vassell",
+                  "games": 4,
+                  "pts": 11.8,
+                  "reb": 3.2,
+                  "ast": 2.5,
+                  "recent_points": [
+                    15.0,
+                    19.0,
+                    2.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "4066259",
+                  "name": "De'Aaron Fox",
+                  "games": 5,
+                  "pts": 10.8,
+                  "reb": 3.8,
+                  "ast": 4.6,
+                  "recent_points": [
+                    15.0,
+                    8.0,
+                    9.0,
+                    10.0,
+                    12.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
         }
       ]
     },
@@ -1036,6 +2923,205 @@
           "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T01:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 57.4,
+          "away_pct": 42.6,
+          "inputs": {
+            "home": {
+              "team_id": "29",
+              "form": {
+                "played": 10,
+                "wins": 7,
+                "margin": 4.18,
+                "win_rate": 0.564,
+                "points_for": 116.5,
+                "points_against": 112.6
+              },
+              "rest_days": 2,
+              "player_trend": -0.5416666666666666,
+              "players": [
+                {
+                  "id": "4065733",
+                  "name": "Ty Jerome",
+                  "games": 4,
+                  "pts": 27.8,
+                  "reb": 4.2,
+                  "ast": 3.8,
+                  "recent_points": [
+                    27.0,
+                    21.0,
+                    23.0,
+                    40.0
+                  ]
+                },
+                {
+                  "id": "5041935",
+                  "name": "Cameron Boozer",
+                  "games": 5,
+                  "pts": 17.0,
+                  "reb": 8.6,
+                  "ast": 4.8,
+                  "recent_points": [
+                    22.0,
+                    8.0,
+                    10.0,
+                    18.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "4432810",
+                  "name": "Isaiah Stewart",
+                  "games": 3,
+                  "pts": 14.7,
+                  "reb": 3.3,
+                  "ast": 0.7,
+                  "recent_points": [
+                    6.0,
+                    14.0,
+                    24.0
+                  ]
+                },
+                {
+                  "id": "2991070",
+                  "name": "Jerami Grant",
+                  "games": 5,
+                  "pts": 12.6,
+                  "reb": 2.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    17.0,
+                    10.0,
+                    11.0,
+                    11.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "4903027",
+                  "name": "Cedric Coward",
+                  "games": 5,
+                  "pts": 11.2,
+                  "reb": 8.0,
+                  "ast": 2.6,
+                  "recent_points": [
+                    3.0,
+                    10.0,
+                    23.0,
+                    10.0,
+                    10.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "7",
+              "form": {
+                "played": 10,
+                "wins": 6,
+                "margin": 2.55,
+                "win_rate": 0.582,
+                "points_for": 114.0,
+                "points_against": 111.5
+              },
+              "rest_days": 2,
+              "player_trend": -0.4555555555555555,
+              "players": [
+                {
+                  "id": "3936299",
+                  "name": "Jamal Murray",
+                  "games": 5,
+                  "pts": 28.4,
+                  "reb": 5.2,
+                  "ast": 5.6,
+                  "recent_points": [
+                    38.0,
+                    16.0,
+                    14.0,
+                    35.0,
+                    39.0
+                  ]
+                },
+                {
+                  "id": "3112335",
+                  "name": "Nikola Jokic",
+                  "games": 5,
+                  "pts": 24.0,
+                  "reb": 11.0,
+                  "ast": 9.2,
+                  "recent_points": [
+                    25.0,
+                    19.0,
+                    32.0,
+                    26.0,
+                    18.0
+                  ]
+                },
+                {
+                  "id": "4431767",
+                  "name": "Christian Braun",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 3.6,
+                  "ast": 2.2,
+                  "recent_points": [
+                    4.0,
+                    6.0,
+                    11.0,
+                    14.0,
+                    31.0
+                  ]
+                },
+                {
+                  "id": "3138196",
+                  "name": "Cameron Johnson",
+                  "games": 5,
+                  "pts": 11.4,
+                  "reb": 4.2,
+                  "ast": 1.8,
+                  "recent_points": [
+                    8.0,
+                    18.0,
+                    12.0,
+                    7.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "3064290",
+                  "name": "Aaron Gordon",
+                  "games": 5,
+                  "pts": 10.4,
+                  "reb": 4.2,
+                  "ast": 1.8,
+                  "recent_points": [
+                    3.0,
+                    12.0,
+                    17.0,
+                    5.0,
+                    15.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
       ]
     },
     "401909971": {
@@ -1067,6 +3153,206 @@
           "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T01:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 24.5,
+          "away_pct": 75.5,
+          "inputs": {
+            "home": {
+              "team_id": "15",
+              "form": {
+                "played": 10,
+                "wins": 1,
+                "margin": -13.96,
+                "win_rate": 0.073,
+                "points_for": 104.9,
+                "points_against": 119.5
+              },
+              "rest_days": 2,
+              "player_trend": -0.06666666666666661,
+              "players": [
+                {
+                  "id": "4395725",
+                  "name": "Tyler Herro",
+                  "games": 5,
+                  "pts": 19.4,
+                  "reb": 4.0,
+                  "ast": 4.0,
+                  "recent_points": [
+                    13.0,
+                    23.0,
+                    25.0,
+                    21.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "5082206",
+                  "name": "Brayden Burries",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 7.2,
+                  "ast": 3.0,
+                  "recent_points": [
+                    13.0,
+                    21.0,
+                    9.0,
+                    9.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "4432848",
+                  "name": "Jaime Jaquez Jr.",
+                  "games": 5,
+                  "pts": 12.6,
+                  "reb": 4.4,
+                  "ast": 2.8,
+                  "recent_points": [
+                    4.0,
+                    14.0,
+                    18.0,
+                    19.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "3134907",
+                  "name": "Kyle Kuzma",
+                  "games": 5,
+                  "pts": 12.4,
+                  "reb": 3.6,
+                  "ast": 2.6,
+                  "recent_points": [
+                    27.0,
+                    13.0,
+                    6.0,
+                    2.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "4591725",
+                  "name": "Ryan Rollins",
+                  "games": 5,
+                  "pts": 9.8,
+                  "reb": 4.2,
+                  "ast": 4.2,
+                  "recent_points": [
+                    7.0,
+                    10.0,
+                    13.0,
+                    10.0,
+                    9.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "13",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 7.55,
+                "win_rate": 0.891,
+                "points_for": 121.7,
+                "points_against": 114.2
+              },
+              "rest_days": 2,
+              "player_trend": 0.35555555555555557,
+              "players": [
+                {
+                  "id": "3945274",
+                  "name": "Luka Doncic",
+                  "games": 4,
+                  "pts": 41.8,
+                  "reb": 7.2,
+                  "ast": 8.8,
+                  "recent_points": [
+                    32.0,
+                    53.0,
+                    40.0,
+                    42.0
+                  ]
+                },
+                {
+                  "id": "4066457",
+                  "name": "Austin Reaves",
+                  "games": 4,
+                  "pts": 29.0,
+                  "reb": 3.2,
+                  "ast": 3.8,
+                  "recent_points": [
+                    43.0,
+                    25.0,
+                    21.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "4433136",
+                  "name": "Walker Kessler",
+                  "games": 5,
+                  "pts": 15.8,
+                  "reb": 12.2,
+                  "ast": 2.4,
+                  "recent_points": [
+                    21.0,
+                    12.0,
+                    16.0,
+                    15.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "4433137",
+                  "name": "Ziaire Williams",
+                  "games": 5,
+                  "pts": 11.2,
+                  "reb": 2.6,
+                  "ast": 1.2,
+                  "recent_points": [
+                    12.0,
+                    17.0,
+                    8.0,
+                    10.0,
+                    9.0
+                  ]
+                },
+                {
+                  "id": "4278580",
+                  "name": "Sandro Mamukelashvili",
+                  "games": 5,
+                  "pts": 10.4,
+                  "reb": 4.6,
+                  "ast": 1.8,
+                  "recent_points": [
+                    23.0,
+                    7.0,
+                    7.0,
+                    2.0,
+                    13.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
       ]
     },
     "401909972": {
@@ -1090,6 +3376,201 @@
           "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T01:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 59.1,
+          "away_pct": 40.9,
+          "inputs": {
+            "home": {
+              "team_id": "3",
+              "form": {
+                "played": 10,
+                "wins": 4,
+                "margin": -5.11,
+                "win_rate": 0.4,
+                "points_for": 114.4,
+                "points_against": 124.3
+              },
+              "rest_days": 2,
+              "player_trend": -0.2666666666666666,
+              "players": [
+                {
+                  "id": "4395628",
+                  "name": "Zion Williamson",
+                  "games": 4,
+                  "pts": 21.5,
+                  "reb": 6.8,
+                  "ast": 3.0,
+                  "recent_points": [
+                    25.0,
+                    13.0,
+                    23.0,
+                    25.0
+                  ]
+                },
+                {
+                  "id": "5144091",
+                  "name": "Jeremiah Fears",
+                  "games": 5,
+                  "pts": 18.2,
+                  "reb": 4.8,
+                  "ast": 5.4,
+                  "recent_points": [
+                    11.0,
+                    25.0,
+                    24.0,
+                    19.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "4397688",
+                  "name": "Trey Murphy III",
+                  "games": 3,
+                  "pts": 18.0,
+                  "reb": 5.3,
+                  "ast": 4.3,
+                  "recent_points": [
+                    26.0,
+                    10.0,
+                    18.0
+                  ]
+                },
+                {
+                  "id": "4397136",
+                  "name": "Saddiq Bey",
+                  "games": 5,
+                  "pts": 15.8,
+                  "reb": 3.6,
+                  "ast": 3.0,
+                  "recent_points": [
+                    9.0,
+                    13.0,
+                    17.0,
+                    22.0,
+                    18.0
+                  ]
+                },
+                {
+                  "id": "4869780",
+                  "name": "Derik Queen",
+                  "games": 5,
+                  "pts": 14.0,
+                  "reb": 5.8,
+                  "ast": 3.0,
+                  "recent_points": [
+                    16.0,
+                    8.0,
+                    6.0,
+                    20.0,
+                    20.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "17",
+              "form": {
+                "played": 10,
+                "wins": 2,
+                "margin": -7.53,
+                "win_rate": 0.255,
+                "points_for": 105.2,
+                "points_against": 115.0
+              },
+              "rest_days": 3,
+              "player_trend": -0.17222222222222217,
+              "players": [
+                {
+                  "id": "4278104",
+                  "name": "Michael Porter Jr.",
+                  "games": 5,
+                  "pts": 22.2,
+                  "reb": 8.4,
+                  "ast": 1.2,
+                  "recent_points": [
+                    19.0,
+                    25.0,
+                    26.0,
+                    18.0,
+                    23.0
+                  ]
+                },
+                {
+                  "id": "3064514",
+                  "name": "Julius Randle",
+                  "games": 5,
+                  "pts": 19.0,
+                  "reb": 6.0,
+                  "ast": 4.8,
+                  "recent_points": [
+                    13.0,
+                    19.0,
+                    22.0,
+                    21.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "5279130",
+                  "name": "Nolan Traore",
+                  "games": 5,
+                  "pts": 16.4,
+                  "reb": 2.2,
+                  "ast": 3.2,
+                  "recent_points": [
+                    14.0,
+                    19.0,
+                    16.0,
+                    17.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "5101761",
+                  "name": "Mikel Brown Jr.",
+                  "games": 3,
+                  "pts": 16.3,
+                  "reb": 1.7,
+                  "ast": 3.3,
+                  "recent_points": [
+                    18.0,
+                    18.0,
+                    13.0
+                  ]
+                },
+                {
+                  "id": "5107173",
+                  "name": "Danny Wolf",
+                  "games": 3,
+                  "pts": 11.0,
+                  "reb": 5.7,
+                  "ast": 2.0,
+                  "recent_points": [
+                    10.0,
+                    11.0,
+                    12.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
       ]
     },
     "401909973": {
@@ -1103,7 +3584,206 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 53.6,
       "scheduled_at": "2026-11-12T02:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T02:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 49.9,
+          "away_pct": 50.1,
+          "inputs": {
+            "home": {
+              "team_id": "26",
+              "form": {
+                "played": 10,
+                "wins": 1,
+                "margin": -12.64,
+                "win_rate": 0.036,
+                "points_for": 103.8,
+                "points_against": 116.5
+              },
+              "rest_days": 2,
+              "player_trend": 0.41666666666666674,
+              "players": [
+                {
+                  "id": "4066336",
+                  "name": "Lauri Markkanen",
+                  "games": 4,
+                  "pts": 20.0,
+                  "reb": 8.0,
+                  "ast": 2.2,
+                  "recent_points": [
+                    24.0,
+                    21.0,
+                    22.0,
+                    13.0
+                  ]
+                },
+                {
+                  "id": "4433627",
+                  "name": "Keyonte George",
+                  "games": 5,
+                  "pts": 17.8,
+                  "reb": 4.6,
+                  "ast": 6.0,
+                  "recent_points": [
+                    19.0,
+                    16.0,
+                    39.0,
+                    7.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "5041955",
+                  "name": "Darryn Peterson",
+                  "games": 5,
+                  "pts": 16.8,
+                  "reb": 3.6,
+                  "ast": 5.2,
+                  "recent_points": [
+                    26.0,
+                    21.0,
+                    7.0,
+                    14.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "4873138",
+                  "name": "Ace Bailey",
+                  "games": 5,
+                  "pts": 9.6,
+                  "reb": 5.2,
+                  "ast": 1.4,
+                  "recent_points": [
+                    7.0,
+                    12.0,
+                    15.0,
+                    5.0,
+                    9.0
+                  ]
+                },
+                {
+                  "id": "4397077",
+                  "name": "Jaxson Hayes",
+                  "games": 5,
+                  "pts": 8.8,
+                  "reb": 6.2,
+                  "ast": 1.4,
+                  "recent_points": [
+                    18.0,
+                    8.0,
+                    2.0,
+                    9.0,
+                    7.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "19",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -8.04,
+                "win_rate": 0.2,
+                "points_for": 107.0,
+                "points_against": 115.5
+              },
+              "rest_days": 3,
+              "player_trend": -0.3611111111111111,
+              "players": [
+                {
+                  "id": "4566434",
+                  "name": "Franz Wagner",
+                  "games": 5,
+                  "pts": 21.8,
+                  "reb": 5.6,
+                  "ast": 11.0,
+                  "recent_points": [
+                    30.0,
+                    15.0,
+                    24.0,
+                    14.0,
+                    26.0
+                  ]
+                },
+                {
+                  "id": "4066320",
+                  "name": "Desmond Bane",
+                  "games": 4,
+                  "pts": 20.5,
+                  "reb": 3.2,
+                  "ast": 2.5,
+                  "recent_points": [
+                    15.0,
+                    20.0,
+                    19.0,
+                    28.0
+                  ]
+                },
+                {
+                  "id": "4712849",
+                  "name": "Anthony Black",
+                  "games": 4,
+                  "pts": 17.0,
+                  "reb": 7.2,
+                  "ast": 6.2,
+                  "recent_points": [
+                    18.0,
+                    10.0,
+                    23.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4277847",
+                  "name": "Wendell Carter Jr.",
+                  "games": 5,
+                  "pts": 15.8,
+                  "reb": 10.0,
+                  "ast": 0.6,
+                  "recent_points": [
+                    19.0,
+                    27.0,
+                    6.0,
+                    7.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "4702382",
+                  "name": "Tristan da Silva",
+                  "games": 5,
+                  "pts": 15.6,
+                  "reb": 4.6,
+                  "ast": 1.6,
+                  "recent_points": [
+                    19.0,
+                    18.0,
+                    10.0,
+                    23.0,
+                    8.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     },
     "401909974": {
       "date": "2026-11-11",
@@ -1126,6 +3806,205 @@
           "reason": "Ventaja por mejor margen de puntos reciente y más victorias recientes.",
           "source": "Recalculado con resultados disponibles antes del inicio"
         }
+      ],
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T02:30Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 47.5,
+          "away_pct": 52.5,
+          "inputs": {
+            "home": {
+              "team_id": "10",
+              "form": {
+                "played": 10,
+                "wins": 7,
+                "margin": 6.44,
+                "win_rate": 0.6,
+                "points_for": 111.3,
+                "points_against": 104.4
+              },
+              "rest_days": 2,
+              "player_trend": 0.011111111111111132,
+              "players": [
+                {
+                  "id": "4871144",
+                  "name": "Alperen Sengun",
+                  "games": 5,
+                  "pts": 18.8,
+                  "reb": 9.2,
+                  "ast": 8.4,
+                  "recent_points": [
+                    20.0,
+                    15.0,
+                    17.0,
+                    26.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "3202",
+                  "name": "Kevin Durant",
+                  "games": 5,
+                  "pts": 18.2,
+                  "reb": 6.6,
+                  "ast": 4.0,
+                  "recent_points": [
+                    23.0,
+                    21.0,
+                    21.0,
+                    12.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "4432639",
+                  "name": "Jabari Smith Jr.",
+                  "games": 5,
+                  "pts": 16.8,
+                  "reb": 7.8,
+                  "ast": 2.4,
+                  "recent_points": [
+                    14.0,
+                    15.0,
+                    11.0,
+                    14.0,
+                    30.0
+                  ]
+                },
+                {
+                  "id": "2991230",
+                  "name": "Fred VanVleet",
+                  "games": 4,
+                  "pts": 13.5,
+                  "reb": 2.2,
+                  "ast": 4.5,
+                  "recent_points": [
+                    12.0,
+                    16.0,
+                    18.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "4684740",
+                  "name": "Amen Thompson",
+                  "games": 5,
+                  "pts": 11.6,
+                  "reb": 6.0,
+                  "ast": 1.6,
+                  "recent_points": [
+                    8.0,
+                    17.0,
+                    11.0,
+                    14.0,
+                    8.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "9",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 12.91,
+                "win_rate": 0.945,
+                "points_for": 124.0,
+                "points_against": 106.4
+              },
+              "rest_days": 2,
+              "player_trend": 0.19444444444444448,
+              "players": [
+                {
+                  "id": "3975",
+                  "name": "Stephen Curry",
+                  "games": 4,
+                  "pts": 32.2,
+                  "reb": 4.5,
+                  "ast": 4.8,
+                  "recent_points": [
+                    25.0,
+                    41.0,
+                    29.0,
+                    34.0
+                  ]
+                },
+                {
+                  "id": "5175737",
+                  "name": "Yaxel Lendeborg",
+                  "games": 5,
+                  "pts": 23.2,
+                  "reb": 6.4,
+                  "ast": 4.8,
+                  "recent_points": [
+                    23.0,
+                    23.0,
+                    17.0,
+                    16.0,
+                    37.0
+                  ]
+                },
+                {
+                  "id": "4709138",
+                  "name": "Brandin Podziemski",
+                  "games": 5,
+                  "pts": 17.2,
+                  "reb": 5.2,
+                  "ast": 3.6,
+                  "recent_points": [
+                    25.0,
+                    15.0,
+                    9.0,
+                    20.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "4397886",
+                  "name": "Charles Bassey",
+                  "games": 5,
+                  "pts": 10.6,
+                  "reb": 7.8,
+                  "ast": 0.8,
+                  "recent_points": [
+                    12.0,
+                    8.0,
+                    8.0,
+                    19.0,
+                    6.0
+                  ]
+                },
+                {
+                  "id": "4397040",
+                  "name": "Brandon Williams",
+                  "games": 4,
+                  "pts": 10.0,
+                  "reb": 1.0,
+                  "ast": 2.2,
+                  "recent_points": [
+                    4.0,
+                    9.0,
+                    10.0,
+                    17.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
       ]
     },
     "401909975": {
@@ -1139,7 +4018,209 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 52.1,
       "scheduled_at": "2026-11-12T03:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-12T03:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 43.2,
+          "away_pct": 56.8,
+          "inputs": {
+            "home": {
+              "team_id": "22",
+              "form": {
+                "played": 10,
+                "wins": 6,
+                "margin": 0.09,
+                "win_rate": 0.545,
+                "points_for": 117.4,
+                "points_against": 116.7
+              },
+              "rest_days": 4,
+              "player_trend": -0.49999999999999994,
+              "players": [
+                {
+                  "id": "4683021",
+                  "name": "Deni Avdija",
+                  "games": 5,
+                  "pts": 22.0,
+                  "reb": 5.6,
+                  "ast": 6.2,
+                  "recent_points": [
+                    15.0,
+                    22.0,
+                    21.0,
+                    28.0,
+                    24.0
+                  ]
+                },
+                {
+                  "id": "6606",
+                  "name": "Damian Lillard",
+                  "games": 5,
+                  "pts": 20.2,
+                  "reb": 2.8,
+                  "ast": 5.2,
+                  "recent_points": [
+                    12.0,
+                    22.0,
+                    25.0,
+                    20.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "3995",
+                  "name": "Jrue Holiday",
+                  "games": 5,
+                  "pts": 13.8,
+                  "reb": 3.4,
+                  "ast": 4.0,
+                  "recent_points": [
+                    11.0,
+                    12.0,
+                    15.0,
+                    17.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "5105565",
+                  "name": "Donovan Clingan",
+                  "games": 5,
+                  "pts": 13.6,
+                  "reb": 10.8,
+                  "ast": 1.0,
+                  "recent_points": [
+                    6.0,
+                    17.0,
+                    24.0,
+                    17.0,
+                    4.0
+                  ]
+                },
+                {
+                  "id": "4431736",
+                  "name": "Toumani Camara",
+                  "games": 5,
+                  "pts": 11.2,
+                  "reb": 4.6,
+                  "ast": 0.8,
+                  "recent_points": [
+                    4.0,
+                    18.0,
+                    11.0,
+                    9.0,
+                    14.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "25",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 7.8,
+                "win_rate": 0.8,
+                "points_for": 114.6,
+                "points_against": 103.3
+              },
+              "rest_days": 4,
+              "player_trend": 0.23888888888888893,
+              "players": [
+                {
+                  "id": "4278073",
+                  "name": "Shai Gilgeous-Alexander",
+                  "games": 5,
+                  "pts": 33.8,
+                  "reb": 3.2,
+                  "ast": 6.4,
+                  "recent_points": [
+                    30.0,
+                    28.0,
+                    42.0,
+                    43.0,
+                    26.0
+                  ]
+                },
+                {
+                  "id": "4900671",
+                  "name": "Ajay Mitchell",
+                  "games": 5,
+                  "pts": 19.2,
+                  "reb": 4.0,
+                  "ast": 3.0,
+                  "recent_points": [
+                    12.0,
+                    35.0,
+                    23.0,
+                    20.0,
+                    6.0
+                  ]
+                },
+                {
+                  "id": "4683778",
+                  "name": "Jared McCain",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 4.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    19.0,
+                    21.0,
+                    9.0,
+                    7.0,
+                    10.0
+                  ]
+                },
+                {
+                  "id": "5241364",
+                  "name": "Bennett Stirtz",
+                  "games": 5,
+                  "pts": 11.8,
+                  "reb": 2.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    11.0,
+                    12.0,
+                    16.0,
+                    9.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "5174983",
+                  "name": "Aday Mara",
+                  "games": 5,
+                  "pts": 10.6,
+                  "reb": 7.6,
+                  "ast": 1.6,
+                  "recent_points": [
+                    18.0,
+                    9.0,
+                    9.0,
+                    10.0,
+                    7.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "ESPN (consulta complementaria)",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     },
     "401909976": {
       "date": "2026-11-12",
@@ -1152,7 +4233,200 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
       "elo_baseline_home_pct": 66.8,
       "scheduled_at": "2026-11-13T00:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-13T00:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 63.7,
+          "away_pct": 36.3,
+          "inputs": {
+            "home": {
+              "team_id": "20",
+              "form": {
+                "played": 10,
+                "wins": 8,
+                "margin": 1.65,
+                "win_rate": 0.782,
+                "points_for": 111.8,
+                "points_against": 110.2
+              },
+              "rest_days": 2,
+              "player_trend": -0.42777777777777787,
+              "players": [
+                {
+                  "id": "4431678",
+                  "name": "Tyrese Maxey",
+                  "games": 5,
+                  "pts": 25.4,
+                  "reb": 3.2,
+                  "ast": 6.6,
+                  "recent_points": [
+                    27.0,
+                    17.0,
+                    19.0,
+                    26.0,
+                    38.0
+                  ]
+                },
+                {
+                  "id": "3917376",
+                  "name": "Jaylen Brown",
+                  "games": 5,
+                  "pts": 24.0,
+                  "reb": 6.8,
+                  "ast": 3.8,
+                  "recent_points": [
+                    29.0,
+                    20.0,
+                    30.0,
+                    25.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "3059318",
+                  "name": "Joel Embiid",
+                  "games": 4,
+                  "pts": 16.2,
+                  "reb": 10.0,
+                  "ast": 2.8,
+                  "recent_points": [
+                    18.0,
+                    6.0,
+                    26.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "5124612",
+                  "name": "VJ Edgecombe",
+                  "games": 5,
+                  "pts": 14.8,
+                  "reb": 5.2,
+                  "ast": 3.2,
+                  "recent_points": [
+                    13.0,
+                    19.0,
+                    11.0,
+                    21.0,
+                    10.0
+                  ]
+                },
+                {
+                  "id": "1966",
+                  "name": "LeBron James",
+                  "games": 4,
+                  "pts": 14.5,
+                  "reb": 7.2,
+                  "ast": 6.2,
+                  "recent_points": [
+                    22.0,
+                    8.0,
+                    13.0,
+                    15.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "28",
+              "form": {
+                "played": 10,
+                "wins": 5,
+                "margin": -2.4,
+                "win_rate": 0.418,
+                "points_for": 115.1,
+                "points_against": 116.9
+              },
+              "rest_days": 2,
+              "player_trend": -0.033333333333333215,
+              "players": [
+                {
+                  "id": "4395625",
+                  "name": "RJ Barrett",
+                  "games": 5,
+                  "pts": 23.2,
+                  "reb": 6.2,
+                  "ast": 3.4,
+                  "recent_points": [
+                    19.0,
+                    27.0,
+                    22.0,
+                    26.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "4433134",
+                  "name": "Scottie Barnes",
+                  "games": 3,
+                  "pts": 22.7,
+                  "reb": 9.0,
+                  "ast": 6.3,
+                  "recent_points": [
+                    17.0,
+                    22.0,
+                    29.0
+                  ]
+                },
+                {
+                  "id": "4395724",
+                  "name": "Immanuel Quickley",
+                  "games": 3,
+                  "pts": 17.3,
+                  "reb": 3.7,
+                  "ast": 5.3,
+                  "recent_points": [
+                    13.0,
+                    27.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "3134908",
+                  "name": "Jakob Poeltl",
+                  "games": 3,
+                  "pts": 15.0,
+                  "reb": 8.0,
+                  "ast": 1.7,
+                  "recent_points": [
+                    18.0,
+                    19.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "5093267",
+                  "name": "Collin Murray-Boyles",
+                  "games": 4,
+                  "pts": 13.5,
+                  "reb": 5.0,
+                  "ast": 1.2,
+                  "recent_points": [
+                    19.0,
+                    13.0,
+                    18.0,
+                    4.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     },
     "401909977": {
       "date": "2026-11-12",
@@ -1165,7 +4439,206 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 46.0,
       "scheduled_at": "2026-11-13T00:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-13T00:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 36.8,
+          "away_pct": 63.2,
+          "inputs": {
+            "home": {
+              "team_id": "27",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -7.73,
+                "win_rate": 0.236,
+                "points_for": 104.9,
+                "points_against": 115.0
+              },
+              "rest_days": 2,
+              "player_trend": -0.08333333333333331,
+              "players": [
+                {
+                  "id": "6583",
+                  "name": "Anthony Davis",
+                  "games": 3,
+                  "pts": 32.3,
+                  "reb": 10.7,
+                  "ast": 1.7,
+                  "recent_points": [
+                    44.0,
+                    26.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "5174563",
+                  "name": "Kyshawn George",
+                  "games": 5,
+                  "pts": 21.2,
+                  "reb": 4.4,
+                  "ast": 5.6,
+                  "recent_points": [
+                    12.0,
+                    14.0,
+                    33.0,
+                    25.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "5142718",
+                  "name": "AJ Dybantsa",
+                  "games": 5,
+                  "pts": 16.2,
+                  "reb": 6.8,
+                  "ast": 2.4,
+                  "recent_points": [
+                    21.0,
+                    19.0,
+                    11.0,
+                    9.0,
+                    21.0
+                  ]
+                },
+                {
+                  "id": "4277905",
+                  "name": "Trae Young",
+                  "games": 5,
+                  "pts": 16.0,
+                  "reb": 2.6,
+                  "ast": 7.0,
+                  "recent_points": [
+                    20.0,
+                    4.0,
+                    23.0,
+                    18.0,
+                    15.0
+                  ]
+                },
+                {
+                  "id": "5160992",
+                  "name": "Alex Sarr",
+                  "games": 4,
+                  "pts": 10.8,
+                  "reb": 9.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    4.0,
+                    15.0,
+                    13.0,
+                    11.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "8",
+              "form": {
+                "played": 10,
+                "wins": 7,
+                "margin": 6.42,
+                "win_rate": 0.618,
+                "points_for": 112.9,
+                "points_against": 105.4
+              },
+              "rest_days": 3,
+              "player_trend": -0.18888888888888894,
+              "players": [
+                {
+                  "id": "4432166",
+                  "name": "Cade Cunningham",
+                  "games": 5,
+                  "pts": 22.0,
+                  "reb": 4.8,
+                  "ast": 7.4,
+                  "recent_points": [
+                    17.0,
+                    14.0,
+                    26.0,
+                    33.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "3157465",
+                  "name": "Duncan Robinson",
+                  "games": 5,
+                  "pts": 20.4,
+                  "reb": 2.0,
+                  "ast": 2.4,
+                  "recent_points": [
+                    22.0,
+                    12.0,
+                    27.0,
+                    24.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "5107199",
+                  "name": "Daniss Jenkins",
+                  "games": 5,
+                  "pts": 13.2,
+                  "reb": 3.2,
+                  "ast": 5.6,
+                  "recent_points": [
+                    22.0,
+                    31.0,
+                    5.0,
+                    2.0,
+                    6.0
+                  ]
+                },
+                {
+                  "id": "4066372",
+                  "name": "Kevin Huerter",
+                  "games": 5,
+                  "pts": 12.2,
+                  "reb": 2.0,
+                  "ast": 2.8,
+                  "recent_points": [
+                    12.0,
+                    24.0,
+                    8.0,
+                    9.0,
+                    8.0
+                  ]
+                },
+                {
+                  "id": "3908845",
+                  "name": "John Collins",
+                  "games": 5,
+                  "pts": 11.2,
+                  "reb": 5.4,
+                  "ast": 1.0,
+                  "recent_points": [
+                    24.0,
+                    8.0,
+                    16.0,
+                    4.0,
+                    4.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     },
     "401909978": {
       "date": "2026-11-12",
@@ -1178,7 +4651,208 @@
       "reason": "Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
       "elo_baseline_home_pct": 63.3,
       "scheduled_at": "2026-11-13T01:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-13T01:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 59.4,
+          "away_pct": 40.6,
+          "inputs": {
+            "home": {
+              "team_id": "16",
+              "form": {
+                "played": 10,
+                "wins": 7,
+                "margin": 8.64,
+                "win_rate": 0.764,
+                "points_for": 116.1,
+                "points_against": 107.4
+              },
+              "rest_days": 4,
+              "player_trend": 0.31666666666666676,
+              "players": [
+                {
+                  "id": "4397002",
+                  "name": "Ayo Dosunmu",
+                  "games": 5,
+                  "pts": 23.8,
+                  "reb": 5.6,
+                  "ast": 4.4,
+                  "recent_points": [
+                    26.0,
+                    26.0,
+                    21.0,
+                    19.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "4432816",
+                  "name": "LaMelo Ball",
+                  "games": 5,
+                  "pts": 22.0,
+                  "reb": 4.2,
+                  "ast": 5.2,
+                  "recent_points": [
+                    24.0,
+                    22.0,
+                    20.0,
+                    34.0,
+                    10.0
+                  ]
+                },
+                {
+                  "id": "4431671",
+                  "name": "Jaden McDaniels",
+                  "games": 5,
+                  "pts": 17.0,
+                  "reb": 5.8,
+                  "ast": 3.6,
+                  "recent_points": [
+                    16.0,
+                    23.0,
+                    14.0,
+                    13.0,
+                    19.0
+                  ]
+                },
+                {
+                  "id": "4433247",
+                  "name": "Jonathan Kuminga",
+                  "games": 5,
+                  "pts": 12.8,
+                  "reb": 6.4,
+                  "ast": 3.0,
+                  "recent_points": [
+                    4.0,
+                    17.0,
+                    16.0,
+                    8.0,
+                    19.0
+                  ]
+                },
+                {
+                  "id": "4592492",
+                  "name": "Bones Hyland",
+                  "games": 5,
+                  "pts": 10.6,
+                  "reb": 1.4,
+                  "ast": 2.4,
+                  "recent_points": [
+                    14.0,
+                    4.0,
+                    19.0,
+                    10.0,
+                    6.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "6",
+              "form": {
+                "played": 10,
+                "wins": 7,
+                "margin": 6.75,
+                "win_rate": 0.727,
+                "points_for": 116.8,
+                "points_against": 108.1
+              },
+              "rest_days": 3,
+              "player_trend": 0.21666666666666667,
+              "players": [
+                {
+                  "id": "5041939",
+                  "name": "Cooper Flagg",
+                  "games": 5,
+                  "pts": 25.0,
+                  "reb": 7.8,
+                  "ast": 7.2,
+                  "recent_points": [
+                    43.0,
+                    25.0,
+                    21.0,
+                    19.0,
+                    17.0
+                  ]
+                },
+                {
+                  "id": "6442",
+                  "name": "Kyrie Irving",
+                  "games": 4,
+                  "pts": 24.8,
+                  "reb": 3.0,
+                  "ast": 3.8,
+                  "recent_points": [
+                    35.0,
+                    21.0,
+                    14.0,
+                    29.0
+                  ]
+                },
+                {
+                  "id": "4278078",
+                  "name": "P.J. Washington",
+                  "games": 5,
+                  "pts": 15.6,
+                  "reb": 7.0,
+                  "ast": 1.2,
+                  "recent_points": [
+                    13.0,
+                    6.0,
+                    26.0,
+                    21.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "4278049",
+                  "name": "Daniel Gafford",
+                  "games": 5,
+                  "pts": 11.0,
+                  "reb": 3.8,
+                  "ast": 1.4,
+                  "recent_points": [
+                    8.0,
+                    18.0,
+                    7.0,
+                    2.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "4896372",
+                  "name": "Walter Clayton Jr.",
+                  "games": 5,
+                  "pts": 10.2,
+                  "reb": 4.2,
+                  "ast": 3.8,
+                  "recent_points": [
+                    6.0,
+                    5.0,
+                    12.0,
+                    8.0,
+                    20.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     },
     "401909979": {
       "date": "2026-11-12",
@@ -1191,7 +4865,208 @@
       "reason": "Ventaja por ventaja de localía y mejor margen de puntos reciente.",
       "elo_baseline_home_pct": 58.9,
       "scheduled_at": "2026-11-13T02:00Z",
-      "result": null
+      "result": null,
+      "input_snapshots": [
+        {
+          "captured_at": "2026-11-11T00:56:54.245965+00:00",
+          "scheduled_at": "2026-11-13T02:00Z",
+          "model": "elo-forma10-v2",
+          "home_pct": 54.6,
+          "away_pct": 45.4,
+          "inputs": {
+            "home": {
+              "team_id": "21",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -6.05,
+                "win_rate": 0.364,
+                "points_for": 110.1,
+                "points_against": 116.9
+              },
+              "rest_days": 1,
+              "player_trend": -0.5888888888888889,
+              "players": [
+                {
+                  "id": "3136193",
+                  "name": "Devin Booker",
+                  "games": 5,
+                  "pts": 29.0,
+                  "reb": 1.8,
+                  "ast": 4.4,
+                  "recent_points": [
+                    32.0,
+                    24.0,
+                    30.0,
+                    33.0,
+                    26.0
+                  ]
+                },
+                {
+                  "id": "4066383",
+                  "name": "Miles Bridges",
+                  "games": 5,
+                  "pts": 15.4,
+                  "reb": 8.2,
+                  "ast": 4.0,
+                  "recent_points": [
+                    7.0,
+                    13.0,
+                    18.0,
+                    18.0,
+                    21.0
+                  ]
+                },
+                {
+                  "id": "3155526",
+                  "name": "Dillon Brooks",
+                  "games": 5,
+                  "pts": 15.0,
+                  "reb": 4.6,
+                  "ast": 1.6,
+                  "recent_points": [
+                    7.0,
+                    11.0,
+                    24.0,
+                    15.0,
+                    18.0
+                  ]
+                },
+                {
+                  "id": "4437244",
+                  "name": "Jalen Green",
+                  "games": 5,
+                  "pts": 12.2,
+                  "reb": 3.6,
+                  "ast": 4.6,
+                  "recent_points": [
+                    6.0,
+                    16.0,
+                    6.0,
+                    22.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "5203685",
+                  "name": "Khaman Maluach",
+                  "games": 5,
+                  "pts": 7.6,
+                  "reb": 5.8,
+                  "ast": 1.2,
+                  "recent_points": [
+                    11.0,
+                    8.0,
+                    8.0,
+                    6.0,
+                    5.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "30",
+              "form": {
+                "played": 10,
+                "wins": 3,
+                "margin": -9.02,
+                "win_rate": 0.273,
+                "points_for": 99.0,
+                "points_against": 111.7
+              },
+              "rest_days": 3,
+              "player_trend": -0.4444444444444444,
+              "players": [
+                {
+                  "id": "4396971",
+                  "name": "Naz Reid",
+                  "games": 5,
+                  "pts": 18.8,
+                  "reb": 7.8,
+                  "ast": 2.4,
+                  "recent_points": [
+                    25.0,
+                    14.0,
+                    28.0,
+                    13.0,
+                    14.0
+                  ]
+                },
+                {
+                  "id": "3135045",
+                  "name": "Grayson Allen",
+                  "games": 5,
+                  "pts": 17.4,
+                  "reb": 2.6,
+                  "ast": 3.2,
+                  "recent_points": [
+                    27.0,
+                    0.0,
+                    22.0,
+                    11.0,
+                    27.0
+                  ]
+                },
+                {
+                  "id": "4433287",
+                  "name": "Brandon Miller",
+                  "games": 4,
+                  "pts": 14.8,
+                  "reb": 3.0,
+                  "ast": 2.8,
+                  "recent_points": [
+                    8.0,
+                    10.0,
+                    17.0,
+                    24.0
+                  ]
+                },
+                {
+                  "id": "4602025",
+                  "name": "Sion James",
+                  "games": 5,
+                  "pts": 9.4,
+                  "reb": 3.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    11.0,
+                    11.0,
+                    10.0,
+                    11.0,
+                    4.0
+                  ]
+                },
+                {
+                  "id": "5211176",
+                  "name": "Tidjane Salaun",
+                  "games": 5,
+                  "pts": 8.4,
+                  "reb": 3.4,
+                  "ast": 0.0,
+                  "recent_points": [
+                    14.0,
+                    13.0,
+                    9.0,
+                    1.0,
+                    5.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
+        }
+      ]
     }
   }
 }
