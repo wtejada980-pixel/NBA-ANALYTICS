@@ -431,3 +431,14 @@ nav[aria-label="Fechas de partidos"] button[aria-current="date"]{
 .btn-volver-arriba:focus-visible{outline:2px solid #ffd0c0;outline-offset:4px}
 @media(max-width:620px){.contenedor-noticias{grid-template-columns:1fr}.btn-volver-arriba{right:18px;bottom:18px;width:46px;height:46px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn-volver-arriba,nav[aria-label="Fechas de partidos"] button{transition:none}}
+
+/* Indicadores circulares para los resultados recientes de cada equipo */
+.racha-contenedor{display:flex;align-items:center;gap:5px;margin-top:6px;flex-wrap:wrap}
+.racha-item{flex:0 0 20px;width:20px;height:20px;box-sizing:border-box;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:750;
+ line-height:1;box-shadow:0 2px 5px #0005;cursor:default;transition:transform .2s ease}
+.racha-v{background:linear-gradient(135deg,#2ecc71,#27ae60);border:1px solid #ffffff33}
+.racha-d{background:linear-gradient(135deg,#e74c3c,#c0392b);border:1px solid #ffffff33}
+.racha-e{background:linear-gradient(135deg,#95a5a6,#7f8c8d);border:1px solid #ffffff33}
+.racha-item:hover{transform:translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.racha-item{transition:none}}
