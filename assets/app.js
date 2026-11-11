@@ -273,17 +273,26 @@
     const wins = Number.isInteger(form.wins) ? form.wins : null;
     const fmt = n => Number.isFinite(n) ? n.toFixed(1) : '—';
     const results = Array.isArray(form.recent) ? form.recent.slice(0, 5) : [];
-    const recent = results.map(g => '<span class="form-game ' + (g.win ? 'form-win' : 'form-loss') +
-      '" title="' + escapeHtml(g.date || '') + ': ' + escapeHtml(g.opponent || '') +
-      ' ' + (Number.isFinite(g.points) ? g.points : '—') + '-' +
-      (Number.isFinite(g.opponent_points) ? g.opponent_points : '—') + '">' +
-      (g.win ? 'V' : 'D') + '</span>').join('');
+    const recent = results.map(g => {
+      const outcome = g.win === true ? 'v' : g.win === false ? 'd' : 'e';
+      const resultLabel = outcome === 'v' ? 'Victoria' : outcome === 'd' ? 'Derrota' : 'Resultado sin confirmar';
+      const details = escapeHtml(g.date || '') + ': ' + escapeHtml(g.opponent || '') +
+        ' ' + (Number.isFinite(g.points) ? g.points : '—') + '-' +
+        (Number.isFinite(g.opponent_points) ? g.opponent_points : '—');
+      const hasDetails = Boolean(g.date || g.opponent || Number.isFinite(g.points) ||
+        Number.isFinite(g.opponent_points));
+      return '<span class="racha-item racha-' + outcome + '" aria-label="' + resultLabel +
+        (g.opponent ? ' contra ' + escapeHtml(g.opponent) : '') + '" title="' + resultLabel +
+        (hasDetails ? ' · ' + details : '') + '">' +
+        (outcome === 'v' ? 'V' : outcome === 'd' ? 'D' : '—') + '</span>';
+    }).join('');
     return '<div class="form-team"><h4>' + escapeHtml(team.name || 'Equipo') +
       '</h4><div class="form-stats">' +
       '<div><span>Récord reciente</span><strong>' + (wins === null || !matches ? '—' : wins + '-' + (matches-wins)) + '</strong></div>' +
       '<div><span>PTS a favor</span><strong>' + fmt(form.points_for) + '</strong></div>' +
       '<div><span>PTS recibidos</span><strong>' + fmt(form.points_against) + '</strong></div>' +
-      '</div><div class="form-last">' + (recent || '<span class="muted-copy">Sin partidos recientes</span>') +
+      '</div><div class="racha-contenedor form-last" role="group" aria-label="Últimos resultados">' +
+      (recent || '<span class="racha-item racha-e" aria-label="Sin datos recientes" title="Sin resultados recientes verificados">—</span>') +
       '</div></div>';
   }
   function matchupInsights(game) {
