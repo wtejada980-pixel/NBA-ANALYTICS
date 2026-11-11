@@ -24,7 +24,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
     return nodes.get(id);
   }
   const context = {
-    document:{getElementById:node},Intl,Date,console,
+    document:{getElementById:node},Intl,Date,URL,console,
     location:{protocol:'https:'},
     fetch: async (url) => {
       if (failure) throw new Error('network');
@@ -44,6 +44,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(html,/id="games"/);
   assert.match(html,/Historial: últimos 7 días/);
   assert.match(html,/id="scouting-games"/);
+  assert.match(html,/id="news-list"/);
+  assert.match(html,/Noticias NBA/);
   assert.doesNotMatch(html,/thescore|theScore/i);
   assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
@@ -77,6 +79,24 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/36\.6/);
   assert.match(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/Ventaja por localía/);
+  const contextGame={...game,context:{
+    official_injury_report:'https://official.nba.com/nba-injury-report-2026-27-season/',
+    context_updated_at:new Date().toISOString(),
+    injuries:{away:{source:'https://www.espn.com/nba/team/injuries/_/name/1',items:[
+      {player:'Jugador BOS',status:'Cuestionable',reason:'Tobillo'}]},home:{items:[]}},
+    news:[{title:'Noticia relacionada',source:'FOX Sports',published:'hoy',
+      url:'https://www.foxsports.com/stories/nba/test'}]
+  }};
+  const contextView=await mount({as_of:new Date().toISOString(),date:today,games:[contextGame],
+    news:[{title:'Titular FOX',source:'FOX Sports',published:'hoy',
+      url:'https://www.foxsports.com/stories/nba/headline'}],
+    news_updated_at:new Date().toISOString()});
+  assert.match(contextView.node('games').innerHTML,/Jugador BOS/);
+  assert.match(contextView.node('games').innerHTML,/Cuestionable/);
+  assert.match(contextView.node('games').innerHTML,/Ver el informe oficial de lesiones de la NBA/);
+  assert.match(contextView.node('games').innerHTML,/Noticia relacionada/);
+  assert.match(contextView.node('news-list').innerHTML,/Titular FOX/);
+  assert.match(contextView.node('news-list').innerHTML,/FOX Sports/);
   const pastDate = new Date(Date.now()-86400000).toISOString().slice(0,10);
   const archiveGame={...game,id:'past',date:pastDate,status:'post',historical:true,
     home_score:112,away_score:108};

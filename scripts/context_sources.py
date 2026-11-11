@@ -12,11 +12,15 @@ import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode, quote
+from urllib.parse import urlencode, quote, urlsplit
 from urllib.request import Request, urlopen
 
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 NBA_REPORT = "https://official.nba.com/nba-injury-report-2026-27-season/"
+FOX_NBA_RSS = ("https://api.foxsports.com/v2/content/optimized-rss?"
+               "partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs%2Fnba")
+FOX_RSS_FALLBACK = ("https://api.foxsports.com/v2/content/optimized-rss?"
+                    "partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30")
 UA = "NBAAnalyticsDaily/2.0 (personal noncommercial research; no trading)"
 STATUS = {
     "out": "Fuera", "doubtful": "Dudoso", "questionable": "Cuestionable",
@@ -67,7 +71,7 @@ def injuries_for_team(tid, request=request_bytes):
     except (HTTPError, URLError, TimeoutError, OSError, ValueError, TypeError, KeyError):
         return [], "No verificado"
 
-def feed_titles(xml_bytes, max_items=4):
+def feed_titles(xml_bytes, max_items=4, default_source=""):
     try:
         root = ET.fromstring(xml_bytes)
     except ET.ParseError:
@@ -77,16 +81,38 @@ def feed_titles(xml_bytes, max_items=4):
         title = (item.findtext("title") or "").strip()
         link = (item.findtext("link") or "").strip()
         published = (item.findtext("pubDate") or "").strip()
-        if title and link.startswith("https://"):
-            result.append({"title": title[:160], "url": link, "published": published})
+        source = (item.findtext("source") or default_source).strip()
+        host = urlsplit(link).hostname or ""
+        if (title and urlsplit(link).scheme == "https" and
+                (host == "foxsports.com" or host.endswith(".foxsports.com") or
+                 host == "news.google.com" or host.endswith(".nba.com"))):
+            result.append({"title": title[:160], "url": link,
+                           "published": published[:80], "source": source[:60]})
     return result
+
+def fox_nba_news(request=request_bytes):
+    """Leer titulares RSS de FOX, usando la sección NBA y su atribución."""
+    try:
+        items = feed_titles(request(FOX_NBA_RSS), 10, "FOX Sports")
+        if items:
+            return items
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError):
+        pass
+    # Algunas respuestas del feed etiquetado pueden estar vacías o cambiar;
+    # el feed oficial general sirve como respaldo, filtrando URLs NBA.
+    try:
+        items = feed_titles(request(FOX_RSS_FALLBACK), 30, "FOX Sports")
+        return [item for item in items if "/stories/nba/" in item["url"] or
+                "/nba/" in urlsplit(item["url"]).path.lower()][:10]
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError):
+        return []
 
 def news_for_game(game, request=request_bytes):
     teams = [game["away"]["name"], game["home"]["name"]]
     query = f'"{teams[0]}" "{teams[1]}" NBA when:2d'
     url = "https://news.google.com/rss/search?" + urlencode({"q": query, "hl": "en-US", "gl": "US", "ceid": "US:en"})
     try:
-        return feed_titles(request(url), 4)
+        return feed_titles(request(url), 4, "Google News")
     except (HTTPError, URLError, TimeoutError, OSError, ValueError):
         return []
 
@@ -141,10 +167,11 @@ def forum_for_game(game, token, request=request_bytes):
     return result
 
 def collect(games, teams, get_injuries=injuries_for_team, get_news=news_for_game,
-            get_forum=forum_for_game, get_token=reddit_token):
+            get_forum=forum_for_game, get_token=reddit_token, get_fox_news=fox_nba_news):
     """Obtener contexto UNA vez por equipo y partido. Sin inventar ausencias."""
     injury_cache = {}
     token = get_token()
+    fox_news = get_fox_news()
     for game in games:
         if game.get("status") != "pre":
             continue
@@ -166,4 +193,6 @@ def collect(games, teams, get_injuries=injuries_for_team, get_news=news_for_game
             ],
             "context_updated_at": datetime.now(timezone.utc).isoformat()
         }
-    return games
+    return {"games": games, "news": fox_news,
+            "news_source": "FOX Sports RSS" if fox_news else "FOX Sports RSS no disponible",
+            "news_updated_at": datetime.now(timezone.utc).isoformat() if fox_news else None}

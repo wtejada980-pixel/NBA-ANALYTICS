@@ -541,7 +541,19 @@ def refresh(today: date | None = None):
             game['lineups'] = lineups
     # Contexto de lesiones, noticias y foros SOLO para partidos del día.
     # No modifica la probabilidad, que depende de la forma deportiva.
-    collect([g for g in schedule if g['date'] == day.isoformat()], teams)
+    daily_context = collect([g for g in schedule if g['date'] == day.isoformat()], teams)
+    news_items = daily_context.get('news', []) if isinstance(daily_context, dict) else []
+    news_updated_at = daily_context.get('news_updated_at') if isinstance(daily_context, dict) else None
+    if not news_items:
+        # Si FOX no responde, mantener el último feed bueno en lugar de borrar
+        # los titulares ya publicados; la fecha visible conserva su antigüedad.
+        try:
+            previous = json.loads(OUT.read_text(encoding='utf-8'))
+            news_items = previous.get('news', []) if isinstance(previous, dict) else []
+            news_updated_at = previous.get('news_updated_at') if isinstance(previous, dict) else None
+        except (FileNotFoundError, OSError, ValueError, AttributeError):
+            news_items = []
+            news_updated_at = None
     for game in all_events.values():
         if game['status'] == 'post' and game['id'] in history['predictions']:
             record = history['predictions'][game['id']]
@@ -570,6 +582,8 @@ def refresh(today: date | None = None):
         'source_url': 'https://www.espn.com/nba/scoreboard',
         'model': 'elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado',
         'games': archived + schedule, 'teams': teams,
+        'news': news_items, 'news_source': daily_context.get('news_source', 'FOX Sports RSS') if isinstance(daily_context, dict) else 'FOX Sports RSS',
+        'news_updated_at': news_updated_at,
         'archive_days': 7,
         'validation': metrics,
         'history_recent': public_history(history),

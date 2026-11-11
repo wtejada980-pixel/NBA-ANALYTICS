@@ -187,6 +187,61 @@
       'No es una predicción de puntos.</p>' +
       '<div class="player-columns">' + playerTable(game,'away') + playerTable(game,'home') + '</div>';
   }
+  function safeArticleUrl(value) {
+    try {
+      const url = new URL(String(value || ''));
+      const host = url.hostname.toLowerCase();
+      const allowed = ['foxsports.com','news.google.com','espn.com','nba.com'];
+      return url.protocol === 'https:' && allowed.some(domain => host === domain || host.endsWith('.' + domain)) ? url.href : '';
+    } catch (error) { return ''; }
+  }
+  function newsLink(item, className = 'news-link') {
+    const href = safeArticleUrl(item?.url);
+    if (!href || !item?.title) return '';
+    const source = String(item.source || 'Fuente deportiva');
+    const published = String(item.published || '');
+    return '<a class="' + className + '" href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' +
+      '<span class="news-card-source">' + escapeHtml(source) + (published ? ' · ' + escapeHtml(published) : '') + '</span>' +
+      '<strong>' + escapeHtml(item.title) + '</strong><span class="news-open">Leer en la fuente ↗</span></a>';
+  }
+  function renderNews() {
+    const items = Array.isArray(data.news) ? data.news.slice(0, 10) : [];
+    const cards = items.map(item => newsLink(item, 'news-card')).filter(Boolean);
+    $('news-list').innerHTML = cards.length ? cards.join('') :
+      '<p class="history-empty">FOX Sports no tiene titulares disponibles ahora. Revisa <a href="https://www.foxsports.com/stories/nba" target="_blank" rel="noopener noreferrer">sus noticias NBA ↗</a>.</p>';
+    const raw = Date.parse(data.news_updated_at || '');
+    $('news-updated').textContent = Number.isFinite(raw) ?
+      'FOX Sports · actualizado ' + timeLabel(new Date(raw).toISOString()) + ' RD' : 'FOX Sports · fecha no disponible';
+  }
+  function contextPanel(game) {
+    const context = game.context && typeof game.context === 'object' ? game.context : {};
+    if (!game.context || typeof game.context !== 'object') return '';
+    const injuries = context.injuries && typeof context.injuries === 'object' ? context.injuries : {};
+    const sideStatus = side => {
+      const team = game[side] || {};
+      const report = injuries[side] || {};
+      const rows = Array.isArray(report.items) ? report.items : [];
+      const detail = rows.length ? rows.slice(0, 6).map(row =>
+        '<li><strong>' + escapeHtml(row.player || 'Jugador') + '</strong><span>' +
+        escapeHtml(row.status || 'Estado reportado') + (row.reason ? ' · ' + escapeHtml(row.reason) : '') + '</span></li>'
+      ).join('') : '<li class="injury-empty">ESPN no publicó estados en esta consulta; no significa que todos estén disponibles.</li>';
+      const source = safeArticleUrl(report.source);
+      return '<div class="context-team"><h4>' + escapeHtml(team.name || 'Equipo') + '</h4><ul>' + detail + '</ul>' +
+        (source ? '<a href="' + escapeHtml(source) + '" target="_blank" rel="noopener noreferrer">Fuente: ESPN ↗</a>' : '') + '</div>';
+    };
+    const news = Array.isArray(context.news) ? context.news.map(item => newsLink(item, 'context-news-link')).filter(Boolean) : [];
+    const official = safeArticleUrl(context.official_injury_report);
+    const updated = Date.parse(context.context_updated_at || '');
+    return '<section class="context-panel" aria-label="Disponibilidad y noticias relacionadas">' +
+      '<div class="context-heading"><h3>Disponibilidad y noticias</h3>' +
+      (Number.isFinite(updated) ? '<span>Consulta · ' + escapeHtml(timeLabel(new Date(updated).toISOString())) + ' RD</span>' : '') + '</div>' +
+      '<div class="context-teams">' + sideStatus('away') + sideStatus('home') + '</div>' +
+      (official ? '<a class="official-injury-link" href="' + escapeHtml(official) + '" target="_blank" rel="noopener noreferrer">Ver el informe oficial de lesiones de la NBA ↗</a>' : '') +
+      '<h4 class="context-news-heading">Noticias relacionadas</h4>' +
+      (news.length ? '<div class="context-news-list">' + news.slice(0, 4).join('') + '</div>' :
+        '<p class="context-news-empty">No hay titulares relacionados disponibles para este partido.</p>') +
+      '<p class="context-note">Lesiones y noticias son contexto informativo; no alteran el pronóstico prepartido.</p></section>';
+  }
   async function fetchGameSummary(id) {
     if (!/^\d+$/.test(id)) return;
     const game = (data.games || []).find(g=>String(g.id)===id);
@@ -395,7 +450,7 @@
       (game.historical ?
         '<p class="archive-note">Este es un partido histórico. Solo se muestran porcentajes prepartido si se guardaron antes del inicio. ' +
         'No presentamos forma actual ni titulares como si fueran datos del pasado.</p>' :
-        matchupInsights(game) + playersPanel(game)) +
+        matchupInsights(game) + playersPanel(game) + contextPanel(game)) +
       (game.source ? '<a class="game-link" href="' + escapeHtml(game.source) +
         '" target="_blank" rel="noopener noreferrer">Ficha del partido en ESPN ↗</a>' : '') +
       '</div></details>';
@@ -562,6 +617,7 @@
       'Pronósticos: ' + reported;
     $('games').innerHTML = shown.length ? shown.map(gameCard).join('') :
       '<div class="empty-state">No hay partidos publicados para esta fecha.</div>';
+    renderNews();
     renderScouting();
     renderValidation();
     renderCalibration();
