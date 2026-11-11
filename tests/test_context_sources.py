@@ -34,6 +34,15 @@ class FoxNewsTests(unittest.TestCase):
         items = context_sources.feed_titles(feed, 10, "FOX Sports")
         self.assertEqual([item["title"] for item in items], ["Good"])
 
+    def test_fox_news_excludes_betting_and_other_sports(self):
+        items = [
+            {"title": "NBA game recap", "url": "https://www.foxsports.com/stories/nba/recap"},
+            {"title": "NBA Finals odds update", "url": "https://www.foxsports.com/stories/nba/odds"},
+            {"title": "NFL game recap", "url": "https://www.foxsports.com/stories/nfl/recap"},
+        ]
+        self.assertEqual([item["title"] for item in context_sources.filter_fox_nba(items)],
+                         ["NBA game recap"])
+
 
 if __name__ == "__main__":
     unittest.main()

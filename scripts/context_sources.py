@@ -11,6 +11,7 @@ import re
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, quote, urlsplit
 from urllib.request import Request, urlopen
@@ -93,19 +94,55 @@ def feed_titles(xml_bytes, max_items=4, default_source=""):
 def fox_nba_news(request=request_bytes):
     """Leer titulares RSS de FOX, usando la sección NBA y su atribución."""
     try:
-        items = feed_titles(request(FOX_NBA_RSS), 10, "FOX Sports")
+        items = feed_titles(request(FOX_NBA_RSS), 30, "FOX Sports")
+        items = filter_fox_nba(items)
         if items:
-            return items
+            return items[:10]
     except (HTTPError, URLError, TimeoutError, OSError, ValueError):
         pass
     # Algunas respuestas del feed etiquetado pueden estar vacías o cambiar;
     # el feed oficial general sirve como respaldo, filtrando URLs NBA.
     try:
         items = feed_titles(request(FOX_RSS_FALLBACK), 30, "FOX Sports")
-        return [item for item in items if "/stories/nba/" in item["url"] or
-                "/nba/" in urlsplit(item["url"]).path.lower()][:10]
+        return filter_fox_nba(items)[:10]
     except (HTTPError, URLError, TimeoutError, OSError, ValueError):
         return []
+
+def filter_fox_nba(items):
+    """Conservar artículos NBA de FOX, sin titulares de apuestas ni de otras ligas."""
+    result = []
+    for item in items:
+        path = urlsplit(item.get("url", "")).path.lower()
+        title = item.get("title", "")
+        if "/stories/nba/" not in path or re.search(
+            r"\b(odds?|betting|parlay|sportsbook|wager)\b", title, re.IGNORECASE
+        ):
+            continue
+        result.append(item)
+    return result
+
+def google_nba_news(request=request_bytes):
+    """Titulares recientes de varias redacciones, sin filtrar por apuestas."""
+    query = "NBA basketball when:3d -odds -betting -parlay -sportsbook"
+    url = "https://news.google.com/rss/search?" + urlencode({
+        "q": query, "hl": "en-US", "gl": "US", "ceid": "US:en"
+    })
+    try:
+        return feed_titles(request(url), 12, "Google News")
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError):
+        return []
+
+def league_news(request=request_bytes):
+    """Combinar FOX y agregación de titulares recientes, conservando la atribución."""
+    items = fox_nba_news(request) + google_nba_news(request)
+    deduped, seen = [], set()
+    for item in items:
+        key = re.sub(r"\W+", " ", item.get("title", "").casefold()).strip()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(item)
+    return deduped[:12]
 
 def news_for_game(game, request=request_bytes):
     teams = [game["away"]["name"], game["home"]["name"]]
@@ -167,7 +204,7 @@ def forum_for_game(game, token, request=request_bytes):
     return result
 
 def collect(games, teams, get_injuries=injuries_for_team, get_news=news_for_game,
-            get_forum=forum_for_game, get_token=reddit_token, get_fox_news=fox_nba_news):
+            get_forum=forum_for_game, get_token=reddit_token, get_fox_news=league_news):
     """Obtener contexto UNA vez por equipo y partido. Sin inventar ausencias."""
     injury_cache = {}
     token = get_token()
@@ -194,5 +231,5 @@ def collect(games, teams, get_injuries=injuries_for_team, get_news=news_for_game
             "context_updated_at": datetime.now(timezone.utc).isoformat()
         }
     return {"games": games, "news": fox_news,
-            "news_source": "FOX Sports RSS" if fox_news else "FOX Sports RSS no disponible",
+            "news_source": "FOX Sports RSS + Google News" if fox_news else "Fuentes deportivas no disponibles",
             "news_updated_at": datetime.now(timezone.utc).isoformat() if fox_news else None}

@@ -210,8 +210,9 @@
     $('news-list').innerHTML = cards.length ? cards.join('') :
       '<p class="history-empty">FOX Sports no tiene titulares disponibles ahora. Revisa <a href="https://www.foxsports.com/stories/nba" target="_blank" rel="noopener noreferrer">sus noticias NBA ↗</a>.</p>';
     const raw = Date.parse(data.news_updated_at || '');
+    const source = String(data.news_source || 'FOX Sports + Google News');
     $('news-updated').textContent = Number.isFinite(raw) ?
-      'FOX Sports · actualizado ' + timeLabel(new Date(raw).toISOString()) + ' RD' : 'FOX Sports · fecha no disponible';
+      source + ' · actualizado ' + timeLabel(new Date(raw).toISOString()) + ' RD' : source + ' · fecha no disponible';
   }
   function contextPanel(game) {
     const context = game.context && typeof game.context === 'object' ? game.context : {};
