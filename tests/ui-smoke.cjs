@@ -56,11 +56,18 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(source,/visibilityState === 'hidden'/);
   assert.match(source,/nextLiveRetryAt/);
   assert.match(source,/prob-fuerte/);
+  assert.match(source,/racha-contenedor/);
+  assert.match(source,/g\.win === true/);
+  assert.match(source,/g\.win === false/);
   assert.match(source,/updateBackToTop/);
   assert.match(source,/scrollTo\(\{top: 0, behavior: reducedMotion \? 'auto' : 'smooth'\}\)/);
   assert.match(style,/scroll-snap-type:\s*x mandatory/);
   assert.match(style,/\.noticia-card/);
   assert.match(style,/\.btn-volver-arriba\.visible/);
+  assert.match(style,/\.racha-item/);
+  assert.match(style,/\.racha-v/);
+  assert.match(style,/\.racha-d/);
+  assert.match(style,/\.racha-e/);
   assert.match(html,/id="model-validation"/);
   assert.match(html,/id="elo-validation"/);
   assert.match(html,/id="calibration-chart"/);
@@ -174,6 +181,18 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('games').innerHTML,/Tipo de pronóstico: ganador del partido/);
   assert.doesNotMatch(view.node('games').innerHTML,/theScore/i);
   assert.match(view.node('games').innerHTML,/<details class="game-card"/);
+  const streakView=await mount({as_of:new Date().toISOString(),games:[game],teams:{
+    '1':{form:{played:3,wins:2,points_for:108,points_against:104,recent:[
+      {date:'2026-11-10',opponent:'MIA',points:110,opponent_points:102,win:true},
+      {date:'2026-11-08',opponent:'CHI',points:98,opponent_points:105,win:false},
+      {date:'2026-11-06',opponent:'ATL',points:104,opponent_points:104}
+    ]}},
+    '2':{form:{played:0,wins:0,points_for:null,points_against:null,recent:[]}}
+  }});
+  assert.match(streakView.node('games').innerHTML,/racha-item racha-v/);
+  assert.match(streakView.node('games').innerHTML,/racha-item racha-d/);
+  assert.match(streakView.node('games').innerHTML,/racha-item racha-e/);
+  assert.match(streakView.node('games').innerHTML,/aria-label="Sin datos recientes"/);
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);
   assert.match(view.node('games').innerHTML,/datos desactualizados/i);
