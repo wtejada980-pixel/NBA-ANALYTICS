@@ -7,6 +7,7 @@
   const seed = JSON.parse($('seed').textContent);
   let data = seed;
   let chosenDate = '';
+  let activeHistoryFilter = 'all';
   let loadError = false;
   let liveAvailable = false;
   let liveError = false;
@@ -279,7 +280,7 @@
     const sorted = safe.slice().sort((a, b) =>
       Number(Boolean(isFinished(b))) - Number(Boolean(isFinished(a))) ||
       (Date.parse(b.scheduled_at) - Date.parse(a.scheduled_at)));
-    const filter = $('history-filter').value || 'all';
+    const filter = activeHistoryFilter;
     const state = row => {
       if (!row.result || !['home', 'away'].includes(row.result.winner)) return 'pending';
       if (row.home_pct === row.away_pct) return 'pending';
@@ -294,6 +295,11 @@
       '<p class="history-empty">' + (safe.length ? 'No hay pronósticos para este filtro.' :
       'Todavía no tenemos pronósticos anteriores publicados en este registro. ' +
       'Los nuevos partidos quedarán guardados antes del inicio.') + '</p>';
+    $('history-filter').innerHTML = [
+      ['all','Todos'], ['hit','Acertados'], ['miss','Fallados'], ['pending','Pendientes']
+    ].map(([value,label]) => '<button type="button" class="history-pill' +
+      (activeHistoryFilter === value ? ' is-active' : '') + '" data-history-filter="' + value +
+      '" aria-pressed="' + (activeHistoryFilter === value) + '">' + label + '</button>').join('');
   }
 
   function gameCard(game) {
@@ -504,13 +510,24 @@
       metrics.brier_score.toFixed(4) : '—';
     const logLoss = n && Number.isFinite(metrics.log_loss) && metrics.log_loss >= 0 ?
       metrics.log_loss.toFixed(4) : '—';
-    const card = (name, value, subtitle) =>
+    const card = (name, value, subtitle, extra = '') =>
       '<div class="quality-metric"><span class="metric-name">' + name + '</span>' +
       '<strong class="metric-value">' + value + '</strong>' +
+      extra +
       '<span class="metric-hint">' + subtitle + '</span></div>';
+    const accuracy = n && Number.isFinite(metrics.favorite_accuracy_pct) &&
+      metrics.favorite_accuracy_pct >= 0 && metrics.favorite_accuracy_pct <= 100 ?
+      metrics.favorite_accuracy_pct : null;
+    const accuracyVisual = accuracy === null ? '' :
+      '<div class="accuracy-bar" role="img" aria-label="Acierto ' + accuracy.toFixed(1) +
+      ' por ciento; fallos ' + (100-accuracy).toFixed(1) + ' por ciento">' +
+      '<span class="accuracy-hit" style="width:' + accuracy + '%"></span>' +
+      '<span class="accuracy-miss" style="width:' + (100-accuracy) + '%"></span></div>' +
+      '<span class="accuracy-legend"><span>Acertados ' + accuracy.toFixed(1) +
+      '%</span><span>Fallados ' + (100-accuracy).toFixed(1) + '%</span></span>';
     $('model-validation').innerHTML =
       card('Partidos evaluados', String(n), 'Pronósticos registrados antes del juego') +
-      card('Acierto del favorito', pct, 'Porcentaje de ganadores identificados') +
+      card('Acierto del favorito', pct, 'Porcentaje de ganadores identificados', accuracyVisual) +
       card('Error Brier', brier, 'Menor es mejor · referencia 50/50: 0.2500') +
       card('Log loss', logLoss, 'Penaliza probabilidades demasiado seguras');
     $('quality-caveat').textContent = n === 0 ?
@@ -679,7 +696,13 @@
     if (expandedGameId === id) fetchGameSummary(id);
   });
   $('reload').addEventListener('click', async () => { await load(); await refreshLive(); });
-  $('history-filter').addEventListener('change', () => renderHistory());
+  $('history-filter').addEventListener('click', event => {
+    const button = event.target?.closest?.('button[data-history-filter]');
+    const filter = button?.dataset?.historyFilter;
+    if (!['all','hit','miss','pending'].includes(filter)) return;
+    activeHistoryFilter = filter;
+    renderHistory();
+  });
   (async () => { await load(); await refreshLive(); })();
   function hasLiveGameOnScreen() {
     return Array.isArray(data.games) &&

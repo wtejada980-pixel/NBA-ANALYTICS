@@ -54,7 +54,11 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(html,/id="calibration-chart"/);
   assert.match(html,/id="model-versions"/);
   assert.match(html,/id="history-filter"/);
-  assert.match(html,/value="finished"/);
+  assert.match(html,/data-history-filter="hit"/);
+  assert.match(html,/data-history-filter="miss"/);
+  assert.match(html,/data-history-filter="pending"/);
+  assert.match(html,/skeleton-game/);
+  assert.match(html,/skeleton-metric/);
   assert.match(source,/const sorted = safe\.slice\(\)\.sort/);
   assert.match(html,/id="data-health"/);
   assert.match(html,/id="history-list"/);
@@ -112,6 +116,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
     validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68}});
   assert.match(view.node('model-validation').innerHTML,/62\.5%/);
+  assert.match(view.node('model-validation').innerHTML,/accuracy-bar/);
   assert.match(view.node('model-validation').innerHTML,/0\.2200/);
   assert.match(view.node('quality-caveat').textContent,/Muestra inicial/);
   assert.match(view.node('calibration-chart').innerHTML,/resultados suficientes/);

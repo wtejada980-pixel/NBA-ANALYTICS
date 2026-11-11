@@ -15,9 +15,17 @@
       month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).format(when);
   };
   function card(name, metrics, emphasize=false) {
+    const accuracy = Number.isFinite(metrics?.winner_accuracy_pct) &&
+      metrics.winner_accuracy_pct >= 0 && metrics.winner_accuracy_pct <= 100 ?
+      metrics.winner_accuracy_pct : null;
+    const bar = accuracy === null ? '' :
+      '<div class="v3-accuracy-track" role="img" aria-label="Acierto de ganadores: '+
+      accuracy.toFixed(1)+' por ciento"><span class="accuracy-hit" style="width:'+accuracy+'%"></span>'+ 
+      '<span class="accuracy-miss" style="width:'+(100-accuracy)+'%"></span></div>';
     return '<div class="v3-test-card'+(emphasize?' active':'')+'">'+
       '<strong>'+escaped(name)+'</strong>'+
       '<span class="v3-accuracy">'+pct(metrics?.winner_accuracy_pct)+'</span>'+
+      bar+
       '<span class="v3-score">Brier '+brier(metrics?.brier)+
       ' · '+(Number.isInteger(metrics?.n)?metrics.n:0)+' partidos</span></div>';
   }

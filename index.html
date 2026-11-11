@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261109-v3">
+  <link rel="stylesheet" href="assets/style.css?v=20261110-uiux">
 </head>
 <body>
   <div class="site-shell">
@@ -33,14 +33,17 @@
           <div><p class="overline">AGENDA</p><h2 id="schedule-title">Partidos</h2></div>
           <p class="updated" id="updated">Consultando información…</p>
         </div>
-        <div id="alert" class="status-message" role="status" aria-live="polite">Cargando partidos…</div>
+        <div id="alert" class="status-message status-loading" role="status" aria-live="polite">
+          <span class="sr-only">Cargando datos deportivos…</span><span class="skeleton-line" aria-hidden="true"></span>
+        </div>
         
         <div class="schedule-meta">
           <span id="game-count">— partidos</span>
           <span>Hora de República Dominicana · Historial: últimos 7 días</span>
         </div>
         <div id="games" class="games-list" aria-live="polite">
-          <div class="empty-state">Consultando partidos y probabilidades…</div>
+          <div class="skeleton-game" aria-hidden="true"><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-bar"></span></div>
+          <div class="skeleton-game" aria-hidden="true"><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-bar"></span></div>
         </div>
       </section>
 
@@ -54,7 +57,8 @@
         </div>
         <p class="quality-intro">El análisis contrasta forma, diferencial reciente y descanso. Si hay una revisión prepartido, se muestra con su fecha; el primer pronóstico sigue guardado para comprobar los aciertos. No calcula hándicaps.</p>
         <div id="scouting-games" class="scouting-grid" aria-live="polite">
-          <p class="history-empty">Preparando análisis…</p>
+          <div class="skeleton-panel" aria-hidden="true"><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-line"></span><span class="skeleton-block skeleton-line short"></span></div>
+          <div class="skeleton-panel" aria-hidden="true"><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-line"></span><span class="skeleton-block skeleton-line short"></span></div>
         </div>
       </section>
 
@@ -65,7 +69,10 @@
         </div>
         <p class="quality-intro">Solo evaluamos pronósticos guardados antes del partido contra el ganador real. No representan la probabilidad de cubrir un hándicap ni garantizan resultados.</p>
         <div id="model-validation" class="quality-grid" aria-live="polite">
-          <p class="quality-loading">Consultando resultados del modelo…</p>
+          <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
+          <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
+          <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
+          <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
         </div>
         <p id="quality-caveat" class="quality-caveat">Aún estamos reuniendo resultados suficientes para validar las probabilidades.</p>
         <div id="elo-validation" class="baseline-compare"></div>
@@ -85,7 +92,7 @@
         </div>
         <p class="quality-intro">Comparación con los mismos partidos y fechas. El V3 sigue en pruebas: no representa apuestas ni porcentajes calibrados. La precisión real solo se mide cuando el pronóstico quedó registrado antes del comienzo.</p>
         <div id="v3-lab-content" aria-live="polite">
-          <p class="history-empty">Consultando el laboratorio V3…</p>
+          <div class="skeleton-panel" aria-hidden="true"><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-line"></span><span class="skeleton-block skeleton-line"></span></div>
         </div>
       </section>
 
@@ -96,18 +103,18 @@
         </div>
         <p class="quality-intro">Porcentajes publicados antes del salto inicial y resultado real del encuentro. Una apuesta con hándicap no se evalúa con estos porcentajes.</p>
         <div class="history-toolbar">
-          <label for="history-filter">Ver pronósticos</label>
-          <select id="history-filter" aria-label="Filtrar historial">
-            <option value="all">Todos</option>
-            <option value="finished">Finalizados</option>
-            <option value="hit">Acertados</option>
-            <option value="miss">Fallados</option>
-            <option value="pending">Pendientes</option>
-          </select>
+          <span id="history-filter-label">Ver pronósticos</span>
+          <div id="history-filter" class="history-filters" role="group" aria-labelledby="history-filter-label">
+            <button type="button" class="history-pill is-active" data-history-filter="all" aria-pressed="true">Todos</button>
+            <button type="button" class="history-pill" data-history-filter="hit" aria-pressed="false">Acertados</button>
+            <button type="button" class="history-pill" data-history-filter="miss" aria-pressed="false">Fallados</button>
+            <button type="button" class="history-pill" data-history-filter="pending" aria-pressed="false">Pendientes</button>
+          </div>
           <span id="history-count" class="history-count">—</span>
         </div>
         <div id="history-list" class="history-list" aria-live="polite">
-          <p class="history-empty">Consultando pronósticos anteriores…</p>
+          <div class="skeleton-panel" aria-hidden="true"><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-line"></span><span class="skeleton-block skeleton-line short"></span></div>
+          <div class="skeleton-panel" aria-hidden="true"><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-line"></span><span class="skeleton-block skeleton-line short"></span></div>
         </div>
       </section>
 
@@ -116,7 +123,7 @@
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261109-archive" defer></script>
-  <script src="assets/v3-lab.js?v=20261109-v3" defer></script>
+  <script src="assets/app.js?v=20261110-uiux" defer></script>
+  <script src="assets/v3-lab.js?v=20261110-uiux" defer></script>
 </body>
 </html>
