@@ -83,6 +83,8 @@ def feed_titles(xml_bytes, max_items=4, default_source=""):
         link = (item.findtext("link") or "").strip()
         published = (item.findtext("pubDate") or "").strip()
         source = (item.findtext("source") or default_source).strip()
+        if source and title.casefold().endswith(" - " + source.casefold()):
+            title = title[:-(len(source) + 3)].strip()
         host = urlsplit(link).hostname or ""
         if (title and urlsplit(link).scheme == "https" and
                 (host == "foxsports.com" or host.endswith(".foxsports.com") or
@@ -147,7 +149,8 @@ def google_nba_news(request=request_bytes):
     try:
         items = feed_titles(request(url), 30, "Google News")
         items = [item for item in items if is_recent_news(item) and not re.search(
-            r"\b(odds?|betting|parlay|sportsbook|wager|WNBA|college basketball|high school|fantasy)\b",
+            r"\b(odds?|betting|parlay|sportsbook|wager|WNBA|college basketball|high school|fantasy|"
+            r"livestream|live stream|live free|watch online|free NBA|TV channel)\b",
             item.get("title", ""), re.IGNORECASE
         ) and is_nba_headline(item.get("title", ""))]
         return [item for item in items if not re.search(

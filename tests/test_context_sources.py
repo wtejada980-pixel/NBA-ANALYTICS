@@ -68,6 +68,10 @@ class FoxNewsTests(unittest.TestCase):
           <item><title>Charlotte Hornets hoop NBA wireless first with Wi-Fi 7</title>
             <link>https://news.google.com/rss/articles/def</link><pubDate>Wed, 11 Nov 2026 20:00:00 GMT</pubDate>
           </item>
+          <item><title>(LIVESTREA.Ms!) Phoenix Suns vs San Antonio Spurs Live Free NBA Basketball Game On TV Channel - SooLeader.com</title>
+            <source>SooLeader.com</source><link>https://news.google.com/rss/articles/jkl</link>
+            <pubDate>Wed, 11 Nov 2026 20:00:00 GMT</pubDate>
+          </item>
           <item><title>Business leaders meet in Milwaukee</title>
             <link>https://news.google.com/rss/articles/ghi</link><pubDate>Wed, 11 Nov 2026 20:00:00 GMT</pubDate>
           </item>
@@ -76,6 +80,16 @@ class FoxNewsTests(unittest.TestCase):
             items = context_sources.google_nba_news(lambda _url: feed)
         self.assertEqual([item["title"] for item in items],
                          ["Phoenix Suns vs Los Angeles Clippers NBA analysis"])
+
+    def test_feed_removes_publisher_suffix_without_losing_attribution(self):
+        feed = b'''<rss><channel><item>
+          <title>NBA game recap - Sports Network</title>
+          <source>Sports Network</source>
+          <link>https://news.google.com/rss/articles/abc</link>
+        </item></channel></rss>'''
+        item = context_sources.feed_titles(feed, 1, "Google News")[0]
+        self.assertEqual(item["title"], "NBA game recap")
+        self.assertEqual(item["source"], "Sports Network")
 
     def test_source_label_reports_only_feeds_with_headlines(self):
         result = context_sources.collect([], [], get_token=lambda: "",
