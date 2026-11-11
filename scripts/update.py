@@ -80,7 +80,7 @@ def parse_event(event: dict) -> dict | None:
             return {'id': str(t.get('id', '')), 'abbr': str(t.get('abbreviation', '')),
                     'name': t.get('displayName') or t.get('shortDisplayName') or t.get('name', 'Equipo')}
         return {
-            'id': str(event['id']), 'date': local_day(e_date), 'datetime': e_date,
+            'id': str(event['id']), 'date': NBA_OFFICIAL_DATE_OVERRIDES.get(str(event['id']), local_day(e_date)), 'datetime': e_date,
             'home': team(home), 'away': team(away), 'status': status,
             'home_score': int(float(home.get('score') or 0)) if status == 'post' else None,
             'away_score': int(float(away.get('score') or 0)) if status == 'post' else None,
