@@ -221,7 +221,7 @@
     return '<div class="players-panel-title">' + (played ? 'Jugadores y box score' :
       'Jugadores y posibles titulares') + '</div>' +
       '<p class="players-explainer">' + (played ?
-      'PTS, REB, AST y MIN son las estadísticas registradas en este partido por ESPN.' :
+      'PTS, REB, AST y MIN son las estadísticas registradas en este partido.' :
       'Promedios por partido calculados con hasta los últimos 5 juegos. “Posible titular” se basa en aperturas recientes y no confirma el quinteto.') + '</p>' +
       '<div class="player-columns">' + playerTable(game,'away') + playerTable(game,'home') + '</div>';
   }
@@ -250,7 +250,7 @@
     }).join('');
     return '<section class="team-leaders" aria-label="Team Leaders">' +
       '<div class="team-leaders-heading"><h3>Team Leaders</h3><span>' +
-      (played ? 'Líderes de este partido · ESPN' : 'Promedio reciente por partido') +
+      (played ? 'Líderes de este partido' : 'Promedio reciente por partido') +
       '</span></div><div class="team-leaders-grid">' + teams + '</div></section>';
   }
   function safeArticleUrl(value) {
