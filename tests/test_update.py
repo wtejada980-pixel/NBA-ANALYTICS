@@ -17,6 +17,12 @@ def sample_event(event_id='1', state='post', hs='120', aws='108'):
 
 
 class ParseTests(unittest.TestCase):
+    def test_official_date_override_for_okc_portland(self):
+        event = sample_event(event_id='401909965', state='post')
+        event['date'] = '2026-11-11T04:00:00Z'
+        parsed = update.parse_event(event)
+        self.assertEqual(parsed['date'], '2026-11-10')
+
     def test_event(self):
         event = update.parse_event(sample_event())
         self.assertEqual(event['home_score'], 120)
