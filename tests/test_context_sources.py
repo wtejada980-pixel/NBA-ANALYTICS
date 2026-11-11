@@ -36,12 +36,20 @@ class FoxNewsTests(unittest.TestCase):
 
     def test_fox_news_excludes_betting_and_other_sports(self):
         items = [
-            {"title": "NBA game recap", "url": "https://www.foxsports.com/stories/nba/recap"},
-            {"title": "NBA Finals odds update", "url": "https://www.foxsports.com/stories/nba/odds"},
-            {"title": "NFL game recap", "url": "https://www.foxsports.com/stories/nfl/recap"},
+            {"title": "NBA game recap", "url": "https://www.foxsports.com/stories/nba/recap",
+             "published": "Tue, 10 Nov 2026 20:00:00 GMT"},
+            {"title": "NBA Finals odds update", "url": "https://www.foxsports.com/stories/nba/odds",
+             "published": "Tue, 10 Nov 2026 20:00:00 GMT"},
+            {"title": "NFL game recap", "url": "https://www.foxsports.com/stories/nfl/recap",
+             "published": "Tue, 10 Nov 2026 20:00:00 GMT"},
         ]
         self.assertEqual([item["title"] for item in context_sources.filter_fox_nba(items)],
                          ["NBA game recap"])
+
+    def test_old_headlines_are_not_marked_as_current(self):
+        self.assertFalse(context_sources.is_recent_news({
+            "published": "Thu, 13 Aug 2026 18:14:14 -0500"
+        }))
 
 
 if __name__ == "__main__":

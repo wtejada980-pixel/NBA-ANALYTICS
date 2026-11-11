@@ -10,7 +10,7 @@ import os
 import re
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, quote, urlsplit
@@ -118,17 +118,37 @@ def filter_fox_nba(items):
             r"\b(odds?|betting|parlay|sportsbook|wager)\b", title, re.IGNORECASE
         ):
             continue
+        if not is_recent_news(item):
+            continue
         result.append(item)
     return result
 
+def is_recent_news(item, days=7):
+    """No mostrar titulares antiguos como si fueran noticias actuales."""
+    published = str(item.get("published", "")).strip()
+    if not published:
+        return False
+    try:
+        stamp = parsedate_to_datetime(published)
+        if stamp.tzinfo is None:
+            stamp = stamp.replace(tzinfo=timezone.utc)
+        age = datetime.now(timezone.utc) - stamp.astimezone(timezone.utc)
+        return timedelta(days=-1) <= age <= timedelta(days=days)
+    except (TypeError, ValueError, OverflowError):
+        return False
+
 def google_nba_news(request=request_bytes):
     """Titulares recientes de varias redacciones, sin filtrar por apuestas."""
-    query = "NBA basketball when:3d -odds -betting -parlay -sportsbook"
+    query = "NBA when:3d -odds -betting -parlay -sportsbook -college -WNBA -fantasy -high-school"
     url = "https://news.google.com/rss/search?" + urlencode({
         "q": query, "hl": "en-US", "gl": "US", "ceid": "US:en"
     })
     try:
-        return feed_titles(request(url), 12, "Google News")
+        items = feed_titles(request(url), 30, "Google News")
+        return [item for item in items if is_recent_news(item) and not re.search(
+            r"\b(odds?|betting|parlay|sportsbook|wager|WNBA|college basketball|high school|fantasy)\b",
+            item.get("title", ""), re.IGNORECASE
+        )][:12]
     except (HTTPError, URLError, TimeoutError, OSError, ValueError):
         return []
 
