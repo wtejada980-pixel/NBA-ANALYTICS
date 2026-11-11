@@ -30,7 +30,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: nba-analytics-data
+  group: nba-analytics-data-backfill
   cancel-in-progress: false
 
 jobs:
