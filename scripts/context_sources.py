@@ -88,7 +88,8 @@ def feed_titles(xml_bytes, max_items=4, default_source=""):
                 (host == "foxsports.com" or host.endswith(".foxsports.com") or
                  host == "news.google.com" or host.endswith(".nba.com"))):
             result.append({"title": title[:160], "url": link,
-                           "published": published[:80], "source": source[:60]})
+                           "published": published[:80], "source": source[:60],
+                           "feed": default_source})
     return result
 
 def fox_nba_news(request=request_bytes):
@@ -138,19 +139,37 @@ def is_recent_news(item, days=7):
         return False
 
 def google_nba_news(request=request_bytes):
-    """Titulares recientes de varias redacciones, sin filtrar por apuestas."""
-    query = "NBA when:3d -odds -betting -parlay -sportsbook -college -WNBA -fantasy -high-school"
+    """Titulares recientes NBA; evita coincidencias vagas con la búsqueda."""
+    query = '"NBA basketball" when:3d -odds -betting -parlay -sportsbook -college -WNBA -fantasy -high-school'
     url = "https://news.google.com/rss/search?" + urlencode({
         "q": query, "hl": "en-US", "gl": "US", "ceid": "US:en"
     })
     try:
         items = feed_titles(request(url), 30, "Google News")
-        return [item for item in items if is_recent_news(item) and not re.search(
+        items = [item for item in items if is_recent_news(item) and not re.search(
             r"\b(odds?|betting|parlay|sportsbook|wager|WNBA|college basketball|high school|fantasy)\b",
             item.get("title", ""), re.IGNORECASE
+        ) and is_nba_headline(item.get("title", ""))]
+        return [item for item in items if not re.search(
+            r"\b(wi[ -]?fi|wireless|technology|tech company)\b", item.get("title", ""), re.IGNORECASE
         )][:12]
     except (HTTPError, URLError, TimeoutError, OSError, ValueError):
         return []
+
+def is_nba_headline(title):
+    """Require clear NBA, team, or player context in the displayed headline."""
+    terms = (
+        r"\bNBA\b|\bN\.B\.A\.\b|\bbasketball\b|\bAll[- ]Star\b|\bplayoffs?\b|\bFinals\b|"
+        r"\bBucks\b|\bKnicks\b|\bNets\b|\bCeltics\b|\b76ers\b|\bSixers\b|\bRaptors\b|"
+        r"\bBulls\b|\bCavaliers\b|\bCavs\b|\bPistons\b|\bPacers\b|\bBucks\b|\bHawks\b|"
+        r"\bHornets\b|\bHeat\b|\bMagic\b|\bWizards\b|\bNuggets\b|\bTimberwolves\b|\bWolves\b|"
+        r"\bThunder\b|\bTrail Blazers\b|\bBlazers\b|\bJazz\b|\bWarriors\b|\bClippers\b|"
+        r"\bLakers\b|\bSuns\b|\bKings\b|\bPelicans\b|\bGrizzlies\b|\bMavericks\b|\bMavs\b|"
+        r"\bSpurs\b|\bRockets\b|\bJokic\b|\bJokić\b|\bSabonis\b|\bCoby White\b|"
+        r"\bKevin Love\b|\bJalen Brunson\b|\bShaun Livingston\b|\bLuka Don[cć]i[cć]\b|"
+        r"\bLeBron James\b|\bStephen Curry\b|\bKevin Durant\b|\bGiannis\b|\bTatum\b|\bWembanyama\b"
+    )
+    return bool(re.search(terms, str(title), re.IGNORECASE))
 
 def league_news(request=request_bytes):
     """Combinar FOX y agregación de titulares recientes, conservando la atribución."""
@@ -250,6 +269,8 @@ def collect(games, teams, get_injuries=injuries_for_team, get_news=news_for_game
             ],
             "context_updated_at": datetime.now(timezone.utc).isoformat()
         }
+    active_feeds = list(dict.fromkeys(item.get("feed", "") for item in fox_news if item.get("feed")))
+    source_label = " + ".join(feed + " RSS" for feed in active_feeds) or "Fuentes deportivas no disponibles"
     return {"games": games, "news": fox_news,
-            "news_source": "FOX Sports RSS + Google News" if fox_news else "Fuentes deportivas no disponibles",
+            "news_source": source_label,
             "news_updated_at": datetime.now(timezone.utc).isoformat() if fox_news else None}

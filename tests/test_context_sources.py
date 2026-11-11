@@ -1,5 +1,6 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -50,6 +51,36 @@ class FoxNewsTests(unittest.TestCase):
         self.assertFalse(context_sources.is_recent_news({
             "published": "Thu, 13 Aug 2026 18:14:14 -0500"
         }))
+
+    def test_nba_headline_filter_requires_clear_basketball_context(self):
+        self.assertTrue(context_sources.is_nba_headline(
+            "Phoenix Suns vs Los Angeles Clippers. Live updates, NBA analysis"))
+        self.assertTrue(context_sources.is_nba_headline(
+            "NBA Trade Machine Rankings: Nikola Jokic and Domantas Sabonis"))
+        self.assertFalse(context_sources.is_nba_headline(
+            "Technology company announces new wireless partnership"))
+
+    def test_google_news_discards_vague_and_technology_results(self):
+        feed = b'''<rss><channel>
+          <item><title>Phoenix Suns vs Los Angeles Clippers NBA analysis</title>
+            <link>https://news.google.com/rss/articles/abc</link><pubDate>Wed, 11 Nov 2026 20:00:00 GMT</pubDate>
+          </item>
+          <item><title>Charlotte Hornets hoop NBA wireless first with Wi-Fi 7</title>
+            <link>https://news.google.com/rss/articles/def</link><pubDate>Wed, 11 Nov 2026 20:00:00 GMT</pubDate>
+          </item>
+          <item><title>Business leaders meet in Milwaukee</title>
+            <link>https://news.google.com/rss/articles/ghi</link><pubDate>Wed, 11 Nov 2026 20:00:00 GMT</pubDate>
+          </item>
+        </channel></rss>'''
+        with patch.object(context_sources, "is_recent_news", return_value=True):
+            items = context_sources.google_nba_news(lambda _url: feed)
+        self.assertEqual([item["title"] for item in items],
+                         ["Phoenix Suns vs Los Angeles Clippers NBA analysis"])
+
+    def test_source_label_reports_only_feeds_with_headlines(self):
+        result = context_sources.collect([], [], get_token=lambda: "",
+            get_fox_news=lambda: [{"title": "NBA story", "feed": "Google News"}])
+        self.assertEqual(result["news_source"], "Google News RSS")
 
 
 if __name__ == "__main__":

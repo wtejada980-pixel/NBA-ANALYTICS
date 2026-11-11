@@ -208,9 +208,9 @@
     const items = Array.isArray(data.news) ? data.news.slice(0, 10) : [];
     const cards = items.map(item => newsLink(item, 'news-card')).filter(Boolean);
     $('news-list').innerHTML = cards.length ? cards.join('') :
-      '<p class="history-empty">FOX Sports no tiene titulares disponibles ahora. Revisa <a href="https://www.foxsports.com/stories/nba" target="_blank" rel="noopener noreferrer">sus noticias NBA ↗</a>.</p>';
+      '<p class="history-empty">No hay titulares recientes disponibles. Revisa <a href="https://www.foxsports.com/stories/nba" target="_blank" rel="noopener noreferrer">FOX Sports NBA ↗</a>.</p>';
     const raw = Date.parse(data.news_updated_at || '');
-    const source = String(data.news_source || 'FOX Sports + Google News');
+    const source = String(data.news_source || 'Fuentes NBA');
     $('news-updated').textContent = Number.isFinite(raw) ?
       source + ' · actualizado ' + timeLabel(new Date(raw).toISOString()) + ' RD' : source + ' · fecha no disponible';
   }
