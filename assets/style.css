@@ -515,3 +515,18 @@ button:focus-visible,a:focus-visible{outline:2px solid #ff8057;outline-offset:4p
  .possible-starter-badge,.starter-badge{font-size:7px}
  .team-leaders-heading{align-items:flex-start;flex-direction:column;gap:3px}
 }
+
+
+/* Previa: posibles titulares estimados con aperturas recientes */
+.possible-starters-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.possible-starters{min-width:0;padding:12px;border:1px solid #493934;border-radius:13px;background:linear-gradient(145deg,#201a18,#171719)}
+.possible-starters-heading{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.possible-starters-heading h4{margin:0;color:#fff;font-size:12px}
+.possible-starters-heading span{color:#ff9a72;font-size:10px;text-align:right}
+.possible-starters>p{margin:6px 0 9px;color:#aaa;font-size:10px}
+.possible-starters ul{list-style:none;margin:0;padding:0}
+.possible-starters li{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:7px 0;border-top:1px solid #353238}
+.possible-starters li strong{color:#f4f4f5;font-size:11px}
+.possible-starters li span{color:#ffb18c;font-size:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.possible-starters-empty{padding:8px;border-radius:8px;background:#17181b;color:#aaa;font-size:10px}
+@media(max-width:620px){.possible-starters-grid{grid-template-columns:1fr}}
