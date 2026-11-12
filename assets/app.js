@@ -23,6 +23,8 @@
   let nextLiveRetryAt = 0;
   let liveFailures = 0;
   let expandedGameId = '';
+  let lastGamesHtml = '';
+  let lastDateTabsHtml = null;
   const livePlayerDetails = new Map();
 
   function todayInRD() {
@@ -519,6 +521,7 @@
       '<strong class="live-score">' + game.away_score + '</strong><span>MARCADOR</span>' +
       '<strong class="live-score">' + game.home_score + '</strong></div>' : '';
     const id=escapeHtml(String(game.id || ''));
+    const sourceUrl = safeArticleUrl(game.source);
     return '<details class="game-card" data-game-id="' + id + '"' +
       (expandedGameId === String(game.id) ? ' open' : '') + '>' +
       '<summary class="game-summary" data-game-id="' + id + '">' +
@@ -549,23 +552,28 @@
         'Los jugadores y sus puntos corresponden al box score de ese encuentro.</p>' +
         playersPanel(game) + teamLeadersPanel(game) :
         matchupInsights(game) + playersPanel(game) + teamLeadersPanel(game) + contextPanel(game)) +
-      (game.source && !game.historical ? '<a class="game-link" href="' + escapeHtml(game.source) +
+      (sourceUrl && !game.historical ? '<a class="game-link" href="' + escapeHtml(sourceUrl) +
         '" target="_blank" rel="noopener noreferrer">Ficha del partido en ESPN ↗</a>' : '') +
       '</div></details>';
   }
   function renderDates(games) {
     const dates = [...new Set(games.map(g => g.date).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d)))].sort();
     if (!dates.includes(chosenDate)) chosenDate = dates.find(d => d >= todayInRD()) || dates[dates.length-1] || todayInRD();
-    $('date-tabs').innerHTML = dates.map(date =>
+    const html = dates.map(date =>
       `<button type="button" data-date="${escapeHtml(date)}" aria-current="${date === chosenDate ? 'date' : 'false'}">${escapeHtml(dateLabel(date))}</button>`
     ).join('');
-    $('date-tabs').querySelectorAll('button').forEach(button => {
-      button.addEventListener('click', () => {
-        chosenDate = button.dataset.date;
-        render();
-        refreshLive();
+    // Evitar reconstruir las pestañas cuando solo se actualiza el marcador.
+    if (lastDateTabsHtml !== html) {
+      $('date-tabs').innerHTML = html;
+      lastDateTabsHtml = html;
+      $('date-tabs').querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+          chosenDate = button.dataset.date;
+          render();
+          refreshLive();
+        });
       });
-    });
+    }
   }
 
   function renderCalibration() {
@@ -699,7 +707,7 @@
       '<strong>Comparación con Elo simple</strong>' +
       '<p>Aún no hay resultados suficientes con ambas predicciones prepartido para comparar los modelos.</p>';
   }
-  function render() {
+  function renderLive() {
     const games = Array.isArray(data.games) ? data.games : [];
     renderDates(games);
     const shown = games.filter(g => g.date === chosenDate).sort((a, b) => String(a.datetime).localeCompare(String(b.datetime)));
@@ -713,13 +721,15 @@
     $('updated').textContent = liveAvailable ?
       'Marcadores ESPN: ' + liveTime + ' · Pronósticos: ' + reported :
       'Pronósticos: ' + reported;
-    $('games').innerHTML = shown.length ? shown.map(gameCard).join('') :
+    const html = shown.length ? shown.map(gameCard).join('') :
       '<div class="empty-state">No hay partidos publicados para esta fecha.</div>';
-    renderNews();
-    renderScouting();
-    renderValidation();
-    renderCalibration();
-    renderHistory();
+    if (html !== lastGamesHtml) {
+      $('games').innerHTML = html;
+      lastGamesHtml = html;
+    }
+    updateStatus();
+  }
+  function updateStatus() {
     if (liveError && !liveAvailable) {
       setStatus('No fue posible conectar con el marcador de ESPN. Se muestran los últimos datos publicados.', 'warning');
     } else if (liveError || (liveAvailable && Date.now() - liveUpdatedAt > 120000)) {
@@ -733,6 +743,14 @@
     } else {
       setStatus('Pronósticos preparados. Consultando los resultados en vivo de ESPN…', 'ok');
     }
+  }
+  function render() {
+    renderLive();
+    renderNews();
+    renderScouting();
+    renderValidation();
+    renderCalibration();
+    renderHistory();
   }
   function setStatus(message, type) {
     $('alert').textContent = message;
@@ -837,7 +855,7 @@
     } finally {
       livePollInFlight = false;
     }
-    render();
+    renderLive();
   }
   $('games').addEventListener('click', event => {
     const summary=event.target?.closest?.('summary.game-summary');
