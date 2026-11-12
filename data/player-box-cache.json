@@ -23731,6 +23731,550 @@
           }
         ]
       }
+    },
+    "401909974": {
+      "player_stats": {
+        "9": [
+          {
+            "id": "6589",
+            "name": "Draymond Green",
+            "pts": 7.0,
+            "reb": 5.0,
+            "ast": 7.0,
+            "min": "27",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "5175737",
+            "name": "Yaxel Lendeborg",
+            "pts": 25.0,
+            "reb": 10.0,
+            "ast": 0.0,
+            "min": "36",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "3213",
+            "name": "Al Horford",
+            "pts": 2.0,
+            "reb": 1.0,
+            "ast": 4.0,
+            "min": "21",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3975",
+            "name": "Stephen Curry",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "6",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4709138",
+            "name": "Brandin Podziemski",
+            "pts": 22.0,
+            "reb": 6.0,
+            "ast": 4.0,
+            "min": "37",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "2990969",
+            "name": "Georges Niang",
+            "pts": 5.0,
+            "reb": 5.0,
+            "ast": 0.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4703396",
+            "name": "Graham Ike",
+            "pts": 4.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4897449",
+            "name": "Malevy Leons",
+            "pts": 0.0,
+            "reb": 3.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 2.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4997536",
+            "name": "Gui Santos",
+            "pts": 0.0,
+            "reb": 3.0,
+            "ast": 1.0,
+            "min": "12",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 4.0,
+            "starter": false
+          },
+          {
+            "id": "4397886",
+            "name": "Charles Bassey",
+            "pts": 7.0,
+            "reb": 6.0,
+            "ast": 0.0,
+            "min": "13",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4066436",
+            "name": "De'Anthony Melton",
+            "pts": 11.0,
+            "reb": 4.0,
+            "ast": 4.0,
+            "min": "25",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4433149",
+            "name": "LJ Cryer",
+            "pts": 13.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "18",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4897262",
+            "name": "Will Richard",
+            "pts": 9.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "19",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          }
+        ],
+        "10": [
+          {
+            "id": "3202",
+            "name": "Kevin Durant",
+            "pts": 20.0,
+            "reb": 4.0,
+            "ast": 5.0,
+            "min": "34",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4432639",
+            "name": "Jabari Smith Jr.",
+            "pts": 14.0,
+            "reb": 8.0,
+            "ast": 0.0,
+            "min": "35",
+            "stl": 1.0,
+            "blk": 3.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4871144",
+            "name": "Alperen Sengun",
+            "pts": 19.0,
+            "reb": 13.0,
+            "ast": 9.0,
+            "min": "37",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "2991230",
+            "name": "Fred VanVleet",
+            "pts": 18.0,
+            "reb": 2.0,
+            "ast": 6.0,
+            "min": "30",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4684740",
+            "name": "Amen Thompson",
+            "pts": 19.0,
+            "reb": 7.0,
+            "ast": 4.0,
+            "min": "29",
+            "stl": 1.0,
+            "blk": 2.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "3136777",
+            "name": "Jae'Sean Tate",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4433192",
+            "name": "Tari Eason",
+            "pts": 6.0,
+            "reb": 3.0,
+            "ast": 0.0,
+            "min": "22",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4592857",
+            "name": "Isaiah Crawford",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4432827",
+            "name": "Oscar Tshiebwe",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "2990992",
+            "name": "Marcus Smart",
+            "pts": 6.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "3037789",
+            "name": "Bogdan Bogdanovic",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4711272",
+            "name": "Reed Sheppard",
+            "pts": 13.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "20",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "5105837",
+            "name": "Bruce Thornton",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "3",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ]
+      }
+    },
+    "401909975": {
+      "player_stats": {
+        "25": [
+          {
+            "id": "4222252",
+            "name": "Isaiah Hartenstein",
+            "pts": 20.0,
+            "reb": 11.0,
+            "ast": 6.0,
+            "min": "34",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 6.0,
+            "starter": true
+          },
+          {
+            "id": "5174983",
+            "name": "Aday Mara",
+            "pts": 11.0,
+            "reb": 6.0,
+            "ast": 2.0,
+            "min": "32",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "2991350",
+            "name": "Alex Caruso",
+            "pts": 14.0,
+            "reb": 7.0,
+            "ast": 2.0,
+            "min": "29",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4278073",
+            "name": "Shai Gilgeous-Alexander",
+            "pts": 31.0,
+            "reb": 4.0,
+            "ast": 2.0,
+            "min": "36",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4683778",
+            "name": "Jared McCain",
+            "pts": 10.0,
+            "reb": 6.0,
+            "ast": 3.0,
+            "min": "31",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "3133626",
+            "name": "Kenrich Williams",
+            "pts": 11.0,
+            "reb": 2.0,
+            "ast": 2.0,
+            "min": "26",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4432185",
+            "name": "Micah Peavy",
+            "pts": 0.0,
+            "reb": 3.0,
+            "ast": 0.0,
+            "min": "12",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4702384",
+            "name": "Nique Clifford",
+            "pts": 5.0,
+            "reb": 3.0,
+            "ast": 1.0,
+            "min": "16",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5241364",
+            "name": "Bennett Stirtz",
+            "pts": 6.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "25",
+            "stl": 3.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": false
+          }
+        ],
+        "22": [
+          {
+            "id": "4431736",
+            "name": "Toumani Camara",
+            "pts": 14.0,
+            "reb": 5.0,
+            "ast": 3.0,
+            "min": "38",
+            "stl": 1.0,
+            "blk": 2.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4683021",
+            "name": "Deni Avdija",
+            "pts": 28.0,
+            "reb": 3.0,
+            "ast": 6.0,
+            "min": "35",
+            "stl": 4.0,
+            "blk": 2.0,
+            "tov": 5.0,
+            "starter": true
+          },
+          {
+            "id": "5105565",
+            "name": "Donovan Clingan",
+            "pts": 5.0,
+            "reb": 12.0,
+            "ast": 2.0,
+            "min": "30",
+            "stl": 1.0,
+            "blk": 3.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "6606",
+            "name": "Damian Lillard",
+            "pts": 18.0,
+            "reb": 3.0,
+            "ast": 3.0,
+            "min": "32",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "5081727",
+            "name": "Sidy Cissoko",
+            "pts": 19.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "29",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4066211",
+            "name": "Robert Williams III",
+            "pts": 10.0,
+            "reb": 7.0,
+            "ast": 0.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4592435",
+            "name": "Branden Carlson",
+            "pts": 0.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "3995",
+            "name": "Jrue Holiday",
+            "pts": 19.0,
+            "reb": 3.0,
+            "ast": 5.0,
+            "min": "30",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": false
+          },
+          {
+            "id": "4683678",
+            "name": "Scoot Henderson",
+            "pts": 5.0,
+            "reb": 2.0,
+            "ast": 2.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
