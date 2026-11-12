@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "as_of": "2026-11-11T22:21:58.277582+00:00",
+  "as_of": "2026-11-12T02:22:30.479660+00:00",
   "status": "shadow_not_production",
   "training_seasons": [
     2022,
@@ -14,18 +14,18 @@
   ],
   "warning": "La comparación retrospectiva V3 no es un pronóstico registrado antes del partido; sirve solo como diagnóstico. La comparación prospectiva incluye únicamente pronósticos V3 realmente congelados antes del inicio. ESPN 2026 en caché carece de clasificación de temporada confirmada.",
   "retrospective": {
-    "n": 37,
+    "n": 38,
     "v2_original": {
-      "n": 37,
-      "brier": 0.20441,
-      "log_loss": 0.59723,
-      "winner_accuracy_pct": 70.3
+      "n": 38,
+      "brier": 0.20522,
+      "log_loss": 0.59898,
+      "winner_accuracy_pct": 71.1
     },
     "v3_reconstructed": {
-      "n": 37,
-      "brier": 0.14495,
-      "log_loss": 0.46161,
-      "winner_accuracy_pct": 86.5
+      "n": 38,
+      "brier": 0.14425,
+      "log_loss": 0.46056,
+      "winner_accuracy_pct": 86.8
     },
     "games": [
       {
@@ -249,22 +249,28 @@
         "v2_original_home_pct": 43.2,
         "v3_retrospective_home_pct": 33.7,
         "winner": "home"
+      },
+      {
+        "id": "401909966",
+        "v2_original_home_pct": 51.5,
+        "v3_retrospective_home_pct": 65.6,
+        "winner": "home"
       }
     ]
   },
   "prospective": {
-    "n": 9,
+    "n": 10,
     "v2_original": {
-      "n": 9,
-      "brier": 0.18524,
-      "log_loss": 0.55873,
-      "winner_accuracy_pct": 88.9
+      "n": 10,
+      "brier": 0.19024,
+      "log_loss": 0.56921,
+      "winner_accuracy_pct": 90.0
     },
     "v3_shadow": {
-      "n": 9,
-      "brier": 0.15737,
-      "log_loss": 0.49058,
-      "winner_accuracy_pct": 88.9
+      "n": 10,
+      "brier": 0.15347,
+      "log_loss": 0.48369,
+      "winner_accuracy_pct": 90.0
     }
   },
   "forecasts": {
