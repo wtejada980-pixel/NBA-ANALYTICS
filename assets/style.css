@@ -404,44 +404,44 @@ nav[aria-label="Fechas de partidos"] button[aria-current="date"]{
  box-shadow:0 0 16px #fb59302e
 }
 
-/* Píldoras de probabilidad integradas con la paleta oscura y naranja */
-.probabilidad{display:inline-block;padding:2px 6px;border-radius:5px;font-weight:850;
+/* Píldoras de probability-label integradas con la paleta oscura y naranja */
+.probability-label{display:inline-block;padding:2px 6px;border-radius:5px;font-weight:850;
  font-variant-numeric:tabular-nums;border:1px solid transparent}
-.probability-segment .probabilidad{font-size:10px;line-height:1.35;text-shadow:none}
-.prob-fuerte{background:#251a17;color:#ff9a72;border-color:#8b4c37}
-.prob-media{background:#292316;color:#f1cb6b;border-color:#75602c}
-.prob-baja{background:#25262b;color:#e2e2e5;border-color:#55565c}
+.probability-segment .probability-label{font-size:10px;line-height:1.35;text-shadow:none}
+.prob-strong{background:#251a17;color:#ff9a72;border-color:#8b4c37}
+.prob-medium{background:#292316;color:#f1cb6b;border-color:#75602c}
+.prob-low{background:#25262b;color:#e2e2e5;border-color:#55565c}
 
 /* Alias para las tarjetas de noticias solicitadas */
-.contenedor-noticias{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:15px}
-.noticia-card{background:linear-gradient(145deg,#191a1e,#121316);border:1px solid #383338;
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:15px}
+.news-card{background:linear-gradient(145deg,#191a1e,#121316);border:1px solid #383338;
  border-radius:12px;padding:16px;text-decoration:none;color:#fff;transition:transform .2s ease,background .2s ease}
-.noticia-card:hover{background:#1d1b1d;transform:translateY(-3px)}
-.noticia-card small,.noticia-card .news-card-source{color:#ff9a72;font-size:.75rem;margin-top:10px;
+.news-card:hover{background:#1d1b1d;transform:translateY(-3px)}
+.news-card small,.news-card .news-card-source{color:#ff9a72;font-size:.75rem;margin-top:10px;
  text-transform:uppercase;letter-spacing:.06em}
 
 /* Botón accesible para regresar al comienzo */
-.btn-volver-arriba{position:fixed;bottom:25px;right:25px;z-index:1000;width:50px;height:50px;
+.back-to-top{position:fixed;bottom:25px;right:25px;z-index:1000;width:50px;height:50px;
  display:flex;align-items:center;justify-content:center;border:1px solid #ff8057;border-radius:50%;
  background:#fa5930;color:#fff;font-size:25px;font-weight:700;line-height:1;
  box-shadow:0 4px 16px #0008;cursor:pointer;opacity:0;visibility:hidden;pointer-events:none;
  transform:translateY(8px);transition:opacity .25s ease,visibility .25s ease,transform .25s ease}
-.btn-volver-arriba:hover{background:#ff7048;transform:translateY(0)}
-.btn-volver-arriba.visible{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
-.btn-volver-arriba:focus-visible{outline:2px solid #ffd0c0;outline-offset:4px}
-@media(max-width:620px){.contenedor-noticias{grid-template-columns:1fr}.btn-volver-arriba{right:18px;bottom:18px;width:46px;height:46px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn-volver-arriba,nav[aria-label="Fechas de partidos"] button{transition:none}}
+.back-to-top:hover{background:#ff7048;transform:translateY(0)}
+.back-to-top.visible{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+.back-to-top:focus-visible{outline:2px solid #ffd0c0;outline-offset:4px}
+@media(max-width:620px){.news-grid{grid-template-columns:1fr}.back-to-top{right:18px;bottom:18px;width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.back-to-top,nav[aria-label="Fechas de partidos"] button{transition:none}}
 
 /* Indicadores circulares para los resultados recientes de cada equipo */
-.racha-contenedor{display:flex;align-items:center;gap:5px;margin-top:6px;flex-wrap:wrap}
-.racha-item{flex:0 0 20px;width:20px;height:20px;box-sizing:border-box;border-radius:50%;
+.streak-container{display:flex;align-items:center;gap:5px;margin-top:6px;flex-wrap:wrap}
+.streak-item{flex:0 0 20px;width:20px;height:20px;box-sizing:border-box;border-radius:50%;
  display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:750;
  line-height:1;box-shadow:0 2px 5px #0005;cursor:default;transition:transform .2s ease}
-.racha-v{background:linear-gradient(135deg,#2ecc71,#27ae60);border:1px solid #ffffff33}
-.racha-d{background:linear-gradient(135deg,#e74c3c,#c0392b);border:1px solid #ffffff33}
-.racha-e{background:linear-gradient(135deg,#95a5a6,#7f8c8d);border:1px solid #ffffff33}
-.racha-item:hover{transform:translateY(-2px)}
-@media(prefers-reduced-motion:reduce){.racha-item{transition:none}}
+.streak-win{background:linear-gradient(135deg,#2ecc71,#27ae60);border:1px solid #ffffff33}
+.streak-loss{background:linear-gradient(135deg,#e74c3c,#c0392b);border:1px solid #ffffff33}
+.streak-tie{background:linear-gradient(135deg,#95a5a6,#7f8c8d);border:1px solid #ffffff33}
+.streak-item:hover{transform:translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.streak-item{transition:none}}
 
 /* Toques de acabado inspirados en Apple, adaptados al tema oscuro y naranja */
 :root{
@@ -472,7 +472,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #ff8057;outline-offset:4p
  background:linear-gradient(150deg,#1b1c20eF 0%,#141518f2 65%,#101216f5 100%);
  transition:border-color .25s,transform .25s cubic-bezier(.25,1,.5,1),box-shadow .25s;
 }
-.news-card,.noticia-card{
+.news-card,.news-card{
  border-radius:16px;
  transition:border-color .22s,transform .22s cubic-bezier(.25,1,.5,1),background .22s;
 }
@@ -480,11 +480,11 @@ button:focus-visible,a:focus-visible{outline:2px solid #ff8057;outline-offset:4p
 @media(max-width:480px){.history-toolbar{top:74px}}
 @media(hover:hover){
  .game-card:hover{transform:translateY(-2px)}
- .news-card:hover,.noticia-card:hover{transform:translateY(-3px)}
+ .news-card:hover,.news-card:hover{transform:translateY(-3px)}
 }
 @media(prefers-reduced-motion:reduce){
  .site-header{-webkit-backdrop-filter:none;backdrop-filter:none}
- .game-card,.news-card,.noticia-card{transition:none}
+ .game-card,.news-card,.news-card{transition:none}
 }
 
 /* Box score individual y líderes de cada equipo */
@@ -530,3 +530,22 @@ button:focus-visible,a:focus-visible{outline:2px solid #ff8057;outline-offset:4p
 .possible-starters li span{color:#ffb18c;font-size:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .possible-starters-empty{padding:8px;border-radius:8px;background:#17181b;color:#aaa;font-size:10px}
 @media(max-width:620px){.possible-starters-grid{grid-template-columns:1fr}}
+
+/* Nuevas funciones de producto */
+.intro-subtitle{color:var(--muted,#a3a3a3);margin:.75rem 0 1.2rem;max-width:46rem}
+.schedule-filters,.history-tools{display:flex;align-items:center;flex-wrap:wrap;gap:.65rem;margin:1rem 0}
+.schedule-filters select,.filter-button,.install-button{background:#1a1b1e;color:#eee;border:1px solid #45464a;border-radius:10px;padding:.65rem .85rem}
+.favorite-toggle{border:0;background:transparent;color:#ff8a50;font-size:1.1rem;cursor:pointer;padding:.15rem .35rem}
+.rest-indicator{color:#ffb27d;border:1px solid #8a4d2d;border-radius:20px;padding:.1rem .4rem;font-size:.68rem;margin-left:.3rem}
+.how-it-works,.analytics-panel{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1rem 1.2rem;margin:1.5rem 0;line-height:1.6}
+.model-change{color:#ffb27d}
+.history-analytics{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.elo-rating-table{overflow:auto;max-height:24rem}
+.elo-rating-table table{width:100%;border-collapse:collapse}
+.elo-rating-table th,.elo-rating-table td{text-align:left;padding:.45rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.brier-chart svg{width:100%;height:auto;overflow:visible}
+.brier-line{fill:none;stroke:#ff7842;stroke-width:3}
+.brier-chart text{fill:#b7b7b7;font-size:12px}
+.commits-link{color:#ffb27d}
+.noscript{margin:1rem;padding:1rem;background:#241c18;color:white}
+@media(max-width:600px){.schedule-filters{align-items:stretch}}

@@ -4,9 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0c0d">
-  <meta name="description" content="NBA Analytics: probabilidades experimentales de victoria, sencillas y sin cuotas de apuestas.">
+  <meta name="description" content="Marcadores, estadísticas NBA y probabilidades experimentales prepartido, con historial auditable.">
+  <meta property="og:title" content="NBA Analytics — Estadísticas y análisis NBA">
+  <meta property="og:description" content="Marcadores, estadísticas y probabilidades experimentales prepartido.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wtejada980-pixel.github.io/NBA-ANALYTICS/">
+  <meta property="og:image" content="https://wtejada980-pixel.github.io/NBA-ANALYTICS/assets/og-image.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261111-preview-starters">
+  <link rel="stylesheet" href="assets/style.css?v=20261113-features">
 </head>
 <body>
   <div class="site-shell">
@@ -24,6 +31,8 @@
       <section class="intro">
         <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> NBA · ANÁLISIS DIARIO</p>
         <h1>El juego, <span>más claro.</span></h1>
+        <p class="intro-subtitle">Marcadores y análisis experimental para entender cada partido NBA.</p>
+        <button id="install-app" class="install-button" type="button" hidden>Instalar app</button>
         
       </section>
 
@@ -41,7 +50,12 @@
           <span id="game-count">— partidos</span>
           <span>Hora de República Dominicana · Historial: últimos 7 días</span>
         </div>
-        <div id="games" class="games-list" aria-live="polite">
+        <div class="schedule-filters" aria-label="Filtrar partidos">
+          <label for="team-filter">Equipo</label>
+          <select id="team-filter"><option value="">Todos los equipos</option></select>
+          <button id="favorites-filter" class="filter-button" type="button" aria-pressed="false">★ Favoritos</button>
+        </div>
+        <div id="games" class="games-list">
           <div class="skeleton-game" aria-hidden="true"><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-bar"></span></div>
           <div class="skeleton-game" aria-hidden="true"><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-logo"></span><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-bar"></span></div>
         </div>
@@ -53,7 +67,7 @@
           <p class="updated" id="news-updated">Titulares de FOX Sports</p>
         </div>
         <p class="news-intro">Noticias NBA enlazadas al medio original. La información ayuda a revisar el contexto; no cambia los porcentajes del modelo.</p>
-        <div id="news-list" class="news-grid contenedor-noticias" aria-live="polite">
+        <div id="news-list" class="news-grid" aria-live="polite">
           <p class="history-empty">Consultando noticias…</p>
         </div>
         <p class="news-attribution">Fuentes: FOX Sports RSS y Google News RSS · Titulares atribuidos y enlazados a su publicación original.</p>
@@ -79,7 +93,7 @@
           <p class="overline">TRANSPARENCIA DEL MODELO</p>
           <h2 id="quality-title">¿Qué tan bien estamos acertando?</h2>
         </div>
-        <p class="quality-intro">Solo evaluamos pronósticos guardados antes del partido contra el ganador real. No representan la probabilidad de cubrir un hándicap ni garantizan resultados.</p>
+        <p class="quality-intro">Solo evaluamos pronósticos guardados antes del partido contra el ganador real. No representan la probability-label de cubrir un hándicap ni garantizan resultados.</p>
         <div id="model-validation" class="quality-grid" aria-live="polite">
           <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
           <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
@@ -97,6 +111,12 @@
         <p id="data-health" class="data-health" role="status"></p>
       </section>
 
+      <section class="how-it-works" aria-labelledby="how-title">
+        <div class="quality-heading"><p class="overline">TRANSPARENCIA</p><h2 id="how-title">Cómo funciona</h2></div>
+        <p>V2 estima el resultado prepartido con Elo (fuerza relativa), margen y victorias recientes, anotación y defensa, descanso, localía y tendencia de jugadores. Necesita una muestra mínima; reduce las estimaciones hacia 50% cuando hay pocos datos y limita el rango para evitar certezas extremas.</p>
+        <p>No incorpora cuotas, noticias, lesiones, rumores ni opiniones de redes en el porcentaje. Los marcadores en vivo son resultados confirmados por la fuente deportiva y no cambian el pronóstico prepartido archivado.</p>
+        <p class="model-change">De V2 a V3: V2 combina Elo y forma reciente; V3 prueba una regresión logística cronológica con seis variables, y sigue siendo experimental sin reemplazar el pronóstico publicado.</p>
+      </section>
       <section class="v3-lab" aria-labelledby="v3-lab-title">
         <div class="quality-heading">
           <p class="overline">EXPERIMENTO · SIN CAMBIAR LAS PREDICCIONES OFICIALES</p>
@@ -114,6 +134,14 @@
           <h2 id="history-title">Historial de predicciones</h2>
         </div>
         <p class="quality-intro">Porcentajes publicados antes del salto inicial y resultado real del encuentro. Una apuesta con hándicap no se evalúa con estos porcentajes.</p>
+        <div class="history-tools">
+          <button id="download-history" class="filter-button" type="button">Descargar historial CSV</button>
+          <a class="commits-link" href="https://github.com/wtejada980-pixel/NBA-ANALYTICS/commits/main/data/history.json" target="_blank" rel="noopener">Ver cambios del historial</a>
+        </div>
+        <div class="history-analytics">
+          <div class="analytics-panel"><h3>Ratings Elo propios</h3><div id="elo-ratings" class="elo-rating-table">Esperando ratings publicados…</div></div>
+          <div class="analytics-panel"><h3>Brier a través del tiempo</h3><div id="brier-chart" class="brier-chart">Esperando resultados evaluados…</div></div>
+        </div>
         <div class="history-toolbar">
           <span id="history-filter-label">Ver pronósticos</span>
           <div id="history-filter" class="history-filters" role="group" aria-labelledby="history-filter-label">
@@ -132,11 +160,13 @@
 
       <p class="footnote">Probabilidades estadísticas experimentales, no calibradas. No son certezas ni se basan en cuotas de apuestas.</p>
     </main>
-    <button id="back-to-top" class="btn-volver-arriba" type="button" aria-label="Volver arriba" title="Volver arriba">↑</button>
-    <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente</span></footer>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Volver arriba" title="Volver arriba">↑</button>
+    <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente · No afiliado a la NBA ni a ESPN</span></footer>
   </div>
+  <noscript><p class="noscript">Esta página necesita JavaScript activado para mostrar partidos y estadísticas.</p></noscript>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261112-render-smoothing" defer></script>
+  <script src="assets/app.js?v=20261113-features" defer></script>
   <script src="assets/v3-lab.js?v=20261111-news" defer></script>
+  <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./service-worker.js").catch(()=>{}); let promptEvent; window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();promptEvent=e;const b=document.getElementById("install-app");if(b)b.hidden=false;}); document.getElementById("install-app")?.addEventListener("click",async()=>{if(!promptEvent)return;promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;document.getElementById("install-app").hidden=true;});</script>
 </body>
 </html>

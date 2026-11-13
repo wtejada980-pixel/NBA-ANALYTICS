@@ -584,6 +584,32 @@ def archived_games(all_events: dict, history: dict, day: date, days: int = 7,
     return archived
 
 
+def public_elo_ratings(finished, all_events, as_of):
+    ratings = elo_before(finished, as_of)
+    teams, counts = {}, {}
+    for game in all_events.values():
+        if not isinstance(game, dict):
+            continue
+        for side in ('home', 'away'):
+            team = game.get(side)
+            if isinstance(team, dict) and team.get('id'):
+                teams[str(team['id'])] = team
+        if game.get('status') == 'post':
+            for side in ('home', 'away'):
+                team = game.get(side)
+                if isinstance(team, dict) and team.get('id'):
+                    key = str(team['id'])
+                    counts[key] = counts.get(key, 0) + 1
+    output = []
+    for team_id, team in teams.items():
+        rating = ratings.get(team_id)
+        if rating is not None and isinstance(rating, (int, float)) and math.isfinite(rating):
+            output.append({'id': team_id, 'abbr': team.get('abbr', ''),
+                           'name': team.get('name', team.get('abbr', 'Equipo')),
+                           'rating': round(float(rating), 1), 'games': counts.get(team_id, 0)})
+    return sorted(output, key=lambda row: row['rating'], reverse=True)
+
+
 def refresh(today: date | None = None):
     now = datetime.now(timezone.utc)
     day = today or now.astimezone(ZONE).date()
@@ -779,7 +805,7 @@ def refresh(today: date | None = None):
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
         'source_url': 'https://www.espn.com/nba/scoreboard',
         'model': 'elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado',
-        'games': archived + schedule, 'teams': teams,
+        'games': archived + schedule, 'teams': teams,\n        'elo_ratings': public_elo_ratings(finished, all_events, now.isoformat()),
         'news': news_items, 'news_source': daily_context.get('news_source', 'FOX Sports RSS') if isinstance(daily_context, dict) else 'FOX Sports RSS',
         'news_updated_at': news_updated_at,
         'archive_days': 7,

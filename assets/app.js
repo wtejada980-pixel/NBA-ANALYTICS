@@ -65,7 +65,7 @@
     return Number(n).toFixed(1);
   }
   function probabilityTone(n) {
-    return n >= 65 ? 'prob-fuerte' : n >= 55 ? 'prob-media' : 'prob-baja';
+    return n >= 65 ? 'prob-strong' : n >= 55 ? 'prob-medium' : 'prob-low';
   }
   function stateLabel(game) {
     if (game.status === 'post') return 'FINALIZADO';
@@ -80,7 +80,7 @@
     }
     const reason = typeof game.prediction?.reason === 'string' ? game.prediction.reason.trim() : '';
     if (game.status === 'in' || game.status === 'post') {
-      return 'Pronóstico ANTES del partido. No representa la probabilidad de ganar durante el juego.';
+      return 'Pronóstico ANTES del partido. No representa la probability-label de ganar durante el juego.';
     }
     return reason ? reason.slice(0, 150) :
       'Estimación basada en rendimiento, forma reciente y localía.';
@@ -295,7 +295,7 @@
   }
   function renderNews() {
     const items = Array.isArray(data.news) ? data.news.slice(0, 10) : [];
-    const cards = items.map(item => newsLink(item, 'news-card noticia-card')).filter(Boolean);
+    const cards = items.map(item => newsLink(item, 'news-card news-card')).filter(Boolean);
     $('news-list').innerHTML = cards.length ? cards.join('') :
       '<p class="history-empty">No hay titulares recientes disponibles. Revisa <a href="https://www.foxsports.com/stories/nba" target="_blank" rel="noopener noreferrer">FOX Sports NBA ↗</a>.</p>';
     const raw = Date.parse(data.news_updated_at || '');
@@ -367,7 +367,7 @@
         (Number.isFinite(g.opponent_points) ? g.opponent_points : '—');
       const hasDetails = Boolean(g.date || g.opponent || Number.isFinite(g.points) ||
         Number.isFinite(g.opponent_points));
-      return '<span class="racha-item racha-' + outcome + '" aria-label="' + resultLabel +
+      return '<span class="streak-item racha-' + outcome + '" aria-label="' + resultLabel +
         (g.opponent ? ' contra ' + escapeHtml(g.opponent) : '') + '" title="' + resultLabel +
         (hasDetails ? ' · ' + details : '') + '">' +
         (outcome === 'v' ? 'V' : outcome === 'd' ? 'D' : '—') + '</span>';
@@ -377,8 +377,8 @@
       '<div><span>Récord reciente</span><strong>' + (wins === null || !matches ? '—' : wins + '-' + (matches-wins)) + '</strong></div>' +
       '<div><span>PTS a favor</span><strong>' + fmt(form.points_for) + '</strong></div>' +
       '<div><span>PTS recibidos</span><strong>' + fmt(form.points_against) + '</strong></div>' +
-      '</div><div class="racha-contenedor form-last" role="group" aria-label="Últimos resultados">' +
-      (recent || '<span class="racha-item racha-e" aria-label="Sin datos recientes" title="Sin resultados recientes verificados">—</span>') +
+      '</div><div class="streak-container form-last" role="group" aria-label="Últimos resultados">' +
+      (recent || '<span class="streak-item streak-tie" aria-label="Sin datos recientes" title="Sin resultados recientes verificados">—</span>') +
       '</div></div>';
   }
   function matchupInsights(game) {
@@ -478,7 +478,10 @@
     };
     const teamName = (side) => {
       const t = game[side] || {};
+      const fav=favoriteTeams.has(String(t.id||'')), rest=restLabel(t.id,game.date||'');
       return '<div class="team-identity ' + side + '">' +
+        '<button type="button" class="favorite-toggle" data-favorite-team="' + escapeHtml(t.id||'') + '" aria-pressed="' + fav + '" aria-label="' + (fav?'Quitar de favoritos ':'Agregar a favoritos ') + escapeHtml(t.name||'') + '">' + (fav?'★':'☆') + '</button>' +
+        (rest?'<span class="rest-indicator">' + escapeHtml(rest) + '</span>':'') +
         '<span class="team-abbr">' + escapeHtml(t.abbr || 'NBA') + '</span>' +
         '<span class="team-full-name">' + escapeHtml(t.name || 'Equipo por confirmar') + '</span>' +
       '</div>';
@@ -496,9 +499,9 @@
         ' por ciento; ' + escapeHtml(game.home?.name || '') + ': ' +
         formatPct(home) + ' por ciento">' +
         '<div class="probability-segment" style="width:' + formatPct(away) + '%;background:' +
-        leftColor + '"><span class="probabilidad ' + probabilityTone(away) + '">' + Math.round(away) + '%</span></div>' +
+        leftColor + '"><span class="probability-label ' + probabilityTone(away) + '">' + Math.round(away) + '%</span></div>' +
         '<div class="probability-segment" style="width:' + formatPct(home) + '%;background:' +
-        rightColor + '"><span class="probabilidad ' + probabilityTone(home) + '">' + Math.round(home) + '%</span></div>' +
+        rightColor + '"><span class="probability-label ' + probabilityTone(home) + '">' + Math.round(home) + '%</span></div>' +
       '</div>';
       const diff = Math.abs(away - home);
       const verdictText = diff >= 20 ? 'ALTA PROBABILIDAD' :
@@ -508,7 +511,7 @@
       verdict = '<span class="outcome-chip ' + verdictClass + '" title="' +
         escapeHtml(reason) + '">' + verdictText + '</span>';
       if (game.status === 'in' || game.status === 'post') {
-        verdict += '<span class="pre-match-flag" title="Pronóstico ANTES del partido, no probabilidad en vivo.">PRONÓSTICO PREPARTIDO</span>';
+        verdict += '<span class="pre-match-flag" title="Pronóstico ANTES del partido, no probability-label en vivo.">PRONÓSTICO PREPARTIDO</span>';
       }
     } else {
       verdict = '<span class="outcome-chip neutral" title="' +
@@ -707,11 +710,21 @@
       '<strong>Comparación con Elo simple</strong>' +
       '<p>Aún no hay resultados suficientes con ambas predicciones prepartido para comparar los modelos.</p>';
   }
+  function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem('nba-favorite-teams')||'[]').map(String));}catch(_){return new Set();}}
+  let favoriteTeams=readFavorites(), favoritesOnly=false, selectedTeam='';
+  function renderTeamFilter(){const el=$('team-filter');if(!el)return;const teams=Object.entries(data.teams||{}).map(([id,t])=>[id,t.name||t.abbr||id]).sort((x,y)=>x[1].localeCompare(y[1]));const prev=selectedTeam;el.innerHTML='<option value="">Todos los equipos</option>'+teams.map(([id,n])=>'<option value="'+escapeHtml(id)+'">'+escapeHtml(n)+'</option>').join('');el.value=teams.some(([id])=>id===prev)?prev:'';}
+  function restLabel(teamId,gameDate){const recent=data.teams?.[String(teamId)]?.form?.recent;if(!Array.isArray(recent))return '';const prior=recent.map(x=>String(x.date||'')).filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)&&x<gameDate).sort().pop();if(!prior)return '';const days=Math.round((Date.parse(gameDate+'T12:00:00Z')-Date.parse(prior+'T12:00:00Z'))/86400000)-1;return days===0?'B2B':days>0?days+(days===1?' día de descanso':' días de descanso'):'';}
+  function renderAnalytics(){const rows=Array.isArray(data.elo_ratings)?data.elo_ratings:[];$('elo-ratings').innerHTML=rows.length?'<table><thead><tr><th>Equipo</th><th>Elo</th><th>Partidos</th></tr></thead><tbody>'+rows.slice().sort((x,y)=>y.rating-x.rating).map(x=>'<tr><td>'+escapeHtml(x.name||x.abbr)+'</td><td>'+Math.round(x.rating)+'</td><td>'+Number(x.games||0)+'</td></tr>').join('')+'</tbody></table>':'<p>Ratings Elo todavía no publicados.</p>';const history=(data.history_recent||[]).filter(x=>x?.result&&['home','away'].includes(x.result.winner)&&Number.isFinite(Number(x.home_pct))&&Date.parse(x.predicted_at)<Date.parse(x.scheduled_at)).sort((x,y)=>Date.parse(x.scheduled_at)-Date.parse(y.scheduled_at));if(!history.length){$('brier-chart').textContent='Aún no hay resultados evaluados.';return;}let sum=0;const pts=history.map((r,i)=>{sum+=(Number(r.home_pct)/100-(r.result.winner==='home'?1:0))**2;return {i:i+1,v:sum/(i+1)};});const w=480,h=150,p=22,max=Math.max(.25,...pts.map(x=>x.v))*1.08;const coords=pts.map((x,i)=>(p+i*(w-2*p)/Math.max(1,pts.length-1))+','+(h-p-x.v/max*(h-2*p))).join(' ');$('brier-chart').innerHTML='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Brier acumulado; menor es mejor"><polyline points="'+coords+'" class="brier-line"/><text x="12" y="15">Brier acumulado · menor es mejor · n='+pts.length+'</text></svg>';}
+  async function downloadHistoryCsv(){const btn=$('download-history');if(btn)btn.disabled=true;try{const r=await fetch('data/history.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error();const raw=await r.json(),list=Array.isArray(raw)?raw:Object.values(raw?.predictions||{});if(!list.length)throw Error();const cols=['game_id','scheduled_at','predicted_at','away_team','home_team','away_pct','home_pct','winner','away_score','home_score'];const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const csv='\uFEFF'+[cols,...list.map(x=>[x.game_id||x.id,x.scheduled_at||x.datetime,x.predicted_at,x.away?.name||x.away_team,x.home?.name||x.home_team,x.away_pct,x.home_pct,x.result?.winner||x.winner,x.result?.away_score||x.away_score,x.result?.home_score||x.home_score])].map(row=>row.map(q).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download='nba-analytics-historial.csv';link.click();URL.revokeObjectURL(url);}catch(_){if(btn)btn.textContent='CSV no disponible ahora';}finally{if(btn)btn.disabled=false;}}
+
   function renderLive() {
     const games = Array.isArray(data.games) ? data.games : [];
     renderDates(games);
-    const shown = games.filter(g => g.date === chosenDate).sort((a, b) => String(a.datetime).localeCompare(String(b.datetime)));
-    $('game-count').textContent = shown.length + (shown.length === 1 ? ' partido' : ' partidos');
+    renderTeamFilter();
+    let shown=games.filter(g=>g.date===chosenDate).sort((a,b)=>String(a.datetime).localeCompare(String(b.datetime)));
+    if(selectedTeam)shown=shown.filter(g=>String(g.home?.id)===selectedTeam||String(g.away?.id)===selectedTeam);
+    if(favoritesOnly)shown=shown.filter(g=>favoriteTeams.has(String(g.home?.id))||favoriteTeams.has(String(g.away?.id)));
+    $('game-count').textContent=shown.length+(shown.length===1?' partido':' partidos');
     const ts = Date.parse(data.as_of || '');
     const reported = Number.isFinite(ts) ?
       new Intl.DateTimeFormat('es-DO', {timeZone: zone, day:'numeric', month:'short', hour:'numeric', minute:'2-digit'}).format(new Date(ts)) :
@@ -746,6 +759,7 @@
   }
   function render() {
     renderLive();
+    renderAnalytics();
     renderNews();
     renderScouting();
     renderValidation();
@@ -756,8 +770,11 @@
     $('alert').textContent = message;
     $('alert').className = 'status-message ' + (type || '');
   }
+  let dataLoadInFlight = false;
   async function load() {
     const button = $('reload');
+    if (dataLoadInFlight) return;
+    dataLoadInFlight = true;
     button.disabled = true;
     try {
       if (typeof location !== 'undefined' && location.protocol === 'file:') {
@@ -772,6 +789,7 @@
     } catch (error) {
       loadError = true;
     } finally {
+      dataLoadInFlight = false;
       button.disabled = false;
       render();
     }
@@ -814,12 +832,12 @@
   }
   let liveRequestNumber = 0;
   async function refreshLive() {
-    if (livePollInFlight) return;
+    if (livePollInFlight || dataLoadInFlight) return;
+    const date = chosenDate;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
     livePollInFlight = true;
     lastLivePollStarted = Date.now();
     const request = ++liveRequestNumber;
-    const date = chosenDate;
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
     try {
       const url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=' +
         date.replace(/-/g, '') + '&limit=100';
@@ -857,7 +875,12 @@
     }
     renderLive();
   }
+  $('team-filter').addEventListener('change',event=>{selectedTeam=String(event.target?.value||'');renderLive();});
+  $('favorites-filter').addEventListener('click',event=>{favoritesOnly=!favoritesOnly;event.currentTarget?.setAttribute?.('aria-pressed',String(favoritesOnly));renderLive();});
+  $('download-history').addEventListener('click',downloadHistoryCsv);
   $('games').addEventListener('click', event => {
+    const favorite=event.target?.closest?.('button[data-favorite-team]');
+    if(favorite){event.preventDefault?.();event.stopPropagation?.();const id=String(favorite.dataset?.favoriteTeam||'');if(id){favoriteTeams.has(id)?favoriteTeams.delete(id):favoriteTeams.add(id);try{localStorage.setItem('nba-favorite-teams',JSON.stringify([...favoriteTeams]));}catch(_){}renderLive();}return;}
     const summary=event.target?.closest?.('summary.game-summary');
     if (!summary) return;
     event.preventDefault();

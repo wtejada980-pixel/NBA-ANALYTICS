@@ -44,10 +44,17 @@ async function mount(snapshot, failure=false, scoreboard=null) {
 
 (async () => {
   assert.match(html,/id="games"/);
+  assert.match(html,/<noscript>/);
+  assert.doesNotMatch(html,/id="games"[^>]*aria-live/);
+  assert.match(html,/og:image/);
+  assert.match(html,/No afiliado a la NBA ni a ESPN/);
+  assert.match(html,/id="team-filter"/);
+  assert.match(html,/Descargar historial CSV/);
+  assert.match(html,/how-it-works/);
   assert.match(html,/Historial: últimos 7 días/);
   assert.match(html,/id="scouting-games"/);
   assert.match(html,/id="news-list"/);
-  assert.match(html,/class="news-grid contenedor-noticias"/);
+  assert.match(html,/class="news-grid"/);
   assert.match(html,/id="back-to-top"/);
   assert.match(html,/Noticias NBA/);
   assert.doesNotMatch(html,/thescore|theScore/i);
@@ -55,19 +62,19 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
   assert.match(source,/visibilityState === 'hidden'/);
   assert.match(source,/nextLiveRetryAt/);
-  assert.match(source,/prob-fuerte/);
-  assert.match(source,/racha-contenedor/);
+  assert.match(source,/prob-strong/);
+  assert.match(source,/streak-container/);
   assert.match(source,/g\.win === true/);
   assert.match(source,/g\.win === false/);
   assert.match(source,/updateBackToTop/);
   assert.match(source,/scrollTo\(\{top: 0, behavior: reducedMotion \? 'auto' : 'smooth'\}\)/);
   assert.match(style,/scroll-snap-type:\s*x mandatory/);
-  assert.match(style,/\.noticia-card/);
-  assert.match(style,/\.btn-volver-arriba\.visible/);
-  assert.match(style,/\.racha-item/);
-  assert.match(style,/\.racha-v/);
-  assert.match(style,/\.racha-d/);
-  assert.match(style,/\.racha-e/);
+  assert.match(style,/\.news-card/);
+  assert.match(style,/\.back-to-top\.visible/);
+  assert.match(style,/\.streak-item/);
+  assert.match(style,/\.streak-win/);
+  assert.match(style,/\.streak-loss/);
+  assert.match(style,/\.streak-tie/);
   assert.match(style,/\.team-leaders/);
   assert.match(style,/\.possible-starter-badge/);
   assert.match(source,/function teamLeadersPanel/);
@@ -202,9 +209,9 @@ async function mount(snapshot, failure=false, scoreboard=null) {
     ]}},
     '2':{form:{played:0,wins:0,points_for:null,points_against:null,recent:[]}}
   }});
-  assert.match(streakView.node('games').innerHTML,/racha-item racha-v/);
-  assert.match(streakView.node('games').innerHTML,/racha-item racha-d/);
-  assert.match(streakView.node('games').innerHTML,/racha-item racha-e/);
+  assert.match(streakView.node('games').innerHTML,/streak-item streak-win/);
+  assert.match(streakView.node('games').innerHTML,/streak-item streak-loss/);
+  assert.match(streakView.node('games').innerHTML,/streak-item streak-tie/);
   assert.match(streakView.node('games').innerHTML,/aria-label="Sin datos recientes"/);
   view=await mount({as_of:new Date(Date.now()-48*3600_000).toISOString(),games:[game]});
   assert.doesNotMatch(view.node('games').innerHTML,/63\.4/);

@@ -17,6 +17,23 @@ def sample_event(event_id='1', state='post', hs='120', aws='108'):
 
 
 class ParseTests(unittest.TestCase):
+    def test_public_elo_ratings_are_derived_from_completed_games(self):
+        finished = [{
+            'id':'1','datetime':'2026-11-01T20:00:00+00:00','status':'post',
+            'home':{'id':'10','abbr':'AAA','name':'Team A'},
+            'away':{'id':'20','abbr':'BBB','name':'Team B'},
+            'home_score':120,'away_score':100
+        }]
+        events = {'1': finished[0], '2': {
+            'id':'2','datetime':'2026-11-14T20:00:00+00:00','status':'pre',
+            'home':{'id':'10','abbr':'AAA','name':'Team A'},
+            'away':{'id':'30','abbr':'CCC','name':'Team C'}
+        }}
+        rows = update.public_elo_ratings(finished, events, '2026-11-13T00:00:00+00:00')
+        self.assertEqual([x['id'] for x in rows], ['10','20'])
+        self.assertGreater(rows[0]['rating'], rows[1]['rating'])
+        self.assertEqual(rows[0]['games'], 1)
+
     def test_official_date_override_for_okc_portland(self):
         event = sample_event(event_id='401909965', state='post')
         event['date'] = '2026-11-11T04:00:00Z'
