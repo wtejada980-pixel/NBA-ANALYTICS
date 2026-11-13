@@ -4071,9 +4071,9 @@
         "abbr": "TOR",
         "name": "Toronto Raptors"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 123,
+      "away_score": 112,
       "source": "https://www.espn.com/nba/game/_/gameId/401909976",
       "head_to_head": [],
       "prediction": {
@@ -4129,72 +4129,108 @@
             "name": "Dean Wade",
             "starter": true,
             "game_pts": 6.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "27"
+            "game_reb": 5.0,
+            "game_ast": 2.0,
+            "game_min": "34"
           },
           {
             "id": "3059318",
             "name": "Joel Embiid",
             "starter": true,
-            "game_pts": 16.0,
+            "game_pts": 20.0,
             "game_reb": 4.0,
             "game_ast": 3.0,
-            "game_min": "24"
+            "game_min": "28"
           },
           {
             "id": "3917376",
             "name": "Jaylen Brown",
             "starter": true,
-            "game_pts": 16.0,
+            "game_pts": 18.0,
             "game_reb": 6.0,
             "game_ast": 2.0,
-            "game_min": "29"
+            "game_min": "36"
           },
           {
             "id": "4431678",
             "name": "Tyrese Maxey",
             "starter": true,
-            "game_pts": 23.0,
-            "game_reb": 1.0,
-            "game_ast": 5.0,
-            "game_min": "30"
+            "game_pts": 27.0,
+            "game_reb": 2.0,
+            "game_ast": 8.0,
+            "game_min": "35"
           },
           {
             "id": "5124612",
             "name": "VJ Edgecombe",
             "starter": true,
-            "game_pts": 13.0,
-            "game_reb": 4.0,
-            "game_ast": 7.0,
-            "game_min": "28"
+            "game_pts": 15.0,
+            "game_reb": 8.0,
+            "game_ast": 8.0,
+            "game_min": "36"
           },
           {
             "id": "4432446",
             "name": "Jabari Walker",
             "starter": false,
-            "game_pts": 7.0,
-            "game_reb": 4.0,
+            "game_pts": 9.0,
+            "game_reb": 8.0,
+            "game_ast": 1.0,
+            "game_min": "16"
+          },
+          {
+            "id": "4711297",
+            "name": "Justin Edwards",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "9"
+            "game_min": "1"
+          },
+          {
+            "id": "3904625",
+            "name": "Tacko Fall",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "1"
           },
           {
             "id": "2581018",
             "name": "Kentavious Caldwell-Pope",
             "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 3.0,
+            "game_pts": 11.0,
+            "game_reb": 4.0,
             "game_ast": 5.0,
-            "game_min": "22"
+            "game_min": "27"
           },
           {
             "id": "4351851",
             "name": "Anfernee Simons",
             "starter": false,
-            "game_pts": 14.0,
+            "game_pts": 17.0,
             "game_reb": 3.0,
             "game_ast": 2.0,
-            "game_min": "16"
+            "game_min": "23"
+          },
+          {
+            "id": "4433144",
+            "name": "Caleb Love",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "1"
+          },
+          {
+            "id": "4873090",
+            "name": "Labaron Philon Jr.",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "2"
           }
         ],
         "away": [
@@ -4202,46 +4238,46 @@
             "id": "4395625",
             "name": "RJ Barrett",
             "starter": true,
-            "game_pts": 24.0,
-            "game_reb": 9.0,
+            "game_pts": 31.0,
+            "game_reb": 14.0,
             "game_ast": 5.0,
-            "game_min": "29"
+            "game_min": "37"
           },
           {
             "id": "5093267",
             "name": "Collin Murray-Boyles",
             "starter": true,
-            "game_pts": 12.0,
+            "game_pts": 14.0,
             "game_reb": 0.0,
-            "game_ast": 3.0,
-            "game_min": "24"
+            "game_ast": 4.0,
+            "game_min": "32"
           },
           {
             "id": "3134908",
             "name": "Jakob Poeltl",
             "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 4.0,
-            "game_ast": 2.0,
-            "game_min": "20"
+            "game_pts": 9.0,
+            "game_reb": 5.0,
+            "game_ast": 3.0,
+            "game_min": "25"
           },
           {
             "id": "4395724",
             "name": "Immanuel Quickley",
             "starter": true,
-            "game_pts": 18.0,
+            "game_pts": 26.0,
             "game_reb": 4.0,
-            "game_ast": 5.0,
-            "game_min": "23"
+            "game_ast": 6.0,
+            "game_min": "28"
           },
           {
             "id": "4684272",
             "name": "Ja'Kobe Walter",
             "starter": true,
             "game_pts": 6.0,
-            "game_reb": 4.0,
+            "game_reb": 5.0,
             "game_ast": 0.0,
-            "game_min": "25"
+            "game_min": "32"
           },
           {
             "id": "2993874",
@@ -4256,10 +4292,10 @@
             "id": "4431893",
             "name": "Jamison Battle",
             "starter": false,
-            "game_pts": 10.0,
+            "game_pts": 13.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "20"
+            "game_min": "25"
           },
           {
             "id": "5149115",
@@ -4268,25 +4304,43 @@
             "game_pts": 0.0,
             "game_reb": 2.0,
             "game_ast": 0.0,
-            "game_min": "11"
+            "game_min": "13"
+          },
+          {
+            "id": "4397784",
+            "name": "Malachi Smith",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "2"
           },
           {
             "id": "4432241",
             "name": "Jamal Shead",
             "starter": false,
-            "game_pts": 3.0,
+            "game_pts": 5.0,
             "game_reb": 1.0,
-            "game_ast": 4.0,
-            "game_min": "14"
+            "game_ast": 5.0,
+            "game_min": "22"
+          },
+          {
+            "id": "4432737",
+            "name": "Jaden Bradley",
+            "starter": false,
+            "game_pts": 1.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "2"
           },
           {
             "id": "4702656",
             "name": "Alijah Martin",
             "starter": false,
             "game_pts": 7.0,
-            "game_reb": 3.0,
-            "game_ast": 0.0,
-            "game_min": "12"
+            "game_reb": 4.0,
+            "game_ast": 1.0,
+            "game_min": "18"
           }
         ]
       }
@@ -4370,46 +4424,46 @@
             "id": "6583",
             "name": "Anthony Davis",
             "starter": true,
-            "game_pts": 22.0,
-            "game_reb": 9.0,
+            "game_pts": 28.0,
+            "game_reb": 14.0,
             "game_ast": 3.0,
-            "game_min": "30"
+            "game_min": "39"
           },
           {
             "id": "5142718",
             "name": "AJ Dybantsa",
             "starter": true,
             "game_pts": 3.0,
-            "game_reb": 5.0,
-            "game_ast": 3.0,
-            "game_min": "25"
+            "game_reb": 7.0,
+            "game_ast": 4.0,
+            "game_min": "35"
           },
           {
             "id": "5174563",
             "name": "Kyshawn George",
             "starter": true,
-            "game_pts": 7.0,
+            "game_pts": 14.0,
             "game_reb": 1.0,
-            "game_ast": 4.0,
-            "game_min": "17"
+            "game_ast": 5.0,
+            "game_min": "26"
           },
           {
             "id": "5160992",
             "name": "Alex Sarr",
             "starter": true,
-            "game_pts": 23.0,
-            "game_reb": 4.0,
-            "game_ast": 1.0,
-            "game_min": "25"
+            "game_pts": 26.0,
+            "game_reb": 7.0,
+            "game_ast": 2.0,
+            "game_min": "36"
           },
           {
             "id": "4277905",
             "name": "Trae Young",
             "starter": true,
-            "game_pts": 20.0,
-            "game_reb": 1.0,
-            "game_ast": 8.0,
-            "game_min": "26"
+            "game_pts": 33.0,
+            "game_reb": 2.0,
+            "game_ast": 11.0,
+            "game_min": "36"
           },
           {
             "id": "4278129",
@@ -4427,16 +4481,16 @@
             "game_pts": 2.0,
             "game_reb": 0.0,
             "game_ast": 2.0,
-            "game_min": "11"
+            "game_min": "16"
           },
           {
             "id": "5104155",
             "name": "Bilal Coulibaly",
             "starter": false,
-            "game_pts": 0.0,
+            "game_pts": 2.0,
             "game_reb": 3.0,
             "game_ast": 0.0,
-            "game_min": "15"
+            "game_min": "21"
           },
           {
             "id": "5144126",
@@ -4454,7 +4508,7 @@
             "game_pts": 13.0,
             "game_reb": 2.0,
             "game_ast": 2.0,
-            "game_min": "23"
+            "game_min": "25"
           }
         ],
         "away": [
@@ -4465,61 +4519,61 @@
             "game_pts": 9.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "24"
+            "game_min": "32"
           },
           {
             "id": "3908845",
             "name": "John Collins",
             "starter": true,
             "game_pts": 10.0,
-            "game_reb": 2.0,
+            "game_reb": 4.0,
             "game_ast": 0.0,
-            "game_min": "20"
+            "game_min": "25"
           },
           {
             "id": "4432166",
             "name": "Cade Cunningham",
             "starter": true,
-            "game_pts": 24.0,
-            "game_reb": 1.0,
-            "game_ast": 8.0,
-            "game_min": "27"
+            "game_pts": 40.0,
+            "game_reb": 4.0,
+            "game_ast": 10.0,
+            "game_min": "39"
           },
           {
             "id": "4684742",
             "name": "Ausar Thompson",
             "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 6.0,
-            "game_ast": 7.0,
-            "game_min": "25"
+            "game_pts": 13.0,
+            "game_reb": 8.0,
+            "game_ast": 8.0,
+            "game_min": "34"
           },
           {
             "id": "5107199",
             "name": "Daniss Jenkins",
             "starter": true,
             "game_pts": 21.0,
-            "game_reb": 3.0,
+            "game_reb": 5.0,
             "game_ast": 0.0,
-            "game_min": "24"
+            "game_min": "34"
           },
           {
             "id": "4278562",
             "name": "Paul Reed",
             "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 7.0,
-            "game_ast": 2.0,
-            "game_min": "22"
+            "game_pts": 12.0,
+            "game_reb": 8.0,
+            "game_ast": 3.0,
+            "game_min": "29"
           },
           {
             "id": "4683771",
             "name": "Ronald Holland II",
             "starter": false,
-            "game_pts": 0.0,
+            "game_pts": 2.0,
             "game_reb": 5.0,
             "game_ast": 2.0,
-            "game_min": "11"
+            "game_min": "14"
           },
           {
             "id": "2596112",
@@ -4528,16 +4582,16 @@
             "game_pts": 5.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "13"
+            "game_min": "15"
           },
           {
             "id": "4066372",
             "name": "Kevin Huerter",
             "starter": false,
             "game_pts": 9.0,
-            "game_reb": 0.0,
+            "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "19"
+            "game_min": "24"
           }
         ]
       }
@@ -4606,46 +4660,46 @@
             "id": "4431671",
             "name": "Jaden McDaniels",
             "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "14"
+            "game_pts": 16.0,
+            "game_reb": 9.0,
+            "game_ast": 3.0,
+            "game_min": "25"
           },
           {
             "id": "4433247",
             "name": "Jonathan Kuminga",
             "starter": true,
-            "game_pts": 9.0,
-            "game_reb": 4.0,
-            "game_ast": 1.0,
-            "game_min": "14"
+            "game_pts": 14.0,
+            "game_reb": 8.0,
+            "game_ast": 4.0,
+            "game_min": "22"
           },
           {
             "id": "3032976",
             "name": "Rudy Gobert",
             "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 4.0,
+            "game_pts": 6.0,
+            "game_reb": 5.0,
             "game_ast": 1.0,
-            "game_min": "12"
+            "game_min": "21"
           },
           {
             "id": "4397002",
             "name": "Ayo Dosunmu",
             "starter": true,
-            "game_pts": 7.0,
+            "game_pts": 12.0,
             "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "13"
+            "game_ast": 1.0,
+            "game_min": "22"
           },
           {
             "id": "4432816",
             "name": "LaMelo Ball",
             "starter": true,
-            "game_pts": 16.0,
-            "game_reb": 2.0,
-            "game_ast": 6.0,
-            "game_min": "13"
+            "game_pts": 22.0,
+            "game_reb": 3.0,
+            "game_ast": 9.0,
+            "game_min": "23"
           },
           {
             "id": "3136196",
@@ -4654,43 +4708,43 @@
             "game_pts": 2.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "10"
+            "game_min": "12"
           },
           {
             "id": "5279133",
             "name": "Joan Beringer",
             "starter": false,
-            "game_pts": 1.0,
+            "game_pts": 5.0,
             "game_reb": 4.0,
             "game_ast": 0.0,
-            "game_min": "6"
+            "game_min": "10"
           },
           {
             "id": "4432247",
             "name": "Jaylen Clark",
             "starter": false,
             "game_pts": 7.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "8"
+            "game_reb": 4.0,
+            "game_ast": 1.0,
+            "game_min": "12"
           },
           {
             "id": "4432847",
             "name": "Terrence Shannon Jr.",
             "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "5"
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "11"
           },
           {
             "id": "4592492",
             "name": "Bones Hyland",
             "starter": false,
             "game_pts": 11.0,
-            "game_reb": 1.0,
+            "game_reb": 2.0,
             "game_ast": 4.0,
-            "game_min": "8"
+            "game_min": "12"
           }
         ],
         "away": [
@@ -4700,53 +4754,53 @@
             "starter": true,
             "game_pts": 7.0,
             "game_reb": 2.0,
-            "game_ast": 4.0,
-            "game_min": "15"
+            "game_ast": 5.0,
+            "game_min": "21"
           },
           {
             "id": "4278049",
             "name": "Daniel Gafford",
             "starter": true,
-            "game_pts": 1.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "8"
+            "game_pts": 3.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "16"
           },
           {
             "id": "4278078",
             "name": "P.J. Washington",
             "starter": true,
             "game_pts": 10.0,
-            "game_reb": 2.0,
+            "game_reb": 3.0,
             "game_ast": 0.0,
-            "game_min": "10"
+            "game_min": "16"
           },
           {
             "id": "5041939",
             "name": "Cooper Flagg",
             "starter": true,
-            "game_pts": 9.0,
-            "game_reb": 4.0,
-            "game_ast": 2.0,
-            "game_min": "17"
+            "game_pts": 12.0,
+            "game_reb": 7.0,
+            "game_ast": 3.0,
+            "game_min": "27"
           },
           {
             "id": "6442",
             "name": "Kyrie Irving",
             "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 2.0,
-            "game_ast": 2.0,
-            "game_min": "14"
+            "game_pts": 10.0,
+            "game_reb": 3.0,
+            "game_ast": 4.0,
+            "game_min": "27"
           },
           {
             "id": "4278594",
             "name": "Naji Marshall",
             "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 0.0,
-            "game_ast": 1.0,
-            "game_min": "10"
+            "game_pts": 11.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "18"
           },
           {
             "id": "4593125",
@@ -4755,7 +4809,7 @@
             "game_pts": 3.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "7"
+            "game_min": "10"
           },
           {
             "id": "4873153",
@@ -4770,10 +4824,28 @@
             "id": "5211175",
             "name": "Zaccharie Risacher",
             "starter": false,
-            "game_pts": 7.0,
+            "game_pts": 9.0,
             "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "6"
+            "game_ast": 2.0,
+            "game_min": "11"
+          },
+          {
+            "id": "4432107",
+            "name": "Marcus Sasser",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "-"
+          },
+          {
+            "id": "4432582",
+            "name": "Max Christie",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "3"
           },
           {
             "id": "4896372",
@@ -4782,7 +4854,7 @@
             "game_pts": 0.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "9"
+            "game_min": "11"
           }
         ]
       }
@@ -4801,65 +4873,10 @@
         "abbr": "CHA",
         "name": "Charlotte Hornets"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909979",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Charlotte Hornets vs Phoenix Suns Nov 12, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nV0tpdXpOOFpJY2lmdWpJZURPQlFBLTZLcjhfeUlJN09aQ2g4c2pqUHMzU2plUTA3bE9XLUJzY2IyeHh5WXlnYS1UT1c1T1RPRmxNN0dwa3l3Zw?oc=5",
-            "published": "Thu, 12 Nov 2026 22:36:58 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Charlotte Hornets @ Phoenix Suns: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1SWl2VmxxNWVFUEhabnJGcVhRZDduNnM1dThRQ255ZlNtUlNORE14Vld1WmxxSWVxVlUzT1hTY2Nnc2dQUG8yTGJfd0pVWnplNkxtUU9pOXo5TDJKSlVZMEtsT1ljb0hqWGZ1cnNTTkNScmk1SU9kYkdHWQ?oc=5",
-            "published": "Thu, 12 Nov 2026 23:01:47 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Hornets vs. Suns Full Game Preview, Score Predictions",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaWE2OW9NSEEzNGlySFB2SWxyNXhGTHJ5OEF1dUl1MElJZGhRdGJIUUdqMDhoWjBzZ0Z4d2U0aThiRWdDVmVWRHRPMUpIVklTbkYxbUJEM3MtaDVIdzRHMFQyYWtlRUJVdTZvQjFRdTVBdVY1RFdSblZ2Z3p0ZmNiV0ZxZDdhNVhjSUlkQk9SUVFOWjlyYmtkVDRzSVNaWnQtREE?oc=5",
-            "published": "Thu, 12 Nov 2026 19:52:10 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          },
-          {
-            "title": "‍‍‍+++[STream]HERE'S*!Charlotte Hornets - Phoenix Suns live NBA Live",
-            "url": "https://news.google.com/rss/articles/CBMiwANBVV95cUxOZXNqTXZRYmtMNEMyS3gzVnJ6Y2lIeTRscTlDelM3QjkwU01BOGN3Q1hVUUs2ZGVvU3dneDVncEhhUVA2RHpLTkZZMUo0elRhUXJJLUU1RzdXOGx2VktZM3ZJS1FVVEVkUGk4OGhkSkxMQUdJU1VrQWZaXzdUX2g4TDdNZzE2SDlacmdYaDk4OFpoQ25fMXJPcWVfQUNReWhKazJvVjFJcVlUWjRZNmFuY3hPNXpveElHRTlpQUNzVXlMVEpJNmxLZU5PWHl0YkZSb3p1dTFYb1FHT2lZbnl4WV9ZNDRBX0hsQklSRnBKb2QtUUdiSEpnSmNjVUt5M0g4cE15X2w2czZxQ0lmWmVka0JBRlNiLWJVOFlaVzFhQmhhVk45bzY3NW5nczd5OEZ3MG96bzVtNmMxYmd0YVdyM3RVVFZ0YTZZNkdhZTN5YTlWTXBHMzlmcGFmbWd2andMN2V0bTcyZEFNVDdxd0lmaWtrZ2Nza2VGeXBXVGhQdlhRRl9laW9QSEltVnE3dlJQZjB4VWtHZGtVa1NUUUVPS2VRY2hnMFZGRHNNdTFwTW8zUjJQSTAyM3NGX29GdEdn?oc=5",
-            "published": "Fri, 13 Nov 2026 01:19:37 GMT",
-            "source": "日本取引所グループ",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Hornets+Suns&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-13T02:00:45.847096+00:00"
-      },
       "head_to_head": [],
       "prediction": {
         "home_pct": 54.6,
@@ -4906,6 +4923,192 @@
           "rest": 3
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "3155526",
+            "name": "Dillon Brooks",
+            "starter": true,
+            "game_pts": 5.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4066383",
+            "name": "Miles Bridges",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4601023",
+            "name": "Oso Ighodaro",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "10"
+          },
+          {
+            "id": "3136193",
+            "name": "Devin Booker",
+            "starter": true,
+            "game_pts": 13.0,
+            "game_reb": 1.0,
+            "game_ast": 4.0,
+            "game_min": "12"
+          },
+          {
+            "id": "4437244",
+            "name": "Jalen Green",
+            "starter": true,
+            "game_pts": 7.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4888725",
+            "name": "Ryan Dunn",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "5203685",
+            "name": "Khaman Maluach",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "3913174",
+            "name": "Luke Kennard",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "3"
+          },
+          {
+            "id": "4278402",
+            "name": "Jordan Goodwin",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4278585",
+            "name": "Collin Gillespie",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          }
+        ],
+        "away": [
+          {
+            "id": "4433249",
+            "name": "Moussa Diabate",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4396971",
+            "name": "Naz Reid",
+            "starter": true,
+            "game_pts": 3.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "10"
+          },
+          {
+            "id": "3135045",
+            "name": "Grayson Allen",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "10"
+          },
+          {
+            "id": "4395651",
+            "name": "Coby White",
+            "starter": true,
+            "game_pts": 9.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4602025",
+            "name": "Sion James",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "9"
+          },
+          {
+            "id": "2583632",
+            "name": "Royce O'Neale",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "4066218",
+            "name": "Grant Williams",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "5211176",
+            "name": "Tidjane Salaun",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "4576060",
+            "name": "Ryan Kalkbrenner",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 4.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "5060701",
+            "name": "Christian Anderson",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          }
+        ]
       }
     },
     "401914126": {

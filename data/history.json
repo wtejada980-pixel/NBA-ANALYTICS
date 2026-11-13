@@ -30430,7 +30430,11 @@
       "reason": "Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
       "elo_baseline_home_pct": 66.8,
       "scheduled_at": "2026-11-13T00:00Z",
-      "result": null,
+      "result": {
+        "home_score": 123,
+        "away_score": 112,
+        "winner": "home"
+      },
       "input_snapshots": [
         {
           "captured_at": "2026-11-11T00:56:54.245965+00:00",
