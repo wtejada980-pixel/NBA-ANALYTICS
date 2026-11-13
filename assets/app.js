@@ -367,7 +367,8 @@
         (Number.isFinite(g.opponent_points) ? g.opponent_points : '—');
       const hasDetails = Boolean(g.date || g.opponent || Number.isFinite(g.points) ||
         Number.isFinite(g.opponent_points));
-      return '<span class="streak-item racha-' + outcome + '" aria-label="' + resultLabel +
+      const outcomeClass = outcome === 'v' ? 'streak-win' : outcome === 'd' ? 'streak-loss' : 'streak-tie';
+      return '<span class="streak-item ' + outcomeClass + '" aria-label="' + resultLabel +
         (g.opponent ? ' contra ' + escapeHtml(g.opponent) : '') + '" title="' + resultLabel +
         (hasDetails ? ' · ' + details : '') + '">' +
         (outcome === 'v' ? 'V' : outcome === 'd' ? 'D' : '—') + '</span>';
@@ -836,6 +837,7 @@
     const date = chosenDate;
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
     livePollInFlight = true;
+    $('reload').disabled = true;
     lastLivePollStarted = Date.now();
     const request = ++liveRequestNumber;
     try {
@@ -872,6 +874,7 @@
         Date.now() + Math.min(60000, 5000 * Math.pow(2, Math.min(4, liveFailures - 1))));
     } finally {
       livePollInFlight = false;
+      if (!dataLoadInFlight) $('reload').disabled = false;
     }
     renderLive();
   }
