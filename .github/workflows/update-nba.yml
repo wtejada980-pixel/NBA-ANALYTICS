@@ -25,9 +25,7 @@ on:
       timezone: 'America/Santo_Domingo'
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: nba-analytics-data-backfill
@@ -35,11 +33,10 @@ concurrency:
 
 jobs:
   refresh:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -82,13 +79,23 @@ jobs:
               sleep 4
             done
           fi
-
-      - name: Configurar GitHub Pages
+      - name: Preparar artefacto para GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Publicar los datos actualizados
+      - name: Subir página con los datos actualizados
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Desplegar la página con las estadísticas nuevas
         id: deployment
         uses: actions/deploy-pages@v4
