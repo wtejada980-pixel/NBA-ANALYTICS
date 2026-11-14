@@ -58,7 +58,7 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(html,/id="back-to-top"/);
   assert.match(html,/Noticias NBA/);
   assert.doesNotMatch(html,/thescore|theScore/i);
-  assert.match(source,/const LIVE_INTERVAL_MS = 2000;/);
+  assert.match(source,/const LIVE_INTERVAL_MS = 10000;/);
   assert.match(source,/const IDLE_INTERVAL_MS = 30000;/);
   assert.match(source,/visibilityState === 'hidden'/);
   assert.match(source,/nextLiveRetryAt/);

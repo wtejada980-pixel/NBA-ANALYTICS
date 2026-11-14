@@ -12,9 +12,9 @@
   let liveAvailable = false;
   let liveError = false;
   let liveUpdatedAt = 0;
-  // Consultar marcadores cada 2 segundos SOLO cuando hay un partido en juego
+  // Consultar marcadores cada 10 segundos SOLO cuando hay un partido en juego
   // y la pestaña está visible. ESPN puede actualizar con retraso o limitar acceso.
-  const LIVE_INTERVAL_MS = 2000;
+  const LIVE_INTERVAL_MS = 10000;
   const IDLE_INTERVAL_MS = 30000;
   const PLAYER_INTERVAL_MS = 12000;
   let livePollInFlight = false;
@@ -750,7 +750,7 @@
       setStatus('La fuente ha interrumpido o limitado las consultas. Reintentando gradualmente; marcadores no necesariamente actuales.', 'warning');
     } else if (liveAvailable) {
       setStatus(hasLiveGameOnScreen() ?
-        'En vivo: comprobando ESPN cada 2 segundos si permite el acceso. Los datos pueden llegar con retraso.' :
+        'En vivo: comprobando ESPN cada 10 segundos si permite el acceso. Los datos pueden llegar con retraso.' :
         'Los marcadores se consultan cada 30 segundos fuera de los partidos. El pronóstico es prepartido.', 'ok');
     } else if (loadError || !isFresh()) {
       setStatus('Esperando datos recientes. No mostramos porcentajes desactualizados.', 'warning');

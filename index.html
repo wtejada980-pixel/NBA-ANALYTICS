@@ -9,7 +9,7 @@
   <meta property="og:description" content="Marcadores, estadísticas y probabilidades experimentales prepartido.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wtejada980-pixel.github.io/NBA-ANALYTICS/">
-  <meta property="og:image" content="https://wtejada980-pixel.github.io/NBA-ANALYTICS/assets/og-image.svg">
+  <meta property="og:image" content="https://wtejada980-pixel.github.io/NBA-ANALYTICS/assets/og-image.png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <title>NBA Analytics — Partidos y probabilidades</title>
@@ -28,6 +28,7 @@
     </header>
 
     <main>
+  <noscript><p class="noscript">Esta página necesita JavaScript activado para mostrar partidos y estadísticas.</p></noscript>
       <section class="intro">
         <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> NBA · ANÁLISIS DIARIO</p>
         <h1>El juego, <span>más claro.</span></h1>
@@ -93,7 +94,7 @@
           <p class="overline">TRANSPARENCIA DEL MODELO</p>
           <h2 id="quality-title">¿Qué tan bien estamos acertando?</h2>
         </div>
-        <p class="quality-intro">Solo evaluamos pronósticos guardados antes del partido contra el ganador real. No representan la probability-label de cubrir un hándicap ni garantizan resultados.</p>
+        <p class="quality-intro">Solo evaluamos pronósticos guardados antes del partido contra el ganador real. No representan la probabilidad de cubrir un hándicap ni garantizan resultados.</p>
         <div id="model-validation" class="quality-grid" aria-live="polite">
           <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
           <div class="skeleton-metric" aria-hidden="true"><span class="skeleton-block skeleton-line short"></span><span class="skeleton-block skeleton-number"></span><span class="skeleton-block skeleton-line"></span></div>
@@ -163,9 +164,8 @@
     <button id="back-to-top" class="back-to-top" type="button" aria-label="Volver arriba" title="Volver arriba">↑</button>
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente · No afiliado a la NBA ni a ESPN</span></footer>
   </div>
-  <noscript><p class="noscript">Esta página necesita JavaScript activado para mostrar partidos y estadísticas.</p></noscript>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261113-features" defer></script>
+  <script src="assets/app.js?v=20261114-10s" defer></script>
   <script src="assets/v3-lab.js?v=20261111-news" defer></script>
   <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./service-worker.js").catch(()=>{}); let promptEvent; window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();promptEvent=e;const b=document.getElementById("install-app");if(b)b.hidden=false;}); document.getElementById("install-app")?.addEventListener("click",async()=>{if(!promptEvent)return;promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;document.getElementById("install-app").hidden=true;});</script>
 </body>

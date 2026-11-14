@@ -1,5 +1,5 @@
-const CACHE='nba-analytics-v1';
-const CORE=['./','./index.html','./assets/style.css?v=20261113-features','./assets/app.js?v=20261113-features','./assets/v3-lab.js?v=20261111-news','./manifest.webmanifest','./assets/favicon.svg','./assets/pwa-icon.svg','./assets/og-image.svg'];
+const CACHE='nba-analytics-v2';
+const CORE=['./','./index.html','./assets/style.css?v=20261113-features','./assets/app.js?v=20261114-10s','./assets/v3-lab.js?v=20261111-news','./manifest.webmanifest','./assets/favicon.svg','./assets/pwa-icon.svg','./assets/og-image.png','./assets/og-image.svg'];
 const LATEST=new URL('./data/latest.json',self.registration.scope).href;
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
