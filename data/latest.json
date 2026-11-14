@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-14T17:16:40.357191+00:00",
+  "as_of": "2026-11-14T17:17:36.421553+00:00",
   "date": "2026-11-14",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -13011,7 +13011,7 @@
           {
             "title": "Denver Nuggets @ New Orleans Pelicans: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNN0YwNkdZeFhtVDllOVcyMVRwYVlBR182MktSYWl3THVMREJvVHJPb1U4MEgwZjJIcC1BUmRwTW8tVWJPZWtTc1p4NkN3V2ZiTFpQNC16SlpvTUg0NXloTk9RX0F5WjJaT0RuSHZnaUt2MWF1WFh4UkJSSE1yaUlJNTVR?oc=5",
-            "published": "Sat, 14 Nov 2026 14:33:15 GMT",
+            "published": "Sat, 14 Nov 2026 14:47:21 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
@@ -13048,7 +13048,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-14T17:16:44.998657+00:00"
+        "context_updated_at": "2026-11-14T17:17:39.713417+00:00"
       },
       "head_to_head": [
         {
@@ -13184,7 +13184,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-14T17:16:45.705496+00:00"
+        "context_updated_at": "2026-11-14T17:17:40.338546+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13305,7 +13305,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-14T17:16:46.396705+00:00"
+        "context_updated_at": "2026-11-14T17:17:40.914482+00:00"
       },
       "head_to_head": [
         {
@@ -13434,7 +13434,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-14T17:16:46.964695+00:00"
+        "context_updated_at": "2026-11-14T17:17:41.467285+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13555,7 +13555,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-14T17:16:47.593534+00:00"
+        "context_updated_at": "2026-11-14T17:17:42.221494+00:00"
       },
       "head_to_head": [
         {
@@ -24321,7 +24321,7 @@
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-14T17:16:47.593560+00:00",
+  "news_updated_at": "2026-11-14T17:17:42.221525+00:00",
   "archive_days": 7,
   "validation": {
     "completed_predictions": 60,
