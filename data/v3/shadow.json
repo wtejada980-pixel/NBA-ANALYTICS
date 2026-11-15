@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "as_of": "2026-11-15T01:10:07.052508+00:00",
+  "as_of": "2026-11-15T06:35:57.931004+00:00",
   "status": "shadow_not_production",
   "training_seasons": [
     2022,
@@ -14,18 +14,18 @@
   ],
   "warning": "La comparación retrospectiva V3 no es un pronóstico registrado antes del partido; sirve solo como diagnóstico. La comparación prospectiva incluye únicamente pronósticos V3 realmente congelados antes del inicio. ESPN 2026 en caché carece de clasificación de temporada confirmada.",
   "retrospective": {
-    "n": 60,
+    "n": 65,
     "v2_original": {
-      "n": 60,
-      "brier": 0.21212,
-      "log_loss": 0.61316,
-      "winner_accuracy_pct": 68.3
+      "n": 65,
+      "brier": 0.21859,
+      "log_loss": 0.62806,
+      "winner_accuracy_pct": 66.2
     },
     "v3_reconstructed": {
-      "n": 60,
-      "brier": 0.17314,
-      "log_loss": 0.5253,
-      "winner_accuracy_pct": 78.3
+      "n": 65,
+      "brier": 0.18243,
+      "log_loss": 0.54982,
+      "winner_accuracy_pct": 76.9
     },
     "games": [
       {
@@ -387,22 +387,52 @@
         "v2_original_home_pct": 54.6,
         "v3_retrospective_home_pct": 60.4,
         "winner": "home"
+      },
+      {
+        "id": "401909980",
+        "v2_original_home_pct": 37.6,
+        "v3_retrospective_home_pct": 31.4,
+        "winner": "away"
+      },
+      {
+        "id": "401909981",
+        "v2_original_home_pct": 47.4,
+        "v3_retrospective_home_pct": 70.9,
+        "winner": "home"
+      },
+      {
+        "id": "401909982",
+        "v2_original_home_pct": 44.1,
+        "v3_retrospective_home_pct": 34.3,
+        "winner": "home"
+      },
+      {
+        "id": "401909983",
+        "v2_original_home_pct": 64.0,
+        "v3_retrospective_home_pct": 69.9,
+        "winner": "home"
+      },
+      {
+        "id": "401909984",
+        "v2_original_home_pct": 78.8,
+        "v3_retrospective_home_pct": 87.4,
+        "winner": "away"
       }
     ]
   },
   "prospective": {
-    "n": 32,
+    "n": 37,
     "v2_original": {
-      "n": 32,
-      "brier": 0.21347,
-      "log_loss": 0.61627,
-      "winner_accuracy_pct": 71.9
+      "n": 37,
+      "brier": 0.22465,
+      "log_loss": 0.64202,
+      "winner_accuracy_pct": 67.6
     },
     "v3_shadow": {
-      "n": 32,
-      "brier": 0.1998,
-      "log_loss": 0.5849,
-      "winner_accuracy_pct": 71.9
+      "n": 37,
+      "brier": 0.21251,
+      "log_loss": 0.61992,
+      "winner_accuracy_pct": 70.3
     }
   },
   "forecasts": {
@@ -782,6 +812,34 @@
       "predicted_at": "2026-11-14T06:27:16.803403+00:00",
       "v3_home_pct": 70.0,
       "v2_original_home_pct": 62.7,
+      "model": "logistic-v3-shadow"
+    },
+    "401910002": {
+      "scheduled_at": "2026-11-18T00:30Z",
+      "predicted_at": "2026-11-15T06:35:57.931004+00:00",
+      "v3_home_pct": 36.9,
+      "v2_original_home_pct": 43.5,
+      "model": "logistic-v3-shadow"
+    },
+    "401910003": {
+      "scheduled_at": "2026-11-18T01:00Z",
+      "predicted_at": "2026-11-15T06:35:57.931004+00:00",
+      "v3_home_pct": 68.9,
+      "v2_original_home_pct": 52.6,
+      "model": "logistic-v3-shadow"
+    },
+    "401910004": {
+      "scheduled_at": "2026-11-18T01:00Z",
+      "predicted_at": "2026-11-15T06:35:57.931004+00:00",
+      "v3_home_pct": 66.5,
+      "v2_original_home_pct": 70.5,
+      "model": "logistic-v3-shadow"
+    },
+    "401910006": {
+      "scheduled_at": "2026-11-18T03:30Z",
+      "predicted_at": "2026-11-15T06:35:57.931004+00:00",
+      "v3_home_pct": 80.4,
+      "v2_original_home_pct": 64.1,
       "model": "logistic-v3-shadow"
     }
   }
