@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-15T13:51:18.754297+00:00",
+  "as_of": "2026-11-15T19:22:34.606282+00:00",
   "date": "2026-11-15",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -12971,65 +12971,10 @@
         "abbr": "IND",
         "name": "Indiana Pacers"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909985",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Indiana Pacers vs Philadelphia 76ers Nov 15, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2NjZQN1dZWktEMElZU0pzdFlRazlVdWp6enlIWHpsS013VTNNSEoxX3k5a2s0NVd6OXpyam0ydGNkRk5veThpRGY5dV8wOWFKUWgxTWZmQmRrUQ?oc=5",
-            "published": "Sun, 15 Nov 2026 10:48:11 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Indiana Pacers @ Philadelphia 76ers: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XdzNfYThrVWNLVks2Q1JWLWJkN3hUS3I4UEhLZll3NWJYOVdiNjJ2TVc0ck1kN3UwRENXYzZWTVN1OVlmUTJURENzREJDaS1MZHNXUXRubmQyazR5eXgybUFZTWkxRUtoVWJaNjE1Q2E2anJxMnQ0OXd0Um1ocTg?oc=5",
-            "published": "Sun, 15 Nov 2026 11:17:33 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "How the Pacers can beat LeBron and Embiid-less 76ers",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMlZNVUR3em8wSndDZ1B3bmpCcFYzTmhLNzZLVFlYdVM0eG94M0hRWTE0dVU3Q2NOZFRUM2s3S3RwNnhQLTdnUGFHbzE4WDJPUHZVU25iR2hXRzF0bzBlb1BiZGdldmx0SVFicVlvQjlMTlcwMWlpYUJCRDhBQmNmTi1MUHJmalUtOXJ2TlNOVS1NanVvVUZnZC1kR0V1SFZvWUE?oc=5",
-            "published": "Sun, 15 Nov 2026 13:00:00 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          },
-          {
-            "title": "Pacers vs. 76ers - Live Score - November 15, 2026",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ09xS1JCc2Vla2VTMG1BZG1IZTM4ZUh0blZUWnJYYXJYcXc5Yi1BSFhYcDJpX3NPMDN1UXY4eUN5NEJxc0xFS1NwcGZZZl9WZ2ItVXZNSnFOdWVBNy1aazJGaGNMZzRPdmt5bzdoblFOcV9DZzE4YkdHaThkc3JucFJYTzNESzhmOUFnTERjVWZIRGlOUDJiZkRQQlc2S1A3?oc=5",
-            "published": "Sun, 15 Nov 2026 10:17:37 GMT",
-            "source": "FOX Sports",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Pacers+76ers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-15T13:51:30.533288+00:00"
-      },
       "head_to_head": [
         {
           "date": "2026-10-28",
@@ -13084,6 +13029,183 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "1966",
+            "name": "LeBron James",
+            "starter": true,
+            "game_pts": 4.0,
+            "game_reb": 6.0,
+            "game_ast": 5.0,
+            "game_min": "16"
+          },
+          {
+            "id": "4432446",
+            "name": "Jabari Walker",
+            "starter": true,
+            "game_pts": 5.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "16"
+          },
+          {
+            "id": "3917376",
+            "name": "Jaylen Brown",
+            "starter": true,
+            "game_pts": 20.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "18"
+          },
+          {
+            "id": "4431678",
+            "name": "Tyrese Maxey",
+            "starter": true,
+            "game_pts": 15.0,
+            "game_reb": 0.0,
+            "game_ast": 3.0,
+            "game_min": "18"
+          },
+          {
+            "id": "5124612",
+            "name": "VJ Edgecombe",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 3.0,
+            "game_min": "11"
+          },
+          {
+            "id": "3912848",
+            "name": "Dean Wade",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 4.0,
+            "game_ast": 1.0,
+            "game_min": "14"
+          },
+          {
+            "id": "2581018",
+            "name": "Kentavious Caldwell-Pope",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "12"
+          },
+          {
+            "id": "4351851",
+            "name": "Anfernee Simons",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4873090",
+            "name": "Labaron Philon Jr.",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          }
+        ],
+        "away": [
+          {
+            "id": "3149673",
+            "name": "Pascal Siakam",
+            "starter": true,
+            "game_pts": 8.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "14"
+          },
+          {
+            "id": "4017837",
+            "name": "Ivica Zubac",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 5.0,
+            "game_ast": 2.0,
+            "game_min": "17"
+          },
+          {
+            "id": "3133603",
+            "name": "Kelly Oubre Jr.",
+            "starter": true,
+            "game_pts": 9.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "14"
+          },
+          {
+            "id": "4396909",
+            "name": "Aaron Nesmith",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "17"
+          },
+          {
+            "id": "4592829",
+            "name": "Quenton Jackson",
+            "starter": true,
+            "game_pts": 11.0,
+            "game_reb": 2.0,
+            "game_ast": 3.0,
+            "game_min": "15"
+          },
+          {
+            "id": "2580365",
+            "name": "Larry Nance Jr.",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "7"
+          },
+          {
+            "id": "4278355",
+            "name": "Obi Toppin",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "9"
+          },
+          {
+            "id": "4398207",
+            "name": "Jalen Slawson",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "5106060",
+            "name": "Jarace Walker",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "2530530",
+            "name": "T.J. McConnell",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 4.0,
+            "game_ast": 3.0,
+            "game_min": "9"
+          }
+        ]
       }
     },
     {
@@ -13120,29 +13242,29 @@
           {
             "title": "Los Angeles Lakers @ Phoenix Suns: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBfTUtSdDU1a29DYjJDSS1sTXQ0aFdhcFdmX3N4bm5yR2FnWDBmV2NrTHNjT1EyRXhNcXhlNks3OUQtZ1NXdk05QUhlMVZ2WUk4aTctZW1PaFlMYzNVTm11M1ltV2puWDhRcS1nNTlqQnpXSHhwbjlvRzhJTXM?oc=5",
-            "published": "Sun, 15 Nov 2026 13:22:58 GMT",
+            "published": "Sun, 15 Nov 2026 17:01:41 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
             "title": "Los Angeles Lakers vs Phoenix Suns Nov 15, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9meEFaR0lVSW45S3ZVelhWZS1zSVdmc2s2UjBpSFBsMHJ3Vmx1M0JvYVlHY01oZElFZl8ySHRZNE12b2ZyekYyNlJ6c2FSaXBmOGxlQzlLbWJGQQ?oc=5",
-            "published": "Sun, 15 Nov 2026 10:56:25 GMT",
+            "published": "Sun, 15 Nov 2026 17:00:10 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
-            "title": "Los Angeles Lakers @ Phoenix Suns Odds",
-            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX1RXZjliaVVMeUE3RHZ2ZDVTWXlOcU9HWHEtT3JRN2IxTHFwc2sxdGJCRlBWT1l2amlDZklHeTlfaUZBd1VVN2pmWGZNazZKWlAyOUFWNVBjX0JNVVJYQWZ6Z3lHUEpYOU44VjQxazk4ZHlzM0NFaU5CbmlXbFpUQ2RYOWZjMzBJemM0U1AzbGgyQQ?oc=5",
-            "published": "Sun, 15 Nov 2026 05:06:25 GMT",
-            "source": "FanDuel Sportsbook",
+            "title": "Phoenix Suns vs Los Angeles Lakers. Live updates, NBA analysis",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeHlxd0xYVW9RY3RhZlpnZjFLbWEyQUpjVThFbTRDSklzVXo4WUQtZHl2Tk0zTU5jcDhWMkhtZ1hGTURsMWNsY2xLSHhhUVM4cXZ2TThidTdBZGJySnRzeFp1cmVFZmZZNWRMcHM4TFhxMmQ5bnlaYWt1bGJXWmswc0dqNEwxMVJIcXo2blM4a25sd3VlekxwTVdXRUpUR1hJTmpZRkVwc29tcFRhcXZXcXh4M3BfRmxfZVd4LWlMSVZCNi1qR05j?oc=5",
+            "published": "Sun, 15 Nov 2026 14:42:00 GMT",
+            "source": "The Arizona Republic",
             "feed": "Google News"
           },
           {
-            "title": "JJ Redick delivers major Luka Doncic news ahead of Lakers’ Phoenix Suns clash",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRDRqUHlRWVF0ZS1KcTlmS096RC1lWlpPUVRodk5pN3U3M2hobFh4akE5dWVWc0pma1lxMzhheGFrM0VyckVhcFltTDZScDBqMnlsdGNBeS1JMm1hNkc2OGtpM1V5SjhQYmJMRHc5eGxtNFRaRkVYc2JzNElKRzZyU29lMVljNGpxdkhjaFhIVHhsOUdRMUdhQVpMRmZXQVU?oc=5",
-            "published": "Sun, 15 Nov 2026 04:04:17 GMT",
-            "source": "HITC",
+            "title": "Lakers vs. Suns Prediction, Odds and Best NBA Prop Bets for Sunday, Nov. 15",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUTlNOURWRWJXZDZQbVVNdHFsVXdkQm5CSmJmU3V1MmFCNEwtUmNMSVN3dVpZWHk3dHI5TlJ4Q1VCRlZCbmcxWmpBUVU1Qmh2cWItbkZSZ1owYTdnd1FiVmhZcUZSUzM5aWdfQWVZV3o5NFFnZ2E4OGJaeVU2akZ0WWlXOGVqLUF6M1lMcy1XYS1HNi04djdPUFQwVDRyVjU5VG1hSE1R?oc=5",
+            "published": "Sun, 15 Nov 2026 16:54:33 GMT",
+            "source": "Sports Illustrated",
             "feed": "Google News"
           }
         ],
@@ -13157,7 +13279,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:31.132426+00:00"
+        "context_updated_at": "2026-11-15T19:22:37.741063+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13234,29 +13356,29 @@
           {
             "title": "Charlotte Hornets vs LA Clippers Nov 15, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKZnczQzF1UzdZaUZnMk96WExob1FlRW9nSGkzRl9YUTl4STBKOXhQVmJNTm96dW1rZEwyWXRRZ1cxVFBiUWVrejV4NVh6ZlNqbjBHbDRlMERZUQ?oc=5",
-            "published": "Sun, 15 Nov 2026 08:11:22 GMT",
+            "published": "Sun, 15 Nov 2026 17:22:13 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
             "title": "Charlotte Hornets @ Los Angeles Clippers: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB3bXN6SzJ0TXRhMlgzQjlaTl90YmhyRkd3ZE5ULWloa2tOWkwzWG5hSzNYcnlYODMyQ3hYd0toTlFLaG8tODFMWUVMVGxsNFU3STIwWGZUVm41N3ZseUJscHpSNWhVSVNBOEpta3VJRDVNd19NWG80WG53?oc=5",
-            "published": "Sun, 15 Nov 2026 12:09:15 GMT",
+            "published": "Sun, 15 Nov 2026 17:02:51 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Charlotte Hornets at LA Clippers - Where to Watch, Stream Info, TV Channel, and Live Updates (November 15, 2026)",
-            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOd2Y2ZDVqVG9ZWjJicnhtQms5cmF2WGMzc2NBbXlJYXRCa3JNUkRGaFVJcWVHdTl3d3FMZkJBeklJZkcxd01sTU5wTGZSWUFnNjdKaUs4ZWtlRGtiZ0tSWVZ6eDhXZTZ1d2Q0YnRxNUF2ME1zNnAxYldhcDJmeHZqSVFjYlEtdjI4VU1vUll3X0R2VTBqSUdDMFcyUk5iN1hzM0xlM3phbzRVNFdnSTRhT1paRzNVczlxTEN3UWNrVXNSeGpsajR2RTlPd2RRVlk?oc=5",
-            "published": "Sun, 15 Nov 2026 11:04:18 GMT",
-            "source": "Fubo",
+            "title": "Charlotte Hornets vs LA Clippers Nov 15, 2026 Game Details",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcnFWVXMyMXBDQmwwV19aZlhORGFzUC1WSzAwbXRLWUcyYjNFaUIzSjJmSm9lTWU1OXRIeG9vTGpPQ3o1dUY1aTZSc3RTR2M0QVZnWk91QjVadE4xVEpoNVgxWmJ1d282MGlBaDZGZ29iUVY4ZjJnaVRFRzFxWjJpdk1kOFEtQjJweU5ScEh0VmE?oc=5",
+            "published": "Sun, 15 Nov 2026 18:35:58 GMT",
+            "source": "NBA.com",
             "feed": "Google News"
           },
           {
-            "title": "Hornets vs Clippers Game Preview: Two Struggling Squads Clash at Intuit Dome",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPd1JzUHE1cDZva184TUZSQ0hkc3M5Y1E4ZVEwZVc4SnlYMTFnUVctZXJmdXQyLW10ODVzOEZCc2xvMHVmNVl5UVFmbHlfY3pwd0JRRWJaQUhHc0ZhNXlidWswRWNOS3pxRnFFXzdhZWM5Wjh5SzdEOFFxSS1QcU1wOGltN2ZfMDRG?oc=5",
-            "published": "Sat, 14 Nov 2026 20:47:56 GMT",
-            "source": "Yahoo Sports",
+            "title": "Hornets vs Clippers Prediction, Odds, Best Bets & Team Props – NBA, Nov. 15",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbldsT0JqdFdEblJfTzBRamtfcDBiV2tRb1YzMFVQMFNxMGsxQzZPTVd3dWtrdk16S2ladkdKVFF4dUxQUVU5SmlVblF0aUlKY0dwOGFPVUtHSUxiamhiNVY3QnBmTzk5YUE1RnZvWG84MEFUZzlvOWJ1eFo2YUVIaWxOenVLWDRFRjQyOVZ5NElkRmE1d1Rxb3pJT3pLaUU?oc=5",
+            "published": "Sun, 15 Nov 2026 14:22:54 GMT",
+            "source": "sports.betmgm.com",
             "feed": "Google News"
           }
         ],
@@ -13271,7 +13393,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:31.716191+00:00"
+        "context_updated_at": "2026-11-15T19:22:38.195686+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13356,29 +13478,29 @@
           {
             "title": "San Antonio Spurs @ Utah Jazz: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fYzg1RnRoYTNCekpsaXJkVS1FaGdWSmVCb1lLNFdUa2FqUEI4bzVnZ3l2X2lsYUVYMnlCek5yZWNINHdxb1ZqUnFKYktVamx5T01mWi1LNm1KV3ctNWlRU3l5N29OSDZVMERnWVFxZS00NjlGbzZZ?oc=5",
-            "published": "Sun, 15 Nov 2026 11:36:14 GMT",
+            "published": "Sun, 15 Nov 2026 17:13:55 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Game Preview: San Antonio Spurs at Utah Jazz",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWFdCbUhPUGlKR2ZBZDQtS1JiV2VZczJNQk0zRjcwZUJFenJyck1TWEt3OGw5Y1BZSmRmM2c5MHpvTGFGdUlXQ3JqVjVMVnc3ZFl4QnRNQXRkQnc4b215enNleDFCSTlkbUtBYjdUV2tqS3VENVRudTNXOUFaaGVsZnZSRFhtalpGRFZuUmdDX0dzemdBeEo5bE5VWWlmUUphWFBpZw?oc=5",
-            "published": "Sun, 15 Nov 2026 08:00:00 GMT",
-            "source": "Pounding The Rock",
+            "title": "Jazz vs. Spurs Injury Report Reveals Major Problem for Utah's Rotation",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbVFadTJ3QUt3ZFd6SkEyYzZYNHJveENkY01mYzhMV0pGaHV3bnFjb05HM2RNejBHV3A2elBLMW5LQ1hGLTh4Y3lXV3Z2SWlHZ3VnN1dVSUs3aUg4SlhVS3hYMUx6ZjVaWUdtRm9IckptM2VMVjNhbVhHUXYwUlh4akNPSDRiMzA4M2tYV2tQZ2J0Y2prdEZGYVhNTlA3S2N3MFE?oc=5",
+            "published": "Sun, 15 Nov 2026 14:00:01 GMT",
+            "source": "Sports Illustrated",
             "feed": "Google News"
           },
           {
             "title": "San Antonio Spurs @ Utah Jazz Odds",
             "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSjZVa1Z3eXYyUklISERYZHBaei1wQ0JoNXdIOVVxUmlNdFRHX2s1cENjZVZycjNSazBjOExkc0NqaVNBWUVEaFRIczYySzJQekVPMV8yd2w4YnFnX1plR2R5T3o3VFI1REZSNjZBeDhtUk8tejBTNDViWmtya1hzUHlYZVdmTzMySUhNUQ?oc=5",
-            "published": "Sun, 15 Nov 2026 03:07:52 GMT",
+            "published": "Sun, 15 Nov 2026 16:02:05 GMT",
             "source": "FanDuel Sportsbook",
             "feed": "Google News"
           },
           {
-            "title": "San Antonio Spurs vs Utah Jazz | November 15, 2026 | NBA Matchup",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tbHBJYV85dWFBSklEdDk3c3VzZXNMZU5aRzlZV2p6UWt5VWRxaHhaenQ2d3FUWmkyYXlnVkVRSlFhSDJaQXUtOE5aSjV6T1JZRGsxZGtISWxoSkl4T043MkwxeUxBVDJ5LXJRczlB?oc=5",
-            "published": "Sun, 15 Nov 2026 08:16:09 GMT",
-            "source": "theScore",
+            "title": "Preview: Utah Jazz Host San Antonio Spurs",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1M2xERmhfUTNENXhiVThkNWMyemxFLWQ0WktiNURJeVdTaFNwYnlCVWNwUGpSbThRYkJaVTdVX3JDTWJod2FDR3gwNVpqeWVlazc5RG1PdTAzclh3TTV5SjR4VGg3VkE2cHo0WEhoRm5saHVSQjhoSElvVEI?oc=5",
+            "published": "Sat, 14 Nov 2026 22:18:00 GMT",
+            "source": "NBA.com",
             "feed": "Google News"
           }
         ],
@@ -13393,7 +13515,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:32.289926+00:00"
+        "context_updated_at": "2026-11-15T19:22:38.841586+00:00"
       },
       "head_to_head": [
         {
@@ -13490,31 +13612,31 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
+            "title": "Dallas Mavericks vs Boston Celtics Nov 15, 2026 Game Summary",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE52RVU5WXNITEc5cE1YRDBaSUxqWTJMQ1htektKZkRxM3A5dE43ZmRqdThBZEdZMXpRT09LOG55eFpQbmdJYVRHbVZNek1FaERRM3dFV0VuM090QQ?oc=5",
+            "published": "Sun, 15 Nov 2026 16:24:04 GMT",
+            "source": "NBA.com",
+            "feed": "Google News"
+          },
+          {
             "title": "Dallas Mavericks @ Boston Celtics: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1HekVFWENyeG1GNmhpNVlSckVTN2pVTndSSzBHWWNTUlV2ay1uWGI0QzRPMVNQTHZkQWptR2s1dFYyUGdONmNJX3ZnQkdEeDk3a09XZEozbGR1NzRpTHliNm9raXlLeTd1bE54a3hTUm5xVWQ1dmNScnNhX18?oc=5",
-            "published": "Sun, 15 Nov 2026 11:17:26 GMT",
+            "published": "Sun, 15 Nov 2026 16:55:41 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Mavericks vs. Celtics - Live Score - November 15, 2026",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjhjR2RsMUhYaFp1eU0tanR2TFdYcnN4THhSNnAtWld6WndpRVczczZmR1FJLThGT2I3RzlOX0tYLXdSZHN2aWFDX29uTktqQS15NksyWk02VVlUeVN4a25YNW44OVRUakdZaXZXaGYwSmhIRlJKS1B1NUFDQ2R4YV9rNzB3ZFFJcVRSZmVxZDhQcW1wYUF2TklVNlo0QQ?oc=5",
-            "published": "Sun, 15 Nov 2026 10:17:37 GMT",
-            "source": "FOX Sports",
+            "title": "Boston Celtics vs. Dallas Mavericks - November 15, 2026",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMy1UdjZ1RnpYUkpWYTZnSTlUcHZoZExZTGo1WDlhbllOZXVGSVYtVXVhSmYwODRSYmJhalNVMmlOeGpGUTdBTmRhU294ZnZjcEZBMlVqM19wRW4wTDc3RTBHc0xvVTJ4UUw1QTBVcl82dVVNRUJSczZvQWhVTmU4NGRkdzNxMFREVFZr?oc=5",
+            "published": "Sun, 15 Nov 2026 16:31:08 GMT",
+            "source": "Bleacher Report",
             "feed": "Google News"
           },
           {
-            "title": "Dallas Mavericks @ Boston Celtics Odds",
-            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeUtWZHlibXdXQlZKcjJRX29hVWZHejRqT3JlVUtnQmhCWVhQNlMtT1lUaTZRMWlzQ1VXdDNzQlRwQjg1YUxqMXQyR01ocnFqRXl0ODlBZVlfaWc2Q2JmaFhEejExc0JnT1hXcDFESVpWS25NRGpMMTRKWFY4RHN1MEY3T1lnWHNMNjFEaW9hMHhpZw?oc=5",
-            "published": "Sun, 15 Nov 2026 04:50:57 GMT",
-            "source": "FanDuel Sportsbook",
-            "feed": "Google News"
-          },
-          {
-            "title": "Dallas Mavericks at Boston Celtics - Where to Watch, Stream Info, TV Channel, and Live Updates (November 15, 2026)",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdkZzX0Y4QkNsckwxcndEWGtFN3NkZklkNW9oT3lmd1dsclNoa0dPYTNSSDVRRkROMTVDMTlCd1EydnNnY2dmSzM0SU5LTlpMUHNpOE9WY1N6bm1BakRZYlNaSVNnUXByaWhGS1g3ODYtT2M3NmZhc3hfVDhZQnNMdFBsMWVIRGZJNEJCU3Z5SzdxSFJmMi1TNl8zSnlDOUJQMXZkU0ZFR2JmUzNieDlyZlR0RDltM0JKeGtlZjRxMHhKYTNIU1Y3ejd2SUVBYjEtT1E?oc=5",
-            "published": "Sun, 15 Nov 2026 11:04:18 GMT",
-            "source": "Fubo",
+            "title": "Mavericks vs. Celtics Prediction, Odds and Best NBA Prop Bets for Sunday, Nov. 15",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPby16eDc0VTFoYVRkNHp4WGUwNzRieHl0UjVGSU4yWHkwSFBOUEtRbWtRRkJZbEl2X29xeHJjSVJFNy1mV1BwV3BpdmoyZzhnLTlIcVlsTFA1bUR0emxJWVdDTklOVkdCZ2dBUldGZEE0bk9YbU9aZTIwTlBSemVWRTJ5dzJxTzBxcVktX1B5RmE4enVyeHFKd0MyQzBWMEFUWElOYVpPSGNiVzBVUGc?oc=5",
+            "published": "Sun, 15 Nov 2026 18:17:46 GMT",
+            "source": "Sports Illustrated",
             "feed": "Google News"
           }
         ],
@@ -13529,7 +13651,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:32.908431+00:00"
+        "context_updated_at": "2026-11-15T19:22:39.470446+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13611,31 +13733,31 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
-            "title": "New York Knicks vs Toronto Raptors Nov 15, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2b2lsbzVOWlNEbVlGblFpUGNYRDkxcXlweUstcHMzbVNpM2NFamlYYWRsMVdIN2tVYnl3OTVidEJMTXduVXdZdlFiQlBxQW95dGVCMkpQSWE5Zw?oc=5",
-            "published": "Sun, 15 Nov 2026 12:15:21 GMT",
+            "title": "New York Knicks vs Toronto Raptors Nov 15, 2026 Box Scores",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HRlRuUnBwS1ByWGcyM0hGX1lYQXRfb2kzd1JLZkwzNkZpVXNRWi16R0QxclhNR2d4OXk0YjlQZmMydUtvR3pBYkV1VHc0YnNSTmxZdDlDWHo?oc=5",
+            "published": "Sun, 15 Nov 2026 17:04:13 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
             "title": "New York Knicks @ Toronto Raptors: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXU3BSRmJ5cXZNUlVFRmtqd1BpdzZKbnZmd1BLOXZzZWZoa09CclZycVdhMllNcTRlSzE5dzVQd2FOOFd5c0NyVlJJUTh6Sk9jRTM0bWlZd1NaRm9BZDNXaDYweEZmMUFxdlJEbzRRWDBqWmJ1aUVtcDhQZ0k?oc=5",
-            "published": "Sun, 15 Nov 2026 13:04:51 GMT",
+            "published": "Sun, 15 Nov 2026 16:07:17 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Scottie Barnes Injury Update Could Change Knicks vs. Raptors",
-            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOW5lMS1jNlVnUnNFN1VaMzFpMTBOejBObENMTVF0WDBlZDhuaUdjMmN0cDJKcWxsNUFBeHNCMWFwZUVYOGd2N0NqckZNdmpyMFdYWnNEa2NmTFZuSUJOODRnR0Y4SGE1UFVldWJfUWkzRmZnUjZEay1RWDZObGxULTMzVU5yM0VrSzZXdWwwYmtaSkNvcWdQT0o2QQ?oc=5",
-            "published": "Sun, 15 Nov 2026 11:00:02 GMT",
+            "title": "New York Knicks at Toronto Raptors odds, picks and predictions",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOa1VYb0JmNlFLcGdjaXg5T2cybGY0QTZFMlFGVnUxODVOdktQYmZTQ1J2cFJHdVpRRlE2QTJMWHQyeHB6bVdvRm5VZUFKUFRfMDlGMlExTXBBZmFKVVhQMkpYb01XeW1FWkRRRURiQ0NiSktmbUVxQ1NQQ2RBLXVGNFlmYXd1WVE5TDZaeS0tWXA3cmUxSUxKX2dXeEFkRlhhU0ZaN0pNeFI4WHVZaGk5aUNCUlJVbDdBTXJycTkzVkRMalU?oc=5",
+            "published": "Sun, 15 Nov 2026 18:34:00 GMT",
+            "source": "PhillyBurbs",
+            "feed": "Google News"
+          },
+          {
+            "title": "4 Questions Raptors Must Answer to Beat the Knicks",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVjlqUURlaVpaN3lsMk1zSmpzOHRaWUtwQ2NVR2ZQSmJUa05OaWpsN2ExR3J2dUM5WUJCcTJ3azZOWDJDZmhvaktmWXZuUzJIeWNkYnlCaVZMXy0tcHlpQ19YSnotYlBSdEtONVR2SzRXN2U5ZXVzcDBiemI5bGxpWUtqYnpHUW1wY0NiUndLQQ?oc=5",
+            "published": "Sun, 15 Nov 2026 17:00:03 GMT",
             "source": "Sports Illustrated",
-            "feed": "Google News"
-          },
-          {
-            "title": "Raptors vs. Knicks Prediction: Preview, Injury Report, Advantages, X-Factors",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRC1OemI4SkkxbkV5alVBRlk5RTU2Q3p6dEZmUkwzWnE3N2ZISzBzbTNuNEdaTWhtdHFLQU5JOGtWdVhSSF92MDI2ajFHbFB6b1prRTg4dlE2NVZvN3pGRUJXZ2sxWlFIWXFTemYxRXBiV0hsWkp1LWNBRXc5SzZYU3hXUUhTVFR0dGlWYUpB?oc=5",
-            "published": "Sun, 15 Nov 2026 12:02:37 GMT",
-            "source": "Yahoo Sports",
             "feed": "Google News"
           }
         ],
@@ -13650,7 +13772,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:33.523689+00:00"
+        "context_updated_at": "2026-11-15T19:22:40.132667+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13735,15 +13857,22 @@
           {
             "title": "Houston Rockets vs Washington Wizards Nov 15, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIemszYnk5T3VwVXptSzIzbVo0Qm45dmNMZUp3UTRVUjBxRThlekE0SGl4OFVJNEpXd0FydEw4QUROUXFRWlFfcnlKOVJkUU1HR09PamJFNFUtZw?oc=5",
-            "published": "Sun, 15 Nov 2026 12:59:28 GMT",
+            "published": "Sun, 15 Nov 2026 16:07:58 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
-            "title": "Houston Rockets vs. Washington Wizards game preview",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0pVVUtrUUIxdFhjR2Z4M2dQRzQyaFR4UDJZQzJ5NVRDaGo1SHBKdmc3Z3dEVklJMjc0dHFaemZmZVZ1VExFYjdZX2o4VUVORHlXRkxzR2VDcGlzelRxWkl1aFRnMmJBMHhTX1ptLTBUZ0FFTVpyeERBWUYzdUdLa3QyckhPODlacWtDMjJ0WQ?oc=5",
-            "published": "Sun, 15 Nov 2026 05:00:00 GMT",
+            "title": "Houston Rockets @ Washington Wizards: Live game updates, stats, play-by-play",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOY19RY0cwZHl6eXQ0TXNHb004UmxvZlB5LTgwVmdEMUhtZWRkektjQTVUZm9hRzlpLTZYbC1KLUpCUDM4YThRbXZCWGNVX1lSd3ZDNzVVSUlwbVRCN1drZlBSMHJRNWhJN3dpZHh6ZktyOHpnSUlPMEVtbWZJNDlFcg?oc=5",
+            "published": "Sun, 15 Nov 2026 15:11:49 GMT",
             "source": "Yahoo Sports",
+            "feed": "Google News"
+          },
+          {
+            "title": "Rockets vs. Wizards Prediction, Odds and Best NBA Prop Bets for Sunday, Nov. 15",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQc0NFamlMelFIRUhCN1dvM0hObWxTenBZQTRwSVl2Uy1OTWRqT0JoSEdYeURSZTV0SzMwdTZVeFdOMGtRU29ybG9EdGJ3aEdfbzlkNUpOYXJMNWVBdVRWSzZlOW5tREtVQjlFSFg2NFBTWkZubGc2TWkzd0hkZm9ZSEl5Wk1YV3BhM2VQOUJ1QzgwdDBjNWNvYjMwc0V5dW5kbXVjeTFBaENxOU0?oc=5",
+            "published": "Sun, 15 Nov 2026 18:38:07 GMT",
+            "source": "Sports Illustrated",
             "feed": "Google News"
           },
           {
@@ -13751,13 +13880,6 @@
             "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb29BZDJ0V2k3V1Njd3JFQkktaFFIYTJnMXVaaHdZUEFYVVFJUUJEWm1lX1J6Zl9ObWpuVE85YUlOX3gyTDllWWsxZUdkWlRjbnF3R1VvUnhCSzVHNERmaTBYVHE2bWNDLW1kZkhfbHBRMU9udDVINVZSQk1hTlZVQTRuUWlKUFcwbm5admxkUVFnNWVMV2hmcw?oc=5",
             "published": "Sun, 15 Nov 2026 12:47:47 GMT",
             "source": "SportsTalk 790",
-            "feed": "Google News"
-          },
-          {
-            "title": "Houston Rockets at Washington Wizards - Where to Watch, Stream Info, TV Channel, and Live Updates (November 15, 2026)",
-            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPby1iVlBNNklXY01uWUUzVGQ4UzF6UUlpTHFQXzBZUy1yTWtTaGFqU2xXX3dsbmlrMVplVDU4QzhCQmJEZnp4MHN3NnBuR1lzTTRGbnNZU0tLVFJYUkdGUmZ1NHBscWZmeXdGZ0dTekFJLXhvZFJMUGVXS0FOZENaLXhNVGpHNWJUYnl5eGp2XzlQSXVIanFFaU1mSVZfYl9hOGViUi1iaHR6ZGhqQy1PdzF1ZTlPQkN3NWNoWklLZzYtV0tCbkUwREF6RWl6akE3NjBfWnJR?oc=5",
-            "published": "Sun, 15 Nov 2026 11:04:18 GMT",
-            "source": "Fubo",
             "feed": "Google News"
           }
         ],
@@ -13772,7 +13894,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:34.072813+00:00"
+        "context_updated_at": "2026-11-15T19:22:40.581274+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13856,29 +13978,29 @@
           {
             "title": "Atlanta Hawks vs Milwaukee Bucks Nov 15, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BTlFlM05odUp2WEFvZktwTTVxQ2dqZ3Y2amtsNWxXRHVYM2p6TEZ2M3FhdkxRWHRvQkhkTzJMT3hpVjFKRTM3dlc3amQtVHJqeXotdldLa2Z2UQ?oc=5",
-            "published": "Sun, 15 Nov 2026 07:55:09 GMT",
+            "published": "Sun, 15 Nov 2026 14:51:52 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
             "title": "Atlanta Hawks @ Milwaukee Bucks: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1OMVplWWwxWG5wSF80VmVKM05jTmFXa0tQblFOZi1ySHZ0MUs3ZFJRX3NiMFFBWHBWLUVvbVZoNlRTcUMzaTF5V2JqZTNMcXg2RUdRNlJjQ0pjOUwzVFp6dWFEVUl2SW42cXNjaVVmWXNMUWNXbW0ybHRB?oc=5",
-            "published": "Sun, 15 Nov 2026 11:36:14 GMT",
+            "published": "Sun, 15 Nov 2026 13:43:01 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Atlanta Hawks at Milwaukee Bucks - Where to Watch, Stream Info, TV Channel, and Live Updates (November 15, 2026)",
-            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQTRMcGgyRDFUVjAyd08xNW1kTHJ2b05HLXhxRy14RUJhSTRhSVpWUElISjdpSTVuQ2p0bmJkQlpsZmc4UHZSazFOMmcxaXB5MklObENKQ3BkNmpYdGJldFNEZUtsLVZUckdUMzE0NlVLcHl6Y3o0TjlWbTRHTzVacm9KWVNOQXRwMDVzaGRTbkstVGpvWUMzUzVCWFphWklwcHZwbm5BaHVCZUw3UEliRlpnSC1zQmpOMjhpaU9rQ3NvcS1kWEptRnpDVEFXd00?oc=5",
-            "published": "Sun, 15 Nov 2026 11:04:18 GMT",
-            "source": "Fubo",
+            "title": "Three Bold Predictions For the Atlanta Hawks-Milwaukee Bucks Showdown",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMjBFZGNPUEVSSHh3Rm5FRTZueUdfMUJoNVVjUE5ERXRIN2ZKZ0dfOGRIR2VONTF2WkFUTGhEVGVJMTd2MVZReFM1dkhVcUVXRW9qLTFNYmNSazFTNWRuSXJ2VjFqWnN3bzRpNGJJVWlta0ctUkhTNTVrWWRjMG5iVjhvTExKSDJsXzdtakNJbkVUV2t3ekY4Z1BHVEVxOXVtdWNQYW42bkJLdGp1RG1LQ0l5VWlhUjQ?oc=5",
+            "published": "Sun, 15 Nov 2026 18:04:28 GMT",
+            "source": "Sports Illustrated",
             "feed": "Google News"
           },
           {
-            "title": "Milwaukee Bucks vs Atlanta Hawks: previous stats | NBA 2026/2027",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVlg2N2VDWmlWMzFCU2xrS2dWUzRmcUc3RDZ0Znl2RjB1N1BqS1lwZ0RhUEQwLVZVVk9CaGxPXzZnU3lIUFA5cTZUUnRyenhPVUR6U09INmRLQzJZVm93UTRSeEdkTllzUnpEeUd3T2dCZDJZbkhiVml3U2RmVzBCTEtIOGZjUXVnWER6U1d3eHBsYWo1OXc?oc=5",
-            "published": "Sun, 15 Nov 2026 05:06:46 GMT",
-            "source": "Diario AS",
+            "title": "Atlanta Hawks at Milwaukee Bucks odds, picks and predictions",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWnBiTldIcFBxeElaS3M5UjhDMTVlSWZKdFlOZUVfRlFtTkR5aGM0Z1JFcEJINTdnaVlPeF9YYUVyQ2RqWTRTX2oyaVV1NzdfdjRqUU96NDhreHFVa1EtcW1HMnpYNFVwZWkzZkNTRnRzenZFUGh4Y256QW13VDllT2twV01lMEEwQ3VfeURiNlY4X1FGRmdDNVJHVGxXMHp0ZkgtR0RHaEFLZlBCaUtuUXZQR184dw?oc=5",
+            "published": "Sun, 15 Nov 2026 16:49:00 GMT",
+            "source": "South Bend Tribune",
             "feed": "Google News"
           }
         ],
@@ -13893,7 +14015,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:34.589945+00:00"
+        "context_updated_at": "2026-11-15T19:22:41.112378+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -13977,29 +14099,29 @@
           {
             "title": "Oklahoma City Thunder @ Sacramento Kings: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPelVhRzcyS3ZqQzdfdDQ0TExRTERhekpBc0F6NmU4RVFhTUZOYXpPVk1Uc05tVU1mWnNuOTlLUG5nT0RqNDhqZDV1TlFkSmZsNHJ0YlBJeEkycmJ3cnBJbmdfZHc4S1NjTUJSYVl2NUo3bEdELVZSWVdSeW1jUjc5c3FRYXFTUQ?oc=5",
-            "published": "Sun, 15 Nov 2026 12:31:35 GMT",
+            "published": "Sun, 15 Nov 2026 17:01:43 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Oklahoma City Thunder at Sacramento Kings - Where to Watch, Stream Info, TV Channel, and Live Updates (November 15, 2026)",
-            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcmxMM0lVUGN3WTgtUjlvOWxvN196bm5SdldlN2hoOG5tYnFuZ1dib3NFQUlpcllRc0ZFV2FGeURHS3pVMXgtZVVDdHAyRmxjeHY1d21NOXlucVZqekV1cWxKaHdPbkk2YXBtQ1pJTGFwTE9ILUFlaXJWUE42RDhRdkdPT0NqS29CQXdubENPeWdKX0FnQ3dGUWQ1S1c0RXNMcmZMTjNzZGs1NnFkSkFqaVJiRWRlSEJpVG9yWTNpOGNIakIyd3A4Ykg3UTEyS3hVZ2s4ZGxsWllmSFU?oc=5",
-            "published": "Sun, 15 Nov 2026 11:04:18 GMT",
-            "source": "Fubo",
+            "title": "Injury Report: OKC Thunder, Kings Combine to List 12 Players",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNWJ4MXdkS2ZDc1dTeWVCVTdhNVlsQjcxQjZvT2ZOLW9BZkVnUlQ3WTBRU1BXRjNiVE9rMGN0ZnpKQ1ozUi1PTnhMdmlJREQxYlF0YU5iUE9zVmFZN0wzRkwxMjZ1X09saUVjclJTNEZGZThtRUtadDlKbGgwakdhaUJaSXh5cWctWENPNGNvQWlrRUV3LXF4SVF3?oc=5",
+            "published": "Sun, 15 Nov 2026 18:37:37 GMT",
+            "source": "Sports Illustrated",
             "feed": "Google News"
           },
           {
-            "title": "Sacramento Kings vs Oklahoma City Thunder: previous stats | NBA 2026/2027",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOHYwd1N5aWpmdUE3cVVZRmtPNnVCdENmYnVST1RGNGhLbE9hdkp2aFhKeEtJSk5wNTZTUlg1MW5RVFJWMEZDLVhWdEhLTDhCbHNVZV84N2NRYTBXMWIyZGxCT0JQZkpDcTMyaTRQVWNrMXZLcnRzVmRJRjFsMG1WdTFVbGFtNUR3YjBKd0FLNzR6a0xXWHc?oc=5",
-            "published": "Sun, 15 Nov 2026 05:06:46 GMT",
-            "source": "Diario AS",
+            "title": "Oklahoma City Thunder vs Sacramento Kings: How to Watch, Odds and Game Preview (November 15)",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaHluZ3VRNTRsU2JvX3hSVFlBZjVXRkhoRDM5Tzd3YUhtaTNRMHAyUGt2RlloQ3UtWEg2cDc1eFRoS1dNSmpQYXA1Y0pGdFhDT2c5ZVlGS1VpcDVrZjBHalp6Wmp4ODVOU05wdFBrNEFuX2k3X3ZGWjdPVnUyc3VsXzRNMzQtaS1zTkVQRA?oc=5",
+            "published": "Sun, 15 Nov 2026 18:14:33 GMT",
+            "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Sacramento Kings Complete Trade",
-            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55M0JhSW9SLWMyaXpiNGVMM0dTWmdHQnZaUFNRYkdUR1MtVFh1REM4Z09JXzZETlNpRnVoM29OMHdZcnRSWXhMYVhhSHB1SHZsRDJYTlhMcWVLWkMwaXRLR0JmdTE?oc=5",
-            "published": "Sun, 15 Nov 2026 08:26:09 GMT",
-            "source": "NBA.com",
+            "title": "Thunder vs Kings Prediction, Odds, Best Bets & Team Props – NBA, Nov. 15",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWUVmcGg1bExEbE9aMW82NGk2dHZMUHpsT09NM1FLQnN3Y2tzQmtwS2xKUURSLU4xY3NpeUdEX09QQXVHdWppVTNOakcyOGtlcTFjUkF0MjhrNXVQMFpwRTJzbTJfNlZlN0JWZzhkT3RoYjlpc25RcDRpZGpWSHo2SERxLVkxQUhIV0YwcTlxN19QM1o1Y1BHS0hLTQ?oc=5",
+            "published": "Sun, 15 Nov 2026 14:22:54 GMT",
+            "source": "sports.betmgm.com",
             "feed": "Google News"
           }
         ],
@@ -14014,7 +14136,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-15T13:51:35.122715+00:00"
+        "context_updated_at": "2026-11-15T19:22:41.834966+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -24338,6 +24460,13 @@
   ],
   "news": [
     {
+      "title": "Catching Strays | Knicks’ Josh Hart is ‘not in a good headspace’",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tYWVNRUpjZFY3eHJHZzBkdEtjc18ySEMyZEZYM3BsWUkwSkVxOUNKZTFxOUNId2M1cXFnclNlQWZ1NEFIQ0txRHI0X3BCbmZDb29EWUFqQ3RCUFBTTkY0bVVlRG9taF9tbkt5RFVxYV9qcDV3dXBPMFNBanQ?oc=5",
+      "published": "Sun, 15 Nov 2026 18:26:56 GMT",
+      "source": "New York Daily News",
+      "feed": "Google News"
+    },
+    {
       "title": "Antetokounmpo scores 34, Heat block 14 shots and roll past Pistons 137-117 for 4th straight win",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWnQ5V2lsRG1iN2JOQ2FuMzczdWdTNEdOeXFTb3hhYklHSkV4eUl6b0VGRTBjV2RRR1k1UUxLUWtzMGIxd3RVeVoyZEtwWkxld0tNaEpsMFRDeS1wZnhFUjZKRWxvb0wyOUJaY0xJVzRJSlM0TjBjMkdaTGNBNnlIX1AwWElROTU0VVh2SkJ3ZC1xUXNmcUROV3ZJNWctNDg?oc=5",
       "published": "Sun, 15 Nov 2026 03:55:30 GMT",
@@ -24352,17 +24481,17 @@
       "feed": "Google News"
     },
     {
-      "title": "‍‍‍~!!【OffiCial+NBA】 Memphis Grizzlies vs Brooklyn Nets 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ",
-      "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxPN3BuQ2VSWGdhRkdSN2RFTzdYam1ZTmY4LU04OHdoa1RoZ1R6QWFzUTFGZkxTY2NoSGdQd3NEblk5ekJpcHpNVFdTOFloOXZldFRscVRqOGMxeWNOWVpnWlBxYzdESlpkczcxR2FBOG9BS0Y2RnFzLVRxYWVVbG9zcUdqVmVHZHdLcnR1Nk1PWlV2YUFkYkhzaWFGTnJkUnQ3YjRaV2RPcm9udEFCOE9MWjhhemt5V0JQOGtVdE42WkRwUmp5eUpZN1FYTmQ1bHFhZ1hKaVJzQkhyeUFtX3hrX2JEMW9SZlY3VWV4ekJQbjNYWEpGbjl4NTVPUHJGRnYtLUlWUmJVQ0F3ZzlKNl9zTXNqNE96MEJkSWdTakxzWndMRkxReks1RHptX1Q4VFN5bWFFd0NCY2dpakh5TV96MmZlWmFKZldqV2ZQUXNRUlU3OUFHdHk4U2tsRnJQZzU4Y0VuMFNFSUJuQzZFcnB6bkx3?oc=5",
-      "published": "Sun, 15 Nov 2026 00:55:22 GMT",
-      "source": "日本取引所グループ",
-      "feed": "Google News"
-    },
-    {
       "title": "Jokic, Murray help Nuggets hand Pelicans a sixth straight loss",
       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTHM4RmJBS2VLblRObWdodlduRWxFaG4zTGxSVDlXZjEtVW43UnBiaW1aZ08yZFFuZmZVNjdTcHcwVmFyS05DY0NyS2lIR1JGQWo4NXFGbEI0aGtoWG1DckVfU2RxSDdyd2FUV1RYWnMtaXVzZ1ZkZVVNTUxrT2hDLW16OHBVU2NsUERwS0ZETkhTNFVUMWlHNEl2ODNFeHFSUVVjM0Nub2VaMnI4UXIzUEptWnRiMDhFVG9LOU9ZVWxvQ211V1JvWkVLYkt4UUVhbVdpeEFUdFhVR1NsNGlYYTdhdWNyMk1VRXgtbw?oc=5",
       "published": "Sun, 15 Nov 2026 02:52:50 GMT",
       "source": "Messenger-Inquirer",
+      "feed": "Google News"
+    },
+    {
+      "title": "NBA: Grizzlies pull away from Nets behind Coward’s double-double",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQzIwN3BXaWFGdzhRRWVVYmVEM2dyWllkdUROaWRkSUtVZzdwN3Y1eWo4bzFScUdNV2NLNnBfYzZqc0V5ejBKQTZocFZFSXptb3RHam5IX1NvU3FVQWJBOWdXVDRqVDFQWExyajBIV3ZvRkFDX0dyLVZKUHJiN2d1VHZXSkoyalJxbENIektMV0hUajZHS1V3dVZtNnc3UQ?oc=5",
+      "published": "Sun, 15 Nov 2026 06:33:00 GMT",
+      "source": "Inquirer.net",
       "feed": "Google News"
     },
     {
@@ -24373,10 +24502,24 @@
       "feed": "Google News"
     },
     {
-      "title": "NBA: Grizzlies pull away from Nets behind Coward’s double-double",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQzIwN3BXaWFGdzhRRWVVYmVEM2dyWllkdUROaWRkSUtVZzdwN3Y1eWo4bzFScUdNV2NLNnBfYzZqc0V5ejBKQTZocFZFSXptb3RHam5IX1NvU3FVQWJBOWdXVDRqVDFQWExyajBIV3ZvRkFDX0dyLVZKUHJiN2d1VHZXSkoyalJxbENIektMV0hUajZHS1V3dVZtNnc3UQ?oc=5",
-      "published": "Sun, 15 Nov 2026 06:33:00 GMT",
-      "source": "Inquirer.net",
+      "title": "TST Images: Clippers defeat Thunder, 113-112, at Intuit Dome",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5YVHZBVGlxanQ4TUVvQmNDckVVNEc2LVRfamZKWnVPWW5mNEhpckk0ZnlYRGw3eU1tQVlRelByNW1mT2NoRndTbWhNTU14MkxLYjdjelQ3WjdNNm1YMFpVSlhaZ08wYURqY2RXMjJsekRxYWE1aVRLSg?oc=5",
+      "published": "Sat, 14 Nov 2026 06:53:35 GMT",
+      "source": "The Sporting Tribune",
+      "feed": "Google News"
+    },
+    {
+      "title": "Adebayo, Antetokounmpo make Heat history, Miami tops Cleveland 133-121 in NBA Cup game",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPa0tHYWdvb3UzOW1ReU1VVVR0ckRfX3FaTGQwZDFjUmJyYkxFT3ptdjV0eC0tSmoyUGdlOV9UVzl4clJhMEk4RThtYnMxczRVTXNGdFNCVHFOa2xTbWwzOHRuaG1CdDdEVHBiWjBkQnBwbUNCZXJ6Z1AyQzItbFRXd0lPOFo4dkowVG9QUk8wWG9jZw?oc=5",
+      "published": "Sat, 14 Nov 2026 03:55:32 GMT",
+      "source": "Seattle Post-Intelligencer",
+      "feed": "Google News"
+    },
+    {
+      "title": "‍‍‍~!!【OffiCial+NBA】 Memphis Grizzlies vs Brooklyn Nets 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ",
+      "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxPN3BuQ2VSWGdhRkdSN2RFTzdYam1ZTmY4LU04OHdoa1RoZ1R6QWFzUTFGZkxTY2NoSGdQd3NEblk5ekJpcHpNVFdTOFloOXZldFRscVRqOGMxeWNOWVpnWlBxYzdESlpkczcxR2FBOG9BS0Y2RnFzLVRxYWVVbG9zcUdqVmVHZHdLcnR1Nk1PWlV2YUFkYkhzaWFGTnJkUnQ3YjRaV2RPcm9udEFCOE9MWjhhemt5V0JQOGtVdE42WkRwUmp5eUpZN1FYTmQ1bHFhZ1hKaVJzQkhyeUFtX3hrX2JEMW9SZlY3VWV4ekJQbjNYWEpGbjl4NTVPUHJGRnYtLUlWUmJVQ0F3ZzlKNl9zTXNqNE96MEJkSWdTakxzWndMRkxReks1RHptX1Q4VFN5bWFFd0NCY2dpakh5TV96MmZlWmFKZldqV2ZQUXNRUlU3OUFHdHk4U2tsRnJQZzU4Y0VuMFNFSUJuQzZFcnB6bkx3?oc=5",
+      "published": "Sun, 15 Nov 2026 00:55:22 GMT",
+      "source": "日本取引所グループ",
       "feed": "Google News"
     },
     {
@@ -24392,31 +24535,10 @@
       "published": "Sun, 15 Nov 2026 02:40:14 GMT",
       "source": "Daily Jefferson County Union",
       "feed": "Google News"
-    },
-    {
-      "title": "(Live!) Miami Heat vs Detroit Pistons Live",
-      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPZzR1YV8tUTJETENabmdoUFBZbTlJejhtTWdiSmpHRnVGUi0wZTRFT3dKMWFmRlBWR0lwNmZRcGUzSEczamJ5dEVMcnJmdEF5dVRuT0xESWNPTEhtelR3S0RFTTZScFc5Uy14V2lrcXRMUlJaSTRoLW50UnN5WkZCOVNWVk1zdkdpOEZ4ZjFJakc5NEo3bGtFM1VPWDdBODUzVktvR0ZCMFI4XzhGQUZydHptbUhLOVlYZFhzUU5iNEVhWTFOaXRGNU5iMjE0V3VvdUNoQkZaMmRvdmNHbk9uNE5OTEFoX0VVRGxxaF9aSk5KVGYzc0YyQVJDY0V5c20tTlQ2NE1SaU41amtrZmlieFhmc1NsRUhiSEFOX1pFSk9CYmhhTFptaXB4TE1ickFiVlBQZWdkSFM3RWE2bE50MGh2czVmakxEMkZtd1FRR0xmSGJwUWE0WDJwRjJIb255c1BZSktTWGQ1WjA?oc=5",
-      "published": "Sun, 15 Nov 2026 02:09:02 GMT",
-      "source": "日本取引所グループ",
-      "feed": "Google News"
-    },
-    {
-      "title": "NBA: Bulls overcome travel delay, injuries to beat Timberwolves",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZlFFZGcyQUVPM3dFYkhSdWxtNVpJMFpyX05RVGlTWDJjOW85aEEwNGhscFZnc3oyMjJNb0ZNam9nUXRsaVk5aGVYdlV2UHVRc2RETTc0a3loY0NrRHJYcnpjSk4wTFpDNS1OOF8xd1A0UFRkNEZKSmxSbFp1UXlELTQ1cVY3QWd3SUVUVl9NYjdBQ19oY0NuR2NFNDHSAaIBQVVfeXFMTml6OFZ0R3JsX2REOG5zd2ktQ21mNGdTTW5YQjg2VDRMMnVGU194MGlwV3oteWw2S1hmME9FZXVKa3REN0lhMTNDb1Z5R214RVkyLVZkQ3pKbHpoLUJMeHRyeW1nMFhUYzgwcUtGMlNyYXJaT0NmV0lIa3JiYXpTMVNJVUQzYlBhMUhSQkFoYW1vbzBJc0k1d2JibVY3eU5GNWJn?oc=5",
-      "published": "Sun, 15 Nov 2026 06:30:00 GMT",
-      "source": "Inquirer.net",
-      "feed": "Google News"
-    },
-    {
-      "title": "‍‍‍~!!【OffiCial+NBA】 Bulls vs Timberwolves 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOVE80eHdUcnNVSjFDajltTmE0OGNHZ1RnNzBGSUp0SmR0NDd1aF9CRXlkTU9mQ0NPY01TTDVsX1Z0RzhSWGJkZC1WTkVpeDROTjZUU0hVT3NvOFkyY1FwMGlJNVdkVjZfMTFndVREM1lMZzRZYzhvMVhLZ095OFEzWnd4aGxvTnRpWEVRenhRWHhNdXozVDVDaDB4NzNfcVh4bDJ3Vml1RnZlR2ZDQVhGa05BQUt4NjNwcGZscF9qeGtBaEVpbHBjVEJMM1hPOWFBOVNVa2E3NTBoYVdGZmxiQVA4X0pNRHZ3bUVjUWhrQk03SENLTkFMT3VoWXo5VFVtRWUtUldWclB3YzFja2NYcDRQTThOV1pXcHpBNnV3WDlrSllDYXRXLVgwWl90NXRmbmVhRkdhbDJnZXYyVXdjUVV1b0VVanF4OTVQUGtvNDRKenN1ZDMzdnVkMjViaUJo?oc=5",
-      "published": "Sun, 15 Nov 2026 02:09:25 GMT",
-      "source": "日本取引所グループ",
-      "feed": "Google News"
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-15T13:51:35.122743+00:00",
+  "news_updated_at": "2026-11-15T19:22:41.834995+00:00",
   "archive_days": 7,
   "validation": {
     "completed_predictions": 65,
@@ -25448,7 +25570,7 @@
     "history_partial": false,
     "missing_historical_days": 0,
     "cached_games": 222,
-    "cached_player_boxes": 143
+    "cached_player_boxes": 144
   },
   "notes": [
     "No utiliza cuotas de apuestas",
