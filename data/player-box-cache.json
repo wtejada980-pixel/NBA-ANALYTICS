@@ -27595,6 +27595,466 @@
           }
         ]
       }
+    },
+    "401909980": {
+      "player_stats": {
+        "3": [
+          {
+            "id": "4277813",
+            "name": "Herbert Jones",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "16",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4395628",
+            "name": "Zion Williamson",
+            "pts": 6.0,
+            "reb": 5.0,
+            "ast": 2.0,
+            "min": "12",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4397136",
+            "name": "Saddiq Bey",
+            "pts": 6.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5061589",
+            "name": "Yves Missi",
+            "pts": 2.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "9",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5144091",
+            "name": "Jeremiah Fears",
+            "pts": 9.0,
+            "reb": 3.0,
+            "ast": 3.0,
+            "min": "16",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4997538",
+            "name": "Karlo Matkovic",
+            "pts": 2.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4869780",
+            "name": "Derik Queen",
+            "pts": 7.0,
+            "reb": 4.0,
+            "ast": 4.0,
+            "min": "15",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4277956",
+            "name": "Jordan Poole",
+            "pts": 9.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "13",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4703115",
+            "name": "Jaron Pierre Jr.",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "11",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "7": [
+          {
+            "id": "3064290",
+            "name": "Aaron Gordon",
+            "pts": 7.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "14",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3138196",
+            "name": "Cameron Johnson",
+            "pts": 5.0,
+            "reb": 4.0,
+            "ast": 1.0,
+            "min": "14",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3112335",
+            "name": "Nikola Jokic",
+            "pts": 12.0,
+            "reb": 5.0,
+            "ast": 5.0,
+            "min": "18",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "3936299",
+            "name": "Jamal Murray",
+            "pts": 10.0,
+            "reb": 0.0,
+            "ast": 4.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4431767",
+            "name": "Christian Braun",
+            "pts": 5.0,
+            "reb": 4.0,
+            "ast": 1.0,
+            "min": "14",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4277848",
+            "name": "Marvin Bagley III",
+            "pts": 4.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4592427",
+            "name": "Spencer Jones",
+            "pts": 2.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4698719",
+            "name": "Trevon Brazile",
+            "pts": 5.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "3978",
+            "name": "DeMar DeRozan",
+            "pts": 4.0,
+            "reb": 3.0,
+            "ast": 1.0,
+            "min": "11",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "3135046",
+            "name": "Tyus Jones",
+            "pts": 2.0,
+            "reb": 0.0,
+            "ast": 2.0,
+            "min": "7",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          }
+        ]
+      }
+    },
+    "401909981": {
+      "player_stats": {
+        "5": [
+          {
+            "id": "2995706",
+            "name": "Mario Hezonja",
+            "pts": 2.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3934723",
+            "name": "Thomas Bryant",
+            "pts": 6.0,
+            "reb": 3.0,
+            "ast": 2.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4683747",
+            "name": "Jaylon Tyson",
+            "pts": 3.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5023693",
+            "name": "Tyrese Proctor",
+            "pts": 6.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "5041951",
+            "name": "Meleek Thomas",
+            "pts": 9.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "5106268",
+            "name": "Nae'Qwan Tomlin",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4702134",
+            "name": "Norchad Omier",
+            "pts": 5.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4701233",
+            "name": "Craig Porter Jr.",
+            "pts": 2.0,
+            "reb": 2.0,
+            "ast": 3.0,
+            "min": "8",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          }
+        ],
+        "6": [
+          {
+            "id": "3138160",
+            "name": "Caleb Martin",
+            "pts": 9.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4278049",
+            "name": "Daniel Gafford",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4278078",
+            "name": "P.J. Washington",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5041939",
+            "name": "Cooper Flagg",
+            "pts": 5.0,
+            "reb": 3.0,
+            "ast": 2.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "6442",
+            "name": "Kyrie Irving",
+            "pts": 6.0,
+            "reb": 2.0,
+            "ast": 4.0,
+            "min": "12",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4278594",
+            "name": "Naji Marshall",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4873153",
+            "name": "Morez Johnson Jr.",
+            "pts": 2.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5211175",
+            "name": "Zaccharie Risacher",
+            "pts": 3.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5279129",
+            "name": "Sergio de Larrea",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "--",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4432582",
+            "name": "Max Christie",
+            "pts": 3.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
