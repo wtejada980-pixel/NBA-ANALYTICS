@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "as_of": "2026-11-16T01:14:51.066208+00:00",
+  "as_of": "2026-11-16T06:33:14.750258+00:00",
   "status": "shadow_not_production",
   "training_seasons": [
     2022,
@@ -14,18 +14,18 @@
   ],
   "warning": "La comparación retrospectiva V3 no es un pronóstico registrado antes del partido; sirve solo como diagnóstico. La comparación prospectiva incluye únicamente pronósticos V3 realmente congelados antes del inicio. ESPN 2026 en caché carece de clasificación de temporada confirmada.",
   "retrospective": {
-    "n": 70,
+    "n": 74,
     "v2_original": {
-      "n": 70,
-      "brier": 0.21153,
-      "log_loss": 0.61298,
-      "winner_accuracy_pct": 68.6
+      "n": 74,
+      "brier": 0.20671,
+      "log_loss": 0.60305,
+      "winner_accuracy_pct": 70.3
     },
     "v3_reconstructed": {
-      "n": 70,
-      "brier": 0.17523,
-      "log_loss": 0.53316,
-      "winner_accuracy_pct": 78.6
+      "n": 74,
+      "brier": 0.16906,
+      "log_loss": 0.51919,
+      "winner_accuracy_pct": 79.7
     },
     "games": [
       {
@@ -447,22 +447,46 @@
         "v2_original_home_pct": 70.1,
         "v3_retrospective_home_pct": 78.3,
         "winner": "home"
+      },
+      {
+        "id": "401909990",
+        "v2_original_home_pct": 40.0,
+        "v3_retrospective_home_pct": 34.1,
+        "winner": "away"
+      },
+      {
+        "id": "401909991",
+        "v2_original_home_pct": 32.8,
+        "v3_retrospective_home_pct": 17.6,
+        "winner": "away"
+      },
+      {
+        "id": "401909992",
+        "v2_original_home_pct": 31.9,
+        "v3_retrospective_home_pct": 26.4,
+        "winner": "away"
+      },
+      {
+        "id": "401909993",
+        "v2_original_home_pct": 34.6,
+        "v3_retrospective_home_pct": 16.6,
+        "winner": "away"
       }
     ]
   },
   "prospective": {
-    "n": 42,
+    "n": 46,
     "v2_original": {
-      "n": 42,
-      "brier": 0.21217,
-      "log_loss": 0.61524,
-      "winner_accuracy_pct": 71.4
+      "n": 46,
+      "brier": 0.20435,
+      "log_loss": 0.59907,
+      "winner_accuracy_pct": 73.9
     },
     "v3_shadow": {
-      "n": 42,
-      "brier": 0.19694,
-      "log_loss": 0.58381,
-      "winner_accuracy_pct": 73.8
+      "n": 46,
+      "brier": 0.18513,
+      "log_loss": 0.55693,
+      "winner_accuracy_pct": 76.1
     }
   },
   "forecasts": {
@@ -870,6 +894,97 @@
       "predicted_at": "2026-11-15T06:35:57.931004+00:00",
       "v3_home_pct": 80.4,
       "v2_original_home_pct": 64.1,
+      "model": "logistic-v3-shadow"
+    },
+    "401910005": {
+      "scheduled_at": "2026-11-18T04:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 78.9,
+      "v2_original_home_pct": 79.3,
+      "model": "logistic-v3-shadow"
+    },
+    "401910007": {
+      "scheduled_at": "2026-11-19T00:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 72.9,
+      "v2_original_home_pct": 43.9,
+      "model": "logistic-v3-shadow"
+    },
+    "401910008": {
+      "scheduled_at": "2026-11-19T00:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 22.5,
+      "v2_original_home_pct": 35.8,
+      "model": "logistic-v3-shadow"
+    },
+    "401910009": {
+      "scheduled_at": "2026-11-19T00:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 78.3,
+      "v2_original_home_pct": 77.9,
+      "model": "logistic-v3-shadow"
+    },
+    "401910010": {
+      "scheduled_at": "2026-11-19T00:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 51.0,
+      "v2_original_home_pct": 47.3,
+      "model": "logistic-v3-shadow"
+    },
+    "401910011": {
+      "scheduled_at": "2026-11-19T00:30Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 49.6,
+      "v2_original_home_pct": 54.3,
+      "model": "logistic-v3-shadow"
+    },
+    "401910012": {
+      "scheduled_at": "2026-11-19T00:30Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 77.2,
+      "v2_original_home_pct": 65.3,
+      "model": "logistic-v3-shadow"
+    },
+    "401910013": {
+      "scheduled_at": "2026-11-19T01:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 22.0,
+      "v2_original_home_pct": 32.5,
+      "model": "logistic-v3-shadow"
+    },
+    "401910014": {
+      "scheduled_at": "2026-11-19T01:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 76.7,
+      "v2_original_home_pct": 61.0,
+      "model": "logistic-v3-shadow"
+    },
+    "401910016": {
+      "scheduled_at": "2026-11-19T01:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 40.2,
+      "v2_original_home_pct": 42.1,
+      "model": "logistic-v3-shadow"
+    },
+    "401910015": {
+      "scheduled_at": "2026-11-19T02:30Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 44.8,
+      "v2_original_home_pct": 42.7,
+      "model": "logistic-v3-shadow"
+    },
+    "401910017": {
+      "scheduled_at": "2026-11-19T03:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 91.0,
+      "v2_original_home_pct": 82.3,
+      "model": "logistic-v3-shadow"
+    },
+    "401910018": {
+      "scheduled_at": "2026-11-19T03:00Z",
+      "predicted_at": "2026-11-16T06:33:14.750258+00:00",
+      "v3_home_pct": 35.3,
+      "v2_original_home_pct": 40.5,
       "model": "logistic-v3-shadow"
     }
   }

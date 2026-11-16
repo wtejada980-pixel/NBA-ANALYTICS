@@ -30903,6 +30903,278 @@
           }
         ]
       }
+    },
+    "401909993": {
+      "player_stats": {
+        "25": [
+          {
+            "id": "4222252",
+            "name": "Isaiah Hartenstein",
+            "pts": 3.0,
+            "reb": 11.0,
+            "ast": 2.0,
+            "min": "18",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "3133626",
+            "name": "Kenrich Williams",
+            "pts": 10.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "19",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4278073",
+            "name": "Shai Gilgeous-Alexander",
+            "pts": 37.0,
+            "reb": 2.0,
+            "ast": 2.0,
+            "min": "30",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4683778",
+            "name": "Jared McCain",
+            "pts": 12.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "30",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4900671",
+            "name": "Ajay Mitchell",
+            "pts": 14.0,
+            "reb": 3.0,
+            "ast": 5.0,
+            "min": "27",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4684208",
+            "name": "Brooks Barnhizer",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5174983",
+            "name": "Aday Mara",
+            "pts": 16.0,
+            "reb": 13.0,
+            "ast": 3.0,
+            "min": "26",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 4.0,
+            "starter": false
+          },
+          {
+            "id": "2991350",
+            "name": "Alex Caruso",
+            "pts": 11.0,
+            "reb": 2.0,
+            "ast": 3.0,
+            "min": "18",
+            "stl": 4.0,
+            "blk": 1.0,
+            "tov": 3.0,
+            "starter": false
+          },
+          {
+            "id": "4432185",
+            "name": "Micah Peavy",
+            "pts": 5.0,
+            "reb": 3.0,
+            "ast": 1.0,
+            "min": "13",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4702384",
+            "name": "Nique Clifford",
+            "pts": 9.0,
+            "reb": 3.0,
+            "ast": 0.0,
+            "min": "24",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5159925",
+            "name": "Nikola Topic",
+            "pts": 8.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "13",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "5241364",
+            "name": "Bennett Stirtz",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "17",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "23": [
+          {
+            "id": "3155942",
+            "name": "Domantas Sabonis",
+            "pts": 11.0,
+            "reb": 13.0,
+            "ast": 3.0,
+            "min": "29",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4594327",
+            "name": "Keegan Murray",
+            "pts": 6.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "21",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4433174",
+            "name": "Dylan Cardwell",
+            "pts": 10.0,
+            "reb": 6.0,
+            "ast": 2.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4066262",
+            "name": "Malik Monk",
+            "pts": 14.0,
+            "reb": 1.0,
+            "ast": 10.0,
+            "min": "29",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "5142620",
+            "name": "Darius Acuff Jr.",
+            "pts": 26.0,
+            "reb": 0.0,
+            "ast": 6.0,
+            "min": "33",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 9.0,
+            "starter": true
+          },
+          {
+            "id": "4395650",
+            "name": "Leaky Black",
+            "pts": 12.0,
+            "reb": 9.0,
+            "ast": 2.0,
+            "min": "29",
+            "stl": 4.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4917149",
+            "name": "Alex Karaban",
+            "pts": 0.0,
+            "reb": 5.0,
+            "ast": 1.0,
+            "min": "29",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "2488653",
+            "name": "Mason Plumlee",
+            "pts": 2.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "5",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4279318",
+            "name": "Daeqwon Plowden",
+            "pts": 13.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "24",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "5106058",
+            "name": "Emanuel Sharp",
+            "pts": 9.0,
+            "reb": 0.0,
+            "ast": 2.0,
+            "min": "21",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
