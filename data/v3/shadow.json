@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "as_of": "2026-11-15T19:22:45.062335+00:00",
+  "as_of": "2026-11-16T01:14:51.066208+00:00",
   "status": "shadow_not_production",
   "training_seasons": [
     2022,
@@ -14,18 +14,18 @@
   ],
   "warning": "La comparación retrospectiva V3 no es un pronóstico registrado antes del partido; sirve solo como diagnóstico. La comparación prospectiva incluye únicamente pronósticos V3 realmente congelados antes del inicio. ESPN 2026 en caché carece de clasificación de temporada confirmada.",
   "retrospective": {
-    "n": 65,
+    "n": 70,
     "v2_original": {
-      "n": 65,
-      "brier": 0.21859,
-      "log_loss": 0.62806,
-      "winner_accuracy_pct": 66.2
+      "n": 70,
+      "brier": 0.21153,
+      "log_loss": 0.61298,
+      "winner_accuracy_pct": 68.6
     },
     "v3_reconstructed": {
-      "n": 65,
-      "brier": 0.18243,
-      "log_loss": 0.54982,
-      "winner_accuracy_pct": 76.9
+      "n": 70,
+      "brier": 0.17523,
+      "log_loss": 0.53316,
+      "winner_accuracy_pct": 78.6
     },
     "games": [
       {
@@ -417,22 +417,52 @@
         "v2_original_home_pct": 78.8,
         "v3_retrospective_home_pct": 87.4,
         "winner": "away"
+      },
+      {
+        "id": "401909985",
+        "v2_original_home_pct": 65.4,
+        "v3_retrospective_home_pct": 79.3,
+        "winner": "home"
+      },
+      {
+        "id": "401909986",
+        "v2_original_home_pct": 37.0,
+        "v3_retrospective_home_pct": 38.1,
+        "winner": "away"
+      },
+      {
+        "id": "401909987",
+        "v2_original_home_pct": 54.0,
+        "v3_retrospective_home_pct": 59.7,
+        "winner": "home"
+      },
+      {
+        "id": "401909988",
+        "v2_original_home_pct": 20.3,
+        "v3_retrospective_home_pct": 10.5,
+        "winner": "away"
+      },
+      {
+        "id": "401909989",
+        "v2_original_home_pct": 70.1,
+        "v3_retrospective_home_pct": 78.3,
+        "winner": "home"
       }
     ]
   },
   "prospective": {
-    "n": 37,
+    "n": 42,
     "v2_original": {
-      "n": 37,
-      "brier": 0.22465,
-      "log_loss": 0.64202,
-      "winner_accuracy_pct": 67.6
+      "n": 42,
+      "brier": 0.21217,
+      "log_loss": 0.61524,
+      "winner_accuracy_pct": 71.4
     },
     "v3_shadow": {
-      "n": 37,
-      "brier": 0.21251,
-      "log_loss": 0.61992,
-      "winner_accuracy_pct": 70.3
+      "n": 42,
+      "brier": 0.19694,
+      "log_loss": 0.58381,
+      "winner_accuracy_pct": 73.8
     }
   },
   "forecasts": {
