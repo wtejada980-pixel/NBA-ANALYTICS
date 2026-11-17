@@ -33199,6 +33199,278 @@
           }
         ]
       }
+    },
+    "401910001": {
+      "player_stats": {
+        "21": [
+          {
+            "id": "3155526",
+            "name": "Dillon Brooks",
+            "pts": 15.0,
+            "reb": 4.0,
+            "ast": 4.0,
+            "min": "27",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4066383",
+            "name": "Miles Bridges",
+            "pts": 16.0,
+            "reb": 8.0,
+            "ast": 2.0,
+            "min": "29",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4601023",
+            "name": "Oso Ighodaro",
+            "pts": 8.0,
+            "reb": 11.0,
+            "ast": 3.0,
+            "min": "33",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "3136193",
+            "name": "Devin Booker",
+            "pts": 20.0,
+            "reb": 4.0,
+            "ast": 8.0,
+            "min": "37",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4437244",
+            "name": "Jalen Green",
+            "pts": 16.0,
+            "reb": 5.0,
+            "ast": 3.0,
+            "min": "27",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4888725",
+            "name": "Ryan Dunn",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "12",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "5041953",
+            "name": "Koa Peat",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5203685",
+            "name": "Khaman Maluach",
+            "pts": 4.0,
+            "reb": 6.0,
+            "ast": 0.0,
+            "min": "11",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "3913174",
+            "name": "Luke Kennard",
+            "pts": 12.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "17",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4278402",
+            "name": "Jordan Goodwin",
+            "pts": 11.0,
+            "reb": 6.0,
+            "ast": 2.0,
+            "min": "20",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4278585",
+            "name": "Collin Gillespie",
+            "pts": 10.0,
+            "reb": 3.0,
+            "ast": 3.0,
+            "min": "26",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "7": [
+          {
+            "id": "3064290",
+            "name": "Aaron Gordon",
+            "pts": 11.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "24",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "3138196",
+            "name": "Cameron Johnson",
+            "pts": 9.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "27",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "3112335",
+            "name": "Nikola Jokic",
+            "pts": 28.0,
+            "reb": 15.0,
+            "ast": 7.0,
+            "min": "38",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 7.0,
+            "starter": true
+          },
+          {
+            "id": "3936299",
+            "name": "Jamal Murray",
+            "pts": 28.0,
+            "reb": 4.0,
+            "ast": 4.0,
+            "min": "35",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4431767",
+            "name": "Christian Braun",
+            "pts": 10.0,
+            "reb": 3.0,
+            "ast": 3.0,
+            "min": "33",
+            "stl": 2.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4277848",
+            "name": "Marvin Bagley III",
+            "pts": 4.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4565698",
+            "name": "Bryce Hopkins",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4592427",
+            "name": "Spencer Jones",
+            "pts": 4.0,
+            "reb": 3.0,
+            "ast": 3.0,
+            "min": "21",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4698719",
+            "name": "Trevon Brazile",
+            "pts": 9.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "23",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "3978",
+            "name": "DeMar DeRozan",
+            "pts": 2.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "14",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "3135046",
+            "name": "Tyus Jones",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
