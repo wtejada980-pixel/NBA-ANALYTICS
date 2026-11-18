@@ -1,6 +1,7 @@
-"""V3 experimental: features solo de resultados anteriores, entrenamiento cronológico.
+"""V3: modelo de producción con variables previas y evaluación cronológica.
 
-No se publica ninguna predicción en producción hasta revisión explícita.
+La función evaluate conserva una reconstrucción de V2 solo para auditorías históricas.
+Las predicciones nuevas se generan mediante v3_production.
 Solo Python stdlib: regresión logística regularizada y comparador Elo.
 """
 from __future__ import annotations
@@ -8,7 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
-from model_v2 import predict as v2_predict
+from model_v2 import predict as v2_predict  # Solo para reconstrucción histórica, nunca producción
 from collections import defaultdict
 from datetime import datetime, date
 from pathlib import Path
@@ -78,8 +79,8 @@ def _form(team, completed, current_day, count=10):
             "rest": rest}
 
 
-def build_features(events, min_previous=4):
-    """Elo y forma calculados antes de cada día; grupos del mismo día no se filtran."""
+def build_features(events, min_previous=4, include_v2_proxy=True):
+    """Elo y forma previos a cada día; proxy V2 solo para auditoría histórica."""
     clean = sorted(events, key=lambda x: (x["date"], x["datetime"], x["id"]))
     seen_ids = set()
     completed, ratings, v2_ratings, rows = [], {}, {}, []
@@ -103,22 +104,10 @@ def build_features(events, min_previous=4):
                 continue
             eh, ea = ratings.get(h, 1500.), ratings.get(a, 1500.)
             elo_prob = _sigmoid(math.log(10.) * (eh-ea+55.)/400.)
-            # V2 reconstruido sobre las mismas fechas, sin estadísticas individuales
-            # históricas no disponibles. NO equivale a los pronósticos registrados de V2.
-            def v2_team(form):
-                return {"form": {"played": form["n"], "margin": form["v2_margin"],
-                                 "win_rate": form["v2_win"],
-                                 "points_for": form["v2_scored"],
-                                 "points_against": form["v2_allowed"]},
-                        "rest_days": form["rest"]+1,
-                        "player_trend": 0.0}
-            v2_model = v2_predict({"home":{"id":h},"away":{"id":a}},
-                                   {h:v2_team(hf),a:v2_team(af)},v2_ratings)
             row = {
                 "id": g["id"], "date": g["date"], "season_year": g["season_year"],
                 "y": 1 if g["home_score"] > g["away_score"] else 0,
                 "elo_probability": round(elo_prob, 8),
-                "v2_proxy_probability": round(v2_model["home_pct"]/100., 8),
                 "elo_difference": (eh-ea)/100.,
                 "margin_difference": (hf["margin"]-af["margin"])/10.,
                 "win_rate_difference": hf["win"]-af["win"],
@@ -126,6 +115,18 @@ def build_features(events, min_previous=4):
                 "defense_difference": (af["allowed"]-hf["allowed"])/10.,
                 "rest_difference": (hf["rest"]-af["rest"])/4.,
             }
+            if include_v2_proxy:
+                # V2 reconstruido sin estadísticas individuales históricas; no equivale
+                # a sus picks publicados, y solo se calcula para la evaluación archivada.
+                def v2_team(form):
+                    return {"form": {"played": form["n"], "margin": form["v2_margin"],
+                                     "win_rate": form["v2_win"],
+                                     "points_for": form["v2_scored"],
+                                     "points_against": form["v2_allowed"]},
+                            "rest_days": form["rest"]+1, "player_trend": 0.0}
+                v2_model = v2_predict({"home":{"id":h},"away":{"id":a}},
+                                      {h:v2_team(hf),a:v2_team(af)},v2_ratings)
+                row["v2_proxy_probability"] = round(v2_model["home_pct"]/100., 8)
             rows.append(row)
         # Solo después de construir todos los ejemplos del día añadimos sus resultados.
         for g in batch:
@@ -135,13 +136,14 @@ def build_features(events, min_previous=4):
             y = 1 if g["home_score"] > g["away_score"] else 0
             change = 22. * (y-expected)
             ratings[h], ratings[a] = eh+change, ea-change
-            vh, va = v2_ratings.get(h, 1500.), v2_ratings.get(a, 1500.)
-            vexpect = 1. / (1. + 10. ** ((va-vh-55.)/400.))
-            margin = abs(g["home_score"]-g["away_score"])
-            vk = 18. * (1. + min(.6, math.log1p(margin)/6.))
-            vadjust = vk*(y-vexpect)
-            v2_ratings[h] = max(1250., min(1750., vh+vadjust))
-            v2_ratings[a] = max(1250., min(1750., va-vadjust))
+            if include_v2_proxy:
+                vh, va = v2_ratings.get(h, 1500.), v2_ratings.get(a, 1500.)
+                vexpect = 1. / (1. + 10. ** ((va-vh-55.)/400.))
+                margin = abs(g["home_score"]-g["away_score"])
+                vk = 18. * (1. + min(.6, math.log1p(margin)/6.))
+                vadjust = vk*(y-vexpect)
+                v2_ratings[h] = max(1250., min(1750., vh+vadjust))
+                v2_ratings[a] = max(1250., min(1750., va-vadjust))
             completed.append(g)
     return rows
 

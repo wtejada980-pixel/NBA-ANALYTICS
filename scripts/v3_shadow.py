@@ -1,9 +1,7 @@
-"""V3 en paralelo: jamás modifica el V2 activo ni retro-inventa picks auditables.
+"""Herramientas temporales para las evaluaciones archivadas y V3 de producción.
 
-- Retrospectiva: evaluación diagnóstica, NO se cuenta como pronóstico publicado.
-- Prospectiva: única estimación V3 congelada ANTES del partido y evaluable luego.
-- Cada ejemplo V3 se genera solo con partidos ya finalizados en DÍAS anteriores
-  al momento en que se registró la predicción V2 o al momento de cálculo.
+Conserva la comparación prospectiva histórica V2/V3, pero el pronosticador activo
+es V3 y las nuevas predicciones no dependen de este informe de sombra.
 """
 from __future__ import annotations
 

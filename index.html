@@ -114,19 +114,9 @@
 
       <section class="how-it-works" aria-labelledby="how-title">
         <div class="quality-heading"><p class="overline">TRANSPARENCIA</p><h2 id="how-title">Cómo funciona</h2></div>
-        <p>V2 estima el resultado prepartido con Elo (fuerza relativa), margen y victorias recientes, anotación y defensa, descanso, localía y tendencia de jugadores. Necesita una muestra mínima; reduce las estimaciones hacia 50% cuando hay pocos datos y limita el rango para evitar certezas extremas.</p>
-        <p>No incorpora cuotas, noticias, lesiones, rumores ni opiniones de redes en el porcentaje. Los marcadores en vivo son resultados confirmados por la fuente deportiva y no cambian el pronóstico prepartido archivado.</p>
-        <p class="model-change">De V2 a V3: V2 combina Elo y forma reciente; V3 prueba una regresión logística cronológica con seis variables, y sigue siendo experimental sin reemplazar el pronóstico publicado.</p>
-      </section>
-      <section class="v3-lab" aria-labelledby="v3-lab-title">
-        <div class="quality-heading">
-          <p class="overline">EXPERIMENTO · SIN CAMBIAR LAS PREDICCIONES OFICIALES</p>
-          <h2 id="v3-lab-title">V3 frente a V2</h2>
-        </div>
-        <p class="quality-intro">Comparación con los mismos partidos y fechas. El V3 sigue en pruebas: no representa apuestas ni porcentajes calibrados. La precisión real solo se mide cuando el pronóstico quedó registrado antes del comienzo.</p>
-        <div id="v3-lab-content" aria-live="polite">
-          <div class="skeleton-panel" aria-hidden="true"><span class="skeleton-block skeleton-wide"></span><span class="skeleton-block skeleton-line"></span><span class="skeleton-block skeleton-line"></span></div>
-        </div>
+        <p>El modelo activo es V3: una regresión logística entrenada cronológicamente con Elo, margen reciente, victorias, anotación, defensa y descanso. Solo usa resultados anteriores a cada partido.</p>
+        <p>V3 no incorpora cuotas, noticias, lesiones, rumores ni opiniones de redes en el porcentaje. Los marcadores en vivo son resultados confirmados y no reemplazan el pronóstico prepartido archivado. Las predicciones V2 anteriores siguen identificadas como históricas.</p>
+        <p class="model-change">V3 ya genera los pronósticos nuevos. Sus porcentajes son experimentales y no están calibrados.</p>
       </section>
 
       <section class="history-section" aria-labelledby="history-title">
@@ -166,7 +156,6 @@
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
   <script src="assets/app.js?v=20261114-10s" defer></script>
-  <script src="assets/v3-lab.js?v=20261111-news" defer></script>
   <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./service-worker.js").catch(()=>{}); let promptEvent; window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();promptEvent=e;const b=document.getElementById("install-app");if(b)b.hidden=false;}); document.getElementById("install-app")?.addEventListener("click",async()=>{if(!promptEvent)return;promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;document.getElementById("install-app").hidden=true;});</script>
 </body>
 </html>

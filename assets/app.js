@@ -582,7 +582,9 @@
 
   function renderCalibration() {
     const metrics = data.validation || {};
-    const bins = Array.isArray(metrics.calibration) ? metrics.calibration : [];
+    const activeName = String(metrics.active_model || '');
+    const bins = Array.isArray(metrics.calibration_by_model?.[activeName]) ?
+      metrics.calibration_by_model[activeName] : [];
     const rows = bins.filter(row => row && Number.isInteger(row.count) && row.count > 0 &&
       Number.isFinite(row.average_predicted_pct) && Number.isFinite(row.actual_home_win_pct) &&
       row.average_predicted_pct >= 0 && row.average_predicted_pct <= 100 &&
@@ -665,57 +667,62 @@
 
   function renderValidation() {
     const metrics = data.validation || {};
-    const n = Number.isInteger(metrics.completed_predictions) && metrics.completed_predictions >= 0 ?
-      metrics.completed_predictions : 0;
-    const pct = n && Number.isFinite(metrics.favorite_accuracy_pct) &&
-      metrics.favorite_accuracy_pct >= 0 && metrics.favorite_accuracy_pct <= 100 ?
-      metrics.favorite_accuracy_pct.toFixed(1) + '%' : '—';
-    const brier = n && Number.isFinite(metrics.brier_score) &&
-      metrics.brier_score >= 0 && metrics.brier_score <= 1 ?
-      metrics.brier_score.toFixed(4) : '—';
-    const logLoss = n && Number.isFinite(metrics.log_loss) && metrics.log_loss >= 0 ?
-      metrics.log_loss.toFixed(4) : '—';
+    const activeName = String(metrics.active_model || 'logistic-v3-production');
+    const active = metrics.by_model?.[activeName] || {};
+    const n = Number.isInteger(active.n) && active.n >= 0 ? active.n : 0;
+    const pct = n && Number.isFinite(active.favorite_accuracy_pct) ?
+      active.favorite_accuracy_pct.toFixed(1) + '%' : '—';
+    const brier = n && Number.isFinite(active.brier) ? active.brier.toFixed(4) : '—';
+    const logLoss = n && Number.isFinite(active.log_loss) ? active.log_loss.toFixed(4) : '—';
     const card = (name, value, subtitle, extra = '') =>
       '<div class="quality-metric"><span class="metric-name">' + name + '</span>' +
-      '<strong class="metric-value">' + value + '</strong>' +
-      extra +
+      '<strong class="metric-value">' + value + '</strong>' + extra +
       '<span class="metric-hint">' + subtitle + '</span></div>';
-    const accuracy = n && Number.isFinite(metrics.favorite_accuracy_pct) &&
-      metrics.favorite_accuracy_pct >= 0 && metrics.favorite_accuracy_pct <= 100 ?
-      metrics.favorite_accuracy_pct : null;
+    const accuracy = n && Number.isFinite(active.favorite_accuracy_pct) ?
+      active.favorite_accuracy_pct : null;
     const accuracyVisual = accuracy === null ? '' :
-      '<div class="accuracy-bar" role="img" aria-label="Acierto ' + accuracy.toFixed(1) +
+      '<div class="accuracy-bar" role="img" aria-label="Acierto V3 ' + accuracy.toFixed(1) +
       ' por ciento; fallos ' + (100-accuracy).toFixed(1) + ' por ciento">' +
       '<span class="accuracy-hit" style="width:' + accuracy + '%"></span>' +
       '<span class="accuracy-miss" style="width:' + (100-accuracy) + '%"></span></div>' +
       '<span class="accuracy-legend"><span>Acertados ' + accuracy.toFixed(1) +
       '%</span><span>Fallados ' + (100-accuracy).toFixed(1) + '%</span></span>';
     $('model-validation').innerHTML =
-      card('Partidos evaluados', String(n), 'Pronósticos registrados antes del juego') +
-      card('Acierto del favorito', pct, 'Porcentaje de ganadores identificados', accuracyVisual) +
-      card('Error Brier', brier, 'Menor es mejor · referencia 50/50: 0.2500') +
-      card('Log loss', logLoss, 'Penaliza probabilidades demasiado seguras');
+      card('Pronósticos V3 evaluados', String(n), 'Registrados antes del inicio y ya finalizados') +
+      card('Acierto de V3', pct, 'Porcentaje de ganadores identificados', accuracyVisual) +
+      card('Brier de V3', brier, 'Menor es mejor · referencia 50/50: 0.2500') +
+      card('Log loss de V3', logLoss, 'Menor es mejor; penaliza exceso de certeza');
     $('quality-caveat').textContent = n === 0 ?
-      'Todavía no hay partidos finalizados con pronóstico evaluado. No podemos afirmar que el modelo acierta.' :
-      n < 100 ? 'Muestra inicial de ' + n + ' partidos: estos resultados pueden variar mucho. Necesitamos una muestra mayor y revisar la calibración.' :
-      'Resultados históricos del modelo. Un buen porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
+      'V3 está activo. Aún no hay resultados finalizados de sus pronósticos publicados; el historial de V2 permanece separado.' :
+      n < 100 ? 'Muestra V3 de ' + n + ' partidos: todavía puede variar mucho. La precisión no demuestra por sí sola que las probabilidades estén calibradas.' :
+      'Resultados de V3. Un buen porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
     const comparison = metrics.elo_comparison || {};
     const paired = Number.isInteger(comparison.n) ? comparison.n : 0;
     $('elo-validation').innerHTML = paired > 0 &&
       Number.isFinite(comparison.model_brier) && Number.isFinite(comparison.elo_brier) ?
-      '<strong>Modelo NBA Analytics frente a Elo simple</strong>' +
-      '<p>Comparación en exactamente ' + paired + ' partidos con pronósticos previos. ' +
-      'Brier de nuestro modelo: <b>' + comparison.model_brier.toFixed(4) +
-      '</b> · Brier Elo: <b>' + comparison.elo_brier.toFixed(4) + '</b>. ' +
-      'Menor indica menos error. No demuestra ventaja si la muestra es pequeña.</p>' :
-      '<strong>Comparación con Elo simple</strong>' +
-      '<p>Aún no hay resultados suficientes con ambas predicciones prepartido para comparar los modelos.</p>';
+      '<strong>V3 frente a Elo simple</strong>' +
+      '<p>Comparación en ' + paired + ' partidos con pronósticos previos. Brier V3: <b>' +
+      comparison.model_brier.toFixed(4) + '</b> · Brier Elo: <b>' +
+      comparison.elo_brier.toFixed(4) + '</b>. Menor indica menos error.</p>' :
+      '<strong>V3 frente a Elo simple</strong>' +
+      '<p>Aún no hay suficientes pronósticos V3 finalizados con Elo guardado para comparar.</p>';
+    const models = metrics.by_model && typeof metrics.by_model === 'object' ? metrics.by_model : {};
+    const activeModels = activeName && models[activeName] ? [activeName] : [];
+    $('model-versions').innerHTML = activeModels.length ?
+      '<h3>Rendimiento del modelo activo</h3><div class="model-version-list">' +
+      activeModels.map(name => {
+        const entry = models[name] || {};
+        return Number.isInteger(entry.n) && Number.isFinite(entry.brier) ?
+          '<div class="model-version"><strong>' + escapeHtml(name) +
+          '</strong><span>' + entry.n + ' partidos</span><b>Brier ' +
+          entry.brier.toFixed(4) + '</b></div>' : '';
+      }).join('') + '</div>' : '';
   }
   function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem('nba-favorite-teams')||'[]').map(String));}catch(_){return new Set();}}
   let favoriteTeams=readFavorites(), favoritesOnly=false, selectedTeam='';
   function renderTeamFilter(){const el=$('team-filter');if(!el)return;const teams=Object.entries(data.teams||{}).map(([id,t])=>[id,t.name||t.abbr||id]).sort((x,y)=>x[1].localeCompare(y[1]));const prev=selectedTeam;el.innerHTML='<option value="">Todos los equipos</option>'+teams.map(([id,n])=>'<option value="'+escapeHtml(id)+'">'+escapeHtml(n)+'</option>').join('');el.value=teams.some(([id])=>id===prev)?prev:'';}
   function restLabel(teamId,gameDate){const recent=data.teams?.[String(teamId)]?.form?.recent;if(!Array.isArray(recent))return '';const prior=recent.map(x=>String(x.date||'')).filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)&&x<gameDate).sort().pop();if(!prior)return '';const days=Math.round((Date.parse(gameDate+'T12:00:00Z')-Date.parse(prior+'T12:00:00Z'))/86400000)-1;return days===0?'B2B':days>0?days+(days===1?' día de descanso':' días de descanso'):'';}
-  function renderAnalytics(){const rows=Array.isArray(data.elo_ratings)?data.elo_ratings:[];$('elo-ratings').innerHTML=rows.length?'<table><thead><tr><th>Equipo</th><th>Elo</th><th>Partidos</th></tr></thead><tbody>'+rows.slice().sort((x,y)=>y.rating-x.rating).map(x=>'<tr><td>'+escapeHtml(x.name||x.abbr)+'</td><td>'+Math.round(x.rating)+'</td><td>'+Number(x.games||0)+'</td></tr>').join('')+'</tbody></table>':'<p>Ratings Elo todavía no publicados.</p>';const history=(data.history_recent||[]).filter(x=>x?.result&&['home','away'].includes(x.result.winner)&&Number.isFinite(Number(x.home_pct))&&Date.parse(x.predicted_at)<Date.parse(x.scheduled_at)).sort((x,y)=>Date.parse(x.scheduled_at)-Date.parse(y.scheduled_at));if(!history.length){$('brier-chart').textContent='Aún no hay resultados evaluados.';return;}let sum=0;const pts=history.map((r,i)=>{sum+=(Number(r.home_pct)/100-(r.result.winner==='home'?1:0))**2;return {i:i+1,v:sum/(i+1)};});const w=480,h=150,p=22,max=Math.max(.25,...pts.map(x=>x.v))*1.08;const coords=pts.map((x,i)=>(p+i*(w-2*p)/Math.max(1,pts.length-1))+','+(h-p-x.v/max*(h-2*p))).join(' ');$('brier-chart').innerHTML='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Brier acumulado; menor es mejor"><polyline points="'+coords+'" class="brier-line"/><text x="12" y="15">Brier acumulado · menor es mejor · n='+pts.length+'</text></svg>';}
+  function renderAnalytics(){const rows=Array.isArray(data.elo_ratings)?data.elo_ratings:[];$('elo-ratings').innerHTML=rows.length?'<table><thead><tr><th>Equipo</th><th>Elo</th><th>Partidos</th></tr></thead><tbody>'+rows.slice().sort((x,y)=>y.rating-x.rating).map(x=>'<tr><td>'+escapeHtml(x.name||x.abbr)+'</td><td>'+Math.round(x.rating)+'</td><td>'+Number(x.games||0)+'</td></tr>').join('')+'</tbody></table>':'<p>Ratings Elo todavía no publicados.</p>';const activeModel=data.validation?.active_model;const history=(data.validation?.history_by_model?.[activeModel]||[]).filter(x=>x&&['home','away'].includes(x.winner)&&Number.isFinite(Number(x.home_pct))).sort((x,y)=>Date.parse(x.scheduled_at)-Date.parse(y.scheduled_at));if(!history.length){$('brier-chart').textContent='Aún no hay resultados evaluados de V3.';return;}let sum=0;const pts=history.map((r,i)=>{sum+=(Number(r.home_pct)/100-(r.winner==='home'?1:0))**2;return {i:i+1,v:sum/(i+1)};});const w=480,h=150,p=22,max=Math.max(.25,...pts.map(x=>x.v))*1.08;const coords=pts.map((x,i)=>(p+i*(w-2*p)/Math.max(1,pts.length-1))+','+(h-p-x.v/max*(h-2*p))).join(' ');$('brier-chart').innerHTML='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Brier acumulado; menor es mejor"><polyline points="'+coords+'" class="brier-line"/><text x="12" y="15">Brier acumulado · menor es mejor · n='+pts.length+'</text></svg>';}
   async function downloadHistoryCsv(){const btn=$('download-history');if(btn)btn.disabled=true;try{const r=await fetch('data/history.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error();const raw=await r.json(),list=Array.isArray(raw)?raw:Object.values(raw?.predictions||{});if(!list.length)throw Error();const cols=['game_id','scheduled_at','predicted_at','away_team','home_team','away_pct','home_pct','winner','away_score','home_score'];const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const csv='\uFEFF'+[cols,...list.map(x=>[x.game_id||x.id,x.scheduled_at||x.datetime,x.predicted_at,x.away?.name||x.away_team,x.home?.name||x.home_team,x.away_pct,x.home_pct,x.result?.winner||x.winner,x.result?.away_score||x.away_score,x.result?.home_score||x.home_score])].map(row=>row.map(q).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download='nba-analytics-historial.csv';link.click();URL.revokeObjectURL(url);}catch(_){if(btn)btn.textContent='CSV no disponible ahora';}finally{if(btn)btn.disabled=false;}}
 
   function renderLive() {

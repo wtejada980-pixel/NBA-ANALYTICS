@@ -21,7 +21,8 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from context_sources import collect, injuries_for_team
-from model_v2 import predict as predict_v2, elo_before, elo_baseline_probability
+from model_v2 import elo_before, elo_baseline_probability  # Elo simple de referencia, no pronosticador V2
+from v3_production import ACTIVE_MODEL, fit_model as fit_v3_model, predict as predict_v3, current_rows as v3_current_rows
 from validation import evaluate
 from scouting import analyze as analyze_scouting
 
@@ -326,13 +327,15 @@ def save_pre_match_revision(record: dict, recalculated: dict | None, at: datetim
         return latest_pre_match_revision(record)
     prior = latest_pre_match_revision(record)
     baseline = prior or original
-    if abs(home - baseline['home_pct']) >= .1 or abs(away - baseline['away_pct']) >= .1:
+    if (str(recalculated.get('model') or original['model']) != str(baseline.get('model') or original['model']) or
+            abs(home - baseline['home_pct']) >= .1 or abs(away - baseline['away_pct']) >= .1):
         revision = {
             'home_pct': home, 'away_pct': away,
             'predicted_at': at.isoformat(),
             'model': str(recalculated.get('model') or original['model']),
             'reason': str(recalculated.get('reason') or 'Actualización de resultados anteriores.'),
             'source': 'Recalculado con resultados disponibles antes del inicio',
+            'elo_baseline_home_pct': recalculated.get('elo_baseline_home_pct'),
         }
         revisions = record.setdefault('revisions', [])
         if not isinstance(revisions, list):
@@ -662,6 +665,13 @@ def refresh(today: date | None = None):
     finished = sorted([e for e in all_events.values() if e['status'] == 'post' and
                        e['home_score'] is not None and e['away_score'] is not None],
                       key=lambda x: x['datetime'])
+    # V3 es el único pronosticador activo. Si falta el historial de entrenamiento,
+    # el proceso falla de forma explícita; nunca vuelve a V2 como respaldo.
+    if schedule:
+        v3_model, v3_season_games = fit_v3_model()
+        v3_feature_games = v3_season_games + v3_current_rows(all_events)
+    else:
+        v3_model, v3_feature_games = None, []
     involved_teams = {g[side]['id']: g[side] for g in schedule for side in ('home', 'away')}
     team_histories = {}
     need_summaries = {}
@@ -710,7 +720,8 @@ def refresh(today: date | None = None):
         future = parse_time(game['datetime']) > now
         before_tipoff = game['status'] == 'pre' and future
         ratings = elo_before(finished, game['datetime']) if before_tipoff else {}
-        recalculated = predict_v2(game, teams, ratings) if before_tipoff else None
+        recalculated = (predict_v3(game, v3_model, v3_feature_games, now.isoformat())
+                        if before_tipoff and v3_model is not None else None)
         if frozen:
             game['prediction'] = frozen  # Pronóstico original: no se altera.
             game['elo_baseline_home_pct'] = stored.get('elo_baseline_home_pct')
@@ -794,6 +805,9 @@ def refresh(today: date | None = None):
         history['predictions'] = dict(sorted(history['predictions'].items(),
                                            key=lambda p: p[1]['date'], reverse=True)[:800])
     metrics = evaluate(history['predictions'])
+    metrics['active_model'] = ACTIVE_MODEL
+    metrics['elo_comparison'] = metrics.get('elo_comparison_by_model', {}).get(
+        ACTIVE_MODEL, {'n': 0, 'model_brier': None, 'elo_brier': None})
     # Siete fechas previas y agenda actual; registros viejos sin pronóstico
     # muestran solo el resultado real, nunca un porcentaje retrocalculado.
     archived_boxscores = cache_archive_boxscores(all_events.values(), box_cache, day, days=7)
@@ -804,7 +818,7 @@ def refresh(today: date | None = None):
         'as_of': now.isoformat(), 'date': day.isoformat(), 'timezone': 'America/Santo_Domingo',
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
         'source_url': 'https://www.espn.com/nba/scoreboard',
-        'model': 'elo-forma10-v2 / probabilidades experimentales; contexto cualitativo separado',
+        'model': ACTIVE_MODEL + ' / regresión logística cronológica; probabilidades experimentales',
         'games': archived + schedule, 'teams': teams,
         'elo_ratings': public_elo_ratings(finished, all_events, now.isoformat()),
         'news': news_items, 'news_source': daily_context.get('news_source', 'FOX Sports RSS') if isinstance(daily_context, dict) else 'FOX Sports RSS',
@@ -816,14 +830,12 @@ def refresh(today: date | None = None):
                          'missing_historical_days': len(failed_days),
                          'cached_games': len(all_events),
                          'cached_player_boxes': len(box_cache)},
-        'notes': ['No utiliza cuotas de apuestas',
-                  'El historial de hasta 45 días se conserva progresivamente; primera recuperación potencialmente incompleta',
-                  'Puntos anotados y recibidos por juego NO equivalen a rating por 100 posesiones',
-                  'Lesiones disponibles como contexto no verificado; comprobar informe oficial',
-                  'Foros y noticias no alteran automáticamente los porcentajes',
-                  'Las probabilidades no están calibradas ni garantizan resultados',
-                  'Revisiones prepartido se guardan aparte; las métricas evalúan el primer pronóstico',
-                  'Se muestran 7 días históricos con marcadores verificados y predicciones originales si existían'],
+        'notes': ['Modelo activo V3: regresión logística cronológica con seis variables de resultados previos',
+                  'No utiliza cuotas, noticias, lesiones, rumores ni opiniones de redes en el porcentaje',
+                  'Los pronósticos V2 anteriores al cambio permanecen archivados; nuevas predicciones usan V3',
+                  'Las probabilidades V3 aún no están calibradas y no garantizan resultados',
+                  'El historial de hasta 45 días se conserva progresivamente; la primera recuperación puede ser incompleta',
+                  'Se muestran 7 días históricos con marcadores verificados y pronósticos registrados antes del partido'],
     }
     all_events = {gid: e for gid, e in all_events.items() if e['date'] >= cutoff}
     box_cache = {gid: entry for gid, entry in box_cache.items() if gid in all_events}

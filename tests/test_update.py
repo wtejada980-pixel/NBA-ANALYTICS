@@ -139,6 +139,21 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(len(record['revisions']),1)
         self.assertEqual(again['predicted_at'],rev['predicted_at'])
 
+    def test_model_change_is_recorded_even_when_probability_is_unchanged(self):
+        from datetime import datetime, timezone
+        record = {'home_pct': 61.3, 'away_pct': 38.7, 'model': 'v2',
+                  'predicted_at': '2026-11-07T12:00:00Z',
+                  'scheduled_at': '2026-11-07T22:00:00Z'}
+        updated = {'home_pct': 61.3, 'away_pct': 38.7,
+                   'model': 'logistic-v3-production',
+                   'elo_baseline_home_pct': 58.0}
+        rev = update.save_pre_match_revision(record, updated,
+                  datetime(2026,11,7,16,0,tzinfo=timezone.utc))
+        self.assertEqual(rev['model'], 'logistic-v3-production')
+        self.assertEqual(rev['elo_baseline_home_pct'], 58.0)
+        self.assertEqual(record['model'], 'v2')
+        self.assertEqual(len(record['revisions']), 1)
+
     def test_revision_after_tipoff_is_not_saved(self):
         from datetime import datetime, timezone
         record = {'home_pct': 55, 'away_pct': 45, 'model': 'v2',
