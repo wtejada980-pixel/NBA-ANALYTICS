@@ -600,17 +600,6 @@
       '<div class="calibration-fill observed" style="width:' + row.actual_home_win_pct + '%"></div>' +
       '</div><b>' + row.actual_home_win_pct.toFixed(1) + '%</b></div></div>'
     ).join('') : '<p class="history-empty">Aún no hay resultados suficientes para dibujar la calibración.</p>';
-    const models = metrics.by_model && typeof metrics.by_model === 'object' ? metrics.by_model : {};
-    const keys = Object.keys(models).slice(0, 8);
-    $('model-versions').innerHTML = keys.length ?
-      '<h3>Rendimiento por versión del modelo</h3><div class="model-version-list">' +
-      keys.map(name => {
-        const entry = models[name] || {};
-        return Number.isInteger(entry.n) && Number.isFinite(entry.brier) ?
-          '<div class="model-version"><strong>' + escapeHtml(name) +
-          '</strong><span>' + entry.n + ' partidos</span><b>Brier ' +
-          entry.brier.toFixed(4) + '</b></div>' : '';
-      }).join('') + '</div>' : '';
     const quality = data.data_quality || {};
     const missing = Number.isInteger(quality.missing_historical_days) ? quality.missing_historical_days : 0;
     $('data-health').textContent = quality.history_partial ?

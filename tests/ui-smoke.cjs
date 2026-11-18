@@ -167,18 +167,20 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(scoutView.node('scouting-games').innerHTML,/6 victorias en 10 juegos/);
   assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
-  assert.match(view.node('model-validation').innerHTML,/Pronósticos V3 evaluados/);
-  assert.match(view.node('quality-caveat').textContent,/V3 está activo/);
+  assert.match(view.node('model-validation').innerHTML,/Partidos evaluados/);
+  assert.match(view.node('quality-caveat').textContent,/Todavía no hay partidos/);
   assert.match(view.node('history-list').innerHTML,/Todavía no tenemos pronósticos/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
-    validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68}});
+    validation:{active_model:'logistic-v3-production',
+      by_model:{'logistic-v3-production':{n:8,favorite_accuracy_pct:62.5,brier:0.22,log_loss:0.68}}}});
   assert.match(view.node('model-validation').innerHTML,/62\.5%/);
   assert.match(view.node('model-validation').innerHTML,/accuracy-bar/);
   assert.match(view.node('model-validation').innerHTML,/0\.2200/);
-  assert.match(view.node('quality-caveat').textContent,/Muestra inicial/);
+  assert.match(view.node('quality-caveat').textContent,/Muestra V3/);
   assert.match(view.node('calibration-chart').innerHTML,/resultados suficientes/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
-    validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68,
+    validation:{active_model:'logistic-v3-production',
+      by_model:{'logistic-v3-production':{n:8,favorite_accuracy_pct:62.5,brier:0.22,log_loss:0.68}},
       elo_comparison:{n:4,model_brier:.22,elo_brier:.25}},
     history_recent:[
       {id:'done',date:today,home:'New York Knicks',away:'Boston Celtics',
