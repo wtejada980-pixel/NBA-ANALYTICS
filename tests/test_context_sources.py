@@ -20,7 +20,9 @@ class FoxNewsTests(unittest.TestCase):
             requested.append(url)
             return feed
 
-        items = context_sources.fox_nba_news(request)
+        # La prueba valida el parseo del RSS, no el reloj ni el límite de antigüedad.
+        with patch.object(context_sources, "is_recent_news", return_value=True):
+            items = context_sources.fox_nba_news(request)
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["source"], "FOX Sports")
         self.assertEqual(items[0]["title"], "NBA headline")
@@ -44,8 +46,11 @@ class FoxNewsTests(unittest.TestCase):
             {"title": "NFL game recap", "url": "https://www.foxsports.com/stories/nfl/recap",
              "published": "Tue, 10 Nov 2026 20:00:00 GMT"},
         ]
-        self.assertEqual([item["title"] for item in context_sources.filter_fox_nba(items)],
-                         ["NBA game recap"])
+        # La prueba se centra en excluir apuestas y otras ligas; la recencia
+        # se cubre por separado en test_old_headlines_are_not_marked_as_current.
+        with patch.object(context_sources, "is_recent_news", return_value=True):
+            filtered = context_sources.filter_fox_nba(items)
+        self.assertEqual([item["title"] for item in filtered], ["NBA game recap"])
 
     def test_old_headlines_are_not_marked_as_current(self):
         self.assertFalse(context_sources.is_recent_news({
