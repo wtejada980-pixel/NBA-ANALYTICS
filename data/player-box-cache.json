@@ -34203,6 +34203,550 @@
           }
         ]
       }
+    },
+    "401910006": {
+      "player_stats": {
+        "26": [
+          {
+            "id": "4277919",
+            "name": "Mo Bamba",
+            "pts": 15.0,
+            "reb": 10.0,
+            "ast": 3.0,
+            "min": "31",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4432811",
+            "name": "Josh Green",
+            "pts": 9.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "13",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4433627",
+            "name": "Keyonte George",
+            "pts": 30.0,
+            "reb": 2.0,
+            "ast": 11.0,
+            "min": "35",
+            "stl": 0.0,
+            "blk": 2.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4873138",
+            "name": "Ace Bailey",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 4.0,
+            "min": "23",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "5041955",
+            "name": "Darryn Peterson",
+            "pts": 13.0,
+            "reb": 5.0,
+            "ast": 2.0,
+            "min": "31",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "5105839",
+            "name": "Brice Sensabaugh",
+            "pts": 40.0,
+            "reb": 11.0,
+            "ast": 5.0,
+            "min": "35",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4065673",
+            "name": "Tony Bradley",
+            "pts": 3.0,
+            "reb": 7.0,
+            "ast": 1.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "3133602",
+            "name": "Svi Mykhailiuk",
+            "pts": 8.0,
+            "reb": 7.0,
+            "ast": 5.0,
+            "min": "33",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4065663",
+            "name": "Josh Okogie",
+            "pts": 9.0,
+            "reb": 2.0,
+            "ast": 4.0,
+            "min": "22",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          }
+        ],
+        "12": [
+          {
+            "id": "3936099",
+            "name": "Derrick Jones Jr.",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "28",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4066648",
+            "name": "Rui Hachimura",
+            "pts": 20.0,
+            "reb": 5.0,
+            "ast": 1.0,
+            "min": "27",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "3448",
+            "name": "Brook Lopez",
+            "pts": 23.0,
+            "reb": 6.0,
+            "ast": 2.0,
+            "min": "23",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "2991139",
+            "name": "Kris Dunn",
+            "pts": 2.0,
+            "reb": 5.0,
+            "ast": 5.0,
+            "min": "26",
+            "stl": 3.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4396907",
+            "name": "Darius Garland",
+            "pts": 20.0,
+            "reb": 3.0,
+            "ast": 7.0,
+            "min": "30",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4432170",
+            "name": "Isaiah Jackson",
+            "pts": 8.0,
+            "reb": 5.0,
+            "ast": 0.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 2.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "5075626",
+            "name": "Baba Miller",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "5105832",
+            "name": "Nick Martinelli",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4065778",
+            "name": "Max Strus",
+            "pts": 3.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "21",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4702352",
+            "name": "Kobe Sanders",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 3.0,
+            "min": "18",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4845363",
+            "name": "Cam Christie",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5106258",
+            "name": "Gradey Dick",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5254165",
+            "name": "Keaton Wagler",
+            "pts": 15.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "18",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          }
+        ]
+      }
+    },
+    "401910005": {
+      "player_stats": {
+        "13": [
+          {
+            "id": "3155535",
+            "name": "Kevon Looney",
+            "pts": 4.0,
+            "reb": 8.0,
+            "ast": 0.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4592691",
+            "name": "Jake LaRavia",
+            "pts": 4.0,
+            "reb": 5.0,
+            "ast": 2.0,
+            "min": "23",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "3907498",
+            "name": "Matisse Thybulle",
+            "pts": 7.0,
+            "reb": 6.0,
+            "ast": 0.0,
+            "min": "31",
+            "stl": 3.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "3945274",
+            "name": "Luka Doncic",
+            "pts": 36.0,
+            "reb": 6.0,
+            "ast": 7.0,
+            "min": "42",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 5.0,
+            "starter": true
+          },
+          {
+            "id": "4397014",
+            "name": "Quentin Grimes",
+            "pts": 47.0,
+            "reb": 6.0,
+            "ast": 3.0,
+            "min": "42",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4278077",
+            "name": "Jarred Vanderbilt",
+            "pts": 4.0,
+            "reb": 7.0,
+            "ast": 0.0,
+            "min": "14",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4278580",
+            "name": "Sandro Mamukelashvili",
+            "pts": 3.0,
+            "reb": 3.0,
+            "ast": 2.0,
+            "min": "23",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4433137",
+            "name": "Ziaire Williams",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "24",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5060631",
+            "name": "Adou Thiero",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "6",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5105817",
+            "name": "Carson Cooper",
+            "pts": 3.0,
+            "reb": 4.0,
+            "ast": 2.0,
+            "min": "18",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4277811",
+            "name": "Collin Sexton",
+            "pts": 10.0,
+            "reb": 4.0,
+            "ast": 3.0,
+            "min": "25",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          }
+        ],
+        "30": [
+          {
+            "id": "4066218",
+            "name": "Grant Williams",
+            "pts": 12.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "30",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4433249",
+            "name": "Moussa Diabate",
+            "pts": 5.0,
+            "reb": 16.0,
+            "ast": 2.0,
+            "min": "38",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4433287",
+            "name": "Brandon Miller",
+            "pts": 28.0,
+            "reb": 2.0,
+            "ast": 4.0,
+            "min": "32",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 5.0,
+            "starter": true
+          },
+          {
+            "id": "4396971",
+            "name": "Naz Reid",
+            "pts": 23.0,
+            "reb": 11.0,
+            "ast": 4.0,
+            "min": "42",
+            "stl": 2.0,
+            "blk": 2.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4395651",
+            "name": "Coby White",
+            "pts": 19.0,
+            "reb": 3.0,
+            "ast": 4.0,
+            "min": "26",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 4.0,
+            "starter": true
+          },
+          {
+            "id": "2583632",
+            "name": "Royce O'Neale",
+            "pts": 13.0,
+            "reb": 4.0,
+            "ast": 1.0,
+            "min": "34",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "5211176",
+            "name": "Tidjane Salaun",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "5",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4576060",
+            "name": "Ryan Kalkbrenner",
+            "pts": 6.0,
+            "reb": 3.0,
+            "ast": 1.0,
+            "min": "14",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4602025",
+            "name": "Sion James",
+            "pts": 3.0,
+            "reb": 6.0,
+            "ast": 4.0,
+            "min": "30",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": false
+          },
+          {
+            "id": "5060701",
+            "name": "Christian Anderson",
+            "pts": 5.0,
+            "reb": 1.0,
+            "ast": 4.0,
+            "min": "14",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "5239590",
+            "name": "Liam McNeeley",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "0",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
