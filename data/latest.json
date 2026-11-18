@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18T01:57:23.015530+00:00",
+  "as_of": "2026-11-18T01:58:48.697911+00:00",
   "date": "2026-11-17",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -14775,7 +14775,7 @@
             "game_pts": 15.0,
             "game_reb": 5.0,
             "game_ast": 4.0,
-            "game_min": "20"
+            "game_min": "21"
           },
           {
             "id": "4433134",
@@ -14784,7 +14784,7 @@
             "game_pts": 13.0,
             "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "22"
+            "game_min": "23"
           },
           {
             "id": "5093267",
@@ -14792,8 +14792,8 @@
             "starter": true,
             "game_pts": 4.0,
             "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "21"
+            "game_ast": 2.0,
+            "game_min": "22"
           },
           {
             "id": "4395724",
@@ -14802,16 +14802,16 @@
             "game_pts": 8.0,
             "game_reb": 1.0,
             "game_ast": 6.0,
-            "game_min": "20"
+            "game_min": "21"
           },
           {
             "id": "4684272",
             "name": "Ja'Kobe Walter",
             "starter": true,
-            "game_pts": 17.0,
+            "game_pts": 20.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "19"
+            "game_min": "20"
           },
           {
             "id": "4431893",
@@ -14867,16 +14867,16 @@
             "game_pts": 9.0,
             "game_reb": 4.0,
             "game_ast": 0.0,
-            "game_min": "24"
+            "game_min": "25"
           },
           {
             "id": "3136195",
             "name": "Karl-Anthony Towns",
             "starter": true,
             "game_pts": 11.0,
-            "game_reb": 9.0,
+            "game_reb": 10.0,
             "game_ast": 5.0,
-            "game_min": "22"
+            "game_min": "23"
           },
           {
             "id": "3062679",
@@ -14894,7 +14894,7 @@
             "game_pts": 11.0,
             "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "18"
+            "game_min": "19"
           },
           {
             "id": "3934672",
@@ -14903,7 +14903,7 @@
             "game_pts": 14.0,
             "game_reb": 4.0,
             "game_ast": 4.0,
-            "game_min": "20"
+            "game_min": "21"
           },
           {
             "id": "6585",
@@ -15044,7 +15044,7 @@
             "game_pts": 0.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "9"
+            "game_min": "10"
           },
           {
             "id": "3032976",
@@ -15062,7 +15062,7 @@
             "game_pts": 15.0,
             "game_reb": 2.0,
             "game_ast": 2.0,
-            "game_min": "13"
+            "game_min": "14"
           },
           {
             "id": "4432816",
@@ -15071,7 +15071,7 @@
             "game_pts": 7.0,
             "game_reb": 6.0,
             "game_ast": 2.0,
-            "game_min": "13"
+            "game_min": "14"
           },
           {
             "id": "3136196",
@@ -15089,7 +15089,7 @@
             "game_pts": 2.0,
             "game_reb": 6.0,
             "game_ast": 0.0,
-            "game_min": "15"
+            "game_min": "16"
           },
           {
             "id": "4432847",
@@ -15124,8 +15124,8 @@
             "id": "5105565",
             "name": "Donovan Clingan",
             "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 8.0,
+            "game_pts": 4.0,
+            "game_reb": 9.0,
             "game_ast": 0.0,
             "game_min": "13"
           },
@@ -15135,8 +15135,8 @@
             "starter": true,
             "game_pts": 5.0,
             "game_reb": 1.0,
-            "game_ast": 3.0,
-            "game_min": "10"
+            "game_ast": 4.0,
+            "game_min": "11"
           },
           {
             "id": "4703889",
@@ -15161,9 +15161,9 @@
             "name": "Robert Williams III",
             "starter": false,
             "game_pts": 2.0,
-            "game_reb": 2.0,
+            "game_reb": 3.0,
             "game_ast": 0.0,
-            "game_min": "6"
+            "game_min": "7"
           },
           {
             "id": "4066399",
@@ -15181,7 +15181,7 @@
             "game_pts": 4.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "7"
+            "game_min": "8"
           },
           {
             "id": "3995",
@@ -15396,7 +15396,7 @@
             "starter": true,
             "game_pts": 4.0,
             "game_reb": 1.0,
-            "game_ast": 2.0,
+            "game_ast": 3.0,
             "game_min": "8"
           },
           {
@@ -15518,7 +15518,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-18T01:57:35.061575+00:00"
+        "context_updated_at": "2026-11-18T01:59:04.058568+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -26255,7 +26255,7 @@
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-18T01:57:35.061602+00:00",
+  "news_updated_at": "2026-11-18T01:59:04.058584+00:00",
   "archive_days": 7,
   "validation": {
     "completed_predictions": 82,
