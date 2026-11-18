@@ -25,7 +25,7 @@ class V3ProductionTests(unittest.TestCase):
             model, loaded = v3_production.fit_model()
         self.assertEqual(loaded, seasons)
         self.assertEqual(model, {"trained": True})
-        self.assertEqual(len(train.call_args.args[0]), 60)
+        self.assertEqual(len(train.call_args.args[0]), 120)
         self.assertEqual({r["season_year"] for r in train.call_args.args[0]}, {2022, 2023})
 
     def test_prediction_returns_v3_probabilities_and_elo_reference(self):
