@@ -167,8 +167,8 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(scoutView.node('scouting-games').innerHTML,/6 victorias en 10 juegos/);
   assert.doesNotMatch(view.node('games').innerHTML,/\bBrier\b|\bElo\b|Noticias|Lesiones|últimos partidos/i);
   assert.equal(view.node('game-count').textContent,'1 partido');
-  assert.match(view.node('model-validation').innerHTML,/Partidos evaluados/);
-  assert.match(view.node('quality-caveat').textContent,/Todavía no hay partidos/);
+  assert.match(view.node('model-validation').innerHTML,/Pronósticos V3 evaluados/);
+  assert.match(view.node('quality-caveat').textContent,/V3 está activo/);
   assert.match(view.node('history-list').innerHTML,/Todavía no tenemos pronósticos/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
     validation:{completed_predictions:8,favorite_accuracy_pct:62.5,brier_score:0.22,log_loss:0.68}});
