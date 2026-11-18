@@ -4204,7 +4204,7 @@
             "starter": true,
             "game_pts": 15.0,
             "game_reb": 5.0,
-            "game_ast": 3.0,
+            "game_ast": 4.0,
             "game_min": "20"
           },
           {
@@ -4214,7 +4214,7 @@
             "game_pts": 13.0,
             "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "21"
+            "game_min": "22"
           },
           {
             "id": "5093267",
@@ -4238,7 +4238,7 @@
             "id": "4684272",
             "name": "Ja'Kobe Walter",
             "starter": true,
-            "game_pts": 14.0,
+            "game_pts": 17.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
             "game_min": "19"
@@ -4297,7 +4297,7 @@
             "game_pts": 9.0,
             "game_reb": 4.0,
             "game_ast": 0.0,
-            "game_min": "23"
+            "game_min": "24"
           },
           {
             "id": "3136195",
@@ -4324,16 +4324,16 @@
             "game_pts": 11.0,
             "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "17"
+            "game_min": "18"
           },
           {
             "id": "3934672",
             "name": "Jalen Brunson",
             "starter": true,
-            "game_pts": 13.0,
+            "game_pts": 14.0,
             "game_reb": 4.0,
             "game_ast": 4.0,
-            "game_min": "19"
+            "game_min": "20"
           },
           {
             "id": "6585",
@@ -4462,10 +4462,10 @@
             "id": "4431671",
             "name": "Jaden McDaniels",
             "starter": true,
-            "game_pts": 12.0,
+            "game_pts": 14.0,
             "game_reb": 2.0,
             "game_ast": 0.0,
-            "game_min": "14"
+            "game_min": "15"
           },
           {
             "id": "4895758",
@@ -4492,7 +4492,7 @@
             "game_pts": 15.0,
             "game_reb": 2.0,
             "game_ast": 2.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "4432816",
@@ -4501,7 +4501,7 @@
             "game_pts": 7.0,
             "game_reb": 6.0,
             "game_ast": 2.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "3136196",
@@ -4519,7 +4519,7 @@
             "game_pts": 2.0,
             "game_reb": 6.0,
             "game_ast": 0.0,
-            "game_min": "14"
+            "game_min": "15"
           },
           {
             "id": "4432847",
@@ -4546,9 +4546,9 @@
             "name": "Toumani Camara",
             "starter": true,
             "game_pts": 2.0,
-            "game_reb": 2.0,
+            "game_reb": 3.0,
             "game_ast": 0.0,
-            "game_min": "10"
+            "game_min": "11"
           },
           {
             "id": "5105565",
@@ -4566,7 +4566,7 @@
             "game_pts": 5.0,
             "game_reb": 1.0,
             "game_ast": 3.0,
-            "game_min": "9"
+            "game_min": "10"
           },
           {
             "id": "4703889",
@@ -4575,7 +4575,7 @@
             "game_pts": 6.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "10"
+            "game_min": "11"
           },
           {
             "id": "5081727",
@@ -4918,7 +4918,7 @@
           {
             "title": "Utah Jazz @ Los Angeles Clippers: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wU1JZaTBFWVNhYVVtLUpadmxMdDBmQmRWQlUtZG8zQllqRmkzaUM4MTFad09wcXJ0dHFCZTZMdW51MVZ5TUpFU3F2Q2hjQTQ4cENLOERFVURBdEVLazBnTUJnOVU4RHR2eWlNV0l0WQ?oc=5",
-            "published": "Wed, 18 Nov 2026 00:33:39 GMT",
+            "published": "Tue, 17 Nov 2026 23:03:37 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
@@ -4948,7 +4948,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-18T01:56:46.787577+00:00"
+        "context_updated_at": "2026-11-18T01:57:35.061575+00:00"
       },
       "head_to_head": [],
       "prediction": {
