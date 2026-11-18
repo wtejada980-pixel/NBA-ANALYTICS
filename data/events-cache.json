@@ -4204,8 +4204,8 @@
             "starter": true,
             "game_pts": 15.0,
             "game_reb": 5.0,
-            "game_ast": 4.0,
-            "game_min": "21"
+            "game_ast": 5.0,
+            "game_min": "22"
           },
           {
             "id": "4433134",
@@ -4223,16 +4223,16 @@
             "game_pts": 4.0,
             "game_reb": 1.0,
             "game_ast": 2.0,
-            "game_min": "22"
+            "game_min": "23"
           },
           {
             "id": "4395724",
             "name": "Immanuel Quickley",
             "starter": true,
-            "game_pts": 8.0,
+            "game_pts": 11.0,
             "game_reb": 1.0,
             "game_ast": 6.0,
-            "game_min": "21"
+            "game_min": "22"
           },
           {
             "id": "4684272",
@@ -4306,7 +4306,7 @@
             "game_pts": 11.0,
             "game_reb": 10.0,
             "game_ast": 5.0,
-            "game_min": "23"
+            "game_min": "24"
           },
           {
             "id": "3062679",
@@ -4369,7 +4369,7 @@
             "game_pts": 3.0,
             "game_reb": 0.0,
             "game_ast": 1.0,
-            "game_min": "8"
+            "game_min": "9"
           },
           {
             "id": "4433225",
@@ -4465,7 +4465,7 @@
             "game_pts": 14.0,
             "game_reb": 2.0,
             "game_ast": 0.0,
-            "game_min": "15"
+            "game_min": "16"
           },
           {
             "id": "4895758",
@@ -4528,7 +4528,7 @@
             "game_pts": 2.0,
             "game_reb": 0.0,
             "game_ast": 1.0,
-            "game_min": "10"
+            "game_min": "11"
           },
           {
             "id": "4592492",
@@ -4547,17 +4547,17 @@
             "starter": true,
             "game_pts": 2.0,
             "game_reb": 3.0,
-            "game_ast": 0.0,
-            "game_min": "11"
+            "game_ast": 1.0,
+            "game_min": "12"
           },
           {
             "id": "5105565",
             "name": "Donovan Clingan",
             "starter": true,
-            "game_pts": 4.0,
+            "game_pts": 6.0,
             "game_reb": 9.0,
             "game_ast": 0.0,
-            "game_min": "13"
+            "game_min": "14"
           },
           {
             "id": "6606",
@@ -4575,7 +4575,7 @@
             "game_pts": 6.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "11"
+            "game_min": "12"
           },
           {
             "id": "5081727",
@@ -4611,7 +4611,7 @@
             "game_pts": 4.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "8"
+            "game_min": "9"
           },
           {
             "id": "3995",
@@ -4725,8 +4725,8 @@
             "starter": true,
             "game_pts": 2.0,
             "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "8"
+            "game_ast": 2.0,
+            "game_min": "9"
           },
           {
             "id": "4845367",
@@ -4744,7 +4744,7 @@
             "game_pts": 6.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "6578",
@@ -4759,10 +4759,10 @@
             "id": "4395723",
             "name": "Keldon Johnson",
             "starter": false,
-            "game_pts": 0.0,
+            "game_pts": 2.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "5"
           },
           {
             "id": "4592479",
@@ -4780,7 +4780,7 @@
             "game_pts": 0.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "1"
+            "game_min": "2"
           },
           {
             "id": "3064560",
@@ -4789,7 +4789,7 @@
             "game_pts": 2.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "5"
           }
         ],
         "away": [
@@ -4806,28 +4806,28 @@
             "id": "4066372",
             "name": "Kevin Huerter",
             "starter": true,
-            "game_pts": 3.0,
+            "game_pts": 5.0,
             "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "4432166",
             "name": "Cade Cunningham",
             "starter": true,
             "game_pts": 6.0,
-            "game_reb": 0.0,
-            "game_ast": 2.0,
-            "game_min": "11"
+            "game_reb": 1.0,
+            "game_ast": 3.0,
+            "game_min": "13"
           },
           {
             "id": "4684742",
             "name": "Ausar Thompson",
             "starter": true,
-            "game_pts": 4.0,
+            "game_pts": 6.0,
             "game_reb": 1.0,
             "game_ast": 3.0,
-            "game_min": "8"
+            "game_min": "9"
           },
           {
             "id": "5107199",
@@ -4836,7 +4836,7 @@
             "game_pts": 4.0,
             "game_reb": 1.0,
             "game_ast": 3.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "4278562",
@@ -4844,8 +4844,8 @@
             "starter": false,
             "game_pts": 4.0,
             "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "7"
+            "game_ast": 2.0,
+            "game_min": "8"
           },
           {
             "id": "2596112",
@@ -4948,7 +4948,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-18T01:59:04.058568+00:00"
+        "context_updated_at": "2026-11-18T02:00:41.663277+00:00"
       },
       "head_to_head": [],
       "prediction": {
