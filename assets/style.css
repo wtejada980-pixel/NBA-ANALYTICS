@@ -220,6 +220,13 @@ h2 {font-size:27px;letter-spacing:-.04em;margin:0}
 .baseline-compare{margin-top:15px;border:1px solid #34363a;border-radius:12px;background:#141619;padding:13px 15px}
 .baseline-compare strong{font-size:12px;color:#fff}
 .baseline-compare p{font-size:11px;color:#aeb0b7;line-height:1.65;margin:6px 0 0}
+.prospective-table-wrap{overflow-x:auto;margin-top:10px}
+.prospective-table{width:100%;border-collapse:collapse;min-width:480px;font-variant-numeric:tabular-nums}
+.prospective-table th,.prospective-table td{text-align:right;padding:8px 7px;border-bottom:1px solid #303137;font-size:11px;white-space:nowrap}
+.prospective-table thead th{color:#aeb0b7;font-weight:700}
+.prospective-table th:first-child,.prospective-table td:first-child{text-align:left}
+.prospective-table tbody th{color:#fff;font-weight:750}
+.prospective-comparison>p{margin-top:9px}
 .history-section{margin-top:32px;padding-top:27px;border-top:1px solid #303139}
 .history-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
 .history-entry{padding:14px;background:linear-gradient(150deg,#1b1c20,#121315);border:1px solid #353238;border-radius:13px;min-width:0}

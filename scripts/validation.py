@@ -3,6 +3,60 @@ from __future__ import annotations
 import math
 
 
+def prospective_comparison(predictions):
+    """Compare V2, V3 and hybrid on the same timestamped pregame forecasts."""
+    from datetime import datetime
+
+    completed, pending = [], 0
+    for record in predictions.values():
+        if not isinstance(record, dict):
+            continue
+        try:
+            scheduled = datetime.fromisoformat(
+                str(record["scheduled_at"]).replace("Z", "+00:00"))
+            comparisons = record.get("model_comparisons", [])
+            valid = []
+            for entry in comparisons if isinstance(comparisons, list) else []:
+                if not isinstance(entry, dict):
+                    continue
+                predicted = datetime.fromisoformat(
+                    str(entry["predicted_at"]).replace("Z", "+00:00"))
+                if predicted >= scheduled or entry.get("scheduled_at") != record.get("scheduled_at"):
+                    continue
+                values = {key: float(entry[key]) / 100.0
+                          for key in ("v2_home_pct", "v3_home_pct", "hybrid_home_pct")}
+                if any(not math.isfinite(p) or not 0 <= p <= 1 for p in values.values()):
+                    continue
+                valid.append((predicted, values))
+            if not valid:
+                continue
+            _, latest = max(valid, key=lambda item: item[0])
+            result = record.get("result")
+            if isinstance(result, dict) and result.get("winner") in ("home", "away"):
+                completed.append((latest, 1.0 if result["winner"] == "home" else 0.0))
+            elif result is None:
+                pending += 1
+        except (KeyError, TypeError, ValueError, OverflowError):
+            continue
+
+    reports = {}
+    for key in ("v2", "v3", "hybrid"):
+        pairs = [(row[key + "_home_pct"], y) for row, y in completed]
+        n = len(pairs)
+        reports[key] = {
+            "n": n,
+            "favorite_accuracy_pct": round(100 * sum((p >= .5) == bool(y)
+                                                       for p, y in pairs) / n, 1) if n else None,
+            "brier": round(sum((p-y) ** 2 for p, y in pairs) / n, 4) if n else None,
+            "log_loss": round(-sum(y * math.log(max(1e-9, p)) +
+                                    (1-y) * math.log(max(1e-9, 1-p))
+                                    for p, y in pairs) / n, 4) if n else None,
+        }
+    return {"completed_paired_games": len(completed),
+            "pending_forecasts": pending, "models": reports,
+            "selection_policy": "Última captura prepartido con V2, V3 e híbrido guardados al mismo tiempo."}
+
+
 def evaluate(predictions):
     """Brier binario (0-1), aciertos del favorito y confiabilidad por intervalos."""
     valid = []
@@ -31,6 +85,7 @@ def evaluate(predictions):
              "log_loss": None, "calibration": [], "calibration_by_model": {},
              "sample_warning": "Sin resultados suficientes", "by_model": {},
              "history_by_model": {},
+             "prospective_model_comparison": prospective_comparison(predictions),
              "elo_comparison": {"n": 0, "model_brier": None, "elo_brier": None},
              "elo_comparison_by_model": {}}
     if not n:
@@ -183,6 +238,7 @@ def evaluate(predictions):
         "calibration_by_model": calibration_by_model,
         "by_model": by_model,
         "history_by_model": history_by_model,
+        "prospective_model_comparison": prospective_comparison(predictions),
         "elo_comparison": comparison,
         "elo_comparison_by_model": elo_comparison_by_model,
         "sample_warning": ("Muestra pequeña: no permite demostrar calibración."

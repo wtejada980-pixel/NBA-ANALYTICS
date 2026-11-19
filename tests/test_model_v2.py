@@ -113,6 +113,40 @@ class ValidationTests(unittest.TestCase):
         bad = validation.evaluate({"1": {"home_pct": 95, "result": {"winner": "away"}}})
         self.assertLess(good["brier_score"], bad["brier_score"])
 
+    def test_prospective_models_are_compared_on_the_same_completed_games(self):
+        capture = {'predicted_at':'2026-11-06T19:00:00Z',
+          'scheduled_at':'2026-11-06T20:00:00Z',
+          'v2_home_pct':65,'v3_home_pct':55,'hybrid_home_pct':60,
+          'v2_weight_pct':50,'v3_weight_pct':50}
+        records = {
+          'home': {'home_pct':60,'result':{'winner':'home'},
+            'scheduled_at':'2026-11-06T20:00:00Z','predicted_at':'2026-11-06T19:00:00Z',
+            'model_comparisons':[capture]},
+          'away': {'home_pct':42.5,'result':{'winner':'away'},
+            'scheduled_at':'2026-11-07T20:00:00Z','predicted_at':'2026-11-07T19:00:00Z',
+            'model_comparisons':[{'predicted_at':'2026-11-07T19:00:00Z',
+              'scheduled_at':'2026-11-07T20:00:00Z','v2_home_pct':40,
+              'v3_home_pct':45,'hybrid_home_pct':42.5}]},
+          'pending': {'result':None,'scheduled_at':'2026-11-08T20:00:00Z',
+            'model_comparisons':[{'predicted_at':'2026-11-08T19:00:00Z',
+              'scheduled_at':'2026-11-08T20:00:00Z','v2_home_pct':50,
+              'v3_home_pct':50,'hybrid_home_pct':50}]},
+        }
+        report = validation.evaluate(records)['prospective_model_comparison']
+        self.assertEqual(report['completed_paired_games'],2)
+        self.assertEqual(report['pending_forecasts'],1)
+        self.assertEqual({m['n'] for m in report['models'].values()},{2})
+        self.assertEqual(report['models']['hybrid']['favorite_accuracy_pct'],100.0)
+
+    def test_prospective_models_ignore_comparisons_saved_after_tipoff(self):
+        records={'late': {'home_pct':60,'result':{'winner':'home'},
+          'scheduled_at':'2026-11-06T20:00:00Z','model_comparisons':[
+            {'predicted_at':'2026-11-06T20:01:00Z','scheduled_at':'2026-11-06T20:00:00Z',
+             'v2_home_pct':60,'v3_home_pct':60,'hybrid_home_pct':60}]}}
+        report=validation.evaluate(records)['prospective_model_comparison']
+        self.assertEqual(report['completed_paired_games'],0)
+        self.assertEqual(report['models']['v2']['n'],0)
+
 
 if __name__ == "__main__":
     unittest.main()

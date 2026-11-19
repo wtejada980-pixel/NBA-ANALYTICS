@@ -686,6 +686,25 @@
       modelLabel + ' está activo. Aún no hay resultados finalizados de sus pronósticos publicados; las predicciones anteriores permanecen separadas por versión.' :
       n < 100 ? 'Muestra de ' + modelLabel + ': ' + n + ' partidos. El resultado todavía puede variar mucho y no demuestra que las probabilidades estén calibradas.' :
       'Resultados de ' + modelLabel + '. El porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
+    const pairedReport = metrics.prospective_model_comparison || {};
+    const pairedN = Number.isInteger(pairedReport.completed_paired_games) ? pairedReport.completed_paired_games : 0;
+    const pendingN = Number.isInteger(pairedReport.pending_forecasts) ? pairedReport.pending_forecasts : 0;
+    const pairedModels = pairedReport.models || {};
+    const pairedRows = [
+      ['V2', pairedModels.v2 || {}],
+      ['V3', pairedModels.v3 || {}],
+      ['Híbrido 50/50', pairedModels.hybrid || {}],
+    ];
+    $('prospective-comparison').innerHTML = pairedN ?
+      '<div class="prospective-table-wrap"><table class="prospective-table"><thead><tr><th>Modelo</th><th>Partidos</th><th>Acierto</th><th>Brier</th><th>Log-loss</th></tr></thead><tbody>' +
+      pairedRows.map(([name, row]) => '<tr><th>' + name + '</th><td>' + pairedN + '</td><td>' +
+        (Number.isFinite(row.favorite_accuracy_pct) ? row.favorite_accuracy_pct.toFixed(1) + '%' : '—') + '</td><td>' +
+        (Number.isFinite(row.brier) ? row.brier.toFixed(4) : '—') + '</td><td>' +
+        (Number.isFinite(row.log_loss) ? row.log_loss.toFixed(4) : '—') + '</td></tr>').join('') +
+      '</tbody></table></div><p>' + (pairedN < 100 ?
+        'Muestra inicial: ' + pairedN + ' partidos evaluados y ' + pendingN + ' pendientes. Se mantiene el peso 50/50 durante la recopilación.' :
+        'Muestra pareada: ' + pairedN + ' partidos evaluados y ' + pendingN + ' pendientes. La comparación no ajusta automáticamente los pesos.') + '</p>' :
+      '<p>Hay ' + pendingN + ' pronósticos pareados pendientes. Las métricas aparecerán al finalizar esos partidos.</p>';
     const comparison = metrics.elo_comparison || {};
     const paired = Number.isInteger(comparison.n) ? comparison.n : 0;
     $('elo-validation').innerHTML = paired > 0 &&

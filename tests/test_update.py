@@ -289,6 +289,30 @@ class ParseTests(unittest.TestCase):
         self.assertFalse(update.append_input_snapshot(record,snapshot('2026-11-07T22:01:00Z')))
         self.assertEqual(len(record['input_snapshots']),2)
 
+    def test_model_comparison_captures_all_three_forecasts_at_same_cutoff(self):
+        from datetime import datetime, timezone
+        record={}
+        prediction={'home_pct':57.5,'hybrid':{'v2_home_pct':60,
+            'v3_home_pct':55,'v2_weight_pct':50,'v3_weight_pct':50}}
+        at=datetime(2026,11,7,19,tzinfo=timezone.utc)
+        start='2026-11-07T22:00:00Z'
+        self.assertTrue(update.append_model_comparison(record,prediction,at,start))
+        self.assertEqual(record['model_comparisons'][0]['hybrid_home_pct'],57.5)
+        self.assertEqual(record['model_comparisons'][0]['v2_home_pct'],60)
+        self.assertEqual(record['model_comparisons'][0]['v3_home_pct'],55)
+        self.assertFalse(update.append_model_comparison(record,prediction,at,start))
+        self.assertFalse(update.append_model_comparison(record,prediction,
+            datetime(2026,11,7,22,tzinfo=timezone.utc),start))
+
+    def test_model_comparison_requires_complete_valid_hybrid_components(self):
+        from datetime import datetime, timezone
+        at=datetime(2026,11,7,19,tzinfo=timezone.utc)
+        start='2026-11-07T22:00:00Z'
+        self.assertFalse(update.append_model_comparison({},None,at,start))
+        self.assertFalse(update.append_model_comparison({},
+            {'home_pct':60,'hybrid':{'v2_home_pct':55,'v3_home_pct':65,
+              'v2_weight_pct':60,'v3_weight_pct':50}},at,start))
+
     def test_injury_snapshots_only_cover_games_within_36_hours(self):
         from datetime import datetime, timezone
         now=datetime(2026,11,7,18,tzinfo=timezone.utc)

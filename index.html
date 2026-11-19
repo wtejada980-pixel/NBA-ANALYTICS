@@ -13,7 +13,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <title>NBA Analytics — Partidos y probabilidades</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261113-features">
+  <link rel="stylesheet" href="assets/style.css?v=20261119-paired">
 </head>
 <body>
   <div class="site-shell">
@@ -103,6 +103,11 @@
         </div>
         <p id="quality-caveat" class="quality-caveat">Aún estamos reuniendo resultados suficientes para validar las probabilidades.</p>
         <div id="elo-validation" class="baseline-compare"></div>
+        <div class="baseline-compare prospective-panel">
+          <strong>Comparación prospectiva: V2, V3 e híbrido</strong>
+          <p>Se comparan sobre los mismos partidos y con pronósticos guardados a la misma hora, antes del inicio.</p>
+          <div id="prospective-comparison" class="prospective-comparison" aria-live="polite">Preparando seguimiento pareado…</div>
+        </div>
         <div class="calibration-card">
           <h3>¿Las probabilidades reflejan la realidad?</h3>
           <p>Cuando estimamos un 60% para el local, ¿gana cerca del 60% de las veces? Cada grupo compara estimación y frecuencia real, únicamente con pronósticos anteriores al partido.</p>
@@ -155,7 +160,7 @@
     <footer class="site-footer"><span>© NBA ANALYTICS</span><span>Datos en vivo: ESPN · Proyecto independiente · No afiliado a la NBA ni a ESPN</span></footer>
   </div>
   <script id="seed" type="application/json">{"as_of":null,"date":null,"games":[],"teams":{},"demo_seed":true}</script>
-  <script src="assets/app.js?v=20261119-hybrid" defer></script>
+  <script src="assets/app.js?v=20261119-paired" defer></script>
   <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./service-worker.js").catch(()=>{}); let promptEvent; window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();promptEvent=e;const b=document.getElementById("install-app");if(b)b.hidden=false;}); document.getElementById("install-app")?.addEventListener("click",async()=>{if(!promptEvent)return;promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;document.getElementById("install-app").hidden=true;});</script>
 </body>
 </html>

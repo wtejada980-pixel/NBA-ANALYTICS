@@ -553,6 +553,56 @@ def append_input_snapshot(record: dict, snapshot: dict, max_snapshots: int = 48,
     return True
 
 
+def append_model_comparison(record: dict, prediction: dict | None,
+                            captured_at: datetime, scheduled_at: str,
+                            max_snapshots: int = 48,
+                            min_interval: timedelta = timedelta(minutes=45)) -> bool:
+    """Guardar V2, V3 e híbrido del mismo juego y corte antes del inicio."""
+    if not isinstance(prediction, dict) or not isinstance(prediction.get('hybrid'), dict):
+        return False
+    try:
+        if captured_at >= parse_time(scheduled_at):
+            return False
+        hybrid = prediction['hybrid']
+        values = {
+            'v2_home_pct': float(hybrid['v2_home_pct']),
+            'v3_home_pct': float(hybrid['v3_home_pct']),
+            'hybrid_home_pct': float(prediction['home_pct']),
+        }
+        if any(not math.isfinite(value) or not 0 <= value <= 100
+               for value in values.values()):
+            return False
+        v2_weight = float(hybrid['v2_weight_pct'])
+        v3_weight = float(hybrid['v3_weight_pct'])
+        if abs(v2_weight + v3_weight - 100) > 0.1:
+            return False
+    except (KeyError, TypeError, ValueError, OverflowError):
+        return False
+    snapshot = {
+        'predicted_at': captured_at.isoformat(),
+        'scheduled_at': scheduled_at,
+        **{key: round(value, 1) for key, value in values.items()},
+        'v2_weight_pct': round(v2_weight, 1),
+        'v3_weight_pct': round(v3_weight, 1),
+    }
+    comparisons = record.setdefault('model_comparisons', [])
+    if not isinstance(comparisons, list):
+        comparisons = record['model_comparisons'] = []
+    if comparisons:
+        previous = comparisons[-1]
+        try:
+            elapsed = captured_at - parse_time(previous['predicted_at'])
+            same_values = all(snapshot.get(key) == previous.get(key)
+                              for key in ('v2_home_pct', 'v3_home_pct', 'hybrid_home_pct'))
+            if same_values and elapsed < min_interval:
+                return False
+        except (KeyError, TypeError, ValueError):
+            pass
+    comparisons.append(snapshot)
+    record['model_comparisons'] = comparisons[-max_snapshots:]
+    return True
+
+
 
 def archived_games(all_events: dict, history: dict, day: date, days: int = 7,
                    box_cache: dict | None = None) -> list[dict]:
@@ -713,6 +763,7 @@ def refresh(today: date | None = None):
     # timestamped history snapshot makes later model comparisons leakage-safe.
     daily_context = collect([g for g in schedule if g['date'] == day.isoformat()], teams)
     injury_snapshots = capture_upcoming_injuries(schedule, now)
+    model_comparisons = {}
     for game in schedule:
         game['head_to_head'] = recent_meetings(game, finished)
         stored = history['predictions'].get(game['id'])
@@ -723,6 +774,8 @@ def refresh(today: date | None = None):
         recalculated = (predict_v3(game, v3_model, v3_feature_games, now.isoformat(),
                                    teams=teams, elo=ratings)
                         if before_tipoff and v3_model is not None else None)
+        if before_tipoff and isinstance(recalculated, dict):
+            model_comparisons[game['id']] = recalculated
         if frozen:
             game['prediction'] = frozen  # Pronóstico original: no se altera.
             game['elo_baseline_home_pct'] = stored.get('elo_baseline_home_pct')
@@ -798,6 +851,9 @@ def refresh(today: date | None = None):
                 'elo_baseline_home_pct': game['elo_baseline_home_pct'],
                 'scheduled_at': game['datetime'], 'result': None}
             history['predictions'][game['id']] = record
+        if game['status'] == 'pre':
+            append_model_comparison(record, model_comparisons.get(game['id']),
+                                    now, game['datetime'])
         active = game.get('revised_prediction') or game['prediction']
         inputs = build_input_snapshot(game, teams, injury_snapshots, active, now)
         append_input_snapshot(record, inputs)

@@ -172,11 +172,18 @@ async function mount(snapshot, failure=false, scoreboard=null) {
   assert.match(view.node('history-list').innerHTML,/Todavía no tenemos pronósticos/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
     validation:{active_model:'hybrid-v2-v3-experimental',
-      by_model:{'hybrid-v2-v3-experimental':{n:8,favorite_accuracy_pct:62.5,brier:0.22,log_loss:0.68}}}});
+      by_model:{'hybrid-v2-v3-experimental':{n:8,favorite_accuracy_pct:62.5,brier:0.22,log_loss:0.68}},
+      prospective_model_comparison:{completed_paired_games:12,pending_forecasts:3,
+        models:{v2:{n:12,favorite_accuracy_pct:58.3,brier:.22,log_loss:.64},
+          v3:{n:12,favorite_accuracy_pct:66.7,brier:.21,log_loss:.61},
+          hybrid:{n:12,favorite_accuracy_pct:66.7,brier:.2084,log_loss:.6048}}}}});
   assert.match(view.node('model-validation').innerHTML,/62\.5%/);
   assert.match(view.node('model-validation').innerHTML,/accuracy-bar/);
   assert.match(view.node('model-validation').innerHTML,/0\.2200/);
   assert.match(view.node('quality-caveat').textContent,/Muestra de Híbrido V2\/V3/);
+  assert.match(view.node('prospective-comparison').innerHTML,/Híbrido 50\/50/);
+  assert.match(view.node('prospective-comparison').innerHTML,/0\.2084/);
+  assert.match(view.node('prospective-comparison').innerHTML,/12 partidos evaluados y 3 pendientes/);
   assert.match(view.node('calibration-chart').innerHTML,/resultados suficientes/);
   view=await mount({as_of:new Date().toISOString(),date:today,games:[game],
     validation:{active_model:'hybrid-v2-v3-experimental',
