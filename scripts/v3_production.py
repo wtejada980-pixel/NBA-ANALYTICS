@@ -1,14 +1,17 @@
-"""Pronosticador V3 activo; V2 ya no genera predicciones nuevas."""
+"""Pronosticador híbrido que combina las señales de V2 y V3."""
 from __future__ import annotations
 
 import math
 from pathlib import Path
 
 from model_v3 import FEATURES, build_features, infer, load_seasons, train
+from model_v2 import predict as predict_v2
 from v3_dataset import STORE
 from v3_shadow import REQUIRED, current_final_games, features_at
 
-ACTIVE_MODEL = "logistic-v3-production"
+ACTIVE_MODEL = "hybrid-v2-v3-experimental"
+V3_WEIGHT = 0.5
+V2_WEIGHT = 1.0 - V3_WEIGHT
 TRAINING_SEASONS = (2022, 2023)
 
 
@@ -32,15 +35,18 @@ def current_rows(events):
     return current_final_games({"events": events})
 
 
-def predict(game, model, feature_games, cutoff):
-    """Crear una predicción V3 con datos que existían antes de la hora de corte."""
+def predict(game, model, feature_games, cutoff, teams, elo=None):
+    """Mezclar V3 y V2 usando solo datos disponibles antes de la hora de corte."""
     home_id, away_id = str(game["home"]["id"]), str(game["away"]["id"])
     row = features_at(feature_games, home_id, away_id, cutoff)
     if row is None:
         return None
-    probability = infer(model, row)
-    if not math.isfinite(probability):
+    v3_probability = infer(model, row)
+    v2_result = predict_v2(game, teams, elo=elo)
+    if v2_result is None or not math.isfinite(v3_probability):
         return None
+    v2_probability = float(v2_result["home_pct"]) / 100.0
+    probability = V3_WEIGHT * v3_probability + V2_WEIGHT * v2_probability
     home_pct = round(probability * 100, 1)
     away_pct = round(100 - home_pct, 1)
     favorite_sign = 1 if home_pct >= 50 else -1
@@ -72,11 +78,19 @@ def predict(game, model, feature_games, cutoff):
         "model": ACTIVE_MODEL,
         "experimental": True,
         "calibrated": False,
-        "reason": reason,
+        "reason": (f"Híbrido V2/V3: {reason} Señales V2: {v2_result['reason']}"),
         "elo_baseline_home_pct": round(elo_home_pct, 1),
         "factors": {key: round(float(value), 4) for key, value in row.items()},
+        "hybrid": {
+            "v3_home_pct": round(v3_probability * 100, 1),
+            "v2_home_pct": round(v2_probability * 100, 1),
+            "v3_weight_pct": round(V3_WEIGHT * 100),
+            "v2_weight_pct": round(V2_WEIGHT * 100),
+            "v2_factors": v2_result.get("factors", {}),
+        },
         "explanation": (
-            "Regresión logística V3 basada en Elo y diferencias recientes de margen, "
-            "victorias, anotación, defensa y descanso. Solo usa resultados previos."
+            "Pronóstico experimental que combina 50% de la regresión logística V3 "
+            "con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia "
+            "reciente de jugadores cuando está disponible. Solo usa datos previos."
         ),
     }

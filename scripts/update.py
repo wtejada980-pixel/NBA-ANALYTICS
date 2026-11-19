@@ -665,8 +665,8 @@ def refresh(today: date | None = None):
     finished = sorted([e for e in all_events.values() if e['status'] == 'post' and
                        e['home_score'] is not None and e['away_score'] is not None],
                       key=lambda x: x['datetime'])
-    # V3 es el único pronosticador activo. Si falta el historial de entrenamiento,
-    # el proceso falla de forma explícita; nunca vuelve a V2 como respaldo.
+    # El híbrido combina V3 y V2. Si faltan temporadas, el proceso falla; si una
+    # señal V2 no tiene datos mínimos, el pronosticador se abstiene sin fallback.
     if schedule:
         v3_model, v3_season_games = fit_v3_model()
         v3_feature_games = v3_season_games + v3_current_rows(all_events)
@@ -720,7 +720,8 @@ def refresh(today: date | None = None):
         future = parse_time(game['datetime']) > now
         before_tipoff = game['status'] == 'pre' and future
         ratings = elo_before(finished, game['datetime']) if before_tipoff else {}
-        recalculated = (predict_v3(game, v3_model, v3_feature_games, now.isoformat())
+        recalculated = (predict_v3(game, v3_model, v3_feature_games, now.isoformat(),
+                                   teams=teams, elo=ratings)
                         if before_tipoff and v3_model is not None else None)
         if frozen:
             game['prediction'] = frozen  # Pronóstico original: no se altera.
@@ -818,7 +819,7 @@ def refresh(today: date | None = None):
         'as_of': now.isoformat(), 'date': day.isoformat(), 'timezone': 'America/Santo_Domingo',
         'source': 'ESPN (endpoint no oficial, sin garantía de disponibilidad)',
         'source_url': 'https://www.espn.com/nba/scoreboard',
-        'model': ACTIVE_MODEL + ' / regresión logística cronológica; probabilidades experimentales',
+        'model': ACTIVE_MODEL + ' / mezcla 50% V3 + 50% V2; probabilidades experimentales',
         'games': archived + schedule, 'teams': teams,
         'elo_ratings': public_elo_ratings(finished, all_events, now.isoformat()),
         'news': news_items, 'news_source': daily_context.get('news_source', 'FOX Sports RSS') if isinstance(daily_context, dict) else 'FOX Sports RSS',
@@ -830,10 +831,10 @@ def refresh(today: date | None = None):
                          'missing_historical_days': len(failed_days),
                          'cached_games': len(all_events),
                          'cached_player_boxes': len(box_cache)},
-        'notes': ['Modelo activo V3: regresión logística cronológica con seis variables de resultados previos',
-                  'No utiliza cuotas, noticias, lesiones, rumores ni opiniones de redes en el porcentaje',
-                  'Los pronósticos V2 anteriores al cambio permanecen archivados; nuevas predicciones usan V3',
-                  'Las probabilidades V3 aún no están calibradas y no garantizan resultados',
+        'notes': ['Modelo activo experimental híbrido: mezcla 50% de V3 y 50% de V2',
+                  'No utiliza cuotas, noticias, lesiones, rumores ni opiniones de redes directamente en el porcentaje',
+                  'Los pronósticos anteriores permanecen archivados con su versión original',
+                  'Las probabilidades del híbrido aún no están calibradas y no garantizan resultados',
                   'El historial de hasta 45 días se conserva progresivamente; la primera recuperación puede ser incompleta',
                   'Se muestran 7 días históricos con marcadores verificados y pronósticos registrados antes del partido'],
     }

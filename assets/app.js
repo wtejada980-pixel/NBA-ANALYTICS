@@ -656,7 +656,8 @@
 
   function renderValidation() {
     const metrics = data.validation || {};
-    const activeName = String(metrics.active_model || 'logistic-v3-production');
+    const activeName = String(metrics.active_model || 'hybrid-v2-v3-experimental');
+    const modelLabel = activeName.includes('hybrid') ? 'Híbrido V2/V3' : activeName.includes('v3') ? 'V3' : 'V2';
     const active = metrics.by_model?.[activeName] || {};
     const n = Number.isInteger(active.n) && active.n >= 0 ? active.n : 0;
     const pct = n && Number.isFinite(active.favorite_accuracy_pct) ?
@@ -670,31 +671,31 @@
     const accuracy = n && Number.isFinite(active.favorite_accuracy_pct) ?
       active.favorite_accuracy_pct : null;
     const accuracyVisual = accuracy === null ? '' :
-      '<div class="accuracy-bar" role="img" aria-label="Acierto V3 ' + accuracy.toFixed(1) +
+      '<div class="accuracy-bar" role="img" aria-label="Acierto ' + modelLabel + ' ' + accuracy.toFixed(1) +
       ' por ciento; fallos ' + (100-accuracy).toFixed(1) + ' por ciento">' +
       '<span class="accuracy-hit" style="width:' + accuracy + '%"></span>' +
       '<span class="accuracy-miss" style="width:' + (100-accuracy) + '%"></span></div>' +
       '<span class="accuracy-legend"><span>Acertados ' + accuracy.toFixed(1) +
       '%</span><span>Fallados ' + (100-accuracy).toFixed(1) + '%</span></span>';
     $('model-validation').innerHTML =
-      card('Pronósticos V3 evaluados', String(n), 'Registrados antes del inicio y ya finalizados') +
-      card('Acierto de V3', pct, 'Porcentaje de ganadores identificados', accuracyVisual) +
-      card('Brier de V3', brier, 'Menor es mejor · referencia 50/50: 0.2500') +
-      card('Log loss de V3', logLoss, 'Menor es mejor; penaliza exceso de certeza');
+      card('Pronósticos ' + modelLabel + ' evaluados', String(n), 'Registrados antes del inicio y ya finalizados') +
+      card('Acierto de ' + modelLabel, pct, 'Porcentaje de ganadores identificados', accuracyVisual) +
+      card('Brier de ' + modelLabel, brier, 'Menor es mejor · referencia 50/50: 0.2500') +
+      card('Log loss de ' + modelLabel, logLoss, 'Menor es mejor; penaliza exceso de certeza');
     $('quality-caveat').textContent = n === 0 ?
-      'V3 está activo. Aún no hay resultados finalizados de sus pronósticos publicados; el historial de V2 permanece separado.' :
-      n < 100 ? 'Muestra V3 de ' + n + ' partidos: todavía puede variar mucho. La precisión no demuestra por sí sola que las probabilidades estén calibradas.' :
-      'Resultados de V3. Un buen porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
+      modelLabel + ' está activo. Aún no hay resultados finalizados de sus pronósticos publicados; las predicciones anteriores permanecen separadas por versión.' :
+      n < 100 ? 'Muestra de ' + modelLabel + ': ' + n + ' partidos. El resultado todavía puede variar mucho y no demuestra que las probabilidades estén calibradas.' :
+      'Resultados de ' + modelLabel + '. El porcentaje de aciertos no demuestra por sí solo que las probabilidades estén calibradas.';
     const comparison = metrics.elo_comparison || {};
     const paired = Number.isInteger(comparison.n) ? comparison.n : 0;
     $('elo-validation').innerHTML = paired > 0 &&
       Number.isFinite(comparison.model_brier) && Number.isFinite(comparison.elo_brier) ?
-      '<strong>V3 frente a Elo simple</strong>' +
-      '<p>Comparación en ' + paired + ' partidos con pronósticos previos. Brier V3: <b>' +
+      '<strong>' + modelLabel + ' frente a Elo simple</strong>' +
+      '<p>Comparación en ' + paired + ' partidos con pronósticos previos. Brier ' + modelLabel + ': <b>' +
       comparison.model_brier.toFixed(4) + '</b> · Brier Elo: <b>' +
       comparison.elo_brier.toFixed(4) + '</b>. Menor indica menos error.</p>' :
-      '<strong>V3 frente a Elo simple</strong>' +
-      '<p>Aún no hay suficientes pronósticos V3 finalizados con Elo guardado para comparar.</p>';
+      '<strong>' + modelLabel + ' frente a Elo simple</strong>' +
+      '<p>Aún no hay suficientes pronósticos finalizados con Elo guardado para comparar.</p>';
     const models = metrics.by_model && typeof metrics.by_model === 'object' ? metrics.by_model : {};
     const activeModels = activeName && models[activeName] ? [activeName] : [];
     $('model-versions').innerHTML = activeModels.length ?

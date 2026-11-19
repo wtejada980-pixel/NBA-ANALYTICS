@@ -1,7 +1,7 @@
 """Herramientas temporales para las evaluaciones archivadas y V3 de producción.
 
-Conserva la comparación prospectiva histórica V2/V3, pero el pronosticador activo
-es V3 y las nuevas predicciones no dependen de este informe de sombra.
+Conserva una comparación prospectiva histórica V2/V3. La producción combina V2/V3;
+las nuevas predicciones no dependen de este informe de sombra.
 """
 from __future__ import annotations
 

@@ -18,7 +18,7 @@
   ],
   "published": false,
   "validated_advantage": false,
-  "message": "No hay evidencia suficiente para reemplazar V2.",
+  "message": "La mezcla 50/50 mejora ligeramente las métricas históricas; la ventaja es pequeña y V2 histórico no incluye estadísticas de jugadores.",
   "segments": {
     "train": {
       "seasons": [
@@ -41,6 +41,12 @@
         "log_loss": 0.62126,
         "winner_accuracy_pct": 65.7
       },
+      "hybrid_v2_v3_50_50": {
+        "n": 1315,
+        "brier": 0.21123,
+        "log_loss": 0.60998,
+        "winner_accuracy_pct": 66.0
+      },
       "v2_reconstructed_without_players": {
         "n": 1315,
         "brier": 0.21193,
@@ -61,6 +67,12 @@
         "brier": 0.21358,
         "log_loss": 0.61784,
         "winner_accuracy_pct": 67.2
+      },
+      "hybrid_v2_v3_50_50": {
+        "n": 1316,
+        "brier": 0.2084,
+        "log_loss": 0.6048,
+        "winner_accuracy_pct": 67.9
       },
       "v2_reconstructed_without_players": {
         "n": 1316,
