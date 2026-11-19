@@ -16,9 +16,9 @@ Plataforma independiente para consultar partidos NBA, estadísticas y probabilid
 
 ## Modelos
 
-**V2** es el modelo que publica los pronósticos. Combina Elo de la ventana reciente, margen y porcentaje de victorias, puntos anotados y recibidos, descanso, ventaja de local y tendencia reciente de jugadores. Se abstiene si alguno de los equipos no tiene al menos cuatro partidos verificables; reduce estimaciones cuando la muestra es corta y limita los porcentajes para evitar confianza extrema.
+El modelo activo es un **híbrido experimental 50/50 de V2 y V3**. V2 aporta sus reglas de Elo, forma, localía, descanso y tendencia reciente de jugadores cuando hay datos; V3 aporta la regresión logística cronológica. Las tres probabilidades se guardan juntas para compararlas en los mismos partidos antes del inicio. Los pesos no cambian automáticamente durante esta evaluación.
 
-**V3** es un experimento separado que compara una regresión logística cronológica con V2. No sustituye los pronósticos publicados. Las probabilidades son experimentales y no están calibradas para apostar. El sistema no utiliza cuotas de apuestas ni promete resultados. Noticias, disponibilidad y alineaciones pueden mostrarse aparte como contexto; no se convierten automáticamente en variables del porcentaje de V2.
+Las probabilidades no están calibradas para apostar. El sistema no utiliza cuotas ni promete resultados. Noticias, disponibilidad y alineaciones se muestran como contexto y no cambian directamente el porcentaje. Las versiones anteriores permanecen identificadas en el historial.
 
 ## Actualización de datos
 
@@ -50,3 +50,13 @@ node tests/v3-ui-smoke.cjs
 ```
 
 GitHub Actions ejecuta las comprobaciones de calidad y publica la página al actualizar el código. Las puntuaciones y probabilidades son informativas: no constituyen garantía de acierto ni recomendación de apuesta.
+
+## Skill de diseño frontend
+
+El proyecto ofrece **Taste Skill (`design-taste-frontend`)** como herramienta opcional para rediseñar o revisar la interfaz. No forma parte de la página publicada. Para instalarla en tu copia local del proyecto:
+
+```sh
+npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
+```
+
+También se puede añadir desde el marketplace de plugins registrado en `.agents/plugins/marketplace.json`. Requiere Node 22 o superior y Chrome, Edge o Chromium para las comprobaciones visuales.

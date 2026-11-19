@@ -1,0 +1,21 @@
+{
+  "name": "nba-analytics-tools",
+  "interface": {
+    "displayName": "NBA Analytics Tools"
+  },
+  "plugins": [
+    {
+      "name": "taste-skill",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Leonxlnx/taste-skill.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}
