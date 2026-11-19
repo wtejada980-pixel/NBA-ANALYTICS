@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19T03:18:20.430219+00:00",
+  "as_of": "2026-11-19T03:35:06.933100+00:00",
   "date": "2026-11-18",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -16347,9 +16347,9 @@
         "abbr": "DET",
         "name": "Detroit Pistons"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 109,
+      "away_score": 122,
       "source": "https://www.espn.com/nba/game/_/gameId/401910013",
       "head_to_head": [],
       "prediction": {
@@ -16405,28 +16405,28 @@
             "id": "4277813",
             "name": "Herbert Jones",
             "starter": true,
-            "game_pts": 6.0,
+            "game_pts": 9.0,
             "game_reb": 1.0,
             "game_ast": 3.0,
-            "game_min": "28"
+            "game_min": "32"
           },
           {
             "id": "4395628",
             "name": "Zion Williamson",
             "starter": true,
-            "game_pts": 22.0,
-            "game_reb": 6.0,
+            "game_pts": 24.0,
+            "game_reb": 7.0,
             "game_ast": 1.0,
-            "game_min": "27"
+            "game_min": "32"
           },
           {
             "id": "4397136",
             "name": "Saddiq Bey",
             "starter": true,
             "game_pts": 10.0,
-            "game_reb": 5.0,
+            "game_reb": 8.0,
             "game_ast": 6.0,
-            "game_min": "37"
+            "game_min": "42"
           },
           {
             "id": "5061589",
@@ -16477,10 +16477,10 @@
             "id": "4277956",
             "name": "Jordan Poole",
             "starter": false,
-            "game_pts": 19.0,
-            "game_reb": 0.0,
-            "game_ast": 4.0,
-            "game_min": "25"
+            "game_pts": 22.0,
+            "game_reb": 1.0,
+            "game_ast": 5.0,
+            "game_min": "30"
           },
           {
             "id": "4703115",
@@ -16489,7 +16489,7 @@
             "game_pts": 7.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "12"
+            "game_min": "17"
           }
         ],
         "away": [
@@ -16497,10 +16497,10 @@
             "id": "3908845",
             "name": "John Collins",
             "starter": true,
-            "game_pts": 18.0,
-            "game_reb": 5.0,
+            "game_pts": 20.0,
+            "game_reb": 7.0,
             "game_ast": 2.0,
-            "game_min": "25"
+            "game_min": "30"
           },
           {
             "id": "2596112",
@@ -16509,34 +16509,34 @@
             "game_pts": 18.0,
             "game_reb": 7.0,
             "game_ast": 0.0,
-            "game_min": "33"
+            "game_min": "35"
           },
           {
             "id": "4066372",
             "name": "Kevin Huerter",
             "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 0.0,
+            "game_pts": 11.0,
+            "game_reb": 1.0,
             "game_ast": 7.0,
-            "game_min": "31"
+            "game_min": "36"
           },
           {
             "id": "4684742",
             "name": "Ausar Thompson",
             "starter": true,
             "game_pts": 10.0,
-            "game_reb": 6.0,
+            "game_reb": 7.0,
             "game_ast": 4.0,
-            "game_min": "29"
+            "game_min": "34"
           },
           {
             "id": "5107199",
             "name": "Daniss Jenkins",
             "starter": true,
-            "game_pts": 15.0,
+            "game_pts": 17.0,
             "game_reb": 4.0,
             "game_ast": 9.0,
-            "game_min": "32"
+            "game_min": "36"
           },
           {
             "id": "4278562",
@@ -16557,6 +16557,15 @@
             "game_min": "3"
           },
           {
+            "id": "5107818",
+            "name": "Isaac Jones",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "-"
+          },
+          {
             "id": "4395702",
             "name": "Isaiah Joe",
             "starter": false,
@@ -16572,7 +16581,7 @@
             "game_pts": 6.0,
             "game_reb": 2.0,
             "game_ast": 4.0,
-            "game_min": "12"
+            "game_min": "14"
           },
           {
             "id": "4700852",
@@ -16581,7 +16590,7 @@
             "game_pts": 9.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "15"
+            "game_min": "16"
           }
         ]
       }
@@ -16862,9 +16871,9 @@
         "abbr": "GS",
         "name": "Golden State Warriors"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 116,
+      "away_score": 94,
       "source": "https://www.espn.com/nba/game/_/gameId/401910016",
       "head_to_head": [],
       "prediction": {
@@ -16966,10 +16975,10 @@
             "id": "4278594",
             "name": "Naji Marshall",
             "starter": false,
-            "game_pts": 8.0,
+            "game_pts": 12.0,
             "game_reb": 5.0,
             "game_ast": 2.0,
-            "game_min": "23"
+            "game_min": "27"
           },
           {
             "id": "4593125",
@@ -16978,7 +16987,7 @@
             "game_pts": 0.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "4873153",
@@ -16996,34 +17005,34 @@
             "game_pts": 3.0,
             "game_reb": 3.0,
             "game_ast": 0.0,
-            "game_min": "16"
+            "game_min": "18"
           },
           {
             "id": "4701208",
             "name": "Moussa Cisse",
             "starter": false,
             "game_pts": 0.0,
-            "game_reb": 0.0,
+            "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "-"
+            "game_min": "4"
           },
           {
             "id": "4432107",
             "name": "Marcus Sasser",
             "starter": false,
             "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "-"
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "4"
           },
           {
             "id": "4432582",
             "name": "Max Christie",
             "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "5"
+            "game_pts": 5.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "8"
           },
           {
             "id": "4896372",
@@ -17051,7 +17060,7 @@
             "starter": true,
             "game_pts": 13.0,
             "game_reb": 5.0,
-            "game_ast": 5.0,
+            "game_ast": 4.0,
             "game_min": "30"
           },
           {
@@ -17070,7 +17079,7 @@
             "game_pts": 9.0,
             "game_reb": 0.0,
             "game_ast": 2.0,
-            "game_min": "16"
+            "game_min": "19"
           },
           {
             "id": "4709138",
@@ -17096,17 +17105,17 @@
             "starter": false,
             "game_pts": 2.0,
             "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "11"
+            "game_ast": 2.0,
+            "game_min": "15"
           },
           {
             "id": "4897449",
             "name": "Malevy Leons",
             "starter": false,
-            "game_pts": 0.0,
+            "game_pts": 2.0,
             "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "3"
+            "game_ast": 0.0,
+            "game_min": "7"
           },
           {
             "id": "4997536",
@@ -17122,9 +17131,9 @@
             "name": "Gary Payton II",
             "starter": false,
             "game_pts": 8.0,
-            "game_reb": 7.0,
-            "game_ast": 1.0,
-            "game_min": "12"
+            "game_reb": 8.0,
+            "game_ast": 2.0,
+            "game_min": "16"
           },
           {
             "id": "4066436",
@@ -17139,10 +17148,10 @@
             "id": "4897262",
             "name": "Will Richard",
             "starter": false,
-            "game_pts": 14.0,
+            "game_pts": 20.0,
             "game_reb": 0.0,
             "game_ast": 3.0,
-            "game_min": "24"
+            "game_min": "27"
           }
         ]
       }
@@ -17219,37 +17228,37 @@
             "id": "3064290",
             "name": "Aaron Gordon",
             "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 2.0,
+            "game_pts": 8.0,
+            "game_reb": 6.0,
             "game_ast": 0.0,
-            "game_min": "7"
+            "game_min": "10"
           },
           {
             "id": "3138196",
             "name": "Cameron Johnson",
             "starter": true,
-            "game_pts": 0.0,
+            "game_pts": 2.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "6"
+            "game_min": "12"
           },
           {
             "id": "3112335",
             "name": "Nikola Jokic",
             "starter": true,
             "game_pts": 7.0,
-            "game_reb": 2.0,
+            "game_reb": 3.0,
             "game_ast": 3.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "3936299",
             "name": "Jamal Murray",
             "starter": true,
             "game_pts": 7.0,
-            "game_reb": 1.0,
+            "game_reb": 2.0,
             "game_ast": 0.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "4431767",
@@ -17258,7 +17267,16 @@
             "game_pts": 4.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "8"
+            "game_min": "11"
+          },
+          {
+            "id": "4277848",
+            "name": "Marvin Bagley III",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "5"
           },
           {
             "id": "4592427",
@@ -17267,7 +17285,7 @@
             "game_pts": 0.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "5"
           },
           {
             "id": "4698719",
@@ -17276,7 +17294,7 @@
             "game_pts": 0.0,
             "game_reb": 5.0,
             "game_ast": 0.0,
-            "game_min": "5"
+            "game_min": "7"
           },
           {
             "id": "3978",
@@ -17285,7 +17303,16 @@
             "game_pts": 2.0,
             "game_reb": 0.0,
             "game_ast": 1.0,
-            "game_min": "6"
+            "game_min": "7"
+          },
+          {
+            "id": "3135046",
+            "name": "Tyus Jones",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
           }
         ],
         "away": [
@@ -17293,19 +17320,19 @@
             "id": "4251",
             "name": "Paul George",
             "starter": true,
-            "game_pts": 3.0,
+            "game_pts": 6.0,
             "game_reb": 3.0,
-            "game_ast": 0.0,
-            "game_min": "7"
+            "game_ast": 1.0,
+            "game_min": "11"
           },
           {
             "id": "4065648",
             "name": "Jayson Tatum",
             "starter": true,
             "game_pts": 14.0,
-            "game_reb": 4.0,
+            "game_reb": 5.0,
             "game_ast": 0.0,
-            "game_min": "12"
+            "game_min": "13"
           },
           {
             "id": "4397424",
@@ -17321,9 +17348,9 @@
             "name": "Derrick White",
             "starter": true,
             "game_pts": 2.0,
-            "game_reb": 1.0,
-            "game_ast": 3.0,
-            "game_min": "6"
+            "game_reb": 2.0,
+            "game_ast": 4.0,
+            "game_min": "11"
           },
           {
             "id": "4683689",
@@ -17338,46 +17365,64 @@
             "id": "4065804",
             "name": "Sam Hauser",
             "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 0.0,
+            "game_pts": 6.0,
+            "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "5"
+            "game_min": "7"
+          },
+          {
+            "id": "5142621",
+            "name": "Chris Cenac Jr.",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "3"
+          },
+          {
+            "id": "4277951",
+            "name": "Luka Garza",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "1"
           },
           {
             "id": "4351852",
             "name": "Mitchell Robinson",
             "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 1.0,
+            "game_pts": 6.0,
+            "game_reb": 4.0,
             "game_ast": 0.0,
-            "game_min": "5"
+            "game_min": "9"
           },
           {
             "id": "4066354",
             "name": "Payton Pritchard",
             "starter": false,
-            "game_pts": 6.0,
+            "game_pts": 11.0,
             "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "6"
+            "game_ast": 1.0,
+            "game_min": "11"
           },
           {
             "id": "4593841",
             "name": "Baylor Scheierman",
             "starter": false,
             "game_pts": 0.0,
-            "game_reb": 0.0,
+            "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "5175647",
             "name": "Hugo Gonzalez",
             "starter": false,
             "game_pts": 0.0,
-            "game_reb": 1.0,
+            "game_reb": 2.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "5"
           }
         ]
       }
@@ -17462,19 +17507,19 @@
             "id": "4433137",
             "name": "Ziaire Williams",
             "starter": true,
-            "game_pts": 2.0,
+            "game_pts": 5.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "3"
+            "game_min": "6"
           },
           {
             "id": "4433136",
             "name": "Walker Kessler",
             "starter": true,
             "game_pts": 2.0,
-            "game_reb": 1.0,
+            "game_reb": 2.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "3907498",
@@ -17482,26 +17527,62 @@
             "starter": true,
             "game_pts": 0.0,
             "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "3"
+            "game_ast": 1.0,
+            "game_min": "5"
           },
           {
             "id": "3945274",
             "name": "Luka Doncic",
             "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "3"
+            "game_pts": 11.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "10"
           },
           {
             "id": "4397014",
             "name": "Quentin Grimes",
             "starter": true,
+            "game_pts": 3.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4278077",
+            "name": "Jarred Vanderbilt",
+            "starter": false,
             "game_pts": 0.0,
             "game_reb": 2.0,
-            "game_ast": 0.0,
+            "game_ast": 1.0,
             "game_min": "4"
+          },
+          {
+            "id": "4278580",
+            "name": "Sandro Mamukelashvili",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4592691",
+            "name": "Jake LaRavia",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4277811",
+            "name": "Collin Sexton",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "2"
           }
         ],
         "away": [
@@ -17521,7 +17602,7 @@
             "game_pts": 3.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "2"
+            "game_min": "6"
           },
           {
             "id": "4433627",
@@ -17529,26 +17610,62 @@
             "starter": true,
             "game_pts": 5.0,
             "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "3"
+            "game_ast": 4.0,
+            "game_min": "10"
           },
           {
             "id": "4873138",
             "name": "Ace Bailey",
             "starter": true,
-            "game_pts": 3.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "3"
+            "game_pts": 5.0,
+            "game_reb": 2.0,
+            "game_ast": 3.0,
+            "game_min": "8"
           },
           {
             "id": "5041955",
             "name": "Darryn Peterson",
             "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "5105839",
+            "name": "Brice Sensabaugh",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4397077",
+            "name": "Jaxson Hayes",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "3133602",
+            "name": "Svi Mykhailiuk",
+            "starter": false,
             "game_pts": 0.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
             "game_min": "3"
+          },
+          {
+            "id": "4065663",
+            "name": "Josh Okogie",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
           }
         ]
       }
@@ -17625,28 +17742,28 @@
             "id": "3155942",
             "name": "Domantas Sabonis",
             "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 4.0,
-            "game_ast": 1.0,
-            "game_min": "4"
+            "game_pts": 4.0,
+            "game_reb": 5.0,
+            "game_ast": 2.0,
+            "game_min": "8"
           },
           {
             "id": "4065732",
             "name": "De'Andre Hunter",
             "starter": true,
-            "game_pts": 0.0,
+            "game_pts": 3.0,
             "game_reb": 0.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "9"
           },
           {
             "id": "4594327",
             "name": "Keegan Murray",
             "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
+            "game_pts": 4.0,
+            "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "3064440",
@@ -17655,16 +17772,61 @@
             "game_pts": 2.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "5142620",
             "name": "Darius Acuff Jr.",
             "starter": true,
-            "game_pts": 5.0,
+            "game_pts": 10.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "9"
+          },
+          {
+            "id": "4395650",
+            "name": "Leaky Black",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "2"
+          },
+          {
+            "id": "4431679",
+            "name": "Precious Achiuwa",
+            "starter": false,
+            "game_pts": 0.0,
             "game_reb": 0.0,
             "game_ast": 0.0,
             "game_min": "4"
+          },
+          {
+            "id": "4433174",
+            "name": "Dylan Cardwell",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "3"
+          },
+          {
+            "id": "4066262",
+            "name": "Malik Monk",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "3"
+          },
+          {
+            "id": "5106058",
+            "name": "Emanuel Sharp",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "6"
           }
         ],
         "away": [
@@ -17675,16 +17837,16 @@
             "game_pts": 5.0,
             "game_reb": 1.0,
             "game_ast": 2.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "4066383",
             "name": "Miles Bridges",
             "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "4"
+            "game_pts": 6.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "8"
           },
           {
             "id": "4601023",
@@ -17693,25 +17855,70 @@
             "game_pts": 2.0,
             "game_reb": 1.0,
             "game_ast": 0.0,
-            "game_min": "4"
+            "game_min": "6"
           },
           {
             "id": "3136193",
             "name": "Devin Booker",
             "starter": true,
-            "game_pts": 3.0,
+            "game_pts": 10.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "11"
           },
           {
             "id": "4437244",
             "name": "Jalen Green",
             "starter": true,
+            "game_pts": 3.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4888725",
+            "name": "Ryan Dunn",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "3"
+          },
+          {
+            "id": "5203685",
+            "name": "Khaman Maluach",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "3913174",
+            "name": "Luke Kennard",
+            "starter": false,
             "game_pts": 0.0,
             "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "--"
+          },
+          {
+            "id": "4278402",
+            "name": "Jordan Goodwin",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4278585",
+            "name": "Collin Gillespie",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "2"
           }
         ]
       }
@@ -17755,11 +17962,11 @@
       },
       "elo_baseline_home_pct": 63.4,
       "revised_prediction": {
-        "home_pct": 60.6,
-        "away_pct": 39.4,
-        "predicted_at": "2026-11-19T03:14:59.912142+00:00",
+        "home_pct": 61.2,
+        "away_pct": 38.8,
+        "predicted_at": "2026-11-19T03:35:06.933100+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y margen reciente. Señales V2: Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 45.1
       },
@@ -17767,7 +17974,7 @@
         "version": "contexto-v1",
         "favorite": "Memphis Grizzlies",
         "opponent": "Golden State Warriors",
-        "favorite_pct_original": 60.6,
+        "favorite_pct_original": 61.2,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -18240,9 +18447,9 @@
       },
       "elo_baseline_home_pct": 72.5,
       "revised_prediction": {
-        "home_pct": 73.4,
-        "away_pct": 26.6,
-        "predicted_at": "2026-11-19T03:14:59.912142+00:00",
+        "home_pct": 73.8,
+        "away_pct": 26.2,
+        "predicted_at": "2026-11-19T03:35:06.933100+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -18252,7 +18459,7 @@
         "version": "contexto-v1",
         "favorite": "Detroit Pistons",
         "opponent": "Toronto Raptors",
-        "favorite_pct_original": 73.4,
+        "favorite_pct_original": 73.8,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -18382,9 +18589,9 @@
       },
       "elo_baseline_home_pct": 70.6,
       "revised_prediction": {
-        "home_pct": 80.5,
-        "away_pct": 19.5,
-        "predicted_at": "2026-11-19T03:18:20.430219+00:00",
+        "home_pct": 80.9,
+        "away_pct": 19.1,
+        "predicted_at": "2026-11-19T03:35:06.933100+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -18394,7 +18601,7 @@
         "version": "contexto-v1",
         "favorite": "Oklahoma City Thunder",
         "opponent": "New Orleans Pelicans",
-        "favorite_pct_original": 80.5,
+        "favorite_pct_original": 80.9,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -27961,18 +28168,18 @@
       "games": 16
     },
     {
+      "id": "8",
+      "abbr": "DET",
+      "name": "Detroit Pistons",
+      "rating": 1573.2,
+      "games": 15
+    },
+    {
       "id": "16",
       "abbr": "MIN",
       "name": "Minnesota Timberwolves",
       "rating": 1564.4,
       "games": 16
-    },
-    {
-      "id": "8",
-      "abbr": "DET",
-      "name": "Detroit Pistons",
-      "rating": 1562.5,
-      "games": 14
     },
     {
       "id": "22",
@@ -28020,14 +28227,21 @@
       "id": "9",
       "abbr": "GS",
       "name": "Golden State Warriors",
-      "rating": 1524.4,
-      "games": 15
+      "rating": 1511.3,
+      "games": 16
     },
     {
       "id": "5",
       "abbr": "CLE",
       "name": "Cleveland Cavaliers",
       "rating": 1499.7,
+      "games": 16
+    },
+    {
+      "id": "6",
+      "abbr": "DAL",
+      "name": "Dallas Mavericks",
+      "rating": 1497.2,
       "games": 16
     },
     {
@@ -28045,25 +28259,11 @@
       "games": 14
     },
     {
-      "id": "6",
-      "abbr": "DAL",
-      "name": "Dallas Mavericks",
-      "rating": 1484.1,
-      "games": 15
-    },
-    {
       "id": "4",
       "abbr": "CHI",
       "name": "Chicago Bulls",
       "rating": 1465.3,
       "games": 15
-    },
-    {
-      "id": "3",
-      "abbr": "NO",
-      "name": "New Orleans Pelicans",
-      "rating": 1446.5,
-      "games": 16
     },
     {
       "id": "11",
@@ -28084,6 +28284,13 @@
       "abbr": "WSH",
       "name": "Washington Wizards",
       "rating": 1436.0,
+      "games": 17
+    },
+    {
+      "id": "3",
+      "abbr": "NO",
+      "name": "New Orleans Pelicans",
+      "rating": 1435.8,
       "games": 17
     },
     {
@@ -28138,17 +28345,17 @@
       "feed": "Google News"
     },
     {
-      "title": "Kevin Durant scores 21 to help Rockets overpower Pacers 119-104 despite losing Sengun to injury",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbGpiS0VNRk1ja21zVVYwTDZ5bzZpN3p1dlVrbTZQaTBRTUxzZmtIRXd0eEdSd2ZwYlJEaGlWdDNUeGs5VWhVenNZS1BBbXQ0SVVRZlFDZXNFQmJ0b3ZKSG5idVQ5emlrZktJSFNNanp2bVpISVZfaFgwRUlHNjFCelZJY1A1QlBBZUdYeVpSRjBCUk82YS0xcENTaUVHY1poc1Jwci12ZC1CRkFpMF9Mc0lkaWw4ckJjSEhZ?oc=5",
-      "published": "Thu, 19 Nov 2026 02:45:50 GMT",
+      "title": "Embiid, Edgecombe, James power the 76ers to a 121-116 win over Magic",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZGV4MUt6TENVYzNBeVp1NmpRZVVmOHhGOXNwWkVsa2lyQV9zaVdUbXJPbWFPbm9iLW4xenV1RWFzTEY4bTZraVNnblh1VmQ0cTR2TTlzNk5CUDhfQmNRbTdlclFJNWVaZHFfdFJBWXJJTDJPaTlNcmVFN0JBZnhhNXNQRzRzTWhLWHN5dEI2OTB0Qk1FdmlqaHp1U3JaRTctcHdIV1MtNFlvT19GQUE3OURDV0tUSl9VYWkw?oc=5",
+      "published": "Thu, 19 Nov 2026 03:15:08 GMT",
       "source": "www.the-messenger.com",
       "feed": "Google News"
     },
     {
-      "title": "Giannis gets win over Bucks in 1st meeting as Heat hang on late for 137-130 victory",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQT1FOSFBCN2JNbE9IUDNJM1lYSnhGaGU3SlUtNDVteHJYSjdITzFhazJOVWpCN0xaS2lBeHRURGJsVFVaODJCWHR1WnhxZDY4TFZRajNPNTh6cDFvVDBYSUdDWk9jVzcwd1NsbXJHZzVXUDBfd2Y3aDJiTVdlMEVnSlYyM2U3SmtJa1JHRXY2UlJiZw?oc=5",
-      "published": "Thu, 19 Nov 2026 03:08:03 GMT",
-      "source": "Seattle Post-Intelligencer",
+      "title": "The Vice City Heat: Miami’s NBA team goes all in on ‘Grand Theft Auto VI’ collaboration",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdUcxQ1RFX3RZeDZHRWUtb21xRGdNUUkya3V6V0xOMjhjXzF6WXE0aEJYWElBaGdwRldZM3dkTTZnenVTeDZ3d2h3Sk16SFkxVTlrVWFYRkszXzBQZTd6LXdSN0labGkzT1h0ZFB6empTSlUxcWRQU1BVVUpsV3pCbHVESVpUdVk1QnMwTEJlNm90c1IyMUE?oc=5",
+      "published": "Wed, 18 Nov 2026 15:09:23 GMT",
+      "source": "AP News",
       "feed": "Google News"
     },
     {
@@ -28180,41 +28387,48 @@
       "feed": "Google News"
     },
     {
-      "title": "The Vice City Heat: Miami's NBA team goes all in on 'Grand Theft Auto VI' collaboration",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNS3BZY0FtZ3ZUU21aNmRHX05aNTZGUk1EUTVCcjZibjlHMHpQY2t0VldhWnRCV1JFbWExZHFaTkVTQnVFYVpmV1F2Mjg4S3Mwbm9xV0lmbnh3Y1dfWHViZ3paOXl5bDU0STdWMVh5UmhYSUt0eFdQY2dYeTIyMjhVS3U0bEh5dUhDS0EzUTVXek1HTXdrb2d2UWJkSW9xOVlQU0k0NXhlSF9nc2x4aUZzSkxHa0l4azczbllmQmR2Q3hGNWRWZ3VmVXhydUxXQW1KTkRzdlp6R2wzYnhMU0Z5S0JKYjdHOExRLS1XVg?oc=5",
-      "published": "Thu, 19 Nov 2026 00:48:35 GMT",
-      "source": "hngnews.com",
+      "title": "Giannis gets win over Bucks in 1st meeting as Heat hang on late for 137-130 victory",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSnFQcUtuci1hT1Zyb3BucXdlRm0tYk84dkIyVVdQdVlXUmNtTWJXb3pZNWxITG1mRkxtVVdsSnV1YzM2ek5TcW45UlFMaUttejBtUXhfcXk3S09NZ2E5UjJfS2NNRzNZY1R3UHJIU05RR2dCdVpSa2pHdVJtQU5wWHdrNWMxdEFpNFk5T1RLT3hXa21KenBtRTBLVVFTN0NkWWxfSXZuMjM0czA5eUNaMmwtVXFmUGJTY09B?oc=5",
+      "published": "Thu, 19 Nov 2026 03:18:03 GMT",
+      "source": "www.the-messenger.com",
       "feed": "Google News"
     },
     {
-      "title": "Brice Sensabaugh scores 40 points and leads huge 4th quarter as Jazz beat Clippers for 2nd win",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOX0REOFBEZ05qaHlGeTFXMzBIeHBZaDQ5eHFHb2hFNDNKQUp3S2w2WjhNZjBNa0tkQXVrUTEzaXR0WFdiTzk0UkhydnJOY1V0ZFlsRG1SQWRTdjF3ZlJGWlVOYWpKVHpiRllwMG9jellkbkd5R25wMnptaDRyQlpNVG53VGJDQ0JYVjdJT3N4LVZBa1d4ZVg3YjBORkpYV1NBT3FZUkg4TUVNdw?oc=5",
-      "published": "Wed, 18 Nov 2026 13:19:25 GMT",
-      "source": "Greenwich Time",
+      "title": "Kevin Durant scores 21 to help Rockets overpower Pacers 119-104 despite losing Sengun to injury",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQdGdlcklmWUVIOEluZVR3blI0cVNyRUFmY2dCenZLS3UzVmk5N3h6Y1QyTldfZ3VuZDRXLWVfWWtPaE01V1lNN1FNV0RtcmtFQUU1eGpRMmpya3VyR1Z3ZDJ5aXVaNFNtUURIRlRaU2MzMzV3N0kxWFBuTlFxTHg3SC0tM2tuZVY3RVlXMDgtQ0hDdFJtY2FkRTJJOW5uZnlnRTFJZEozSFRQZWMtYTdmbWU5UXhERGoteG9LOGdfd051Q2JUbjJoQm81X3RQTEZYOUlqcGpCN18wNENrMnBuUWUybFhZQUdhN3V0SUlrZ2VXeHdTaXdsYlRUYlZpZw?oc=5",
+      "published": "Thu, 19 Nov 2026 02:45:50 GMT",
+      "source": "The Killeen Daily Herald",
+      "feed": "Google News"
+    },
+    {
+      "title": "The first Giannis vs. Bucks matchup is in the books, and Miami gets the win",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdDJkcEhsRlgyMzg2NThWS2QzbjVrNWFHYnIySXlDY2Vkb25TQlhoMkVSWjl5TXJYSzBNNjBnQUVvbmJhUXpvWjV4QlFaZ1FJeDFzU1hoMU03bXJUaTM5bGhGekZFeXdURjB2Y3U1RXhLMjQwdmVOZTZKbi1LdTZhVDl3NUdoSlplcXYzZHByUGhzXzZvd29IQ3E0eDdyakNrZ01PejU3d0ZmTUtiem1iYXR3RmpLbTRNN044?oc=5",
+      "published": "Thu, 19 Nov 2026 03:15:44 GMT",
+      "source": "www.the-messenger.com",
       "feed": "Google News"
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-19T03:18:37.995742+00:00",
+  "news_updated_at": "2026-11-19T03:35:27.636924+00:00",
   "archive_days": 7,
   "validation": {
-    "completed_predictions": 94,
-    "brier_score": 0.221,
+    "completed_predictions": 96,
+    "brier_score": 0.2209,
     "baseline_50_brier": 0.25,
-    "favorite_accuracy_pct": 67.0,
-    "log_loss": 0.6328,
+    "favorite_accuracy_pct": 66.7,
+    "log_loss": 0.6327,
     "calibration": [
       {
         "range": "20-40%",
-        "count": 24,
+        "count": 25,
         "average_predicted_pct": 32.9,
-        "actual_home_win_pct": 29.2
+        "actual_home_win_pct": 28.0
       },
       {
         "range": "40-60%",
-        "count": 42,
-        "average_predicted_pct": 49.5,
-        "actual_home_win_pct": 47.6
+        "count": 43,
+        "average_predicted_pct": 49.3,
+        "actual_home_win_pct": 48.8
       },
       {
         "range": "60-80%",
@@ -28233,15 +28447,15 @@
         },
         {
           "range": "20-40%",
-          "count": 23,
-          "average_predicted_pct": 32.7,
-          "actual_home_win_pct": 21.7
+          "count": 24,
+          "average_predicted_pct": 33.0,
+          "actual_home_win_pct": 20.8
         },
         {
           "range": "40-60%",
-          "count": 40,
-          "average_predicted_pct": 49.0,
-          "actual_home_win_pct": 47.5
+          "count": 41,
+          "average_predicted_pct": 48.9,
+          "actual_home_win_pct": 48.8
         },
         {
           "range": "60-80%",
@@ -28258,6 +28472,12 @@
       ],
       "logistic-v3-production": [
         {
+          "range": "0-20%",
+          "count": 1,
+          "average_predicted_pct": 19.9,
+          "actual_home_win_pct": 0.0
+        },
+        {
           "range": "20-40%",
           "count": 1,
           "average_predicted_pct": 30.0,
@@ -28265,9 +28485,9 @@
         },
         {
           "range": "40-60%",
-          "count": 2,
-          "average_predicted_pct": 50.4,
-          "actual_home_win_pct": 0.0
+          "count": 3,
+          "average_predicted_pct": 50.7,
+          "actual_home_win_pct": 33.3
         },
         {
           "range": "60-80%",
@@ -28285,16 +28505,16 @@
     },
     "by_model": {
       "elo-forma10-v2": {
-        "n": 94,
+        "n": 96,
         "brier": 0.2118,
         "log_loss": 0.6125,
-        "favorite_accuracy_pct": 68.1
+        "favorite_accuracy_pct": 67.7
       },
       "logistic-v3-production": {
-        "n": 9,
-        "brier": 0.3526,
-        "log_loss": 0.9479,
-        "favorite_accuracy_pct": 44.4
+        "n": 11,
+        "brier": 0.3136,
+        "log_loss": 0.8562,
+        "favorite_accuracy_pct": 54.5
       }
     },
     "history_by_model": {
@@ -28859,9 +29079,21 @@
         },
         {
           "scheduled_at": "2026-11-19T01:00Z",
+          "predicted_at": "2026-11-17T04:03:55.217704+00:00",
+          "home_pct": 39.2,
+          "winner": "away"
+        },
+        {
+          "scheduled_at": "2026-11-19T01:00Z",
           "predicted_at": "2026-11-16T06:33:05.611324+00:00",
           "home_pct": 61.0,
           "winner": "away"
+        },
+        {
+          "scheduled_at": "2026-11-19T01:00Z",
+          "predicted_at": "2026-11-17T04:03:55.217704+00:00",
+          "home_pct": 47.9,
+          "winner": "home"
         }
       ],
       "logistic-v3-production": [
@@ -28916,10 +29148,47 @@
         {
           "scheduled_at": "2026-11-19T01:00Z",
           "predicted_at": "2026-11-18T01:56:33.360869+00:00",
+          "home_pct": 19.9,
+          "winner": "away"
+        },
+        {
+          "scheduled_at": "2026-11-19T01:00Z",
+          "predicted_at": "2026-11-18T01:56:33.360869+00:00",
           "home_pct": 76.9,
           "winner": "away"
+        },
+        {
+          "scheduled_at": "2026-11-19T01:00Z",
+          "predicted_at": "2026-11-18T01:56:33.360869+00:00",
+          "home_pct": 51.4,
+          "winner": "home"
         }
       ]
+    },
+    "prospective_model_comparison": {
+      "completed_paired_games": 0,
+      "pending_forecasts": 13,
+      "models": {
+        "v2": {
+          "n": 0,
+          "favorite_accuracy_pct": null,
+          "brier": null,
+          "log_loss": null
+        },
+        "v3": {
+          "n": 0,
+          "favorite_accuracy_pct": null,
+          "brier": null,
+          "log_loss": null
+        },
+        "hybrid": {
+          "n": 0,
+          "favorite_accuracy_pct": null,
+          "brier": null,
+          "log_loss": null
+        }
+      },
+      "selection_policy": "Última captura prepartido con V2, V3 e híbrido guardados al mismo tiempo."
     },
     "elo_comparison": {
       "n": 0,
@@ -28928,14 +29197,14 @@
     },
     "elo_comparison_by_model": {
       "elo-forma10-v2": {
-        "n": 71,
-        "model_brier": 0.2172,
-        "elo_brier": 0.226
+        "n": 73,
+        "model_brier": 0.2171,
+        "elo_brier": 0.2256
       },
       "logistic-v3-production": {
-        "n": 9,
-        "model_brier": 0.3526,
-        "elo_brier": 0.3728
+        "n": 11,
+        "model_brier": 0.3136,
+        "elo_brier": 0.3342
       }
     },
     "sample_warning": "Comparar con referencia; Brier no demuestra calibración por sí solo.",
@@ -29021,9 +29290,9 @@
       "result": null,
       "elo_baseline_home_pct": 70.6,
       "revised_prediction": {
-        "home_pct": 80.5,
-        "away_pct": 19.5,
-        "predicted_at": "2026-11-19T03:18:20.430219+00:00",
+        "home_pct": 80.9,
+        "away_pct": 19.1,
+        "predicted_at": "2026-11-19T03:35:06.933100+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -29065,9 +29334,9 @@
       "result": null,
       "elo_baseline_home_pct": 72.5,
       "revised_prediction": {
-        "home_pct": 73.4,
-        "away_pct": 26.6,
-        "predicted_at": "2026-11-19T03:14:59.912142+00:00",
+        "home_pct": 73.8,
+        "away_pct": 26.2,
+        "predicted_at": "2026-11-19T03:35:06.933100+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -29219,11 +29488,11 @@
       "result": null,
       "elo_baseline_home_pct": 63.4,
       "revised_prediction": {
-        "home_pct": 60.6,
-        "away_pct": 39.4,
-        "predicted_at": "2026-11-19T03:14:59.912142+00:00",
+        "home_pct": 61.2,
+        "away_pct": 38.8,
+        "predicted_at": "2026-11-19T03:35:06.933100+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y margen reciente. Señales V2: Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 45.1
       }
@@ -29304,7 +29573,11 @@
       "home_pct": 42.1,
       "away_pct": 57.9,
       "model": "elo-forma10-v2",
-      "result": null,
+      "result": {
+        "home_score": 116,
+        "away_score": 94,
+        "winner": "home"
+      },
       "elo_baseline_home_pct": 49.8,
       "revised_prediction": {
         "home_pct": 51.4,
@@ -29352,7 +29625,11 @@
       "home_pct": 32.5,
       "away_pct": 67.5,
       "model": "elo-forma10-v2",
-      "result": null,
+      "result": {
+        "home_score": 109,
+        "away_score": 122,
+        "winner": "away"
+      },
       "elo_baseline_home_pct": 41.5,
       "revised_prediction": {
         "home_pct": 19.9,
