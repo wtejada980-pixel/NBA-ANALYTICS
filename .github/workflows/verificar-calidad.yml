@@ -1,4 +1,4 @@
-name: Verificar calidad NBA Analytics
+name: Verificar calidad del híbrido NBA Analytics
 
 on:
   push:
