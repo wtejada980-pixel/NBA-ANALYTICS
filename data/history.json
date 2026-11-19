@@ -126626,7 +126626,11 @@
       "reason": "Ventaja por ventaja de localía y mejor tendencia de jugadores.",
       "elo_baseline_home_pct": 60.5,
       "scheduled_at": "2026-11-19T01:00Z",
-      "result": null,
+      "result": {
+        "home_score": 112,
+        "away_score": 117,
+        "winner": "away"
+      },
       "input_snapshots": [
         {
           "captured_at": "2026-11-16T06:33:05.611324+00:00",
@@ -149065,6 +149069,200 @@
           "context": {
             "news": []
           }
+        },
+        {
+          "captured_at": "2026-11-19T03:18:20.430219+00:00",
+          "scheduled_at": "2026-11-21T00:00Z",
+          "model": "hybrid-v2-v3-experimental",
+          "home_pct": 70.2,
+          "away_pct": 29.8,
+          "inputs": {
+            "home": {
+              "team_id": "1",
+              "form": {
+                "played": 10,
+                "wins": 6,
+                "margin": 0.0,
+                "win_rate": 0.618,
+                "points_for": 117.7,
+                "points_against": 117.7
+              },
+              "rest_days": 3,
+              "player_trend": -0.8,
+              "players": [
+                {
+                  "id": "4397183",
+                  "name": "Aaron Wiggins",
+                  "games": 4,
+                  "pts": 14.2,
+                  "reb": 2.8,
+                  "ast": 3.2,
+                  "recent_points": [
+                    3.0,
+                    15.0,
+                    20.0,
+                    19.0
+                  ]
+                },
+                {
+                  "id": "4278039",
+                  "name": "Nickeil Alexander-Walker",
+                  "games": 5,
+                  "pts": 13.6,
+                  "reb": 2.2,
+                  "ast": 1.8,
+                  "recent_points": [
+                    0.0,
+                    0.0,
+                    20.0,
+                    20.0,
+                    28.0
+                  ]
+                },
+                {
+                  "id": "4701230",
+                  "name": "Jalen Johnson",
+                  "games": 4,
+                  "pts": 12.8,
+                  "reb": 4.5,
+                  "ast": 3.0,
+                  "recent_points": [
+                    2.0,
+                    4.0,
+                    15.0,
+                    30.0
+                  ]
+                },
+                {
+                  "id": "4431680",
+                  "name": "Onyeka Okongwu",
+                  "games": 5,
+                  "pts": 11.8,
+                  "reb": 4.6,
+                  "ast": 1.8,
+                  "recent_points": [
+                    2.0,
+                    3.0,
+                    16.0,
+                    16.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "4397020",
+                  "name": "Luguentz Dort",
+                  "games": 4,
+                  "pts": 8.0,
+                  "reb": 3.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    0.0,
+                    4.0,
+                    3.0,
+                    25.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "30",
+              "form": {
+                "played": 10,
+                "wins": 2,
+                "margin": -8.47,
+                "win_rate": 0.164,
+                "points_for": 99.7,
+                "points_against": 110.7
+              },
+              "rest_days": 3,
+              "player_trend": -0.24444444444444444,
+              "players": [
+                {
+                  "id": "4396971",
+                  "name": "Naz Reid",
+                  "games": 5,
+                  "pts": 17.4,
+                  "reb": 6.8,
+                  "ast": 2.4,
+                  "recent_points": [
+                    17.0,
+                    3.0,
+                    25.0,
+                    14.0,
+                    28.0
+                  ]
+                },
+                {
+                  "id": "3135045",
+                  "name": "Grayson Allen",
+                  "games": 5,
+                  "pts": 13.4,
+                  "reb": 3.0,
+                  "ast": 3.4,
+                  "recent_points": [
+                    12.0,
+                    6.0,
+                    27.0,
+                    0.0,
+                    22.0
+                  ]
+                },
+                {
+                  "id": "4395651",
+                  "name": "Coby White",
+                  "games": 5,
+                  "pts": 10.2,
+                  "reb": 1.8,
+                  "ast": 3.0,
+                  "recent_points": [
+                    21.0,
+                    9.0,
+                    10.0,
+                    7.0,
+                    4.0
+                  ]
+                },
+                {
+                  "id": "5060701",
+                  "name": "Christian Anderson",
+                  "games": 4,
+                  "pts": 8.0,
+                  "reb": 1.8,
+                  "ast": 2.0,
+                  "recent_points": [
+                    16.0,
+                    3.0,
+                    9.0,
+                    4.0
+                  ]
+                },
+                {
+                  "id": "4433287",
+                  "name": "Brandon Miller",
+                  "games": 3,
+                  "pts": 7.7,
+                  "reb": 2.7,
+                  "ast": 2.0,
+                  "recent_points": [
+                    5.0,
+                    8.0,
+                    10.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
         }
       ],
       "revisions": [
@@ -149081,6 +149279,15 @@
           "home_pct": 69.6,
           "away_pct": 30.4,
           "predicted_at": "2026-11-19T03:14:59.912142+00:00",
+          "model": "hybrid-v2-v3-experimental",
+          "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+          "source": "Recalculado con resultados disponibles antes del inicio",
+          "elo_baseline_home_pct": 65.2
+        },
+        {
+          "home_pct": 70.2,
+          "away_pct": 29.8,
+          "predicted_at": "2026-11-19T03:18:20.430219+00:00",
           "model": "hybrid-v2-v3-experimental",
           "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
           "source": "Recalculado con resultados disponibles antes del inicio",
@@ -154073,6 +154280,200 @@
           "context": {
             "news": []
           }
+        },
+        {
+          "captured_at": "2026-11-19T03:18:20.430219+00:00",
+          "scheduled_at": "2026-11-21T01:00Z",
+          "model": "hybrid-v2-v3-experimental",
+          "home_pct": 80.5,
+          "away_pct": 19.5,
+          "inputs": {
+            "home": {
+              "team_id": "25",
+              "form": {
+                "played": 10,
+                "wins": 5,
+                "margin": 4.49,
+                "win_rate": 0.509,
+                "points_for": 114.7,
+                "points_against": 108.1
+              },
+              "rest_days": 3,
+              "player_trend": 0.44166666666666665,
+              "players": [
+                {
+                  "id": "4278073",
+                  "name": "Shai Gilgeous-Alexander",
+                  "games": 5,
+                  "pts": 32.8,
+                  "reb": 4.0,
+                  "ast": 4.2,
+                  "recent_points": [
+                    37.0,
+                    40.0,
+                    31.0,
+                    26.0,
+                    30.0
+                  ]
+                },
+                {
+                  "id": "4683778",
+                  "name": "Jared McCain",
+                  "games": 5,
+                  "pts": 17.0,
+                  "reb": 3.8,
+                  "ast": 2.2,
+                  "recent_points": [
+                    12.0,
+                    23.0,
+                    10.0,
+                    21.0,
+                    19.0
+                  ]
+                },
+                {
+                  "id": "4900671",
+                  "name": "Ajay Mitchell",
+                  "games": 3,
+                  "pts": 13.3,
+                  "reb": 3.3,
+                  "ast": 2.7,
+                  "recent_points": [
+                    14.0,
+                    14.0,
+                    12.0
+                  ]
+                },
+                {
+                  "id": "5174983",
+                  "name": "Aday Mara",
+                  "games": 5,
+                  "pts": 13.0,
+                  "reb": 8.0,
+                  "ast": 2.0,
+                  "recent_points": [
+                    16.0,
+                    10.0,
+                    11.0,
+                    10.0,
+                    18.0
+                  ]
+                },
+                {
+                  "id": "4222252",
+                  "name": "Isaiah Hartenstein",
+                  "games": 5,
+                  "pts": 10.6,
+                  "reb": 12.2,
+                  "ast": 5.0,
+                  "recent_points": [
+                    3.0,
+                    21.0,
+                    20.0,
+                    7.0,
+                    2.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            },
+            "away": {
+              "team_id": "3",
+              "form": {
+                "played": 10,
+                "wins": 4,
+                "margin": -8.11,
+                "win_rate": 0.291,
+                "points_for": 111.1,
+                "points_against": 124.1
+              },
+              "rest_days": 2,
+              "player_trend": 0.3111111111111111,
+              "players": [
+                {
+                  "id": "4395628",
+                  "name": "Zion Williamson",
+                  "games": 4,
+                  "pts": 12.8,
+                  "reb": 4.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    16.0,
+                    6.0,
+                    9.0,
+                    20.0
+                  ]
+                },
+                {
+                  "id": "4397136",
+                  "name": "Saddiq Bey",
+                  "games": 5,
+                  "pts": 10.4,
+                  "reb": 2.0,
+                  "ast": 1.8,
+                  "recent_points": [
+                    23.0,
+                    6.0,
+                    0.0,
+                    14.0,
+                    9.0
+                  ]
+                },
+                {
+                  "id": "5144091",
+                  "name": "Jeremiah Fears",
+                  "games": 5,
+                  "pts": 10.4,
+                  "reb": 3.8,
+                  "ast": 5.8,
+                  "recent_points": [
+                    19.0,
+                    9.0,
+                    4.0,
+                    9.0,
+                    11.0
+                  ]
+                },
+                {
+                  "id": "4869780",
+                  "name": "Derik Queen",
+                  "games": 5,
+                  "pts": 9.4,
+                  "reb": 3.6,
+                  "ast": 0.8,
+                  "recent_points": [
+                    17.0,
+                    7.0,
+                    0.0,
+                    7.0,
+                    16.0
+                  ]
+                },
+                {
+                  "id": "3907497",
+                  "name": "Dejounte Murray",
+                  "games": 2,
+                  "pts": 8.5,
+                  "reb": 2.5,
+                  "ast": 1.5,
+                  "recent_points": [
+                    5.0,
+                    12.0
+                  ]
+                }
+              ],
+              "injury_report": {
+                "source": "No consultado",
+                "items": []
+              }
+            }
+          },
+          "context": {
+            "news": []
+          }
         }
       ],
       "revisions": [
@@ -154080,6 +154481,15 @@
           "home_pct": 81.0,
           "away_pct": 19.0,
           "predicted_at": "2026-11-19T03:14:59.912142+00:00",
+          "model": "hybrid-v2-v3-experimental",
+          "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+          "source": "Recalculado con resultados disponibles antes del inicio",
+          "elo_baseline_home_pct": 92.3
+        },
+        {
+          "home_pct": 80.5,
+          "away_pct": 19.5,
+          "predicted_at": "2026-11-19T03:18:20.430219+00:00",
           "model": "hybrid-v2-v3-experimental",
           "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
           "source": "Recalculado con resultados disponibles antes del inicio",
