@@ -41295,6 +41295,254 @@
           }
         ]
       }
+    },
+    "401910023": {
+      "player_stats": {
+        "20": [
+          {
+            "id": "1966",
+            "name": "LeBron James",
+            "pts": 13.0,
+            "reb": 6.0,
+            "ast": 6.0,
+            "min": "29",
+            "stl": 3.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "3059318",
+            "name": "Joel Embiid",
+            "pts": 17.0,
+            "reb": 16.0,
+            "ast": 7.0,
+            "min": "28",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "2581018",
+            "name": "Kentavious Caldwell-Pope",
+            "pts": 11.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "28",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4431678",
+            "name": "Tyrese Maxey",
+            "pts": 17.0,
+            "reb": 4.0,
+            "ast": 4.0,
+            "min": "29",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5124612",
+            "name": "VJ Edgecombe",
+            "pts": 14.0,
+            "reb": 1.0,
+            "ast": 5.0,
+            "min": "31",
+            "stl": 2.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4432446",
+            "name": "Jabari Walker",
+            "pts": 9.0,
+            "reb": 7.0,
+            "ast": 4.0,
+            "min": "20",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4870562",
+            "name": "Dominick Barlow",
+            "pts": 12.0,
+            "reb": 4.0,
+            "ast": 1.0,
+            "min": "11",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4351851",
+            "name": "Anfernee Simons",
+            "pts": 18.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "26",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4873090",
+            "name": "Labaron Philon Jr.",
+            "pts": 2.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "6",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "15": [
+          {
+            "id": "3134907",
+            "name": "Kyle Kuzma",
+            "pts": 12.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "28",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4432848",
+            "name": "Jaime Jaquez Jr.",
+            "pts": 9.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "23",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3133628",
+            "name": "Myles Turner",
+            "pts": 2.0,
+            "reb": 5.0,
+            "ast": 5.0,
+            "min": "21",
+            "stl": 1.0,
+            "blk": 3.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4395725",
+            "name": "Tyler Herro",
+            "pts": 41.0,
+            "reb": 10.0,
+            "ast": 6.0,
+            "min": "33",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4591725",
+            "name": "Ryan Rollins",
+            "pts": 8.0,
+            "reb": 6.0,
+            "ast": 1.0,
+            "min": "23",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "5164559",
+            "name": "Nate Ament",
+            "pts": 2.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "14",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5105623",
+            "name": "Kel'el Ware",
+            "pts": 6.0,
+            "reb": 8.0,
+            "ast": 3.0,
+            "min": "21",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "2991043",
+            "name": "Caris LeVert",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "5",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4397475",
+            "name": "AJ Green",
+            "pts": 6.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5082206",
+            "name": "Brayden Burries",
+            "pts": 17.0,
+            "reb": 7.0,
+            "ast": 2.0,
+            "min": "20",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5214640",
+            "name": "Kasparas Jakucionis",
+            "pts": 2.0,
+            "reb": 3.0,
+            "ast": 3.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
