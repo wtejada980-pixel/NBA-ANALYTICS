@@ -42415,6 +42415,278 @@
           }
         ]
       }
+    },
+    "401910028": {
+      "player_stats": {
+        "2": [
+          {
+            "id": "4251",
+            "name": "Paul George",
+            "pts": 19.0,
+            "reb": 8.0,
+            "ast": 5.0,
+            "min": "37",
+            "stl": 4.0,
+            "blk": 1.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4065804",
+            "name": "Sam Hauser",
+            "pts": 14.0,
+            "reb": 6.0,
+            "ast": 2.0,
+            "min": "31",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4397424",
+            "name": "Neemias Queta",
+            "pts": 15.0,
+            "reb": 7.0,
+            "ast": 1.0,
+            "min": "30",
+            "stl": 0.0,
+            "blk": 2.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4066354",
+            "name": "Payton Pritchard",
+            "pts": 9.0,
+            "reb": 6.0,
+            "ast": 8.0,
+            "min": "34",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5175647",
+            "name": "Hugo Gonzalez",
+            "pts": 5.0,
+            "reb": 4.0,
+            "ast": 1.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "5142621",
+            "name": "Chris Cenac Jr.",
+            "pts": 2.0,
+            "reb": 3.0,
+            "ast": 0.0,
+            "min": "12",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4277951",
+            "name": "Luka Garza",
+            "pts": 5.0,
+            "reb": 5.0,
+            "ast": 1.0,
+            "min": "17",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "3195",
+            "name": "Mike Conley",
+            "pts": 19.0,
+            "reb": 4.0,
+            "ast": 2.0,
+            "min": "18",
+            "stl": 3.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4397251",
+            "name": "Ron Harper Jr.",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "13",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4433188",
+            "name": "Devin Carter",
+            "pts": 0.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4593841",
+            "name": "Baylor Scheierman",
+            "pts": 4.0,
+            "reb": 3.0,
+            "ast": 1.0,
+            "min": "18",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4683689",
+            "name": "Jordan Walsh",
+            "pts": 1.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "8",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "23": [
+          {
+            "id": "3155942",
+            "name": "Domantas Sabonis",
+            "pts": 15.0,
+            "reb": 17.0,
+            "ast": 4.0,
+            "min": "32",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 7.0,
+            "starter": true
+          },
+          {
+            "id": "4065732",
+            "name": "De'Andre Hunter",
+            "pts": 20.0,
+            "reb": 6.0,
+            "ast": 2.0,
+            "min": "41",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4594327",
+            "name": "Keegan Murray",
+            "pts": 15.0,
+            "reb": 12.0,
+            "ast": 0.0,
+            "min": "40",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 4.0,
+            "starter": true
+          },
+          {
+            "id": "3064440",
+            "name": "Zach LaVine",
+            "pts": 13.0,
+            "reb": 3.0,
+            "ast": 0.0,
+            "min": "30",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "5142620",
+            "name": "Darius Acuff Jr.",
+            "pts": 21.0,
+            "reb": 6.0,
+            "ast": 8.0,
+            "min": "40",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4395650",
+            "name": "Leaky Black",
+            "pts": 2.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4431679",
+            "name": "Precious Achiuwa",
+            "pts": 5.0,
+            "reb": 7.0,
+            "ast": 1.0,
+            "min": "22",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4433174",
+            "name": "Dylan Cardwell",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "6",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4066262",
+            "name": "Malik Monk",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "5106058",
+            "name": "Emanuel Sharp",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "16",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
