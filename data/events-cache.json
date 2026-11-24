@@ -5106,9 +5106,9 @@
         "abbr": "UTAH",
         "name": "Utah Jazz"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 109,
+      "away_score": 94,
       "source": "https://www.espn.com/nba/game/_/gameId/401910044"
     },
     "401910045": {
@@ -5164,7 +5164,7 @@
           {
             "title": "Detroit Pistons @ Orlando Magic: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBCRnF2VHR6U0FjWXdBTXFDVWxWTmlpQXNabFhDMzI3cERkQmlNVTZhc0dlR2plZUQwV2ZuZXd1Y1Y2X05FUkwwczg2ZGVNSS1rSzhNMjdLMDd3XzVjNzBWOEV3R2Nld1hPdXFMOFppclVRU0pfTmZNLWRn?oc=5",
-            "published": "Tue, 24 Nov 2026 03:30:24 GMT",
+            "published": "Tue, 24 Nov 2026 08:02:54 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
@@ -5176,17 +5176,17 @@
             "feed": "Google News"
           },
           {
-            "title": "Pistons move on from late meltdown as Magic aim for 4-0 NBA Cup mark",
-            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ReUtYVTV6eHlvMXJWcmVvWkw0TkJIMG9iWVV4aFJFb2VVRF9YcmNCNHBOVThwV2NsSi1hTV85dnRQbHpGOEpqMmZMUFJkdDE5em9tbkRBSGNrVHU0R2RBWDdsRkladklHOEJJNmlDZjZyRThR?oc=5",
-            "published": "Mon, 23 Nov 2026 23:43:00 GMT",
-            "source": "Charlotte Observer",
-            "feed": "Google News"
-          },
-          {
             "title": "The Detroit Pistons' newest jerseys will be worn three times, with the first coming this Sunday against the Orlando Magic at Little Caesars Arena. See link belo",
             "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWkhEM1d0eGJWWHNfYUkySFpnWW5YZkdNRG1BM0U2aFFzaGd6aEVpRktjQWpYZFpSRnFvQklBa2ZxSVlwV09lTEdzSThQOVhKdXl0TEVvT0QxZ3VVdDQ1eVpWRi13UU13dVRDWjZxWDB6M0htdHIyRjV2Um0xelNpX0g1Q01BeWtScUFMQXV0RkQzNHk1TVdtRXgzNVBBUzdBLWRONXFZUVRBdjdhZUNBR0VGWGhvMTViR0o5cjlqVlh4OUdpeUpNMlptbmFLeF9ocW9tdm9zaDVTTXhBMnBr?oc=5",
             "published": "Tue, 24 Nov 2026 00:00:15 GMT",
             "source": "Facebook",
+            "feed": "Google News"
+          },
+          {
+            "title": "Pistons move on from late meltdown as Magic aim for 4-0 NBA Cup mark",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMG1CM2JvSEFKdGxRN212b2hrWGozc0I1X3FwWUZrWFZlVTFfUm1VTDVGcW9scU9YZmhLU2theUpFR3BjUlctMjRETERFS01TS2gyNjRJbF8xdGR5SnIzZXYyb1Q0UUtiQjFOYmZJenZteG91MnlLNTdtUDdMZGtoZmQ3VGFRN1N4cE8tcVgtR2dnQVJnWi1POGxybzVRMk5qaFRz?oc=5",
+            "published": "Mon, 23 Nov 2026 23:58:03 GMT",
+            "source": "Field Level Media",
             "feed": "Google News"
           }
         ],
@@ -5201,7 +5201,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-24T05:24:41.941934+00:00"
+        "context_updated_at": "2026-11-24T09:56:48.472662+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -5284,31 +5284,31 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
+            "title": "Boston Celtics vs Washington Wizards Nov 24, 2026 Game Summary",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE02cmNIdVJ4YWp3Z3cxZVpkX2NEWjBLSzFJZ3V5Z2ktLVJycGRvdjhhMVh6N0NYMU5BWlFQOUZEVk8tRk5WNDVYMjVQWDVoYWkzQkphVFgxeWtudw?oc=5",
+            "published": "Tue, 24 Nov 2026 06:22:41 GMT",
+            "source": "NBA.com",
+            "feed": "Google News"
+          },
+          {
             "title": "Boston Celtics @ Washington Wizards: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90NmpNckRvc0l2N3hKR3U4Nk5ham9zRU1ZaE1vTmR1UW83VUdLYjRmTXN1eVdTeWlBMDlQLUdwSl9KTUFBbnZZNVEwdjdoOXFsYjF6TlJFSmYzM0N3VHdQdGdHd1lDbjk0bU1xTmlPQ1A0cGxTdWRTVU56NEYxOWc?oc=5",
-            "published": "Tue, 24 Nov 2026 03:33:58 GMT",
+            "published": "Tue, 24 Nov 2026 08:11:23 GMT",
             "source": "Yahoo Sports",
+            "feed": "Google News"
+          },
+          {
+            "title": "Boston Celtics vs Washington Wizards | November 25, 2026 | NBA Matchup",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE15OHhtX3MwNVR4XzBGWnJ1S3p0eU1xZHJEVWl6VUVsR2RNZTdDSk5IYzl6Ulc1dFFYak9zUlNQX0lpalF4SDBtdTUzYXFfclNzN0FwaA?oc=5",
+            "published": "Tue, 24 Nov 2026 09:00:50 GMT",
+            "source": "theScore",
             "feed": "Google News"
           },
           {
             "title": "Celtics vs. Wizards predictions: Odds, recent stats, trends and best bets for November 24",
             "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcnQ1dmN1X0JaUnlRN1AzQ1pOTE9ldzBIYVNtS0JleFpNRTlMeHN1cERRUWM3SEVxNGd5dmhMTFBGQnd1WVJydGN5alF6b01uQS1YVm1zZlI0MGF3WFhFUm0tSU9SS1FSNUZIQkhnSDR4R0JoLU5KVmYtamlaZWw4THFVZ01jNVZNcm5NY2ZRUlNad0R0VDZucE5JTWFVOUF0aF9rY0otRl9TVmhIX0s2NkdCUm9KZFlLdVZpMA?oc=5",
-            "published": "Tue, 24 Nov 2026 03:58:41 GMT",
+            "published": "Tue, 24 Nov 2026 03:59:51 GMT",
             "source": "NBC Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Boston Celtics @ Washington Wizards Odds",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRVJLTnpCQi1Qc2c1M3JoTnhvZjlrLWtWR3pHNGM0aGQzOG5yalVzdXVONzRsTk1IRDNIWWFFNmhUSl9kSEhxWnVpa0R1T2V3X1VNZjN2RkFZa1l6NHdheEFtRUNFMlR0NEg1dWRKdFltenBvU1NtaHp5dWFkSmR6azVuaWRlTkZDRWhDNklrRnF1X3hN?oc=5",
-            "published": "Tue, 24 Nov 2026 00:09:25 GMT",
-            "source": "FanDuel Sportsbook",
-            "feed": "Google News"
-          },
-          {
-            "title": "Boston Celtics vs Washington Wizards Nov 24, 2026 Game Details",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRFF0bjluOTBacGhGaFN1LU1ONnlDU0t3X2NaNEw0d0ZDNXpSM0dLdjBGOHFhWVAwNVIwN3daeW5TdXBuakJ6M2czWXc3UVNfWndTZDdpS3ZnTjdSbldQd2M2aWlMT0VxVGZwTW5sbzNpenRDaURRUUlxaHZ6TEtjaUx4N2l1UUEtUkpZZk1PUjE?oc=5",
-            "published": "Mon, 23 Nov 2026 09:20:57 GMT",
-            "source": "NBA.com",
             "feed": "Google News"
           }
         ],
@@ -5323,7 +5323,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-24T05:24:42.671204+00:00"
+        "context_updated_at": "2026-11-24T09:56:49.332056+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -5408,28 +5408,28 @@
           {
             "title": "Dallas Mavericks vs Denver Nuggets Nov 24, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TZWxkN2k3d29YOE5KaWhCZGtDLVFGckgzQk4zbjRWOF9zbW1CSTdnNFNsbWtRSURLanF6QXZKQTRRTE9tZWdGUUFYNzk0c3N6UlpVWUhaYWR0Zw?oc=5",
-            "published": "Tue, 24 Nov 2026 04:13:24 GMT",
+            "published": "Tue, 24 Nov 2026 06:36:51 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
             "title": "Dallas Mavericks @ Denver Nuggets: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QLTNGOWhBZEdTY2pTenVGMXVkQzh6X2JadTUyQ2dmRlZBQTlNbEktTXpRcEhwdVRlSk13ZG1ESHVVOGFsMFoyaEtiWTNYamt5S0UweDZDMDRBdUdiano4OUZlMkxQOW5qYk1WR1NZYzY5Z0lEZlNhbmZtX0o?oc=5",
-            "published": "Mon, 23 Nov 2026 18:24:15 GMT",
+            "published": "Tue, 24 Nov 2026 08:03:25 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Mavericks List P.J. Washington Questionable After 2 Games Out",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTE5ib0NnVlZDRUpORGNGQ21idnhxWlFLbmlMQldWeTRUZ3FJOXZveE0za2M2Q2JvWUpsdWdhemVpdHczcmdxWEtjMmw1X29sTGVBd1V4Q0FUOE03SmdsV3ROVmtjN1lNU0o5ajNVSk5rRVZ1elhxbU1HU1oyZnBNQXhDX3lCeGpJUzU5R0hR?oc=5",
-            "published": "Tue, 24 Nov 2026 04:33:09 GMT",
-            "source": "Dallas Hoops Journal",
+            "title": "Dallas Mavericks vs Denver Nuggets | November 25, 2026 | NBA Matchup",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB2aTRjVkhzLXEwNkI1Mmp0enBUaXFCRE9CbXNJRmFEZjNoeVc3TTlremZneHNyTE5LUzFnTEFPTnVOSDFnaGlCTjVJZFlTbXg2NDV3NzdORWlkbVcwLWptMUV0ZkJ3YmRtS09IQ2p3?oc=5",
+            "published": "Tue, 24 Nov 2026 09:06:59 GMT",
+            "source": "theScore",
             "feed": "Google News"
           },
           {
-            "title": "Mavericks-Nuggets preview: As NBA Cup play continues, supporting cast is learning how to mesh",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRWZmWldYMnV1dDQxMUMyTUt4clpRNm9DRzdDYUlSMHZwV1lVcS1TcFFFekt4eXcwZEdwb0wxSzF5eXdoNlZGTUt0MEVvMnpVV2ZEZlRuZ3QySDdGUktjLUtHMFVIQzQxb24zZ25uWmtiUVZMTl84X0JVUjBUVUlmbUJ0SmRWNk8yNHNrU3NseHllYlBUT0txRkxnUFNGQmdGT21FT2VkSjNsa2JkQ0sya2Z0WmZWMV93WEdQVHR3?oc=5",
-            "published": "Mon, 23 Nov 2026 23:29:31 GMT",
+            "title": "Dallas Mavericks vs Denver Nuggets Nov 24, 2026 Game Details",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQLW9qdGY2R1NaSEZJVzFZSUQxOGtqem42QkFLbUNDS0NWV0dQRnRFX0pzR3F0eTNfSHFvUzAzanJwMC01MnRqd0lJV3NuN1NRRTNHem03ZEMtTmZrZUI1bnJWdkhHbmRuRndhaTdSbVRJWndGRVZ5M0tmODVLemF3aDE2NDlNSUJCWmc?oc=5",
+            "published": "Tue, 24 Nov 2026 07:50:58 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           }
@@ -5445,7 +5445,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-24T05:24:43.294167+00:00"
+        "context_updated_at": "2026-11-24T09:56:49.727462+00:00"
       },
       "head_to_head": [],
       "prediction": {

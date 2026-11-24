@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24T05:24:26.935964+00:00",
+  "as_of": "2026-11-24T09:56:32.359403+00:00",
   "date": "2026-11-24",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -14456,9 +14456,9 @@
         "abbr": "UTAH",
         "name": "Utah Jazz"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 109,
+      "away_score": 94,
       "source": "https://www.espn.com/nba/game/_/gameId/401910044",
       "historical": true,
       "prediction": {
@@ -14479,6 +14479,288 @@
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 93.1
+      },
+      "player_stats": {
+        "26": [
+          {
+            "id": "4277919",
+            "name": "Mo Bamba",
+            "pts": 6.0,
+            "reb": 7.0,
+            "ast": 2.0,
+            "min": "29",
+            "stl": 0.0,
+            "blk": 2.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4432811",
+            "name": "Josh Green",
+            "pts": 8.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4433627",
+            "name": "Keyonte George",
+            "pts": 14.0,
+            "reb": 4.0,
+            "ast": 2.0,
+            "min": "33",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "4873138",
+            "name": "Ace Bailey",
+            "pts": 18.0,
+            "reb": 5.0,
+            "ast": 1.0,
+            "min": "33",
+            "stl": 2.0,
+            "blk": 1.0,
+            "tov": 3.0,
+            "starter": true
+          },
+          {
+            "id": "5041955",
+            "name": "Darryn Peterson",
+            "pts": 13.0,
+            "reb": 6.0,
+            "ast": 5.0,
+            "min": "29",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4433618",
+            "name": "Harrison Ingram",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4684793",
+            "name": "Kyle Filipowski",
+            "pts": 21.0,
+            "reb": 12.0,
+            "ast": 4.0,
+            "min": "24",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "5105839",
+            "name": "Brice Sensabaugh",
+            "pts": 6.0,
+            "reb": 4.0,
+            "ast": 1.0,
+            "min": "17",
+            "stl": 2.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4684682",
+            "name": "Jonas Aidoo",
+            "pts": 0.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "3133602",
+            "name": "Svi Mykhailiuk",
+            "pts": 4.0,
+            "reb": 3.0,
+            "ast": 2.0,
+            "min": "25",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "4065663",
+            "name": "Josh Okogie",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "9",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4683736",
+            "name": "Kobe Bufkin",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "1",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4683766",
+            "name": "Isaiah Collier",
+            "pts": 4.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "18",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "13": [
+          {
+            "id": "4592691",
+            "name": "Jake LaRavia",
+            "pts": 15.0,
+            "reb": 10.0,
+            "ast": 1.0,
+            "min": "37",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4433136",
+            "name": "Walker Kessler",
+            "pts": 10.0,
+            "reb": 12.0,
+            "ast": 0.0,
+            "min": "36",
+            "stl": 1.0,
+            "blk": 2.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3907498",
+            "name": "Matisse Thybulle",
+            "pts": 14.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "27",
+            "stl": 2.0,
+            "blk": 2.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3945274",
+            "name": "Luka Doncic",
+            "pts": 28.0,
+            "reb": 4.0,
+            "ast": 8.0,
+            "min": "33",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 4.0,
+            "starter": true
+          },
+          {
+            "id": "4397014",
+            "name": "Quentin Grimes",
+            "pts": 9.0,
+            "reb": 3.0,
+            "ast": 8.0,
+            "min": "30",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": true
+          },
+          {
+            "id": "4278077",
+            "name": "Jarred Vanderbilt",
+            "pts": 1.0,
+            "reb": 2.0,
+            "ast": 0.0,
+            "min": "12",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4278580",
+            "name": "Sandro Mamukelashvili",
+            "pts": 2.0,
+            "reb": 4.0,
+            "ast": 2.0,
+            "min": "13",
+            "stl": 2.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          },
+          {
+            "id": "4433137",
+            "name": "Ziaire Williams",
+            "pts": 9.0,
+            "reb": 4.0,
+            "ast": 0.0,
+            "min": "19",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "4277811",
+            "name": "Collin Sexton",
+            "pts": 12.0,
+            "reb": 2.0,
+            "ast": 4.0,
+            "min": "23",
+            "stl": 1.0,
+            "blk": 1.0,
+            "tov": 2.0,
+            "starter": false
+          },
+          {
+            "id": "5113969",
+            "name": "Cameron Carr",
+            "pts": 9.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "10",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": false
+          }
+        ]
       }
     },
     {
@@ -14860,7 +15142,7 @@
           {
             "title": "Detroit Pistons @ Orlando Magic: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBCRnF2VHR6U0FjWXdBTXFDVWxWTmlpQXNabFhDMzI3cERkQmlNVTZhc0dlR2plZUQwV2ZuZXd1Y1Y2X05FUkwwczg2ZGVNSS1rSzhNMjdLMDd3XzVjNzBWOEV3R2Nld1hPdXFMOFppclVRU0pfTmZNLWRn?oc=5",
-            "published": "Tue, 24 Nov 2026 03:30:24 GMT",
+            "published": "Tue, 24 Nov 2026 08:02:54 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
@@ -14872,17 +15154,17 @@
             "feed": "Google News"
           },
           {
-            "title": "Pistons move on from late meltdown as Magic aim for 4-0 NBA Cup mark",
-            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ReUtYVTV6eHlvMXJWcmVvWkw0TkJIMG9iWVV4aFJFb2VVRF9YcmNCNHBOVThwV2NsSi1hTV85dnRQbHpGOEpqMmZMUFJkdDE5em9tbkRBSGNrVHU0R2RBWDdsRkladklHOEJJNmlDZjZyRThR?oc=5",
-            "published": "Mon, 23 Nov 2026 23:43:00 GMT",
-            "source": "Charlotte Observer",
-            "feed": "Google News"
-          },
-          {
             "title": "The Detroit Pistons' newest jerseys will be worn three times, with the first coming this Sunday against the Orlando Magic at Little Caesars Arena. See link belo",
             "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWkhEM1d0eGJWWHNfYUkySFpnWW5YZkdNRG1BM0U2aFFzaGd6aEVpRktjQWpYZFpSRnFvQklBa2ZxSVlwV09lTEdzSThQOVhKdXl0TEVvT0QxZ3VVdDQ1eVpWRi13UU13dVRDWjZxWDB6M0htdHIyRjV2Um0xelNpX0g1Q01BeWtScUFMQXV0RkQzNHk1TVdtRXgzNVBBUzdBLWRONXFZUVRBdjdhZUNBR0VGWGhvMTViR0o5cjlqVlh4OUdpeUpNMlptbmFLeF9ocW9tdm9zaDVTTXhBMnBr?oc=5",
             "published": "Tue, 24 Nov 2026 00:00:15 GMT",
             "source": "Facebook",
+            "feed": "Google News"
+          },
+          {
+            "title": "Pistons move on from late meltdown as Magic aim for 4-0 NBA Cup mark",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMG1CM2JvSEFKdGxRN212b2hrWGozc0I1X3FwWUZrWFZlVTFfUm1VTDVGcW9scU9YZmhLU2theUpFR3BjUlctMjRETERFS01TS2gyNjRJbF8xdGR5SnIzZXYyb1Q0UUtiQjFOYmZJenZteG91MnlLNTdtUDdMZGtoZmQ3VGFRN1N4cE8tcVgtR2dnQVJnWi1POGxybzVRMk5qaFRz?oc=5",
+            "published": "Mon, 23 Nov 2026 23:58:03 GMT",
+            "source": "Field Level Media",
             "feed": "Google News"
           }
         ],
@@ -14897,7 +15179,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-24T05:24:41.941934+00:00"
+        "context_updated_at": "2026-11-24T09:56:48.472662+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -14980,31 +15262,31 @@
         "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
         "news": [
           {
+            "title": "Boston Celtics vs Washington Wizards Nov 24, 2026 Game Summary",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE02cmNIdVJ4YWp3Z3cxZVpkX2NEWjBLSzFJZ3V5Z2ktLVJycGRvdjhhMVh6N0NYMU5BWlFQOUZEVk8tRk5WNDVYMjVQWDVoYWkzQkphVFgxeWtudw?oc=5",
+            "published": "Tue, 24 Nov 2026 06:22:41 GMT",
+            "source": "NBA.com",
+            "feed": "Google News"
+          },
+          {
             "title": "Boston Celtics @ Washington Wizards: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90NmpNckRvc0l2N3hKR3U4Nk5ham9zRU1ZaE1vTmR1UW83VUdLYjRmTXN1eVdTeWlBMDlQLUdwSl9KTUFBbnZZNVEwdjdoOXFsYjF6TlJFSmYzM0N3VHdQdGdHd1lDbjk0bU1xTmlPQ1A0cGxTdWRTVU56NEYxOWc?oc=5",
-            "published": "Tue, 24 Nov 2026 03:33:58 GMT",
+            "published": "Tue, 24 Nov 2026 08:11:23 GMT",
             "source": "Yahoo Sports",
+            "feed": "Google News"
+          },
+          {
+            "title": "Boston Celtics vs Washington Wizards | November 25, 2026 | NBA Matchup",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE15OHhtX3MwNVR4XzBGWnJ1S3p0eU1xZHJEVWl6VUVsR2RNZTdDSk5IYzl6Ulc1dFFYak9zUlNQX0lpalF4SDBtdTUzYXFfclNzN0FwaA?oc=5",
+            "published": "Tue, 24 Nov 2026 09:00:50 GMT",
+            "source": "theScore",
             "feed": "Google News"
           },
           {
             "title": "Celtics vs. Wizards predictions: Odds, recent stats, trends and best bets for November 24",
             "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcnQ1dmN1X0JaUnlRN1AzQ1pOTE9ldzBIYVNtS0JleFpNRTlMeHN1cERRUWM3SEVxNGd5dmhMTFBGQnd1WVJydGN5alF6b01uQS1YVm1zZlI0MGF3WFhFUm0tSU9SS1FSNUZIQkhnSDR4R0JoLU5KVmYtamlaZWw4THFVZ01jNVZNcm5NY2ZRUlNad0R0VDZucE5JTWFVOUF0aF9rY0otRl9TVmhIX0s2NkdCUm9KZFlLdVZpMA?oc=5",
-            "published": "Tue, 24 Nov 2026 03:58:41 GMT",
+            "published": "Tue, 24 Nov 2026 03:59:51 GMT",
             "source": "NBC Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Boston Celtics @ Washington Wizards Odds",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRVJLTnpCQi1Qc2c1M3JoTnhvZjlrLWtWR3pHNGM0aGQzOG5yalVzdXVONzRsTk1IRDNIWWFFNmhUSl9kSEhxWnVpa0R1T2V3X1VNZjN2RkFZa1l6NHdheEFtRUNFMlR0NEg1dWRKdFltenBvU1NtaHp5dWFkSmR6azVuaWRlTkZDRWhDNklrRnF1X3hN?oc=5",
-            "published": "Tue, 24 Nov 2026 00:09:25 GMT",
-            "source": "FanDuel Sportsbook",
-            "feed": "Google News"
-          },
-          {
-            "title": "Boston Celtics vs Washington Wizards Nov 24, 2026 Game Details",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRFF0bjluOTBacGhGaFN1LU1ONnlDU0t3X2NaNEw0d0ZDNXpSM0dLdjBGOHFhWVAwNVIwN3daeW5TdXBuakJ6M2czWXc3UVNfWndTZDdpS3ZnTjdSbldQd2M2aWlMT0VxVGZwTW5sbzNpenRDaURRUUlxaHZ6TEtjaUx4N2l1UUEtUkpZZk1PUjE?oc=5",
-            "published": "Mon, 23 Nov 2026 09:20:57 GMT",
-            "source": "NBA.com",
             "feed": "Google News"
           }
         ],
@@ -15019,7 +15301,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-24T05:24:42.671204+00:00"
+        "context_updated_at": "2026-11-24T09:56:49.332056+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -15104,28 +15386,28 @@
           {
             "title": "Dallas Mavericks vs Denver Nuggets Nov 24, 2026 Game Summary",
             "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TZWxkN2k3d29YOE5KaWhCZGtDLVFGckgzQk4zbjRWOF9zbW1CSTdnNFNsbWtRSURLanF6QXZKQTRRTE9tZWdGUUFYNzk0c3N6UlpVWUhaYWR0Zw?oc=5",
-            "published": "Tue, 24 Nov 2026 04:13:24 GMT",
+            "published": "Tue, 24 Nov 2026 06:36:51 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           },
           {
             "title": "Dallas Mavericks @ Denver Nuggets: Live game updates, stats, play-by-play",
             "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QLTNGOWhBZEdTY2pTenVGMXVkQzh6X2JadTUyQ2dmRlZBQTlNbEktTXpRcEhwdVRlSk13ZG1ESHVVOGFsMFoyaEtiWTNYamt5S0UweDZDMDRBdUdiano4OUZlMkxQOW5qYk1WR1NZYzY5Z0lEZlNhbmZtX0o?oc=5",
-            "published": "Mon, 23 Nov 2026 18:24:15 GMT",
+            "published": "Tue, 24 Nov 2026 08:03:25 GMT",
             "source": "Yahoo Sports",
             "feed": "Google News"
           },
           {
-            "title": "Mavericks List P.J. Washington Questionable After 2 Games Out",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTE5ib0NnVlZDRUpORGNGQ21idnhxWlFLbmlMQldWeTRUZ3FJOXZveE0za2M2Q2JvWUpsdWdhemVpdHczcmdxWEtjMmw1X29sTGVBd1V4Q0FUOE03SmdsV3ROVmtjN1lNU0o5ajNVSk5rRVZ1elhxbU1HU1oyZnBNQXhDX3lCeGpJUzU5R0hR?oc=5",
-            "published": "Tue, 24 Nov 2026 04:33:09 GMT",
-            "source": "Dallas Hoops Journal",
+            "title": "Dallas Mavericks vs Denver Nuggets | November 25, 2026 | NBA Matchup",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB2aTRjVkhzLXEwNkI1Mmp0enBUaXFCRE9CbXNJRmFEZjNoeVc3TTlremZneHNyTE5LUzFnTEFPTnVOSDFnaGlCTjVJZFlTbXg2NDV3NzdORWlkbVcwLWptMUV0ZkJ3YmRtS09IQ2p3?oc=5",
+            "published": "Tue, 24 Nov 2026 09:06:59 GMT",
+            "source": "theScore",
             "feed": "Google News"
           },
           {
-            "title": "Mavericks-Nuggets preview: As NBA Cup play continues, supporting cast is learning how to mesh",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRWZmWldYMnV1dDQxMUMyTUt4clpRNm9DRzdDYUlSMHZwV1lVcS1TcFFFekt4eXcwZEdwb0wxSzF5eXdoNlZGTUt0MEVvMnpVV2ZEZlRuZ3QySDdGUktjLUtHMFVIQzQxb24zZ25uWmtiUVZMTl84X0JVUjBUVUlmbUJ0SmRWNk8yNHNrU3NseHllYlBUT0txRkxnUFNGQmdGT21FT2VkSjNsa2JkQ0sya2Z0WmZWMV93WEdQVHR3?oc=5",
-            "published": "Mon, 23 Nov 2026 23:29:31 GMT",
+            "title": "Dallas Mavericks vs Denver Nuggets Nov 24, 2026 Game Details",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQLW9qdGY2R1NaSEZJVzFZSUQxOGtqem42QkFLbUNDS0NWV0dQRnRFX0pzR3F0eTNfSHFvUzAzanJwMC01MnRqd0lJV3NuN1NRRTNHem03ZEMtTmZrZUI1bnJWdkhHbmRuRndhaTdSbVRJWndGRVZ5M0tmODVLemF3aDE2NDlNSUJCWmc?oc=5",
+            "published": "Tue, 24 Nov 2026 07:50:58 GMT",
             "source": "NBA.com",
             "feed": "Google News"
           }
@@ -15141,7 +15423,7 @@
           "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
           "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
         ],
-        "context_updated_at": "2026-11-24T05:24:43.294167+00:00"
+        "context_updated_at": "2026-11-24T09:56:49.727462+00:00"
       },
       "head_to_head": [],
       "prediction": {
@@ -23055,8 +23337,8 @@
       "id": "13",
       "abbr": "LAL",
       "name": "Los Angeles Lakers",
-      "rating": 1586.7,
-      "games": 18
+      "rating": 1592.0,
+      "games": 19
     },
     {
       "id": "29",
@@ -23237,8 +23519,8 @@
       "id": "26",
       "abbr": "UTAH",
       "name": "Utah Jazz",
-      "rating": 1403.3,
-      "games": 19
+      "rating": 1398.0,
+      "games": 20
     },
     {
       "id": "15",
@@ -23257,6 +23539,20 @@
   ],
   "news": [
     {
+      "title": "TST Images: Lakers defeat Jazz, 109-94, at Crypto Arena",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Hb01IVERNWGEySXo0VklvWW5xS1hBamk3R0xhcTZVa3FTQnFiM0VnTUMyZllDSklJb0NxREhZREZlV09hS2ZXenVack85X1pwTEtOVGZFUEtDQmtyaF9PY3ZjTlpKUGhfSTVmcmpsYUhHSDc3dFRreHZQMF91QWM?oc=5",
+      "published": "Tue, 24 Nov 2026 06:05:28 GMT",
+      "source": "The Sporting Tribune",
+      "feed": "Google News"
+    },
+    {
+      "title": "Wembanyama sits out against Kings due to back tightness, 2 days after 50-point, 19-rebound game",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcVFZWEJrRm5wOVg0aWdfZmF0V2lFUjJ3SGZjVXNQQ043dUd0a2dhWllETFVCang0VmJQb2tfUnVaSFUzMVVaVHNGOHkyeEpWZ2NDNGtXel9KMmtydlZQRjE1RVJRdWVxWVNSY2dqdEJxTFVnSm4wcWs1Z2hycnkyQXd5YXN0cmFuU2pYb0FLWEVwYTQ?oc=5",
+      "published": "Tue, 24 Nov 2026 07:39:07 GMT",
+      "source": "Seattle Post-Intelligencer",
+      "feed": "Google News"
+    },
+    {
       "title": "Warriors’ Will Richard Gets Fined by NBA Hours After Steve Kerr’s Rant on Flopping",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeXNicHN3Tk9VUVh0cEdqUEhiMzZ3MHpmbkFJNXg2RWRiUURtem5zRXpHR1p0MGNsQm1qNHg2dExuZlBRNGJiaDNKWGo4V2pHNVJVaFd5Ykc4dnNLTEJDdXZOeWZOd0pWUmdQc2RycEUzU3VVcmJ0aG1hVU1JSUgzTGpXdXU0ZkNTMGM4VTByXzhUeDZJUUpOdGFlbTlpTUNaSkxISG43Tkt6ZnNOdnhfVmJsTGg4dG9ramVVSWRpUW9uNE85ZlQtcDVuejRwY2tNT0R1eVVVWVU2Z08wWm5Kc2VmbncyaS15X1o5T01iNmFnY0k?oc=5",
       "published": "Tue, 24 Nov 2026 03:45:47 GMT",
@@ -23264,10 +23560,31 @@
       "feed": "Google News"
     },
     {
-      "title": "Jalen Green scores 25 and Devin Booker adds 22 to help the Suns top the Pelicans 123-119 in OT",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSmUyRlVJU1VoVS1ENF9nbWxMVF9YRXo0UHJleDVmUm5ScVI3R283M3ZJNVRKQUJFYVl4eXFKX0VDRVlUczNuWHl5aUhDOVo5VG5FMHNjNWhHaE5UQ0RVVG9KSXctdncyX0tRQTBaTkFrYVM1cFI4OTdQV296Y1VMdVN2MGEtMkRkaHZnVnloZFBQZ3hGQjIw?oc=5",
-      "published": "Tue, 24 Nov 2026 04:54:05 GMT",
-      "source": "Seattle Post-Intelligencer",
+      "title": "Luka Doncic scores 28, Lakers avenge loss to Jazz last week with 109-94 victory in rematch",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVXBMU0p4cEhsT0FCZnpYbkVGSUV1U2QxNl95UU41Q0tsOGZHbW9OWFdsaHgyNnY1YWI2RTJuT3YyV2ViRDdPdmZkVmxhVjh4NFVkMnhQb1AteFhoM0xXSGNYa2FNZlBKX1VWdlRYd1hDRm1YZDJYWHp6X3FJN0VsZkNzMzJTb0lMQnNEVU0yTDVXcVc3LUp0cWpjak45MmE0?oc=5",
+      "published": "Tue, 24 Nov 2026 05:57:15 GMT",
+      "source": "CTPost",
+      "feed": "Google News"
+    },
+    {
+      "title": "Castle helps Spurs stay unbeaten on road with 123-107 win over Kings minus Wemby, Fox and Harper",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZUd0QVN1R3g5UmY4cU1HUFZNb2NDQno5X0ZtdWhMRjJSVHZyQlIwZ3JacUI5Ui0ySzR0amhiLVdsaE93TkRwcGRGd2tub2JhS1JxZExZdmFtT1pIc3NHSFBWekRIMnhHTUFGZC1WLVQ3dUtmSzNZQldQZ250UlYwSzFWbzJhUjNjTDRkd001cHdMV2FxYVg2Ylp5b0Q2R1F2RzF4NFFZSUw5N0dY?oc=5",
+      "published": "Tue, 24 Nov 2026 06:02:56 GMT",
+      "source": "Beaumont Enterprise",
+      "feed": "Google News"
+    },
+    {
+      "title": "Wembanyama sits vs. Kings due to back tightness days after 50-point, 19-rebound game",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTGx3MzJTdW5GcVI0QkN6ZW5iLURuY2o3cDFXbFRjY0VTSktTTmZ4YUNIUHJHYjRUcnc1TFJ6Rk9zaFNoajRwOTRMVkdHYkJmaGJBVTlkRnk3STA5WEFtUFVXTEh3NzdYeVNsVjlEMHBFZFNteVQyQVIwb1dIb1N4ZTZ6LXdIS2w1T1JqZkpFMDlkTUhsanJ1Sk9rYTVnanFUelFXX0R4SVZXMGs0Vm05bzR0emU3YnAyRnNr0gHAAUFVX3lxTE5fQ3F5ZTRQWnVDdUhOTll3azZzTTZYby02YWpNUkVvaVVNLXZfajcwYzJxVUdNVzl4ZzBLZlFtcTY4bWVRdW1BWVppRmhKZXVjTm5IbjVvY2FYLVl4c0xRc0JuM1NQSmpoWHE1TmgzZktLQngzajhvbnkxd1Z5bkRFMUhJcWpsWjE1NV9uNFRUd0ZGc3hMOFdRQnBJS2hLLWJfVm5ZNzVLTWpSZnI0bXF0aGx0UzVTUkVUeFZ1WnUzYw?oc=5",
+      "published": "Tue, 24 Nov 2026 04:37:35 GMT",
+      "source": "InformNNY.com",
+      "feed": "Google News"
+    },
+    {
+      "title": "Jaden McDaniels scores career-best 34 for Timberwolves in 142-116 rout of Nets",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQY0lEaFdwX250aFJzVndmaUpNUHdQMkhkYWhLYXFhbnRkZE5BSnU4aHJQSGhaOEM2YlhSTXNBekQwZzNibnZuQV9yZ2RmRTRZaU9qYUtEejc0UGE1MFBQcDJlN2g1a2pmX2VtQUJpZHB1LU1CS2Q2UkNOZTliZlFfbTlHZWpuMUhXSTNwRXJGOFpSbzdYeUZYcHhiYjh0Q3pYX3padUtOV25yQVBZQzEzQV81X0oxVjBTMlQydHNGUXJVWHBITnBqWkM5MHc5WC13YWRfNHRwN3Nzd1NmT29zdEFfT3FDdkx4QzF2NlVZbkdOdXRyQlM4NEE4RHk?oc=5",
+      "published": "Tue, 24 Nov 2026 03:41:24 GMT",
+      "source": "morning-times.com",
       "feed": "Google News"
     },
     {
@@ -23275,55 +23592,6 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOXhKcWNDQ1Rab1o0SkNpRVVsejg5bmd4bWtzaThfUEFrVkpwYS1mSExHM3Z3R200cGlJTGx4RU05WWYyOG1tampld0hUTWFJcHA3QVNqUjdySWtKRHlSWDN5aldtYmhENlFWM1gxU1VlZHVocTh2YWxPVE02Q2phOXNsV0F3aFp2ODMyNmVHMnJ2dnhvejV5Q2lMRQ?oc=5",
       "published": "Tue, 24 Nov 2026 04:31:12 GMT",
       "source": "CTPost",
-      "feed": "Google News"
-    },
-    {
-      "title": "Wembanyama sits vs. Kings due to back tightness days after 50-point, 19-rebound game",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSGJ5dkpiSENTQTdDZXJNVDRlbEVXaEVwdjNOMXpJLUpMcHBxaDdvUE1DTnhfSDVtdzhaeFRPeDJILVJaVURUT1JWb2VzcExfN0lKeXlmOFdkNnVmRmE1QjhSXzg3UVhXRlp4ZnlJaWVYdDZQbEJoTUdIU0FZdURsZUEzNnhxZXdMN1pzX3NSZjRTdVpmRV9ZNkhCODVSSlAxdTlnOFp5c3RvcG1iajFwWm5tdXTSAboBQVVfeXFMT05kUkVqTU5HMFltUVEtNXBqTVVuQTF6Q2s2dVZJMFdhNVFuOGQzUFltdFA1X3dVVk9iTFdsTUNxY2FfaFo0VUdKbUhlZXlvUU5xUXVNYWg5eDAwTldjTWxSNTVtZmhwZldRY0tMR2FlTXZtZTB2SG5weUdOeGFTMGhPMTJLNFl6ZVAyLXF2U1BnNzNXWkxQUzBSMFpJeU1wdkcwblhqZ0dhSUJCd2l0bnBGLVB4TkxNNUpB?oc=5",
-      "published": "Tue, 24 Nov 2026 04:37:35 GMT",
-      "source": "WTNH.com",
-      "feed": "Google News"
-    },
-    {
-      "title": "Bulls beat Cavaliers 122-108 behind Jordan Hawkins' 19 points and 63 off the bench",
-      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPUjBJQ05XaDJ5cW5lakZtV0x4aUhGWnlEeWFDSjBfQXRJbzZsSnM1djRzUjhnQ2tPMGxZc1k0WFEtdWRkOE1LVU8xSjBYaHBZaHRmM21SWTQ0X0h4dDI1ZTZIQUF6Mk0wNV82dGJkdzloUXlCNzdmTlU2Q29CSm9SMmFrdEZra0l6clBxTi1wS1V2YnpMU2RzV0IwOGVOSEpYNmtKRElLWDk4WkpRakpsdlR3WUFER0hSSEZBSTZmajVzQVNXNVZsVjVGaEFXcjQ1XzQtdWQzZzh4Y2trVk9vZV8xNDg3YTZEQUxjTHlaOWVBME9DQmpNb28ybEtqajVlSVF5aU9raklRYVRw?oc=5",
-      "published": "Tue, 24 Nov 2026 03:58:21 GMT",
-      "source": "Oskaloosa Herald",
-      "feed": "Google News"
-    },
-    {
-      "title": "Nuggets star Nikola Jokic nets NBA weekly honor",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPemxLbHl5UG1Ua3FBcG1YT2pkelhycWpnVkpJdEpudDd4RmZWbVEtOTREbmU4bUNBMXBKTVQ1S0tUSzgxQVRySFBHUUI0bE1QTnRUdUZqYS0wdmdGeUtOLVJCOUkxcmpSdllSSGl5cUlxUmRaeFNQbWxiVTk1TUdHZ0JCQklhWlZwTHBKbVItLWpSRFk?oc=5",
-      "published": "Mon, 23 Nov 2026 22:48:16 GMT",
-      "source": "Denver Gazette",
-      "feed": "Google News"
-    },
-    {
-      "title": "Deni Avdija hits 5 3s and scores 31 points as Trail Blazers hand 76ers only their 4th loss, 128-111",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVGtVc3lXSjl6QXNIMUVoUXVNc1VhZ1NndmdxdFRFN25tdnpJM2xMQ3EwenNxbng1U0hPU1pqd0NCV21aWXJmMEk0YzVyb1ZHcExmYmdPX0ZjdmdMeU5KLXBtNEtrVkt0VG1oWFZJSzA1U2xSelpCZ21yTXk2WHhxMk8xLVBVWmNMZFVGVlhzejhjelo3MmEzU0tNUnF4bGJ1aHEwbkJ1R1VmcE1OV2FwNVY4MEZaejNBeHUtVEFuejZ2V1c0NFAzVngzS2paZU14ZGh4SDVLOVdWWVgyS0gzS1F6a1dYajBqakpON1hXTDdzMzl2V3pMNg?oc=5",
-      "published": "Tue, 24 Nov 2026 02:41:22 GMT",
-      "source": "morning-times.com",
-      "feed": "Google News"
-    },
-    {
-      "title": "Bulls beat Cavaliers behind Hawkins' 19 points and 63 off bench",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNek9DQUhmLUxBMDdWN1djSS1reks4X1pnM3NhSXJyeW5hcG5nSmJXcmlPUzRzeF9fSXBWUm1XMThOQXZ0RjVzZE50Zm9tS2U2dEotS2dHd0Zvb3BtRF83RTQtS2t5WF9lVmFhazF3Y045SjVkd0Itb1N1SVlfRFd3Uk5pMGw4cV9od2V3MGtXVVNXWTVUMGd6ZE84enFyZXVuLUxjY0daRmFjdjhYZmtGc0YxcXMxM1k4TktqNEdKbk1jTFNkR0VkSXFkSVlhaUVlbUpPRUdGUmRPbS1zRnoyRU5fTE8zaHEwbDdKSmRzbEloenhpNUhuM3R6UQ?oc=5",
-      "published": "Tue, 24 Nov 2026 03:58:00 GMT",
-      "source": "The Journal Gazette",
-      "feed": "Google News"
-    },
-    {
-      "title": "Cavaliers become 1st NBA team to take the court at Obama Center before facing Bulls in Chicago",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOM1NnZ3hxbFd4SVZLQWhLR2hvcnd4YWhnWGlqRkZwaEY2UWtMVGh0SDM5WnlrZWNYdUpfdXhkYWRZd1VibDZOUXo5d3pSdkxTb0NuU05EQXh6OFhpaTRlZU1fdHRhVlQ5UVJhemVyOTRmWjZJNnFEcXBKSUZOZnRqa3RvOEdwX0ZXLXIwZ1NnVjl4bUQ0aHFvUU1VSzFiOEJvLXpxUm9DSnRmb2RaNTNxanF0a21jc0sydjVTSmd5dGlEODNjZmdibUUtajNsY2d6Zms5aVh2dE9jZ3FnTnJuX0l0WlRaTVZUUmxyUGV4Yk4tQXp2eEVVcXgxdC1FZzg4ZDNNaEpLbw?oc=5",
-      "published": "Tue, 24 Nov 2026 01:18:41 GMT",
-      "source": "Mankato Free Press",
-      "feed": "Google News"
-    },
-    {
-      "title": "NBA: Ty Jerome, Grizzlies send Hornets to their 5th straight loss",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVkRMWmxuZ21HZGRnS09mdXZfbDRXcTNkNzVfSjVXMU5FN21FbjdaRHRsNjRTWlV0T3FtdEpNZGJRbDlnbDJsanYyRDc2bUR0SGVNZHFoNm00dnhnaHRCMTJyNzNUZWRJX3BGWXFMZjRPZXl6TXpSNzNDREJDd1IzaFloN2tSREZsV1ZJSXltdHhUdkFHSW1scVVuZm1HbGvSAaQBQVVfeXFMT3cwOGh3QlRtem1HLXdockx5MXJ3M3JHem1XQ1MxX3pjMjc1WlBJVl9YWHJqWk0xeXJzVEs2eklKTEhESXZlOEl0d2w0cXVRRVJRYTdNbGdrdnhsc19fNVB3anpLX3B1dWpqYnF1d1NxeXNGNzZiV3dFazlGc0hmUnRQWlJwTG96Ty04dGpVbzQyT2Q1bElUaXNOWVJEaXpXNktOZW8?oc=5",
-      "published": "Tue, 24 Nov 2026 04:45:00 GMT",
-      "source": "Inquirer.net",
       "feed": "Google News"
     },
     {
@@ -23335,14 +23603,14 @@
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-24T05:24:43.294194+00:00",
+  "news_updated_at": "2026-11-24T09:56:49.727489+00:00",
   "archive_days": 7,
   "validation": {
-    "completed_predictions": 134,
-    "brier_score": 0.2212,
+    "completed_predictions": 135,
+    "brier_score": 0.2199,
     "baseline_50_brier": 0.25,
-    "favorite_accuracy_pct": 65.7,
-    "log_loss": 0.6321,
+    "favorite_accuracy_pct": 65.9,
+    "log_loss": 0.629,
     "calibration": [
       {
         "range": "0-20%",
@@ -23370,9 +23638,9 @@
       },
       {
         "range": "80-100%",
-        "count": 6,
-        "average_predicted_pct": 85.4,
-        "actual_home_win_pct": 83.3
+        "count": 7,
+        "average_predicted_pct": 84.7,
+        "actual_home_win_pct": 85.7
       }
     ],
     "calibration_by_model": {
@@ -23435,7 +23703,7 @@
         },
         {
           "range": "80-100%",
-          "count": 6,
+          "count": 7,
           "average_predicted_pct": 82.9,
           "actual_home_win_pct": 100.0
         }
@@ -23481,10 +23749,10 @@
         "favorite_accuracy_pct": 67.0
       },
       "hybrid-v2-v3-experimental": {
-        "n": 35,
-        "brier": 0.2112,
-        "log_loss": 0.6089,
-        "favorite_accuracy_pct": 68.6
+        "n": 36,
+        "brier": 0.2061,
+        "log_loss": 0.5972,
+        "favorite_accuracy_pct": 69.4
       },
       "logistic-v3-production": {
         "n": 27,
@@ -24485,6 +24753,12 @@
         },
         {
           "scheduled_at": "2026-11-24T03:00Z",
+          "predicted_at": "2026-11-24T00:49:33.499500+00:00",
+          "home_pct": 82.9,
+          "winner": "home"
+        },
+        {
+          "scheduled_at": "2026-11-24T03:00Z",
           "predicted_at": "2026-11-23T01:53:03.332662+00:00",
           "home_pct": 18.4,
           "winner": "away"
@@ -24492,34 +24766,34 @@
       ]
     },
     "prospective_model_comparison": {
-      "completed_paired_games": 35,
-      "pending_forecasts": 13,
+      "completed_paired_games": 36,
+      "pending_forecasts": 12,
       "models": {
         "v2": {
-          "n": 35,
-          "favorite_accuracy_pct": 65.7,
-          "brier": 0.2044,
-          "log_loss": 0.5951
+          "n": 36,
+          "favorite_accuracy_pct": 66.7,
+          "brier": 0.2003,
+          "log_loss": 0.586
         },
         "v3": {
-          "n": 35,
-          "favorite_accuracy_pct": 62.9,
-          "brier": 0.226,
-          "log_loss": 0.6398
+          "n": 36,
+          "favorite_accuracy_pct": 63.9,
+          "brier": 0.22,
+          "log_loss": 0.6251
         },
         "hybrid": {
-          "n": 35,
-          "favorite_accuracy_pct": 68.6,
-          "brier": 0.2112,
-          "log_loss": 0.6089
+          "n": 36,
+          "favorite_accuracy_pct": 69.4,
+          "brier": 0.2061,
+          "log_loss": 0.5972
         }
       },
       "selection_policy": "Última captura prepartido con V2, V3 e híbrido guardados al mismo tiempo."
     },
     "elo_comparison": {
-      "n": 35,
-      "model_brier": 0.2112,
-      "elo_brier": 0.2366
+      "n": 36,
+      "model_brier": 0.2061,
+      "elo_brier": 0.2301
     },
     "elo_comparison_by_model": {
       "elo-forma10-v2": {
@@ -24533,9 +24807,9 @@
         "elo_brier": 0.2728
       },
       "hybrid-v2-v3-experimental": {
-        "n": 35,
-        "model_brier": 0.2112,
-        "elo_brier": 0.2366
+        "n": 36,
+        "model_brier": 0.2061,
+        "elo_brier": 0.2301
       }
     },
     "sample_warning": "Comparar con referencia; Brier no demuestra calibración por sí solo.",
@@ -24842,7 +25116,11 @@
       "home_pct": 81.0,
       "away_pct": 19.0,
       "model": "hybrid-v2-v3-experimental",
-      "result": null,
+      "result": {
+        "home_score": 109,
+        "away_score": 94,
+        "winner": "home"
+      },
       "elo_baseline_home_pct": 78.9,
       "revised_prediction": {
         "home_pct": 82.9,
@@ -25665,7 +25943,7 @@
     "history_partial": false,
     "missing_historical_days": 0,
     "cached_games": 282,
-    "cached_player_boxes": 212
+    "cached_player_boxes": 213
   },
   "notes": [
     "Modelo activo experimental híbrido: mezcla 50% de V3 y 50% de V2",
