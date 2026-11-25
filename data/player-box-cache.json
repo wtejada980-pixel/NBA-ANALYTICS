@@ -47479,6 +47479,194 @@
           }
         ]
       }
+    },
+    "401909317": {
+      "player_stats": {
+        "20": [
+          {
+            "id": "1966",
+            "name": "LeBron James",
+            "pts": 2.0,
+            "reb": 3.0,
+            "ast": 5.0,
+            "min": "9",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4432446",
+            "name": "Jabari Walker",
+            "pts": 7.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "7",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3917376",
+            "name": "Jaylen Brown",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "5",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4431678",
+            "name": "Tyrese Maxey",
+            "pts": 11.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "9",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "5124612",
+            "name": "VJ Edgecombe",
+            "pts": 0.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "9",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3912848",
+            "name": "Dean Wade",
+            "pts": 0.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "2",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "2581018",
+            "name": "Kentavious Caldwell-Pope",
+            "pts": 3.0,
+            "reb": 0.0,
+            "ast": 1.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ],
+        "14": [
+          {
+            "id": "3032977",
+            "name": "Giannis Antetokounmpo",
+            "pts": 8.0,
+            "reb": 5.0,
+            "ast": 3.0,
+            "min": "9",
+            "stl": 1.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "4066261",
+            "name": "Bam Adebayo",
+            "pts": 2.0,
+            "reb": 2.0,
+            "ast": 1.0,
+            "min": "5",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 1.0,
+            "starter": true
+          },
+          {
+            "id": "6475",
+            "name": "Klay Thompson",
+            "pts": 5.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "9",
+            "stl": 0.0,
+            "blk": 1.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4278053",
+            "name": "Davion Mitchell",
+            "pts": 3.0,
+            "reb": 1.0,
+            "ast": 2.0,
+            "min": "5",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "4601025",
+            "name": "Pelle Larsson",
+            "pts": 2.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "7",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": true
+          },
+          {
+            "id": "3059319",
+            "name": "Andrew Wiggins",
+            "pts": 2.0,
+            "reb": 0.0,
+            "ast": 0.0,
+            "min": "2",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "3064482",
+            "name": "Bobby Portis",
+            "pts": 2.0,
+            "reb": 1.0,
+            "ast": 1.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          },
+          {
+            "id": "5107157",
+            "name": "Ryan Conwell",
+            "pts": 2.0,
+            "reb": 1.0,
+            "ast": 0.0,
+            "min": "4",
+            "stl": 0.0,
+            "blk": 0.0,
+            "tov": 0.0,
+            "starter": false
+          }
+        ]
+      }
     }
   }
 }
