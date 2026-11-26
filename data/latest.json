@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26T16:46:40.826443+00:00",
+  "as_of": "2026-11-26T22:20:25.695424+00:00",
   "date": "2026-11-26",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -23057,6 +23057,13 @@
   ],
   "news": [
     {
+      "title": "NBA Cup knockout round field to be finalized Friday, with Dallas in and 19 more teams hoping to be",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOV0QxYVlCc0R3OUEwLWJGUS1MdjNVeFAtclM2R05VVUlvYXgwc00zYXRCM0J3ZzExVWFQSHJSWFBvTElONjdOYVZGRmVBQTFKb2c0YUI3WFBiZkVadlJPRXg4SDZub2ZTY29Yd3dlUzNHN1ktOWpHdmdyRVpJdlV0bENKTGtWWGlTUzJnaXZfTE1qem1QVXg2d3FENmhVa1JGSEJabC1tTmZkMlVkb2pUbWlmM1hWY2xZb1RPdDBYQWwxR0puRGpVMGoxMVJCWUVDN2tkVFFIdUtjMnNLbGZaZUpjTzhPTTlYQnhVVEV4SjI4RDZheTdROFhtQnQ3YWlKTjNMRE5SeG8?oc=5",
+      "published": "Thu, 26 Nov 2026 20:19:55 GMT",
+      "source": "Oskaloosa Herald",
+      "feed": "Google News"
+    },
+    {
       "title": "NBA announces $11B initiative for arena development in Europe",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeF8xZHJIZ2lOWnpLXzh0TmF4OXVjeDRVLUx2cjJoVEkwakRNWThWTVkwWkpBRXdpSDJPY3VrRl9LelVGU3FxNExmRExMejdhWW9LbmtWSmFnTXh0aVBsSExwTlM3RHR4enVHOEVJWEYyRU03bDFrRTlSVHk5LVBtb3c0Uk0zM0E5OU5BTNIBlAFBVV95cUxQTU55SUMzU1ZQdWtYS2tEc2FmWndiZ3VkR0I0M2doMEJYUHk4TkFVWnQ2cG9aOXZKbzh3TDRBaVIxelcwRWt6RWo2YWdoTWx6czRfSjd4Y1VYWUZzQlpEY0tWbXBLbjlONVNYT25jRy04SnZ5U1hRNnMtRmNnZzdtSEluYkg2eVFJaGxnT0p4bXBSTE1L?oc=5",
       "published": "Wed, 25 Nov 2026 23:05:25 GMT",
@@ -23078,13 +23085,6 @@
       "feed": "Google News"
     },
     {
-      "title": "NBA Basketball: Deni Avdija Scores 33 Points, Portland Defeats San Antonio",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE05U0JmbThzSE9aVkxlRlVsWGh2QWtMak83ZmhqQktwallYVEw0VVZIdmtqUjJVN0xkMjNhbWExdTJIci1zams1UExnR2t0bWNkdTFGVw?oc=5",
-      "published": "Thu, 26 Nov 2026 05:45:44 GMT",
-      "source": "Ynetnews",
-      "feed": "Google News"
-    },
-    {
       "title": "NBA To Fund At Least $10 Billion To Fund European Basketball Arenas",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOa0ZJdV9BdXVHNzkxSnNsNURiR241dUtldV9Ha2hGVWdOSUdBMW94ZDJJcHg0YVRDbHBwM3d3T3RrajBmc2tYRjZMTlBTTHd3a2xJUlotbGh4bEhBQ29tN3ZZS0hsbmZkYTBJOTYzWmVlVURFM0pKX21uUzJLTDZfVE9UeEo4T0tCZm5GeHJvc0xBR0MyX1k0eHI0amZRanlyUnRWa1RIaGxOWDhJaE9wQW5CZ2FPenhiOUE?oc=5",
       "published": "Wed, 25 Nov 2026 16:53:39 GMT",
@@ -23092,43 +23092,36 @@
       "feed": "Google News"
     },
     {
-      "title": "Matas Buzelis scores 24 as Bulls hold on to beat Hornets 107-105 for 2nd straight win",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb3FSVlhSZlRJRkNRZHNUbF95TEN0QXdIZzl2M2VrWVhPWVpQaV95QWJ3M2Q0MTZVbzRTR2M1YXhxZ0FuNWd6Y2VvV09iekxYLWhHVllTeW5hNVVsNkxmenk5RGZFdjlnN29RYlZqcUNzODFCWU5GY2w0UlUyTEYyb2w1a2VZZmlZbXppM0hBVkVwVmtrRGluWFN1TzdIdzNscjhTQQ?oc=5",
-      "published": "Thu, 26 Nov 2026 03:11:13 GMT",
-      "source": "News-Times",
+      "title": "NBA GAME NIGHT: The Wolves and Blazers Are the BEST in the West?",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOeFNISnpIX05mOVQ2OE1oWmVXTkMtN2ZEbFRzNUo0UXBMQ01ZdXR2b2JsUllyOXBKSzh3b0V5SHlMeVNwMjU5VFVQWGFBMWdGREdOTEROZTRYT3BxZ1pxbVVSamVoY0FzWk5FWEZpVVFfOHdqbm8wVnQ5WEF6dXFBR09VZUtnc3FicFZKcGlETkw5UGZEQzVjOWFweU14Y3ZjZ2drdkZvZXg5ckowVFdXTEpmb0UxeEdicUxscmgzNXZPV0NGR1ZqLW9GQjdQQnVHaWRVaHBhMUpMNFVmWVVMLWppeVV1ZlFoU1NrcDJRbU55REhyMEJsTWN4UFZsdUliZ19HQzJFTlo?oc=5",
+      "published": "Thu, 26 Nov 2026 06:57:13 GMT",
+      "source": "WQAD",
+      "feed": "Google News"
+    },
+    {
+      "title": "Timberwolves Thunder Basketball",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPT0lnNG11NUczenVQTWZEbDd6VW13YW9xRkFzdFNxQWs4ZW5GOTRqRVFMXzVLR1BfNW4zaHU3RDRXaXNWb2RodzdXWW5Id0FFRDJwdE1pVU1BRW9jbUFmcUZneDRucDRYWUNXem5VZm8tZFZWRGxYSnBJZWU2c0pzRDVoOVY1VGtDdXRpVDRpTHVkbHFqWEVfNWF5dXc3MVc1X1VNU3BNeFM3c3hEMy1OMmE1WTRwU0FTdDVqSFItUjl2TmNkZ3B0enZKbXFSQ19JQkE?oc=5",
+      "published": "Thu, 26 Nov 2026 20:25:12 GMT",
+      "source": "Corsicana Daily Sun",
+      "feed": "Google News"
+    },
+    {
+      "title": "NBA Basketball: Deni Avdija Scores 33 Points, Portland Defeats San Antonio",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE05U0JmbThzSE9aVkxlRlVsWGh2QWtMak83ZmhqQktwallYVEw0VVZIdmtqUjJVN0xkMjNhbWExdTJIci1zams1UExnR2t0bWNkdTFGVw?oc=5",
+      "published": "Thu, 26 Nov 2026 05:45:44 GMT",
+      "source": "Ynetnews",
       "feed": "Google News"
     },
     {
       "title": "Avdija, Lillard lead Trail Blazers to 116-111 win over Spurs in NBA Cup play",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZGdzOWF5NVFWMUNuNjl4cF9BUThMSzRjdzA4YXdoQlhHRmYzcWh1N2FCZExnMWRfUWZMSkozRExiOWdCbGdoNlBCRGNmQUFxZHcxbnBHZU5PanBkNHVLVm15cF9scHJ0a0hKTEpEZFQtanpCUVhvajFFNEZTQkdPV2lfZG5uVUZxSEdZcEhCaHNfVWRvRmVJRFgyVWF4cFZLenJCdldyNjdZVUZmeHZzVUV3YUpYT1RHWGZCeUlLNEw2OFRvbkEzX3JHT0V0TlotTXR1WjVWdHFVN2cwTlp1bXE1bmswZ2g2dUczUVpyWTM2aHlqdjNkQWZ6OWc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaHR5VHdzVzlpcldWY1hBWWRGUjMwME9yLVZ1eUtYaUVwRFZ4cVl5TFNGdDZONVVVQllEYkk1c3hOblVnOENHNng5ZEluX2hFdVdVaFl4ZnpldS1ZYkRfRldoY3lfaUpCSHZhSm5uZ28tWjJvNE1Cejg1NDhTQ2VTcGQtWXFqLUVMS3A5NlY5dVNIeEc2UFZiZ1BvWQ?oc=5",
       "published": "Thu, 26 Nov 2026 05:56:28 GMT",
-      "source": "Mankato Free Press",
-      "feed": "Google News"
-    },
-    {
-      "title": "NBA GAME NIGHT: The Wolves and Blazers Are the BEST in the West?",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOSmxQUmM3SVZsdlY0eTVGMHhMS1I3czNMOFMwYlBjRVNnd1U5cG44VnF1dVk1MVlENDhfb1VqeUZ1SW1VZTBLX0dWMnJXYVFDcVRLLVRmeExmZG40TWt5ZWNuQnRLbXBGdXExQzBsVVZxaEtiSUZ5aHAwMXZERFJBYmZZTWh1VTRsTmc1RWdsSUduNi1adVlDMG94amxfVUt2ZkZOWmhhMWxJeHV6eGE0azAzWkJ1b3pzM0NEN0txRkxSSkJFbTBxTkxkbFMycjB3Q1U5OFlJRWQtdWJlU19Rb0hrcW51Yk8zemRSbmRwQTk1UG5GYnM4ZlluSWNWcm5zYnRrMDBvaHdNM1U?oc=5",
-      "published": "Thu, 26 Nov 2026 06:46:00 GMT",
-      "source": "WZZM13.com",
-      "feed": "Google News"
-    },
-    {
-      "title": "Knicks blow by the Cavaliers in the fourth, win 121-102 for sixth straight victory",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaFoyb2lOWXBsaG9tU2RNbTkyQW95Smd3eTBBcF9DdThSWjVGdWdpenFsa3B5UGRnbEZLYkI2Ym9ScGdBcl9PU0dtbjVzbHhxdkpGZ3gxRUVHWU9HUHZ6cGZOQlBSLWpwTjZ6bTRLd0NzNUtTV2N2enpYcUxnU3VsNXBsaDhFLXlsVm05N0hHWVpiY1k?oc=5",
-      "published": "Thu, 26 Nov 2026 03:44:27 GMT",
-      "source": "Seattle Post-Intelligencer",
-      "feed": "Google News"
-    },
-    {
-      "title": "Timberwolves beat the Thunder 113-106 to improve to 3-0 in NBA Cup play",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNODlVQ0IzZm5fVnJZbExOVHJVNkgxc2VoNWZkTDRXZG1MREF4ZHpWazJxeWV3UmFTRDdOTkhyU1YtVzhJMWNQNVdPSTBINUEwVnkxaG9mWXEyUUZJX19RTlVfYnd0T2JTUkZZN3kydGkzdkNPWGYwWFBHc3l6ZDVKQzdUbW5ad2dkMmNDMVM0VlFqNE56UnFNMmk5aGxkTWdYa2RfSXM4VERGdnFodWlYTGRwS1VBb0lPSEdnRHZnS1JPOEJKS1BrNmpLWDlRa1lYWVNlcUx1a1pkUGUtaktfU2o1eGhyUkVUMFdZMkhDUUtOaHRNeXFz?oc=5",
-      "published": "Thu, 26 Nov 2026 03:41:08 GMT",
-      "source": "Mankato Free Press",
+      "source": "The Messenger",
       "feed": "Google News"
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-26T16:46:50.448368+00:00",
+  "news_updated_at": "2026-11-26T22:20:36.885623+00:00",
   "archive_days": 7,
   "validation": {
     "completed_predictions": 147,
