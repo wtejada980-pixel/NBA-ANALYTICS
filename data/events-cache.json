@@ -5201,9 +5201,9 @@
         "abbr": "MIA",
         "name": "Miami Heat"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 111,
+      "away_score": 104,
       "source": "https://www.espn.com/nba/game/_/gameId/401909317",
       "head_to_head": [],
       "prediction": {
@@ -5261,64 +5261,91 @@
             "id": "1966",
             "name": "LeBron James",
             "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 3.0,
-            "game_ast": 5.0,
-            "game_min": "9"
+            "game_pts": 25.0,
+            "game_reb": 10.0,
+            "game_ast": 12.0,
+            "game_min": "35"
           },
           {
             "id": "4432446",
             "name": "Jabari Walker",
             "starter": true,
             "game_pts": 7.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "7"
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "17"
           },
           {
             "id": "3917376",
             "name": "Jaylen Brown",
             "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "5"
+            "game_pts": 6.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "17"
           },
           {
             "id": "4431678",
             "name": "Tyrese Maxey",
             "starter": true,
-            "game_pts": 11.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "9"
+            "game_pts": 30.0,
+            "game_reb": 4.0,
+            "game_ast": 6.0,
+            "game_min": "37"
           },
           {
             "id": "5124612",
             "name": "VJ Edgecombe",
             "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "9"
+            "game_pts": 18.0,
+            "game_reb": 6.0,
+            "game_ast": 5.0,
+            "game_min": "36"
           },
           {
             "id": "3912848",
             "name": "Dean Wade",
             "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
+            "game_pts": 5.0,
+            "game_reb": 4.0,
             "game_ast": 0.0,
-            "game_min": "2"
+            "game_min": "26"
+          },
+          {
+            "id": "4870562",
+            "name": "Dominick Barlow",
+            "starter": false,
+            "game_pts": 9.0,
+            "game_reb": 8.0,
+            "game_ast": 0.0,
+            "game_min": "16"
+          },
+          {
+            "id": "5105637",
+            "name": "Adem Bona",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 6.0,
+            "game_ast": 0.0,
+            "game_min": "13"
           },
           {
             "id": "2581018",
             "name": "Kentavious Caldwell-Pope",
             "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 0.0,
+            "game_pts": 5.0,
+            "game_reb": 1.0,
+            "game_ast": 3.0,
+            "game_min": "28"
+          },
+          {
+            "id": "4351851",
+            "name": "Anfernee Simons",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "15"
           }
         ],
         "away": [
@@ -5326,73 +5353,91 @@
             "id": "3032977",
             "name": "Giannis Antetokounmpo",
             "starter": true,
-            "game_pts": 8.0,
-            "game_reb": 5.0,
-            "game_ast": 3.0,
-            "game_min": "9"
+            "game_pts": 32.0,
+            "game_reb": 14.0,
+            "game_ast": 4.0,
+            "game_min": "36"
           },
           {
             "id": "4066261",
             "name": "Bam Adebayo",
             "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "5"
+            "game_pts": 17.0,
+            "game_reb": 11.0,
+            "game_ast": 3.0,
+            "game_min": "35"
           },
           {
             "id": "6475",
             "name": "Klay Thompson",
             "starter": true,
-            "game_pts": 5.0,
+            "game_pts": 7.0,
             "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "9"
+            "game_ast": 1.0,
+            "game_min": "31"
           },
           {
             "id": "4278053",
             "name": "Davion Mitchell",
             "starter": true,
-            "game_pts": 3.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "5"
+            "game_pts": 20.0,
+            "game_reb": 4.0,
+            "game_ast": 10.0,
+            "game_min": "40"
           },
           {
             "id": "4601025",
             "name": "Pelle Larsson",
             "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 1.0,
+            "game_pts": 8.0,
+            "game_reb": 4.0,
             "game_ast": 1.0,
-            "game_min": "7"
+            "game_min": "28"
           },
           {
             "id": "3059319",
             "name": "Andrew Wiggins",
             "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "2"
+            "game_pts": 8.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "24"
           },
           {
             "id": "3064482",
             "name": "Bobby Portis",
             "starter": false,
-            "game_pts": 2.0,
+            "game_pts": 5.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "15"
+          },
+          {
+            "id": "3899664",
+            "name": "Simone Fontecchio",
+            "starter": false,
+            "game_pts": 0.0,
             "game_reb": 1.0,
             "game_ast": 1.0,
-            "game_min": "4"
+            "game_min": "6"
+          },
+          {
+            "id": "4431772",
+            "name": "Myron Gardner",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "5"
           },
           {
             "id": "5107157",
             "name": "Ryan Conwell",
             "starter": false,
-            "game_pts": 2.0,
+            "game_pts": 7.0,
             "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "4"
+            "game_ast": 1.0,
+            "game_min": "18"
           }
         ]
       }
@@ -5411,65 +5456,10 @@
         "abbr": "CHI",
         "name": "Chicago Bulls"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 105,
+      "away_score": 107,
       "source": "https://www.espn.com/nba/game/_/gameId/401909318",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Chicago Bulls vs Charlotte Hornets Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ibndQMkFweVJhREVTbG85b3RNNldkazk2a3dteURoT2hVYUprRUZyOU5sWGNUUl81Sjc1ZmJsVmVfWUNrMTMwR1h6Y0V3NU4yY2Qtd3RTcWNOdw?oc=5",
-            "published": "Wed, 25 Nov 2026 19:31:52 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Chicago Bulls @ Charlotte Hornets: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE80MHI1Ry14TlFQM3FMWWlMZXZOQ0ctNEhEcDdSdV9TbGQzdGEzWFRtM1NEbFdWanQ1aDQ3ZDhIaVBYcko5eGlaZ0ptNkh1VmwtejdPQVRqaUUyaHJQSDFfYVBNMWp3M3RFUkJJN0NYNjFUUEdkOGNpWF9tMkI?oc=5",
-            "published": "Wed, 25 Nov 2026 20:06:37 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Score Predictions for Hornets vs. Bulls NBA Cup Matchup",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUXM1UlVtcEZpSnc5NjUzMHZoV1hSNFVZY0dwTTRXRTF1ZlFXMm5IVHZtLS1YdlhFYWFwWFRXNjdGQlRRSkpmM3hCR2VadGpxNy1SalAtUHJLRnZlN0ZxeHQwbTVISTkwR243UGdlTDBBRThpTmh0SXBQeEZYZExudUV3SjNGNlhzT2JDcEFVOVRzMnR4VEE?oc=5",
-            "published": "Wed, 25 Nov 2026 22:09:23 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          },
-          {
-            "title": "How to watch Bulls vs. Hornets: TV channel and streaming options for November 25",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRmhuMnVFX2FlS1pqZzZGbGlQVVoyLUkxWDF6bnktYUlUMmpDbkd3WFVhZDJNNVlJX2ZES3R4aExZM09qaWdLSU5sa3I1X0NndnozVm5wMVNmbS00WEFZRzhXZm1ZbWtaMnFkdlNYMzYyUDdaUzBYUTlHWHBIN1IyeDdSdnFzREJHUEF2NklmTmwyR1lCZE4yYnZac2k?oc=5",
-            "published": "Wed, 25 Nov 2026 16:04:15 GMT",
-            "source": "The New York Times",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Bulls+Hornets&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:12.361771+00:00"
-      },
       "head_to_head": [],
       "prediction": {
         "home_pct": 57.3,
@@ -5519,6 +5509,192 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "4433249",
+            "name": "Moussa Diabate",
+            "starter": true,
+            "game_pts": 14.0,
+            "game_reb": 14.0,
+            "game_ast": 2.0,
+            "game_min": "38"
+          },
+          {
+            "id": "4433287",
+            "name": "Brandon Miller",
+            "starter": true,
+            "game_pts": 35.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "34"
+          },
+          {
+            "id": "4396971",
+            "name": "Naz Reid",
+            "starter": true,
+            "game_pts": 18.0,
+            "game_reb": 8.0,
+            "game_ast": 2.0,
+            "game_min": "35"
+          },
+          {
+            "id": "4395651",
+            "name": "Coby White",
+            "starter": true,
+            "game_pts": 11.0,
+            "game_reb": 5.0,
+            "game_ast": 6.0,
+            "game_min": "25"
+          },
+          {
+            "id": "4602025",
+            "name": "Sion James",
+            "starter": true,
+            "game_pts": 5.0,
+            "game_reb": 5.0,
+            "game_ast": 2.0,
+            "game_min": "26"
+          },
+          {
+            "id": "2583632",
+            "name": "Royce O'Neale",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 6.0,
+            "game_ast": 2.0,
+            "game_min": "23"
+          },
+          {
+            "id": "4066218",
+            "name": "Grant Williams",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "15"
+          },
+          {
+            "id": "5211176",
+            "name": "Tidjane Salaun",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "8"
+          },
+          {
+            "id": "5281370",
+            "name": "Hannes Steinbach",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "5060701",
+            "name": "Christian Anderson",
+            "starter": false,
+            "game_pts": 15.0,
+            "game_reb": 1.0,
+            "game_ast": 4.0,
+            "game_min": "28"
+          }
+        ],
+        "away": [
+          {
+            "id": "4432822",
+            "name": "Isaac Okoro",
+            "starter": true,
+            "game_pts": 10.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "31"
+          },
+          {
+            "id": "4711294",
+            "name": "Matas Buzelis",
+            "starter": true,
+            "game_pts": 24.0,
+            "game_reb": 5.0,
+            "game_ast": 0.0,
+            "game_min": "34"
+          },
+          {
+            "id": "4278067",
+            "name": "Nic Claxton",
+            "starter": true,
+            "game_pts": 10.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "29"
+          },
+          {
+            "id": "2990984",
+            "name": "Buddy Hield",
+            "starter": true,
+            "game_pts": 9.0,
+            "game_reb": 4.0,
+            "game_ast": 4.0,
+            "game_min": "27"
+          },
+          {
+            "id": "4871145",
+            "name": "Josh Giddey",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 11.0,
+            "game_ast": 7.0,
+            "game_min": "34"
+          },
+          {
+            "id": "4066650",
+            "name": "Zach Collins",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "19"
+          },
+          {
+            "id": "4431687",
+            "name": "Patrick Williams",
+            "starter": false,
+            "game_pts": 11.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "15"
+          },
+          {
+            "id": "5242496",
+            "name": "Noa Essengue",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 2.0,
+            "game_min": "11"
+          },
+          {
+            "id": "4395626",
+            "name": "Tre Jones",
+            "starter": false,
+            "game_pts": 10.0,
+            "game_reb": 4.0,
+            "game_ast": 8.0,
+            "game_min": "20"
+          },
+          {
+            "id": "4683750",
+            "name": "Jordan Hawkins",
+            "starter": false,
+            "game_pts": 10.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "21"
+          }
+        ]
       }
     },
     "401909319": {
@@ -5535,65 +5711,10 @@
         "abbr": "CLE",
         "name": "Cleveland Cavaliers"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 121,
+      "away_score": 102,
       "source": "https://www.espn.com/nba/game/_/gameId/401909319",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Cleveland Cavaliers @ New York Knicks: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTmgwbE9yUUdyd1c3M3ZnZWtNNlBoZGV4RzZfcC1PajRKZldSVG5nRHliNnpGZXlrbGhsZFpUSWZfQmFZU1lxQWgzV2VUN1hNVVJtZlA4ZmNLM2MwYzE4Mkh2WHdvWE9WZWh3S2ZiN216bk4taFBEZVNwQ0JPanhiN3pB?oc=5",
-            "published": "Wed, 25 Nov 2026 21:37:09 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Where to watch Cavaliers vs. Knicks basketball for free today",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcnVBajItYzhWR0FmQ0R6SmM0cGdXbWJNSnUybkFkSkVzcU9UaGc2ZHFjaGVsWTBWU19OeXRlWFVjRjRKN1BxNS02ZmtvcUNmX1FzUmM1djFzZ0ZQVEtvaDQzVnZfSHhMNzMtLXlROTRhWVI0NnJUMUttc0R3cmxGcjdnTE1yUFY4RGJHZzRvMm1tN0JKNXhtUml0aUsyNDNyU2lIRw?oc=5",
-            "published": "Wed, 25 Nov 2026 21:30:00 GMT",
-            "source": "Cleveland.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Knicks vs. Cavaliers prediction, prop bets: Jalen Brunson outduels James Harden in MSG rematch",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdnoyS3UwRWNXSHdOTGVneFphRDlYb0dZWnYxV1VOdkV5cHI5R1p5bUdiQUZDM21YTkJQbXNiVVVraU9SRmZZTnVUb3RDb21xMTNrb1BfRGRQZnM3WVVWMjhGeGwxTXRRTGFqakt2MjVhNGZvNzFlMTdDRlN3QVVubWtVUHBwbVhDczJKUVA4b09Na01kTnBDZ01XNTd2TmpPWnI4TlJwdWlHM1JH?oc=5",
-            "published": "Wed, 25 Nov 2026 20:30:00 GMT",
-            "source": "New York Post",
-            "feed": "Google News"
-          },
-          {
-            "title": "Knicks went from nearly healthy to 5 on injury report ahead of Cavs NBA Cup game",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObVphU1pmd1puYlFiTXVoeVo2VUN5c0hHanBoOEQ4OXFUS2lQR1FYQ05OejBXR3hpSHg2YjBxQWJSdVppMF9zanRERFg2ZkNVTjhHUVM5MXB5ME13Z3ZmMjF6cWJSUlRxQUkxV2VMeDdnRU5vUFl0U2Y2bmFvbE9FYl9POExCdmhzTFpTN05yTUN5dEVIMDgxSw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:41:55 GMT",
-            "source": "New York Daily News",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Cavaliers+Knicks&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:13.033354+00:00"
-      },
       "head_to_head": [
         {
           "date": "2026-11-11",
@@ -5656,6 +5777,210 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "3136195",
+            "name": "Karl-Anthony Towns",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 10.0,
+            "game_ast": 7.0,
+            "game_min": "33"
+          },
+          {
+            "id": "3062679",
+            "name": "Josh Hart",
+            "starter": true,
+            "game_pts": 15.0,
+            "game_reb": 7.0,
+            "game_ast": 11.0,
+            "game_min": "36"
+          },
+          {
+            "id": "3147657",
+            "name": "Mikal Bridges",
+            "starter": true,
+            "game_pts": 19.0,
+            "game_reb": 8.0,
+            "game_ast": 2.0,
+            "game_min": "37"
+          },
+          {
+            "id": "3914044",
+            "name": "Landry Shamet",
+            "starter": true,
+            "game_pts": 11.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "30"
+          },
+          {
+            "id": "3934672",
+            "name": "Jalen Brunson",
+            "starter": true,
+            "game_pts": 19.0,
+            "game_reb": 3.0,
+            "game_ast": 5.0,
+            "game_min": "36"
+          },
+          {
+            "id": "4838721",
+            "name": "Tyler Nickel",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "9"
+          },
+          {
+            "id": "5211983",
+            "name": "Pacome Dadiet",
+            "starter": false,
+            "game_pts": 7.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "14"
+          },
+          {
+            "id": "5289900",
+            "name": "Mohamed Diawara",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "4"
+          },
+          {
+            "id": "6585",
+            "name": "Andre Drummond",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "9"
+          },
+          {
+            "id": "4432808",
+            "name": "James Wiseman",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 7.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4277869",
+            "name": "Jose Alvarado",
+            "starter": false,
+            "game_pts": 21.0,
+            "game_reb": 1.0,
+            "game_ast": 3.0,
+            "game_min": "19"
+          },
+          {
+            "id": "4433225",
+            "name": "Tyler Kolek",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "7"
+          }
+        ],
+        "away": [
+          {
+            "id": "4066328",
+            "name": "Jarrett Allen",
+            "starter": true,
+            "game_pts": 10.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "32"
+          },
+          {
+            "id": "3992",
+            "name": "James Harden",
+            "starter": true,
+            "game_pts": 28.0,
+            "game_reb": 1.0,
+            "game_ast": 5.0,
+            "game_min": "36"
+          },
+          {
+            "id": "3908809",
+            "name": "Donovan Mitchell",
+            "starter": true,
+            "game_pts": 30.0,
+            "game_reb": 4.0,
+            "game_ast": 4.0,
+            "game_min": "34"
+          },
+          {
+            "id": "4066757",
+            "name": "Sam Merrill",
+            "starter": true,
+            "game_pts": 5.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "24"
+          },
+          {
+            "id": "4576087",
+            "name": "Peyton Watson",
+            "starter": true,
+            "game_pts": 8.0,
+            "game_reb": 5.0,
+            "game_ast": 2.0,
+            "game_min": "27"
+          },
+          {
+            "id": "2995706",
+            "name": "Mario Hezonja",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "10"
+          },
+          {
+            "id": "3934723",
+            "name": "Thomas Bryant",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 8.0,
+            "game_ast": 1.0,
+            "game_min": "16"
+          },
+          {
+            "id": "4683747",
+            "name": "Jaylon Tyson",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 6.0,
+            "game_ast": 4.0,
+            "game_min": "29"
+          },
+          {
+            "id": "5023693",
+            "name": "Tyrese Proctor",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "16"
+          },
+          {
+            "id": "5041951",
+            "name": "Meleek Thomas",
+            "starter": false,
+            "game_pts": 8.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "16"
+          }
+        ]
       }
     },
     "401909320": {
@@ -5672,65 +5997,10 @@
         "abbr": "MIN",
         "name": "Minnesota Timberwolves"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 106,
+      "away_score": 113,
       "source": "https://www.espn.com/nba/game/_/gameId/401909320",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Minnesota Timberwolves vs Oklahoma City Thunder Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhYmZMcDFRcXNUWnU2UktkUkNPdHQzX0NNRDB6SXhBRUNQT3ZGT0JjT1U3eXIzemdCNFJCN1BUTTJGU0t5SlhzdVh5MDhseHlxUlhBUjR6dy12QQ?oc=5",
-            "published": "Wed, 25 Nov 2026 19:49:58 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Minnesota Timberwolves @ Oklahoma City Thunder: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaUdaMVpNNUZSV1JyOWVmRGR0WnVlV3luYXBTVm1IQ1F5dEx0cV9KRVR4cElWcWg2N1paU3hVNWpNVVlxcy1IR3VZWWtYcWlyYUdpdXp0SUhidl8xSXFKaE1yRkNMV1Y4YWJiVktwMTVOUXEzQ0NfcE9BRHFqZDNlZTQtaEM5Vlp4TFA3WDF3?oc=5",
-            "published": "Wed, 25 Nov 2026 21:31:43 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "3 Critical Storylines to Watch in OKC Thunder vs. Minnesota Timberwolves",
-            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbmhzOUl1MjRySFEzajlud21aSmtLN29IanlvQU9zd21TNGNsQ3hJeENIcDljZThuRmxnWUhCOUhva1ptdVdER1J1THZNaUo3dlRSMnN4UHBXS20xNjNMb2E4dzkwNmdqb28xSG16M2tXTzhzOEVoVzhuM1I3em1zSnBGV1gxTFRWclkzV0JsSExLNW11UWRDWUNNSDRiSzN3WXA5TVhYY0s5d2I5Qk0zbk9NQmJVYmpEbElaUw?oc=5",
-            "published": "Wed, 25 Nov 2026 21:36:05 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          },
-          {
-            "title": "Minnesota Timberwolves @ Oklahoma City Thunder Odds",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQXzU0bG1oVmJvbTFFdy1YUDZtRHBfODM3V3hVWDdJVjJSVFAzNVltMWRudDdLa1NXVHNvTnFvaHRnbm1RNDFOWDJybkUxaTFrc0ZGejJKNnU2RHRFYlVCZ19zZGM1NzhkT3BSZ19aZ3VMSXAtV0VFUUg2NG5XUFRuN2JyX2JrNF9BOXQzMnVuY05adGd5ZWZXNnlmRGNmZXNGUWtV?oc=5",
-            "published": "Wed, 25 Nov 2026 16:57:01 GMT",
-            "source": "FanDuel Sportsbook",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Timberwolves+Thunder&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:13.730426+00:00"
-      },
       "head_to_head": [],
       "prediction": {
         "home_pct": 55.3,
@@ -5780,6 +6050,174 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "4222252",
+            "name": "Isaiah Hartenstein",
+            "starter": true,
+            "game_pts": 8.0,
+            "game_reb": 16.0,
+            "game_ast": 6.0,
+            "game_min": "31"
+          },
+          {
+            "id": "4278073",
+            "name": "Shai Gilgeous-Alexander",
+            "starter": true,
+            "game_pts": 32.0,
+            "game_reb": 3.0,
+            "game_ast": 5.0,
+            "game_min": "37"
+          },
+          {
+            "id": "4432185",
+            "name": "Micah Peavy",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 7.0,
+            "game_ast": 0.0,
+            "game_min": "25"
+          },
+          {
+            "id": "4900671",
+            "name": "Ajay Mitchell",
+            "starter": true,
+            "game_pts": 25.0,
+            "game_reb": 3.0,
+            "game_ast": 3.0,
+            "game_min": "31"
+          },
+          {
+            "id": "5241364",
+            "name": "Bennett Stirtz",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "24"
+          },
+          {
+            "id": "2991350",
+            "name": "Alex Caruso",
+            "starter": false,
+            "game_pts": 11.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "26"
+          },
+          {
+            "id": "3133626",
+            "name": "Kenrich Williams",
+            "starter": false,
+            "game_pts": 13.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "25"
+          },
+          {
+            "id": "4683778",
+            "name": "Jared McCain",
+            "starter": false,
+            "game_pts": 9.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "28"
+          },
+          {
+            "id": "4702384",
+            "name": "Nique Clifford",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "12"
+          }
+        ],
+        "away": [
+          {
+            "id": "4431671",
+            "name": "Jaden McDaniels",
+            "starter": true,
+            "game_pts": 32.0,
+            "game_reb": 10.0,
+            "game_ast": 5.0,
+            "game_min": "37"
+          },
+          {
+            "id": "4433247",
+            "name": "Jonathan Kuminga",
+            "starter": true,
+            "game_pts": 7.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "32"
+          },
+          {
+            "id": "3032976",
+            "name": "Rudy Gobert",
+            "starter": true,
+            "game_pts": 9.0,
+            "game_reb": 7.0,
+            "game_ast": 0.0,
+            "game_min": "32"
+          },
+          {
+            "id": "4397002",
+            "name": "Ayo Dosunmu",
+            "starter": true,
+            "game_pts": 16.0,
+            "game_reb": 3.0,
+            "game_ast": 4.0,
+            "game_min": "35"
+          },
+          {
+            "id": "4432816",
+            "name": "LaMelo Ball",
+            "starter": true,
+            "game_pts": 19.0,
+            "game_reb": 7.0,
+            "game_ast": 8.0,
+            "game_min": "29"
+          },
+          {
+            "id": "3136196",
+            "name": "Trey Lyles",
+            "starter": false,
+            "game_pts": 9.0,
+            "game_reb": 10.0,
+            "game_ast": 1.0,
+            "game_min": "23"
+          },
+          {
+            "id": "5279133",
+            "name": "Joan Beringer",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "16"
+          },
+          {
+            "id": "4432847",
+            "name": "Terrence Shannon Jr.",
+            "starter": false,
+            "game_pts": 8.0,
+            "game_reb": 2.0,
+            "game_ast": 3.0,
+            "game_min": "20"
+          },
+          {
+            "id": "4592492",
+            "name": "Bones Hyland",
+            "starter": false,
+            "game_pts": 9.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "17"
+          }
+        ]
       }
     },
     "401909321": {
@@ -5796,65 +6234,10 @@
         "abbr": "LAC",
         "name": "LA Clippers"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 115,
+      "away_score": 97,
       "source": "https://www.espn.com/nba/game/_/gameId/401909321",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "LA Clippers vs Memphis Grizzlies Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OcXpTT0cydjlGbE1ENGtDZEFEY2JHQ0thNUtBRkxMWjRfS3p4QlFLTVJxNm5RaDRudFFLS3hkMDg5OTlVRnhORUd2Z2QwOHNfcnl4TlFEOEFJQQ?oc=5",
-            "published": "Wed, 25 Nov 2026 17:05:17 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Los Angeles Clippers @ Memphis Grizzlies: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9kMU5fVVBOQXlvNXVOdEUzSnFpcW82MUVQYzZXQzgxd29GandKbFB6V1cwWHBZdWFmQnpkMklZRWQ2bHkycEtSd0hRbWJXZUV2RjZpVGFkcGI4a29PR2o4ZEFJdlBLV1RBb0R3MkVpRGlwbG50TWUxWEVB?oc=5",
-            "published": "Wed, 25 Nov 2026 20:07:02 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "GAME PREVIEW: 5 Things You Should Know About Clippers vs. Grizzlies",
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZEg4ZnhvUm11QlBUZ09DUjc2UHN3ajhzTTJxN2hlUmI1SHdzeE9hMkJ0TTgtU253N3VmaDRYckNyRzAyeVluWXNLT2pwNHh1eTFpN1BMSktGQ0trNWF5WHk3N2FDYzJlZHlyOEQ3aU9PM1FsMFdrckFzVDVmbUk?oc=5",
-            "published": "Wed, 25 Nov 2026 21:55:00 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Memphis Grizzlies-LA Clippers Preview: Injuries, Odds, How to Watch & Starters",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYVljdG44RVFEaUYzTnAxTnV2dVI4U1JDUXZDTzFLTHdDc1BOLTNRd21YLXBNMDFwa3pvM0RFRlBfTTRjeDIwdkFkSjRsZzdsb1N4cHBqN3Z1VEpGaFVnOTZpLWQyVC1zTC1naGpfaG53elZ2di1nbVJnRFM4SjhINF84Um9uUklpVWlVQlZkRTJtcldCQThGckNwMl9hcWhHZk9YblphenpfbXVWMGpyQ3BNQzJvRk9qZzJwX1ZheHdwQQ?oc=5",
-            "published": "Wed, 25 Nov 2026 21:13:54 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Clippers+Grizzlies&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:14.342819+00:00"
-      },
       "head_to_head": [],
       "prediction": {
         "home_pct": 67.0,
@@ -5902,6 +6285,255 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "4594326",
+            "name": "Kris Murray",
+            "starter": true,
+            "game_pts": 8.0,
+            "game_reb": 4.0,
+            "game_ast": 3.0,
+            "game_min": "32"
+          },
+          {
+            "id": "4903027",
+            "name": "Cedric Coward",
+            "starter": true,
+            "game_pts": 14.0,
+            "game_reb": 10.0,
+            "game_ast": 1.0,
+            "game_min": "26"
+          },
+          {
+            "id": "5112087",
+            "name": "Jaylen Wells",
+            "starter": true,
+            "game_pts": 19.0,
+            "game_reb": 6.0,
+            "game_ast": 1.0,
+            "game_min": "27"
+          },
+          {
+            "id": "4600663",
+            "name": "Zach Edey",
+            "starter": true,
+            "game_pts": 7.0,
+            "game_reb": 4.0,
+            "game_ast": 2.0,
+            "game_min": "9"
+          },
+          {
+            "id": "4065733",
+            "name": "Ty Jerome",
+            "starter": true,
+            "game_pts": 17.0,
+            "game_reb": 5.0,
+            "game_ast": 7.0,
+            "game_min": "25"
+          },
+          {
+            "id": "4595400",
+            "name": "Olivier-Maxence Prosper",
+            "starter": false,
+            "game_pts": 9.0,
+            "game_reb": 4.0,
+            "game_ast": 2.0,
+            "game_min": "19"
+          },
+          {
+            "id": "4684806",
+            "name": "Taylor Hendricks",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "25"
+          },
+          {
+            "id": "5231919",
+            "name": "Karim Lopez",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "4432810",
+            "name": "Isaiah Stewart",
+            "starter": false,
+            "game_pts": 10.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "14"
+          },
+          {
+            "id": "4593016",
+            "name": "Quinten Post",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 4.0,
+            "game_ast": 0.0,
+            "game_min": "14"
+          },
+          {
+            "id": "4433083",
+            "name": "Cam Spencer",
+            "starter": false,
+            "game_pts": 16.0,
+            "game_reb": 0.0,
+            "game_ast": 4.0,
+            "game_min": "24"
+          },
+          {
+            "id": "4683934",
+            "name": "Jahmai Mashack",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "4781746",
+            "name": "Javon Small",
+            "starter": false,
+            "game_pts": 8.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "17"
+          }
+        ],
+        "away": [
+          {
+            "id": "3913176",
+            "name": "Brandon Ingram",
+            "starter": true,
+            "game_pts": 18.0,
+            "game_reb": 5.0,
+            "game_ast": 4.0,
+            "game_min": "26"
+          },
+          {
+            "id": "3936099",
+            "name": "Derrick Jones Jr.",
+            "starter": true,
+            "game_pts": 4.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "23"
+          },
+          {
+            "id": "4066648",
+            "name": "Rui Hachimura",
+            "starter": true,
+            "game_pts": 14.0,
+            "game_reb": 12.0,
+            "game_ast": 5.0,
+            "game_min": "37"
+          },
+          {
+            "id": "3448",
+            "name": "Brook Lopez",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "18"
+          },
+          {
+            "id": "4396907",
+            "name": "Darius Garland",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 3.0,
+            "game_ast": 4.0,
+            "game_min": "29"
+          },
+          {
+            "id": "4432170",
+            "name": "Isaiah Jackson",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "5075626",
+            "name": "Baba Miller",
+            "starter": false,
+            "game_pts": 9.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "5"
+          },
+          {
+            "id": "5108024",
+            "name": "Yanic Konan Niederhauser",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 4.0,
+            "game_ast": 0.0,
+            "game_min": "18"
+          },
+          {
+            "id": "2991139",
+            "name": "Kris Dunn",
+            "starter": false,
+            "game_pts": 12.0,
+            "game_reb": 6.0,
+            "game_ast": 4.0,
+            "game_min": "22"
+          },
+          {
+            "id": "4065778",
+            "name": "Max Strus",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 6.0,
+            "game_ast": 0.0,
+            "game_min": "21"
+          },
+          {
+            "id": "4702352",
+            "name": "Kobe Sanders",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4845363",
+            "name": "Cam Christie",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "5106258",
+            "name": "Gradey Dick",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "5254165",
+            "name": "Keaton Wagler",
+            "starter": false,
+            "game_pts": 12.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "21"
+          }
+        ]
       }
     },
     "401909322": {
@@ -5918,65 +6550,10 @@
         "abbr": "BKN",
         "name": "Brooklyn Nets"
       },
-      "status": "pre",
-      "home_score": null,
-      "away_score": null,
+      "status": "post",
+      "home_score": 97,
+      "away_score": 104,
       "source": "https://www.espn.com/nba/game/_/gameId/401909322",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Brooklyn Nets vs Milwaukee Bucks Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43UXN4NjRSYm5reDRSTFNfeTF3cXlnVXZ0ckotOHJSNm5XNFFrVFZPV3I3OWFPaXRTS1A0MXBydlcyTloxWkhUcWlRaXh1bERYdUtLU2RNSklQZw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:12:06 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Brooklyn Nets @ Milwaukee Bucks: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1aYUlyeHBUSWRpbEFQcVZVNThoM2c4TV9pdTF6S0lGNWpvNVFnR0liSTBPbHpNbTNaN2tweVVHMDA3R0ZuSV9KN29nQndYZDE3aFFiWFZraUp0X203Z0xIUHZWV001bWloQnE0dncwYjdjR0lfQTdCcHpB?oc=5",
-            "published": "Wed, 25 Nov 2026 20:05:14 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Bucks vs. Nets, Milwaukee looks to stack wins for first time",
-            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPaWg3WGtfeGZURUJ4RE1jcjE4OVY0WDJWSjBRMjg3NG5lbzIwM0kyOHJ1VjZnQlBLblB3NXlGSGdKQ24tSlZzalFac0tiZlVIUWFYRzNTdFcyUDlKcHFNUll6UHY0RHJ0ZWV2YlpBSFI0c1lYcFhXUlhrRFkxQkQxR25hcm5wbFNPVUVXU0k5MHN5c3FjajVzOTd6cW43YXRCYXpIMXdKWUlha2hWV0VsTjdvMHVBRzNjcHpGdFVIa0ZSMmJ3c3VnSEgyRVp4dmRCb0kyMjVFNXJvWnpCSEE?oc=5",
-            "published": "Wed, 25 Nov 2026 18:01:00 GMT",
-            "source": "Milwaukee Journal Sentinel",
-            "feed": "Google News"
-          },
-          {
-            "title": "Brooklyn Nets vs Milwaukee Bucks Nov 25, 2026 Box Scores",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZTFF4TEltcHFMN3Jxb1N3aUdLYUdxT3kySkVKQ1Nmd3hpcnVQdFpwRGlNTWEyS3U5RWwzZWQtQVhQdnoxZUFvNXo3c0YtbVIxb1ZsMWlJcjI?oc=5",
-            "published": "Wed, 25 Nov 2026 19:07:57 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Nets+Bucks&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:14.898194+00:00"
-      },
       "head_to_head": [],
       "prediction": {
         "home_pct": 56.0,
@@ -6024,6 +6601,210 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "3134907",
+            "name": "Kyle Kuzma",
+            "starter": true,
+            "game_pts": 13.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "31"
+          },
+          {
+            "id": "4432848",
+            "name": "Jaime Jaquez Jr.",
+            "starter": true,
+            "game_pts": 21.0,
+            "game_reb": 5.0,
+            "game_ast": 4.0,
+            "game_min": "35"
+          },
+          {
+            "id": "3133628",
+            "name": "Myles Turner",
+            "starter": true,
+            "game_pts": 3.0,
+            "game_reb": 6.0,
+            "game_ast": 2.0,
+            "game_min": "26"
+          },
+          {
+            "id": "4395725",
+            "name": "Tyler Herro",
+            "starter": true,
+            "game_pts": 28.0,
+            "game_reb": 2.0,
+            "game_ast": 5.0,
+            "game_min": "37"
+          },
+          {
+            "id": "4591725",
+            "name": "Ryan Rollins",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 3.0,
+            "game_ast": 3.0,
+            "game_min": "19"
+          },
+          {
+            "id": "5164559",
+            "name": "Nate Ament",
+            "starter": false,
+            "game_pts": 8.0,
+            "game_reb": 3.0,
+            "game_ast": 0.0,
+            "game_min": "21"
+          },
+          {
+            "id": "5105623",
+            "name": "Kel'el Ware",
+            "starter": false,
+            "game_pts": 13.0,
+            "game_reb": 14.0,
+            "game_ast": 2.0,
+            "game_min": "22"
+          },
+          {
+            "id": "2991043",
+            "name": "Caris LeVert",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "12"
+          },
+          {
+            "id": "4397475",
+            "name": "AJ Green",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "5082206",
+            "name": "Brayden Burries",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 3.0,
+            "game_ast": 3.0,
+            "game_min": "22"
+          },
+          {
+            "id": "5214640",
+            "name": "Kasparas Jakucionis",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 4.0,
+            "game_ast": 3.0,
+            "game_min": "12"
+          }
+        ],
+        "away": [
+          {
+            "id": "3064514",
+            "name": "Julius Randle",
+            "starter": true,
+            "game_pts": 28.0,
+            "game_reb": 9.0,
+            "game_ast": 3.0,
+            "game_min": "39"
+          },
+          {
+            "id": "4278104",
+            "name": "Michael Porter Jr.",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 11.0,
+            "game_ast": 4.0,
+            "game_min": "34"
+          },
+          {
+            "id": "5107173",
+            "name": "Danny Wolf",
+            "starter": true,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "19"
+          },
+          {
+            "id": "4432194",
+            "name": "Day'Ron Sharpe",
+            "starter": true,
+            "game_pts": 11.0,
+            "game_reb": 14.0,
+            "game_ast": 5.0,
+            "game_min": "31"
+          },
+          {
+            "id": "5101761",
+            "name": "Mikel Brown Jr.",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "23"
+          },
+          {
+            "id": "4702670",
+            "name": "Grant Nelson",
+            "starter": false,
+            "game_pts": 1.0,
+            "game_reb": 6.0,
+            "game_ast": 0.0,
+            "game_min": "13"
+          },
+          {
+            "id": "4712896",
+            "name": "Noah Clowney",
+            "starter": false,
+            "game_pts": 17.0,
+            "game_reb": 5.0,
+            "game_ast": 1.0,
+            "game_min": "27"
+          },
+          {
+            "id": "3150844",
+            "name": "Moritz Wagner",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "3907823",
+            "name": "Terance Mann",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "2"
+          },
+          {
+            "id": "4702177",
+            "name": "Keon Ellis",
+            "starter": false,
+            "game_pts": 7.0,
+            "game_reb": 2.0,
+            "game_ast": 3.0,
+            "game_min": "23"
+          },
+          {
+            "id": "5175643",
+            "name": "Egor Demin",
+            "starter": false,
+            "game_pts": 15.0,
+            "game_reb": 3.0,
+            "game_ast": 4.0,
+            "game_min": "25"
+          }
+        ]
       }
     },
     "401909323": {
@@ -6040,65 +6821,10 @@
         "abbr": "PHX",
         "name": "Phoenix Suns"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909323",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Phoenix Suns vs Houston Rockets Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wZ1R5LVdWSVl5Y3ZEVmVnR3pkRlVlb2VKTkNDV2s2UDJaVDlkVmRGSU90eFlFcGhLRU1FUTNlS0oxams2UGNlUTNITk00dC1PdmxhT2E0Nmt6UQ?oc=5",
-            "published": "Wed, 25 Nov 2026 19:41:59 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Phoenix Suns @ Houston Rockets: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5McXZqc0JBY083bjRBdTluYXFnU2dDWDhzVExKMWhSLU45SEVqSVAwbHRqOHZ4ZkU1ZHJwd3c5TjF0TWxXV0UzVDV6S2pGMTh5TmFNZmhMTWFnWktYVkFjMExLVk1Rd0dZeDVtT2NFV19xcDdncjhFYw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:06:58 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "Phoenix Suns look to stay hot heading into Rockets clash",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOLWZQVlpTN2x4MVotdFNSLThLbzA3Y0lFMUMzM2NHNGpRZkJxRnNmLXd6c1ZNV1NTT1NLQkQyNVIyTXJ5bkd3SVYwWjNUaEJ5NWhQNi1jOVdjUk0yRDRYcHVkLXBqWUJSQ1dZZGFfdFlyOS1neE4zdml5WXZZekViNA?oc=5",
-            "published": "Wed, 25 Nov 2026 15:30:12 GMT",
-            "source": "Burn City Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "How to watch Suns vs. Rockets: TV channel and streaming options for November 25",
-            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFdIeTBtX2FBYm9YOTRENDdxUG5XNzhZRkxYTF9ORTR6NzBmdVNOSW9MM011QnFXb1BzYVlwa01jLWl1MjhVZGQ3LXJLazQzdzZYdFRpTXlXWW4yUHVaaS00djF2bDNPTm9nZ19wc3hFbnpaNF9FeFMwcFk1VFQza29helI1Yk1PamdubHVGb0ZlVTN6Qm9QRmR6aw?oc=5",
-            "published": "Wed, 25 Nov 2026 18:13:44 GMT",
-            "source": "The New York Times",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Suns+Rockets&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:15.500237+00:00"
-      },
       "head_to_head": [
         {
           "date": "2026-11-07",
@@ -6154,6 +6880,201 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "3202",
+            "name": "Kevin Durant",
+            "starter": true,
+            "game_pts": 18.0,
+            "game_reb": 7.0,
+            "game_ast": 2.0,
+            "game_min": "26"
+          },
+          {
+            "id": "4432639",
+            "name": "Jabari Smith Jr.",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 3.0,
+            "game_ast": 1.0,
+            "game_min": "23"
+          },
+          {
+            "id": "4871144",
+            "name": "Alperen Sengun",
+            "starter": true,
+            "game_pts": 19.0,
+            "game_reb": 10.0,
+            "game_ast": 8.0,
+            "game_min": "23"
+          },
+          {
+            "id": "2991230",
+            "name": "Fred VanVleet",
+            "starter": true,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 4.0,
+            "game_min": "25"
+          },
+          {
+            "id": "4684740",
+            "name": "Amen Thompson",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 9.0,
+            "game_ast": 3.0,
+            "game_min": "27"
+          },
+          {
+            "id": "4433192",
+            "name": "Tari Eason",
+            "starter": false,
+            "game_pts": 7.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "15"
+          },
+          {
+            "id": "4592857",
+            "name": "Isaiah Crawford",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "-"
+          },
+          {
+            "id": "2991235",
+            "name": "Steven Adams",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 7.0,
+            "game_ast": 0.0,
+            "game_min": "16"
+          },
+          {
+            "id": "2990992",
+            "name": "Marcus Smart",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 3.0,
+            "game_ast": 3.0,
+            "game_min": "18"
+          },
+          {
+            "id": "3037789",
+            "name": "Bogdan Bogdanovic",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4711272",
+            "name": "Reed Sheppard",
+            "starter": false,
+            "game_pts": 7.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "15"
+          }
+        ],
+        "away": [
+          {
+            "id": "3155526",
+            "name": "Dillon Brooks",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 3.0,
+            "game_ast": 4.0,
+            "game_min": "23"
+          },
+          {
+            "id": "4066383",
+            "name": "Miles Bridges",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 7.0,
+            "game_ast": 3.0,
+            "game_min": "23"
+          },
+          {
+            "id": "4601023",
+            "name": "Oso Ighodaro",
+            "starter": true,
+            "game_pts": 11.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "16"
+          },
+          {
+            "id": "3136193",
+            "name": "Devin Booker",
+            "starter": true,
+            "game_pts": 21.0,
+            "game_reb": 0.0,
+            "game_ast": 5.0,
+            "game_min": "30"
+          },
+          {
+            "id": "4437244",
+            "name": "Jalen Green",
+            "starter": true,
+            "game_pts": 10.0,
+            "game_reb": 3.0,
+            "game_ast": 4.0,
+            "game_min": "26"
+          },
+          {
+            "id": "4888725",
+            "name": "Ryan Dunn",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "10"
+          },
+          {
+            "id": "5203685",
+            "name": "Khaman Maluach",
+            "starter": false,
+            "game_pts": 11.0,
+            "game_reb": 5.0,
+            "game_ast": 0.0,
+            "game_min": "21"
+          },
+          {
+            "id": "3913174",
+            "name": "Luke Kennard",
+            "starter": false,
+            "game_pts": 6.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "13"
+          },
+          {
+            "id": "4278402",
+            "name": "Jordan Goodwin",
+            "starter": false,
+            "game_pts": 11.0,
+            "game_reb": 5.0,
+            "game_ast": 0.0,
+            "game_min": "17"
+          },
+          {
+            "id": "4278585",
+            "name": "Collin Gillespie",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "16"
+          }
+        ]
       }
     },
     "401909324": {
@@ -6170,65 +7091,10 @@
         "abbr": "SAC",
         "name": "Sacramento Kings"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909324",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "Sacramento Kings vs Golden State Warriors Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dVJ0WXNLZFowZEwyckdrdWNTMnJwUmNCVFZwczBPYlVUTjd0TE9xNUROWkhQeW1ESVdHT1Bfb3p5bm9TQlBkNVNHeU85ajNYV05mTjFLRGZvZw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:54:51 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "Sacramento Kings @ Golden State Warriors: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc1B3ZUwtNmtSdlZXSlNPVnZ2ZHFuU1pHU1NKWTJYT0VuTkVtOEJKUEVfanJ2WmpOV0NPYVBSY3NBMjh2ai1zVWVvMEdSWE9YRnFEX3lGRGN4c3VPUjBpeU5EMjZ2aFo2SGY4czZ6MmR1bjdkQ1JmOW5xenF1LV96Z0lFRWExdw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:41:33 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "How to watch Kings vs. Warriors: TV channel and streaming options for November 25",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTzBGeFlnMmVNUVFoTll2Z1hRV2ZfOTJ2TjNkWjVoWktBbTloZ2otRlg2czFXX0dEOWprZW1EdDMyenB5M29yYzdRbWNQeGExZU9JMkE2alM5cGREbGlxNlFRbHIwS1FPb2xKNzg1YnM0bmxYRl9Gb0ZNTnd0ZFNUOVlYRXg4LVRJS2E4V0I5X0Rva2hjb0tvUzFzV0Eydw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:11:50 GMT",
-            "source": "The New York Times",
-            "feed": "Google News"
-          },
-          {
-            "title": "Kings Get Favorable News vs. Warriors With Star-Studded Injury Report",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT1ZKLXVta21ydjNhUnlKYnN6NjJqTGlfd2xvWHRIdUxKSUJncTFfOHYxVU9LeEVDaWE4bEFCcUhYLU9oSnNxVEp0NmNXclhfS2JaRG9OeE55aXc4UWlJSzUwaUVhZHcyUEhuZ1VodVU0aVRYNU9aRGNlSEh4ZzV1dEZheE1TRXFBeVBOdWZaSE52NEU3U0NFNkpwZTVpWXZmTFFmaA?oc=5",
-            "published": "Wed, 25 Nov 2026 16:05:04 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Kings+Warriors&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:16.075737+00:00"
-      },
       "head_to_head": [],
       "prediction": {
         "home_pct": 70.3,
@@ -6276,6 +7142,201 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "6589",
+            "name": "Draymond Green",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 2.0,
+            "game_ast": 3.0,
+            "game_min": "8"
+          },
+          {
+            "id": "5175737",
+            "name": "Yaxel Lendeborg",
+            "starter": true,
+            "game_pts": 3.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4397886",
+            "name": "Charles Bassey",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 4.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4066436",
+            "name": "De'Anthony Melton",
+            "starter": true,
+            "game_pts": 12.0,
+            "game_reb": 1.0,
+            "game_ast": 4.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4709138",
+            "name": "Brandin Podziemski",
+            "starter": true,
+            "game_pts": 8.0,
+            "game_reb": 0.0,
+            "game_ast": 2.0,
+            "game_min": "9"
+          },
+          {
+            "id": "2990969",
+            "name": "Georges Niang",
+            "starter": false,
+            "game_pts": 5.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4997536",
+            "name": "Gui Santos",
+            "starter": false,
+            "game_pts": 12.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "3213",
+            "name": "Al Horford",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "4"
+          },
+          {
+            "id": "3134903",
+            "name": "Gary Payton II",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "3"
+          },
+          {
+            "id": "4397040",
+            "name": "Brandon Williams",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "1"
+          },
+          {
+            "id": "4897262",
+            "name": "Will Richard",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "6"
+          }
+        ],
+        "away": [
+          {
+            "id": "3155942",
+            "name": "Domantas Sabonis",
+            "starter": true,
+            "game_pts": 10.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "11"
+          },
+          {
+            "id": "4065732",
+            "name": "De'Andre Hunter",
+            "starter": true,
+            "game_pts": 1.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "12"
+          },
+          {
+            "id": "4594327",
+            "name": "Keegan Murray",
+            "starter": true,
+            "game_pts": 4.0,
+            "game_reb": 0.0,
+            "game_ast": 1.0,
+            "game_min": "10"
+          },
+          {
+            "id": "5106058",
+            "name": "Emanuel Sharp",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "6"
+          },
+          {
+            "id": "5142620",
+            "name": "Darius Acuff Jr.",
+            "starter": true,
+            "game_pts": 4.0,
+            "game_reb": 2.0,
+            "game_ast": 1.0,
+            "game_min": "12"
+          },
+          {
+            "id": "4395650",
+            "name": "Leaky Black",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "5"
+          },
+          {
+            "id": "4431679",
+            "name": "Precious Achiuwa",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "4917149",
+            "name": "Alex Karaban",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "2"
+          },
+          {
+            "id": "4066262",
+            "name": "Malik Monk",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "2"
+          },
+          {
+            "id": "4702384",
+            "name": "Nique Clifford",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "--"
+          }
+        ]
       }
     },
     "401909325": {
@@ -6292,65 +7353,10 @@
         "abbr": "SA",
         "name": "San Antonio Spurs"
       },
-      "status": "pre",
+      "status": "in",
       "home_score": null,
       "away_score": null,
       "source": "https://www.espn.com/nba/game/_/gameId/401909325",
-      "context": {
-        "injuries": {
-          "home": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          },
-          "away": {
-            "items": [],
-            "source": "ESPN (consulta complementaria)"
-          }
-        },
-        "official_injury_report": "https://official.nba.com/nba-injury-report-2026-27-season/",
-        "news": [
-          {
-            "title": "San Antonio Spurs vs Portland Trail Blazers Nov 25, 2026 Game Summary",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zU2lfWktfMVIxVmctY1FUQ2dDdGNxckd3ZkQ5c1lVcGZkRTdTRGNsTHRqYUQ2YjBjenpXRjhmd3psZGRpdlhUUGRVUVA2WDlkN01UcC1qck1Jdw?oc=5",
-            "published": "Wed, 25 Nov 2026 20:56:12 GMT",
-            "source": "NBA.com",
-            "feed": "Google News"
-          },
-          {
-            "title": "San Antonio Spurs @ Portland Trail Blazers: Live game updates, stats, play-by-play",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUzRqQ1I0ajZ6X0hmNEtEUnROQWc3VUl0ZnlaWWx0aHNIZEVmdUg1ZGctUV95amo2d0gwODBZMkluRWIwa1JaMHpuMjlTbkV5ek51RC03VW5MYTRHNm1CRDl1b1lEODB3eXVJa0tCT0lUajhzTXVoSGw0SUttRDc4bVBGa1M4NGN2?oc=5",
-            "published": "Wed, 25 Nov 2026 19:54:35 GMT",
-            "source": "Yahoo Sports",
-            "feed": "Google News"
-          },
-          {
-            "title": "How to watch Spurs vs. Trail Blazers: TV channel and streaming options for November 25",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeWN5eEgzdG5wTkhEdTk1QXZoZVkzUkNKaUUyeENnQVBhZFk5UWUwSDJaV2k4eEt6UHR2eG1XVGJQdHlQU3JCa0dwejQ4YW1ZOGJucHlrbDgzRGtvVEFsVnJuLWpoX0tOLVJubTRkOEgtQnZ1ZjlNcmVLQ1BpaVVzTUNKVHVvLWs2eGVrakpTWU0xX3VUM3lrNjRJeVJJWDAxWE0xRQ?oc=5",
-            "published": "Wed, 25 Nov 2026 20:14:08 GMT",
-            "source": "The New York Times",
-            "feed": "Google News"
-          },
-          {
-            "title": "Western Conference Rematch: Preview, How to Watch Spurs Face Trail Blazers in NBA Cup",
-            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU0RTSVRlc3dtZXlKREdVSkR4UkQxZGpNWWR0TDJRUnhZOGpYa1pxbWFwQjJtY19qdHc1dHRkREYwaFA4Q0hReTJjaU15WC1lZlhiQjE4ZTk3T0NoNUc2Q1lXTmxRUkxNTW1MMDNWSE4zdkp3a3JGaS1ibUU0UzRaUEp0dXpVSlFGN1lZQWgtSjNIaVhoSUlhQmZXR3pkek5JRGNuX2V5bFRsRS1oUFJLNDBiOUw1OFF2ZFZUcTVPV2lGRmZOckZGM0lzb0ZXS0tE?oc=5",
-            "published": "Wed, 25 Nov 2026 19:23:34 GMT",
-            "source": "Sports Illustrated",
-            "feed": "Google News"
-          }
-        ],
-        "forum": {
-          "status": "No conectado",
-          "discussion_url": "https://www.reddit.com/r/nba/search/?q=Spurs+Blazers&restrict_sr=1&sort=new&t=day",
-          "posts": [],
-          "count": 0
-        },
-        "analysis_notes": [
-          "Noticias y foros son contexto, no una encuesta representativa.",
-          "Las lesiones se muestran como reportes; deben confirmarse cerca del salto inicial.",
-          "El modelo numérico aún NO ajusta por lesiones ni opiniones, para evitar certeza falsa."
-        ],
-        "context_updated_at": "2026-11-25T22:30:16.866764+00:00"
-      },
       "head_to_head": [
         {
           "date": "2026-11-07",
@@ -6406,6 +7412,165 @@
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      },
+      "lineups": {
+        "home": [
+          {
+            "id": "4431736",
+            "name": "Toumani Camara",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "4683021",
+            "name": "Deni Avdija",
+            "starter": true,
+            "game_pts": 9.0,
+            "game_reb": 2.0,
+            "game_ast": 2.0,
+            "game_min": "8"
+          },
+          {
+            "id": "5105565",
+            "name": "Donovan Clingan",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 4.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "6606",
+            "name": "Damian Lillard",
+            "starter": true,
+            "game_pts": 13.0,
+            "game_reb": 1.0,
+            "game_ast": 2.0,
+            "game_min": "10"
+          },
+          {
+            "id": "5081727",
+            "name": "Sidy Cissoko",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "9"
+          },
+          {
+            "id": "4066211",
+            "name": "Robert Williams III",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "3995",
+            "name": "Jrue Holiday",
+            "starter": false,
+            "game_pts": 3.0,
+            "game_reb": 0.0,
+            "game_ast": 3.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4683678",
+            "name": "Scoot Henderson",
+            "starter": false,
+            "game_pts": 8.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          }
+        ],
+        "away": [
+          {
+            "id": "6578",
+            "name": "Harrison Barnes",
+            "starter": true,
+            "game_pts": 2.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "4592479",
+            "name": "Julian Champagnie",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 1.0,
+            "game_ast": 1.0,
+            "game_min": "10"
+          },
+          {
+            "id": "5104157",
+            "name": "Victor Wembanyama",
+            "starter": true,
+            "game_pts": 9.0,
+            "game_reb": 4.0,
+            "game_ast": 1.0,
+            "game_min": "6"
+          },
+          {
+            "id": "4395630",
+            "name": "Devin Vassell",
+            "starter": true,
+            "game_pts": 0.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4845367",
+            "name": "Stephon Castle",
+            "starter": true,
+            "game_pts": 6.0,
+            "game_reb": 2.0,
+            "game_ast": 3.0,
+            "game_min": "8"
+          },
+          {
+            "id": "4395723",
+            "name": "Keldon Johnson",
+            "starter": false,
+            "game_pts": 1.0,
+            "game_reb": 2.0,
+            "game_ast": 0.0,
+            "game_min": "7"
+          },
+          {
+            "id": "5061568",
+            "name": "Carter Bryant",
+            "starter": false,
+            "game_pts": 0.0,
+            "game_reb": 1.0,
+            "game_ast": 0.0,
+            "game_min": "4"
+          },
+          {
+            "id": "3064560",
+            "name": "Luke Kornet",
+            "starter": false,
+            "game_pts": 2.0,
+            "game_reb": 3.0,
+            "game_ast": 2.0,
+            "game_min": "4"
+          },
+          {
+            "id": "3134916",
+            "name": "Jordan McLaughlin",
+            "starter": false,
+            "game_pts": 4.0,
+            "game_reb": 0.0,
+            "game_ast": 0.0,
+            "game_min": "3"
+          }
+        ]
       }
     },
     "401909326": {
@@ -6438,12 +7603,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 59.7,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 65.4,
+        "away_pct": 34.6,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 78.0
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "New York Knicks",
         "opponent": "Miami Heat",
-        "favorite_pct_original": 61.8,
+        "favorite_pct_original": 65.4,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6497,12 +7670,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 79.2,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 80.0,
+        "away_pct": 20.0,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 88.6
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Detroit Pistons",
         "opponent": "Milwaukee Bucks",
-        "favorite_pct_original": 81.6,
+        "favorite_pct_original": 80.0,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6571,12 +7752,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 39.3,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 36.4,
+        "away_pct": 63.6,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y anotación reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y más victorias recientes.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 22.9
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Philadelphia 76ers",
         "opponent": "Indiana Pacers",
-        "favorite_pct_original": 64.0,
+        "favorite_pct_original": 63.6,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -6630,12 +7819,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 61.9,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 68.8,
+        "away_pct": 31.2,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 82.0
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Toronto Raptors",
         "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 69.4,
+        "favorite_pct_original": 68.8,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6689,14 +7886,23 @@
         "locked": true
       },
       "elo_baseline_home_pct": 58.8,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 57.4,
+        "away_pct": 42.6,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 64.7
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Boston Celtics",
         "opponent": "Atlanta Hawks",
-        "favorite_pct_original": 59.2,
-        "classification": "Ventaja moderada",
+        "favorite_pct_original": 57.4,
+        "classification": "Partido muy cerrado",
         "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida.",
           "Alerta: el rival tiene mayor porcentaje de victorias recientes.",
           "El favorito llega con menos días de descanso registrado."
         ],
@@ -6757,12 +7963,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 55.9,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 64.6,
+        "away_pct": 35.4,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 81.2
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Minnesota Timberwolves",
         "opponent": "Memphis Grizzlies",
-        "favorite_pct_original": 64.3,
+        "favorite_pct_original": 64.6,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6817,19 +8031,19 @@
       },
       "elo_baseline_home_pct": 58.4,
       "revised_prediction": {
-        "home_pct": 61.1,
-        "away_pct": 38.9,
-        "predicted_at": "2026-11-25T08:38:38.983280+00:00",
+        "home_pct": 62.3,
+        "away_pct": 37.7,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 70.8
+        "elo_baseline_home_pct": 68.6
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Phoenix Suns",
         "opponent": "Dallas Mavericks",
-        "favorite_pct_original": 61.1,
+        "favorite_pct_original": 62.3,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -6943,19 +8157,19 @@
       },
       "elo_baseline_home_pct": 34.5,
       "revised_prediction": {
-        "home_pct": 27.9,
-        "away_pct": 72.1,
-        "predicted_at": "2026-11-25T08:38:38.983280+00:00",
+        "home_pct": 30.6,
+        "away_pct": 69.4,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y anotación reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y más victorias recientes.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 13.6
+        "elo_baseline_home_pct": 14.9
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Denver Nuggets",
         "opponent": "Utah Jazz",
-        "favorite_pct_original": 72.1,
+        "favorite_pct_original": 69.4,
         "classification": "Favorito estadístico",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -7017,12 +8231,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 58.6,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 65.1,
+        "away_pct": 34.9,
+        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 74.8
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "LA Clippers",
         "opponent": "New Orleans Pelicans",
-        "favorite_pct_original": 65.4,
+        "favorite_pct_original": 65.1,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
