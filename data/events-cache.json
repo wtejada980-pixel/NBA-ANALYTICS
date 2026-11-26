@@ -5204,243 +5204,7 @@
       "status": "post",
       "home_score": 111,
       "away_score": 104,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909317",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 59.1,
-        "away_pct": 40.9,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 64.0,
-      "revised_prediction": {
-        "home_pct": 51.4,
-        "away_pct": 48.6,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por mejor margen de puntos reciente y mejor tendencia de jugadores.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 64.9
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Philadelphia 76ers",
-        "opponent": "Miami Heat",
-        "favorite_pct_original": 51.4,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida.",
-          "Alerta: el rival tiene un mejor margen de puntos reciente.",
-          "El favorito llega con menos días de descanso registrado."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 7,
-          "margin": -0.6,
-          "for": 121.8,
-          "against": 122.4,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 9.0,
-          "for": 125.9,
-          "against": 116.9,
-          "rest": 3
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "1966",
-            "name": "LeBron James",
-            "starter": true,
-            "game_pts": 25.0,
-            "game_reb": 10.0,
-            "game_ast": 12.0,
-            "game_min": "35"
-          },
-          {
-            "id": "4432446",
-            "name": "Jabari Walker",
-            "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "17"
-          },
-          {
-            "id": "3917376",
-            "name": "Jaylen Brown",
-            "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "17"
-          },
-          {
-            "id": "4431678",
-            "name": "Tyrese Maxey",
-            "starter": true,
-            "game_pts": 30.0,
-            "game_reb": 4.0,
-            "game_ast": 6.0,
-            "game_min": "37"
-          },
-          {
-            "id": "5124612",
-            "name": "VJ Edgecombe",
-            "starter": true,
-            "game_pts": 18.0,
-            "game_reb": 6.0,
-            "game_ast": 5.0,
-            "game_min": "36"
-          },
-          {
-            "id": "3912848",
-            "name": "Dean Wade",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 4.0,
-            "game_ast": 0.0,
-            "game_min": "26"
-          },
-          {
-            "id": "4870562",
-            "name": "Dominick Barlow",
-            "starter": false,
-            "game_pts": 9.0,
-            "game_reb": 8.0,
-            "game_ast": 0.0,
-            "game_min": "16"
-          },
-          {
-            "id": "5105637",
-            "name": "Adem Bona",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 6.0,
-            "game_ast": 0.0,
-            "game_min": "13"
-          },
-          {
-            "id": "2581018",
-            "name": "Kentavious Caldwell-Pope",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 1.0,
-            "game_ast": 3.0,
-            "game_min": "28"
-          },
-          {
-            "id": "4351851",
-            "name": "Anfernee Simons",
-            "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "15"
-          }
-        ],
-        "away": [
-          {
-            "id": "3032977",
-            "name": "Giannis Antetokounmpo",
-            "starter": true,
-            "game_pts": 32.0,
-            "game_reb": 14.0,
-            "game_ast": 4.0,
-            "game_min": "36"
-          },
-          {
-            "id": "4066261",
-            "name": "Bam Adebayo",
-            "starter": true,
-            "game_pts": 17.0,
-            "game_reb": 11.0,
-            "game_ast": 3.0,
-            "game_min": "35"
-          },
-          {
-            "id": "6475",
-            "name": "Klay Thompson",
-            "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 0.0,
-            "game_ast": 1.0,
-            "game_min": "31"
-          },
-          {
-            "id": "4278053",
-            "name": "Davion Mitchell",
-            "starter": true,
-            "game_pts": 20.0,
-            "game_reb": 4.0,
-            "game_ast": 10.0,
-            "game_min": "40"
-          },
-          {
-            "id": "4601025",
-            "name": "Pelle Larsson",
-            "starter": true,
-            "game_pts": 8.0,
-            "game_reb": 4.0,
-            "game_ast": 1.0,
-            "game_min": "28"
-          },
-          {
-            "id": "3059319",
-            "name": "Andrew Wiggins",
-            "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 2.0,
-            "game_ast": 2.0,
-            "game_min": "24"
-          },
-          {
-            "id": "3064482",
-            "name": "Bobby Portis",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 5.0,
-            "game_ast": 1.0,
-            "game_min": "15"
-          },
-          {
-            "id": "3899664",
-            "name": "Simone Fontecchio",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "6"
-          },
-          {
-            "id": "4431772",
-            "name": "Myron Gardner",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "5107157",
-            "name": "Ryan Conwell",
-            "starter": false,
-            "game_pts": 7.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "18"
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909317"
     },
     "401909318": {
       "id": "401909318",
@@ -5459,243 +5223,7 @@
       "status": "post",
       "home_score": 105,
       "away_score": 107,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909318",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 57.3,
-        "away_pct": 42.7,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mayor descanso.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 54.7,
-      "revised_prediction": {
-        "home_pct": 50.5,
-        "away_pct": 49.5,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 70.4
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Charlotte Hornets",
-        "opponent": "Chicago Bulls",
-        "favorite_pct_original": 50.5,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida.",
-          "Alerta: el rival tiene un mejor margen de puntos reciente.",
-          "Alerta: el rival tiene mayor porcentaje de victorias recientes."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 1,
-          "margin": -7.8,
-          "for": 104.4,
-          "against": 113.5,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 4,
-          "margin": 3.6,
-          "for": 122.1,
-          "against": 117.9,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "4433249",
-            "name": "Moussa Diabate",
-            "starter": true,
-            "game_pts": 14.0,
-            "game_reb": 14.0,
-            "game_ast": 2.0,
-            "game_min": "38"
-          },
-          {
-            "id": "4433287",
-            "name": "Brandon Miller",
-            "starter": true,
-            "game_pts": 35.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "34"
-          },
-          {
-            "id": "4396971",
-            "name": "Naz Reid",
-            "starter": true,
-            "game_pts": 18.0,
-            "game_reb": 8.0,
-            "game_ast": 2.0,
-            "game_min": "35"
-          },
-          {
-            "id": "4395651",
-            "name": "Coby White",
-            "starter": true,
-            "game_pts": 11.0,
-            "game_reb": 5.0,
-            "game_ast": 6.0,
-            "game_min": "25"
-          },
-          {
-            "id": "4602025",
-            "name": "Sion James",
-            "starter": true,
-            "game_pts": 5.0,
-            "game_reb": 5.0,
-            "game_ast": 2.0,
-            "game_min": "26"
-          },
-          {
-            "id": "2583632",
-            "name": "Royce O'Neale",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 6.0,
-            "game_ast": 2.0,
-            "game_min": "23"
-          },
-          {
-            "id": "4066218",
-            "name": "Grant Williams",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "15"
-          },
-          {
-            "id": "5211176",
-            "name": "Tidjane Salaun",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "8"
-          },
-          {
-            "id": "5281370",
-            "name": "Hannes Steinbach",
-            "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "8"
-          },
-          {
-            "id": "5060701",
-            "name": "Christian Anderson",
-            "starter": false,
-            "game_pts": 15.0,
-            "game_reb": 1.0,
-            "game_ast": 4.0,
-            "game_min": "28"
-          }
-        ],
-        "away": [
-          {
-            "id": "4432822",
-            "name": "Isaac Okoro",
-            "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 3.0,
-            "game_ast": 0.0,
-            "game_min": "31"
-          },
-          {
-            "id": "4711294",
-            "name": "Matas Buzelis",
-            "starter": true,
-            "game_pts": 24.0,
-            "game_reb": 5.0,
-            "game_ast": 0.0,
-            "game_min": "34"
-          },
-          {
-            "id": "4278067",
-            "name": "Nic Claxton",
-            "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "29"
-          },
-          {
-            "id": "2990984",
-            "name": "Buddy Hield",
-            "starter": true,
-            "game_pts": 9.0,
-            "game_reb": 4.0,
-            "game_ast": 4.0,
-            "game_min": "27"
-          },
-          {
-            "id": "4871145",
-            "name": "Josh Giddey",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 11.0,
-            "game_ast": 7.0,
-            "game_min": "34"
-          },
-          {
-            "id": "4066650",
-            "name": "Zach Collins",
-            "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 3.0,
-            "game_ast": 2.0,
-            "game_min": "19"
-          },
-          {
-            "id": "4431687",
-            "name": "Patrick Williams",
-            "starter": false,
-            "game_pts": 11.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "15"
-          },
-          {
-            "id": "5242496",
-            "name": "Noa Essengue",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 0.0,
-            "game_ast": 2.0,
-            "game_min": "11"
-          },
-          {
-            "id": "4395626",
-            "name": "Tre Jones",
-            "starter": false,
-            "game_pts": 10.0,
-            "game_reb": 4.0,
-            "game_ast": 8.0,
-            "game_min": "20"
-          },
-          {
-            "id": "4683750",
-            "name": "Jordan Hawkins",
-            "starter": false,
-            "game_pts": 10.0,
-            "game_reb": 3.0,
-            "game_ast": 2.0,
-            "game_min": "21"
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909318"
     },
     "401909319": {
       "id": "401909319",
@@ -5714,274 +5242,7 @@
       "status": "post",
       "home_score": 121,
       "away_score": 102,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909319",
-      "head_to_head": [
-        {
-          "date": "2026-11-11",
-          "home": "NY",
-          "away": "CLE",
-          "home_score": 107,
-          "away_score": 115
-        },
-        {
-          "date": "2026-11-07",
-          "home": "CLE",
-          "away": "NY",
-          "home_score": 97,
-          "away_score": 109
-        }
-      ],
-      "prediction": {
-        "home_pct": 64.2,
-        "away_pct": 35.8,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 64.1,
-      "revised_prediction": {
-        "home_pct": 69.2,
-        "away_pct": 30.8,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 76.5
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "New York Knicks",
-        "opponent": "Cleveland Cavaliers",
-        "favorite_pct_original": 69.2,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 5.0,
-          "for": 107.6,
-          "against": 102.2,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 5,
-          "margin": -0.2,
-          "for": 119.2,
-          "against": 119.4,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "3136195",
-            "name": "Karl-Anthony Towns",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 10.0,
-            "game_ast": 7.0,
-            "game_min": "33"
-          },
-          {
-            "id": "3062679",
-            "name": "Josh Hart",
-            "starter": true,
-            "game_pts": 15.0,
-            "game_reb": 7.0,
-            "game_ast": 11.0,
-            "game_min": "36"
-          },
-          {
-            "id": "3147657",
-            "name": "Mikal Bridges",
-            "starter": true,
-            "game_pts": 19.0,
-            "game_reb": 8.0,
-            "game_ast": 2.0,
-            "game_min": "37"
-          },
-          {
-            "id": "3914044",
-            "name": "Landry Shamet",
-            "starter": true,
-            "game_pts": 11.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "30"
-          },
-          {
-            "id": "3934672",
-            "name": "Jalen Brunson",
-            "starter": true,
-            "game_pts": 19.0,
-            "game_reb": 3.0,
-            "game_ast": 5.0,
-            "game_min": "36"
-          },
-          {
-            "id": "4838721",
-            "name": "Tyler Nickel",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "9"
-          },
-          {
-            "id": "5211983",
-            "name": "Pacome Dadiet",
-            "starter": false,
-            "game_pts": 7.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "14"
-          },
-          {
-            "id": "5289900",
-            "name": "Mohamed Diawara",
-            "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "4"
-          },
-          {
-            "id": "6585",
-            "name": "Andre Drummond",
-            "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "9"
-          },
-          {
-            "id": "4432808",
-            "name": "James Wiseman",
-            "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 7.0,
-            "game_ast": 0.0,
-            "game_min": "6"
-          },
-          {
-            "id": "4277869",
-            "name": "Jose Alvarado",
-            "starter": false,
-            "game_pts": 21.0,
-            "game_reb": 1.0,
-            "game_ast": 3.0,
-            "game_min": "19"
-          },
-          {
-            "id": "4433225",
-            "name": "Tyler Kolek",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "7"
-          }
-        ],
-        "away": [
-          {
-            "id": "4066328",
-            "name": "Jarrett Allen",
-            "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 5.0,
-            "game_ast": 1.0,
-            "game_min": "32"
-          },
-          {
-            "id": "3992",
-            "name": "James Harden",
-            "starter": true,
-            "game_pts": 28.0,
-            "game_reb": 1.0,
-            "game_ast": 5.0,
-            "game_min": "36"
-          },
-          {
-            "id": "3908809",
-            "name": "Donovan Mitchell",
-            "starter": true,
-            "game_pts": 30.0,
-            "game_reb": 4.0,
-            "game_ast": 4.0,
-            "game_min": "34"
-          },
-          {
-            "id": "4066757",
-            "name": "Sam Merrill",
-            "starter": true,
-            "game_pts": 5.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "24"
-          },
-          {
-            "id": "4576087",
-            "name": "Peyton Watson",
-            "starter": true,
-            "game_pts": 8.0,
-            "game_reb": 5.0,
-            "game_ast": 2.0,
-            "game_min": "27"
-          },
-          {
-            "id": "2995706",
-            "name": "Mario Hezonja",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 3.0,
-            "game_ast": 0.0,
-            "game_min": "10"
-          },
-          {
-            "id": "3934723",
-            "name": "Thomas Bryant",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 8.0,
-            "game_ast": 1.0,
-            "game_min": "16"
-          },
-          {
-            "id": "4683747",
-            "name": "Jaylon Tyson",
-            "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 6.0,
-            "game_ast": 4.0,
-            "game_min": "29"
-          },
-          {
-            "id": "5023693",
-            "name": "Tyrese Proctor",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "16"
-          },
-          {
-            "id": "5041951",
-            "name": "Meleek Thomas",
-            "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "16"
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909319"
     },
     "401909320": {
       "id": "401909320",
@@ -6000,225 +5261,7 @@
       "status": "post",
       "home_score": 106,
       "away_score": 113,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909320",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 55.3,
-        "away_pct": 44.7,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mayor descanso.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 52.6,
-      "revised_prediction": {
-        "home_pct": 52.4,
-        "away_pct": 47.6,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 64.9
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Oklahoma City Thunder",
-        "opponent": "Minnesota Timberwolves",
-        "favorite_pct_original": 52.4,
-        "classification": "Partido muy cerrado",
-        "observations": [
-          "Diferencia de probabilidades pequeña: no hay una ventaja sólida.",
-          "Alerta: el rival tiene un mejor margen de puntos reciente.",
-          "Alerta: el rival tiene mayor porcentaje de victorias recientes."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 4,
-          "margin": -0.5,
-          "for": 116.7,
-          "against": 116.5,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 8.6,
-          "for": 114.2,
-          "against": 104.4,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "4222252",
-            "name": "Isaiah Hartenstein",
-            "starter": true,
-            "game_pts": 8.0,
-            "game_reb": 16.0,
-            "game_ast": 6.0,
-            "game_min": "31"
-          },
-          {
-            "id": "4278073",
-            "name": "Shai Gilgeous-Alexander",
-            "starter": true,
-            "game_pts": 32.0,
-            "game_reb": 3.0,
-            "game_ast": 5.0,
-            "game_min": "37"
-          },
-          {
-            "id": "4432185",
-            "name": "Micah Peavy",
-            "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 7.0,
-            "game_ast": 0.0,
-            "game_min": "25"
-          },
-          {
-            "id": "4900671",
-            "name": "Ajay Mitchell",
-            "starter": true,
-            "game_pts": 25.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
-            "game_min": "31"
-          },
-          {
-            "id": "5241364",
-            "name": "Bennett Stirtz",
-            "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "24"
-          },
-          {
-            "id": "2991350",
-            "name": "Alex Caruso",
-            "starter": false,
-            "game_pts": 11.0,
-            "game_reb": 2.0,
-            "game_ast": 2.0,
-            "game_min": "26"
-          },
-          {
-            "id": "3133626",
-            "name": "Kenrich Williams",
-            "starter": false,
-            "game_pts": 13.0,
-            "game_reb": 5.0,
-            "game_ast": 1.0,
-            "game_min": "25"
-          },
-          {
-            "id": "4683778",
-            "name": "Jared McCain",
-            "starter": false,
-            "game_pts": 9.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "28"
-          },
-          {
-            "id": "4702384",
-            "name": "Nique Clifford",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "12"
-          }
-        ],
-        "away": [
-          {
-            "id": "4431671",
-            "name": "Jaden McDaniels",
-            "starter": true,
-            "game_pts": 32.0,
-            "game_reb": 10.0,
-            "game_ast": 5.0,
-            "game_min": "37"
-          },
-          {
-            "id": "4433247",
-            "name": "Jonathan Kuminga",
-            "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 5.0,
-            "game_ast": 1.0,
-            "game_min": "32"
-          },
-          {
-            "id": "3032976",
-            "name": "Rudy Gobert",
-            "starter": true,
-            "game_pts": 9.0,
-            "game_reb": 7.0,
-            "game_ast": 0.0,
-            "game_min": "32"
-          },
-          {
-            "id": "4397002",
-            "name": "Ayo Dosunmu",
-            "starter": true,
-            "game_pts": 16.0,
-            "game_reb": 3.0,
-            "game_ast": 4.0,
-            "game_min": "35"
-          },
-          {
-            "id": "4432816",
-            "name": "LaMelo Ball",
-            "starter": true,
-            "game_pts": 19.0,
-            "game_reb": 7.0,
-            "game_ast": 8.0,
-            "game_min": "29"
-          },
-          {
-            "id": "3136196",
-            "name": "Trey Lyles",
-            "starter": false,
-            "game_pts": 9.0,
-            "game_reb": 10.0,
-            "game_ast": 1.0,
-            "game_min": "23"
-          },
-          {
-            "id": "5279133",
-            "name": "Joan Beringer",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 5.0,
-            "game_ast": 1.0,
-            "game_min": "16"
-          },
-          {
-            "id": "4432847",
-            "name": "Terrence Shannon Jr.",
-            "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 2.0,
-            "game_ast": 3.0,
-            "game_min": "20"
-          },
-          {
-            "id": "4592492",
-            "name": "Bones Hyland",
-            "starter": false,
-            "game_pts": 9.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "17"
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909320"
     },
     "401909321": {
       "id": "401909321",
@@ -6237,304 +5280,7 @@
       "status": "post",
       "home_score": 115,
       "away_score": 97,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909321",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 67.0,
-        "away_pct": 33.0,
-        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y defensa reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 76.5,
-      "revised_prediction": {
-        "home_pct": 68.7,
-        "away_pct": 31.3,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y anotación reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 51.6
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Memphis Grizzlies",
-        "opponent": "LA Clippers",
-        "favorite_pct_original": 68.7,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 7,
-          "margin": 8.8,
-          "for": 120.3,
-          "against": 110.8,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 3,
-          "margin": -8.8,
-          "for": 109.7,
-          "against": 118.5,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "4594326",
-            "name": "Kris Murray",
-            "starter": true,
-            "game_pts": 8.0,
-            "game_reb": 4.0,
-            "game_ast": 3.0,
-            "game_min": "32"
-          },
-          {
-            "id": "4903027",
-            "name": "Cedric Coward",
-            "starter": true,
-            "game_pts": 14.0,
-            "game_reb": 10.0,
-            "game_ast": 1.0,
-            "game_min": "26"
-          },
-          {
-            "id": "5112087",
-            "name": "Jaylen Wells",
-            "starter": true,
-            "game_pts": 19.0,
-            "game_reb": 6.0,
-            "game_ast": 1.0,
-            "game_min": "27"
-          },
-          {
-            "id": "4600663",
-            "name": "Zach Edey",
-            "starter": true,
-            "game_pts": 7.0,
-            "game_reb": 4.0,
-            "game_ast": 2.0,
-            "game_min": "9"
-          },
-          {
-            "id": "4065733",
-            "name": "Ty Jerome",
-            "starter": true,
-            "game_pts": 17.0,
-            "game_reb": 5.0,
-            "game_ast": 7.0,
-            "game_min": "25"
-          },
-          {
-            "id": "4595400",
-            "name": "Olivier-Maxence Prosper",
-            "starter": false,
-            "game_pts": 9.0,
-            "game_reb": 4.0,
-            "game_ast": 2.0,
-            "game_min": "19"
-          },
-          {
-            "id": "4684806",
-            "name": "Taylor Hendricks",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 0.0,
-            "game_ast": 1.0,
-            "game_min": "25"
-          },
-          {
-            "id": "5231919",
-            "name": "Karim Lopez",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "4432810",
-            "name": "Isaiah Stewart",
-            "starter": false,
-            "game_pts": 10.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "14"
-          },
-          {
-            "id": "4593016",
-            "name": "Quinten Post",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 4.0,
-            "game_ast": 0.0,
-            "game_min": "14"
-          },
-          {
-            "id": "4433083",
-            "name": "Cam Spencer",
-            "starter": false,
-            "game_pts": 16.0,
-            "game_reb": 0.0,
-            "game_ast": 4.0,
-            "game_min": "24"
-          },
-          {
-            "id": "4683934",
-            "name": "Jahmai Mashack",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "4781746",
-            "name": "Javon Small",
-            "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "17"
-          }
-        ],
-        "away": [
-          {
-            "id": "3913176",
-            "name": "Brandon Ingram",
-            "starter": true,
-            "game_pts": 18.0,
-            "game_reb": 5.0,
-            "game_ast": 4.0,
-            "game_min": "26"
-          },
-          {
-            "id": "3936099",
-            "name": "Derrick Jones Jr.",
-            "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "23"
-          },
-          {
-            "id": "4066648",
-            "name": "Rui Hachimura",
-            "starter": true,
-            "game_pts": 14.0,
-            "game_reb": 12.0,
-            "game_ast": 5.0,
-            "game_min": "37"
-          },
-          {
-            "id": "3448",
-            "name": "Brook Lopez",
-            "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "18"
-          },
-          {
-            "id": "4396907",
-            "name": "Darius Garland",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 3.0,
-            "game_ast": 4.0,
-            "game_min": "29"
-          },
-          {
-            "id": "4432170",
-            "name": "Isaiah Jackson",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "7"
-          },
-          {
-            "id": "5075626",
-            "name": "Baba Miller",
-            "starter": false,
-            "game_pts": 9.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "5"
-          },
-          {
-            "id": "5108024",
-            "name": "Yanic Konan Niederhauser",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 4.0,
-            "game_ast": 0.0,
-            "game_min": "18"
-          },
-          {
-            "id": "2991139",
-            "name": "Kris Dunn",
-            "starter": false,
-            "game_pts": 12.0,
-            "game_reb": 6.0,
-            "game_ast": 4.0,
-            "game_min": "22"
-          },
-          {
-            "id": "4065778",
-            "name": "Max Strus",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 6.0,
-            "game_ast": 0.0,
-            "game_min": "21"
-          },
-          {
-            "id": "4702352",
-            "name": "Kobe Sanders",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "4845363",
-            "name": "Cam Christie",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "5106258",
-            "name": "Gradey Dick",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "5254165",
-            "name": "Keaton Wagler",
-            "starter": false,
-            "game_pts": 12.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "21"
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909321"
     },
     "401909322": {
       "id": "401909322",
@@ -6553,259 +5299,7 @@
       "status": "post",
       "home_score": 97,
       "away_score": 104,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909322",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 56.0,
-        "away_pct": 44.0,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 51.1,
-      "revised_prediction": {
-        "home_pct": 60.4,
-        "away_pct": 39.6,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 67.3
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Milwaukee Bucks",
-        "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 60.4,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 1,
-          "margin": -6.6,
-          "for": 114.1,
-          "against": 121.1,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 2,
-          "margin": -11.7,
-          "for": 114.8,
-          "against": 127.5,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "3134907",
-            "name": "Kyle Kuzma",
-            "starter": true,
-            "game_pts": 13.0,
-            "game_reb": 3.0,
-            "game_ast": 2.0,
-            "game_min": "31"
-          },
-          {
-            "id": "4432848",
-            "name": "Jaime Jaquez Jr.",
-            "starter": true,
-            "game_pts": 21.0,
-            "game_reb": 5.0,
-            "game_ast": 4.0,
-            "game_min": "35"
-          },
-          {
-            "id": "3133628",
-            "name": "Myles Turner",
-            "starter": true,
-            "game_pts": 3.0,
-            "game_reb": 6.0,
-            "game_ast": 2.0,
-            "game_min": "26"
-          },
-          {
-            "id": "4395725",
-            "name": "Tyler Herro",
-            "starter": true,
-            "game_pts": 28.0,
-            "game_reb": 2.0,
-            "game_ast": 5.0,
-            "game_min": "37"
-          },
-          {
-            "id": "4591725",
-            "name": "Ryan Rollins",
-            "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
-            "game_min": "19"
-          },
-          {
-            "id": "5164559",
-            "name": "Nate Ament",
-            "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 3.0,
-            "game_ast": 0.0,
-            "game_min": "21"
-          },
-          {
-            "id": "5105623",
-            "name": "Kel'el Ware",
-            "starter": false,
-            "game_pts": 13.0,
-            "game_reb": 14.0,
-            "game_ast": 2.0,
-            "game_min": "22"
-          },
-          {
-            "id": "2991043",
-            "name": "Caris LeVert",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "12"
-          },
-          {
-            "id": "4397475",
-            "name": "AJ Green",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "5082206",
-            "name": "Brayden Burries",
-            "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
-            "game_min": "22"
-          },
-          {
-            "id": "5214640",
-            "name": "Kasparas Jakucionis",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 4.0,
-            "game_ast": 3.0,
-            "game_min": "12"
-          }
-        ],
-        "away": [
-          {
-            "id": "3064514",
-            "name": "Julius Randle",
-            "starter": true,
-            "game_pts": 28.0,
-            "game_reb": 9.0,
-            "game_ast": 3.0,
-            "game_min": "39"
-          },
-          {
-            "id": "4278104",
-            "name": "Michael Porter Jr.",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 11.0,
-            "game_ast": 4.0,
-            "game_min": "34"
-          },
-          {
-            "id": "5107173",
-            "name": "Danny Wolf",
-            "starter": true,
-            "game_pts": 5.0,
-            "game_reb": 0.0,
-            "game_ast": 1.0,
-            "game_min": "19"
-          },
-          {
-            "id": "4432194",
-            "name": "Day'Ron Sharpe",
-            "starter": true,
-            "game_pts": 11.0,
-            "game_reb": 14.0,
-            "game_ast": 5.0,
-            "game_min": "31"
-          },
-          {
-            "id": "5101761",
-            "name": "Mikel Brown Jr.",
-            "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 2.0,
-            "game_ast": 2.0,
-            "game_min": "23"
-          },
-          {
-            "id": "4702670",
-            "name": "Grant Nelson",
-            "starter": false,
-            "game_pts": 1.0,
-            "game_reb": 6.0,
-            "game_ast": 0.0,
-            "game_min": "13"
-          },
-          {
-            "id": "4712896",
-            "name": "Noah Clowney",
-            "starter": false,
-            "game_pts": 17.0,
-            "game_reb": 5.0,
-            "game_ast": 1.0,
-            "game_min": "27"
-          },
-          {
-            "id": "3150844",
-            "name": "Moritz Wagner",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "3907823",
-            "name": "Terance Mann",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "2"
-          },
-          {
-            "id": "4702177",
-            "name": "Keon Ellis",
-            "starter": false,
-            "game_pts": 7.0,
-            "game_reb": 2.0,
-            "game_ast": 3.0,
-            "game_min": "23"
-          },
-          {
-            "id": "5175643",
-            "name": "Egor Demin",
-            "starter": false,
-            "game_pts": 15.0,
-            "game_reb": 3.0,
-            "game_ast": 4.0,
-            "game_min": "25"
-          }
-        ]
-      }
+      "source": "https://www.espn.com/nba/game/_/gameId/401909322"
     },
     "401909323": {
       "id": "401909323",
@@ -6821,261 +5315,10 @@
         "abbr": "PHX",
         "name": "Phoenix Suns"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909323",
-      "head_to_head": [
-        {
-          "date": "2026-11-07",
-          "home": "PHX",
-          "away": "HOU",
-          "home_score": 102,
-          "away_score": 99
-        }
-      ],
-      "prediction": {
-        "home_pct": 61.6,
-        "away_pct": 38.4,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 65.6,
-      "revised_prediction": {
-        "home_pct": 61.8,
-        "away_pct": 38.2,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y victorias recientes. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 69.4
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Houston Rockets",
-        "opponent": "Phoenix Suns",
-        "favorite_pct_original": 61.8,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Alerta: el rival tiene mayor porcentaje de victorias recientes."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 6,
-          "margin": 4.7,
-          "for": 120.0,
-          "against": 114.9,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 8,
-          "margin": 7.2,
-          "for": 117.4,
-          "against": 110.3,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "3202",
-            "name": "Kevin Durant",
-            "starter": true,
-            "game_pts": 18.0,
-            "game_reb": 7.0,
-            "game_ast": 2.0,
-            "game_min": "26"
-          },
-          {
-            "id": "4432639",
-            "name": "Jabari Smith Jr.",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 3.0,
-            "game_ast": 1.0,
-            "game_min": "23"
-          },
-          {
-            "id": "4871144",
-            "name": "Alperen Sengun",
-            "starter": true,
-            "game_pts": 19.0,
-            "game_reb": 10.0,
-            "game_ast": 8.0,
-            "game_min": "23"
-          },
-          {
-            "id": "2991230",
-            "name": "Fred VanVleet",
-            "starter": true,
-            "game_pts": 5.0,
-            "game_reb": 0.0,
-            "game_ast": 4.0,
-            "game_min": "25"
-          },
-          {
-            "id": "4684740",
-            "name": "Amen Thompson",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 9.0,
-            "game_ast": 3.0,
-            "game_min": "27"
-          },
-          {
-            "id": "4433192",
-            "name": "Tari Eason",
-            "starter": false,
-            "game_pts": 7.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "15"
-          },
-          {
-            "id": "4592857",
-            "name": "Isaiah Crawford",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "-"
-          },
-          {
-            "id": "2991235",
-            "name": "Steven Adams",
-            "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 7.0,
-            "game_ast": 0.0,
-            "game_min": "16"
-          },
-          {
-            "id": "2990992",
-            "name": "Marcus Smart",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 3.0,
-            "game_ast": 3.0,
-            "game_min": "18"
-          },
-          {
-            "id": "3037789",
-            "name": "Bogdan Bogdanovic",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 0.0,
-            "game_ast": 1.0,
-            "game_min": "8"
-          },
-          {
-            "id": "4711272",
-            "name": "Reed Sheppard",
-            "starter": false,
-            "game_pts": 7.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "15"
-          }
-        ],
-        "away": [
-          {
-            "id": "3155526",
-            "name": "Dillon Brooks",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 3.0,
-            "game_ast": 4.0,
-            "game_min": "23"
-          },
-          {
-            "id": "4066383",
-            "name": "Miles Bridges",
-            "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 7.0,
-            "game_ast": 3.0,
-            "game_min": "23"
-          },
-          {
-            "id": "4601023",
-            "name": "Oso Ighodaro",
-            "starter": true,
-            "game_pts": 11.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "16"
-          },
-          {
-            "id": "3136193",
-            "name": "Devin Booker",
-            "starter": true,
-            "game_pts": 21.0,
-            "game_reb": 0.0,
-            "game_ast": 5.0,
-            "game_min": "30"
-          },
-          {
-            "id": "4437244",
-            "name": "Jalen Green",
-            "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 3.0,
-            "game_ast": 4.0,
-            "game_min": "26"
-          },
-          {
-            "id": "4888725",
-            "name": "Ryan Dunn",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "10"
-          },
-          {
-            "id": "5203685",
-            "name": "Khaman Maluach",
-            "starter": false,
-            "game_pts": 11.0,
-            "game_reb": 5.0,
-            "game_ast": 0.0,
-            "game_min": "21"
-          },
-          {
-            "id": "3913174",
-            "name": "Luke Kennard",
-            "starter": false,
-            "game_pts": 6.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "13"
-          },
-          {
-            "id": "4278402",
-            "name": "Jordan Goodwin",
-            "starter": false,
-            "game_pts": 11.0,
-            "game_reb": 5.0,
-            "game_ast": 0.0,
-            "game_min": "17"
-          },
-          {
-            "id": "4278585",
-            "name": "Collin Gillespie",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 3.0,
-            "game_ast": 2.0,
-            "game_min": "16"
-          }
-        ]
-      }
+      "status": "post",
+      "home_score": 116,
+      "away_score": 104,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909323"
     },
     "401909324": {
       "id": "401909324",
@@ -7091,253 +5334,10 @@
         "abbr": "SAC",
         "name": "Sacramento Kings"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909324",
-      "head_to_head": [],
-      "prediction": {
-        "home_pct": 70.3,
-        "away_pct": 29.7,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 75.1,
-      "revised_prediction": {
-        "home_pct": 71.1,
-        "away_pct": 28.9,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 77.8
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "Golden State Warriors",
-        "opponent": "Sacramento Kings",
-        "favorite_pct_original": 71.1,
-        "classification": "Favorito estadístico",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 5,
-          "margin": -10.2,
-          "for": 100.1,
-          "against": 110.3,
-          "rest": 3
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 1,
-          "margin": -10.9,
-          "for": 104.0,
-          "against": 114.9,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "6589",
-            "name": "Draymond Green",
-            "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 2.0,
-            "game_ast": 3.0,
-            "game_min": "8"
-          },
-          {
-            "id": "5175737",
-            "name": "Yaxel Lendeborg",
-            "starter": true,
-            "game_pts": 3.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "8"
-          },
-          {
-            "id": "4397886",
-            "name": "Charles Bassey",
-            "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 4.0,
-            "game_ast": 0.0,
-            "game_min": "6"
-          },
-          {
-            "id": "4066436",
-            "name": "De'Anthony Melton",
-            "starter": true,
-            "game_pts": 12.0,
-            "game_reb": 1.0,
-            "game_ast": 4.0,
-            "game_min": "8"
-          },
-          {
-            "id": "4709138",
-            "name": "Brandin Podziemski",
-            "starter": true,
-            "game_pts": 8.0,
-            "game_reb": 0.0,
-            "game_ast": 2.0,
-            "game_min": "9"
-          },
-          {
-            "id": "2990969",
-            "name": "Georges Niang",
-            "starter": false,
-            "game_pts": 5.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "4997536",
-            "name": "Gui Santos",
-            "starter": false,
-            "game_pts": 12.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "6"
-          },
-          {
-            "id": "3213",
-            "name": "Al Horford",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "4"
-          },
-          {
-            "id": "3134903",
-            "name": "Gary Payton II",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "3"
-          },
-          {
-            "id": "4397040",
-            "name": "Brandon Williams",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "1"
-          },
-          {
-            "id": "4897262",
-            "name": "Will Richard",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "6"
-          }
-        ],
-        "away": [
-          {
-            "id": "3155942",
-            "name": "Domantas Sabonis",
-            "starter": true,
-            "game_pts": 10.0,
-            "game_reb": 3.0,
-            "game_ast": 2.0,
-            "game_min": "11"
-          },
-          {
-            "id": "4065732",
-            "name": "De'Andre Hunter",
-            "starter": true,
-            "game_pts": 1.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "12"
-          },
-          {
-            "id": "4594327",
-            "name": "Keegan Murray",
-            "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 0.0,
-            "game_ast": 1.0,
-            "game_min": "10"
-          },
-          {
-            "id": "5106058",
-            "name": "Emanuel Sharp",
-            "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "6"
-          },
-          {
-            "id": "5142620",
-            "name": "Darius Acuff Jr.",
-            "starter": true,
-            "game_pts": 4.0,
-            "game_reb": 2.0,
-            "game_ast": 1.0,
-            "game_min": "12"
-          },
-          {
-            "id": "4395650",
-            "name": "Leaky Black",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "5"
-          },
-          {
-            "id": "4431679",
-            "name": "Precious Achiuwa",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "4917149",
-            "name": "Alex Karaban",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "2"
-          },
-          {
-            "id": "4066262",
-            "name": "Malik Monk",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "2"
-          },
-          {
-            "id": "4702384",
-            "name": "Nique Clifford",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "--"
-          }
-        ]
-      }
+      "status": "post",
+      "home_score": 129,
+      "away_score": 110,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909324"
     },
     "401909325": {
       "id": "401909325",
@@ -7353,225 +5353,10 @@
         "abbr": "SA",
         "name": "San Antonio Spurs"
       },
-      "status": "in",
-      "home_score": null,
-      "away_score": null,
-      "source": "https://www.espn.com/nba/game/_/gameId/401909325",
-      "head_to_head": [
-        {
-          "date": "2026-11-07",
-          "home": "POR",
-          "away": "SA",
-          "home_score": 103,
-          "away_score": 125
-        }
-      ],
-      "prediction": {
-        "home_pct": 40.0,
-        "away_pct": 60.0,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "model": "hybrid-v2-v3-experimental",
-        "experimental": true,
-        "calibrated": false,
-        "predicted_at": "2026-11-23T07:42:23.411208+00:00",
-        "locked": true
-      },
-      "elo_baseline_home_pct": 48.7,
-      "revised_prediction": {
-        "home_pct": 40.4,
-        "away_pct": 59.6,
-        "predicted_at": "2026-11-25T04:25:01.909138+00:00",
-        "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 38.0
-      },
-      "scouting": {
-        "version": "contexto-v1",
-        "favorite": "San Antonio Spurs",
-        "opponent": "Portland Trail Blazers",
-        "favorite_pct_original": 59.6,
-        "classification": "Ventaja moderada",
-        "observations": [
-          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
-        ],
-        "home_form": {
-          "games": 10,
-          "wins": 5,
-          "margin": 5.5,
-          "for": 113.2,
-          "against": 107.7,
-          "rest": 2
-        },
-        "away_form": {
-          "games": 10,
-          "wins": 9,
-          "margin": 12.8,
-          "for": 116.5,
-          "against": 102.5,
-          "rest": 2
-        },
-        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
-      },
-      "lineups": {
-        "home": [
-          {
-            "id": "4431736",
-            "name": "Toumani Camara",
-            "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "7"
-          },
-          {
-            "id": "4683021",
-            "name": "Deni Avdija",
-            "starter": true,
-            "game_pts": 9.0,
-            "game_reb": 2.0,
-            "game_ast": 2.0,
-            "game_min": "8"
-          },
-          {
-            "id": "5105565",
-            "name": "Donovan Clingan",
-            "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 4.0,
-            "game_ast": 0.0,
-            "game_min": "7"
-          },
-          {
-            "id": "6606",
-            "name": "Damian Lillard",
-            "starter": true,
-            "game_pts": 13.0,
-            "game_reb": 1.0,
-            "game_ast": 2.0,
-            "game_min": "10"
-          },
-          {
-            "id": "5081727",
-            "name": "Sidy Cissoko",
-            "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "9"
-          },
-          {
-            "id": "4066211",
-            "name": "Robert Williams III",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "3995",
-            "name": "Jrue Holiday",
-            "starter": false,
-            "game_pts": 3.0,
-            "game_reb": 0.0,
-            "game_ast": 3.0,
-            "game_min": "6"
-          },
-          {
-            "id": "4683678",
-            "name": "Scoot Henderson",
-            "starter": false,
-            "game_pts": 8.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          }
-        ],
-        "away": [
-          {
-            "id": "6578",
-            "name": "Harrison Barnes",
-            "starter": true,
-            "game_pts": 2.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "4592479",
-            "name": "Julian Champagnie",
-            "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 1.0,
-            "game_ast": 1.0,
-            "game_min": "10"
-          },
-          {
-            "id": "5104157",
-            "name": "Victor Wembanyama",
-            "starter": true,
-            "game_pts": 9.0,
-            "game_reb": 4.0,
-            "game_ast": 1.0,
-            "game_min": "6"
-          },
-          {
-            "id": "4395630",
-            "name": "Devin Vassell",
-            "starter": true,
-            "game_pts": 0.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "8"
-          },
-          {
-            "id": "4845367",
-            "name": "Stephon Castle",
-            "starter": true,
-            "game_pts": 6.0,
-            "game_reb": 2.0,
-            "game_ast": 3.0,
-            "game_min": "8"
-          },
-          {
-            "id": "4395723",
-            "name": "Keldon Johnson",
-            "starter": false,
-            "game_pts": 1.0,
-            "game_reb": 2.0,
-            "game_ast": 0.0,
-            "game_min": "7"
-          },
-          {
-            "id": "5061568",
-            "name": "Carter Bryant",
-            "starter": false,
-            "game_pts": 0.0,
-            "game_reb": 1.0,
-            "game_ast": 0.0,
-            "game_min": "4"
-          },
-          {
-            "id": "3064560",
-            "name": "Luke Kornet",
-            "starter": false,
-            "game_pts": 2.0,
-            "game_reb": 3.0,
-            "game_ast": 2.0,
-            "game_min": "4"
-          },
-          {
-            "id": "3134916",
-            "name": "Jordan McLaughlin",
-            "starter": false,
-            "game_pts": 4.0,
-            "game_reb": 0.0,
-            "game_ast": 0.0,
-            "game_min": "3"
-          }
-        ]
-      }
+      "status": "post",
+      "home_score": 116,
+      "away_score": 111,
+      "source": "https://www.espn.com/nba/game/_/gameId/401909325"
     },
     "401909326": {
       "id": "401909326",
@@ -7604,9 +5389,9 @@
       },
       "elo_baseline_home_pct": 59.7,
       "revised_prediction": {
-        "home_pct": 65.4,
-        "away_pct": 34.6,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 66.7,
+        "away_pct": 33.3,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -7616,7 +5401,7 @@
         "version": "contexto-v1",
         "favorite": "New York Knicks",
         "opponent": "Miami Heat",
-        "favorite_pct_original": 65.4,
+        "favorite_pct_original": 66.7,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -7624,18 +5409,18 @@
         "home_form": {
           "games": 10,
           "wins": 8,
-          "margin": 5.0,
-          "for": 107.6,
+          "margin": 7.0,
+          "for": 109.5,
           "against": 102.2,
-          "rest": 3
+          "rest": 2
         },
         "away_form": {
           "games": 10,
           "wins": 8,
-          "margin": 9.0,
-          "for": 125.9,
-          "against": 116.9,
-          "rest": 3
+          "margin": 7.0,
+          "for": 122.6,
+          "against": 115.6,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
@@ -7671,9 +5456,9 @@
       },
       "elo_baseline_home_pct": 79.2,
       "revised_prediction": {
-        "home_pct": 80.0,
-        "away_pct": 20.0,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 80.5,
+        "away_pct": 19.5,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -7683,7 +5468,7 @@
         "version": "contexto-v1",
         "favorite": "Detroit Pistons",
         "opponent": "Milwaukee Bucks",
-        "favorite_pct_original": 80.0,
+        "favorite_pct_original": 80.5,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -7699,9 +5484,9 @@
         "away_form": {
           "games": 10,
           "wins": 1,
-          "margin": -6.6,
-          "for": 114.1,
-          "against": 121.1,
+          "margin": -6.0,
+          "for": 111.9,
+          "against": 118.1,
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
@@ -7753,11 +5538,11 @@
       },
       "elo_baseline_home_pct": 39.3,
       "revised_prediction": {
-        "home_pct": 36.4,
-        "away_pct": 63.6,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 35.4,
+        "away_pct": 64.6,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y anotación reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y más victorias recientes.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y anotación reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 22.9
       },
@@ -7765,7 +5550,7 @@
         "version": "contexto-v1",
         "favorite": "Philadelphia 76ers",
         "opponent": "Indiana Pacers",
-        "favorite_pct_original": 63.6,
+        "favorite_pct_original": 64.6,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -7781,9 +5566,9 @@
         "away_form": {
           "games": 10,
           "wins": 7,
-          "margin": -0.6,
-          "for": 121.8,
-          "against": 122.4,
+          "margin": 0.9,
+          "for": 120.4,
+          "against": 119.5,
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
@@ -7820,9 +5605,9 @@
       },
       "elo_baseline_home_pct": 61.9,
       "revised_prediction": {
-        "home_pct": 68.8,
-        "away_pct": 31.2,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 67.9,
+        "away_pct": 32.1,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
@@ -7832,8 +5617,8 @@
         "version": "contexto-v1",
         "favorite": "Toronto Raptors",
         "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 68.8,
-        "classification": "Favorito estadístico",
+        "favorite_pct_original": 67.9,
+        "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
         ],
@@ -7847,10 +5632,10 @@
         },
         "away_form": {
           "games": 10,
-          "wins": 2,
-          "margin": -11.7,
-          "for": 114.8,
-          "against": 127.5,
+          "wins": 3,
+          "margin": -8.8,
+          "for": 113.2,
+          "against": 122.8,
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
@@ -7964,11 +5749,11 @@
       },
       "elo_baseline_home_pct": 55.9,
       "revised_prediction": {
-        "home_pct": 64.6,
-        "away_pct": 35.4,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 64.5,
+        "away_pct": 35.5,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 81.2
       },
@@ -7976,7 +5761,7 @@
         "version": "contexto-v1",
         "favorite": "Minnesota Timberwolves",
         "opponent": "Memphis Grizzlies",
-        "favorite_pct_original": 64.6,
+        "favorite_pct_original": 64.5,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -7984,17 +5769,17 @@
         "home_form": {
           "games": 10,
           "wins": 8,
-          "margin": 8.6,
-          "for": 114.2,
-          "against": 104.4,
+          "margin": 8.3,
+          "for": 113.9,
+          "against": 104.7,
           "rest": 2
         },
         "away_form": {
           "games": 10,
-          "wins": 7,
-          "margin": 8.8,
-          "for": 120.3,
-          "against": 110.8,
+          "wins": 8,
+          "margin": 10.8,
+          "for": 119.4,
+          "against": 107.9,
           "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
@@ -8031,11 +5816,11 @@
       },
       "elo_baseline_home_pct": 58.4,
       "revised_prediction": {
-        "home_pct": 62.3,
-        "away_pct": 37.7,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 60.5,
+        "away_pct": 39.5,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 68.6
       },
@@ -8043,17 +5828,17 @@
         "version": "contexto-v1",
         "favorite": "Phoenix Suns",
         "opponent": "Dallas Mavericks",
-        "favorite_pct_original": 62.3,
+        "favorite_pct_original": 60.5,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
         ],
         "home_form": {
           "games": 10,
-          "wins": 8,
-          "margin": 7.2,
-          "for": 117.4,
-          "against": 110.3,
+          "wins": 7,
+          "margin": 4.0,
+          "for": 115.4,
+          "against": 111.5,
           "rest": 2
         },
         "away_form": {
@@ -8097,22 +5882,30 @@
         "locked": true
       },
       "elo_baseline_home_pct": 60.9,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 63.9,
+        "away_pct": 36.1,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 66.9
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "San Antonio Spurs",
         "opponent": "Los Angeles Lakers",
-        "favorite_pct_original": 65.4,
+        "favorite_pct_original": 63.9,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
         ],
         "home_form": {
           "games": 10,
-          "wins": 9,
-          "margin": 12.8,
-          "for": 116.5,
-          "against": 102.5,
+          "wins": 8,
+          "margin": 9.4,
+          "for": 115.2,
+          "against": 104.9,
           "rest": 2
         },
         "away_form": {
@@ -8232,11 +6025,11 @@
       },
       "elo_baseline_home_pct": 58.6,
       "revised_prediction": {
-        "home_pct": 65.1,
-        "away_pct": 34.9,
-        "predicted_at": "2026-11-26T03:41:05.106348+00:00",
+        "home_pct": 65.2,
+        "away_pct": 34.8,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "source": "Recalculado con resultados disponibles antes del inicio",
         "elo_baseline_home_pct": 74.8
       },
@@ -8244,7 +6037,7 @@
         "version": "contexto-v1",
         "favorite": "LA Clippers",
         "opponent": "New Orleans Pelicans",
-        "favorite_pct_original": 65.1,
+        "favorite_pct_original": 65.2,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -8252,9 +6045,9 @@
         "home_form": {
           "games": 10,
           "wins": 3,
-          "margin": -8.8,
-          "for": 109.7,
-          "against": 118.5,
+          "margin": -10.8,
+          "for": 106.8,
+          "against": 117.6,
           "rest": 2
         },
         "away_form": {
@@ -8306,31 +6099,479 @@
         "locked": true
       },
       "elo_baseline_home_pct": 64.4,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 68.4,
+        "away_pct": 31.6,
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 72.6
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Portland Trail Blazers",
         "opponent": "Golden State Warriors",
-        "favorite_pct_original": 69.3,
+        "favorite_pct_original": 68.4,
         "classification": "Favorito estadístico",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 6,
+          "margin": 5.8,
+          "for": 113.7,
+          "against": 107.9,
+          "rest": 2
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 5,
+          "margin": -5.9,
+          "for": 104.2,
+          "against": 110.3,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401910046": {
+      "id": "401910046",
+      "date": "2026-11-28",
+      "datetime": "2026-11-28T22:00Z",
+      "home": {
+        "id": "27",
+        "abbr": "WSH",
+        "name": "Washington Wizards"
+      },
+      "away": {
+        "id": "19",
+        "abbr": "ORL",
+        "name": "Orlando Magic"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401910046",
+      "head_to_head": [
+        {
+          "date": "2026-11-22",
+          "home": "WSH",
+          "away": "ORL",
+          "home_score": 116,
+          "away_score": 96
+        },
+        {
+          "date": "2026-11-02",
+          "home": "ORL",
+          "away": "WSH",
+          "home_score": 94,
+          "away_score": 103
+        }
+      ],
+      "prediction": {
+        "home_pct": 43.0,
+        "away_pct": 57.0,
+        "model": "hybrid-v2-v3-experimental",
+        "experimental": true,
+        "calibrated": false,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
+        "elo_baseline_home_pct": 29.1,
+        "factors": {
+          "elo_difference": -2.0998,
+          "margin_difference": -0.77,
+          "win_rate_difference": -0.2,
+          "scoring_difference": 0.13,
+          "defense_difference": -0.9,
+          "rest_difference": 0.0
+        },
+        "hybrid": {
+          "v3_home_pct": 32.8,
+          "v2_home_pct": 53.2,
+          "v3_weight_pct": 50,
+          "v2_weight_pct": 50,
+          "v2_factors": {
+            "home_advantage_points": 2.2,
+            "elo_component": -1.13,
+            "recent_margin_component": -0.03,
+            "recent_wins_component": -0.09,
+            "scoring_component": -0.04,
+            "rest_component": 0.0,
+            "player_component": 0.64
+          }
+        },
+        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+      },
+      "elo_baseline_home_pct": 54.3,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Orlando Magic",
+        "opponent": "Washington Wizards",
+        "favorite_pct_original": 57.0,
+        "classification": "Partido muy cerrado",
+        "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 3,
+          "margin": -4.2,
+          "for": 112.4,
+          "against": 117.2,
+          "rest": 4
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 5,
+          "margin": -4.1,
+          "for": 105.8,
+          "against": 109.9,
+          "rest": 4
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401910047": {
+      "id": "401910047",
+      "date": "2026-11-28",
+      "datetime": "2026-11-28T23:00Z",
+      "home": {
+        "id": "30",
+        "abbr": "CHA",
+        "name": "Charlotte Hornets"
+      },
+      "away": {
+        "id": "17",
+        "abbr": "BKN",
+        "name": "Brooklyn Nets"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401910047",
+      "head_to_head": [
+        {
+          "date": "2026-11-04",
+          "home": "BKN",
+          "away": "CHA",
+          "home_score": 114,
+          "away_score": 104
+        },
+        {
+          "date": "2026-10-21",
+          "home": "BKN",
+          "away": "CHA",
+          "home_score": 103,
+          "away_score": 110
+        }
+      ],
+      "prediction": {
+        "home_pct": 64.2,
+        "away_pct": 35.8,
+        "model": "hybrid-v2-v3-experimental",
+        "experimental": true,
+        "calibrated": false,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
+        "elo_baseline_home_pct": 81.5,
+        "factors": {
+          "elo_difference": 2.0207,
+          "margin_difference": -0.14,
+          "win_rate_difference": -0.1,
+          "scoring_difference": -1.04,
+          "defense_difference": 0.9,
+          "rest_difference": 0.0
+        },
+        "hybrid": {
+          "v3_home_pct": 74.5,
+          "v2_home_pct": 53.8,
+          "v3_weight_pct": 50,
+          "v2_weight_pct": 50,
+          "v2_factors": {
+            "home_advantage_points": 2.2,
+            "elo_component": -0.93,
+            "recent_margin_component": 0.5,
+            "recent_wins_component": -0.48,
+            "scoring_component": 0.13,
+            "rest_component": 0.0,
+            "player_component": 0.39
+          }
+        },
+        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+      },
+      "elo_baseline_home_pct": 54.9,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Charlotte Hornets",
+        "opponent": "Brooklyn Nets",
+        "favorite_pct_original": 64.2,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 1,
+          "margin": -6.5,
+          "for": 104.9,
+          "against": 112.3,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 3,
+          "margin": -8.8,
+          "for": 113.2,
+          "against": 122.8,
+          "rest": 2
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401910048": {
+      "id": "401910048",
+      "date": "2026-11-28",
+      "datetime": "2026-11-29T01:00Z",
+      "home": {
+        "id": "4",
+        "abbr": "CHI",
+        "name": "Chicago Bulls"
+      },
+      "away": {
+        "id": "11",
+        "abbr": "IND",
+        "name": "Indiana Pacers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401910048",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 63.5,
+        "away_pct": 36.5,
+        "model": "hybrid-v2-v3-experimental",
+        "experimental": true,
+        "calibrated": false,
+        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "elo_baseline_home_pct": 61.4,
+        "factors": {
+          "elo_difference": 0.255,
+          "margin_difference": 0.3,
+          "win_rate_difference": 0.0,
+          "scoring_difference": 0.71,
+          "defense_difference": -0.41,
+          "rest_difference": 0.0
+        },
+        "hybrid": {
+          "v3_home_pct": 62.2,
+          "v2_home_pct": 64.8,
+          "v3_weight_pct": 50,
+          "v2_weight_pct": 50,
+          "v2_factors": {
+            "home_advantage_points": 2.2,
+            "elo_component": 1.22,
+            "recent_margin_component": 1.67,
+            "recent_wins_component": 0.52,
+            "scoring_component": 0.49,
+            "rest_component": 0.0,
+            "player_component": 1.2
+          }
+        },
+        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+      },
+      "elo_baseline_home_pct": 61.6,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Chicago Bulls",
+        "opponent": "Indiana Pacers",
+        "favorite_pct_original": 63.5,
+        "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
         ],
         "home_form": {
           "games": 10,
           "wins": 5,
-          "margin": 5.5,
-          "for": 113.2,
-          "against": 107.7,
+          "margin": 4.0,
+          "for": 119.7,
+          "against": 115.2,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 4,
+          "margin": -3.6,
+          "for": 114.4,
+          "against": 118.0,
+          "rest": 4
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401910049": {
+      "id": "401910049",
+      "date": "2026-11-28",
+      "datetime": "2026-11-29T01:00Z",
+      "home": {
+        "id": "15",
+        "abbr": "MIL",
+        "name": "Milwaukee Bucks"
+      },
+      "away": {
+        "id": "25",
+        "abbr": "OKC",
+        "name": "Oklahoma City Thunder"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401910049",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 29.0,
+        "away_pct": 71.0,
+        "model": "hybrid-v2-v3-experimental",
+        "experimental": true,
+        "calibrated": false,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "elo_baseline_home_pct": 15.8,
+        "factors": {
+          "elo_difference": -3.4527,
+          "margin_difference": -1.54,
+          "win_rate_difference": -0.3,
+          "scoring_difference": -0.66,
+          "defense_difference": -0.88,
+          "rest_difference": 0.0
+        },
+        "hybrid": {
+          "v3_home_pct": 18.5,
+          "v2_home_pct": 39.5,
+          "v3_weight_pct": 50,
+          "v2_weight_pct": 50,
+          "v2_factors": {
+            "home_advantage_points": 2.2,
+            "elo_component": -5.93,
+            "recent_margin_component": -0.84,
+            "recent_wins_component": -0.17,
+            "scoring_component": -0.25,
+            "rest_component": 0.0,
+            "player_component": -0.11
+          }
+        },
+        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+      },
+      "elo_baseline_home_pct": 39.1,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Oklahoma City Thunder",
+        "opponent": "Milwaukee Bucks",
+        "favorite_pct_original": 71.0,
+        "classification": "Favorito estadístico",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 1,
+          "margin": -6.0,
+          "for": 111.9,
+          "against": 118.1,
           "rest": 2
         },
         "away_form": {
           "games": 10,
-          "wins": 5,
-          "margin": -10.2,
-          "for": 100.1,
-          "against": 110.3,
+          "wins": 3,
+          "margin": -2.2,
+          "for": 114.8,
+          "against": 116.8,
           "rest": 3
+        },
+        "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
+      }
+    },
+    "401910050": {
+      "id": "401910050",
+      "date": "2026-11-28",
+      "datetime": "2026-11-29T01:30Z",
+      "home": {
+        "id": "10",
+        "abbr": "HOU",
+        "name": "Houston Rockets"
+      },
+      "away": {
+        "id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers"
+      },
+      "status": "pre",
+      "home_score": null,
+      "away_score": null,
+      "source": "https://www.espn.com/nba/game/_/gameId/401910050",
+      "head_to_head": [],
+      "prediction": {
+        "home_pct": 61.9,
+        "away_pct": 38.1,
+        "model": "hybrid-v2-v3-experimental",
+        "experimental": true,
+        "calibrated": false,
+        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "elo_baseline_home_pct": 59.3,
+        "factors": {
+          "elo_difference": 0.1062,
+          "margin_difference": 0.51,
+          "win_rate_difference": -0.1,
+          "scoring_difference": -0.15,
+          "defense_difference": 0.66,
+          "rest_difference": 0.25
+        },
+        "hybrid": {
+          "v3_home_pct": 65.0,
+          "v2_home_pct": 58.7,
+          "v3_weight_pct": 50,
+          "v2_weight_pct": 50,
+          "v2_factors": {
+            "home_advantage_points": 2.2,
+            "elo_component": 0.12,
+            "recent_margin_component": 1.18,
+            "recent_wins_component": -0.09,
+            "scoring_component": 0.34,
+            "rest_component": 0.0,
+            "player_component": 0.47
+          }
+        },
+        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+      },
+      "elo_baseline_home_pct": 58.2,
+      "revised_prediction": null,
+      "scouting": {
+        "version": "contexto-v1",
+        "favorite": "Houston Rockets",
+        "opponent": "Philadelphia 76ers",
+        "favorite_pct_original": 61.9,
+        "classification": "Ventaja moderada",
+        "observations": [
+          "Sin alertas cuantitativas adicionales en la forma reciente disponible."
+        ],
+        "home_form": {
+          "games": 10,
+          "wins": 7,
+          "margin": 6.2,
+          "for": 119.8,
+          "against": 113.3,
+          "rest": 3
+        },
+        "away_form": {
+          "games": 10,
+          "wins": 7,
+          "margin": 0.9,
+          "for": 120.4,
+          "against": 119.5,
+          "rest": 2
         },
         "scope": "Análisis descriptivo, no una nueva probabilidad ni un pronóstico de hándicap."
       }
