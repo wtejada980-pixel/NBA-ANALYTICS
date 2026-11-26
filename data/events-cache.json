@@ -6173,35 +6173,12 @@
       "prediction": {
         "home_pct": 43.0,
         "away_pct": 57.0,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
-        "elo_baseline_home_pct": 29.1,
-        "factors": {
-          "elo_difference": -2.0998,
-          "margin_difference": -0.77,
-          "win_rate_difference": -0.2,
-          "scoring_difference": 0.13,
-          "defense_difference": -0.9,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 32.8,
-          "v2_home_pct": 53.2,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": -1.13,
-            "recent_margin_component": -0.03,
-            "recent_wins_component": -0.09,
-            "scoring_component": -0.04,
-            "rest_component": 0.0,
-            "player_component": 0.64
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 54.3,
       "revised_prediction": null,
@@ -6270,35 +6247,12 @@
       "prediction": {
         "home_pct": 64.2,
         "away_pct": 35.8,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
-        "elo_baseline_home_pct": 81.5,
-        "factors": {
-          "elo_difference": 2.0207,
-          "margin_difference": -0.14,
-          "win_rate_difference": -0.1,
-          "scoring_difference": -1.04,
-          "defense_difference": 0.9,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 74.5,
-          "v2_home_pct": 53.8,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": -0.93,
-            "recent_margin_component": 0.5,
-            "recent_wins_component": -0.48,
-            "scoring_component": 0.13,
-            "rest_component": 0.0,
-            "player_component": 0.39
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 54.9,
       "revised_prediction": null,
@@ -6352,35 +6306,12 @@
       "prediction": {
         "home_pct": 63.5,
         "away_pct": 36.5,
+        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
-        "elo_baseline_home_pct": 61.4,
-        "factors": {
-          "elo_difference": 0.255,
-          "margin_difference": 0.3,
-          "win_rate_difference": 0.0,
-          "scoring_difference": 0.71,
-          "defense_difference": -0.41,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 62.2,
-          "v2_home_pct": 64.8,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": 1.22,
-            "recent_margin_component": 1.67,
-            "recent_wins_component": 0.52,
-            "scoring_component": 0.49,
-            "rest_component": 0.0,
-            "player_component": 1.2
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 61.6,
       "revised_prediction": null,
@@ -6434,35 +6365,12 @@
       "prediction": {
         "home_pct": 29.0,
         "away_pct": 71.0,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "elo_baseline_home_pct": 15.8,
-        "factors": {
-          "elo_difference": -3.4527,
-          "margin_difference": -1.54,
-          "win_rate_difference": -0.3,
-          "scoring_difference": -0.66,
-          "defense_difference": -0.88,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 18.5,
-          "v2_home_pct": 39.5,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": -5.93,
-            "recent_margin_component": -0.84,
-            "recent_wins_component": -0.17,
-            "scoring_component": -0.25,
-            "rest_component": 0.0,
-            "player_component": -0.11
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 39.1,
       "revised_prediction": null,
@@ -6516,35 +6424,12 @@
       "prediction": {
         "home_pct": 61.9,
         "away_pct": 38.1,
+        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
-        "elo_baseline_home_pct": 59.3,
-        "factors": {
-          "elo_difference": 0.1062,
-          "margin_difference": 0.51,
-          "win_rate_difference": -0.1,
-          "scoring_difference": -0.15,
-          "defense_difference": 0.66,
-          "rest_difference": 0.25
-        },
-        "hybrid": {
-          "v3_home_pct": 65.0,
-          "v2_home_pct": 58.7,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": 0.12,
-            "recent_margin_component": 1.18,
-            "recent_wins_component": -0.09,
-            "scoring_component": 0.34,
-            "rest_component": 0.0,
-            "player_component": 0.47
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 58.2,
       "revised_prediction": null,

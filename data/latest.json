@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26T08:22:40.256744+00:00",
+  "as_of": "2026-11-26T16:46:40.826443+00:00",
   "date": "2026-11-26",
   "timezone": "America/Santo_Domingo",
   "source": "ESPN (endpoint no oficial, sin garantía de disponibilidad)",
@@ -14369,35 +14369,12 @@
       "prediction": {
         "home_pct": 43.0,
         "away_pct": 57.0,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
-        "elo_baseline_home_pct": 29.1,
-        "factors": {
-          "elo_difference": -2.0998,
-          "margin_difference": -0.77,
-          "win_rate_difference": -0.2,
-          "scoring_difference": 0.13,
-          "defense_difference": -0.9,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 32.8,
-          "v2_home_pct": 53.2,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": -1.13,
-            "recent_margin_component": -0.03,
-            "recent_wins_component": -0.09,
-            "scoring_component": -0.04,
-            "rest_component": 0.0,
-            "player_component": 0.64
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 54.3,
       "revised_prediction": null,
@@ -14466,35 +14443,12 @@
       "prediction": {
         "home_pct": 64.2,
         "away_pct": 35.8,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
-        "elo_baseline_home_pct": 81.5,
-        "factors": {
-          "elo_difference": 2.0207,
-          "margin_difference": -0.14,
-          "win_rate_difference": -0.1,
-          "scoring_difference": -1.04,
-          "defense_difference": 0.9,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 74.5,
-          "v2_home_pct": 53.8,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": -0.93,
-            "recent_margin_component": 0.5,
-            "recent_wins_component": -0.48,
-            "scoring_component": 0.13,
-            "rest_component": 0.0,
-            "player_component": 0.39
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 54.9,
       "revised_prediction": null,
@@ -14548,35 +14502,12 @@
       "prediction": {
         "home_pct": 63.5,
         "away_pct": 36.5,
+        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por anotación reciente y Elo previo. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
-        "elo_baseline_home_pct": 61.4,
-        "factors": {
-          "elo_difference": 0.255,
-          "margin_difference": 0.3,
-          "win_rate_difference": 0.0,
-          "scoring_difference": 0.71,
-          "defense_difference": -0.41,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 62.2,
-          "v2_home_pct": 64.8,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": 1.22,
-            "recent_margin_component": 1.67,
-            "recent_wins_component": 0.52,
-            "scoring_component": 0.49,
-            "rest_component": 0.0,
-            "player_component": 1.2
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 61.6,
       "revised_prediction": null,
@@ -14630,35 +14561,12 @@
       "prediction": {
         "home_pct": 29.0,
         "away_pct": 71.0,
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
-        "elo_baseline_home_pct": 15.8,
-        "factors": {
-          "elo_difference": -3.4527,
-          "margin_difference": -1.54,
-          "win_rate_difference": -0.3,
-          "scoring_difference": -0.66,
-          "defense_difference": -0.88,
-          "rest_difference": 0.0
-        },
-        "hybrid": {
-          "v3_home_pct": 18.5,
-          "v2_home_pct": 39.5,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": -5.93,
-            "recent_margin_component": -0.84,
-            "recent_wins_component": -0.17,
-            "scoring_component": -0.25,
-            "rest_component": 0.0,
-            "player_component": -0.11
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 39.1,
       "revised_prediction": null,
@@ -14712,35 +14620,12 @@
       "prediction": {
         "home_pct": 61.9,
         "away_pct": 38.1,
+        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "model": "hybrid-v2-v3-experimental",
         "experimental": true,
         "calibrated": false,
-        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
-        "elo_baseline_home_pct": 59.3,
-        "factors": {
-          "elo_difference": 0.1062,
-          "margin_difference": 0.51,
-          "win_rate_difference": -0.1,
-          "scoring_difference": -0.15,
-          "defense_difference": 0.66,
-          "rest_difference": 0.25
-        },
-        "hybrid": {
-          "v3_home_pct": 65.0,
-          "v2_home_pct": 58.7,
-          "v3_weight_pct": 50,
-          "v2_weight_pct": 50,
-          "v2_factors": {
-            "home_advantage_points": 2.2,
-            "elo_component": 0.12,
-            "recent_margin_component": 1.18,
-            "recent_wins_component": -0.09,
-            "scoring_component": 0.34,
-            "rest_component": 0.0,
-            "player_component": 0.47
-          }
-        },
-        "explanation": "Pronóstico experimental que combina 50% de la regresión logística V3 con 50% de las señales V2: Elo, forma, anotación, descanso y tendencia reciente de jugadores cuando está disponible. Solo usa datos previos."
+        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "locked": true
       },
       "elo_baseline_home_pct": 58.2,
       "revised_prediction": null,
@@ -23179,6 +23064,13 @@
       "feed": "Google News"
     },
     {
+      "title": "NBA eyes $11 arena investment ahead of 2027 European league launch | Daily Sabah",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYXZpd1ZOcUw0c0ZJRGhxRmxFYkg0R2k1dTBjdDhLZ1ZZanJmQzN0dmR5U29mb0lSVFhsaHZsQ3BfMjBPOXJmWUlWNGRMdEJkZmtrN2RkSTF1eXJsZllnZ21DZV9GVnRzRFpXNTBlb2FZdjVSQ0hlcDdVeUZXaS1WTjdXNHpfTU16M0J4ZHQxbldocGRIRVhxd0lROG5fTkFQVmdCWnN2S1lySmtTYnUw0gG0AUFVX3lxTFBjVi1QY3poYWtkYTU3aUhyc2tIaW5ybDFST3B1LXozTjQ2ZjI1TUZIZ3R3OEMtS29lR3BTUTNEZlR2SklGN2ZVSlBOZHFhejJfNEdxRnY4TnlDcHFTbmpqTjdJZlYwLU44UkM5VU5OV3EzUkhRdllwMDJyblNSNmVzSjMyVlM5cFpCODNhcWtkTXhySUlPazJDdWRIZURBamEzYUM4dUhpWUVRbjZaaTFZS0VOTQ?oc=5",
+      "published": "Thu, 26 Nov 2026 11:15:00 GMT",
+      "source": "Daily Sabah",
+      "feed": "Google News"
+    },
+    {
       "title": "De'Anthony Melton scores 24 points, matches career high with eight 3s as Warriors beat Kings 129-110",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTGpEdzBlbGpHVGc3U2F6S3RSSHdBS18wbGUzRzQ1eUU5NWNWd0lBT3E2ZEl3RVNaQm5xV1dNMmwybDE1YW1QYzVMOXBxcUI1V0FSMGVPX2lzbjQxRHR4NzloTzMyZWNCa05pd0xhdHYtd3pCc1E2SjVyODlBLWo4OEZtUDZibGNXU21oVEdB?oc=5",
       "published": "Thu, 26 Nov 2026 06:19:27 GMT",
@@ -23200,6 +23092,13 @@
       "feed": "Google News"
     },
     {
+      "title": "Matas Buzelis scores 24 as Bulls hold on to beat Hornets 107-105 for 2nd straight win",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb3FSVlhSZlRJRkNRZHNUbF95TEN0QXdIZzl2M2VrWVhPWVpQaV95QWJ3M2Q0MTZVbzRTR2M1YXhxZ0FuNWd6Y2VvV09iekxYLWhHVllTeW5hNVVsNkxmenk5RGZFdjlnN29RYlZqcUNzODFCWU5GY2w0UlUyTEYyb2w1a2VZZmlZbXppM0hBVkVwVmtrRGluWFN1TzdIdzNscjhTQQ?oc=5",
+      "published": "Thu, 26 Nov 2026 03:11:13 GMT",
+      "source": "News-Times",
+      "feed": "Google News"
+    },
+    {
       "title": "Avdija, Lillard lead Trail Blazers to 116-111 win over Spurs in NBA Cup play",
       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZGdzOWF5NVFWMUNuNjl4cF9BUThMSzRjdzA4YXdoQlhHRmYzcWh1N2FCZExnMWRfUWZMSkozRExiOWdCbGdoNlBCRGNmQUFxZHcxbnBHZU5PanBkNHVLVm15cF9scHJ0a0hKTEpEZFQtanpCUVhvajFFNEZTQkdPV2lfZG5uVUZxSEdZcEhCaHNfVWRvRmVJRFgyVWF4cFZLenJCdldyNjdZVUZmeHZzVUV3YUpYT1RHWGZCeUlLNEw2OFRvbkEzX3JHT0V0TlotTXR1WjVWdHFVN2cwTlp1bXE1bmswZ2g2dUczUVpyWTM2aHlqdjNkQWZ6OWc?oc=5",
       "published": "Thu, 26 Nov 2026 05:56:28 GMT",
@@ -23207,36 +23106,29 @@
       "feed": "Google News"
     },
     {
-      "title": "Matas Buzelis scores 24 as Bulls hold on to beat Hornets 107-105 for 2nd straight win",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM3lXRWduZ1J1aHd2a2ZiajZ0SF9OelhLcG1EbmRTVUZJYUZsNF9wVjIzSHh1VzZRMXRXVUhPNS1RZWIyQUVBX1l1Sy01VFdHaWFRYTlnc2R0VmdfMkxTRGpyQ1ZLd2dSRGRlVHQtcFJ5bnBuV0lfOE1VV1hib0daNXNVc0dGejNvV2tJUkxYaGtfcHJGVUVIRTJFNkNOaF9US3c?oc=5",
-      "published": "Thu, 26 Nov 2026 03:07:25 GMT",
-      "source": "Norwalk Hour",
+      "title": "NBA GAME NIGHT: The Wolves and Blazers Are the BEST in the West?",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOSmxQUmM3SVZsdlY0eTVGMHhMS1I3czNMOFMwYlBjRVNnd1U5cG44VnF1dVk1MVlENDhfb1VqeUZ1SW1VZTBLX0dWMnJXYVFDcVRLLVRmeExmZG40TWt5ZWNuQnRLbXBGdXExQzBsVVZxaEtiSUZ5aHAwMXZERFJBYmZZTWh1VTRsTmc1RWdsSUduNi1adVlDMG94amxfVUt2ZkZOWmhhMWxJeHV6eGE0azAzWkJ1b3pzM0NEN0txRkxSSkJFbTBxTkxkbFMycjB3Q1U5OFlJRWQtdWJlU19Rb0hrcW51Yk8zemRSbmRwQTk1UG5GYnM4ZlluSWNWcm5zYnRrMDBvaHdNM1U?oc=5",
+      "published": "Thu, 26 Nov 2026 06:46:00 GMT",
+      "source": "WZZM13.com",
       "feed": "Google News"
     },
     {
       "title": "Knicks blow by the Cavaliers in the fourth, win 121-102 for sixth straight victory",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNbmYzazNNZGJISFhtNHdGR1gyVVd4UWZIOGViVFQ4WmlmUlc4ZHlOOFlreC1hemNPTkFGdndwYnNJTFI1SFJ2VWJzaVhOQ2Y1SzVoNGh4N0FWRGhxeDBrQ3Z1eU84R0J1b0ZwUU1UN1lQOWNBY1FrNl9VSFMzbVIyNGVMQWNYNklzZVcwOHJrUVhpcEluQjNNeVFFYzBJMjE0bmllcU9QNFdjYmI4b1hReFh6Z0cxZUFBYS02a2ZRWlowSnU5Z3Z4enhCSDJockhCWkJYS29NZHN5eU5iMHZubWR6ZmFEWkV2RVJGWlZNMndQZU5Xb2hzTDZES082UEREcWRoTVB4MA?oc=5",
-      "published": "Thu, 26 Nov 2026 03:11:45 GMT",
-      "source": "Messenger-Inquirer",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaFoyb2lOWXBsaG9tU2RNbTkyQW95Smd3eTBBcF9DdThSWjVGdWdpenFsa3B5UGRnbEZLYkI2Ym9ScGdBcl9PU0dtbjVzbHhxdkpGZ3gxRUVHWU9HUHZ6cGZOQlBSLWpwTjZ6bTRLd0NzNUtTV2N2enpYcUxnU3VsNXBsaDhFLXlsVm05N0hHWVpiY1k?oc=5",
+      "published": "Thu, 26 Nov 2026 03:44:27 GMT",
+      "source": "Seattle Post-Intelligencer",
       "feed": "Google News"
     },
     {
-      "title": "NBA, partners plan nearly $11B arena investment for new Europe league",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80NjhMZFdfSnlLYzhlS1FpeF9BcDJHNC16bjZ5UEVBVlVNS3B3ZlV2MHRIX3AycExjdU02UHNiNUp2cTlETXRmbnl0MFVvT2Iyc1AydnhLODhISm5wcWc5NVJITmhudw?oc=5",
-      "published": "Wed, 25 Nov 2026 18:22:00 GMT",
-      "source": "Sacramento Bee",
-      "feed": "Google News"
-    },
-    {
-      "title": "With Stephen Curry out, the Golden State Warriors search for offensive rhythm, defensive consistency",
-      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQYWdqeHlsWHFPOVJCWVJWUlMzaGdhX0dzS1NvVld6T3lHeFFPOURoVm41a3dYSVVtb1dMVVZHVnFaNGlpWHA0TGdjTjVZZUV3LXVCMUt0bFR6R0Z0MkRQV3BLU1ZfYmVkR0Z1YURVbURPRDFxdlpsVDRkMW45RnM4aTc4NHZsX0lxTkVwRnRfb1ZSUXlMdTBXM2Y0Nkk3MXZXX3lKbzU0dndnRzRGbVZ0WUxFYWJnMUxKY2g4UkUzaUdrYWx1QmxOMFB1YkM1blpQZnA4VS1ldnRmWmxXdi1tMS1wRFU1d3NpTXNzWjJETEdCVGdidnF2UU4zcThmTHRQYk5waXg5RTRneVJCbll0ZktjWHlOby1NNVNZ?oc=5",
-      "published": "Thu, 26 Nov 2026 06:49:55 GMT",
+      "title": "Timberwolves beat the Thunder 113-106 to improve to 3-0 in NBA Cup play",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNODlVQ0IzZm5fVnJZbExOVHJVNkgxc2VoNWZkTDRXZG1MREF4ZHpWazJxeWV3UmFTRDdOTkhyU1YtVzhJMWNQNVdPSTBINUEwVnkxaG9mWXEyUUZJX19RTlVfYnd0T2JTUkZZN3kydGkzdkNPWGYwWFBHc3l6ZDVKQzdUbW5ad2dkMmNDMVM0VlFqNE56UnFNMmk5aGxkTWdYa2RfSXM4VERGdnFodWlYTGRwS1VBb0lPSEdnRHZnS1JPOEJKS1BrNmpLWDlRa1lYWVNlcUx1a1pkUGUtaktfU2o1eGhyUkVUMFdZMkhDUUtOaHRNeXFz?oc=5",
+      "published": "Thu, 26 Nov 2026 03:41:08 GMT",
       "source": "Mankato Free Press",
       "feed": "Google News"
     }
   ],
   "news_source": "Google News RSS",
-  "news_updated_at": "2026-11-26T08:22:50.169592+00:00",
+  "news_updated_at": "2026-11-26T16:46:50.448368+00:00",
   "archive_days": 7,
   "validation": {
     "completed_predictions": 147,
