@@ -5389,19 +5389,19 @@
       },
       "elo_baseline_home_pct": 59.7,
       "revised_prediction": {
-        "home_pct": 66.7,
-        "away_pct": 33.3,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 63.7,
+        "away_pct": 36.3,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor rendimiento ante sus rivales.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 78.0
+        "elo_baseline_home_pct": 78.5
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "New York Knicks",
         "opponent": "Miami Heat",
-        "favorite_pct_original": 66.7,
+        "favorite_pct_original": 63.7,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -5456,19 +5456,19 @@
       },
       "elo_baseline_home_pct": 79.2,
       "revised_prediction": {
-        "home_pct": 80.5,
-        "away_pct": 19.5,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 82.1,
+        "away_pct": 17.9,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 88.6
+        "elo_baseline_home_pct": 89.4
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Detroit Pistons",
         "opponent": "Milwaukee Bucks",
-        "favorite_pct_original": 80.5,
+        "favorite_pct_original": 82.1,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -5605,20 +5605,20 @@
       },
       "elo_baseline_home_pct": 61.9,
       "revised_prediction": {
-        "home_pct": 67.9,
-        "away_pct": 32.1,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 68.9,
+        "away_pct": 31.1,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 82.0
+        "elo_baseline_home_pct": 80.7
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Toronto Raptors",
         "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 67.9,
-        "classification": "Ventaja moderada",
+        "favorite_pct_original": 68.9,
+        "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
         ],
@@ -5749,19 +5749,19 @@
       },
       "elo_baseline_home_pct": 55.9,
       "revised_prediction": {
-        "home_pct": 64.5,
-        "away_pct": 35.5,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 63.5,
+        "away_pct": 36.5,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 81.2
+        "elo_baseline_home_pct": 81.5
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Minnesota Timberwolves",
         "opponent": "Memphis Grizzlies",
-        "favorite_pct_original": 64.5,
+        "favorite_pct_original": 63.5,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -5816,21 +5816,22 @@
       },
       "elo_baseline_home_pct": 58.4,
       "revised_prediction": {
-        "home_pct": 60.5,
-        "away_pct": 39.5,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 57.6,
+        "away_pct": 42.4,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
-        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y descanso. Señales V2: Ventaja por ventaja de localía.",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 68.6
+        "elo_baseline_home_pct": 67.8
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Phoenix Suns",
         "opponent": "Dallas Mavericks",
-        "favorite_pct_original": 60.5,
-        "classification": "Ventaja moderada",
+        "favorite_pct_original": 57.6,
+        "classification": "Partido muy cerrado",
         "observations": [
+          "Diferencia de probabilidades pequeña: no hay una ventaja sólida.",
           "El favorito llega con menos días de descanso registrado."
         ],
         "home_form": {
@@ -5883,19 +5884,19 @@
       },
       "elo_baseline_home_pct": 60.9,
       "revised_prediction": {
-        "home_pct": 63.9,
-        "away_pct": 36.1,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 60.8,
+        "away_pct": 39.2,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 66.9
+        "elo_baseline_home_pct": 65.2
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "San Antonio Spurs",
         "opponent": "Los Angeles Lakers",
-        "favorite_pct_original": 63.9,
+        "favorite_pct_original": 60.8,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -6025,19 +6026,19 @@
       },
       "elo_baseline_home_pct": 58.6,
       "revised_prediction": {
-        "home_pct": 65.2,
-        "away_pct": 34.8,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 62.3,
+        "away_pct": 37.7,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 74.8
+        "elo_baseline_home_pct": 73.6
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "LA Clippers",
         "opponent": "New Orleans Pelicans",
-        "favorite_pct_original": 65.2,
+        "favorite_pct_original": 62.3,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -6100,19 +6101,19 @@
       },
       "elo_baseline_home_pct": 64.4,
       "revised_prediction": {
-        "home_pct": 68.4,
-        "away_pct": 31.6,
-        "predicted_at": "2026-11-26T08:22:40.256744+00:00",
+        "home_pct": 69.2,
+        "away_pct": 30.8,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
         "model": "hybrid-v2-v3-experimental",
         "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor margen de puntos reciente y mejor rendimiento ante sus rivales.",
         "source": "Recalculado con resultados disponibles antes del inicio",
-        "elo_baseline_home_pct": 72.6
+        "elo_baseline_home_pct": 73.6
       },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Portland Trail Blazers",
         "opponent": "Golden State Warriors",
-        "favorite_pct_original": 68.4,
+        "favorite_pct_original": 69.2,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6255,12 +6256,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 54.9,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 62.8,
+        "away_pct": 37.2,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor tendencia de jugadores.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 78.7
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Charlotte Hornets",
         "opponent": "Brooklyn Nets",
-        "favorite_pct_original": 64.2,
+        "favorite_pct_original": 62.8,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6314,12 +6323,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 61.6,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 62.5,
+        "away_pct": 37.5,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 63.5
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Chicago Bulls",
         "opponent": "Indiana Pacers",
-        "favorite_pct_original": 63.5,
+        "favorite_pct_original": 62.5,
         "classification": "Ventaja moderada",
         "observations": [
           "El favorito llega con menos días de descanso registrado."
@@ -6373,12 +6390,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 39.1,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 29.7,
+        "away_pct": 70.3,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por Elo previo y margen reciente. Señales V2: Ventaja por mejor rendimiento ante sus rivales y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 15.8
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Oklahoma City Thunder",
         "opponent": "Milwaukee Bucks",
-        "favorite_pct_original": 71.0,
+        "favorite_pct_original": 70.3,
         "classification": "Favorito estadístico",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
@@ -6432,12 +6457,20 @@
         "locked": true
       },
       "elo_baseline_home_pct": 58.2,
-      "revised_prediction": null,
+      "revised_prediction": {
+        "home_pct": 60.1,
+        "away_pct": 39.9,
+        "predicted_at": "2026-11-27T03:42:26.982822+00:00",
+        "model": "hybrid-v2-v3-experimental",
+        "reason": "Híbrido V2/V3: Ventaja V3 por margen reciente y defensa reciente. Señales V2: Ventaja por ventaja de localía y mejor margen de puntos reciente.",
+        "source": "Recalculado con resultados disponibles antes del inicio",
+        "elo_baseline_home_pct": 60.3
+      },
       "scouting": {
         "version": "contexto-v1",
         "favorite": "Houston Rockets",
         "opponent": "Philadelphia 76ers",
-        "favorite_pct_original": 61.9,
+        "favorite_pct_original": 60.1,
         "classification": "Ventaja moderada",
         "observations": [
           "Sin alertas cuantitativas adicionales en la forma reciente disponible."
